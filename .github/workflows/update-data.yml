@@ -25,10 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests xmltodict tenacity python-dateutil
 
-      - name: Build data.json (today back 30 days, prefer SUG v2, fallback CVRF v3)
+      - name: Build data.json (today back 30 days; server-side filtered)
         run: |
           python - << 'PY'
-          import json, re, sys
+          import json, re
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
           import requests, xmltodict
@@ -36,17 +36,18 @@ jobs:
 
           NOW = datetime.now(timezone.utc)
           SINCE = NOW - timedelta(days=30)
-          DATE_FMT = "%Y-%m-%d"
 
-          SUG_BASE = "https://api.msrc.microsoft.com/sug/v2.0/en-US"
           CVRF_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0"
 
-          H = {
+          HEADERS_JSON = {
             "Accept": "application/json",
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
             "Cache-Control": "no-cache",
           }
-          H_XML = {"Accept":"application/xml", **H}
+          HEADERS_XML = {"Accept": "application/xml", **HEADERS_JSON}
+
+          def iso_z(dtobj):
+              return dtobj.strftime("%Y-%m-%dT%H:%M:%SZ")
 
           def within_window(iso):
               try:
@@ -69,7 +70,11 @@ jobs:
 
           def sev_rank(s):
               s=(s or "").lower()
-              return 4 if "critical" in s else 3 if "important" in s else 2 if "moderate" in s or "medium" in s else 1 if "low" in s else 0
+              if "critical" in s: return 4
+              if "important" in s: return 3
+              if "moderate" in s or "medium" in s: return 2
+              if "low" in s: return 1
+              return 0
 
           RH = {
             "Windows 11": "https://learn.microsoft.com/windows/release-health/",
@@ -81,149 +86,109 @@ jobs:
             "Windows Server": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
           }
 
-          @retry(stop=stop_after_attempt(4), wait=wait_exponential(1, 2, 8))
+          @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
           def get_json(url):
-              r = requests.get(url, headers=H, timeout=60)
+              r = requests.get(url, headers=HEADERS_JSON, timeout=60)
               r.raise_for_status()
               return r.json()
 
-          @retry(stop=stop_after_attempt(4), wait=wait_exponential(1, 2, 8))
+          @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
           def get_xml(url):
-              r = requests.get(url, headers=H_XML, timeout=60)
+              r = requests.get(url, headers=HEADERS_XML, timeout=60)
               r.raise_for_status()
               return r.text
 
-          rows = []
+          # --- 1) Ask MSRC CVRF for ONLY last-30-days update IDs (server-side filter)
+          since_iso = iso_z(SINCE)
+          filter_q = (
+            f"(InitialReleaseDate ge {since_iso} or CurrentReleaseDate ge {since_iso})"
+          )
+          # Order by newest first to keep things neat
+          updates_url = f"{CVRF_BASE}/updates/?$filter={requests.utils.quote(filter_q, safe=' ()')}&$orderby=CurrentReleaseDate desc"
+          up = get_json(updates_url)
+          values = up.get("value", [])
+          print(f"Found {len(values)} CVRF update documents in window {SINCE.date()}..{NOW.date()}")
 
-          # ---------- 1) Preferred: SUG v2 JSON ----------
-          try:
-              # SUG v2 supports OData $filter; we filter by releaseDate on server side, and also client filter for safety
-              # Windows family subsets are included by productFamily eq 'Windows'
-              f = (
-                f"releaseDate ge {SINCE.strftime(DATE_FMT)} and "
-                f"releaseDate le {NOW.strftime(DATE_FMT)} and "
-                f"(productFamily eq 'Windows')"
-              )
-              url = f"{SUG_BASE}/updates?$top=1000&$filter={requests.utils.quote(f, safe=' ')}"
-              j = get_json(url)
-              sug_items = j.get("value", [])
-          except Exception as e:
-              print(f"SUG v2 fetch failed: {e}")
-              sug_items = []
+          rows=[]
+          kb_re = re.compile(r"KB\d{7,8}", re.I)
 
-          if sug_items:
-              for it in sug_items:
-                  # Common fields across SUG payloads
-                  rdate = it.get("releaseDate") or it.get("publishDate") or it.get("currentReleaseDate")
-                  if not rdate or not within_window(rdate):
-                      continue
+          def get_severity(vuln:dict) -> str:
+              threats = vuln.get("Threats",{}).get("Threat",[])
+              if isinstance(threats, dict): threats=[threats]
+              text = " ".join([str(t.get("#text","")) for t in threats if t.get("@Type","").lower()=="impact"]).lower()
+              if "critical" in text: return "Critical"
+              if "important" in text: return "Important"
+              if "moderate"  in text or "medium" in text: return "Moderate"
+              if "low"       in text: return "Low"
+              return "Unknown"
 
-                  kb = (it.get("kbArticle") or it.get("KBArticle") or it.get("kbNumber") or "")
-                  if kb and not kb.upper().startswith("KB"):
-                      kb = f"KB{kb}"
+          for u in values:
+              rdate = u.get("CurrentReleaseDate") or u.get("InitialReleaseDate")
+              if not rdate or not within_window(rdate):
+                  # Safety check – should already be filtered server-side
+                  continue
+              doc_id = u.get("ID")
+              if not doc_id: 
+                  continue
 
-                  title = it.get("title") or it.get("description") or "Security update"
-                  prod  = it.get("product") or it.get("productFamily") or ""
-                  sev   = it.get("severity") or it.get("maxSeverity") or it.get("severityRating") or "Unknown"
-                  osn   = os_bucket(prod)
-                  url   = it.get("kbUrl") or (f"https://support.microsoft.com/help/{kb[2:]}" if kb else "")
-
-                  rows.append({
-                      "date": isoparse(rdate).astimezone(timezone.utc).isoformat().replace("+00:00","Z"),
-                      "kb": kb or "",
-                      "url": url or "",
-                      "description": title,
-                      "knownIssuesUrl": RH.get(osn, RH["Windows Server"]),
-                      "os": osn,
-                      "severity": sev,
-                  })
-
-          # ---------- 2) Fallback: CVRF v3 (only if SUG empty) ----------
-          if not rows:
-              print("Falling back to CVRF v3…")
               try:
-                  up = get_json(f"{CVRF_BASE}/updates/?$orderby=CurrentReleaseDate desc")
-                  values = up.get("value", [])
+                  xml_text = get_xml(f"{CVRF_BASE}/cvrf/{requests.utils.quote(doc_id, safe='')}")
+                  x = xmltodict.parse(xml_text, process_namespaces=False)
               except Exception as e:
-                  print(f"CVRF list failed: {e}")
-                  values = []
+                  print(f"Skip {doc_id}: {e}")
+                  continue
 
-              kb_re = re.compile(r"KB\d{7,8}", re.I)
+              # Product map
+              prod_map={}
+              try:
+                  fps = x["cvrfdoc"]["ProductTree"].get("FullProductName", [])
+                  if isinstance(fps, dict): fps=[fps]
+                  for fp in fps:
+                      pid = fp.get("@ProductID"); name = fp.get("#text")
+                      if pid and name: prod_map[pid]=name
+              except: pass
 
-              for u in values:
-                  rdate = u.get("CurrentReleaseDate") or u.get("InitialReleaseDate")
-                  if not rdate or not within_window(rdate):
-                      continue
+              vulns = x["cvrfdoc"].get("Vulnerability", [])
+              if isinstance(vulns, dict): vulns=[vulns]
 
-                  doc_id = u.get("ID")
-                  if not doc_id: continue
+              for v in vulns:
+                  sev = get_severity(v)
+                  rems = v.get("Remediations",{}).get("Remediation",[])
+                  if isinstance(rems, dict): rems=[rems]
+                  for r in rems:
+                      if "vendor" not in (r.get("Type","").lower()):
+                          continue
+                      desc = r.get("Description") or "Security update"
+                      inner = json.dumps(r, ensure_ascii=False)
+                      m = kb_re.search(desc) or kb_re.search(inner)
+                      if not m: 
+                          continue
+                      kb = m.group(0).upper()
+                      url = r.get("URL") or f"https://support.microsoft.com/help/{kb[2:]}"
 
-                  try:
-                      xml = get_xml(f"{CVRF_BASE}/cvrf/{requests.utils.quote(doc_id, safe='')}")
-                      x = xmltodict.parse(xml, process_namespaces=False)
-                  except Exception as e:
-                      print(f"Skip {doc_id}: {e}")
-                      continue
+                      pids = r.get("ProductID", [])
+                      if isinstance(pids, str): pids=[pids]
+                      oses = set(os_bucket(prod_map.get(pid, "Windows")) for pid in pids) or {"Windows"}
 
-                  # Product map
-                  prod_map = {}
-                  try:
-                      fps = x["cvrfdoc"]["ProductTree"].get("FullProductName", [])
-                      if isinstance(fps, dict): fps=[fps]
-                      for fp in fps:
-                          pid = fp.get("@ProductID"); name = fp.get("#text")
-                          if pid and name: prod_map[pid]=name
-                  except: pass
+                      # normalize date to Z
+                      dateZ = isoparse(rdate).astimezone(timezone.utc).isoformat().replace("+00:00","Z")
+                      for osn in oses:
+                          rows.append({
+                              "date": dateZ,
+                              "kb": kb,
+                              "url": url,
+                              "description": desc,
+                              "knownIssuesUrl": RH.get(osn, RH["Windows Server"]),
+                              "os": osn,
+                              "severity": sev,
+                          })
 
-                  # Vulns
-                  vulns = x["cvrfdoc"].get("Vulnerability", [])
-                  if isinstance(vulns, dict): vulns=[vulns]
-
-                  def get_sev(v):
-                      threats = v.get("Threats",{}).get("Threat",[])
-                      if isinstance(threats, dict): threats=[threats]
-                      t = " ".join([str(t.get("#text","")) for t in threats if t.get("@Type","").lower()=="impact"]).lower()
-                      if "critical" in t: return "Critical"
-                      if "important" in t: return "Important"
-                      if "moderate" in t or "medium" in t: return "Moderate"
-                      if "low" in t: return "Low"
-                      return "Unknown"
-
-                  for v in vulns:
-                      sev = get_sev(v)
-                      rems = v.get("Remediations",{}).get("Remediation",[])
-                      if isinstance(rems, dict): rems=[rems]
-                      for r in rems:
-                          if "vendor" not in (r.get("Type","").lower()):
-                              continue
-                          desc = r.get("Description") or "Security update"
-                          inner = json.dumps(r, ensure_ascii=False)
-                          m = kb_re.search(desc) or kb_re.search(inner)
-                          if not m: continue
-                          kb = m.group(0).upper()
-                          url = r.get("URL") or f"https://support.microsoft.com/help/{kb[2:]}"
-
-                          pids = r.get("ProductID", [])
-                          if isinstance(pids, str): pids=[pids]
-                          oses = set(os_bucket(prod_map.get(pid, "Windows")) for pid in pids) or {"Windows"}
-
-                          for osn in oses:
-                              rows.append({
-                                  "date": isoparse(rdate).astimezone(timezone.utc).isoformat().replace("+00:00","Z"),
-                                  "kb": kb,
-                                  "url": url,
-                                  "description": desc,
-                                  "knownIssuesUrl": RH.get(osn, RH["Windows Server"]),
-                                  "os": osn,
-                                  "severity": sev,
-                              })
-
-          # ---------- 3) Dedup + keep highest severity ----------
+          # --- 2) Dedup by (date|kb|os) keeping highest severity
           best={}
           for r in rows:
-              d = (r.get("date") or "")[:10]
-              key = f"{d}|{r.get('kb','')}|{r.get('os','')}"
-              if key not in best or sev_rank(r["severity"]) > sev_rank(best[key]["severity"]):
+              d=(r["date"] or "")[:10]
+              key=f"{d}|{r['kb']}|{r['os']}"
+              if key not in best or (sev_rank(r["severity"])>sev_rank(best[key]["severity"])):
                   best[key]=r
 
           final = sorted(best.values(), key=lambda z: (z.get("date") or "", z.get("os") or "", z.get("kb") or ""), reverse=True)
@@ -231,11 +196,11 @@ jobs:
           with open("data.json","w",encoding="utf-8") as f:
               json.dump(final, f, ensure_ascii=False)
 
-          print(f"Wrote {len(final)} rows to data.json (window: {SINCE.date()}..{NOW.date()})")
+          print(f"Wrote {len(final)} rows to data.json (strict window: {SINCE.date()}..{NOW.date()})")
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): daily MSRC data.json update (last 30 days)"
+          commit_message: "chore(data): MSRC data.json (last 30 days only)"
           file_pattern: data.json
