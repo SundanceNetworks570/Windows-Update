@@ -3,7 +3,7 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 9 * * *"   # runs daily at 09:00 UTC
+    - cron: "0 9 * * *"  # runs daily at 09:00 UTC
 
 permissions:
   contents: write
@@ -15,32 +15,40 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fetch Windows updates (last 30 days)
+      - name: Fetch Windows update data (30 days)
         run: |
-          echo "Fetching Windows Update data..."
+          echo "Fetching Microsoft Security Updates..."
+
           DAYS_BACK=30
           SINCE=$(date -u -d "$DAYS_BACK days ago" +"%Y-%m-%dT00:00:00Z")
-
           API="https://api.msrc.microsoft.com/sug/v2.0/en-US/updates"
-          echo "Calling $API"
-          curl -s -H "Accept: application/json" "$API" | \
-            jq --arg SINCE "$SINCE" '
-              .[] 
-              | select(.currentReleaseDate >= $SINCE)
-              | { 
-                  date: .currentReleaseDate, 
-                  kb: (.kbArticles[0].articleId // "N/A"), 
-                  url: ("https://support.microsoft.com/help/" + (.kbArticles[0].articleId // "")), 
-                  description: .title,
-                  knownIssuesUrl: "https://learn.microsoft.com/en-us/windows/release-health/",
-                  os: (.productFamily // "Windows"),
-                  severity: (.severity // "Unknown")
-                }
-            ' | jq -s > data.json
+
+          echo "Querying API since: $SINCE"
+          curl -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+            -H "Accept: application/json" \
+            -H "Cache-Control: no-cache" \
+            "$API" \
+            | jq --arg SINCE "$SINCE" '
+              [.[] 
+                | select(.currentReleaseDate >= $SINCE)
+                | select(.productFamily | test("Windows"; "i"))
+                | {
+                    date: .currentReleaseDate,
+                    kb: (.kbArticles[0].articleId // "N/A"),
+                    url: ("https://support.microsoft.com/help/" + (.kbArticles[0].articleId // "")),
+                    description: .title,
+                    knownIssuesUrl: "https://learn.microsoft.com/en-us/windows/release-health/",
+                    os: (.productFamily // "Windows"),
+                    severity: (.severity // "Unknown")
+                  }
+              ]
+            ' > data.json
 
           COUNT=$(jq length data.json)
-          echo "✅  Extracted $COUNT updates"
-          test $COUNT -gt 0 || echo "⚠️ No updates found – check API feed."
+          echo "✅  Extracted $COUNT updates."
+          if [ "$COUNT" -eq 0 ]; then
+            echo "⚠️ No updates found. Check API availability."
+          fi
 
       - name: Commit generated JSON
         uses: stefanzweifel/git-auto-commit-action@v5
