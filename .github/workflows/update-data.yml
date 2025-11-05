@@ -3,74 +3,46 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 9 * * *"  # runs daily at 09:00 UTC
+    - cron: "0 9 * * *"   # runs daily at 09:00 UTC
 
 permissions:
   contents: write
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Build data.json with PowerShell
-        shell: pwsh
+      - name: Fetch Windows updates (last 30 days)
         run: |
-          $ErrorActionPreference = "Stop"
-          Write-Host "Starting MSRC data fetch..."
+          echo "Fetching Windows Update data..."
+          DAYS_BACK=30
+          SINCE=$(date -u -d "$DAYS_BACK days ago" +"%Y-%m-%dT00:00:00Z")
 
-          $DaysBack = 30
-          $Since = (Get-Date).ToUniversalTime().AddDays(-$DaysBack).ToString("o")
-          $ApiBase = "https://api.msrc.microsoft.com/cvrf/v3.0"
+          API="https://api.msrc.microsoft.com/sug/v2.0/en-US/updates"
+          echo "Calling $API"
+          curl -s -H "Accept: application/json" "$API" | \
+            jq --arg SINCE "$SINCE" '
+              .[] 
+              | select(.currentReleaseDate >= $SINCE)
+              | { 
+                  date: .currentReleaseDate, 
+                  kb: (.kbArticles[0].articleId // "N/A"), 
+                  url: ("https://support.microsoft.com/help/" + (.kbArticles[0].articleId // "")), 
+                  description: .title,
+                  knownIssuesUrl: "https://learn.microsoft.com/en-us/windows/release-health/",
+                  os: (.productFamily // "Windows"),
+                  severity: (.severity // "Unknown")
+                }
+            ' | jq -s > data.json
 
-          try {
-            Write-Host "Fetching update list from MSRC..."
-            $updatesUrl = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
-            $updates = Invoke-RestMethod -Uri $updatesUrl -Headers @{Accept="application/json"} -ErrorAction Stop
-          } catch {
-            Write-Host "❌ Failed to fetch updates from MSRC: $($_.Exception.Message)"
-            Set-Content -Path "data.json" -Value "[]" -Encoding utf8
-            exit 0
-          }
+          COUNT=$(jq length data.json)
+          echo "✅  Extracted $COUNT updates"
+          test $COUNT -gt 0 || echo "⚠️ No updates found – check API feed."
 
-          if (-not $updates.value) {
-            Write-Host "⚠️ No updates found in the last 30 days."
-            Set-Content -Path "data.json" -Value "[]" -Encoding utf8
-            exit 0
-          }
-
-          Write-Host "Processing updates..."
-          $rows = @()
-          foreach ($u in ($updates.value | Sort-Object CurrentReleaseDate -Descending)) {
-            $date = if ($u.CurrentReleaseDate) { $u.CurrentReleaseDate } else { $u.InitialReleaseDate }
-            $id = $u.ID
-            $title = $u.Title
-            $kb = ([regex]::Match($title, 'KB\d{7,8}', 'IgnoreCase')).Value
-
-            if (-not $kb) { continue }
-            $rows += [pscustomobject]@{
-              date = $date
-              kb = $kb
-              url = "https://support.microsoft.com/help/$($kb -replace 'KB','')"
-              description = $title
-              knownIssuesUrl = "https://learn.microsoft.com/en-us/windows/release-health/"
-              os = "Windows"
-              severity = "Unknown"
-            }
-          }
-
-          $count = $rows.Count
-          Write-Host "✅ Processed $count updates."
-          if ($count -eq 0) {
-            Write-Host "⚠️ No entries parsed. Writing empty JSON."
-          }
-
-          $json = $rows | ConvertTo-Json -Depth 5
-          Set-Content -Path "data.json" -Value $json -Encoding utf8
-
-      - name: Commit data.json
+      - name: Commit generated JSON
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update data.json (daily)"
