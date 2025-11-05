@@ -108,7 +108,8 @@ jobs:
           }
 
           print(f"Fetching updates since {since} …", flush=True)
-          updates_url = f"{API_BASE}/updates/?$filter=InitialReleaseDate ge {since} or CurrentReleaseDate ge {since}&$orderby=CurrentReleaseDate desc"
+          updates_url = f"{API_BASE}/updates/?$orderby=CurrentReleaseDate desc"
+
           try:
               j = get_json(updates_url)
           except Exception as e:
