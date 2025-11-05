@@ -1,0 +1,144 @@
+name: Build MSRC updates JSON (daily)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 9 * * *"  # 09:00 UTC daily
+
+permissions:
+  contents: write  # allow committing data.json
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build data.json with PowerShell
+        shell: pwsh
+        run: |
+          Set-StrictMode -Version Latest
+          $ErrorActionPreference = 'Stop'
+
+          $DaysBack = 30
+          $Since = (Get-Date).ToUniversalTime().AddDays(-$DaysBack).ToString("o")
+          $ApiBase = 'https://api.msrc.microsoft.com/cvrf/v3.0'
+
+          function Normalize-OS($name) {
+            $n = ($name | ForEach-Object { $_.ToString().ToLower() })
+            if ($n -match 'windows 11') { return 'Windows 11' }
+            if ($n -match 'windows 10') { return 'Windows 10' }
+            if ($n -match 'server 2016') { return 'Server 2016' }
+            if ($n -match 'server 2019') { return 'Server 2019' }
+            if ($n -match 'server 2022') { return 'Server 2022' }
+            if ($n -match 'server 2025') { return 'Server 2025' }
+            if ($n -match 'windows server') { return 'Windows Server' }
+            return $name
+          }
+          function Get-Severity($vulnNode) {
+            $threats = $vulnNode.SelectNodes('.//Threat[@Type="Impact"]')
+            if ($threats -and $threats.Count -gt 0) {
+              $t = (($threats | ForEach-Object { $_.InnerText }) -join ' ').ToLower()
+              if ($t -match 'critical') { return 'Critical' }
+              if ($t -match 'important') { return 'Important' }
+              if ($t -match 'moderate')  { return 'Moderate' }
+              if ($t -match 'low')       { return 'Low' }
+            }
+            $scoreNode = $vulnNode.SelectSingleNode('.//CVSSScoreSets//BaseScore')
+            if ($scoreNode) {
+              [double]$score = 0; [void][double]::TryParse($scoreNode.InnerText, [ref]$score)
+              if ($score -ge 9) { return 'Critical' }
+              elseif ($score -ge 7) { return 'Important' }
+              elseif ($score -ge 4) { return 'Moderate' }
+              else { return 'Low' }
+            }
+            'Unknown'
+          }
+          function Sev-Rank($s) {
+            switch ($s) {
+              'Critical' { 4 } 'Important' { 3 } 'Moderate' { 2 } 'Medium' { 2 } 'Low' { 1 } default { 0 }
+            }
+          }
+
+          $ReleaseHealth = @{
+            'Windows 11' = 'https://learn.microsoft.com/windows/release-health/'
+            'Windows 10' = 'https://learn.microsoft.com/windows/release-health/windows10-release-information'
+            'Server 2016' = 'https://learn.microsoft.com/windows/release-health/windows-server-release-information'
+            'Server 2019' = 'https://learn.microsoft.com/windows/release-health/windows-server-release-information'
+            'Server 2022' = 'https://learn.microsoft.com/windows/release-health/windows-server-release-information'
+            'Server 2025' = 'https://learn.microsoft.com/windows/release-health/windows-server-release-information'
+            'Windows Server' = 'https://learn.microsoft.com/windows/release-health/windows-server-release-information'
+          }
+
+          $updatesUrl = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
+          $updates = Invoke-RestMethod -Uri $updatesUrl -Headers @{ Accept = 'application/json' } -Method Get
+
+          $rows = New-Object System.Collections.Generic.List[object]
+
+          foreach ($u in ($updates.value | Sort-Object CurrentReleaseDate -Descending)) {
+            $docId = $u.ID; $current = $u.CurrentReleaseDate; $initial = $u.InitialReleaseDate
+            $xmlText = Invoke-RestMethod -Uri "$ApiBase/cvrf/$([uri]::EscapeDataString($docId))" -Headers @{ Accept = 'application/xml' } -Method Get
+            [xml]$xml = $xmlText
+
+            $nsm = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+            $nsm.AddNamespace('vuln',  'http://www.icasi.org/CVRF/schema/vuln/1.1')
+            $nsm.AddNamespace('prod',  'http://www.icasi.org/CVRF/schema/prod/1.1')
+
+            $prodMap = @{}
+            foreach ($fp in $xml.SelectNodes('//prod:FullProductName', $nsm)) {
+              $prodMap[$fp.Attributes['ProductID'].Value] = $fp.InnerText
+            }
+
+            foreach ($v in $xml.SelectNodes('//vuln:Vulnerability', $nsm)) {
+              $sev = Get-Severity $v
+              foreach ($rem in $v.SelectNodes('.//vuln:Remediation', $nsm)) {
+                $type = $rem.SelectSingleNode('./vuln:Type', $nsm)?.InnerText
+                if (-not $type -or $type -notmatch 'Vendor\s*Fix') { continue }
+
+                $desc = ($rem.SelectSingleNode('./vuln:Description', $nsm)?.InnerText) ?? 'Security update'
+                $kb   = ([regex]::Match($desc, 'KB\d{7,8}', 'IgnoreCase')).Value.ToUpper()
+                if (-not $kb) { $kb = ([regex]::Match($rem.InnerText, 'KB\d{7,8}', 'IgnoreCase')).Value.ToUpper() }
+                if (-not $kb) { continue }
+
+                $url = $rem.SelectSingleNode('./vuln:URL', $nsm)?.InnerText
+                if (-not $url) { $url = "https://support.microsoft.com/help/$($kb -replace 'KB','')" }
+
+                $prodIds = $rem.SelectNodes('.//vuln:ProductID', $nsm) | ForEach-Object { $_.InnerText } 
+                $osSet = [System.Collections.Generic.HashSet[string]]::new()
+                foreach ($pid in $prodIds) {
+                  if ($prodMap.ContainsKey($pid)) { $osSet.Add((Normalize-OS $prodMap[$pid])) | Out-Null }
+                }
+                if ($osSet.Count -eq 0) { $osSet.Add('Windows') | Out-Null }
+
+                foreach ($os in $osSet) {
+                  $rows.Add([pscustomobject]@{
+                    date           = ($current ?? $initial)
+                    kb             = $kb
+                    url            = $url
+                    description    = $desc
+                    knownIssuesUrl = ($ReleaseHealth[$os] ?? $ReleaseHealth['Windows Server'])
+                    os             = $os
+                    severity       = $sev
+                  })
+                }
+              }
+            }
+          }
+
+          $best = @{}
+          foreach ($r in $rows) {
+            $d = [DateTime]$r.date
+            $key = ("{0:yyyy-MM-dd}" -f $d) + '|' + $r.kb + '|' + $r.os
+            if (-not $best.ContainsKey($key)) { $best[$key] = $r; continue }
+            if ((Sev-Rank $r.severity) -gt (Sev-Rank $best[$key].severity)) { $best[$key] = $r }
+          }
+          $final = $best.GetEnumerator() | ForEach-Object { $_.Value } | Sort-Object @{Expression={$_.date};Descending=$true}, os, kb
+          $json  = $final | ConvertTo-Json -Depth 6
+          Set-Content -Path "data.json" -Value $json -Encoding utf8
+
+      - name: Commit data.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): daily MSRC data.json update"
+          file_pattern: data.json
