@@ -3,7 +3,7 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * *"  # 09:00 UTC daily
+    - cron: "0 9 * * *"   # 09:00 UTC daily
 
 permissions:
   contents: write
@@ -25,18 +25,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests xmltodict tenacity
 
-      - name: Build data.json from MSRC CVRF v3
-        id: buildjson
+      - name: Build data.json from MSRC CVRF (last 30 days)
         run: |
           python - << 'PY'
-          import json, re, sys, time, datetime as dt
+          import json, re, sys, datetime as dt
           import requests, xmltodict
           from tenacity import retry, stop_after_attempt, wait_exponential
 
           API_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0"
-          since = (dt.datetime.utcnow() - dt.timedelta(days=30)).isoformat() + "Z"
+          SINCE = (dt.datetime.utcnow() - dt.timedelta(days=30))
 
-          headers = {
+          HEADERS = {
               "Accept": "application/json",
               "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
               "Cache-Control": "no-cache",
@@ -44,15 +43,21 @@ jobs:
 
           @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
           def get_json(url):
-              r = requests.get(url, headers=headers, timeout=60)
+              r = requests.get(url, headers=HEADERS, timeout=60)
               r.raise_for_status()
               return r.json()
 
           @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
           def get_xml(url):
-              r = requests.get(url, headers={"Accept": "application/xml", **headers}, timeout=60)
+              r = requests.get(url, headers={"Accept":"application/xml", **HEADERS}, timeout=60)
               r.raise_for_status()
               return r.text
+
+          def parse_iso(s):
+              try:
+                  # Trim to seconds to avoid fractional issues
+                  return dt.datetime.fromisoformat(s.replace('Z','').split('.')[0])
+              except: return None
 
           def norm_os(name:str) -> str:
               if not name: return "Windows"
@@ -67,36 +72,35 @@ jobs:
               return name
 
           def sev_rank(s:str) -> int:
-              s = (s or "").lower()
+              s=(s or "").lower()
               if "critical" in s: return 4
               if "important" in s: return 3
-              if "moderate"  in s or "medium" in s: return 2
+              if "moderate" in s or "medium" in s: return 2
               if "low" in s: return 1
               return 0
 
           def get_severity(vuln:dict) -> str:
-              # Try Threat Impact text
-              threats = vuln.get("Threats", {}).get("Threat", [])
-              if isinstance(threats, dict): threats = [threats]
-              merged = " ".join([str(t.get("#text","")) for t in threats if t.get("@Type","").lower()=="impact"]).lower()
-              if "critical" in merged: return "Critical"
-              if "important" in merged: return "Important"
-              if "moderate"  in merged: return "Moderate"
-              if "low"       in merged: return "Low"
-              # Try CVSS base score
-              cvss = vuln.get("CVSSScoreSets", {}).get("ScoreSet", {})
-              if isinstance(cvss, dict): cvss = [cvss]
+              # Use Threats of Type=Impact, else CVSS BaseScore
+              threats = vuln.get("Threats",{}).get("Threat",[])
+              if isinstance(threats, dict): threats=[threats]
+              text = " ".join([str(t.get("#text","")) for t in threats if t.get("@Type","").lower()=="impact"]).lower()
+              if "critical" in text: return "Critical"
+              if "important" in text: return "Important"
+              if "moderate"  in text: return "Moderate"
+              if "low"       in text: return "Low"
+              cvss = vuln.get("CVSSScoreSets",{}).get("ScoreSet",[])
+              if isinstance(cvss, dict): cvss=[cvss]
               for s in cvss:
                   try:
-                      base = float(s.get("BaseScore", 0))
-                      if base >= 9:  return "Critical"
-                      if base >= 7:  return "Important"
-                      if base >= 4:  return "Moderate"
+                      base=float(s.get("BaseScore",0))
+                      if base>=9: return "Critical"
+                      if base>=7: return "Important"
+                      if base>=4: return "Moderate"
                       return "Low"
                   except: pass
               return "Unknown"
 
-          # Known-issues links
+          # Known-issues URLs per OS family
           RH = {
               "Windows 11": "https://learn.microsoft.com/windows/release-health/",
               "Windows 10": "https://learn.microsoft.com/windows/release-health/windows10-release-information",
@@ -107,31 +111,32 @@ jobs:
               "Windows Server": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
           }
 
-          print(f"Fetching updates since {since} …", flush=True)
+          # --- 1) Fetch ALL updates then filter client-side (avoids API date-filter hiccups)
           updates_url = f"{API_BASE}/updates/?$orderby=CurrentReleaseDate desc"
-
           try:
-              j = get_json(updates_url)
+              up = get_json(updates_url)
           except Exception as e:
-              # Write empty but succeed to avoid red runs
               print(f"Failed to fetch updates list: {e}")
-              with open("data.json","w",encoding="utf-8") as f: json.dump([], f)
+              with open("data.json","w",encoding="utf-8") as f: json.dump([],f)
               sys.exit(0)
 
-          values = j.get("value", [])
+          values = up.get("value", [])
           if not values:
-              with open("data.json","w",encoding="utf-8") as f: json.dump([], f)
+              with open("data.json","w",encoding="utf-8") as f: json.dump([],f)
               print("No updates returned.")
               sys.exit(0)
 
-          rows = []
           kb_re = re.compile(r"KB\d{7,8}", re.I)
+          rows = []
 
+          # --- 2) Iterate updates within last 30 days; fetch CVRF XML for each
           for u in values:
-              doc_id = u.get("ID")
-              current = u.get("CurrentReleaseDate") or u.get("InitialReleaseDate")
-              if not doc_id:
+              date = parse_iso(u.get("CurrentReleaseDate") or u.get("InitialReleaseDate") or "")
+              if not date or date < SINCE:
                   continue
+              doc_id = u.get("ID")
+              if not doc_id: continue
+
               try:
                   xml_text = get_xml(f"{API_BASE}/cvrf/{requests.utils.quote(doc_id, safe='')}")
                   x = xmltodict.parse(xml_text, process_namespaces=False)
@@ -139,47 +144,41 @@ jobs:
                   print(f"Skip {doc_id}: {e}")
                   continue
 
-              # Build ProductID -> FullProductName map
+              # Product map: ProductID -> FullProductName
               prod_map = {}
               try:
-                  product_tree = x["cvrfdoc"]["ProductTree"]
-                  fps = product_tree.get("FullProductName", [])
-                  if isinstance(fps, dict): fps = [fps]
+                  fps = x["cvrfdoc"]["ProductTree"].get("FullProductName", [])
+                  if isinstance(fps, dict): fps=[fps]
                   for fp in fps:
                       pid = fp.get("@ProductID")
                       name = fp.get("#text")
                       if pid and name:
-                          prod_map[pid] = name
-              except Exception:
-                  pass
+                          prod_map[pid]=name
+              except: pass
 
               vulns = x["cvrfdoc"].get("Vulnerability", [])
-              if isinstance(vulns, dict): vulns = [vulns]
+              if isinstance(vulns, dict): vulns=[vulns]
+
               for v in vulns:
                   sev = get_severity(v)
-                  rems = v.get("Remediations", {}).get("Remediation", [])
-                  if isinstance(rems, dict): rems = [rems]
+                  rems = v.get("Remediations",{}).get("Remediation",[])
+                  if isinstance(rems, dict): rems=[rems]
                   for r in rems:
-                      if r.get("Type","") and "vendor" not in r["Type"].lower():
+                      t = r.get("Type","")
+                      if "vendor" not in t.lower():
                           continue
                       desc = r.get("Description") or "Security update"
                       inner = json.dumps(r, ensure_ascii=False)
                       m = kb_re.search(desc) or kb_re.search(inner)
-                      if not m:
-                          continue
+                      if not m: continue
                       kb = m.group(0).upper()
                       url = r.get("URL") or f"https://support.microsoft.com/help/{kb.replace('KB','')}"
-                      # Collect OS from ProductIDs
-                      os_set = set()
-                      pids = r.get("ProductID", [])
-                      if isinstance(pids, str): pids = [pids]
-                      for pid in pids:
-                          os_set.add(norm_os(prod_map.get(pid, "Windows")))
-                      if not os_set: os_set = {"Windows"}
-
-                      for os_name in os_set:
+                      pids = r.get("ProductID",[])
+                      if isinstance(pids,str): pids=[pids]
+                      oses = set(norm_os(prod_map.get(pid,"Windows")) for pid in pids) or {"Windows"}
+                      for os_name in oses:
                           rows.append({
-                              "date": current,
+                              "date": date.isoformat()+"Z",
                               "kb": kb,
                               "url": url,
                               "description": desc,
@@ -188,13 +187,13 @@ jobs:
                               "severity": sev,
                           })
 
-          # Dedupe by (date|kb|os) keep highest severity
-          best = {}
+          # --- 3) Dedup by (date|kb|os) keeping highest severity
+          best={}
           for r in rows:
               d = (r.get("date") or "")[:10]
               key = f"{d}|{r['kb']}|{r['os']}"
-              if key not in best or sev_rank(r["severity"]) > sev_rank(best[key]["severity"]):
-                  best[key] = r
+              if key not in best or (sev_rank(r["severity"]) > sev_rank(best[key]["severity"])):
+                  best[key]=r
 
           final = list(best.values())
           final.sort(key=lambda z: (z.get("date") or "", z.get("os") or "", z.get("kb") or ""), reverse=True)
