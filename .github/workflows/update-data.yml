@@ -1,7 +1,7 @@
 name: Build MSRC updates JSON (daily)
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
   schedule:
     - cron: "0 9 * * *"  # run daily at 9 AM UTC
 
@@ -13,13 +13,13 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        shell: powershell
+        shell: pwsh
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch Windows & Server Updates (last 30 days)
+      - name: Generate data.json from MSRC API
         run: |
           Set-StrictMode -Version Latest
           $ErrorActionPreference = 'Stop'
@@ -27,49 +27,48 @@ jobs:
 
           $ApiBase = 'https://api.msrc.microsoft.com/cvrf/v3.0'
           $Since   = (Get-Date).AddDays(-30).ToString('yyyy-MM-ddTHH:mm:ssZ')
-
           $Headers = @{
             "Accept"        = "application/json"
             "User-Agent"    = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
             "Cache-Control" = "no-cache"
           }
 
-          Write-Host "Fetching update list from MSRC…"
-          $url = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
-
+          Write-Host "Fetching MSRC updates since $Since..."
           try {
+            $url = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
             $updates = Invoke-RestMethod -Uri $url -Headers $Headers -TimeoutSec 90
           } catch {
-            Write-Error "Failed to fetch updates list: $($_.Exception.Message)"
+            Write-Error "❌ Failed to fetch update list: $($_.Exception.Message)"
             exit 1
           }
 
           if (-not $updates.value) {
-            Write-Warning "No updates returned — writing empty JSON."
+            Write-Warning "⚠️ No updates returned by MSRC. Writing empty array."
             Set-Content -Path data.json -Value "[]" -Encoding utf8
             exit 0
           }
 
-          $list = @()
-          foreach ($item in $updates.value) {
-            $list += [PSCustomObject]@{
-              date           = ($item.CurrentReleaseDate ?? $item.InitialReleaseDate)
-              id             = $item.ID
-              title          = $item.Title
-              kb             = ($item.Title -match 'KB\d{7,8}') ? $Matches[0] : ''
-              os             = ($item.Title -match 'Windows') ? ($item.Title -replace '.*(Windows[^,]*)', '$1') : ''
-              severity       = ($item.Severity ?? 'Unknown')
-              url            = "https://api.msrc.microsoft.com/update-guide/en-US/vulnerability/$($item.ID)"
+          $rows = @()
+          foreach ($u in $updates.value) {
+            $rows += [PSCustomObject]@{
+              date           = ($u.CurrentReleaseDate ?? $u.InitialReleaseDate)
+              id             = $u.ID
+              title          = $u.Title
+              kb             = ($u.Title -match 'KB\d{7,8}') ? $Matches[0].ToUpper() : ''
+              os             = ($u.Title -match 'Windows') ? ($u.Title -replace '.*(Windows[^,]*)', '$1') : ''
+              severity       = ($u.Severity ?? 'Unknown')
+              url            = "https://api.msrc.microsoft.com/update-guide/en-US/vulnerability/$($u.ID)"
               knownIssuesUrl = "https://learn.microsoft.com/windows/release-health/"
             }
           }
 
-          $json = $list | Sort-Object date -Descending | ConvertTo-Json -Depth 5
+          $json = $rows | Sort-Object date -Descending | ConvertTo-Json -Depth 5
           Set-Content -Path data.json -Value $json -Encoding utf8
-          Write-Host "✅ Wrote $($list.Count) records to data.json"
 
-      - name: Commit updated JSON
+          Write-Host "✅ Wrote $($rows.Count) records to data.json"
+
+      - name: Commit updated data.json
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh MSRC data.json (daily)"
+          commit_message: "chore: daily MSRC data.json update"
           file_pattern: data.json
