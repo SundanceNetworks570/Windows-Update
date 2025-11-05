@@ -18,54 +18,53 @@ jobs:
       - name: Build data.json with PowerShell
         shell: pwsh
         run: |
-          Set-StrictMode -Version Latest
-          $ErrorActionPreference = 'Stop'
+          $ErrorActionPreference = "Stop"
+          Write-Host "Starting MSRC data fetch..."
 
           $DaysBack = 30
           $Since = (Get-Date).ToUniversalTime().AddDays(-$DaysBack).ToString("o")
-          $ApiBase = 'https://api.msrc.microsoft.com/cvrf/v3.0'
+          $ApiBase = "https://api.msrc.microsoft.com/cvrf/v3.0"
 
-          function Normalize-OS($name) {
-            $n = $name.ToLower()
-            if ($n -match 'windows 11') { return 'Windows 11' }
-            if ($n -match 'windows 10') { return 'Windows 10' }
-            if ($n -match 'server 2016') { return 'Server 2016' }
-            if ($n -match 'server 2019') { return 'Server 2019' }
-            if ($n -match 'server 2022') { return 'Server 2022' }
-            if ($n -match 'server 2025') { return 'Server 2025' }
-            return $name
+          try {
+            Write-Host "Fetching update list from MSRC..."
+            $updatesUrl = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
+            $updates = Invoke-RestMethod -Uri $updatesUrl -Headers @{Accept="application/json"} -ErrorAction Stop
+          } catch {
+            Write-Host "❌ Failed to fetch updates from MSRC: $($_.Exception.Message)"
+            Set-Content -Path "data.json" -Value "[]" -Encoding utf8
+            exit 0
           }
 
-          $updatesUrl = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
-          $updates = Invoke-RestMethod -Uri $updatesUrl -Headers @{Accept='application/json'}
+          if (-not $updates.value) {
+            Write-Host "⚠️ No updates found in the last 30 days."
+            Set-Content -Path "data.json" -Value "[]" -Encoding utf8
+            exit 0
+          }
 
-          $rows = New-Object System.Collections.Generic.List[object]
-
+          Write-Host "Processing updates..."
+          $rows = @()
           foreach ($u in ($updates.value | Sort-Object CurrentReleaseDate -Descending)) {
-            $docId = $u.ID
-            $xml = Invoke-RestMethod -Uri "$ApiBase/cvrf/$docId" -Headers @{Accept='application/xml'}
-            [xml]$xmlDoc = $xml
+            $date = if ($u.CurrentReleaseDate) { $u.CurrentReleaseDate } else { $u.InitialReleaseDate }
+            $id = $u.ID
+            $title = $u.Title
+            $kb = ([regex]::Match($title, 'KB\d{7,8}', 'IgnoreCase')).Value
 
-            $vulns = $xmlDoc.SelectNodes('//Vulnerability')
-            foreach ($v in $vulns) {
-              $desc = $v.Title
-              $kb = ([regex]::Match($desc, 'KB\d{7,8}', 'IgnoreCase')).Value
-              if (-not $kb) { continue }
-
-              $os = "Windows"
-              $severity = ($v.Threats.Threat.Details | Select-Object -First 1)
-              if (-not $severity) { $severity = "Unknown" }
-
-              $rows.Add([pscustomobject]@{
-                date = $u.CurrentReleaseDate
-                kb = $kb
-                url = "https://support.microsoft.com/help/$($kb -replace 'KB','')"
-                description = $desc
-                knownIssuesUrl = "https://learn.microsoft.com/en-us/windows/release-health/"
-                os = $os
-                severity = $severity
-              })
+            if (-not $kb) { continue }
+            $rows += [pscustomobject]@{
+              date = $date
+              kb = $kb
+              url = "https://support.microsoft.com/help/$($kb -replace 'KB','')"
+              description = $title
+              knownIssuesUrl = "https://learn.microsoft.com/en-us/windows/release-health/"
+              os = "Windows"
+              severity = "Unknown"
             }
+          }
+
+          $count = $rows.Count
+          Write-Host "✅ Processed $count updates."
+          if ($count -eq 0) {
+            Write-Host "⚠️ No entries parsed. Writing empty JSON."
           }
 
           $json = $rows | ConvertTo-Json -Depth 5
