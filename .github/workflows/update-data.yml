@@ -1,0 +1,78 @@
+name: Build MSRC updates JSON (daily)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 9 * * *"  # runs daily at 09:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build data.json with PowerShell
+        shell: pwsh
+        run: |
+          Set-StrictMode -Version Latest
+          $ErrorActionPreference = 'Stop'
+
+          $DaysBack = 30
+          $Since = (Get-Date).ToUniversalTime().AddDays(-$DaysBack).ToString("o")
+          $ApiBase = 'https://api.msrc.microsoft.com/cvrf/v3.0'
+
+          function Normalize-OS($name) {
+            $n = $name.ToLower()
+            if ($n -match 'windows 11') { return 'Windows 11' }
+            if ($n -match 'windows 10') { return 'Windows 10' }
+            if ($n -match 'server 2016') { return 'Server 2016' }
+            if ($n -match 'server 2019') { return 'Server 2019' }
+            if ($n -match 'server 2022') { return 'Server 2022' }
+            if ($n -match 'server 2025') { return 'Server 2025' }
+            return $name
+          }
+
+          $updatesUrl = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
+          $updates = Invoke-RestMethod -Uri $updatesUrl -Headers @{Accept='application/json'}
+
+          $rows = New-Object System.Collections.Generic.List[object]
+
+          foreach ($u in ($updates.value | Sort-Object CurrentReleaseDate -Descending)) {
+            $docId = $u.ID
+            $xml = Invoke-RestMethod -Uri "$ApiBase/cvrf/$docId" -Headers @{Accept='application/xml'}
+            [xml]$xmlDoc = $xml
+
+            $vulns = $xmlDoc.SelectNodes('//Vulnerability')
+            foreach ($v in $vulns) {
+              $desc = $v.Title
+              $kb = ([regex]::Match($desc, 'KB\d{7,8}', 'IgnoreCase')).Value
+              if (-not $kb) { continue }
+
+              $os = "Windows"
+              $severity = ($v.Threats.Threat.Details | Select-Object -First 1)
+              if (-not $severity) { $severity = "Unknown" }
+
+              $rows.Add([pscustomobject]@{
+                date = $u.CurrentReleaseDate
+                kb = $kb
+                url = "https://support.microsoft.com/help/$($kb -replace 'KB','')"
+                description = $desc
+                knownIssuesUrl = "https://learn.microsoft.com/en-us/windows/release-health/"
+                os = $os
+                severity = $severity
+              })
+            }
+          }
+
+          $json = $rows | ConvertTo-Json -Depth 5
+          Set-Content -Path "data.json" -Value $json -Encoding utf8
+
+      - name: Commit data.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update data.json (daily)"
+          file_pattern: data.json
