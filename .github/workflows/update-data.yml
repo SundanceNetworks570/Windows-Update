@@ -3,7 +3,7 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 9 * * *"   # 09:00 UTC daily
+    - cron: "0 9 * * *"  # run daily at 9 AM UTC
 
 permissions:
   contents: write
@@ -11,158 +11,65 @@ permissions:
 jobs:
   build:
     runs-on: windows-latest
+    defaults:
+      run:
+        shell: powershell
+
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build data.json (MSRC CVRF v3, last 30 days)
-        shell: pwsh
+      - name: Fetch Windows & Server Updates (last 30 days)
         run: |
           Set-StrictMode -Version Latest
           $ErrorActionPreference = 'Stop'
+          $ProgressPreference = 'SilentlyContinue'
 
-          # -------- Helpers --------
-          function Normalize-OS($name) {
-            if (-not $name) { return 'Windows' }
-            $n = $name.ToLower()
-            if ($n -match 'windows 11') { return 'Windows 11' }
-            if ($n -match 'windows 10') { return 'Windows 10' }
-            if ($n -match 'server 2016') { return 'Server 2016' }
-            if ($n -match 'server 2019') { return 'Server 2019' }
-            if ($n -match 'server 2022') { return 'Server 2022' }
-            if ($n -match 'server 2025') { return 'Server 2025' }
-            if ($n -match 'windows server') { return 'Windows Server' }
-            return $name
-          }
-
-          function Sev-Rank($s) {
-            switch ($s) {
-              'Critical' { 4 } 'Important' { 3 } 'Moderate' { 2 } 'Medium' { 2 } 'Low' { 1 } default { 0 }
-            }
-          }
-
-          function Get-Severity($vNode) {
-            # Threat[@Type='Impact'] text or CVSS BaseScore -> severity
-            $impact = $vNode.SelectNodes(".//*[local-name()='Threat' and translate(@Type,'IMPACT','impact')='impact']")
-            if ($impact -and $impact.Count -gt 0) {
-              $t = (($impact | ForEach-Object { $_.InnerText }) -join ' ').ToLower()
-              if ($t -match 'critical') { return 'Critical' }
-              if ($t -match 'important') { return 'Important' }
-              if ($t -match 'moderate')  { return 'Moderate' }
-              if ($t -match 'low')       { return 'Low' }
-            }
-            $score = $vNode.SelectSingleNode(".//*[local-name()='CVSSScoreSets']//*[local-name()='BaseScore']")
-            if ($score) {
-              [double]$s = 0; [void][double]::TryParse($score.InnerText, [ref]$s)
-              if ($s -ge 9) { return 'Critical' }
-              elseif ($s -ge 7) { return 'Important' }
-              elseif ($s -ge 4) { return 'Moderate' }
-              else { return 'Low' }
-            }
-            return 'Unknown'
-          }
-
-          # -------- Fetch updates list --------
           $ApiBase = 'https://api.msrc.microsoft.com/cvrf/v3.0'
-          $Since = (Get-Date).ToUniversalTime().AddDays(-30).ToString('o')
-          $updatesUrl = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
+          $Since   = (Get-Date).AddDays(-30).ToString('yyyy-MM-ddTHH:mm:ssZ')
 
-          Write-Host "Fetching updates list since $Since"
-          $updates = Invoke-RestMethod -Uri $updatesUrl -Headers @{Accept='application/json'} -Method Get -TimeoutSec 90
+          $Headers = @{
+            "Accept"        = "application/json"
+            "User-Agent"    = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+            "Cache-Control" = "no-cache"
+          }
 
-          if (-not $updates.value -or $updates.value.Count -eq 0) {
-            Write-Warning "No updates returned by MSRC. Writing empty array."
-            Set-Content -Path "data.json" -Value "[]" -Encoding utf8
+          Write-Host "Fetching update list from MSRC…"
+          $url = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
+
+          try {
+            $updates = Invoke-RestMethod -Uri $url -Headers $Headers -TimeoutSec 90
+          } catch {
+            Write-Error "Failed to fetch updates list: $($_.Exception.Message)"
+            exit 1
+          }
+
+          if (-not $updates.value) {
+            Write-Warning "No updates returned — writing empty JSON."
+            Set-Content -Path data.json -Value "[]" -Encoding utf8
             exit 0
           }
 
-          # -------- Process each CVRF doc --------
-          $rows = New-Object System.Collections.Generic.List[object]
-
-          foreach ($u in ($updates.value | Sort-Object CurrentReleaseDate -Descending)) {
-            $docId   = $u.ID
-            $current = $u.CurrentReleaseDate
-            $initial = $u.InitialReleaseDate
-
-            try {
-              $xmlText = Invoke-RestMethod -Uri "$ApiBase/cvrf/$([uri]::EscapeDataString($docId))" -Headers @{Accept='application/xml'} -Method Get -TimeoutSec 90
-            } catch {
-              Write-Warning "Failed to fetch CVRF $docId : $($_.Exception.Message)"
-              continue
-            }
-
-            [xml]$xml = $xmlText
-
-            # ProductID -> FullProductName map (namespace-agnostic)
-            $prodMap = @{}
-            foreach ($fp in $xml.SelectNodes("//*[local-name()='ProductTree']//*[local-name()='FullProductName']")) {
-              $pid = $fp.Attributes['ProductID']?.Value
-              if ($pid) { $prodMap[$pid] = $fp.InnerText }
-            }
-
-            # Walk vulnerabilities -> remediations of type 'Vendor Fix'
-            foreach ($v in $xml.SelectNodes("//*[local-name()='Vulnerability']")) {
-              $sev = Get-Severity $v
-
-              foreach ($rem in $v.SelectNodes(".//*[local-name()='Remediation']")) {
-                $type = $rem.SelectSingleNode("./*[local-name()='Type']")?.InnerText
-                if (-not $type -or ($type -notmatch 'Vendor\s*Fix')) { continue }
-
-                $desc = ($rem.SelectSingleNode("./*[local-name()='Description']")?.InnerText) ?? 'Security update'
-                $kb   = ([regex]::Match($desc, 'KB\d{7,8}', 'IgnoreCase')).Value.ToUpper()
-                if (-not $kb) { $kb = ([regex]::Match($rem.InnerText, 'KB\d{7,8}', 'IgnoreCase')).Value.ToUpper() }
-                if (-not $kb) { continue }
-
-                $url = $rem.SelectSingleNode("./*[local-name()='URL']")?.InnerText
-                if (-not $url) { $url = "https://support.microsoft.com/help/$($kb -replace 'KB','')" }
-
-                $prodIds = $rem.SelectNodes(".//*[local-name()='ProductID']") | ForEach-Object { $_.InnerText }
-                $osSet = [System.Collections.Generic.HashSet[string]]::new()
-                foreach ($pid in $prodIds) {
-                  if ($prodMap.ContainsKey($pid)) { [void]$osSet.Add( (Normalize-OS $prodMap[$pid]) ) }
-                }
-                if ($osSet.Count -eq 0) { [void]$osSet.Add('Windows') }
-
-                foreach ($os in $osSet) {
-                  $rows.Add([pscustomobject]@{
-                    date           = ($current ?? $initial)
-                    kb             = $kb
-                    url            = $url
-                    description    = $desc
-                    knownIssuesUrl = switch ($os) {
-                      'Windows 11'   { 'https://learn.microsoft.com/windows/release-health/' }
-                      'Windows 10'   { 'https://learn.microsoft.com/windows/release-health/windows10-release-information' }
-                      default        { 'https://learn.microsoft.com/windows/release-health/windows-server-release-information' }
-                    }
-                    os             = $os
-                    severity       = $sev
-                  })
-                }
-              }
+          $list = @()
+          foreach ($item in $updates.value) {
+            $list += [PSCustomObject]@{
+              date           = ($item.CurrentReleaseDate ?? $item.InitialReleaseDate)
+              id             = $item.ID
+              title          = $item.Title
+              kb             = ($item.Title -match 'KB\d{7,8}') ? $Matches[0] : ''
+              os             = ($item.Title -match 'Windows') ? ($item.Title -replace '.*(Windows[^,]*)', '$1') : ''
+              severity       = ($item.Severity ?? 'Unknown')
+              url            = "https://api.msrc.microsoft.com/update-guide/en-US/vulnerability/$($item.ID)"
+              knownIssuesUrl = "https://learn.microsoft.com/windows/release-health/"
             }
           }
 
-          # Dedup by (date|kb|os) keeping highest severity
-          $best = @{}
-          foreach ($r in $rows) {
-            if (-not $r) { continue }
-            $d = [DateTime]$r.date
-            $key = ("{0:yyyy-MM-dd}" -f $d) + '|' + $r.kb + '|' + $r.os
-            if (-not $best.ContainsKey($key)) { $best[$key] = $r; continue }
-            if ((Sev-Rank $r.severity) -gt (Sev-Rank $best[$key].severity)) { $best[$key] = $r }
-          }
+          $json = $list | Sort-Object date -Descending | ConvertTo-Json -Depth 5
+          Set-Content -Path data.json -Value $json -Encoding utf8
+          Write-Host "✅ Wrote $($list.Count) records to data.json"
 
-          $final = $best.GetEnumerator() | ForEach-Object { $_.Value } |
-                   Sort-Object @{Expression={$_.date};Descending=$true}, os, kb
-
-          $json = $final | ConvertTo-Json -Depth 6
-          if (-not $json) { $json = "[]" }
-          Set-Content -Path "data.json" -Value $json -Encoding utf8
-
-          Write-Host "Wrote $($final.Count) rows to data.json"
-
-      - name: Commit data.json
+      - name: Commit updated JSON
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): daily MSRC data.json update"
+          commit_message: "chore: refresh MSRC data.json (daily)"
           file_pattern: data.json
