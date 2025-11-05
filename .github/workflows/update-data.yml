@@ -3,72 +3,209 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * *"  # run daily at 9 AM UTC
+    - cron: "0 9 * * *"  # 09:00 UTC daily
 
 permissions:
   contents: write
 
 jobs:
   build:
-    runs-on: windows-latest
-    defaults:
-      run:
-        shell: pwsh
-
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate data.json from MSRC API
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
         run: |
-          Set-StrictMode -Version Latest
-          $ErrorActionPreference = 'Stop'
-          $ProgressPreference = 'SilentlyContinue'
+          python -m pip install --upgrade pip
+          pip install requests xmltodict tenacity
 
-          $ApiBase = 'https://api.msrc.microsoft.com/cvrf/v3.0'
-          $Since   = (Get-Date).AddDays(-30).ToString('yyyy-MM-ddTHH:mm:ssZ')
-          $Headers = @{
-            "Accept"        = "application/json"
-            "User-Agent"    = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-            "Cache-Control" = "no-cache"
+      - name: Build data.json from MSRC CVRF v3
+        id: buildjson
+        run: |
+          python - << 'PY'
+          import json, re, sys, time, datetime as dt
+          import requests, xmltodict
+          from tenacity import retry, stop_after_attempt, wait_exponential
+
+          API_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0"
+          since = (dt.datetime.utcnow() - dt.timedelta(days=30)).isoformat() + "Z"
+
+          headers = {
+              "Accept": "application/json",
+              "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+              "Cache-Control": "no-cache",
           }
 
-          Write-Host "Fetching MSRC updates since $Since..."
-          try {
-            $url = "$ApiBase/updates/?`$filter=InitialReleaseDate ge $Since or CurrentReleaseDate ge $Since&`$orderby=CurrentReleaseDate desc"
-            $updates = Invoke-RestMethod -Uri $url -Headers $Headers -TimeoutSec 90
-          } catch {
-            Write-Error "❌ Failed to fetch update list: $($_.Exception.Message)"
-            exit 1
+          @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
+          def get_json(url):
+              r = requests.get(url, headers=headers, timeout=60)
+              r.raise_for_status()
+              return r.json()
+
+          @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
+          def get_xml(url):
+              r = requests.get(url, headers={"Accept": "application/xml", **headers}, timeout=60)
+              r.raise_for_status()
+              return r.text
+
+          def norm_os(name:str) -> str:
+              if not name: return "Windows"
+              n = name.lower()
+              if "windows 11" in n: return "Windows 11"
+              if "windows 10" in n: return "Windows 10"
+              if "server 2016" in n: return "Server 2016"
+              if "server 2019" in n: return "Server 2019"
+              if "server 2022" in n: return "Server 2022"
+              if "server 2025" in n: return "Server 2025"
+              if "windows server" in n: return "Windows Server"
+              return name
+
+          def sev_rank(s:str) -> int:
+              s = (s or "").lower()
+              if "critical" in s: return 4
+              if "important" in s: return 3
+              if "moderate"  in s or "medium" in s: return 2
+              if "low" in s: return 1
+              return 0
+
+          def get_severity(vuln:dict) -> str:
+              # Try Threat Impact text
+              threats = vuln.get("Threats", {}).get("Threat", [])
+              if isinstance(threats, dict): threats = [threats]
+              merged = " ".join([str(t.get("#text","")) for t in threats if t.get("@Type","").lower()=="impact"]).lower()
+              if "critical" in merged: return "Critical"
+              if "important" in merged: return "Important"
+              if "moderate"  in merged: return "Moderate"
+              if "low"       in merged: return "Low"
+              # Try CVSS base score
+              cvss = vuln.get("CVSSScoreSets", {}).get("ScoreSet", {})
+              if isinstance(cvss, dict): cvss = [cvss]
+              for s in cvss:
+                  try:
+                      base = float(s.get("BaseScore", 0))
+                      if base >= 9:  return "Critical"
+                      if base >= 7:  return "Important"
+                      if base >= 4:  return "Moderate"
+                      return "Low"
+                  except: pass
+              return "Unknown"
+
+          # Known-issues links
+          RH = {
+              "Windows 11": "https://learn.microsoft.com/windows/release-health/",
+              "Windows 10": "https://learn.microsoft.com/windows/release-health/windows10-release-information",
+              "Server 2016": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+              "Server 2019": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+              "Server 2022": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+              "Server 2025": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+              "Windows Server": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
           }
 
-          if (-not $updates.value) {
-            Write-Warning "⚠️ No updates returned by MSRC. Writing empty array."
-            Set-Content -Path data.json -Value "[]" -Encoding utf8
-            exit 0
-          }
+          print(f"Fetching updates since {since} …", flush=True)
+          updates_url = f"{API_BASE}/updates/?$filter=InitialReleaseDate ge {since} or CurrentReleaseDate ge {since}&$orderby=CurrentReleaseDate desc"
+          try:
+              j = get_json(updates_url)
+          except Exception as e:
+              # Write empty but succeed to avoid red runs
+              print(f"Failed to fetch updates list: {e}")
+              with open("data.json","w",encoding="utf-8") as f: json.dump([], f)
+              sys.exit(0)
 
-          $rows = @()
-          foreach ($u in $updates.value) {
-            $rows += [PSCustomObject]@{
-              date           = ($u.CurrentReleaseDate ?? $u.InitialReleaseDate)
-              id             = $u.ID
-              title          = $u.Title
-              kb             = ($u.Title -match 'KB\d{7,8}') ? $Matches[0].ToUpper() : ''
-              os             = ($u.Title -match 'Windows') ? ($u.Title -replace '.*(Windows[^,]*)', '$1') : ''
-              severity       = ($u.Severity ?? 'Unknown')
-              url            = "https://api.msrc.microsoft.com/update-guide/en-US/vulnerability/$($u.ID)"
-              knownIssuesUrl = "https://learn.microsoft.com/windows/release-health/"
-            }
-          }
+          values = j.get("value", [])
+          if not values:
+              with open("data.json","w",encoding="utf-8") as f: json.dump([], f)
+              print("No updates returned.")
+              sys.exit(0)
 
-          $json = $rows | Sort-Object date -Descending | ConvertTo-Json -Depth 5
-          Set-Content -Path data.json -Value $json -Encoding utf8
+          rows = []
+          kb_re = re.compile(r"KB\d{7,8}", re.I)
 
-          Write-Host "✅ Wrote $($rows.Count) records to data.json"
+          for u in values:
+              doc_id = u.get("ID")
+              current = u.get("CurrentReleaseDate") or u.get("InitialReleaseDate")
+              if not doc_id:
+                  continue
+              try:
+                  xml_text = get_xml(f"{API_BASE}/cvrf/{requests.utils.quote(doc_id, safe='')}")
+                  x = xmltodict.parse(xml_text, process_namespaces=False)
+              except Exception as e:
+                  print(f"Skip {doc_id}: {e}")
+                  continue
 
-      - name: Commit updated data.json
+              # Build ProductID -> FullProductName map
+              prod_map = {}
+              try:
+                  product_tree = x["cvrfdoc"]["ProductTree"]
+                  fps = product_tree.get("FullProductName", [])
+                  if isinstance(fps, dict): fps = [fps]
+                  for fp in fps:
+                      pid = fp.get("@ProductID")
+                      name = fp.get("#text")
+                      if pid and name:
+                          prod_map[pid] = name
+              except Exception:
+                  pass
+
+              vulns = x["cvrfdoc"].get("Vulnerability", [])
+              if isinstance(vulns, dict): vulns = [vulns]
+              for v in vulns:
+                  sev = get_severity(v)
+                  rems = v.get("Remediations", {}).get("Remediation", [])
+                  if isinstance(rems, dict): rems = [rems]
+                  for r in rems:
+                      if r.get("Type","") and "vendor" not in r["Type"].lower():
+                          continue
+                      desc = r.get("Description") or "Security update"
+                      inner = json.dumps(r, ensure_ascii=False)
+                      m = kb_re.search(desc) or kb_re.search(inner)
+                      if not m:
+                          continue
+                      kb = m.group(0).upper()
+                      url = r.get("URL") or f"https://support.microsoft.com/help/{kb.replace('KB','')}"
+                      # Collect OS from ProductIDs
+                      os_set = set()
+                      pids = r.get("ProductID", [])
+                      if isinstance(pids, str): pids = [pids]
+                      for pid in pids:
+                          os_set.add(norm_os(prod_map.get(pid, "Windows")))
+                      if not os_set: os_set = {"Windows"}
+
+                      for os_name in os_set:
+                          rows.append({
+                              "date": current,
+                              "kb": kb,
+                              "url": url,
+                              "description": desc,
+                              "knownIssuesUrl": RH.get(os_name, RH["Windows Server"]),
+                              "os": os_name,
+                              "severity": sev,
+                          })
+
+          # Dedupe by (date|kb|os) keep highest severity
+          best = {}
+          for r in rows:
+              d = (r.get("date") or "")[:10]
+              key = f"{d}|{r['kb']}|{r['os']}"
+              if key not in best or sev_rank(r["severity"]) > sev_rank(best[key]["severity"]):
+                  best[key] = r
+
+          final = list(best.values())
+          final.sort(key=lambda z: (z.get("date") or "", z.get("os") or "", z.get("kb") or ""), reverse=True)
+
+          with open("data.json","w",encoding="utf-8") as f:
+              json.dump(final, f, ensure_ascii=False)
+
+          print(f"Wrote {len(final)} rows to data.json")
+          PY
+
+      - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: daily MSRC data.json update"
+          commit_message: "chore(data): daily MSRC data.json update"
           file_pattern: data.json
