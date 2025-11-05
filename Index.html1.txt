@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Windows Updates – Last 2 Months (Client + Server)</title>
+<style>
+  :root { --bg:#0b0f14; --card:#121821; --muted:#aab5c3; --text:#ebf1f7; --accent:#4da3ff; --line:#243041; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif}
+  header{position:sticky;top:0;z-index:5;background:linear-gradient(180deg, rgba(11,15,20,.98), rgba(11,15,20,.85));backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+  .wrap{max-width:1200px;margin:0 auto;padding:18px}
+  h1{margin:0 0 12px;font-size:20px;font-weight:700}
+  .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  button,.btn{background:#1a2432;border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:12px;cursor:pointer}
+  button:hover{border-color:#3a4a62}
+  .primary{background:linear-gradient(180deg,#1f3656,#1a2b44);border-color:#33507a}
+  .pill{background:#121a26;border:1px solid var(--line);padding:8px 10px;border-radius:999px;color:var(--muted)}
+  input,select{background:#0f1622;border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:12px}
+  input::placeholder{color:#6f8098}
+  .content{max-width:1200px;margin:18px auto;padding:0 18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .tablewrap{overflow:auto}
+  table{width:100%;border-collapse:separate;border-spacing:0}
+  thead th{position:sticky;top:0;background:#121a26;border-bottom:1px solid var(--line);text-align:left;padding:12px;font-weight:600}
+  tbody td{border-top:1px solid var(--line);padding:12px;vertical-align:top}
+  a{color:var(--accent);text-decoration:none}
+  .muted{color:var(--muted)}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:12px}
+  .sev-security{border-color:#ff9a5a;color:#ffd1b0}
+  .sev-quality{border-color:#61d095;color:#b7f3d0}
+  .status{font-variant-numeric:tabular-nums}
+  .footer{padding:12px 16px;color:var(--muted);border-top:1px solid var(--line);background:#0e141d}
+  @media print {
+    header, .controls, .footer { display:none !important; }
+    body { background:#fff; color:#000; }
+    .card { border:none }
+    table, thead th, tbody td { border-color:#ddd; color:#000 }
+    a { color:#06c; text-decoration:underline }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Windows Updates – Last 2 Months (Client + Server)</h1>
+    <div class="controls">
+      <button id="refresh" class="primary">🔄 Refresh (now → 2 months back)</button>
+      <input id="search" type="search" placeholder="Search KB, OS, summary, issues…" style="min-width:280px" />
+      <button id="searchBtn">🔍 Search</button>
+      <select id="osFilter"><option value="">Filter by OS…</option></select>
+      <button id="sortToggle">↕️ Sort: Newest → Oldest</button>
+      <button id="exportCsv">⬇️ Export CSV</button>
+      <button id="exportPdf">🖨️ Export PDF</button>
+      <span class="pill status" id="status">Idle</span>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+  <div class="card">
+    <div class="tablewrap">
+      <table id="updatesTable" aria-label="Windows updates">
+        <thead>
+          <tr>
+            <th>Date</th><th>KB</th><th>Summary</th><th>Known issues</th><th>OS</th><th>Severity</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr><td colspan="6" class="muted" style="padding:24px">Click <b>Refresh</b> to load the latest two months of updates.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      Data via Microsoft Windows Release Health & KB pages. Uses multiple CORS-safe strategies so it works on GitHub Pages.
+    </div>
+  </div>
+</main>
+
+<script>
+/* ---------- Robust fetchers (work on GitHub Pages) ---------- */
+const PROXIES = [
+  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+  u => `https://cors.isomorphic-git.org/${u}`,
+];
+const READABLE = u => `https://r.jina.ai/http://${u.replace(/^https?:\/\//,'')}`; // readable text fallback
+
+async function fetchTextSmart(url){
+  // 1) try CORS proxies (HTML)
+  for(const build of PROXIES){
+    const proxied = build(url);
+    try{
+      const res = await fetch(proxied, {mode:'cors'});
+      if(!res.ok) throw new Error(res.status);
+      return { kind:'html', text: await res.text() };
+    }catch(e){ console.warn('Proxy failed:', proxied, e); }
+  }
+  // 2) readable fallback (TEXT, not HTML)
+  try{
+    const res = await fetch(READABLE(url), {mode:'cors'});
+    if(!res.ok) throw new Error(res.status);
+    return { kind:'text', text: await res.text() };
+  }catch(e){ console.warn('Readable failed:', url, e); }
+  throw new Error('All fetch strategies failed for ' + url);
+}
+
+/* -------------------- UI refs -------------------- */
+const STATUS = document.getElementById('status');
+const TBODY = document.getElementById('tbody');
+const SEARCH = document.getElementById('search');
+const SEARCH_BTN = document.getElementById('searchBtn');
+const REFRESH = document.getElementById('refresh');
+const OS_FILTER = document.getElementById('osFilter');
+const EXPORT_CSV = document.getElementById('exportCsv');
+const EXPORT_PDF = document.getElementById('exportPdf');
+const SORT_TOGGLE = document.getElementById('sortToggle');
+
+let ALL_ROWS = [];
+let CURRENT_FILTER = { text: "", os: "" };
+let SORT_MODE = 'date'; // 'date' or 'os'
+
+/* -------------------- Sources -------------------- */
+const SOURCES = [
+  { os: "Windows 11, version 24H2", url: "https://learn.microsoft.com/en-us/windows/release-health/windows-11-24h2" },
+  { os: "Windows 11, version 23H2", url: "https://learn.microsoft.com/en-us/windows/release-health/windows-11-23h2" },
+  { os: "Windows 11, version 22H2", url: "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2" },
+  { os: "Windows 10, version 22H2", url: "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-22h2" },
+  { os: "Windows Server 2025", url: "https://learn.microsoft.com/en-us/windows/release-health/windows-server-2025" },
+  { os: "Windows Server 2022", url: "https://learn.microsoft.com/en-us/windows/release-health/windows-server-2022" },
+  { os: "Windows Server 2019", url: "https://learn.microsoft.com/en-us/windows/release-health/windows-server-2019" }
+];
+
+/* -------------------- Helpers -------------------- */
+function setStatus(text){ STATUS.textContent = text; }
+function twoMonthsAgo(){ const d=new Date(); d.setMonth(d.getMonth()-2); return d; }
+function isWithinLastTwoMonths(dateStr){ const d=new Date(dateStr); return !isNaN(+d) && d>=twoMonthsAgo() && d<=new Date(); }
+function parseHTML(html){ return new DOMParser().parseFromString(html,'text/html'); }
+function cleanText(s){ return (s||'').replace(/\s+/g,' ').trim(); }
+function inferSeverityFromTexts(title,summary){
+  const t=(title||"")+" "+(summary||"");
+  if(/security|cumulative security/i.test(t)) return {label:"Security", cls:"sev-security"};
+  if(/out[-\s]?of[-\s]?band|OOB/i.test(t)) return {label:"Out-of-band", cls:"sev-security"};
+  if(/preview|non[-\s]?security|quality/i.test(t)) return {label:"Quality", cls:"sev-quality"};
+  return {label:"Security", cls:"sev-security"};
+}
+
+/* ----- Extract (date+KB) from HTML page ----- */
+function extractRowsFromReleaseHealthHTML(doc, osLabel){
+  const rows=[]; const links=[...doc.querySelectorAll('a[href*="support.microsoft.com"]')];
+  for(const a of links){
+    const href=a.getAttribute('href')||''; const text=a.textContent.trim();
+    const kbMatch = text.match(/KB\d{5,}/i) || href.match(/\/help\/(\d{5,})/i);
+    if(!kbMatch) continue;
+    let kb=(text.match(/KB\d{5,}/i)||[])[0]; if(!kb){ const m=href.match(/\/help\/(\d{5,})/i); if(m) kb='KB'+m[1]; }
+    if(!kb) continue;
+
+    let dateText=null;
+    let node=a.closest('tr')||a.closest('section')||a.closest('div');
+    if(node){
+      const cand=node.textContent.split('\n').map(s=>s.trim()).filter(Boolean);
+      for(const c of cand){
+        if(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}\b/i.test(c) || /\b\d{4}-\d{2}-\d{2}\b/.test(c)){
+          dateText = c.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}\b/i)?.[0]
+                  || c.match(/\b\d{4}-\d{2}-\d{2}\b/)?.[0]; break;
+        }
+      }
+    }
+    if(!dateText){
+      const heading=a.closest('article, section, div')?.querySelector('h2,h3,h4');
+      if(heading){
+        const t=heading.textContent;
+        dateText = t.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}\b/i)?.[0]
+                || t.match(/\b\d{4}-\d{2}-\d{2}\b/)?.[0] || null;
+      }
+    }
+    let dateIso=null;
+    if(dateText){ const dt=new Date(dateText); if(!isNaN(+dt) && isWithinLastTwoMonths(dt.toISOString())) dateIso=dt.toISOString().slice(0,10); }
+    if(!dateIso) continue;
+
+    const kbUrl = href.startsWith('http') ? href : new URL(href,'https://learn.microsoft.com').toString();
+    rows.push({ date:dateIso, dateObj:new Date(dateIso), kb, kbUrl, os:osLabel, summary:'', issues:'', severity:'', sevClass:'' });
+  }
+  const dedup=new Map(); for(const r of rows) dedup.set(`${r.date}|${r.kb}`, r); return [...dedup.values()];
+}
+
+/* ----- Extract (date+KB) from TEXT (readable fallback) ----- */
+function extractRowsFromReleaseHealthTEXT(text, osLabel){
+  const rows=[];
+  // Capture a date and a nearby KB with a support link
+  const dateRe = /(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}|\\b\\d{4}-\\d{2}-\\d{2}\\b/gi;
+  const kbUrlRe = /(https?:\/\/support\.microsoft\.com\/[^\s)]+\/help\/(\d{5,}))/gi;
+
+  // Find all KB URLs with numbers
+  let m;
+  while((m = kbUrlRe.exec(text))!==null){
+    const url = m[1];
+    const num = m[2];
+    const kb = 'KB'+num;
+
+    // Look backwards ~400 chars for a date
+    const start = Math.max(0, m.index - 400);
+    const windowStr = text.slice(start, m.index + 50);
+    const dMatch = windowStr.match(dateRe);
+    if(!dMatch) continue;
+
+    const dateText = dMatch[dMatch.length-1];
+    const dt = new Date(dateText);
+    if(isNaN(+dt) || !isWithinLastTwoMonths(dt.toISOString())) continue;
+
+    rows.push({ date: dt.toISOString().slice(0,10), dateObj: dt, kb, kbUrl: url, os: osLabel, summary:'', issues:'', severity:'', sevClass:'' });
+  }
+
+  // dedup
+  const dedup=new Map(); for(const r of rows) dedup.set(`${r.date}|${r.kb}`, r); return [...dedup.values()];
+}
+
+/* ----- Read KB page and extract (works for HTML or TEXT) ----- */
+async function fetchKBAndExtract(kbUrl){
+  const { kind, text } = await fetchTextSmart(kbUrl);
+  let summary='', issues='', title='';
+
+  if(kind==='html'){
+    const doc = parseHTML(text);
+    title = doc.querySelector('h1,h2')?.textContent?.trim()||'';
+    const allText = doc.body?.innerText || '';
+    const highlightsHdr = [...doc.querySelectorAll('h2,h3,h4')].find(h=>/highlights/i.test(h.textContent));
+    if(highlightsHdr){
+      const next=highlightsHdr.nextElementSibling;
+      if(next && (next.matches('ul,ol') || next.querySelector('li'))){
+        const items = next.matches('ul,ol')?[...next.querySelectorAll('li')]:[...next.querySelectorAll('li')];
+        summary = items.slice(0,4).map(li=>cleanText(li.textContent)).join(' • ');
+      }
+    }
+    if(!summary){ const m=allText.match(/This update[\\s\\S]{0,300}\\./i); if(m) summary=cleanText(m[0]); }
+    const issuesHdr=[...doc.querySelectorAll('h2,h3,h4')].find(h=>/known issues/i.test(h.textContent));
+    if(issuesHdr){
+      let blk=issuesHdr.nextElementSibling; let parts=[]; let hops=0;
+      while(blk && hops<6){ if(/h2|h3|h4/i.test(blk.tagName)) break; parts.push(cleanText(blk.textContent)); blk=blk.nextElementSibling; hops++; }
+      issues=parts.join(' ').slice(0,400);
+    } else {
+      const m2=allText.match(/Known issues[\\s\\S]{0,500}/i); if(m2) issues=cleanText(m2[0]).slice(0,400);
+    }
+  } else {
+    // TEXT mode: use regex scanning
+    const all = text;
+    title = (all.match(/^.+$/m)||[''])[0];
+    const h = all.match(/highlights[:\s]*([\s\S]{0,600})/i); if(h) summary = cleanText(h[1]).split(/\.\s+/).slice(0,2).join('. ');
+    if(!summary){ const m=all.match(/This update[\s\S]{0,300}\./i); if(m) summary=cleanText(m[0]); }
+    const ki = all.match(/known issues[:\s]*([\s\S]{0,600})/i); if(ki) issues = cleanText(ki[1]).split(/\n/).slice(0,3).join(' ').slice(0,400);
+  }
+  return { title, summary, issues };
+}
+
+/* -------------------- Render & export -------------------- */
+function rebuildOsDropdown(rows){
+  const uniq=[...new Set(rows.map(r=>r.os))].sort();
+  OS_FILTER.innerHTML = `<option value="">Filter by OS…</option>` + uniq.map(os=>`<option value="${os}">${os}</option>`).join('');
+}
+function render(rows){
+  let list=rows.slice();
+  if(CURRENT_FILTER.text){
+    const q=CURRENT_FILTER.text.toLowerCase();
+    list=list.filter(r =>
+      r.kb.toLowerCase().includes(q) || r.os.toLowerCase().includes(q) ||
+      (r.summary||'').toLowerCase().includes(q) || (r.issues||'').toLowerCase().includes(q)
+    );
+  }
+  if(CURRENT_FILTER.os) list=list.filter(r=> r.os===CURRENT_FILTER.os);
+  if(SORT_MODE==='date') list.sort((a,b)=> b.dateObj - a.dateObj);
+  else list.sort((a,b)=> a.os.localeCompare(b.os) || b.dateObj - a.dateObj);
+
+  if(!list.length){
+    TBODY.innerHTML = `<tr><td colspan="6" class="muted" style="padding:24px">No updates match your filters.</td></tr>`;
+    return;
+  }
+  TBODY.innerHTML = list.map(r => `
+    <tr>
+      <td>${r.date}</td>
+      <td><a href="${r.kbUrl}" target="_blank" rel="noopener">${r.kb}</a></td>
+      <td>${r.summary ? r.summary : '<span class="muted">—</span>'}</td>
+      <td>${r.issues ? r.issues : '<span class="muted">—</span>'}</td>
+      <td>${r.os}</td>
+      <td><span class="badge ${r.sevClass||''}">${r.severity||'—'}</span></td>
+    </tr>`).join('');
+}
+function getRenderedRows(){
+  let rows=ALL_ROWS.slice();
+  if(SORT_MODE==='date') rows.sort((a,b)=> b.dateObj-a.dateObj);
+  else rows.sort((a,b)=> a.os.localeCompare(b.os)||b.dateObj-a.dateObj);
+  if(CURRENT_FILTER.text){
+    const q=CURRENT_FILTER.text.toLowerCase();
+    rows=rows.filter(r => r.kb.toLowerCase().includes(q) || r.os.toLowerCase().includes(q) ||
+      (r.summary||'').toLowerCase().includes(q) || (r.issues||'').toLowerCase().includes(q));
+  }
+  if(CURRENT_FILTER.os) rows=rows.filter(r=> r.os===CURRENT_FILTER.os);
+  return rows;
+}
+function toCSV(rows){
+  const esc=s=>`"${String(s??'').replace(/"/g,'""')}"`;
+  const header=["Date","KB","KB URL","Summary","Known issues","OS","Severity"];
+  const lines=[header.join(",")];
+  rows.forEach(r=>lines.push([esc(r.date),esc(r.kb),esc(r.kbUrl),esc(r.summary),esc(r.issues),esc(r.os),esc(r.severity)].join(",")));
+  return lines.join("\r\n");
+}
+function download(filename, blob){
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename;
+  document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+function exportCSV(){ const rows=getRenderedRows(); download(`windows-updates_${new Date().toISOString().slice(0,10)}.csv`, new Blob([toCSV(rows)], {type:"text/csv;charset=utf-8"})); }
+function exportPDF(){ window.print(); }
+
+/* -------------------- Main loader -------------------- */
+async function loadAll(){
+  try{
+    setStatus('Loading sources…'); ALL_ROWS=[]; render(ALL_ROWS);
+    const cutoff=twoMonthsAgo();
+
+    for(const src of SOURCES){
+      setStatus(`Reading ${src.os}…`);
+      let payload;
+      try { payload = await fetchTextSmart(src.url); }
+      catch(e){ console.warn('Source failed:', src.url, e); continue; }
+
+      let rows=[];
+      if(payload.kind==='html'){
+        const doc=parseHTML(payload.text);
+        rows = extractRowsFromReleaseHealthHTML(doc, src.os);
+      } else {
+        rows = extractRowsFromReleaseHealthTEXT(payload.text, src.os);
+      }
+
+      rows = rows.filter(r => r.dateObj >= cutoff && r.dateObj <= new Date());
+      ALL_ROWS.push(...rows);
+    }
+
+    // Dedup across sources
+    const map=new Map(); for(const r of ALL_ROWS) map.set(`${r.date}|${r.kb}|${r.os}`, r);
+    ALL_ROWS=[...map.values()];
+
+    rebuildOsDropdown(ALL_ROWS);
+    render(ALL_ROWS);
+
+    // KB details
+    let i=0;
+    for(const r of ALL_ROWS){
+      setStatus(`Reading KB details ${++i}/${ALL_ROWS.length}…`);
+      try{
+        const det = await fetchKBAndExtract(r.kbUrl);
+        r.summary = det.summary || cleanText(det.title);
+        r.issues  = det.issues || '';
+        const sev = inferSeverityFromTexts(det.title, det.summary);
+        r.severity = sev.label; r.sevClass = sev.cls;
+      }catch(e){ console.warn('KB failed:', r.kbUrl, e); }
+      render(ALL_ROWS);
+    }
+
+    setStatus(`Done. Loaded ${ALL_ROWS.length} updates.`);
+  }catch(e){
+    console.error(e);
+    setStatus('Error loading updates (see console).');
+  }
+}
+
+/* -------------------- Events -------------------- */
+REFRESH.addEventListener('click', loadAll);
+SEARCH_BTN.addEventListener('click', ()=>{ CURRENT_FILTER.text=SEARCH.value.trim(); render(ALL_ROWS); });
+SEARCH.addEventListener('keydown', e=>{ if(e.key==='Enter') SEARCH_BTN.click(); });
+OS_FILTER.addEventListener('change', ()=>{ CURRENT_FILTER.os=OS_FILTER.value; render(ALL_ROWS); });
+EXPORT_CSV.addEventListener('click', exportCSV);
+EXPORT_PDF.addEventListener('click', exportPDF);
+SORT_TOGGLE.addEventListener('click', ()=>{
+  if(SORT_MODE==='date'){ SORT_MODE='os'; SORT_TOGGLE.textContent='↕️ Sort: OS (A→Z), Newest in group'; }
+  else { SORT_MODE='date'; SORT_TOGGLE.textContent='↕️ Sort: Newest → Oldest'; }
+  render(ALL_ROWS);
+});
+
+/* Auto-load on open */
+window.addEventListener('load', loadAll);
+</script>
+</body>
+</html>
