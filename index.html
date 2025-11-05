@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Windows Updates — Last 30 Days</title>
+<style>
+  :root {
+    --bg: #0b1020; --card:#121830; --ink:#e6ecff; --muted:#a8b2d1; --accent:#6ea8fe;
+    --ok:#33d69f; --warn:#ffba49; --crit:#ff5d5d;
+  }
+  html,body { margin:0; background:var(--bg); color:var(--ink); font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; }
+  header { position:sticky; top:0; z-index:9; background:linear-gradient(180deg, rgba(11,16,32,.97), rgba(11,16,32,.75) 70%, transparent); backdrop-filter:saturate(140%) blur(6px); }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 20px; }
+  h1 { margin:0 0 12px; font-size: clamp(22px, 3vw, 28px); letter-spacing:.3px }
+  .controls { display:grid; gap:10px; grid-template-columns: 1fr 230px 230px 1fr; align-items:center; }
+  .controls > * { background:var(--card); border:1px solid #223; color:var(--ink); border-radius:12px; padding:10px 12px; }
+  .controls input[type="search"] { grid-column: 1 / span 2; }
+  .buttons { display:flex; gap:10px; justify-content:flex-end; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius:12px; border:1px solid #2a335a; background:#182043; color:var(--ink); cursor:pointer; text-decoration:none; }
+  .btn:hover { border-color:#3a4580; background:#1c2650; }
+  .btn svg { width:16px; height:16px; opacity:.8 }
+  table { width:100%; border-collapse:separate; border-spacing:0 8px; margin-top:14px; }
+  thead th { font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:var(--muted); text-align:left; padding:0 12px 6px; }
+  tbody tr { background:var(--card); }
+  tbody td { padding:12px; vertical-align:top; border-top:1px solid #223; border-bottom:1px solid #223; }
+  tbody td:first-child { border-left:1px solid #223; border-top-left-radius:12px; border-bottom-left-radius:12px; white-space:nowrap;}
+  tbody td:last-child { border-right:1px solid #223; border-top-right-radius:12px; border-bottom-right-radius:12px; }
+  a { color:var(--accent); text-decoration:none }
+  .badge { display:inline-block; padding:3px 8px; border-radius:999px; font-size:12px; border:1px solid #2a335a; background:#182043; }
+  .sev-Critical { background: rgba(255,93,93,.15); border-color:rgba(255,93,93,.35); color:#ff9c9c; }
+  .sev-Important { background: rgba(255,186,73,.15); border-color:rgba(255,186,73,.35); color:#ffd59a; }
+  .sev-Moderate, .sev-Medium { background: rgba(110,168,254,.15); border-color:rgba(110,168,254,.35); color:#cfe1ff; }
+  .sev-Low { background: rgba(51,214,159,.15); border-color:rgba(51,214,159,.35); color:#b6f3dd; }
+  .muted { color:var(--muted); }
+  .count { font-size:12px; color:var(--muted); margin-left:8px }
+  .empty { padding:28px; text-align:center; color:var(--muted); background:var(--card); border:1px dashed #2a335a; border-radius:12px; margin-top:16px }
+  footer { color:var(--muted); font-size:12px; margin:24px 0 60px }
+  @media (max-width: 900px) {
+    .controls { grid-template-columns: 1fr 1fr; }
+    .controls input[type="search"] { grid-column: 1 / -1; }
+    .buttons { grid-column: 1 / -1; justify-content: flex-start; flex-wrap:wrap }
+  }
+
+  /* Print styles for nice PDF */
+  @media print {
+    header { position:static; background:none; }
+    .controls, .buttons { display:none; }
+    body { background:#fff; color:#000; }
+    tbody tr, .wrap, table, .empty { background:#fff !important; border-color:#ccc !important; }
+    a { color:#000; text-decoration:underline; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Windows Updates (Last 30 Days) <span id="rowCount" class="count"></span></h1>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search keywords (KB, description, OS, severity) …" />
+      <select id="osFilter" title="Filter by Operating System">
+        <option value="">All operating systems</option>
+        <option>Windows 11</option>
+        <option>Windows 10</option>
+        <option>Server 2016</option>
+        <option>Server 2019</option>
+        <option>Server 2022</option>
+        <option>Server 2025</option>
+      </select>
+      <select id="sortBy" title="Sort">
+        <option value="date_desc">Sort: Newest first</option>
+        <option value="date_asc">Sort: Oldest first</option>
+        <option value="os_asc">Sort: OS A→Z</option>
+        <option value="sev_desc">Sort: Severity (High→Low)</option>
+      </select>
+      <div class="buttons">
+        <button class="btn" id="btnPrint" title="Print or Save as PDF">
+          <!-- printer icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+          Print/PDF
+        </button>
+        <a class="btn" id="btnEmail" href="#" title="Email this report">
+          <!-- mail icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" id="app">
+  <div id="status" class="empty">Loading latest 30 days of Microsoft security updates…</div>
+  <table id="tbl" hidden>
+    <thead>
+      <tr>
+        <th style="width:110px">Date</th>
+        <th style="width:140px">KB</th>
+        <th>Description</th>
+        <th style="width:180px">Known issues</th>
+        <th style="width:160px">Operating system</th>
+        <th style="width:120px">Severity</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</div>
+
+<footer class="wrap">
+  <div class="muted">
+    Source: Microsoft Security Response Center CVRF API v3; Windows Release Health pages for known-issues links.
+  </div>
+</footer>
+
+<script>
+/* ===== Configuration ===== */
+const API_BASE = 'https://api.msrc.microsoft.com/cvrf/v3.0';
+const RELEASE_HEALTH = {
+  "Windows 11": "https://learn.microsoft.com/windows/release-health/",
+  "Windows 10": "https://learn.microsoft.com/windows/release-health/windows10-release-information",
+  "Server 2016": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+  "Server 2019": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+  "Server 2022": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
+  "Server 2025": "https://learn.microsoft.com/windows/release-health/windows-server-release-information"
+};
+const DAYS_BACK = 30;
+
+/* ===== Utilities ===== */
+const $ = sel => document.querySelector(sel);
+const fmtDate = s => new Date(s).toISOString().slice(0,10);
+const todayUTC = () => new Date(Date.now());
+const dateMinusDays = (d, days) => new Date(d.getTime() - days*86400000);
+const bySevRank = sev => ({ Critical:4, Important:3, Moderate:2, Medium:2, Low:1, Unknown:0 }[sev] || 0);
+
+function normalizeOS(productName) {
+  const n = productName.toLowerCase();
+  if (n.includes('windows 11')) return 'Windows 11';
+  if (n.includes('windows 10')) return 'Windows 10';
+  if (n.includes('server 2016') || n.includes('windows server 2016')) return 'Server 2016';
+  if (n.includes('server 2019') || n.includes('windows server 2019')) return 'Server 2019';
+  if (n.includes('server 2022') || n.includes('windows server 2022')) return 'Server 2022';
+  if (n.includes('server 2025') || n.includes('windows server 2025')) return 'Server 2025';
+  if (n.includes('windows server')) return 'Windows Server';
+  return productName;
+}
+
+function extractKB(text) {
+  // Finds first KBnnnnnnn token
+  const m = (text || '').match(/KB\d{7,8}/i);
+  return m ? m[0].toUpperCase() : null;
+}
+
+/* Parse CVRF XML into rows we need */
+function parseCvrf(xmlText, docDates) {
+  const dom = new DOMParser().parseFromString(xmlText, 'application/xml');
+
+  // Map ProductID -> Product Name
+  const prod = {};
+  dom.querySelectorAll('ProductTree FullProductName').forEach(fp => {
+    const id = fp.getAttribute('ProductID') || fp.getAttribute('ProductID') || fp.getAttribute('ProductID');
+    if (id) prod[id] = fp.textContent.trim();
+  });
+
+  const rows = [];
+
+  dom.querySelectorAll('Vulnerability').forEach(vuln => {
+    // Severity: use max severity we can infer (Threat type="Impact" or CVSS BaseScore -> bucket)
+    let sev = 'Unknown';
+    const threat = Array.from(vuln.querySelectorAll('Threat')).find(t => (t.getAttribute('Type')||'').toLowerCase() === 'impact');
+    if (threat) {
+      const s = (threat.textContent || '').toLowerCase();
+      if (s.includes('critical')) sev = 'Critical';
+      else if (s.includes('important')) sev = 'Important';
+      else if (s.includes('moderate')) sev = 'Moderate';
+      else if (s.includes('low')) sev = 'Low';
+    } else {
+      // fallback via CVSS score
+      const score = parseFloat(vuln.querySelector('CVSSScoreSets BaseScore')?.textContent || 'NaN');
+      if (!isNaN(score)) {
+        sev = score >= 9 ? 'Critical' : score >= 7 ? 'Important' : score >= 4 ? 'Moderate' : 'Low';
+      }
+    }
+
+    // Remediations with Vendor Fix usually include KB + ProductID mapping
+    vuln.querySelectorAll('Remediations Remediation').forEach(rem => {
+      const type = (rem.querySelector('Type')?.textContent || '').toLowerCase();
+      if (!type.includes('vendor fix')) return;
+
+      const desc = rem.querySelector('Description')?.textContent?.trim() || '';
+      const kb = extractKB(desc) || extractKB(rem.textContent) || null;
+
+      // Some documents provide a URL we can prefer
+      let url = rem.querySelector('URL')?.textContent?.trim() || (kb ? `https://support.microsoft.com/help/${kb.replace(/KB/i,'')}` : '');
+
+      // Affected products for this remediation
+      const prodIds = Array.from(rem.querySelectorAll('ProductID')).map(p => p.textContent.trim()).filter(Boolean);
+      const osSet = new Set(prodIds.map(id => normalizeOS(prod[id] || id)));
+
+      if (kb) {
+        // Build one row per unique OS for this KB
+        osSet.forEach(os => {
+          rows.push({
+            date: docDates.current || docDates.initial || new Date().toISOString(),
+            kb,
+            url,
+            description: desc || 'Security update',
+            knownIssuesUrl: RELEASE_HEALTH[os] || RELEASE_HEALTH['Windows 11'],
+            os,
+            severity: sev
+          });
+        });
+      }
+    });
+  });
+
+  return rows;
+}
+
+/* Fetch helpers with simple retry */
+async function getJson(url) {
+  const r = await fetch(url, { headers: { 'Accept':'application/json' }});
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return r.json();
+}
+async function getText(url) {
+  const r = await fetch(url, { headers: { 'Accept':'application/xml' }});
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return r.text();
+}
+
+/* ===== Main load ===== */
+(async function main() {
+  try {
+    const now = todayUTC();
+    const since = dateMinusDays(now, DAYS_BACK).toISOString();
+
+    // Get list of CVRF monthly documents that have activity in the last 30 days
+    // We use OData filter on InitialReleaseDate or CurrentReleaseDate
+    const updatesUrl =
+      API_BASE + '/updates/?$filter=InitialReleaseDate ge ' + since +
+      " or CurrentReleaseDate ge " + since +
+      '&$orderby=CurrentReleaseDate desc';
+
+    const updates = await getJson(updatesUrl);
+    const ids = (updates.value || []).map(u => ({ id: u.ID, initial:u.InitialReleaseDate, current:u.CurrentReleaseDate }));
+
+    const allRows = [];
+    for (const item of ids) {
+      // Fetch each CVRF doc (XML in v3)
+      const xml = await getText(API_BASE + '/cvrf/' + encodeURIComponent(item.id));
+      const rows = parseCvrf(xml, { initial:item.initial, current:item.current });
+      allRows.push(...rows);
+    }
+
+    // De-dup (same KB+OS might appear multiple times across vulnerabilities)
+    const uniqMap = new Map();
+    for (const r of allRows) {
+      const key = [fmtDate(r.date), r.kb, r.os].join('|');
+      if (!uniqMap.has(key)) uniqMap.set(key, r);
+      else {
+        // Upgrade severity if the new one is higher
+        const old = uniqMap.get(key);
+        if (bySevRank(r.severity) > bySevRank(old.severity)) uniqMap.set(key, r);
+      }
+    }
+    let rows = Array.from(uniqMap.values());
+
+    // Render
+    const tbody = $('#rows');
+    const table = $('#tbl');
+    const status = $('#status');
+
+    function applyFiltersAndRender() {
+      const q = ($('#q').value || '').trim().toLowerCase();
+      const osSel = $('#osFilter').value;
+      const sortBy = $('#sortBy').value;
+
+      let list = rows.filter(r => {
+        const text = (r.kb + ' ' + r.description + ' ' + r.os + ' ' + r.severity).toLowerCase();
+        if (q && !text.includes(q)) return false;
+        if (osSel && r.os !== osSel) return false;
+        return true;
+      });
+
+      // Sort
+      list.sort((a,b) => {
+        if (sortBy === 'date_desc') return new Date(b.date) - new Date(a.date);
+        if (sortBy === 'date_asc') return new Date(a.date) - new Date(b.date);
+        if (sortBy === 'os_asc') return (a.os > b.os) ? 1 : (a.os < b.os ? -1 : 0);
+        if (sortBy === 'sev_desc') return bySevRank(b.severity) - bySevRank(a.severity);
+        return 0;
+      });
+
+      // Paint
+      tbody.innerHTML = '';
+      for (const r of list) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${fmtDate(r.date)}</td>
+          <td><a href="${r.url}" target="_blank" rel="noopener">${r.kb}</a></td>
+          <td>${r.description ? r.description.replace(/</g,'&lt;') : ''}</td>
+          <td><a href="${r.knownIssuesUrl}" target="_blank" rel="noopener">Release health</a></td>
+          <td>${r.os}</td>
+          <td><span class="badge sev-${r.severity}">${r.severity}</span></td>
+        `;
+        tbody.appendChild(tr);
+      }
+
+      $('#rowCount').textContent = `(${list.length} updates)`;
+      table.hidden = list.length === 0;
+      status.hidden = list.length !== 0;
+      if (list.length === 0) {
+        status.textContent = 'No updates match your filters.';
+      }
+    }
+
+    // Event handlers
+    $('#q').addEventListener('input', applyFiltersAndRender);
+    $('#osFilter').addEventListener('change', applyFiltersAndRender);
+    $('#sortBy').addEventListener('change', applyFiltersAndRender);
+    $('#btnPrint').addEventListener('click', () => window.print());
+    $('#btnEmail').addEventListener('click', (e) => {
+      const subject = encodeURIComponent('Windows Updates — last 30 days');
+      const body = encodeURIComponent('See the latest Windows security updates from the last 30 days. You can open this page in your browser to view, filter, or print a PDF.');
+      e.currentTarget.href = `mailto:?subject=${subject}&body=${body}`;
+    });
+
+    applyFiltersAndRender();
+
+  } catch (err) {
+    console.error(err);
+    const status = document.getElementById('status');
+    status.innerHTML = `
+      <div><strong>Couldn’t fetch data from Microsoft right now.</strong></div>
+      <div class="muted" style="margin-top:8px">
+        If this is a temporary network/CORS issue, reload in a minute. The page pulls from the public MSRC CVRF v3 API.
+      </div>`;
+  }
+})();
+</script>
+</body>
+</html>
