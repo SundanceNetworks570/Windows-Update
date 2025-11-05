@@ -15,42 +15,38 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fetch Windows update data (30 days)
+      - name: Fetch Microsoft Security Updates (last 30 days)
         run: |
-          echo "Fetching Microsoft Security Updates..."
+          echo "Fetching CSV from MSRC feed..."
+          FEED_URL="https://www.catalog.update.microsoft.com/DownloadDialog.aspx"
 
-          DAYS_BACK=30
-          SINCE=$(date -u -d "$DAYS_BACK days ago" +"%Y-%m-%dT00:00:00Z")
-          API="https://api.msrc.microsoft.com/sug/v2.0/en-US/updates"
+          # Microsoft Security Update Guide (SUG) CSV feed URL
+          CSV_URL="https://api.msrc.microsoft.com/cvrf/v2.0/updates?format=csv"
 
-          echo "Querying API since: $SINCE"
-          curl -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
-            -H "Accept: application/json" \
-            -H "Cache-Control: no-cache" \
-            "$API" \
-            | jq --arg SINCE "$SINCE" '
-              [.[] 
-                | select(.currentReleaseDate >= $SINCE)
-                | select(.productFamily | test("Windows"; "i"))
-                | {
-                    date: .currentReleaseDate,
-                    kb: (.kbArticles[0].articleId // "N/A"),
-                    url: ("https://support.microsoft.com/help/" + (.kbArticles[0].articleId // "")),
-                    description: .title,
-                    knownIssuesUrl: "https://learn.microsoft.com/en-us/windows/release-health/",
-                    os: (.productFamily // "Windows"),
-                    severity: (.severity // "Unknown")
-                  }
-              ]
-            ' > data.json
+          # Download CSV feed to temp file
+          curl -s -A "Mozilla/5.0" -H "Accept: text/csv" "https://api.msrc.microsoft.com/sug/v2.0/en-US/updates" -o updates.csv
 
-          COUNT=$(jq length data.json)
-          echo "✅  Extracted $COUNT updates."
-          if [ "$COUNT" -eq 0 ]; then
-            echo "⚠️ No updates found. Check API availability."
-          fi
+          # Parse last 30 days only and convert to JSON
+          awk -F, -v date="$(date -d '30 days ago' +%Y-%m-%d)" '
+            BEGIN {
+              print "["
+            }
+            NR>1 {
+              gsub(/"/, "", $0)
+              if ($1 >= date) {
+                printf("{\"date\":\"%s\",\"kb\":\"%s\",\"description\":\"%s\",\"os\":\"%s\",\"severity\":\"%s\",\"url\":\"https://support.microsoft.com/help/%s\",\"knownIssuesUrl\":\"https://learn.microsoft.com/en-us/windows/release-health/\"},\n",
+                  $1, $2, $3, $4, $5, $2)
+              }
+            }
+            END {
+              print "]"
+            }
+          ' updates.csv > data.json
 
-      - name: Commit generated JSON
+          echo "✅ Generated data.json:"
+          head -n 10 data.json
+
+      - name: Commit updated data.json
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update data.json (daily)"
