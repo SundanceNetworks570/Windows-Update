@@ -1,13 +1,26 @@
-name: Build MSRC updates JSON (daily)
+name: Build MSRC updates JSON (fast)
 
 on:
   workflow_dispatch:
+    inputs:
+      days_back:
+        description: "How many days back to fetch (recommended: 7)"
+        required: false
+        default: "7"
   schedule:
-    - cron: "0 9 * * *"   # 09:00 UTC daily
+    # Daily at 09:05 UTC (staggered a bit)
+    - cron: "5 9 * * *"
+
+concurrency:
+  group: msrc-json-fast
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Hard stop so it can't run forever
+    timeout-minutes: 12
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,148 +30,117 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-dateutil
+          pip install requests
 
-      - name: Build data.json (SUG v2 global API; robust JSON handling)
-        id: build
+      - name: Build data.json (SUG v2; fast retries & 7-day default)
+        env:
+          DAYS_BACK: ${{ inputs.days_back }}
+        shell: bash
         run: |
-          python - <<'PY'
-          import json, time, random, sys, os
+          set -euo pipefail
+          python - << 'PY'
+          import os, json, time, random
           from datetime import datetime, timedelta, timezone
           import requests
 
-          # ---- time window (today back 30 days) ----
-          NOW = datetime.now(timezone.utc)
-          START = NOW - timedelta(days=30)
+          # --- config (fast profile)
+          days_back = int(os.getenv("DAYS_BACK") or "7")   # default 7; pass 30 when needed
+          max_attempts = 6                                 # 6 tries max
+          backoffs = [10, 20, 40, 60, 90, 120]            # ~5.5 min worst-case wait
+          timeout_sec = 25                                 # per request timeout
+          top_n = 200                                      # server-side cap
 
-          # slice the window to reduce throttling (6 chunks × 5 days)
-          def make_slices(start, end, span_days=5):
-            cur = start
-            while cur < end:
-              nxt = min(cur + timedelta(days=span_days), end)
-              yield cur, nxt
-              cur = nxt
+          now = datetime.now(timezone.utc)
+          start = now - timedelta(days=days_back)
 
-          # Strong headers to avoid HTTP 999 (anti-bot)
-          HEADERS = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-            "Accept": "application/json",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Origin": "https://msrc.microsoft.com",
-            "Referer": "https://msrc.microsoft.com/update-guide",
-            "Connection": "keep-alive",
-          }
-
-          BASE = "https://api.msrc.microsoft.com/sug/v2.0/updates"
-
-          # We pull only fields we need to keep payload small
-          SELECT = "title,cveIds,releaseDate,lastModifiedDate"
-          ORDER  = "lastModifiedDate%20desc"
-
-          def fetch_chunk(since_iso, until_iso, max_tries=12):
-            # filter between [since, until)
-            filtr = f"lastModifiedDate%20ge%20{since_iso}%20and%20lastModifiedDate%20lt%20{until_iso}"
-            url = f"{BASE}?$select={SELECT}&$filter={filtr}&$orderby={ORDER}&$top=500"
-            backoff = 15
-            tries = 0
-            while tries < max_tries:
-              tries += 1
-              try:
-                r = requests.get(url, headers=HEADERS, timeout=30)
-              except Exception as e:
-                print(f"⚠️  Request error ({tries}/{max_tries}): {e}")
-                time.sleep(backoff + random.uniform(0, 4))
-                backoff = min(backoff * 2, 300)
-                continue
-
-              ct = r.headers.get("content-type","").lower()
-              if r.status_code == 200 and "json" in ct:
-                try:
-                  data = r.json().get("value", [])
-                  return data
-                except Exception as e:
-                  print(f"⚠️  JSON parse error ({tries}/{max_tries}): {e}")
-
-              # MSRC returns 999 when it rate-limits automation
-              if r.status_code in (999, 429) or r.status_code >= 500 or "json" not in ct:
-                print(f"⏳ MSRC throttled or non-JSON (HTTP {r.status_code}); retrying in {backoff}s… ({tries}/{max_tries})")
-                time.sleep(backoff + random.uniform(0, 4))
-                backoff = min(backoff * 2, 300)
-                continue
-
-              # 4xx other than 429/999: nothing more to do for this chunk
-              print(f"⚠️  HTTP {r.status_code} — giving up this chunk.")
-              return []
-
-            print("❌ All retries failed for chunk.")
-            return []
-
-          def iso(dt):
-            # SUG expects Zulu ISO 8601
-            return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-
-          all_items = []
-          for s, e in make_slices(START, NOW, span_days=5):
-            print(f"🔎 Fetching {iso(s)} .. {iso(e)}")
-            items = fetch_chunk(iso(s), iso(e))
-            print(f"  → {len(items)} items")
-            all_items.extend(items)
-
-          # Deduplicate by CVE + title + lastModifiedDate
-          seen = set()
-          uniq = []
-          for it in all_items:
-            key = (
-              tuple(it.get("cveIds") or []),
-              it.get("title",""),
-              it.get("lastModifiedDate",""),
-            )
-            if key not in seen:
-              seen.add(key)
-              uniq.append(it)
-
-          # Keep only last 30 days strictly (safety)
-          def to_dt(s):
-            try:
-              return datetime.fromisoformat(s.replace("Z","+00:00"))
-            except:
-              return None
-
-          filtered = []
-          for it in uniq:
-            dt = to_dt(it.get("lastModifiedDate","")) or to_dt(it.get("releaseDate",""))
-            if dt and START <= dt.replace(tzinfo=timezone.utc) <= NOW:
-              filtered.append(it)
-
-          out = sorted(
-            filtered,
-            key=lambda x: x.get("lastModifiedDate", x.get("releaseDate","")),
-            reverse=True
+          # MSRC SUG v2: filter strictly by releaseDate window
+          # NOTE: MSRC expects RFC3339 timestamps with 'Z'
+          def iso(dt): return dt.replace(microsecond=0).isoformat().replace("+00:00","Z")
+          url = (
+            "https://api.msrc.microsoft.com/sug/v2.0/updates"
+            f"?$select=title,cveIds,releaseDate,lastModifiedDate,productFamily"
+            f"&$filter=releaseDate ge {iso(start)} and releaseDate le {iso(now)}"
+            f"&$orderby=releaseDate desc"
+            f"&$top={top_n}"
           )
 
-          print(f"✅ Total kept (last 30 days): {len(out)}")
+          headers = {"Accept": "application/json"}
 
-          # Write only if we actually have valid entries; otherwise keep existing
-          if out:
-            with open("data.json", "w", encoding="utf-8") as f:
-              json.dump(out, f, ensure_ascii=False, indent=2)
-            print(f"💾 Wrote {len(out)} rows to data.json (window {START.date()}..{NOW.date()})")
+          def fetch_with_retries(u):
+            for i in range(max_attempts):
+              try:
+                r = requests.get(u, headers=headers, timeout=timeout_sec)
+                # HTTP 429 or 999 are throttle-ish; treat as retryable
+                if r.status_code in (429, 499, 500, 502, 503, 504, 999):
+                  delay = backoffs[i] if i < len(backoffs) else backoffs[-1]
+                  print(f"⚠️  MSRC rate/temporary error (HTTP {r.status_code}); retrying in {delay}s… ({i+1}/{max_attempts})")
+                  time.sleep(delay + random.uniform(0, 1.5))
+                  continue
+                r.raise_for_status()
+                try:
+                  return r.json()
+                except Exception:
+                  delay = backoffs[i] if i < len(backoffs) else backoffs[-1]
+                  print(f"⚠️  Non-JSON response; retrying in {delay}s… ({i+1}/{max_attempts})")
+                  time.sleep(delay + random.uniform(0, 1.5))
+                  continue
+              except requests.RequestException as e:
+                delay = backoffs[i] if i < len(backoffs) else backoffs[-1]
+                print(f"⚠️  Network/API error: {e}; retrying in {delay}s… ({i+1}/{max_attempts})")
+                time.sleep(delay + random.uniform(0, 1.5))
+            print("❌ All retries exhausted or invalid JSON. Returning empty set.")
+            return {"value": []}
+
+          raw = fetch_with_retries(url)
+          items = raw.get("value", [])
+
+          # Extra safety: keep only items within window and normalize fields
+          kept = []
+          def parse_dt(s):
+            try:
+              # Handles "YYYY-MM-DDTHH:MM:SSZ" and with offset
+              if s.endswith("Z"):  # quick path
+                return datetime.fromisoformat(s.replace("Z","+00:00"))
+              return datetime.fromisoformat(s)
+            except Exception:
+              return None
+
+          for it in items:
+            rd = parse_dt(str(it.get("releaseDate","")))
+            if not rd: 
+              continue
+            if rd < start or rd > now:
+              continue
+            kept.append({
+              "title": it.get("title"),
+              "cveIds": it.get("cveIds", []),
+              "releaseDate": rd.isoformat(),
+              "lastModifiedDate": str(it.get("lastModifiedDate")),
+              "productFamily": it.get("productFamily")
+            })
+
+          kept.sort(key=lambda x: x["releaseDate"], reverse=True)
+          print(f"✅ Entries kept (last {days_back} days): {len(kept)}")
+
+          if kept:
+            with open("data.json","w",encoding="utf-8") as f:
+              json.dump(kept, f, ensure_ascii=False, indent=2)
+            print(f"💾 Wrote {len(kept)} rows to data.json")
           else:
+            # Preserve existing file so the website doesn’t blank out
             if os.path.exists("data.json"):
               print("ℹ️  No valid entries found — preserving existing data.json.")
             else:
-              # create empty but valid file the first time
-              with open("data.json", "w", encoding="utf-8") as f:
+              with open("data.json","w",encoding="utf-8") as f:
                 json.dump([], f)
-              print("ℹ️  Created empty data.json (no results).")
-
+              print("ℹ️  No entries and no prior file; created empty data.json.")
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): daily MSRC data.json update"
+          commit_message: "chore(data): MSRC data.json (last ${{ inputs.days_back || '7' }} days)"
           file_pattern: data.json
