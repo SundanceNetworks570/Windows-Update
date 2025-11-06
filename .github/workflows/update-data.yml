@@ -1,243 +1,87 @@
-name: Build MSRC updates JSON (daily)
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 9 * * *"   # 09:00 UTC daily
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests xmltodict tenacity python-dateutil
-
-      - name: Build data.json (today back 30 days; robust CVRF parsing)
+      - name: Build data.json (today back 30 days; ultra-robust CVRF parsing)
         run: |
           python - << 'PY'
-          import json, re
+          import json, re, unicodedata
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
           import requests, xmltodict
-          from tenacity import retry, stop_after_attempt, wait_exponential
 
           NOW = datetime.now(timezone.utc)
           SINCE = NOW - timedelta(days=30)
+          CVRF = "https://api.msrc.microsoft.com/cvrf/v3.0"
 
-          CVRF_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0"
-          H_JSON = {
-            "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
-            "Cache-Control": "no-cache",
-          }
-          H_XML = {"Accept": "application/xml", **H_JSON}
+          def clean_bytes(b: bytes) -> str:
+              if not b:
+                  return ""
+              # remove BOMs, nulls, invisible control chars
+              b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
+              s = b.decode("utf-8", "ignore")
+              s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
+              s = s.lstrip()
+              # drop junk before first '<'
+              i = s.find("<")
+              if i > 0:
+                  s = s[i:]
+              if s[:15].lower().startswith("<!doctype html") or "<html" in s[:200].lower():
+                  return ""
+              return s
 
-          def within_window(iso):
-              try:
-                  d = isoparse(iso)
-              except Exception:
-                  return False
-              return SINCE <= d <= NOW
-
-          def os_bucket(name):
-              if not name: return "Windows"
-              n = name.lower()
-              if "windows 11" in n: return "Windows 11"
-              if "windows 10" in n: return "Windows 10"
-              if "server 2016" in n: return "Server 2016"
-              if "server 2019" in n: return "Server 2019"
-              if "server 2022" in n: return "Server 2022"
-              if "server 2025" in n: return "Server 2025"
-              if "windows server" in n: return "Windows Server"
-              return name
-
-          def sev_rank(s):
-              s=(s or "").lower()
-              if "critical" in s: return 4
-              if "important" in s: return 3
-              if "moderate" in s or "medium" in s: return 2
-              if "low" in s: return 1
-              return 0
-
-          RH = {
-            "Windows 11": "https://learn.microsoft.com/windows/release-health/",
-            "Windows 10": "https://learn.microsoft.com/windows/release-health/windows10-release-information",
-            "Server 2016": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-            "Server 2019": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-            "Server 2022": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-            "Server 2025": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-            "Windows Server": "https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-          }
-
-          @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
           def get_json(url):
-              r = requests.get(url, headers=H_JSON, timeout=60)
+              r = requests.get(url, headers={"Accept":"application/json"})
               r.raise_for_status()
               return r.json()
 
-          @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=8))
-          def get_bytes(url):
-              # Do NOT trust content-type; we normalize ourselves
-              r = requests.get(url, headers=H_XML, timeout=60)
+          def get_xml(url):
+              r = requests.get(url, headers={"Accept":"application/xml"})
               r.raise_for_status()
-              return r.content, r.status_code, dict(r.headers)
+              txt = clean_bytes(r.content)
+              if not txt:
+                  return None
+              try:
+                  return xmltodict.parse(txt, process_namespaces=False)
+              except Exception as e:
+                  # second-pass cleanup if first parse fails
+                  txt = re.sub(r"[^\x09\x0A\x0D\x20-\x7E\xA0-\uFFFF]", "", txt)
+                  try:
+                      return xmltodict.parse(txt, process_namespaces=False)
+                  except Exception:
+                      print(f"Skip malformed XML from {url}: {e}")
+                      return None
 
-          def normalize_xml(b: bytes) -> str:
-              """
-              Robustly coerce server output to clean XML text:
-              - strip BOM
-              - drop leading junk/whitespace until first '<'
-              - if looks like HTML, return ''
-              """
-              if not b:
-                  return ""
-              # strip UTF BOMs
-              if b.startswith(b'\xef\xbb\xbf'):
-                  b = b[3:]
-              if b.startswith(b'\xfe\xff') or b.startswith(b'\xff\xfe'):
-                  # best effort – requests normally decodes; keep as-is if odd
-                  b = b.lstrip(b'\xfe\xff').lstrip(b'\xff\xfe')
-              # find first '<'
-              i = b.find(b'<')
-              if i > 0:
-                  b = b[i:]
-              t = b.decode('utf-8', errors='replace').lstrip()
-              # reject HTML (Akamai/blocked or catalog splash)
-              if t[:15].lower().startswith("<!doctype html") or t[:6].lower().startswith("<html>") or "<html" in t[:200].lower():
-                  return ""
-              return t
-
-          def get_severity(vuln:dict) -> str:
-              threats = vuln.get("Threats",{}).get("Threat",[])
-              if isinstance(threats, dict): threats=[threats]
-              text = " ".join([str(t.get("#text","")) for t in threats if t.get("@Type","").lower()=="impact"]).lower()
-              if "critical" in text: return "Critical"
-              if "important" in text: return "Important"
-              if "moderate"  in text or "medium" in text: return "Moderate"
-              if "low"       in text: return "Low"
-              return "Unknown"
-
-          # Ask MSRC for only updates in last 30 days (server-side filtered)
-          since_iso = (SINCE.strftime("%Y-%m-%dT%H:%M:%SZ"))
-          filt = f"(InitialReleaseDate ge {since_iso} or CurrentReleaseDate ge {since_iso})"
-          updates_url = f"{CVRF_BASE}/updates/?$filter={requests.utils.quote(filt, safe=' ()')}&$orderby=CurrentReleaseDate desc"
-          up = get_json(updates_url)
-          updates = up.get("value", [])
+          since_iso = SINCE.strftime("%Y-%m-%dT%H:%M:%SZ")
+          updates_url = f"{CVRF}/updates/?$filter=(InitialReleaseDate ge {since_iso} or CurrentReleaseDate ge {since_iso})&$orderby=CurrentReleaseDate desc"
+          updates = get_json(updates_url).get("value", [])
           print(f"Found {len(updates)} CVRF update documents in window {SINCE.date()}..{NOW.date()}")
 
-          # Try each recent document until one parses (e.g., 2025-Oct), then stop
-          parsed_any = False
-          all_rows = []
           kb_re = re.compile(r"KB\d{7,8}", re.I)
+          rows = []
 
           for u in updates:
-              rdate = u.get("CurrentReleaseDate") or u.get("InitialReleaseDate")
-              if not rdate or not within_window(rdate):
-                  continue
               doc_id = u.get("ID")
               if not doc_id:
                   continue
-
-              url = f"{CVRF_BASE}/cvrf/{requests.utils.quote(doc_id, safe='')}"
-              try:
-                  body, status, hdrs = get_bytes(url)
-                  xml_text = normalize_xml(body)
-                  if not xml_text:
-                      print(f"Skip {doc_id}: non-XML/HTML response (status {status})")
-                      continue
-                  x = xmltodict.parse(xml_text, process_namespaces=False)
-              except Exception as e:
-                  print(f"Skip {doc_id}: {e}")
+              url = f"{CVRF}/cvrf/{doc_id}"
+              x = get_xml(url)
+              if not x:
                   continue
-
-              # Product map for OS labeling
-              prod_map = {}
-              try:
-                  fps = x["cvrfdoc"]["ProductTree"].get("FullProductName", [])
-                  if isinstance(fps, dict): fps=[fps]
-                  for fp in fps:
-                      pid = fp.get("@ProductID"); name = fp.get("#text")
-                      if pid and name: prod_map[pid]=name
-              except: pass
-
               vulns = x["cvrfdoc"].get("Vulnerability", [])
               if isinstance(vulns, dict): vulns=[vulns]
-
-              rows=[]
               for v in vulns:
-                  sev = get_severity(v)
                   rems = v.get("Remediations",{}).get("Remediation",[])
                   if isinstance(rems, dict): rems=[rems]
                   for r in rems:
-                      if "vendor" not in (r.get("Type","").lower()):
-                          continue
-                      desc = r.get("Description") or "Security update"
-                      inner = json.dumps(r, ensure_ascii=False)
-                      m = kb_re.search(desc) or kb_re.search(inner)
-                      if not m: 
-                          continue
-                      kb = m.group(0).upper()
-                      sup = r.get("URL") or f"https://support.microsoft.com/help/{kb[2:]}"
-
-                      pids = r.get("ProductID", [])
-                      if isinstance(pids, str): pids=[pids]
-                      oses = set(os_bucket(prod_map.get(pid, "Windows")) for pid in pids) or {"Windows"}
-
-                      dateZ = isoparse(rdate).astimezone(timezone.utc).isoformat().replace("+00:00","Z")
-                      for osn in oses:
-                          rows.append({
-                              "date": dateZ,
-                              "kb": kb,
-                              "url": sup,
-                              "description": desc,
-                              "knownIssuesUrl": RH.get(osn, RH["Windows Server"]),
-                              "os": osn,
-                              "severity": sev,
-                          })
-
+                      d = r.get("Description","")
+                      m = kb_re.search(d)
+                      if not m: continue
+                      rows.append({
+                          "kb": m.group(0),
+                          "desc": d[:120]
+                      })
               if rows:
-                  parsed_any = True
-                  print(f"Parsed bulletin {doc_id}: {len(rows)} updates")
-                  all_rows.extend(rows)
-                  # stop at the first valid monthly bulletin (most recent)
+                  print(f"Parsed bulletin {doc_id} with {len(rows)} KBs")
                   break
-              else:
-                  print(f"{doc_id} parsed but no rows extracted; trying next…")
-
-          # Dedup and keep highest severity
-          best={}
-          for r in all_rows:
-              d=(r["date"] or "")[:10]
-              key=f"{d}|{r['kb']}|{r['os']}"
-              if key not in best or (sev_rank(r["severity"])>sev_rank(best[key]["severity"])):
-                  best[key]=r
-
-          final = sorted(best.values(), key=lambda z: (z.get("date") or "", z.get("os") or "", z.get("kb") or ""), reverse=True)
 
           with open("data.json","w",encoding="utf-8") as f:
-              json.dump(final, f, ensure_ascii=False)
-
-          if parsed_any:
-              print(f"Wrote {len(final)} rows to data.json (strict window: {SINCE.date()}..{NOW.date()})")
-          else:
-              print("No valid CVRF bulletin parsed in the window. data.json will be an empty array [] this run.")
+              json.dump(rows, f, ensure_ascii=False, indent=2)
+          print(f"Wrote {len(rows)} rows to data.json")
           PY
-
-      - name: Commit if changed
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore(data): MSRC data.json (last 30 days, robust CVRF parse)"
-          file_pattern: data.json
