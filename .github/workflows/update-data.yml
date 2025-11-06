@@ -3,7 +3,7 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "9 9 * * *"   # 09:09 UTC daily
+    - cron: "9 9 * * *"
 
 permissions:
   contents: write
@@ -11,7 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,12 +20,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests python-dateutil
 
-      - name: Build data.json (SUG v2 first; CVRF fallback; includes description)
+      - name: Build data.json (SUG v2 global API; includes description)
         run: |
           python - << 'PY'
           import requests, json, re
@@ -45,18 +44,23 @@ jobs:
 
           entries, seen = [], set()
 
-          print(">>> SUG v2.0: https://api.msrc.microsoft.com/sug/v2.0/en-US/updates")
+          # ✅ Updated API endpoint (global, not en-US)
+          SUG_URL = "https://api.msrc.microsoft.com/sug/v2.0/updates"
+
+          print(f"Fetching data from: {SUG_URL}")
           try:
-              r = requests.get("https://api.msrc.microsoft.com/sug/v2.0/en-US/updates", timeout=45)
+              r = requests.get(SUG_URL, timeout=45)
               r.raise_for_status()
-              for u in (r.json().get("value") or []):
+              data = r.json()
+              for u in data.get("value", []):
                   title = (u.get("Title") or "").strip()
                   pub = safe_date(u.get("ReleaseDate"))
                   if not pub or not (SINCE <= pub <= NOW):
                       continue
                   for cve in (u.get("CVEIDs") or []):
                       key = (cve, pub.date().isoformat())
-                      if key in seen: continue
+                      if key in seen: 
+                          continue
                       seen.add(key)
                       entries.append({
                           "cve": cve,
@@ -65,63 +69,13 @@ jobs:
                           "source": "MSRC-SUG",
                           "description": title or "(no description)"
                       })
-              print(f"SUG v2.0 collected: {len(entries)}")
+              print(f"Collected {len(entries)} entries from SUG API.")
           except Exception as e:
-              print(f"WARNING: SUG v2.0 failed: {e}")
+              print(f"WARNING: SUG API failed: {e}")
 
-          if not entries:
-              print(">>> Fallback: CVRF v3 monthly XML (last 2 months)")
-              import xml.etree.ElementTree as ET
-              def findall_any(node, tag): return node.findall(f".//{{*}}{tag}")
-              def get(node, path):
-                  n = node.find(path)
-                  return (n.text or "").strip() if (n is not None and n.text) else ""
-
-              labels = [NOW.strftime("%Y-%b"), (NOW - timedelta(days=31)).strftime("%Y-%b")]
-              for lab in labels:
-                  url = f"https://api.msrc.microsoft.com/cvrf/v3.0/{lab}"
-                  try:
-                      rr = requests.get(url, timeout=45)
-                      if rr.status_code == 404:
-                          print(f"  skip {lab}: 404")
-                          continue
-                      rr.raise_for_status()
-                      root = ET.fromstring(rr.text)
-                      for v in findall_any(root, "Vulnerability"):
-                          cve = get(v, ".//{*}CVE")
-                          if not cve:
-                              aid = get(v, ".//{*}ID")
-                              if re.match(r"(?i)^CVE-\d{4}-\d+", aid):
-                                  cve = aid
-                          if not cve: continue
-
-                          title = get(v, ".//{*}Title")
-                          desc = ""
-                          for note in findall_any(v, "Note"):
-                              t = (note.get("Type") or note.get("type") or "").lower()
-                              if t == "description" and (note.text or "").strip():
-                                  desc = note.text.strip()
-                                  break
-
-                          pub = safe_date(get(v, ".//{*}CurrentReleaseDate") or get(v, ".//{*}InitialReleaseDate"))
-                          if not pub or not (SINCE <= pub <= NOW): continue
-
-                          key = (cve, pub.date().isoformat())
-                          if key in seen: continue
-                          seen.add(key)
-                          entries.append({
-                              "cve": cve,
-                              "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
-                              "releaseDate": pub.date().isoformat(),
-                              "source": lab,
-                              "description": (desc or title or "").strip() or "(no description)"
-                          })
-                      print(f"  {lab}: added, running total {len(entries)}")
-                  except Exception as e:
-                      print(f"  WARN {lab}: {e}")
-
+          # --- Sort and save ---
           entries.sort(key=lambda e: (e["releaseDate"], e["cve"]), reverse=True)
-          print(f">>> Final entries: {len(entries)}  window: {SINCE.date()}..{NOW.date()}")
+          print(f"Writing {len(entries)} entries covering {SINCE.date()}..{NOW.date()}")
           with open(OUT, "w", encoding="utf-8") as f:
               json.dump(entries, f, ensure_ascii=False, indent=2)
           PY
@@ -129,5 +83,5 @@ jobs:
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): daily MSRC updates (SUG v2 + CVRF fallback)"
+          commit_message: "chore(data): MSRC updates via global SUG v2 API"
           file_pattern: data.json
