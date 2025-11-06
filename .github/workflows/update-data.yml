@@ -26,10 +26,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests python-dateutil xmltodict
 
-      - name: Build data.json (last 30 days; skip missing months, never fail)
+      - name: Build data.json (last 30 days; robust date fallback; skip missing months)
         run: |
           python - << 'PY'
-          import json, re, unicodedata
+          import json, unicodedata
           from datetime import datetime, timedelta, timezone
           import requests, xmltodict
           from dateutil.parser import isoparse
@@ -39,7 +39,6 @@ jobs:
           CVRF_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf"
 
           def month_labels(start, end):
-            """Return labels like 2025-Oct, 2025-Nov covering start..end."""
             cur = datetime(start.year, start.month, 1, tzinfo=timezone.utc)
             labels = []
             while cur <= end:
@@ -53,9 +52,7 @@ jobs:
             if not b: return ""
             b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
             s = b.decode("utf-8", "ignore")
-            # strip control chars except whitespace
             s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
-            # bail if the payload is an HTML page
             if "<html" in s[:400].lower():
               return ""
             return s.strip()
@@ -83,13 +80,51 @@ jobs:
               if not isinstance(cur, dict):
                 return default
               cur = cur.get(p)
-            return cur or default
+            return cur if cur is not None else default
 
-          def to_iso(dtstr):
+          def to_utc(dtstr):
             try:
               return isoparse(dtstr).astimezone(timezone.utc)
             except Exception:
               return None
+
+          def newest_revision_date(doc):
+            revs = safe_get(doc, ["cvrfdoc", "cvrf:DocumentTracking", "cvrf:RevisionHistory", "cvrf:Revision"])
+            if not revs:
+              return None
+            if isinstance(revs, dict):
+              revs = [revs]
+            dates = []
+            for r in revs:
+              d = safe_get(r, ["cvrf:Date"])
+              dt = to_utc(d) if d else None
+              if dt:
+                dates.append(dt)
+            return max(dates) if dates else None
+
+          def pick_doc_date(doc, label):
+            # 1) CurrentReleaseDate
+            cur = safe_get(doc, ["cvrfdoc", "cvrf:DocumentTracking", "cvrf:CurrentReleaseDate"])
+            cur_dt = to_utc(cur) if cur else None
+            if cur_dt:
+              print(f"ℹ️ {label}: using CurrentReleaseDate = {cur_dt.date()}")
+              return cur_dt
+
+            # 2) Newest RevisionHistory date
+            rev_dt = newest_revision_date(doc)
+            if rev_dt:
+              print(f"ℹ️ {label}: using RevisionHistory latest = {rev_dt.date()}")
+              return rev_dt
+
+            # 3) InitialReleaseDate
+            init = safe_get(doc, ["cvrfdoc", "cvrf:DocumentTracking", "cvrf:InitialReleaseDate"])
+            init_dt = to_utc(init) if init else None
+            if init_dt:
+              print(f"ℹ️ {label}: using InitialReleaseDate = {init_dt.date()}")
+              return init_dt
+
+            print(f"⚠️ {label}: no usable document date found")
+            return None
 
           rows = []
 
@@ -98,16 +133,12 @@ jobs:
             if not doc:
               continue
 
-            # ---- Correct date for filtering: DocumentTracking/CurrentReleaseDate
-            doc_date_str = safe_get(doc, ["cvrfdoc", "cvrf:DocumentTracking", "cvrf:CurrentReleaseDate"])
-            doc_date = to_iso(doc_date_str)
-            if not doc_date:
-              print(f"⚠️ {label}: missing/invalid CurrentReleaseDate")
+            doc_dt = pick_doc_date(doc, label)
+            if not doc_dt:
               continue
 
-            # Only include this month’s vulns if the document release is in the 30-day window
-            if not (SINCE <= doc_date <= NOW):
-              print(f"ℹ️ {label}: doc date {doc_date.date()} outside window")
+            if not (SINCE <= doc_dt <= NOW):
+              print(f"ℹ️ {label}: doc date {doc_dt.date()} outside window")
               continue
 
             vulns = safe_get(doc, ["cvrfdoc", "cvrf:Vulnerability"])
@@ -123,25 +154,25 @@ jobs:
               rows.append({
                 "cve": cve,
                 "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
-                "releaseDate": doc_date.strftime("%Y-%m-%d"),
+                "releaseDate": doc_dt.strftime("%Y-%m-%d"),
                 "source": label
               })
 
-          # de-dupe on CVE + date
+          # de-dupe by (CVE, releaseDate)
           seen = set()
-          unique = []
+          out = []
           for r in rows:
             key = (r["cve"], r["releaseDate"])
             if key not in seen:
               seen.add(key)
-              unique.append(r)
+              out.append(r)
 
-          unique.sort(key=lambda x: x["releaseDate"], reverse=True)
+          out.sort(key=lambda x: x["releaseDate"], reverse=True)
 
           with open("data.json", "w", encoding="utf-8") as f:
-            json.dump(unique, f, ensure_ascii=False, indent=2)
+            json.dump(out, f, ensure_ascii=False, indent=2)
 
-          print(f"✅ Completed. {len(unique)} updates written (window {SINCE.date()}–{NOW.date()})")
+          print(f"✅ Completed. {len(out)} updates written (window {SINCE.date()}–{NOW.date()})")
           PY
 
       - name: Commit if changed
