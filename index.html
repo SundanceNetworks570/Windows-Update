@@ -1,302 +1,308 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Windows Updates — Last 30 Days</title>
-<style>
-  :root{--bg:#0b1020;--card:#121830;--ink:#e6ecff;--muted:#a8b2d1;--accent:#6ea8fe}
-  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
-  header{position:sticky;top:0;z-index:9;background:linear-gradient(180deg,rgba(11,16,32,.97),rgba(11,16,32,.75) 70%,transparent);backdrop-filter:saturate(140%) blur(6px)}
-  .wrap{max-width:1200px;margin:0 auto;padding:20px}
-  h1{margin:0 0 12px;font-size:clamp(22px,3vw,28px)}
-  .controls{display:grid;gap:10px;grid-template-columns:1fr 230px 230px 1fr;align-items:center}
-  .controls>*{background:var(--card);border:1px solid #223;color:var(--ink);border-radius:12px;padding:10px 12px}
-  .controls input[type="search"]{grid-column:1/span 2}
-  .buttons{display:flex;gap:10px;justify-content:flex-end}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;border:1px solid #2a335a;background:#182043;color:var(--ink);cursor:pointer;text-decoration:none}
-  .btn:hover{border-color:#3a4580;background:#1c2650}
-  table{width:100%;border-collapse:separate;border-spacing:0 8px;margin-top:14px}
-  thead th{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);text-align:left;padding:0 12px 6px}
-  tbody tr{background:var(--card)}
-  tbody td{padding:12px;vertical-align:top;border-top:1px solid #223;border-bottom:1px solid #223}
-  tbody td:first-child{border-left:1px solid #223;border-top-left-radius:12px;border-bottom-left-radius:12px;white-space:nowrap}
-  tbody td:last-child{border-right:1px solid #223;border-top-right-radius:12px;border-bottom-right-radius:12px}
-  a{color:var(--accent);text-decoration:none}
-  .badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:12px;border:1px solid #2a335a;background:#182043}
-  .sev-Critical{background:rgba(255,93,93,.15);border-color:rgba(255,93,93,.35);color:#ff9c9c}
-  .sev-Important{background:rgba(255,186,73,.15);border-color:rgba(255,186,73,.35);color:#ffd59a}
-  .sev-Moderate,.sev-Medium{background:rgba(110,168,254,.15);border-color:rgba(110,168,254,.35);color:#cfe1ff}
-  .sev-Low{background:rgba(51,214,159,.15);border-color:rgba(51,214,159,.35);color:#b6f3dd}
-  .muted{color:var(--muted)}
-  .count{font-size:12px;color:var(--muted);margin-left:8px}
-  .empty{padding:28px;text-align:center;color:var(--muted);background:var(--card);border:1px dashed #2a335a;border-radius:12px;margin-top:16px}
-  footer{color:var(--muted);font-size:12px;margin:24px 0 60px}
-  @media (max-width:900px){.controls{grid-template-columns:1fr 1fr}.controls input[type="search"]{grid-column:1/-1}.buttons{grid-column:1/-1;justify-content:flex-start;flex-wrap:wrap}}
-  @media print{header{position:static;background:none}.controls,.buttons{display:none}body{background:#fff;color:#000}tbody tr,.wrap,table,.empty{background:#fff!important;border-color:#ccc!important}a{color:#000;text-decoration:underline}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Windows Updates (Last 30 Days)</title>
+  <style>
+    :root{
+      --bg:#0f172a;        /* slate-900 */
+      --panel:#111827;     /* gray-900 */
+      --muted:#94a3b8;     /* slate-400 */
+      --text:#e5e7eb;      /* gray-200 */
+      --accent:#60a5fa;    /* blue-400 */
+      --accent-2:#22d3ee;  /* cyan-400 */
+      --ok:#22c55e;        /* green-500 */
+      --warn:#f59e0b;      /* amber-500 */
+      --bad:#ef4444;       /* red-500 */
+      --border:#1f2937;    /* gray-800 */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+      line-height:1.45;
+    }
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 20px 64px;}
+    h1{margin:0 0 16px;font-size:28px}
+    .toolbar{
+      display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 18px;
+    }
+    .toolbar .group{display:flex; gap:10px; flex:1 1 260px}
+    input,select,button{
+      background:#0b1220;color:var(--text);border:1px solid var(--border);
+      padding:10px 12px;border-radius:10px;outline:none;font-size:14px;
+    }
+    input::placeholder{color:var(--muted)}
+    select{cursor:pointer}
+    button{cursor:pointer;border-color:#1e293b}
+    button.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#001b2b;border:none}
+    button.ghost{background:#0b1220}
+    .pill{font-size:12px;color:var(--muted)}
+    .status{margin:18px 0;padding:14px;border:1px dashed var(--border);border-radius:12px;background:#0b1220}
+    .status.bad{border-color:#3f1f1f}
+    .status .title{font-weight:600;margin-bottom:6px}
+    table{width:100%;border-collapse:collapse;background:#0b1220;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+    thead th{
+      text-align:left;font-weight:600;font-size:13px;color:#cbd5e1;background:#0a101d;
+      border-bottom:1px solid var(--border);padding:12px;
+    }
+    tbody td{padding:12px;border-bottom:1px solid var(--border);vertical-align:top}
+    tbody tr:hover{background:#0e1629}
+    .cve{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .muted{color:var(--muted)}
+    .right{display:flex;gap:8px}
+    .badge{
+      display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;background:#0a101d;color:#cbd5e1;border:1px solid var(--border)
+    }
+    footer{margin-top:26px;color:var(--muted);font-size:13px}
+    .hide{display:none !important}
+  </style>
 </head>
 <body>
-<header>
   <div class="wrap">
-    <h1>Windows Updates (Last 30 Days) <span id="rowCount" class="count"></span></h1>
-    <div class="controls">
-      <input id="q" type="search" placeholder="Search keywords (KB, description, OS, severity) …" />
-      <select id="osFilter" title="Filter by Operating System">
-        <option value="">All operating systems</option>
-        <option>Windows 11</option><option>Windows 10</option>
-        <option>Server 2016</option><option>Server 2019</option>
-        <option>Server 2022</option><option>Server 2025</option>
-      </select>
-      <select id="sortBy" title="Sort">
-        <option value="date_desc">Sort: Newest first</option>
-        <option value="date_asc">Sort: Oldest first</option>
-        <option value="os_asc">Sort: OS A→Z</option>
-        <option value="sev_desc">Sort: Severity (High→Low)</option>
-      </select>
-      <div class="buttons">
-        <button class="btn" id="btnPrint" type="button">Print / PDF</button>
-        <button class="btn" id="btnEmail" type="button">Email</button>
+    <h1>Windows Updates (Last 30 Days)</h1>
+
+    <div class="toolbar">
+      <div class="group" style="flex:3 1 420px">
+        <input id="q" placeholder="Search CVE, description, source, URL…" />
+        <select id="os">
+          <option value="">All operating systems</option>
+        </select>
+        <select id="sort">
+          <option value="new">Sort: Newest first</option>
+          <option value="old">Sort: Oldest first</option>
+          <option value="cve">Sort: CVE (A→Z)</option>
+        </select>
+      </div>
+      <div class="right">
+        <button id="print" class="ghost">Print / PDF</button>
+        <button id="email" class="primary">Email</button>
       </div>
     </div>
+
+    <div id="status" class="status hide">
+      <div class="title">Couldn’t load data.</div>
+      <div class="muted">
+        If this is your first deploy and <code>data.json</code> doesn’t exist yet, run
+        <strong>Build MSRC updates JSON (daily)</strong> from the repo’s <em>Actions</em> tab, then refresh this page.
+      </div>
+    </div>
+
+    <div id="summary" class="pill muted"></div>
+
+    <table id="tbl" class="hide" aria-label="Windows updates">
+      <thead>
+        <tr>
+          <th style="width:18%">CVE</th>
+          <th>Description</th>
+          <th style="width:18%">Release date</th>
+          <th style="width:18%">Source</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <footer>
+      <div class="muted">
+        Source: Microsoft Security Response Center CVRF API v3; Windows Release Health pages for known-issues links.
+      </div>
+    </footer>
   </div>
-</header>
 
-<div class="wrap" id="app">
-  <!-- This message renders immediately so you never see a blank page -->
-  <div id="status" class="empty">Loading latest 30 days of Microsoft security updates…</div>
-  <table id="tbl" hidden>
-    <thead>
-      <tr>
-        <th style="width:110px">Date</th>
-        <th style="width:140px">KB</th>
-        <th>Description</th>
-        <th style="width:180px">Known issues</th>
-        <th style="width:160px">Operating system</th>
-        <th style="width:120px">Severity</th>
-      </tr>
-    </thead>
-    <tbody id="rows"></tbody>
-  </table>
-</div>
+  <script>
+    // ----------------------- Safe date helpers (no crashes) -----------------------
+    function safeDate(value){
+      if (!value) return null;
+      const t = Date.parse(value);
+      return Number.isNaN(t) ? null : new Date(t);
+    }
+    function safeISO(value){
+      const d = safeDate(value);
+      try { return d ? d.toISOString() : null; } catch { return null; }
+    }
+    function safeLocal(value, locale = navigator.language, opts = {year:'numeric',month:'short',day:'2-digit'}){
+      const d = safeDate(value);
+      try { return d ? d.toLocaleDateString(locale, opts) : 'Unknown'; } catch { return 'Unknown'; }
+    }
+    function cmpByDateDesc(a,b,key='releaseDate'){
+      const da = safeDate(a[key]); const db = safeDate(b[key]);
+      if (!da && !db) return 0; if (!da) return 1; if (!db) return -1;
+      return db - da;
+    }
+    function cmpByDateAsc(a,b,key='releaseDate'){ return -cmpByDateDesc(a,b,key); }
 
-<footer class="wrap">
-  <div class="muted">
-    Source: Microsoft Security Response Center CVRF API v3; Windows Release Health pages for known-issues links.
-  </div>
-</footer>
+    // ----------------------- DOM bits -----------------------
+    const els = {
+      status: document.getElementById('status'),
+      table : document.getElementById('tbl'),
+      rows  : document.getElementById('rows'),
+      q     : document.getElementById('q'),
+      os    : document.getElementById('os'),
+      sort  : document.getElementById('sort'),
+      print : document.getElementById('print'),
+      email : document.getElementById('email'),
+      summary: document.getElementById('summary'),
+    };
 
-<script>
-/* ---------- utilities & UI wiring ---------- */
-const $ = s => document.querySelector(s);
-const fmtDate = s => new Date(s).toISOString().slice(0,10);
-const bySevRank = s => ({Critical:4,Important:3,Moderate:2,Medium:2,Low:1,Unknown:0}[s]||0);
-function withTimeout(ms, doFetch) { const c=new AbortController(); const t=setTimeout(()=>c.abort('timeout'),ms); return doFetch(c.signal).finally(()=>clearTimeout(t)); }
+    const state = {
+      all: [],
+      filtered: [],
+    };
 
-function showError(html){
-  const status = $('#status'); const table = $('#tbl');
-  table.hidden = true;
-  status.hidden = false;
-  status.innerHTML = html;
-}
+    // ----------------------- Render functions -----------------------
+    function renderRows(list){
+      els.rows.innerHTML = '';
+      const frag = document.createDocumentFragment();
+      for (const it of list){
+        const tr = document.createElement('tr');
 
-/* ---------- render table ---------- */
-function renderTable(rows){
-  const tbody = $('#rows'); const table=$('#tbl'); const status=$('#status');
-  function apply(){
-    const q = ($('#q').value||'').toLowerCase().trim();
-    const osSel = $('#osFilter').value;
-    const sortBy = $('#sortBy').value;
+        const tdCVE = document.createElement('td');
+        tdCVE.innerHTML = it.url
+          ? `<a class="cve" href="${it.url}" target="_blank" rel="noopener">${escapeHTML(it.cve || '—')}</a>`
+          : `<span class="cve">${escapeHTML(it.cve || '—')}</span>`;
+        tr.appendChild(tdCVE);
 
-    let list = rows.filter(r=>{
-      const blob = (r.kb+' '+(r.description||'')+' '+r.os+' '+r.severity).toLowerCase();
-      if (q && !blob.includes(q)) return false;
-      if (osSel && r.os !== osSel) return false;
-      return true;
-    });
+        const tdDesc = document.createElement('td');
+        const desc = it.description || it.title || '';
+        tdDesc.innerHTML = `
+          <div>${escapeHTML(desc || '(no description)')}</div>
+          <div class="muted" style="margin-top:6px;font-size:12px;word-break:break-word;">
+            ${it.url ? `<span class="badge">link</span> ${escapeHTML(it.url)}` : ''}
+            ${it.os ? `&nbsp;&nbsp;<span class="badge">os</span> ${escapeHTML(it.os)}` : ''}
+            ${it.severity ? `&nbsp;&nbsp;<span class="badge">severity</span> ${escapeHTML(it.severity)}` : ''}
+          </div>
+        `;
+        tr.appendChild(tdDesc);
 
-    list.sort((a,b)=>{
-      if (sortBy==='date_desc') return new Date(b.date)-new Date(a.date);
-      if (sortBy==='date_asc') return new Date(a.date)-new Date(b.date);
-      if (sortBy==='os_asc') return a.os.localeCompare(b.os);
-      if (sortBy==='sev_desc') return bySevRank(b.severity)-bySevRank(a.severity);
-      return 0;
-    });
+        const tdDate = document.createElement('td');
+        const d = safeLocal(it.releaseDate);
+        tdDate.textContent = d;
+        tr.appendChild(tdDate);
 
-    tbody.innerHTML='';
-    for (const r of list){
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>${fmtDate(r.date)}</td>
-        <td><a href="${r.url}" target="_blank" rel="noopener">${r.kb}</a></td>
-        <td>${(r.description||'').replace(/</g,'&lt;')}</td>
-        <td><a href="${r.knownIssuesUrl}" target="_blank" rel="noopener">Release health</a></td>
-        <td>${r.os}</td>
-        <td><span class="badge sev-${r.severity}">${r.severity}</span></td>`;
-      tbody.appendChild(tr);
+        const tdSource = document.createElement('td');
+        tdSource.textContent = it.source || '—';
+        tr.appendChild(tdSource);
+
+        frag.appendChild(tr);
+      }
+      els.rows.appendChild(frag);
+      els.table.classList.toggle('hide', list.length === 0);
+      els.summary.textContent = list.length
+        ? `${list.length.toLocaleString()} update${list.length===1?'':'s'}`
+        : '';
     }
 
-    $('#rowCount').textContent = `(${list.length} updates)`;
-    table.hidden = list.length===0; status.hidden = list.length!==0;
-    if (list.length===0) status.textContent = 'No updates match your filters.';
-  }
+    function applyFilters(){
+      const q = els.q.value.trim().toLowerCase();
+      const os = els.os.value;
+      let list = state.all.slice();
 
-  // wire UI (these run even if data fetch fails later)
-  $('#q').addEventListener('input', apply);
-  $('#osFilter').addEventListener('change', apply);
-  $('#sortBy').addEventListener('change', apply);
-  $('#btnPrint').addEventListener('click', ()=>window.print());
-  $('#btnEmail').addEventListener('click', ()=>{
-    const subject = encodeURIComponent('Windows Updates — last 30 days');
-    const body = encodeURIComponent('Open this page to view, filter, or print the latest Windows security updates from the last 30 days.');
-    window.location.href = `mailto:?subject=${subject}&body=${body}`;
-  });
-
-  apply();
-}
-
-/* ---------- data loaders ---------- */
-// 1) Prefer static JSON built by GitHub Actions
-async function loadFromJson(){
-  const res = await withTimeout(7000, signal => fetch('data.json?cb='+Date.now(), {cache:'no-store', signal}));
-  if (!res.ok) throw new Error('data.json HTTP '+res.status);
-  return res.json();
-}
-
-// 2) Fallback: live MSRC via CORS-safe proxies
-const MSRC_BASE = 'https://api.msrc.microsoft.com/cvrf/v3.0';
-const PROXIES = [
-  u => 'https://api.allorigins.win/raw?url='+encodeURIComponent(u),
-  u => 'https://cors.isomorphic-git.org/'+u,
-  u => 'https://corsproxy.io/?'+encodeURIComponent(u),
-];
-function minusDays(d,n){return new Date(d.getTime()-n*86400000);}
-function normalizeOS(name){
-  const n=(name||'').toLowerCase();
-  if(n.includes('windows 11')) return 'Windows 11';
-  if(n.includes('windows 10')) return 'Windows 10';
-  if(n.includes('server 2016')) return 'Server 2016';
-  if(n.includes('server 2019')) return 'Server 2019';
-  if(n.includes('server 2022')) return 'Server 2022';
-  if(n.includes('server 2025')) return 'Server 2025';
-  if(n.includes('windows server')) return 'Windows Server';
-  return name||'Windows';
-}
-const RELEASE_HEALTH = {
-  "Windows 11":"https://learn.microsoft.com/windows/release-health/",
-  "Windows 10":"https://learn.microsoft.com/windows/release-health/windows10-release-information",
-  "Server 2016":"https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-  "Server 2019":"https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-  "Server 2022":"https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-  "Server 2025":"https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-  "Windows Server":"https://learn.microsoft.com/windows/release-health/windows-server-release-information",
-};
-const extractKB = t => ((t||'').match(/KB\d{7,8}/i)||[null])[0]?.toUpperCase()||null;
-
-async function fetchWithProxies(url, accept, timeoutMs=12000){
-  const attempts = [url, ...PROXIES.map(p=>p(url))];
-  let lastErr;
-  for (const u of attempts){
-    try{
-      const res = await withTimeout(timeoutMs, signal => fetch(u, {headers:{Accept:accept}, cache:'no-store', signal}));
-      if (!res.ok) throw new Error('HTTP '+res.status);
-      return await res.text();
-    }catch(e){ lastErr=e; }
-  }
-  throw lastErr || new Error('Fetch failed');
-}
-
-function parseCvrf(xmlText, dates){
-  const dom = new DOMParser().parseFromString(xmlText, 'application/xml');
-
-  const prod={};
-  dom.querySelectorAll('ProductTree FullProductName').forEach(fp=>{
-    const id = fp.getAttribute('ProductID'); if (id) prod[id] = fp.textContent.trim();
-  });
-
-  const rows=[];
-  dom.querySelectorAll('Vulnerability').forEach(v=>{
-    let sev='Unknown';
-    const impact = Array.from(v.querySelectorAll('Threat')).find(t=>(t.getAttribute('Type')||'').toLowerCase()==='impact');
-    if (impact){
-      const s = impact.textContent.toLowerCase();
-      if (s.includes('critical')) sev='Critical';
-      else if (s.includes('important')) sev='Important';
-      else if (s.includes('moderate')) sev='Moderate';
-      else if (s.includes('low')) sev='Low';
-    } else {
-      const score = parseFloat(v.querySelector('CVSSScoreSets BaseScore')?.textContent||'NaN');
-      if(!isNaN(score)) sev = score>=9?'Critical':score>=7?'Important':score>=4?'Moderate':'Low';
-    }
-
-    v.querySelectorAll('Remediation, Remediations Remediation').forEach(rem=>{
-      const type = (rem.querySelector('Type')?.textContent||'').toLowerCase();
-      if(!type.includes('vendor fix')) return;
-
-      const desc = rem.querySelector('Description')?.textContent?.trim()||'Security update';
-      const kb = extractKB(desc) || extractKB(rem.textContent); if (!kb) return;
-      const url = rem.querySelector('URL')?.textContent?.trim() || `https://support.microsoft.com/help/${kb.replace(/KB/i,'')}`;
-
-      const prodIds = Array.from(rem.querySelectorAll('ProductID')).map(p=>p.textContent.trim()).filter(Boolean);
-      const osSet = new Set(prodIds.map(id=>normalizeOS(prod[id]||id))); if (osSet.size===0) osSet.add('Windows');
-
-      osSet.forEach(os=>{
-        rows.push({
-          date: dates.current || dates.initial || new Date().toISOString(),
-          kb, url, description: desc,
-          knownIssuesUrl: RELEASE_HEALTH[os] || RELEASE_HEALTH['Windows 11'],
-          os, severity: sev
+      if (os){
+        list = list.filter(x => (x.os || '').toLowerCase().includes(os.toLowerCase()));
+      }
+      if (q){
+        list = list.filter(x => {
+          return [x.cve, x.description, x.title, x.source, x.url, x.os]
+            .filter(Boolean)
+            .some(v => String(v).toLowerCase().includes(q));
         });
-      });
-    });
-  });
-  return rows;
-}
+      }
 
-async function loadLiveFromMSRC(){
-  const since = minusDays(new Date(), 30).toISOString();
-  const updatesUrl = `${MSRC_BASE}/updates/?$filter=InitialReleaseDate ge ${since} or CurrentReleaseDate ge ${since}&$orderby=CurrentReleaseDate desc`;
-  const updJson = JSON.parse(await fetchWithProxies(updatesUrl,'application/json',12000));
-  const ids = (updJson.value||[]).map(u=>({id:u.ID, initial:u.InitialReleaseDate, current:u.CurrentReleaseDate}));
+      switch (els.sort.value){
+        case 'old': list.sort((a,b)=>cmpByDateAsc(a,b,'releaseDate')); break;
+        case 'cve': list.sort((a,b)=>String(a.cve||'').localeCompare(String(b.cve||''))); break;
+        default:    list.sort((a,b)=>cmpByDateDesc(a,b,'releaseDate')); break;
+      }
 
-  const all=[];
-  for (const it of ids){
-    const xml = await fetchWithProxies(`${MSRC_BASE}/cvrf/${encodeURIComponent(it.id)}`,'application/xml',15000);
-    all.push(...parseCvrf(xml,{initial:it.initial,current:it.current}));
-  }
-
-  const uniq=new Map();
-  for (const r of all){
-    const key = [fmtDate(r.date), r.kb, r.os].join('|');
-    const prev = uniq.get(key);
-    if (!prev || bySevRank(r.severity) > bySevRank(prev.severity)) uniq.set(key,r);
-  }
-  return Array.from(uniq.values());
-}
-
-/* ---------- main ---------- */
-(async function main(){
-  try{
-    // try static JSON first
-    let rows;
-    try { rows = await loadFromJson(); }
-    catch (e) {
-      console.warn('data.json not available; using live MSRC fallback.', e);
-      rows = await loadLiveFromMSRC();
+      state.filtered = list;
+      renderRows(list);
     }
-    renderTable(rows);
-  } catch (err){
-    console.error(err);
-    showError(`
-      <div><strong>Couldn’t load data.</strong></div>
-      <div class="muted" style="margin-top:8px">
-        If this is your first deploy and <code>data.json</code> doesn’t exist yet, open the repo’s <em>Actions</em> tab and run
-        <b>Build MSRC updates JSON (daily)</b> once. <a href="#" id="retry">Try again</a>.
-      </div>`);
-    const retry = document.getElementById('retry');
-    if (retry) retry.addEventListener('click', e=>{e.preventDefault(); location.reload();});
-  }
-})();
-</script>
+
+    function escapeHTML(s){
+      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    // ----------------------- Load + initialize -----------------------
+    (async function init(){
+      try{
+        const resp = await fetch('./data.json', {cache:'no-store'});
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const raw = await resp.json();
+
+        if (!Array.isArray(raw) || raw.length===0){
+          throw new Error('Empty data.json');
+        }
+
+        // Normalize fields we actually use; keep others intact
+        const normalized = raw.map(x => ({
+          cve: x.cve || x.CVE || x.id || '',
+          url: x.url || x.link || '',
+          description: x.description || x.desc || '',
+          title: x.title || '',
+          releaseDate: x.releaseDate || x.released || x.date || '',
+          source: x.source || '',
+          os: x.os || x.product || x.platform || '',
+          severity: x.severity || x.cvssSeverity || '',
+        }));
+
+        // Build OS filter options if present in any rows
+        const osSet = new Set(
+          normalized
+            .map(x => (x.os || '').trim())
+            .filter(Boolean)
+        );
+        if (osSet.size > 0){
+          for (const name of Array.from(osSet).sort()){
+            const opt = document.createElement('option');
+            opt.value = opt.textContent = name;
+            els.os.appendChild(opt);
+          }
+        } else {
+          // Hide if no OS info available
+          els.os.classList.add('hide');
+        }
+
+        // Sort newest first initially
+        normalized.sort((a,b)=>cmpByDateDesc(a,b,'releaseDate'));
+
+        state.all = normalized;
+        applyFilters();
+
+        els.status.classList.add('hide');
+        els.table.classList.remove('hide');
+
+      } catch(err){
+        console.error('Load error:', err);
+        els.status.classList.remove('hide');
+        els.status.classList.add('bad');
+        els.table.classList.add('hide');
+      }
+    })();
+
+    // ----------------------- UI wiring -----------------------
+    els.q.addEventListener('input', debounce(applyFilters, 120));
+    els.os.addEventListener('change', applyFilters);
+    els.sort.addEventListener('change', applyFilters);
+    els.print.addEventListener('click', () => window.print());
+    els.email.addEventListener('click', () => {
+      const subject = encodeURIComponent('Windows Updates (Last 30 Days)');
+      const body = encodeURIComponent(`Hi,
+
+Here are the latest Windows updates from the last 30 days.
+Total items currently shown: ${state.filtered.length}
+
+View: ${location.href}
+
+— Sent from the Windows Updates page`);
+      location.href = `mailto:?subject=${subject}&body=${body}`;
+    });
+
+    // small utility
+    function debounce(fn, wait=120){
+      let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), wait); };
+    }
+  </script>
 </body>
 </html>
