@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests python-dateutil
 
-      - name: Build data.json (SUG v2 global API; robust date, pagination, retries)
+      - name: Build data.json (SUG v2 global API; robust JSON handling)
         run: |
           python - << 'PY'
           import json, time, requests
@@ -45,64 +45,57 @@ jobs:
                   return None
 
           def best_date(u):
-              # be forgiving – accept whichever exists
               for k in ("releaseDate", "currentReleaseDate", "lastModifiedDate"):
                   dt = iso_to_utc(u.get(k))
                   if dt:
                       return dt
               return None
 
+          def safe_json(resp):
+              try:
+                  return resp.json()
+              except Exception:
+                  print(f"⚠️ Non-JSON or empty response from {resp.url} (HTTP {resp.status_code})")
+                  return {"value": []}
+
           def fetch_json(url, tries=4, timeout=45):
-              headers = {
-                  "Accept": "application/json",
-                  "User-Agent": "windows-update-board/2.0"
-              }
-              last_err = None
+              headers = {"Accept": "application/json", "User-Agent": "windows-update-board/2.1"}
               for i in range(tries):
                   try:
                       r = requests.get(url, headers=headers, timeout=timeout)
                       if r.status_code in (429, 500, 502, 503, 504):
-                          time.sleep(2 + i * 2)
-                          last_err = Exception(f"HTTP {r.status_code}")
+                          print(f"Retrying after HTTP {r.status_code} ({i+1}/{tries})")
+                          time.sleep(3 + i * 3)
                           continue
                       r.raise_for_status()
-                      return r.json()
+                      return safe_json(r)
                   except Exception as e:
-                      last_err = e
-                      time.sleep(1 + i * 2)
-              raise last_err
+                      print(f"Attempt {i+1}/{tries} failed: {e}")
+                      time.sleep(2 + i * 2)
+              print("❌ All attempts failed.")
+              return {"value": []}
 
           base = "https://api.msrc.microsoft.com/sug/v2.0/updates"
-          # Pull only what we need; order by lastModifiedDate to catch “just posted” rows
-          first = f"{base}?$select=title,cveIds,releaseDate,currentReleaseDate,lastModifiedDate&$orderby=lastModifiedDate desc&$top=500"
+          url = f"{base}?$select=title,cveIds,releaseDate,currentReleaseDate,lastModifiedDate&$orderby=lastModifiedDate desc&$top=500"
 
-          all_rows = []
-          url = first
-          while url:
-              data = fetch_json(url)
+          all_rows, next_link = [], url
+          while next_link:
+              data = fetch_json(next_link)
               chunk = data.get("value", [])
               all_rows.extend(chunk)
-              url = data.get("@odata.nextLink")
+              next_link = data.get("@odata.nextLink")
+              if next_link:
+                  print(f"→ Next page: {next_link}")
 
           print(f"SUG raw items seen: {len(all_rows)}")
 
-          seen = set()
-          entries = []
-
+          entries, seen = [], set()
           for u in all_rows:
-              # CVEs come as an array (sometimes None/empty)
-              cves = u.get("cveIds") or []
               title = (u.get("title") or "").strip() or "(no description)"
               dt = best_date(u)
-
-              # Keep the row if we can find *any* of the date fields and it’s in-window
-              if not dt:
+              if not dt or not (SINCE <= dt <= NOW):
                   continue
-              if not (SINCE <= dt <= NOW):
-                  continue
-
-              for cve in cves:
-                  cve = (cve or "").strip()
+              for cve in (u.get("cveIds") or []):
                   if not cve:
                       continue
                   key = (cve, dt.date().isoformat())
@@ -117,16 +110,13 @@ jobs:
                       "description": title
                   })
 
-          print(f"Entries kept (last 30 days): {len(entries)}")
+          print(f"✅ Entries kept (last 30 days): {len(entries)}")
 
-          # If SUG is being stingy today, do not blow away prior data.json silently.
-          # Only overwrite with an empty list if no data.json exists yet.
           try:
               old = json.load(open(OUT, "r", encoding="utf-8"))
           except Exception:
               old = None
 
-          # Sort newest first for stable UI behavior
           entries.sort(key=lambda e: (e["releaseDate"], e["cve"]), reverse=True)
 
           if entries or old is None:
@@ -134,12 +124,11 @@ jobs:
                   json.dump(entries, f, ensure_ascii=False, indent=2)
               print(f"Wrote {len(entries)} rows to {OUT}.")
           else:
-              print("WARNING: No entries today. Preserving existing data.json.")
-
+              print("⚠️ No valid entries collected; preserving existing data.json.")
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): MSRC SUG v2 (robust date + pagination)"
+          commit_message: "chore(data): MSRC SUG v2 (resilient JSON parsing)"
           file_pattern: data.json
