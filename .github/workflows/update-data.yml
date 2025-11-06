@@ -3,7 +3,7 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "9 9 * * *"
+    - cron: "9 9 * * *"  # 09:09 UTC daily
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install requests python-dateutil
@@ -28,7 +28,7 @@ jobs:
       - name: Build data.json (SUG v2 global API; robust date, pagination, retries)
         run: |
           python - << 'PY'
-          import json, time, requests, re
+          import json, time, requests
           from datetime import datetime, timedelta, timezone
           from dateutil import parser as dtp
 
@@ -36,108 +36,110 @@ jobs:
           NOW = datetime.now(timezone.utc)
           SINCE = NOW - timedelta(days=30)
 
-          def iso_dt(s):
-              if not s: return None
+          def iso_to_utc(s):
+              if not s:
+                  return None
               try:
                   return dtp.isoparse(s).astimezone(timezone.utc)
               except Exception:
-                  try:
-                      return datetime.strptime(s.split("T")[0], "%Y-%m-%d").replace(tzinfo=timezone.utc)
-                  except Exception:
-                      return None
+                  return None
 
-          def pick(d, *names, default=None):
-              for n in names:
-                  if n in d and d[n] not in (None, "", []):
-                      return d[n]
-              return default
+          def best_date(u):
+              # be forgiving – accept whichever exists
+              for k in ("releaseDate", "currentReleaseDate", "lastModifiedDate"):
+                  dt = iso_to_utc(u.get(k))
+                  if dt:
+                      return dt
+              return None
 
-          def get_sug_page(url, headers, retries=3):
-              for i in range(retries):
+          def fetch_json(url, tries=4, timeout=45):
+              headers = {
+                  "Accept": "application/json",
+                  "User-Agent": "windows-update-board/2.0"
+              }
+              last_err = None
+              for i in range(tries):
                   try:
-                      r = requests.get(url, headers=headers, timeout=45)
-                      if r.status_code == 429:
-                          time.sleep(2 + i*2)
+                      r = requests.get(url, headers=headers, timeout=timeout)
+                      if r.status_code in (429, 500, 502, 503, 504):
+                          time.sleep(2 + i * 2)
+                          last_err = Exception(f"HTTP {r.status_code}")
                           continue
                       r.raise_for_status()
                       return r.json()
                   except Exception as e:
-                      if i == retries - 1:
-                          raise
-                      time.sleep(2 + i*2)
-              return {"value": []}
+                      last_err = e
+                      time.sleep(1 + i * 2)
+              raise last_err
 
-          BASE = "https://api.msrc.microsoft.com/sug/v2.0/updates"
-          headers = {"Accept": "application/json"}
+          base = "https://api.msrc.microsoft.com/sug/v2.0/updates"
+          # Pull only what we need; order by lastModifiedDate to catch “just posted” rows
+          first = f"{base}?$select=title,cveIds,releaseDate,currentReleaseDate,lastModifiedDate&$orderby=lastModifiedDate desc&$top=500"
 
-          url = BASE
-          entries, seen = [], set()
-          total_seen_raw = 0
-
-          print(f"Fetching data from: {BASE}")
+          all_rows = []
+          url = first
           while url:
-              data = get_sug_page(url, headers)
-              items = data.get("value", [])
-              total_seen_raw += len(items)
-
-              for u in items:
-                  title = pick(u, "title", "Title", default="").strip()
-                  cves = pick(u, "cveNumbers", "CVEIDs", "cveNumber", default=[]) or []
-                  if isinstance(cves, str):
-                      cves = [cves]
-
-                  # --- handle multiple possible date fields ---
-                  pub = iso_dt(pick(u, "releaseDate", "ReleaseDate", "initialReleaseDate", "lastModifiedDate", "publishDate"))
-                  if not pub:
-                      continue
-                  
-                  # Some MSRC data lists future dates (scheduled patches)
-                  if pub > NOW:
-                      continue
-
-                  if not (SINCE <= pub <= NOW + timedelta(days=1)):
-                      continue
-
-                  for cve in cves:
-                      cve = cve.strip()
-                      if not cve:
-                          continue
-                      key = (cve, pub.date().isoformat())
-                      if key in seen:
-                          continue
-                      seen.add(key)
-                      entries.append({
-                          "cve": cve,
-                          "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
-                          "releaseDate": pub.date().isoformat(),
-                          "source": "MSRC-SUG",
-                          "description": title or "(no description)"
-                      })
-
+              data = fetch_json(url)
+              chunk = data.get("value", [])
+              all_rows.extend(chunk)
               url = data.get("@odata.nextLink")
 
-          print(f"SUG raw items seen: {total_seen_raw}; entries kept (last 30 days): {len(entries)}")
+          print(f"SUG raw items seen: {len(all_rows)}")
 
-          if not entries:
-              print("WARNING: No entries were collected. Keeping previous data.json if present.")
-              try:
-                  with open(OUT, "r", encoding="utf-8") as f:
-                      old = json.load(f)
-                  print(f"Preserved existing data.json with {len(old)} entries.")
-              except Exception:
-                  with open(OUT, "w", encoding="utf-8") as f:
-                      json.dump([], f, ensure_ascii=False, indent=2)
-                  print("Created empty data.json (no prior file).")
-              raise SystemExit(0)
+          seen = set()
+          entries = []
 
+          for u in all_rows:
+              # CVEs come as an array (sometimes None/empty)
+              cves = u.get("cveIds") or []
+              title = (u.get("title") or "").strip() or "(no description)"
+              dt = best_date(u)
+
+              # Keep the row if we can find *any* of the date fields and it’s in-window
+              if not dt:
+                  continue
+              if not (SINCE <= dt <= NOW):
+                  continue
+
+              for cve in cves:
+                  cve = (cve or "").strip()
+                  if not cve:
+                      continue
+                  key = (cve, dt.date().isoformat())
+                  if key in seen:
+                      continue
+                  seen.add(key)
+                  entries.append({
+                      "cve": cve,
+                      "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
+                      "releaseDate": dt.date().isoformat(),
+                      "source": "MSRC-SUG",
+                      "description": title
+                  })
+
+          print(f"Entries kept (last 30 days): {len(entries)}")
+
+          # If SUG is being stingy today, do not blow away prior data.json silently.
+          # Only overwrite with an empty list if no data.json exists yet.
+          try:
+              old = json.load(open(OUT, "r", encoding="utf-8"))
+          except Exception:
+              old = None
+
+          # Sort newest first for stable UI behavior
           entries.sort(key=lambda e: (e["releaseDate"], e["cve"]), reverse=True)
-          print(f"Writing {len(entries)} entries covering {SINCE.date()}..{NOW.date()}")
-          with open(OUT, "w", encoding="utf-8") as f:
-              json.dump(entries, f, ensure_ascii=False, indent=2)
+
+          if entries or old is None:
+              with open(OUT, "w", encoding="utf-8") as f:
+                  json.dump(entries, f, ensure_ascii=False, indent=2)
+              print(f"Wrote {len(entries)} rows to {OUT}.")
+          else:
+              print("WARNING: No entries today. Preserving existing data.json.")
+
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): MSRC updates via SUG v2 API (fixed date logic)"
+          commit_message: "chore(data): MSRC SUG v2 (robust date + pagination)"
           file_pattern: data.json
