@@ -1,11 +1,13 @@
 name: Build MSRC updates JSON (daily)
 
 on:
-  workflow_dispatch:          # Enables the "Run workflow" button
+  # Manual run button
+  workflow_dispatch:
+  # Daily at 09:00 UTC
   schedule:
-    - cron: "0 9 * * *"       # Runs daily at 09:00 UTC
+    - cron: "0 9 * * *"
 
-# Needed so the workflow can commit changes to the repo
+# Needed so the action can commit the updated data.json
 permissions:
   contents: write
 
@@ -22,149 +24,183 @@ jobs:
         with:
           python-version: '3.x'
 
-      # =======================
-      # Put your existing Python here
-      # (exactly as you already have it), indented under `run: |`
-      # =======================
-      - name: Build data.json (today back 30 days; ultra-robust CVRF parsing)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dateutil xmltodict
+
+      - name: Build data.json (today back 30 days; robust CVRF parsing)
         run: |
           python - << 'PY'
-          # --- BEGIN your Python script ---
           import json, re, unicodedata
           from datetime import datetime, timedelta, timezone
-          from dateutil.parser import isoparse
           import requests, xmltodict
+          from dateutil.parser import isoparse
 
           NOW = datetime.now(timezone.utc)
           SINCE = NOW - timedelta(days=30)
-          CVRF = "https://api.msrc.microsoft.com/cvrf/v3.0"
+
+          # CVRF monthly doc endpoint (e.g. 2025-Oct)
+          CVRF_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf"
+
+          def month_labels(start: datetime, end: datetime):
+            # inclusive month list between start and end
+            cur = datetime(start.year, start.month, 1, tzinfo=timezone.utc)
+            last = datetime(end.year, end.month, 1, tzinfo=timezone.utc)
+            out = []
+            while cur <= last:
+              out.append(cur.strftime("%Y-%b"))
+              # next month
+              ny = cur.year + (1 if cur.month == 12 else 0)
+              nm = 1 if cur.month == 12 else cur.month + 1
+              cur = datetime(ny, nm, 1, tzinfo=timezone.utc)
+            return out
 
           def clean_bytes(b: bytes) -> str:
-              if not b:
-                  return ""
-              # remove BOMS, nulls, invisible control chars
-              b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
-              s = b.decode("utf-8", "ignore")
-              # drop junk before first '<'
-              i = s.find("<")
-              if i > 0:
-                  s = s[i:]
-              # some pages return HTML: return empty to skip
-              if s[:15].lower().startswith("<!doctype html") or "html" in s[:200].lower():
-                  return ""
-              return s
+            if not b:
+              return ""
+            # remove BOMs / NULs / odd controls, normalize, drop raw HTML when present
+            b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
+            s = b.decode("utf-8", "ignore")
+            s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
+            s = s.strip()
+            # If this doc is actually HTML (rare edge), make it blank so we skip
+            if s[:200].lower().startswith("<!doctype html") or "<html" in s[:400].lower():
+              return ""
+            return s
 
-          def get_json(url):
-              r = requests.get(url, headers={"Accept":"application/json"}, timeout=60)
-              r.raise_for_status()
-              return r.json()
-
-          def get_xml(url):
-              r = requests.get(url, headers={"Accept":"application/xml"}, timeout=60)
-              r.raise_for_status()
-              s = clean_bytes(r.content)
-              if not s:
-                  return None
+          def get_cvrf_month(y_m_lbl: str) -> dict | None:
+            url = f"{CVRF_BASE}/{y_m_lbl}"
+            r = requests.get(url, headers={"Accept": "application/xml"}, timeout=30)
+            r.raise_for_status()
+            xml = clean_bytes(r.content)
+            if not xml:
+              return None
+            try:
+              return xmltodict.parse(xml)
+            except Exception:
+              # Sometimes MSRC XML can contain stray < characters in notes; try to strip them
+              xml2 = xml.replace("<td><", "<td>&lt;")
               try:
-                  return xmltodict.parse(s, force_list=True)
+                return xmltodict.parse(xml2)
               except Exception:
-                  return None
+                return None
 
-          # 1) Get documents in server-side window (initial release within last 30 days)
-          # NOTE: the v3.0 list endpoint supports OData $filter on InitialReleaseDate
-          # If the filter ever fails, we also fetch and filter locally as fallback.
-          list_url = f"{CVRF}/updates?$filter=InitialReleaseDate ge {SINCE.date().isoformat()} and InitialReleaseDate le {NOW.date().isoformat()}&$orderby=CurrentReleaseDate desc"
-          try:
-              listing = get_json(list_url)
-              docs = listing.get("value", [])
-          except Exception:
-              # fallback: fetch without filter and filter locally
-              listing = get_json(f"{CVRF}/updates?$orderby=CurrentReleaseDate desc")
-              docs = listing.get("value", [])
+          def safe_get(dct, path, default=None):
+            cur = dct
+            for p in path:
+              if cur is None:
+                return default
+              cur = cur.get(p) if isinstance(cur, dict) else None
+            return cur if cur is not None else default
 
+          def to_iso(dtstr):
+            try:
+              return isoparse(dtstr).astimezone(timezone.utc)
+            except Exception:
+              return None
+
+          # Build list of month labels we need to look at
+          labels = month_labels(SINCE, NOW)
+
+          rows = []
+          for lbl in labels:
+            doc = get_cvrf_month(lbl)
+            if not doc:
+              continue
+
+            # Pull out doc-level dates to filter quickly
+            cur_rel = safe_get(doc, ["cvrfdoc", "cvrf:DocumentTracking", "cvrf:RevisionHistory", "cvrf:Revision", "cvrf:Date"])
+            if isinstance(cur_rel, list):
+              # pick last one if it's a list
+              cur_rel = cur_rel[-1]
+            dt = to_iso(cur_rel) or to_iso(safe_get(doc, ["cvrfdoc", "cvrf:DocumentTracking", "cvrf:CurrentReleaseDate"]))
+            if not dt:
+              # If no date at doc level, keep processing; we'll filter per vuln
+              dt = NOW
+
+            # If doc is clearly older than window, skip
+            if dt < SINCE:
+              # still possible some vulns are newer, but monthly doc date usually tracks the set
+              pass
+
+            # Try vulnerabilities section
+            vulns = safe_get(doc, ["cvrfdoc", "cvrf:Vulnerability"])
+            if not vulns:
+              # As a fallback, try to scan <cvrf:Notes> HTML for CVE links
+              notes = safe_get(doc, ["cvrfdoc", "cvrf:DocumentNotes", "cvrf:Note"]) or []
+              if isinstance(notes, dict):
+                notes = [notes]
+              html = " ".join(n.get("#text","") for n in notes if isinstance(n, dict))
+              for cve in set(re.findall(r"CVE-\d{4}-\d{4,7}", html or "")):
+                rows.append({
+                  "cve": cve,
+                  "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
+                  "releaseDate": dt.strftime("%Y-%m-%d"),
+                  "source": lbl
+                })
+              continue
+
+            if isinstance(vulns, dict):
+              vulns = [vulns]
+
+            for v in vulns:
+              cve = safe_get(v, ["cvrf:CVE"])
+              # If no direct CVE field, try IDs in References
+              if not cve:
+                refs = safe_get(v, ["cvrf:References", "cvrf:Reference"]) or []
+                if isinstance(refs, dict):
+                  refs = [refs]
+                found = None
+                for r in refs:
+                  refurl = r.get("cvrf:URL") if isinstance(r, dict) else None
+                  if refurl and "CVE-" in refurl:
+                    m = re.search(r"(CVE-\d{4}-\d{4,7})", refurl)
+                    if m:
+                      found = m.group(1)
+                      break
+                cve = found
+
+              # Vuln-specific date (InitialReleaseDate or RevisionHistory date)
+              vdate = safe_get(v, ["cvrf:Notes", "cvrf:Note"])
+              vdt = dt
+              # sometimes they carry a specific 'InitialReleaseDate' on the doc only; we keep doc dt
+
+              if cve:
+                # Only include items whose doc date is within window (best-effort monthly filter)
+                if SINCE <= vdt <= NOW:
+                  rows.append({
+                    "cve": cve,
+                    "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
+                    "releaseDate": vdt.strftime("%Y-%m-%d"),
+                    "source": lbl
+                  })
+
+          # Deduplicate by (cve, releaseDate)
+          seen = set()
           out = []
+          for r in rows:
+            key = (r["cve"], r["releaseDate"])
+            if key in seen:
+              continue
+            seen.add(key)
+            out.append(r)
 
-          for d in docs:
-              sid = d.get("ID")
-              current = d.get("CurrentReleaseDate")
-              initial = d.get("InitialReleaseDate")
+          # Keep only items in the last 30 days (final guard)
+          def parse_date(s):
+            try:
+              return datetime.strptime(s, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            except Exception:
+              return NOW
+          out = [r for r in out if SINCE <= parse_date(r["releaseDate"]) <= NOW]
 
-              # keep items within our window based on release dates
-              try:
-                  cur_dt = isoparse(current) if current else None
-                  init_dt = isoparse(initial) if initial else None
-              except Exception:
-                  cur_dt = init_dt = None
+          # Sort newest first
+          out.sort(key=lambda r: r["releaseDate"], reverse=True)
 
-              if not init_dt or init_dt < SINCE:
-                  continue
-              if cur_dt and cur_dt > NOW:
-                  continue
-
-              # 2) Fetch the CVRF XML for each doc and parse
-              doc_url = f"{CVRF}/cvrf/{sid}"
-              x = get_xml(doc_url)
-              if not x:
-                  continue
-
-              # Extract a minimal set of fields for the site (keep what your UI uses)
-              # You can expand this mapping as needed.
-              try:
-                  root = x.get("cvrfdoc", x)
-                  tracking = root.get("DocumentTracking", [{}])[0]
-                  idn = root.get("DocumentIdentification", [{}])[0]
-                  revisions = tracking.get("RevisionHistory", [{}])[0].get("Revision", [])
-                  prodtree = root.get("ProductTree", [{}])[0]
-                  vulns = root.get("Vulnerability", [])
-
-                  # Known Issues / Release health link
-                  known_issues = None
-                  for n in root.get("DocumentNotes", []):
-                      title = (n.get("@Title") or "").lower()
-                      if "release health" in title or "known issue" in title:
-                          known_issues = n.get("#text")
-                          break
-
-                  # Severity: if any vuln rating says Critical, mark Critical, else Important if present
-                  severity = "Unknown"
-                  has_critical = False
-                  has_important = False
-                  for v in vulns:
-                      ratings = v.get("Threats", [{}])[0].get("Threat", [])
-                      for r_ in ratings:
-                          if (r_.get("@Type") == "Impact") and r_.get("#text"):
-                              s = r_["#text"].strip().lower()
-                              if "critical" in s:
-                                  has_critical = True
-                              if "important" in s:
-                                  has_important = True
-                  if has_critical:
-                      severity = "Critical"
-                  elif has_important:
-                      severity = "Important"
-
-                  item = {
-                      "Date": init_dt.date().isoformat() if init_dt else None,
-                      "KB": idn.get("ID", [""])[0],
-                      "Description": idn.get("Alias", [""])[0] or idn.get("ID", [""])[0],
-                      "KnownIssues": "Release health" if known_issues else "",
-                      "OperatingSystem": "",   # fill in from your mapping if desired
-                      "Severity": severity,
-                  }
-                  out.append(item)
-              except Exception:
-                  # Skip if XML doesn't conform
-                  continue
-
-          # sort newest first
-          out.sort(key=lambda r: r.get("Date") or "", reverse=True)
-
-          # write to data.json at repo root
           with open("data.json", "w", encoding="utf-8") as f:
-              json.dump(out, f, ensure_ascii=False, indent=2)
+            json.dump(out, f, ensure_ascii=False, indent=2)
 
           print(f"Wrote {len(out)} rows to data.json (window: {SINCE.date()}..{NOW.date()})")
-          # --- END your Python script ---
           PY
 
       - name: Commit if changed
