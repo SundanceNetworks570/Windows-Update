@@ -1,13 +1,35 @@
 name: Build MSRC updates JSON (daily)
 
 on:
-  workflow_dispatch:   # 👈 Enables the "Run workflow" button
+  workflow_dispatch:          # Enables the "Run workflow" button
   schedule:
-    - cron: "0 9 * * *"  # Runs daily at 9 AM UTC
+    - cron: "0 9 * * *"       # Runs daily at 09:00 UTC
 
+# Needed so the workflow can commit changes to the repo
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # =======================
+      # Put your existing Python here
+      # (exactly as you already have it), indented under `run: |`
+      # =======================
       - name: Build data.json (today back 30 days; ultra-robust CVRF parsing)
         run: |
           python - << 'PY'
+          # --- BEGIN your Python script ---
           import json, re, unicodedata
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
@@ -20,75 +42,133 @@ on:
           def clean_bytes(b: bytes) -> str:
               if not b:
                   return ""
-              # remove BOMs, nulls, invisible control chars
+              # remove BOMS, nulls, invisible control chars
               b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
               s = b.decode("utf-8", "ignore")
-              s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
-              s = s.lstrip()
               # drop junk before first '<'
               i = s.find("<")
               if i > 0:
                   s = s[i:]
-              if s[:15].lower().startswith("<!doctype html") or "<html" in s[:200].lower():
+              # some pages return HTML: return empty to skip
+              if s[:15].lower().startswith("<!doctype html") or "html" in s[:200].lower():
                   return ""
               return s
 
           def get_json(url):
-              r = requests.get(url, headers={"Accept":"application/json"})
+              r = requests.get(url, headers={"Accept":"application/json"}, timeout=60)
               r.raise_for_status()
               return r.json()
 
           def get_xml(url):
-              r = requests.get(url, headers={"Accept":"application/xml"})
+              r = requests.get(url, headers={"Accept":"application/xml"}, timeout=60)
               r.raise_for_status()
-              txt = clean_bytes(r.content)
-              if not txt:
+              s = clean_bytes(r.content)
+              if not s:
                   return None
               try:
-                  return xmltodict.parse(txt, process_namespaces=False)
-              except Exception as e:
-                  # second-pass cleanup if first parse fails
-                  txt = re.sub(r"[^\x09\x0A\x0D\x20-\x7E\xA0-\uFFFF]", "", txt)
-                  try:
-                      return xmltodict.parse(txt, process_namespaces=False)
-                  except Exception:
-                      print(f"Skip malformed XML from {url}: {e}")
-                      return None
+                  return xmltodict.parse(s, force_list=True)
+              except Exception:
+                  return None
 
-          since_iso = SINCE.strftime("%Y-%m-%dT%H:%M:%SZ")
-          updates_url = f"{CVRF}/updates/?$filter=(InitialReleaseDate ge {since_iso} or CurrentReleaseDate ge {since_iso})&$orderby=CurrentReleaseDate desc"
-          updates = get_json(updates_url).get("value", [])
-          print(f"Found {len(updates)} CVRF update documents in window {SINCE.date()}..{NOW.date()}")
+          # 1) Get documents in server-side window (initial release within last 30 days)
+          # NOTE: the v3.0 list endpoint supports OData $filter on InitialReleaseDate
+          # If the filter ever fails, we also fetch and filter locally as fallback.
+          list_url = f"{CVRF}/updates?$filter=InitialReleaseDate ge {SINCE.date().isoformat()} and InitialReleaseDate le {NOW.date().isoformat()}&$orderby=CurrentReleaseDate desc"
+          try:
+              listing = get_json(list_url)
+              docs = listing.get("value", [])
+          except Exception:
+              # fallback: fetch without filter and filter locally
+              listing = get_json(f"{CVRF}/updates?$orderby=CurrentReleaseDate desc")
+              docs = listing.get("value", [])
 
-          kb_re = re.compile(r"KB\d{7,8}", re.I)
-          rows = []
+          out = []
 
-          for u in updates:
-              doc_id = u.get("ID")
-              if not doc_id:
+          for d in docs:
+              sid = d.get("ID")
+              current = d.get("CurrentReleaseDate")
+              initial = d.get("InitialReleaseDate")
+
+              # keep items within our window based on release dates
+              try:
+                  cur_dt = isoparse(current) if current else None
+                  init_dt = isoparse(initial) if initial else None
+              except Exception:
+                  cur_dt = init_dt = None
+
+              if not init_dt or init_dt < SINCE:
                   continue
-              url = f"{CVRF}/cvrf/{doc_id}"
-              x = get_xml(url)
+              if cur_dt and cur_dt > NOW:
+                  continue
+
+              # 2) Fetch the CVRF XML for each doc and parse
+              doc_url = f"{CVRF}/cvrf/{sid}"
+              x = get_xml(doc_url)
               if not x:
                   continue
-              vulns = x["cvrfdoc"].get("Vulnerability", [])
-              if isinstance(vulns, dict): vulns=[vulns]
-              for v in vulns:
-                  rems = v.get("Remediations",{}).get("Remediation",[])
-                  if isinstance(rems, dict): rems=[rems]
-                  for r in rems:
-                      d = r.get("Description","")
-                      m = kb_re.search(d)
-                      if not m: continue
-                      rows.append({
-                          "kb": m.group(0),
-                          "desc": d[:120]
-                      })
-              if rows:
-                  print(f"Parsed bulletin {doc_id} with {len(rows)} KBs")
-                  break
 
-          with open("data.json","w",encoding="utf-8") as f:
-              json.dump(rows, f, ensure_ascii=False, indent=2)
-          print(f"Wrote {len(rows)} rows to data.json")
+              # Extract a minimal set of fields for the site (keep what your UI uses)
+              # You can expand this mapping as needed.
+              try:
+                  root = x.get("cvrfdoc", x)
+                  tracking = root.get("DocumentTracking", [{}])[0]
+                  idn = root.get("DocumentIdentification", [{}])[0]
+                  revisions = tracking.get("RevisionHistory", [{}])[0].get("Revision", [])
+                  prodtree = root.get("ProductTree", [{}])[0]
+                  vulns = root.get("Vulnerability", [])
+
+                  # Known Issues / Release health link
+                  known_issues = None
+                  for n in root.get("DocumentNotes", []):
+                      title = (n.get("@Title") or "").lower()
+                      if "release health" in title or "known issue" in title:
+                          known_issues = n.get("#text")
+                          break
+
+                  # Severity: if any vuln rating says Critical, mark Critical, else Important if present
+                  severity = "Unknown"
+                  has_critical = False
+                  has_important = False
+                  for v in vulns:
+                      ratings = v.get("Threats", [{}])[0].get("Threat", [])
+                      for r_ in ratings:
+                          if (r_.get("@Type") == "Impact") and r_.get("#text"):
+                              s = r_["#text"].strip().lower()
+                              if "critical" in s:
+                                  has_critical = True
+                              if "important" in s:
+                                  has_important = True
+                  if has_critical:
+                      severity = "Critical"
+                  elif has_important:
+                      severity = "Important"
+
+                  item = {
+                      "Date": init_dt.date().isoformat() if init_dt else None,
+                      "KB": idn.get("ID", [""])[0],
+                      "Description": idn.get("Alias", [""])[0] or idn.get("ID", [""])[0],
+                      "KnownIssues": "Release health" if known_issues else "",
+                      "OperatingSystem": "",   # fill in from your mapping if desired
+                      "Severity": severity,
+                  }
+                  out.append(item)
+              except Exception:
+                  # Skip if XML doesn't conform
+                  continue
+
+          # sort newest first
+          out.sort(key=lambda r: r.get("Date") or "", reverse=True)
+
+          # write to data.json at repo root
+          with open("data.json", "w", encoding="utf-8") as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+
+          print(f"Wrote {len(out)} rows to data.json (window: {SINCE.date()}..{NOW.date()})")
+          # --- END your Python script ---
           PY
+
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): daily MSRC data.json update"
+          file_pattern: data.json
