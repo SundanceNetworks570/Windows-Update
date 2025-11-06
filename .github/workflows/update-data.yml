@@ -1,18 +1,13 @@
 name: Build MSRC updates JSON (daily)
 
 on:
-  # Manual trigger button in Actions
   workflow_dispatch:
-  # Runs every day at 9:00 UTC (change if you want)
   schedule:
-    - cron: "0 9 * * *"
+    - cron: "0 9 * * *"   # 09:00 UTC daily
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,111 +20,141 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install requests
+          pip install requests python-dateutil
 
       - name: Build data.json (SUG v2 global API; robust JSON handling)
+        id: build
         run: |
-          python - << 'PY'
-          import json, os, time, requests
+          python - <<'PY'
+          import json, time, random, sys, os
           from datetime import datetime, timedelta, timezone
+          import requests
 
-          # ---- Config ----
-          DAYS_BACK = 30
-          MAX_RETRIES = 5
-          RETRY_SLEEP = 15  # seconds between retries on rate limit (HTTP 999)
-
-          # SUG v2 API; select only the fields we need and order by most recent
-          URL = ("https://api.msrc.microsoft.com/sug/v2.0/updates"
-                 "?$select=title,cveIds,releaseDate,lastModifiedDate,currentReleaseDate"
-                 "&$orderby=lastModifiedDate%20desc&$top=500")
-
+          # ---- time window (today back 30 days) ----
           NOW = datetime.now(timezone.utc)
-          SINCE = NOW - timedelta(days=DAYS_BACK)
+          START = NOW - timedelta(days=30)
 
-          def get_json(url: str, retries: int = MAX_RETRIES):
-              """Fetch JSON with retry handling for MSRC throttling (HTTP 999)."""
-              for i in range(retries):
-                  try:
-                      r = requests.get(url, headers={"Accept": "application/json"}, timeout=30)
-                      if r.status_code == 999:
-                          print(f"⚠️  MSRC API rate limited (HTTP 999); retrying in {RETRY_SLEEP}s… [{i+1}/{retries}]")
-                          time.sleep(RETRY_SLEEP)
-                          continue
-                      r.raise_for_status()
-                      # Ensure we can parse JSON (some infra returns HTML on error)
-                      try:
-                          return r.json()
-                      except Exception as e:
-                          print(f"⚠️  Response was not valid JSON: {e}")
-                          time.sleep(10)
-                  except Exception as e:
-                      print(f"⚠️  Request attempt {i+1} failed: {e}")
-                      time.sleep(10)
-              print("❌ All retries failed or invalid JSON; returning empty result.")
-              return {"value": []}
+          # slice the window to reduce throttling (6 chunks × 5 days)
+          def make_slices(start, end, span_days=5):
+            cur = start
+            while cur < end:
+              nxt = min(cur + timedelta(days=span_days), end)
+              yield cur, nxt
+              cur = nxt
 
-          def parse_iso(dt_str: str):
-              if not dt_str:
-                  return None
+          # Strong headers to avoid HTTP 999 (anti-bot)
+          HEADERS = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+            "Accept": "application/json",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Origin": "https://msrc.microsoft.com",
+            "Referer": "https://msrc.microsoft.com/update-guide",
+            "Connection": "keep-alive",
+          }
+
+          BASE = "https://api.msrc.microsoft.com/sug/v2.0/updates"
+
+          # We pull only fields we need to keep payload small
+          SELECT = "title,cveIds,releaseDate,lastModifiedDate"
+          ORDER  = "lastModifiedDate%20desc"
+
+          def fetch_chunk(since_iso, until_iso, max_tries=12):
+            # filter between [since, until)
+            filtr = f"lastModifiedDate%20ge%20{since_iso}%20and%20lastModifiedDate%20lt%20{until_iso}"
+            url = f"{BASE}?$select={SELECT}&$filter={filtr}&$orderby={ORDER}&$top=500"
+            backoff = 15
+            tries = 0
+            while tries < max_tries:
+              tries += 1
               try:
-                  # Normalize trailing Z to +00:00 for fromisoformat
-                  return datetime.fromisoformat(dt_str.replace("Z", "+00:00"))
-              except Exception:
-                  return None
+                r = requests.get(url, headers=HEADERS, timeout=30)
+              except Exception as e:
+                print(f"⚠️  Request error ({tries}/{max_tries}): {e}")
+                time.sleep(backoff + random.uniform(0, 4))
+                backoff = min(backoff * 2, 300)
+                continue
 
-          data = get_json(URL)
-          items = data.get("value", [])
-          if isinstance(items, dict) and "value" in items:
-              items = items["value"]
+              ct = r.headers.get("content-type","").lower()
+              if r.status_code == 200 and "json" in ct:
+                try:
+                  data = r.json().get("value", [])
+                  return data
+                except Exception as e:
+                  print(f"⚠️  JSON parse error ({tries}/{max_tries}): {e}")
 
-          print(f"🔎 SUG returned items: {len(items)}")
+              # MSRC returns 999 when it rate-limits automation
+              if r.status_code in (999, 429) or r.status_code >= 500 or "json" not in ct:
+                print(f"⏳ MSRC throttled or non-JSON (HTTP {r.status_code}); retrying in {backoff}s… ({tries}/{max_tries})")
+                time.sleep(backoff + random.uniform(0, 4))
+                backoff = min(backoff * 2, 300)
+                continue
 
-          rows = []
-          for item in items:
-              # Pick the best date available on the record
-              dt = (parse_iso(item.get("currentReleaseDate"))
-                    or parse_iso(item.get("releaseDate"))
-                    or parse_iso(item.get("lastModifiedDate")))
-              if not dt:
-                  continue
-              if not (SINCE <= dt <= NOW):
-                  continue
+              # 4xx other than 429/999: nothing more to do for this chunk
+              print(f"⚠️  HTTP {r.status_code} — giving up this chunk.")
+              return []
 
-              cves = item.get("cveIds") or []
-              title = item.get("title") or ""
-              for cve in cves:
-                  rows.append({
-                      "cve": cve,
-                      "title": title,
-                      "releaseDate": dt.strftime("%Y-%m-%d"),
-                      "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}"
-                  })
+            print("❌ All retries failed for chunk.")
+            return []
 
-          # Deduplicate by CVE+date (in case the API returns duplicates)
+          def iso(dt):
+            # SUG expects Zulu ISO 8601
+            return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+          all_items = []
+          for s, e in make_slices(START, NOW, span_days=5):
+            print(f"🔎 Fetching {iso(s)} .. {iso(e)}")
+            items = fetch_chunk(iso(s), iso(e))
+            print(f"  → {len(items)} items")
+            all_items.extend(items)
+
+          # Deduplicate by CVE + title + lastModifiedDate
           seen = set()
-          unique_rows = []
-          for r in rows:
-              key = (r["cve"], r["releaseDate"])
-              if key in seen:
-                  continue
+          uniq = []
+          for it in all_items:
+            key = (
+              tuple(it.get("cveIds") or []),
+              it.get("title",""),
+              it.get("lastModifiedDate",""),
+            )
+            if key not in seen:
               seen.add(key)
-              unique_rows.append(r)
+              uniq.append(it)
 
-          if not unique_rows:
-              print(f"⚠️  No valid entries found in window {SINCE.date()}..{NOW.date()}.")
-              # Preserve existing data.json by not overwriting it
-              if os.path.exists("data.json"):
-                  print("ℹ️  Existing data.json preserved.")
-              else:
-                  # Create an empty file so the site can build cleanly on first run
-                  with open("data.json", "w", encoding="utf-8") as f:
-                      json.dump([], f, ensure_ascii=False, indent=2)
-                  print("ℹ️  Created empty data.json (first run, no results).")
+          # Keep only last 30 days strictly (safety)
+          def to_dt(s):
+            try:
+              return datetime.fromisoformat(s.replace("Z","+00:00"))
+            except:
+              return None
+
+          filtered = []
+          for it in uniq:
+            dt = to_dt(it.get("lastModifiedDate","")) or to_dt(it.get("releaseDate",""))
+            if dt and START <= dt.replace(tzinfo=timezone.utc) <= NOW:
+              filtered.append(it)
+
+          out = sorted(
+            filtered,
+            key=lambda x: x.get("lastModifiedDate", x.get("releaseDate","")),
+            reverse=True
+          )
+
+          print(f"✅ Total kept (last 30 days): {len(out)}")
+
+          # Write only if we actually have valid entries; otherwise keep existing
+          if out:
+            with open("data.json", "w", encoding="utf-8") as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+            print(f"💾 Wrote {len(out)} rows to data.json (window {START.date()}..{NOW.date()})")
           else:
-              unique_rows.sort(key=lambda x: (x["releaseDate"], x["cve"]), reverse=True)
+            if os.path.exists("data.json"):
+              print("ℹ️  No valid entries found — preserving existing data.json.")
+            else:
+              # create empty but valid file the first time
               with open("data.json", "w", encoding="utf-8") as f:
-                  json.dump(unique_rows, f, ensure_ascii=False, indent=2)
-              print(f"✅ Wrote {len(unique_rows)} entries to data.json (window {SINCE.date()}..{NOW.date()}).")
+                json.dump([], f)
+              print("ℹ️  Created empty data.json (no results).")
+
           PY
 
       - name: Commit if changed
@@ -137,4 +162,3 @@ jobs:
         with:
           commit_message: "chore(data): daily MSRC data.json update"
           file_pattern: data.json
-          commit_author: "GitHub Actions <actions@github.com>"
