@@ -3,7 +3,8 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * *"  # Daily at 9 AM UTC
+    # Runs daily at 09:09 UTC. Adjust if you prefer a different time.
+    - cron: '9 9 * * *'
 
 permissions:
   contents: write
@@ -13,230 +14,157 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-dateutil xmltodict
+          pip install requests python-dateutil
 
-      - name: Build data.json (last 30 days; namespace-agnostic; vuln-level date fallback)
+      - name: Build data.json (last 30 days; robust CVRF v3 parsing)
         run: |
           python - << 'PY'
-          import json, unicodedata
+          import json, re, requests
           from datetime import datetime, timedelta, timezone
-          import requests, xmltodict
-          from dateutil.parser import isoparse
+          from dateutil import parser as dtp
+          from xml.etree import ElementTree as ET
 
-          NOW = datetime.now(timezone.utc)
-          SINCE = NOW - timedelta(days=30)
-          CVRF_BASE = "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf"
+          OUT = "data.json"
 
-          # --- Helpers -------------------------------------------------------
+          # ---- Helpers ------------------------------------------------------
+          def month_label(dt: datetime) -> str:
+            # e.g., 2025-Nov (MSRC CVRF v3 month key)
+            return dt.strftime("%Y-%b")
 
-          def month_labels(start, end):
+          def month_labels_between(start: datetime, end: datetime):
+            # inclusive list of month labels between start..end
             cur = datetime(start.year, start.month, 1, tzinfo=timezone.utc)
-            labels = []
-            while cur <= end:
-              labels.append(cur.strftime("%Y-%b"))
-              ny = cur.year + (1 if cur.month == 12 else 0)
+            last = datetime(end.year, end.month, 1, tzinfo=timezone.utc)
+            labs = []
+            while cur <= last:
+              labs.append(month_label(cur))
+              # add 1 month
+              ny = cur.year + (cur.month // 12)
               nm = 1 if cur.month == 12 else cur.month + 1
               cur = datetime(ny, nm, 1, tzinfo=timezone.utc)
-            return labels
+            return labs
 
-          def clean_bytes(b):
-            if not b: return ""
-            b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
-            s = b.decode("utf-8", "ignore")
-            s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
-            if "<html" in s[:400].lower():
-              return ""
-            return s.strip()
+          def get_text(node, path):
+            n = node.find(path)
+            return (n.text or "").strip() if (n is not None and n.text) else ""
 
-          def get_cvrf_month(label):
-            url = f"{CVRF_BASE}/{label}"
-            try:
-              r = requests.get(url, headers={"Accept": "application/xml"}, timeout=25)
-              if r.status_code == 404:
-                print(f"⚠️ Skipping {label}: no data available (404)")
-                return None
-              r.raise_for_status()
-              xml = clean_bytes(r.content)
-              if not xml:
-                print(f"⚠️ Skipping {label}: empty/invalid XML")
-                return None
-              # Do NOT process namespaces; we’ll match keys by suffix
-              return xmltodict.parse(xml, process_namespaces=False)
-            except Exception as e:
-              print(f"⚠️ Skipping {label}: {e}")
+          def findall_anyns(node, tag):
+            return node.findall(f".//{{*}}{tag}")
+
+          def parse_date(s):
+            if not s:
               return None
-
-          def to_utc(dtstr):
             try:
-              return isoparse(dtstr).astimezone(timezone.utc)
+              return dtp.isoparse(s).astimezone(timezone.utc)
             except Exception:
-              return None
+              try:
+                # Some feeds are missing TZ; assume UTC
+                return dtp.isoparse(s + "Z").astimezone(timezone.utc)
+              except Exception:
+                return None
 
-          # Namespace-agnostic recursive search utilities
-          def iter_nodes(obj):
-            if isinstance(obj, dict):
-              for k, v in obj.items():
-                yield k, v
-                for sub in iter_nodes(v):
-                  yield sub
-            elif isinstance(obj, list):
-              for it in obj:
-                for sub in iter_nodes(it):
-                  yield sub
+          def fetch_xml(url):
+            # Simple fetch with reasonable timeouts
+            r = requests.get(url, timeout=30)
+            r.raise_for_status()
+            return r.text
 
-          def find_first_text_by_key_suffix(obj, suffixes):
-            for k, v in iter_nodes(obj):
-              if isinstance(k, str) and any(k.endswith(sfx) for sfx in suffixes):
-                if isinstance(v, (str, bytes)):
-                  return v
-            return None
+          # ---- Window -------------------------------------------------------
+          NOW = datetime.now(timezone.utc)
+          SINCE = NOW - timedelta(days=30)
 
-          def find_all_nodes_by_key_suffix(obj, suffix):
-            hits = []
-            for k, v in iter_nodes(obj):
-              if isinstance(k, str) and k.endswith(suffix):
-                hits.append(v)
-            return hits
+          labels = month_labels_between(SINCE, NOW)
 
-          def doc_date_anywhere(doc, label):
-            # 1) CurrentReleaseDate
-            cur = find_first_text_by_key_suffix(doc, ["CurrentReleaseDate"])
-            dt = to_utc(cur) if cur else None
-            if dt:
-              print(f"ℹ️ {label}: using CurrentReleaseDate = {dt.date()}")
-              return dt
+          entries = []
+          seen = set()  # dedupe by (CVE, releaseDate)
 
-            # 2) Newest date in DocumentTracking -> RevisionHistory -> Revision -> Date
-            rev_nodes = find_all_nodes_by_key_suffix(doc, "Revision") or []
-            rev_dates = []
-            for n in rev_nodes:
-              if isinstance(n, dict):
-                d = find_first_text_by_key_suffix(n, ["Date"])
-                if d:
-                  dd = to_utc(d)
-                  if dd:
-                    rev_dates.append(dd)
-            if rev_dates:
-              best = max(rev_dates)
-              print(f"ℹ️ {label}: using Document RevisionHistory latest = {best.date()}")
-              return best
+          for lab in labels:
+            url = f"https://api.msrc.microsoft.com/cvrf/v3.0/{lab}"
+            try:
+              xml = fetch_xml(url)
+            except requests.HTTPError as ex:
+              # Skip missing months (404) or other temporary issues
+              print(f"WARN: skipping {lab}: {ex}")
+              continue
+            except Exception as ex:
+              print(f"WARN: error fetching {lab}: {ex}")
+              continue
 
-            # 3) InitialReleaseDate
-            init = find_first_text_by_key_suffix(doc, ["InitialReleaseDate"])
-            idt = to_utc(init) if init else None
-            if idt:
-              print(f"ℹ️ {label}: using InitialReleaseDate = {idt.date()}")
-              return idt
+            try:
+              root = ET.fromstring(xml)
+            except Exception as ex:
+              print(f"WARN: XML parse error for {lab}: {ex}")
+              continue
 
-            return None
-
-          def vuln_level_latest_date(doc, label):
-            # Find all Vulnerability nodes regardless of prefix
-            vulns = []
-            for k, v in iter_nodes(doc):
-              if isinstance(k, str) and k.endswith("Vulnerability"):
-                # xmltodict returns dict for single; keep both dict/list
-                if isinstance(v, list):
-                  vulns.extend(v)
-                elif isinstance(v, dict):
-                  vulns.append(v)
-            if not vulns:
-              return None
-
-            dates = []
+            vulns = findall_anyns(root, "Vulnerability")
             for v in vulns:
-              # Look for any RevisionHistory/Revision/Date under the vuln
-              revs = find_all_nodes_by_key_suffix(v, "Revision")
-              for r in revs:
-                if isinstance(r, dict):
-                  d = find_first_text_by_key_suffix(r, ["Date"])
-                  if d:
-                    dd = to_utc(d)
-                    if dd:
-                      dates.append(dd)
-            if dates:
-              best = max(dates)
-              print(f"ℹ️ {label}: using Vulnerability-level latest revision = {best.date()}")
-              return best
-            return None
+              # CVE (prefer <CVE>, else <ID> if it looks like CVE-YYYY-NNNN)
+              cve = get_text(v, ".//{*}CVE")
+              if not cve:
+                alt_id = get_text(v, ".//{*}ID")
+                if re.match(r"(?i)^CVE-\d{4}-\d+", alt_id):
+                  cve = alt_id
+              if not cve:
+                continue
 
-          def extract_cves(doc):
-            cves = []
-            for k, v in iter_nodes(doc):
-              if isinstance(k, str) and k.endswith("Vulnerability"):
-                if isinstance(v, list):
-                  nodes = v
-                elif isinstance(v, dict):
-                  nodes = [v]
-                else:
-                  continue
-                for node in nodes:
-                  cve = find_first_text_by_key_suffix(node, ["CVE"])
-                  if cve:
-                    cves.append(cve)
-            return list(dict.fromkeys(cves))  # de-dupe preserve order
+              # Release date (prefer CurrentReleaseDate, else InitialReleaseDate)
+              cur_rel = get_text(v, ".//{*}CurrentReleaseDate")
+              init_rel = get_text(v, ".//{*}InitialReleaseDate")
+              rel_str = cur_rel or init_rel
+              rel_dt = parse_date(rel_str)
+              if not rel_dt:
+                # As a last resort, skip if date missing or unparsable
+                print(f"WARN: {cve} has no usable release date in {lab}")
+                continue
 
-          # --- Build ----------------------------------------------------------
+              # Filter to last 30 days
+              if not (SINCE <= rel_dt <= NOW):
+                continue
 
-          rows = []
-          labels = month_labels(SINCE, NOW)
+              # Description (prefer Note Type="Description"; else Title)
+              description = ""
+              for n in findall_anyns(v, "Note"):
+                t = (n.get("Type") or n.get("type") or "").lower()
+                if t == "description" and (n.text or "").strip():
+                  description = n.text.strip()
+                  break
+              if not description:
+                title = get_text(v, ".//{*}Title")
+                if title:
+                  description = title
 
-          for label in labels:
-            doc = get_cvrf_month(label)
-            if not doc:
-              continue
+              key = (cve.upper(), rel_dt.date().isoformat())
+              if key in seen:
+                continue
+              seen.add(key)
 
-            dt = doc_date_anywhere(doc, label)
-            if not dt:
-              # Fallback to vuln-level latest revision date
-              dt = vuln_level_latest_date(doc, label)
-
-            if not dt:
-              print(f"⚠️ {label}: no usable document date found (doc/vuln); skipping")
-              continue
-
-            if not (SINCE <= dt <= NOW):
-              print(f"ℹ️ {label}: chosen date {dt.date()} outside window")
-              continue
-
-            cves = extract_cves(doc)
-            if not cves:
-              print(f"ℹ️ {label}: no CVEs found")
-              continue
-
-            for cve in cves:
-              rows.append({
+              entries.append({
                 "cve": cve,
                 "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
-                "releaseDate": dt.strftime("%Y-%m-%d"),
-                "source": label
+                "releaseDate": rel_dt.date().isoformat(),  # YYYY-MM-DD
+                "source": lab,                              # e.g., 2025-Nov
+                "description": description or "(no description)"
               })
 
-          # De-dupe on (CVE, releaseDate)
-          out, seen = [], set()
-          for r in rows:
-            key = (r["cve"], r["releaseDate"])
-            if key not in seen:
-              seen.add(key)
-              out.append(r)
+          # Sort newest first by releaseDate then CVE
+          entries.sort(key=lambda e: (e["releaseDate"], e["cve"]), reverse=True)
 
-          out.sort(key=lambda x: (x["releaseDate"], x["cve"]), reverse=True)
+          # Write output (even if empty)
+          with open(OUT, "w", encoding="utf-8") as f:
+            json.dump(entries, f, ensure_ascii=False, indent=2)
 
-          with open("data.json", "w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False, indent=2)
-
-          print(f"✅ Completed. {len(out)} updates written (window {SINCE.date()}–{NOW.date()})")
+          print(f"Wrote {len(entries)} rows to {OUT} (window {SINCE.date()}..{NOW.date()})")
           PY
 
       - name: Commit if changed
