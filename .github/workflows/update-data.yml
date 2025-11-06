@@ -3,8 +3,7 @@ name: Build MSRC updates JSON (daily)
 on:
   workflow_dispatch:
   schedule:
-    # Runs daily at 09:09 UTC. Adjust if you prefer a different time.
-    - cron: '9 9 * * *'
+    - cron: "9 9 * * *"   # 09:09 UTC daily
 
 permissions:
   contents: write
@@ -14,161 +13,121 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install requests python-dateutil
 
-      - name: Build data.json (last 30 days; robust CVRF v3 parsing)
+      - name: Build data.json (SUG v2 first; CVRF fallback; includes description)
         run: |
           python - << 'PY'
-          import json, re, requests
+          import requests, json, re
           from datetime import datetime, timedelta, timezone
           from dateutil import parser as dtp
-          from xml.etree import ElementTree as ET
 
           OUT = "data.json"
-
-          # ---- Helpers ------------------------------------------------------
-          def month_label(dt: datetime) -> str:
-            # e.g., 2025-Nov (MSRC CVRF v3 month key)
-            return dt.strftime("%Y-%b")
-
-          def month_labels_between(start: datetime, end: datetime):
-            # inclusive list of month labels between start..end
-            cur = datetime(start.year, start.month, 1, tzinfo=timezone.utc)
-            last = datetime(end.year, end.month, 1, tzinfo=timezone.utc)
-            labs = []
-            while cur <= last:
-              labs.append(month_label(cur))
-              # add 1 month
-              ny = cur.year + (cur.month // 12)
-              nm = 1 if cur.month == 12 else cur.month + 1
-              cur = datetime(ny, nm, 1, tzinfo=timezone.utc)
-            return labs
-
-          def get_text(node, path):
-            n = node.find(path)
-            return (n.text or "").strip() if (n is not None and n.text) else ""
-
-          def findall_anyns(node, tag):
-            return node.findall(f".//{{*}}{tag}")
-
-          def parse_date(s):
-            if not s:
-              return None
-            try:
-              return dtp.isoparse(s).astimezone(timezone.utc)
-            except Exception:
-              try:
-                # Some feeds are missing TZ; assume UTC
-                return dtp.isoparse(s + "Z").astimezone(timezone.utc)
-              except Exception:
-                return None
-
-          def fetch_xml(url):
-            # Simple fetch with reasonable timeouts
-            r = requests.get(url, timeout=30)
-            r.raise_for_status()
-            return r.text
-
-          # ---- Window -------------------------------------------------------
           NOW = datetime.now(timezone.utc)
           SINCE = NOW - timedelta(days=30)
 
-          labels = month_labels_between(SINCE, NOW)
+          def safe_date(s):
+              try:
+                  return dtp.isoparse(s).astimezone(timezone.utc)
+              except Exception:
+                  return None
 
-          entries = []
-          seen = set()  # dedupe by (CVE, releaseDate)
+          entries, seen = [], set()
 
-          for lab in labels:
-            url = f"https://api.msrc.microsoft.com/cvrf/v3.0/{lab}"
-            try:
-              xml = fetch_xml(url)
-            except requests.HTTPError as ex:
-              # Skip missing months (404) or other temporary issues
-              print(f"WARN: skipping {lab}: {ex}")
-              continue
-            except Exception as ex:
-              print(f"WARN: error fetching {lab}: {ex}")
-              continue
+          print(">>> SUG v2.0: https://api.msrc.microsoft.com/sug/v2.0/en-US/updates")
+          try:
+              r = requests.get("https://api.msrc.microsoft.com/sug/v2.0/en-US/updates", timeout=45)
+              r.raise_for_status()
+              for u in (r.json().get("value") or []):
+                  title = (u.get("Title") or "").strip()
+                  pub = safe_date(u.get("ReleaseDate"))
+                  if not pub or not (SINCE <= pub <= NOW):
+                      continue
+                  for cve in (u.get("CVEIDs") or []):
+                      key = (cve, pub.date().isoformat())
+                      if key in seen: continue
+                      seen.add(key)
+                      entries.append({
+                          "cve": cve,
+                          "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
+                          "releaseDate": pub.date().isoformat(),
+                          "source": "MSRC-SUG",
+                          "description": title or "(no description)"
+                      })
+              print(f"SUG v2.0 collected: {len(entries)}")
+          except Exception as e:
+              print(f"WARNING: SUG v2.0 failed: {e}")
 
-            try:
-              root = ET.fromstring(xml)
-            except Exception as ex:
-              print(f"WARN: XML parse error for {lab}: {ex}")
-              continue
+          if not entries:
+              print(">>> Fallback: CVRF v3 monthly XML (last 2 months)")
+              import xml.etree.ElementTree as ET
+              def findall_any(node, tag): return node.findall(f".//{{*}}{tag}")
+              def get(node, path):
+                  n = node.find(path)
+                  return (n.text or "").strip() if (n is not None and n.text) else ""
 
-            vulns = findall_anyns(root, "Vulnerability")
-            for v in vulns:
-              # CVE (prefer <CVE>, else <ID> if it looks like CVE-YYYY-NNNN)
-              cve = get_text(v, ".//{*}CVE")
-              if not cve:
-                alt_id = get_text(v, ".//{*}ID")
-                if re.match(r"(?i)^CVE-\d{4}-\d+", alt_id):
-                  cve = alt_id
-              if not cve:
-                continue
+              labels = [NOW.strftime("%Y-%b"), (NOW - timedelta(days=31)).strftime("%Y-%b")]
+              for lab in labels:
+                  url = f"https://api.msrc.microsoft.com/cvrf/v3.0/{lab}"
+                  try:
+                      rr = requests.get(url, timeout=45)
+                      if rr.status_code == 404:
+                          print(f"  skip {lab}: 404")
+                          continue
+                      rr.raise_for_status()
+                      root = ET.fromstring(rr.text)
+                      for v in findall_any(root, "Vulnerability"):
+                          cve = get(v, ".//{*}CVE")
+                          if not cve:
+                              aid = get(v, ".//{*}ID")
+                              if re.match(r"(?i)^CVE-\d{4}-\d+", aid):
+                                  cve = aid
+                          if not cve: continue
 
-              # Release date (prefer CurrentReleaseDate, else InitialReleaseDate)
-              cur_rel = get_text(v, ".//{*}CurrentReleaseDate")
-              init_rel = get_text(v, ".//{*}InitialReleaseDate")
-              rel_str = cur_rel or init_rel
-              rel_dt = parse_date(rel_str)
-              if not rel_dt:
-                # As a last resort, skip if date missing or unparsable
-                print(f"WARN: {cve} has no usable release date in {lab}")
-                continue
+                          title = get(v, ".//{*}Title")
+                          desc = ""
+                          for note in findall_any(v, "Note"):
+                              t = (note.get("Type") or note.get("type") or "").lower()
+                              if t == "description" and (note.text or "").strip():
+                                  desc = note.text.strip()
+                                  break
 
-              # Filter to last 30 days
-              if not (SINCE <= rel_dt <= NOW):
-                continue
+                          pub = safe_date(get(v, ".//{*}CurrentReleaseDate") or get(v, ".//{*}InitialReleaseDate"))
+                          if not pub or not (SINCE <= pub <= NOW): continue
 
-              # Description (prefer Note Type="Description"; else Title)
-              description = ""
-              for n in findall_anyns(v, "Note"):
-                t = (n.get("Type") or n.get("type") or "").lower()
-                if t == "description" and (n.text or "").strip():
-                  description = n.text.strip()
-                  break
-              if not description:
-                title = get_text(v, ".//{*}Title")
-                if title:
-                  description = title
+                          key = (cve, pub.date().isoformat())
+                          if key in seen: continue
+                          seen.add(key)
+                          entries.append({
+                              "cve": cve,
+                              "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
+                              "releaseDate": pub.date().isoformat(),
+                              "source": lab,
+                              "description": (desc or title or "").strip() or "(no description)"
+                          })
+                      print(f"  {lab}: added, running total {len(entries)}")
+                  except Exception as e:
+                      print(f"  WARN {lab}: {e}")
 
-              key = (cve.upper(), rel_dt.date().isoformat())
-              if key in seen:
-                continue
-              seen.add(key)
-
-              entries.append({
-                "cve": cve,
-                "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
-                "releaseDate": rel_dt.date().isoformat(),  # YYYY-MM-DD
-                "source": lab,                              # e.g., 2025-Nov
-                "description": description or "(no description)"
-              })
-
-          # Sort newest first by releaseDate then CVE
           entries.sort(key=lambda e: (e["releaseDate"], e["cve"]), reverse=True)
-
-          # Write output (even if empty)
+          print(f">>> Final entries: {len(entries)}  window: {SINCE.date()}..{NOW.date()}")
           with open(OUT, "w", encoding="utf-8") as f:
-            json.dump(entries, f, ensure_ascii=False, indent=2)
-
-          print(f"Wrote {len(entries)} rows to {OUT} (window {SINCE.date()}..{NOW.date()})")
+              json.dump(entries, f, ensure_ascii=False, indent=2)
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): daily MSRC data.json update"
+          commit_message: "chore(data): daily MSRC updates (SUG v2 + CVRF fallback)"
           file_pattern: data.json
