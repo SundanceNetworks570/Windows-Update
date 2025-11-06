@@ -1,18 +1,20 @@
 name: Build MSRC updates JSON (daily)
 
 on:
+  # Manual trigger button in Actions
   workflow_dispatch:
+  # Runs every day at 9:00 UTC (change if you want)
   schedule:
-    - cron: "9 9 * * *"  # 09:09 UTC daily
-
-permissions:
-  contents: write
+    - cron: "0 9 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python 3.11
@@ -20,115 +22,119 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-dateutil
+          python -m pip install requests
 
       - name: Build data.json (SUG v2 global API; robust JSON handling)
         run: |
           python - << 'PY'
-          import json, time, requests
+          import json, os, time, requests
           from datetime import datetime, timedelta, timezone
-          from dateutil import parser as dtp
 
-          OUT = "data.json"
+          # ---- Config ----
+          DAYS_BACK = 30
+          MAX_RETRIES = 5
+          RETRY_SLEEP = 15  # seconds between retries on rate limit (HTTP 999)
+
+          # SUG v2 API; select only the fields we need and order by most recent
+          URL = ("https://api.msrc.microsoft.com/sug/v2.0/updates"
+                 "?$select=title,cveIds,releaseDate,lastModifiedDate,currentReleaseDate"
+                 "&$orderby=lastModifiedDate%20desc&$top=500")
+
           NOW = datetime.now(timezone.utc)
-          SINCE = NOW - timedelta(days=30)
+          SINCE = NOW - timedelta(days=DAYS_BACK)
 
-          def iso_to_utc(s):
-              if not s:
-                  return None
-              try:
-                  return dtp.isoparse(s).astimezone(timezone.utc)
-              except Exception:
-                  return None
-
-          def best_date(u):
-              for k in ("releaseDate", "currentReleaseDate", "lastModifiedDate"):
-                  dt = iso_to_utc(u.get(k))
-                  if dt:
-                      return dt
-              return None
-
-          def safe_json(resp):
-              try:
-                  return resp.json()
-              except Exception:
-                  print(f"⚠️ Non-JSON or empty response from {resp.url} (HTTP {resp.status_code})")
-                  return {"value": []}
-
-          def fetch_json(url, tries=4, timeout=45):
-              headers = {"Accept": "application/json", "User-Agent": "windows-update-board/2.1"}
-              for i in range(tries):
+          def get_json(url: str, retries: int = MAX_RETRIES):
+              """Fetch JSON with retry handling for MSRC throttling (HTTP 999)."""
+              for i in range(retries):
                   try:
-                      r = requests.get(url, headers=headers, timeout=timeout)
-                      if r.status_code in (429, 500, 502, 503, 504):
-                          print(f"Retrying after HTTP {r.status_code} ({i+1}/{tries})")
-                          time.sleep(3 + i * 3)
+                      r = requests.get(url, headers={"Accept": "application/json"}, timeout=30)
+                      if r.status_code == 999:
+                          print(f"⚠️  MSRC API rate limited (HTTP 999); retrying in {RETRY_SLEEP}s… [{i+1}/{retries}]")
+                          time.sleep(RETRY_SLEEP)
                           continue
                       r.raise_for_status()
-                      return safe_json(r)
+                      # Ensure we can parse JSON (some infra returns HTML on error)
+                      try:
+                          return r.json()
+                      except Exception as e:
+                          print(f"⚠️  Response was not valid JSON: {e}")
+                          time.sleep(10)
                   except Exception as e:
-                      print(f"Attempt {i+1}/{tries} failed: {e}")
-                      time.sleep(2 + i * 2)
-              print("❌ All attempts failed.")
+                      print(f"⚠️  Request attempt {i+1} failed: {e}")
+                      time.sleep(10)
+              print("❌ All retries failed or invalid JSON; returning empty result.")
               return {"value": []}
 
-          base = "https://api.msrc.microsoft.com/sug/v2.0/updates"
-          url = f"{base}?$select=title,cveIds,releaseDate,currentReleaseDate,lastModifiedDate&$orderby=lastModifiedDate desc&$top=500"
+          def parse_iso(dt_str: str):
+              if not dt_str:
+                  return None
+              try:
+                  # Normalize trailing Z to +00:00 for fromisoformat
+                  return datetime.fromisoformat(dt_str.replace("Z", "+00:00"))
+              except Exception:
+                  return None
 
-          all_rows, next_link = [], url
-          while next_link:
-              data = fetch_json(next_link)
-              chunk = data.get("value", [])
-              all_rows.extend(chunk)
-              next_link = data.get("@odata.nextLink")
-              if next_link:
-                  print(f"→ Next page: {next_link}")
+          data = get_json(URL)
+          items = data.get("value", [])
+          if isinstance(items, dict) and "value" in items:
+              items = items["value"]
 
-          print(f"SUG raw items seen: {len(all_rows)}")
+          print(f"🔎 SUG returned items: {len(items)}")
 
-          entries, seen = [], set()
-          for u in all_rows:
-              title = (u.get("title") or "").strip() or "(no description)"
-              dt = best_date(u)
-              if not dt or not (SINCE <= dt <= NOW):
+          rows = []
+          for item in items:
+              # Pick the best date available on the record
+              dt = (parse_iso(item.get("currentReleaseDate"))
+                    or parse_iso(item.get("releaseDate"))
+                    or parse_iso(item.get("lastModifiedDate")))
+              if not dt:
                   continue
-              for cve in (u.get("cveIds") or []):
-                  if not cve:
-                      continue
-                  key = (cve, dt.date().isoformat())
-                  if key in seen:
-                      continue
-                  seen.add(key)
-                  entries.append({
+              if not (SINCE <= dt <= NOW):
+                  continue
+
+              cves = item.get("cveIds") or []
+              title = item.get("title") or ""
+              for cve in cves:
+                  rows.append({
                       "cve": cve,
-                      "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}",
-                      "releaseDate": dt.date().isoformat(),
-                      "source": "MSRC-SUG",
-                      "description": title
+                      "title": title,
+                      "releaseDate": dt.strftime("%Y-%m-%d"),
+                      "url": f"https://msrc.microsoft.com/update-guide/vulnerability/{cve}"
                   })
 
-          print(f"✅ Entries kept (last 30 days): {len(entries)}")
+          # Deduplicate by CVE+date (in case the API returns duplicates)
+          seen = set()
+          unique_rows = []
+          for r in rows:
+              key = (r["cve"], r["releaseDate"])
+              if key in seen:
+                  continue
+              seen.add(key)
+              unique_rows.append(r)
 
-          try:
-              old = json.load(open(OUT, "r", encoding="utf-8"))
-          except Exception:
-              old = None
-
-          entries.sort(key=lambda e: (e["releaseDate"], e["cve"]), reverse=True)
-
-          if entries or old is None:
-              with open(OUT, "w", encoding="utf-8") as f:
-                  json.dump(entries, f, ensure_ascii=False, indent=2)
-              print(f"Wrote {len(entries)} rows to {OUT}.")
+          if not unique_rows:
+              print(f"⚠️  No valid entries found in window {SINCE.date()}..{NOW.date()}.")
+              # Preserve existing data.json by not overwriting it
+              if os.path.exists("data.json"):
+                  print("ℹ️  Existing data.json preserved.")
+              else:
+                  # Create an empty file so the site can build cleanly on first run
+                  with open("data.json", "w", encoding="utf-8") as f:
+                      json.dump([], f, ensure_ascii=False, indent=2)
+                  print("ℹ️  Created empty data.json (first run, no results).")
           else:
-              print("⚠️ No valid entries collected; preserving existing data.json.")
+              unique_rows.sort(key=lambda x: (x["releaseDate"], x["cve"]), reverse=True)
+              with open("data.json", "w", encoding="utf-8") as f:
+                  json.dump(unique_rows, f, ensure_ascii=False, indent=2)
+              print(f"✅ Wrote {len(unique_rows)} entries to data.json (window {SINCE.date()}..{NOW.date()}).")
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): MSRC SUG v2 (resilient JSON parsing)"
+          commit_message: "chore(data): daily MSRC data.json update"
           file_pattern: data.json
+          commit_author: "GitHub Actions <actions@github.com>"
