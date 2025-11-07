@@ -28,7 +28,8 @@ jobs:
 
           # ---- Feeds ----
           MSRC_RSS = "https://api.msrc.microsoft.com/update-guide/rss"
-          WIN_HEALTH_FEED = "https://learn.microsoft.com/api/search/rss?locale=en-us&facet=ReleaseHealth"
+          # This Microsoft "Release Health" feed works and does not 400:
+          WIN_HEALTH_FEED = "https://learn.microsoft.com/en-us/feed/rss?category=Windows+Release+Health"
 
           KB_RE = re.compile(r"\bKB(\d{5,8})\b", re.IGNORECASE)
           CVE_RE = re.compile(r"\bCVE-\d{4}-\d{4,7}\b", re.IGNORECASE)
