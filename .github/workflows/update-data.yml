@@ -1,10 +1,9 @@
-name: Build MSRC updates JSON (fast)
+name: Build MSRC updates JSON (daily)
 
 on:
+  schedule:
+    - cron: "15 9 * * *"   # daily at 09:15 UTC
   workflow_dispatch:
-  # Uncomment if you also want a schedule for the fast job
-  # schedule:
-  #   - cron: "45 9 * * *"
 
 permissions:
   contents: write
@@ -12,26 +11,28 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests feedparser python-dateutil
+          pip install requests xmltodict python-dateutil pytz feedparser beautifulsoup4
 
-      - name: Build data.json (SUG v2: API with quick RSS fallback)
+      - name: Build data.json (enriched SUG + CVRF + Known Issues)
         run: |
           python - <<'PY'
-          import json, time, random, requests, feedparser
+          import json, time, random, re, html
+          import requests, xmltodict, feedparser
+          from bs4 import BeautifulSoup
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
 
@@ -39,84 +40,181 @@ jobs:
           SINCE = NOW - timedelta(days=30)
 
           def log(m): print(m, flush=True)
+          def jitter_sleep(base=10):
+              s = base + random.randint(5, 20)
+              log(f"Sleeping {s}s to avoid throttling...")
+              time.sleep(s)
 
-          def fetch_sug_json_quick():
+          def clean_text(s):
+              if not s: return ""
+              if "<" in s and ">" in s:
+                  s = BeautifulSoup(s, "html.parser").get_text(" ", strip=True)
+              s = html.unescape(s)
+              return re.sub(r"\s+", " ", s).strip()
+
+          # --- Known-issues mapping
+          KI_MAP = [
+              (r"windows\s*11.*23h2", "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-23h2"),
+              (r"windows\s*11.*22h2", "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2"),
+              (r"windows\s*11",       "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2"),
+              (r"windows\s*10.*22h2", "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-22h2"),
+              (r"windows\s*10",       "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-22h2"),
+              (r"server\s*2025",      "https://learn.microsoft.com/en-us/windows/release-health/windows-server-2025"),
+              (r"server\s*2022",      "https://learn.microsoft.com/en-us/windows/release-health/windows-server-2022"),
+              (r"server\s*2019",      "https://learn.microsoft.com/en-us/windows/release-health/windows-server-2019"),
+          ]
+          def known_issues_url(title, desc):
+              txt = f"{title} {desc}".lower()
+              for pat, url in KI_MAP:
+                  if re.search(pat, txt):
+                      return url
+              if re.search(r"windows\s(10|11|server)", txt):
+                  return "https://learn.microsoft.com/en-us/windows/release-health/windows-message-center"
+              return ""
+
+          # --- SUG JSON
+          def fetch_sug_json():
               url = ("https://api.msrc.microsoft.com/sug/v2.0/updates"
-                     "?$select=title,cveIds,releaseDate,lastModifiedDate,severity,releaseNumber"
+                     "?$select=title,cveIds,releaseDate,lastModifiedDate,severity,releaseNumber,links"
                      "&$orderby=lastModifiedDate desc&$top=200")
-              headers = {"User-Agent": "Mozilla/5.0 (compatible; MSRCFast/1.0)"}
-              for attempt in range(2):  # quick: 2 tries only
+              headers = {"User-Agent": "Mozilla/5.0"}
+              for attempt in range(5):
                   try:
-                      r = requests.get(url, headers=headers, timeout=25)
+                      r = requests.get(url, headers=headers, timeout=30)
                       if r.status_code == 200:
                           return r.json().get("value", [])
-                      if r.status_code in (999, 429, 503):
-                          backoff = 6 + random.randint(2, 6)
-                          log(f"SUG HTTP {r.status_code}, retrying in {backoff}s [{attempt+1}/2]...")
-                          time.sleep(backoff)
-                      else:
-                          log(f"SUG HTTP {r.status_code} (no retry)")
-                          return []
+                      if r.status_code in (429, 503, 999):
+                          log(f"SUG throttled ({r.status_code}), retry {attempt+1}/5")
+                          jitter_sleep(15)
+                          continue
+                      log(f"SUG API HTTP {r.status_code}")
+                      return []
                   except Exception as e:
-                      log(f"SUG error: {e} (retrying quick)")
-                      time.sleep(6)
+                      log(f"⚠️ SUG JSON error: {e}")
+                      jitter_sleep(10)
               return []
 
+          # --- SUG RSS
           def fetch_sug_rss():
-              log("Falling back to SUG RSS…")
-              rss_url = "https://api.msrc.microsoft.com/update-guide/rss"
-              feed = feedparser.parse(rss_url)
+              feed = feedparser.parse("https://api.msrc.microsoft.com/update-guide/rss")
               items = []
               for e in feed.entries:
-                  # published_parsed can be None for some items; skip those
-                  if not getattr(e, "published_parsed", None):
-                      continue
-                  pub = datetime(*e.published_parsed[:6], tzinfo=timezone.utc)
-                  if pub < SINCE: 
-                      continue
+                  if not getattr(e, "published_parsed", None): continue
+                  pub = datetime(*e.published_parsed[:6]).replace(tzinfo=timezone.utc)
+                  if pub < SINCE: continue
+                  title = clean_text(getattr(e, "title", "(no title)"))
+                  summary = clean_text(getattr(e, "summary", "(no description)"))
+                  link = getattr(e, "link", "")
+                  m = re.search(r"(CVE-\d{4}-\d+)", f"{title} {summary}", re.I)
+                  cve = m.group(1).upper() if m else "N/A"
                   items.append({
-                      "title": e.title,
-                      "cve": getattr(e, "id", "N/A"),
-                      "description": getattr(e, "summary", "(no description)"),
+                      "title": title or "Windows Update",
+                      "cve": cve,
+                      "description": summary,
                       "severity": "N/A",
                       "releaseDate": pub.strftime("%Y-%m-%d"),
-                      "source": "SUG RSS"
+                      "link": link,
+                      "source": "SUG RSS",
                   })
-              log(f"RSS parsed: {len(items)}")
+              log(f"SUG RSS parsed: {len(items)}")
               return items
 
-          all_entries = []
-          log("Fetching SUG JSON (fast)…")
-          data = fetch_sug_json_quick()
-          if not data:
-              data = fetch_sug_rss()
-
-          for item in data:
-              rd = item.get("releaseDate")
+          # --- CVRF
+          def fetch_cvrf(mtag):
+              url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{mtag}"
+              headers = {"Accept": "application/xml"}
               try:
-                  dt = isoparse(rd) if rd else None
+                  r = requests.get(url, headers=headers, timeout=30)
+                  if r.status_code == 404: return None
+                  r.raise_for_status()
+                  return xmltodict.parse(r.text)
+              except Exception as e:
+                  log(f"⚠️ CVRF {mtag} failed: {e}")
+                  return None
+          def parse_cvrf(doc):
+              if not doc: return []
+              root = doc.get("cvrfdoc", {})
+              vulns = root.get("Vulnerability", [])
+              if isinstance(vulns, dict): vulns = [vulns]
+              rel_str = (root.get("DocumentTracking") or {}).get("CurrentReleaseDate")
+              try:
+                  rel_dt = isoparse(rel_str).astimezone(timezone.utc) if rel_str else NOW
               except Exception:
-                  dt = None
-              if dt and dt >= SINCE:
-                  all_entries.append({
-                      "title": item.get("title", "(no title)"),
-                      "cve": ", ".join(item.get("cveIds", [])) if isinstance(item.get("cveIds"), list) else str(item.get("cveIds") or "N/A"),
-                      "description": item.get("releaseNumber", "Windows Update"),
-                      "severity": item.get("severity", "N/A"),
-                      "releaseDate": dt.strftime("%Y-%m-%d"),
-                      "source": item.get("source", "SUG")
+                  rel_dt = NOW
+              if rel_dt < SINCE: return []
+              out = []
+              for v in vulns:
+                  cve = v.get("CVE") or "Unknown CVE"
+                  title = clean_text(v.get("Title")) or "Windows Update"
+                  desc = "(no description)"
+                  notes = v.get("Notes")
+                  if isinstance(notes, dict): notes = notes.get("Note")
+                  if isinstance(notes, list):
+                      for n in notes:
+                          if n.get("@Type") == "Description":
+                              desc = clean_text(n.get("#text"))
+                              break
+                  elif isinstance(notes, dict) and notes.get("@Type") == "Description":
+                      desc = clean_text(notes.get("#text"))
+                  out.append({
+                      "title": title,
+                      "cve": cve,
+                      "description": desc,
+                      "severity": "N/A",
+                      "releaseDate": rel_dt.strftime("%Y-%m-%d"),
+                      "link": "https://msrc.microsoft.com/update-guide",
+                      "source": "CVRF",
                   })
+              return out
 
-          all_entries.sort(key=lambda x: x["releaseDate"], reverse=True)
+          # --- Collect
+          all_items = []
+          # SUG JSON
+          for it in fetch_sug_json():
+              try:
+                  dt = isoparse(it.get("releaseDate")).astimezone(timezone.utc)
+              except Exception:
+                  continue
+              if dt < SINCE: continue
+              title = clean_text(it.get("title")) or "Windows Update"
+              cves = it.get("cveIds") or []
+              cve = ", ".join(cves) if isinstance(cves, list) and cves else "N/A"
+              descr = clean_text(it.get("releaseNumber")) or "Windows Update"
+              sev = clean_text(it.get("severity")) or "N/A"
+              link = ""
+              for L in (it.get("links") or []):
+                  href = L.get("href") or L.get("url") or ""
+                  if href.startswith("http"):
+                      link = href; break
+              all_items.append({
+                  "title": title, "cve": cve, "description": descr,
+                  "severity": sev, "releaseDate": dt.strftime("%Y-%m-%d"),
+                  "link": link, "source": "SUG"
+              })
+          all_items += fetch_sug_rss()
+          for mtag in [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]:
+              all_items += parse_cvrf(fetch_cvrf(mtag))
 
+          # Dedup + known issues
+          dedup = {}
+          for x in all_items:
+              x["knownIssuesUrl"] = known_issues_url(x["title"], x["description"])
+              key = (x["cve"], x["releaseDate"], x["source"])
+              if key not in dedup:
+                  dedup[key] = x
+              else:
+                  old = dedup[key]
+                  if (not old["link"] and x["link"]) or \
+                     (old["description"] == "(no description)" and x["description"] != "(no description)"):
+                      dedup[key] = x
+          items = sorted(dedup.values(), key=lambda i: i["releaseDate"], reverse=True)
           with open("data.json", "w", encoding="utf-8") as f:
-              json.dump(all_entries, f, indent=2, ensure_ascii=False)
-
-          log(f"✅ Fast build saved {len(all_entries)} entries to data.json")
+              json.dump(items, f, indent=2, ensure_ascii=False)
+          log(f"✅ Total entries saved: {len(items)}")
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "update data.json (FAST SUG)"
+          commit_message: "update data.json (known issues column)"
           file_pattern: data.json
