@@ -30,6 +30,7 @@ jobs:
         env:
           OUTFILE: data.json
         run: |
+          python <<'PYCODE'
           import json, requests, datetime, pytz, time
           from dateutil import parser
 
@@ -119,6 +120,7 @@ jobs:
               json.dump(updates, f, indent=2)
 
           print(f"Saved {len(updates)} updates to data.json")
+          PYCODE
 
       - name: Commit and push if changed
         run: |
