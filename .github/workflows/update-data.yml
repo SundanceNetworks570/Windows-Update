@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       days_back:
-        description: "Number of days back to collect"
+        description: "Days of updates to include"
         required: false
         default: "30"
 
@@ -16,7 +16,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -32,7 +32,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests xmltodict python-dateutil pytz
 
-      - name: Build data.json (real CVRF parsing)
+      - name: Build data.json (MSRC CVRF real data)
         env:
           DAYS_BACK_INPUT: ${{ github.event.inputs.days_back }}
         run: |
@@ -41,111 +41,100 @@ jobs:
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
 
-          # --- Setup ---
           days_back = int(os.getenv("DAYS_BACK_INPUT") or "30")
           NOW = datetime.now(timezone.utc)
           SINCE = NOW - timedelta(days=days_back)
 
           def log(msg): print(msg, flush=True)
 
-          def clean_text(s):
+          def clean(s):
               if not s:
                   return ""
               if isinstance(s, dict):
-                  s = s.get("#text") or ""
+                  s = s.get("#text", "")
               return str(s).replace("\n", " ").replace("\r", " ").strip()
-
-          def get_months():
-              months = [NOW.strftime("%Y-%b")]
-              prev = (NOW.replace(day=1) - timedelta(days=1)).strftime("%Y-%b")
-              if prev not in months:
-                  months.append(prev)
-              return months
 
           def fetch_cvrf(month):
               url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{month}"
-              log(f"Fetching {url}")
+              headers = {"Accept": "application/xml"}
               try:
-                  r = requests.get(url, headers={"Accept": "application/xml"}, timeout=30)
+                  r = requests.get(url, headers=headers, timeout=30)
                   if r.status_code == 404:
-                      log(f"No CVRF data for {month}")
                       return None
                   r.raise_for_status()
                   return xmltodict.parse(r.text)
               except Exception as e:
-                  log(f"Error fetching {month}: {e}")
+                  log(f"⚠️ Error fetching {url}: {e}")
                   return None
 
-          def extract_vulns(doc):
-              vulns = []
-              if not doc:
-                  return vulns
-              root = doc.get("cvrfdoc", {})
+          def parse_vulns(data):
+              if not data: return []
+              root = data.get("cvrfdoc", {})
               tracking = root.get("DocumentTracking", {})
-              cur_date = tracking.get("CurrentReleaseDate") or tracking.get("InitialReleaseDate")
-
-              if isinstance(cur_date, dict):
-                  cur_date = cur_date.get("#text")
+              rel_date = tracking.get("CurrentReleaseDate") or tracking.get("InitialReleaseDate")
+              if isinstance(rel_date, dict):
+                  rel_date = rel_date.get("#text")
               try:
-                  dt = isoparse(cur_date)
+                  release_date = isoparse(rel_date)
               except Exception:
-                  dt = NOW
-
-              if dt < SINCE:
+                  release_date = NOW
+              if release_date < SINCE:
                   return []
 
-              for v in root.get("Vulnerability", []):
-                  title = clean_text(v.get("Title"))
+              vulns = []
+              v_items = root.get("Vulnerability", [])
+              if isinstance(v_items, dict):
+                  v_items = [v_items]
+
+              for v in v_items:
                   cve = v.get("CVE") or "Unknown CVE"
-                  if isinstance(cve, list):
-                      cve = ", ".join(cve)
-                  desc = ""
-                  notes = v.get("Notes", {}).get("Note") if isinstance(v.get("Notes"), dict) else []
-                  if isinstance(notes, list):
-                      for n in notes:
-                          if isinstance(n, dict) and n.get("@Type") == "Description":
-                              desc = clean_text(n.get("#text"))
-                              break
-                  elif isinstance(notes, dict):
-                      desc = clean_text(notes.get("#text"))
+                  title = clean(v.get("Title"))
+                  desc = "(no description)"
+                  if "Notes" in v:
+                      notes = v["Notes"].get("Note") if isinstance(v["Notes"], dict) else []
+                      if isinstance(notes, list):
+                          for note in notes:
+                              if note.get("@Type") == "Description":
+                                  desc = clean(note.get("#text"))
+                                  break
+                      elif isinstance(notes, dict) and notes.get("@Type") == "Description":
+                          desc = clean(notes.get("#text"))
+
+                  severity = ""
+                  threat = v.get("Threats", {}).get("Threat")
+                  if isinstance(threat, dict):
+                      severity = clean(threat.get("#text"))
+                  elif isinstance(threat, list) and threat:
+                      severity = clean(threat[0].get("#text"))
 
                   vulns.append({
-                      "title": title or "(no title)",
+                      "title": title or cve,
                       "cve": cve,
-                      "description": desc or "(no description)",
-                      "releaseDate": dt.isoformat(),
-                      "source": "CVRF"
+                      "description": desc,
+                      "severity": severity or "n/a",
+                      "releaseDate": release_date.strftime("%Y-%m-%d"),
+                      "source": "MSRC CVRF"
                   })
               return vulns
 
-          all_items = []
-          for m in get_months():
+          months = [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]
+          all_vulns = []
+          for m in months:
+              log(f"Fetching month: {m}")
               data = fetch_cvrf(m)
-              vulns = extract_vulns(data)
-              log(f"Extracted {len(vulns)} vulnerabilities from {m}")
-              all_items.extend(vulns)
+              vulns = parse_vulns(data)
+              log(f"Extracted {len(vulns)} entries from {m}")
+              all_vulns.extend(vulns)
 
-          # Filter to last N days
-          recent = []
-          for v in all_items:
-              try:
-                  d = isoparse(v["releaseDate"])
-                  if SINCE <= d <= NOW:
-                      recent.append(v)
-              except Exception:
-                  continue
-
-          log(f"Total entries within {days_back} days: {len(recent)}")
-
-          if not recent:
+          if not all_vulns:
               if os.path.exists("data.json"):
-                  log("No new data — preserving existing file.")
+                  log("⚠️ No data found; preserving existing file.")
               else:
-                  recent = [{"title": "No updates", "cve": "-", "description": "-", "releaseDate": NOW.isoformat(), "source": "none"}]
+                  all_vulns = [{"title": "No updates found", "cve": "-", "description": "-", "releaseDate": NOW.strftime("%Y-%m-%d"), "source": "none"}]
 
           with open("data.json", "w", encoding="utf-8") as f:
-              json.dump(recent, f, indent=2, ensure_ascii=False)
-              log("✅ data.json written successfully.")
+              json.dump(all_vulns, f, indent=2, ensure_ascii=False)
+              log(f"✅ Saved {len(all_vulns)} updates to data.json")
           PY
 
       - name: Commit if changed
