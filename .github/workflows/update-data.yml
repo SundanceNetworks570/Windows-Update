@@ -2,7 +2,7 @@ name: Build MSRC updates JSON (daily)
 
 on:
   schedule:
-    - cron: "15 9 * * *"   # daily at 09:15 UTC
+    - cron: "15 9 * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests xmltodict python-dateutil pytz feedparser beautifulsoup4
 
-      - name: Build data.json (enriched SUG + CVRF + Known Issues)
+      - name: Build data.json (SUG + CVRF + Known Issues + KB + normalized links)
         run: |
           python - <<'PY'
           import json, time, random, re, html
@@ -52,7 +52,11 @@ jobs:
               s = html.unescape(s)
               return re.sub(r"\s+", " ", s).strip()
 
-          # --- Known-issues mapping
+          KB_RE   = re.compile(r"\bKB(\d{7})\b", re.I)
+          KB_URL  = re.compile(r"/help/(\d{7})(?:/|$)")
+          CVE_RE  = re.compile(r"(CVE-\d{4}-\d+)", re.I)
+
+          # ---- Known issues mapping (URL per OS train)
           KI_MAP = [
               (r"windows\s*11.*23h2", "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-23h2"),
               (r"windows\s*11.*22h2", "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2"),
@@ -72,7 +76,29 @@ jobs:
                   return "https://learn.microsoft.com/en-us/windows/release-health/windows-message-center"
               return ""
 
-          # --- SUG JSON
+          def extract_kbs(*texts_or_urls):
+              kbs = set()
+              for t in texts_or_urls:
+                  if not t: continue
+                  # KB in text
+                  for m in KB_RE.findall(str(t)):
+                      kbs.add(f"KB{m}")
+                  # KB in support.microsoft.com URL form
+                  for m in KB_URL.findall(str(t)):
+                      kbs.add(f"KB{m}")
+              return sorted(kbs)
+
+          def msrc_link_for(cve_field, release_date_str):
+              m = CVE_RE.search(cve_field or "")
+              if m:
+                  return f"https://msrc.microsoft.com/update-guide/vulnerability/{m.group(1).upper()}"
+              try:
+                  dt = isoparse(release_date_str).astimezone(timezone.utc)
+              except Exception:
+                  dt = NOW
+              return f"https://msrc.microsoft.com/update-guide/releaseNote/{dt.strftime('%Y-%b')}"
+
+          # -------- SUG JSON
           def fetch_sug_json():
               url = ("https://api.msrc.microsoft.com/sug/v2.0/updates"
                      "?$select=title,cveIds,releaseDate,lastModifiedDate,severity,releaseNumber,links"
@@ -94,7 +120,7 @@ jobs:
                       jitter_sleep(10)
               return []
 
-          # --- SUG RSS
+          # -------- SUG RSS
           def fetch_sug_rss():
               feed = feedparser.parse("https://api.msrc.microsoft.com/update-guide/rss")
               items = []
@@ -105,21 +131,26 @@ jobs:
                   title = clean_text(getattr(e, "title", "(no title)"))
                   summary = clean_text(getattr(e, "summary", "(no description)"))
                   link = getattr(e, "link", "")
-                  m = re.search(r"(CVE-\d{4}-\d+)", f"{title} {summary}", re.I)
-                  cve = m.group(1).upper() if m else "N/A"
+                  cve = None
+                  m = CVE_RE.search(f"{title} {summary}")
+                  if m: cve = m.group(1).upper()
+                  if not (link and "update-guide" in link):
+                      link = msrc_link_for(cve, pub.isoformat())
+                  kbs = extract_kbs(title, summary, link)
                   items.append({
                       "title": title or "Windows Update",
-                      "cve": cve,
+                      "cve": cve or "N/A",
                       "description": summary,
                       "severity": "N/A",
                       "releaseDate": pub.strftime("%Y-%m-%d"),
                       "link": link,
+                      "kb": kbs,
                       "source": "SUG RSS",
                   })
               log(f"SUG RSS parsed: {len(items)}")
               return items
 
-          # --- CVRF
+          # -------- CVRF
           def fetch_cvrf(mtag):
               url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{mtag}"
               headers = {"Accept": "application/xml"}
@@ -131,6 +162,7 @@ jobs:
               except Exception as e:
                   log(f"⚠️ CVRF {mtag} failed: {e}")
                   return None
+
           def parse_cvrf(doc):
               if not doc: return []
               root = doc.get("cvrfdoc", {})
@@ -152,61 +184,85 @@ jobs:
                   if isinstance(notes, list):
                       for n in notes:
                           if n.get("@Type") == "Description":
-                              desc = clean_text(n.get("#text"))
-                              break
+                              desc = clean_text(n.get("#text")); break
                   elif isinstance(notes, dict) and notes.get("@Type") == "Description":
                       desc = clean_text(notes.get("#text"))
+                  link = msrc_link_for(cve, rel_dt.isoformat())
+                  kbs = extract_kbs(title, desc, link)
                   out.append({
                       "title": title,
                       "cve": cve,
                       "description": desc,
                       "severity": "N/A",
                       "releaseDate": rel_dt.strftime("%Y-%m-%d"),
-                      "link": "https://msrc.microsoft.com/update-guide",
+                      "link": link,
+                      "kb": kbs,
                       "source": "CVRF",
                   })
               return out
 
-          # --- Collect
+          # -------- Collect & merge
           all_items = []
-          # SUG JSON
+
+          # SUG JSON (most structured source)
           for it in fetch_sug_json():
               try:
                   dt = isoparse(it.get("releaseDate")).astimezone(timezone.utc)
               except Exception:
                   continue
               if dt < SINCE: continue
+
               title = clean_text(it.get("title")) or "Windows Update"
-              cves = it.get("cveIds") or []
-              cve = ", ".join(cves) if isinstance(cves, list) and cves else "N/A"
               descr = clean_text(it.get("releaseNumber")) or "Windows Update"
-              sev = clean_text(it.get("severity")) or "N/A"
-              link = ""
-              for L in (it.get("links") or []):
-                  href = L.get("href") or L.get("url") or ""
-                  if href.startswith("http"):
-                      link = href; break
+              sev   = clean_text(it.get("severity")) or "N/A"
+
+              cves = it.get("cveIds") or []
+              cve  = ", ".join(cves) if isinstance(cves, list) and cves else "N/A"
+
+              # links property can contain support.microsoft.com or update-guide links → mine KBs
+              links = it.get("links") or []
+              link_urls = []
+              if isinstance(links, list):
+                  for l in links:
+                      if isinstance(l, str): link_urls.append(l)
+                      elif isinstance(l, dict):
+                          # SUG sometimes gives {"href": "..."} or {"url": "..."}
+                          link_urls += [l.get("href"), l.get("url")]
+              link_urls = [u for u in link_urls if u]
+
+              kbs = extract_kbs(title, descr, *link_urls)
+              link = msrc_link_for(cve, dt.isoformat())
+
               all_items.append({
-                  "title": title, "cve": cve, "description": descr,
-                  "severity": sev, "releaseDate": dt.strftime("%Y-%m-%d"),
-                  "link": link, "source": "SUG"
+                  "title": title,
+                  "cve": cve,
+                  "description": descr,
+                  "severity": sev,
+                  "releaseDate": dt.strftime("%Y-%m-%d"),
+                  "link": link,
+                  "kb": kbs,
+                  "source": "SUG",
               })
+
+          # SUG RSS & CVRF
           all_items += fetch_sug_rss()
           for mtag in [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]:
               all_items += parse_cvrf(fetch_cvrf(mtag))
 
-          # Dedup + known issues
+          # Deduplicate & add known-issues URL
           dedup = {}
           for x in all_items:
               x["knownIssuesUrl"] = known_issues_url(x["title"], x["description"])
-              key = (x["cve"], x["releaseDate"], x["source"])
+              key = (x["cve"], x["releaseDate"], x.get("link"))
               if key not in dedup:
                   dedup[key] = x
               else:
                   old = dedup[key]
-                  if (not old["link"] and x["link"]) or \
+                  # prefer entry with KBs or better description
+                  if (not old.get("kb") and x.get("kb")) or \
                      (old["description"] == "(no description)" and x["description"] != "(no description)"):
                       dedup[key] = x
+
           items = sorted(dedup.values(), key=lambda i: i["releaseDate"], reverse=True)
           with open("data.json", "w", encoding="utf-8") as f:
               json.dump(items, f, indent=2, ensure_ascii=False)
@@ -216,5 +272,5 @@ jobs:
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "update data.json (known issues column)"
+          commit_message: "update data.json (KB + Known Issues + normalized MSRC links)"
           file_pattern: data.json
