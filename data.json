@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "name": "vulnerability",
+    "kind": "EntitySet",
+    "url": "vulnerability"
+  },
+  {
+    "name": "acknowledgement",
+    "kind": "EntitySet",
+    "url": "acknowledgement"
+  },
+  {
+    "name": "affectedProduct",
+    "kind": "EntitySet",
+    "url": "affectedProduct"
+  },
+  {
+    "name": "releaseNote",
+    "kind": "EntitySet",
+    "url": "releaseNote"
+  },
+  {
+    "name": "deployment",
+    "kind": "EntitySet",
+    "url": "deployment"
+  },
+  {
+    "name": "headerContent",
+    "kind": "EntitySet",
+    "url": "headerContent"
+  },
+  {
+    "name": "revisionNote",
+    "kind": "EntitySet",
+    "url": "revisionNote"
+  },
+  {
+    "name": "advisory",
+    "kind": "EntitySet",
+    "url": "advisory"
+  },
+  {
+    "name": "metadata",
+    "kind": "EntitySet",
+    "url": "metadata"
+  }
+]
