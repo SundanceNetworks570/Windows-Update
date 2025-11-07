@@ -2,294 +2,354 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Windows Updates (Last 30 Days)</title>
-  <link rel="preconnect" href="https://api.msrc.microsoft.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--accent:#38bdf8;--accent-2:#22d3ee;--good:#22c55e;
-      --row:#0b1220;--row-alt:#0d1526;--chip:#0b2239;--chip-border:#11304d;--pill:#0b2a3d
+      --bg:#0f172a;        /* slate-900 */
+      --panel:#111827;     /* gray-900 */
+      --muted:#9ca3af;     /* gray-400 */
+      --text:#e5e7eb;      /* gray-200 */
+      --accent:#60a5fa;    /* blue-400 */
+      --accent-2:#34d399;  /* emerald-400 */
+      --chip:#1f2937;      /* gray-800 */
+      --chip-b:#374151;    /* gray-700 */
+      --danger:#f87171;    /* red-400 */
+      --warn:#f59e0b;      /* amber-500 */
+      --ok:#22c55e;        /* green-500 */
+      --link:#93c5fd;
+      --row:#0b1222;
+      --row-alt:#0b1428;
+      --border:#1f2937;
     }
-    html,body{background:#0b1220;color:var(--text);font:14px/1.45 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial}
-    .wrap{max-width:1100px;margin:40px auto;padding:0 16px}
-    h1{font-weight:800;letter-spacing:.2px;margin:0 0 14px}
-    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0 18px}
-    .search{flex:1;min-width:260px}
-    input,select,button{border-radius:10px;border:1px solid #22314a;background:#0b1b30;color:var(--text);padding:10px 12px}
-    input::placeholder{color:#6b7280}
-    button{background:linear-gradient(135deg,var(--accent),var(--accent-2));border:none;color:#08111f;font-weight:700;cursor:pointer}
-    .btn{padding:10px 14px}
-    .muted{color:var(--muted)}
-    .table{width:100%;border-collapse:separate;border-spacing:0 8px}
-    .table thead th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#9aa5b1;text-align:left;padding:0 12px}
-    .row{background:linear-gradient(180deg,#0e1726 0%,#0a1322 100%); border:1px solid #15263f; box-shadow:0 6px 16px rgba(0,0,0,.35);
-         border-radius:12px}
-    .cell{padding:12px}
-    .badge{display:inline-block;background:var(--chip);border:1px solid var(--chip-border);padding:3px 8px;border-radius:999px;font-size:12px}
-    .link{color:#80d4ff;text-decoration:none}
-    .link:hover{text-decoration:underline}
-    .subtle{font-size:12px;color:#8aa0b5}
-    .pill{display:inline-block;font-size:12px;padding:6px 10px;border:1px solid #1f3d5a;background:#0b1d2c;border-radius:999px}
-    .status{display:flex;align-items:center;gap:8px;margin-top:8px}
-    .ok{color:var(--good)}
-    .error{color:#f87171}
-    .hidden{display:none}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .right{display:flex;gap:8px}
-    .narrow{max-width:620px}
-    .foot{margin:26px 0 10px}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#0b1120 40%, #0a0f1d 100%);
+      color:var(--text);
+      font-family:Inter,system-ui,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+      letter-spacing:0.1px;
+    }
+    .wrap{max-width:1080px; margin:40px auto; padding:0 20px}
+    h1{
+      margin:0 0 18px;
+      font-size:28px;
+      font-weight:700;
+    }
+    .controls{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:16px;
+    }
+    input[type="search"], select, button{
+      background:#0b1324;
+      border:1px solid var(--border);
+      color:var(--text);
+      border-radius:10px;
+      padding:10px 12px;
+      font-size:14px;
+      outline:none;
+    }
+    input[type="search"]{ flex:1 1 380px; }
+    select{ min-width:220px }
+    .btn{
+      cursor:pointer; user-select:none; border:1px solid #1e293b;
+      background:#0b1630;
+      transition:.15s ease;
+    }
+    .btn:hover{ transform:translateY(-1px); border-color:#2b3a52 }
+    .btn-primary{ background:#0b1d3c; border-color:#243b6b }
+    .btn-primary:hover{ background:#0e2349 }
+    .table{
+      width:100%; border-collapse:separate; border-spacing:0 10px;
+    }
+    .thead { display:none } /* visually minimalist; we render headers as labels in rows for mobile */
+    .row{
+      background:linear-gradient(180deg,var(--row),var(--row-alt));
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:14px;
+      display:grid;
+      grid-template-columns: 210px 1fr 170px 150px 110px;
+      gap:12px;
+      align-items:start;
+    }
+    .row + .row{ margin-top:10px }
+    .label{ font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.12em; }
+    .cve a{ color:var(--link); text-decoration:none; font-weight:600 }
+    .desc{ color:#d9e3f0; line-height:1.45 }
+    .muted{ color:var(--muted) }
+    .pill{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:4px 8px; border-radius:999px; font-size:12px;
+      background:var(--chip); border:1px solid var(--chip-b); color:#dbeafe;
+      text-decoration:none;
+    }
+    .pill.warn{ color:#fff; background:#2b1a02; border-color:#3a260a }
+    .pill.good{ color:#d1fae5; background:#052e26; border-color:#0b4a3b }
+    .kb{
+      display:inline-flex; align-items:center; gap:6px;
+      background:#101a2e; border:1px solid #24314a; color:#c7d2fe;
+      padding:4px 8px; border-radius:8px; text-decoration:none; margin:3px 6px 0 0; white-space:nowrap;
+      font-size:12px;
+    }
+    .mono{ font-variant-numeric:tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .right{ text-align:right }
+    .tiny{ font-size:12px }
+    .grid-col{ display:flex; flex-direction:column; gap:8px }
+    .bad{ color:var(--danger) }
+    .toolbar{ display:flex; gap:8px; margin-left:auto }
+    .footer{ margin:26px 0 40px; color:var(--muted); font-size:12px }
+    .no-results{ padding:40px; text-align:center; border:1px dashed #334155; border-radius:12px; background:#0b1324 }
+    @media (max-width: 980px){
+      .row{ grid-template-columns: 1fr; }
+      .right{ text-align:left }
+      .toolbar{ margin-left:0 }
+    }
+    a[href]{ color:#a5b4fc }
+    a[href]:hover{ text-decoration:underline }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <h1>Windows Updates (Last 30 Days)</h1>
-      <div class="right">
-        <button class="btn" id="printBtn">Print / PDF</button>
-        <button class="btn" id="emailBtn">Email</button>
+    <h1>Windows Updates (Last 30 Days)</h1>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search CVE, description, OS, KB, severity …" aria-label="Search" />
+      <select id="osFilter" aria-label="Filter by operating system">
+        <option value="all">All operating systems</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="new">Sort: Newest first</option>
+        <option value="old">Sort: Oldest first</option>
+      </select>
+      <div class="toolbar">
+        <button class="btn" id="resetBtn" title="Clear filters">Reset</button>
+        <button class="btn btn-primary" id="printBtn" title="Print / Save PDF">Print / PDF</button>
       </div>
     </div>
 
-    <div class="toolbar">
-      <input id="q" class="search" type="search" placeholder="Search CVE, description, OS, severity …" />
-      <select id="os">
-        <option value="">All operating systems</option>
-        <option>Windows 10</option>
-        <option>Windows 11</option>
-        <option>Windows Server</option>
-      </select>
-      <select id="sort">
-        <option value="new">Sort: Newest first</option>
-        <option value="old">Sort: Oldest first</option>
-        <option value="cve">Sort: CVE</option>
-      </select>
-    </div>
+    <div id="count" class="muted tiny" aria-live="polite"></div>
 
-    <div id="counter" class="muted">Loading…</div>
+    <div id="list" role="list" aria-busy="true"></div>
 
-    <table class="table" id="tbl">
-      <thead>
-        <tr>
-          <th style="width:22%">CVE</th>
-          <th style="width:48%">Description</th>
-          <th style="width:18%">Release date</th>
-          <th style="width:12%">Source</th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
-
-    <div id="empty" class="narrow muted hidden">
-      <p><strong>Couldn’t load data.</strong></p>
-      <p>If this is your first deploy and <code class="mono">data.json</code> doesn’t exist yet,
-         open the repo’s <em>Actions</em> tab and run <em>Build MSRC updates JSON (daily)</em> once.</p>
-    </div>
-
-    <div class="foot muted">
-      <div>Source: Microsoft Security Response Center CVRF v3; Windows Release Health pages for known-issues links.</div>
+    <div class="footer">
+      Source: Microsoft Security Response Center (MSRC) APIs &amp; CVRF, plus Windows Release Health for known issues links.
     </div>
   </div>
 
-<script>
-(async function () {
-  const $ = (sel) => document.querySelector(sel);
-  const tbody = $('#tbody');
-  const counter = $('#counter');
-  const empty = $('#empty');
+  <script>
+  // -------- Utilities ---------------------------------------------------------
+  const $ = sel => document.querySelector(sel);
+  const listEl = $('#list');
+  const searchEl = $('#search');
+  const sortEl = $('#sort');
+  const osEl = $('#osFilter');
+  const countEl = $('#count');
+  const resetBtn = $('#resetBtn');
+  const printBtn = $('#printBtn');
 
-  const fmtDate = (iso) => {
-    try {
-      if (!iso) return '';
-      const d = new Date(iso + 'T00:00:00Z');
-      return d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'2-digit' });
-    } catch { return iso; }
-  };
+  const isStr = v => typeof v === 'string';
+  const toDate = v => v ? new Date(v) : null;
 
-  // --- Load base entries (CVE, url, releaseDate, source) ---
-  let entries = [];
-  try {
-    const r = await fetch('./data.json', { cache:'no-store' });
-    if (!r.ok) throw new Error('data.json not found');
-    entries = await r.json();
-  } catch (e) {
-    console.error(e);
-    counter.textContent = 'Couldn’t load data.';
-    empty.classList.remove('hidden');
-    return;
+  // Normalize “KB5047962” or “5047962” -> { id: "KB5047962", num: "5047962", url: "https://support.microsoft.com/help/5047962" }
+  function normalizeKB(kb){
+    if(!kb) return null;
+    let s = String(kb).trim().toUpperCase();
+    let num = (s.startsWith('KB') ? s.slice(2) : s).replace(/[^0-9]/g, '');
+    if(!num) return null;
+    return { id: 'KB'+num, num, url: `https://support.microsoft.com/help/${num}` };
   }
 
-  // --- Build a month tag → CVE -> description map from CVRF XML (few requests) ---
-  const byMonth = {};
-  for (const e of entries) {
-    if (!e.source) continue;
-    (byMonth[e.source] ??= []).push(e.cve);
+  // Turn markdown links [text](url) into <a>
+  function mdLinksToHtml(text){
+    if(!isStr(text)) return '';
+    return text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, `<a href="$2" target="_blank" rel="noopener">$1</a>`);
   }
 
-  const cvrfDescMap = new Map(); // CVE -> description/title
-  const monthKeys = Object.keys(byMonth);
+  // Prefer best link for “details” — MSRC update page (msLink), CVE page, or SUG link.
+  function bestDetailsUrl(x){
+    if(isStr(x.msLink)) return x.msLink;
+    if(isStr(x.sourceUrl)) return x.sourceUrl;
+    if(isStr(x.cveId) && /^CVE-\d{4}-\d+/i.test(x.cveId)) {
+      return `https://msrc.microsoft.com/update-guide/vulnerability/${x.cveId}`;
+    }
+    return null;
+  }
 
-  for (const m of monthKeys) {
-    // m already like "2025-Oct"
-    const url = `https://api.msrc.microsoft.com/cvrf/v3.0/${encodeURIComponent(m)}`;
-    try {
-      const res = await fetch(url, { cache:'force-cache' });
-      if (!res.ok) {
-        console.warn('CVRF fetch failed', m, res.status);
-        continue;
+  // Friendly OS names: attempt to map affected product/OS strings.
+  function inferOS(x){
+    const c = (x.affectedProduct || x.product || x.os || '').toString();
+    if(/server/i.test(c)) return 'Windows Server';
+    if(/11|23H2|22H2|21H2/i.test(c)) return 'Windows 11';
+    if(/10/i.test(c)) return 'Windows 10';
+    if(/7|8\./i.test(c)) return 'Legacy';
+    return c || 'Unknown';
+  }
+
+  // Render a single entry row
+  function renderRow(x){
+    const cve = x.cveId || x.cve || 'N/A';
+    const dateStr = (x.releaseDate || x.published || x.date || '').toString();
+    const releaseDate = dateStr ? new Date(dateStr) : null;
+    const releaseOut = releaseDate ? releaseDate.toLocaleDateString(undefined,{month:'short', day:'2-digit', year:'numeric'}) : '—';
+
+    // KBs can be array or string
+    let kbHtml = '—';
+    let kbs = Array.isArray(x.kb) ? x.kb : (x.kb ? [x.kb] : []);
+    const kbLinks = [];
+    for(const kb of kbs){
+      const norm = normalizeKB(kb);
+      if(norm){
+        kbLinks.push(`<a class="kb mono" href="${norm.url}" target="_blank" rel="noopener" title="Open ${norm.id} on support.microsoft.com">${norm.id}</a>`);
       }
-      const text = await res.text();
-      const doc = new DOMParser().parseFromString(text, 'application/xml');
+    }
+    if(kbLinks.length) kbHtml = kbLinks.join('');
 
-      const getNS = (node, localName) => node.getElementsByTagNameNS('*', localName);
+    // Known issues
+    let kiHtml = '—';
+    if(isStr(x.knownIssuesUrl)){
+      kiHtml = `<a class="pill warn" href="${x.knownIssuesUrl}" target="_blank" rel="noopener" title="Open Windows Release Health known issues">Known issues</a>`;
+    }
 
-      const vulns = getNS(doc, 'Vulnerability');
-      for (const v of vulns) {
-        // CVE id can appear in different places; grab any <CVE> or <ID> with CVE- prefix.
-        let cve = '';
-        const cveNode = getNS(v, 'CVE')[0] || null;
-        if (cveNode && cveNode.textContent) {
-          cve = cveNode.textContent.trim();
-        } else {
-          const idNode = getNS(v, 'ID')[0] || null;
-          const t = idNode?.textContent?.trim() || '';
-          if (/^CVE-\d{4}-\d+/i.test(t)) cve = t;
-        }
-        if (!cve) continue;
+    // Details (MSRC update page preferred)
+    const detailsUrl = bestDetailsUrl(x);
+    const cveCell = detailsUrl
+      ? `<a href="${detailsUrl}" class="mono" target="_blank" rel="noopener">${cve}</a>`
+      : `<span class="mono">${cve}</span>`;
 
-        // Prefer a Note of Type="Description", else Title
-        let desc = '';
-        const notes = getNS(v, 'Note');
-        for (const n of notes) {
-          const t = (n.getAttribute('Type') || n.getAttribute('type') || '').toLowerCase();
-          if (t === 'description') {
-            desc = n.textContent.trim();
-            break;
-          }
-        }
-        if (!desc) {
-          const title = getNS(v, 'Title')[0];
-          if (title) desc = title.textContent.trim();
-        }
-        if (desc) cvrfDescMap.set(cve.toUpperCase(), desc);
-      }
-    } catch (err) {
-      console.warn('CVRF parse error', m, err);
+    // Description
+    const desc = mdLinksToHtml(x.description || x.title || '(no description)');
+
+    // Source chip
+    const source = (x.source || '').toString().toUpperCase() || 'MSRC';
+    const sourceLink = detailsUrl || x.sourceUrl || '#';
+    const sourceHtml = `<a class="pill" href="${sourceLink}" target="_blank" rel="noopener">${source}</a>`;
+
+    return `
+      <div class="row" role="listitem">
+        <div class="grid-col">
+          <div class="label">CVE</div>
+          <div class="cve">${cveCell}</div>
+        </div>
+        <div class="grid-col">
+          <div class="label">Description</div>
+          <div class="desc">${desc}</div>
+        </div>
+        <div class="grid-col right">
+          <div class="label">KB</div>
+          <div>${kbHtml}</div>
+        </div>
+        <div class="grid-col right">
+          <div class="label">Release date</div>
+          <div class="mono">${releaseOut}</div>
+        </div>
+        <div class="grid-col right">
+          <div class="label">Known issues</div>
+          <div>${kiHtml}</div>
+          <div class="label" style="margin-top:6px;">Source</div>
+          <div>${sourceHtml}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  // -------- Data load + state --------------------------------------------------
+  let DATA = [];
+  let VIEW = [];
+  let ALL_OSES = new Set();
+
+  function normalizeItem(raw){
+    // Keep field names flexible to match your workflow’s data.json
+    const obj = {
+      cveId: raw.cveId || raw.cve || raw.CVE || '',
+      title: raw.title || '',
+      description: raw.description || raw.desc || '',
+      source: raw.source || raw.Source || '',
+      sourceUrl: raw.sugUrl || raw.url || raw.sourceUrl || '',
+      msLink: raw.msLink || raw.msrcUrl || '',
+      kb: raw.kb || raw.kbs || [],
+      knownIssuesUrl: raw.knownIssuesUrl || raw.knownIssues || '',
+      affectedProduct: raw.affectedProduct || raw.product || raw.os || '',
+      releaseDate: raw.releaseDate || raw.date || raw.published || '',
+    };
+    obj.os = inferOS(obj);
+    // Coerce kb to array
+    if(isStr(obj.kb)) obj.kb = [obj.kb];
+    return obj;
+  }
+
+  async function load(){
+    try{
+      const resp = await fetch('data.json', {cache:'no-store'});
+      const json = await resp.json();
+      DATA = Array.isArray(json) ? json.map(normalizeItem) : [];
+      // OS options
+      DATA.forEach(x => { if(x.os && x.os !== 'Unknown') ALL_OSES.add(x.os) });
+      renderOsOptions();
+      apply();
+    }catch(e){
+      listEl.innerHTML = `<div class="no-results bad">Failed to load <code>data.json</code>. ${e}</div>`;
     }
   }
 
-  // Attach description from map (fallback to empty string)
-  for (const e of entries) {
-    const fromCvrf = cvrfDescMap.get((e.cve || '').toUpperCase());
-    if (fromCvrf && !e.description) e.description = fromCvrf;
+  function renderOsOptions(){
+    const items = Array.from(ALL_OSES).sort((a,b)=>a.localeCompare(b,'en',{numeric:true}));
+    osEl.innerHTML = `<option value="all">All operating systems</option>` + items.map(v=>`<option value="${v}">${v}</option>`).join('');
   }
 
-  // --- UI state & rendering ---
-  const state = {
-    q: '',
-    os: '',
-    sort: 'new'
-  };
+  // -------- Filtering / sorting / rendering -----------------------------------
+  function apply(){
+    const q = searchEl.value.trim().toLowerCase();
+    const os = osEl.value;
+    const sort = sortEl.value;
 
-  $('#q').addEventListener('input', (ev) => { state.q = ev.target.value.trim().toLowerCase(); render(); });
-  $('#os').addEventListener('change', (ev) => { state.os = ev.target.value; render(); });
-  $('#sort').addEventListener('change', (ev) => { state.sort = ev.target.value; render(); });
-  $('#printBtn').addEventListener('click', () => window.print());
-  $('#emailBtn').addEventListener('click', () => {
-    const url = location.href;
-    const body = encodeURIComponent(`Windows Updates (Last 30 Days)\n\n${url}`);
-    location.href = `mailto:?subject=Windows Updates (Last 30 Days)&body=${body}`;
+    VIEW = DATA.filter(x=>{
+      if(os !== 'all' && x.os !== os) return false;
+      if(!q) return true;
+      const hay = [
+        x.cveId, x.title, x.description, x.os,
+        ...(Array.isArray(x.kb) ? x.kb : [])
+      ].join(' ').toLowerCase();
+      return hay.includes(q);
+    });
+
+    VIEW.sort((a,b)=>{
+      const da = toDate(a.releaseDate)?.getTime() ?? 0;
+      const db = toDate(b.releaseDate)?.getTime() ?? 0;
+      return sort === 'new' ? db - da : da - db;
+    });
+
+    render();
+  }
+
+  function render(){
+    countEl.textContent = `${VIEW.length.toLocaleString()} updates`;
+    if(!VIEW.length){
+      listEl.innerHTML = `<div class="no-results">No results match your filters.</div>`;
+      return;
+    }
+    // Build all rows
+    listEl.innerHTML = VIEW.map(renderRow).join('');
+  }
+
+  // -------- Events -------------------------------------------------------------
+  let t;
+  searchEl.addEventListener('input', ()=>{ clearTimeout(t); t = setTimeout(apply, 150) });
+  osEl.addEventListener('change', apply);
+  sortEl.addEventListener('change', apply);
+  resetBtn.addEventListener('click', ()=>{
+    searchEl.value = '';
+    osEl.value = 'all';
+    sortEl.value = 'new';
+    apply();
   });
+  printBtn.addEventListener('click', ()=>window.print());
 
-  function matchOs(e) {
-    if (!state.os) return true;
-    // If you later add OS info into data.json, filter here.
-    // For now, show all.
-    return true;
-  }
-
-  function render () {
-    let rows = entries.slice();
-
-    // search
-    if (state.q) {
-      rows = rows.filter(e =>
-        (e.cve || '').toLowerCase().includes(state.q) ||
-        (e.description || '').toLowerCase().includes(state.q)
-      );
-    }
-
-    // os filter (noop for now)
-    rows = rows.filter(matchOs);
-
-    // sort
-    if (state.sort === 'new') {
-      rows.sort((a,b) => (b.releaseDate || '').localeCompare(a.releaseDate || ''));
-    } else if (state.sort === 'old') {
-      rows.sort((a,b) => (a.releaseDate || '').localeCompare(b.releaseDate || ''));
-    } else if (state.sort === 'cve') {
-      rows.sort((a,b) => (a.cve || '').localeCompare(b.cve || ''));
-    }
-
-    counter.textContent = `${rows.length} update${rows.length===1?'':'s'}`;
-
-    // paint
-    tbody.innerHTML = '';
-    const frag = document.createDocumentFragment();
-    for (const e of rows) {
-      const tr = document.createElement('tr');
-      tr.className = 'row';
-
-      const cvetd = document.createElement('td');
-      cvetd.className = 'cell';
-      const a = document.createElement('a');
-      a.className = 'link';
-      a.href = e.url || '#';
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.textContent = e.cve || '(unknown CVE)';
-      cvetd.appendChild(a);
-      const sub = document.createElement('div');
-      sub.className = 'subtle mono';
-      const link = document.createElement('a');
-      link.className = 'link';
-      link.href = e.url || '#';
-      link.target = '_blank';
-      link.rel = 'noopener';
-      link.textContent = 'link';
-      sub.appendChild(link);
-      const span = document.createElement('span');
-      span.textContent = '  ' + (e.url || '');
-      sub.appendChild(span);
-      cvetd.appendChild(sub);
-
-      const desctd = document.createElement('td');
-      desctd.className = 'cell';
-      desctd.textContent = e.description || '(no description)';
-
-      const datetd = document.createElement('td');
-      datetd.className = 'cell';
-      datetd.textContent = fmtDate(e.releaseDate);
-
-      const sourcetd = document.createElement('td');
-      sourcetd.className = 'cell';
-      const pill = document.createElement('span');
-      pill.className = 'pill';
-      pill.textContent = e.source || '';
-      sourcetd.appendChild(pill);
-
-      tr.appendChild(cvetd);
-      tr.appendChild(desctd);
-      tr.appendChild(datetd);
-      tr.appendChild(sourcetd);
-
-      frag.appendChild(tr);
-    }
-    tbody.appendChild(frag);
-  }
-
-  render();
-})();
-</script>
+  // Load
+  load();
+  </script>
 </body>
 </html>
