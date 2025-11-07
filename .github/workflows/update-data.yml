@@ -25,12 +25,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests xmltodict python-dateutil pytz
+          pip install requests xmltodict python-dateutil pytz feedparser
 
-      - name: Build data.json (SUG + CVRF unified)
+      - name: Build data.json (SUG + CVRF with retry)
         run: |
           python - <<'PY'
-          import json, requests, xmltodict
+          import json, requests, xmltodict, random, time, feedparser
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
 
@@ -40,40 +40,80 @@ jobs:
 
           def log(msg): print(msg, flush=True)
 
-          # --- SUG API ---
-          try:
-              log("Fetching SUG data...")
-              sug_url = "https://api.msrc.microsoft.com/sug/v2.0/updates?$select=title,cveIds,releaseDate,lastModifiedDate,severity,releaseNumber&$orderby=lastModifiedDate desc&$top=200"
-              r = requests.get(sug_url, timeout=30)
-              if r.status_code == 200:
-                  data = r.json().get("value", [])
-                  for item in data:
-                      rd = item.get("releaseDate")
-                      if not rd: continue
-                      try:
-                          dt = isoparse(rd)
-                      except Exception:
-                          continue
-                      if dt < SINCE: continue
-                      all_entries.append({
-                          "title": item.get("title", "(no title)"),
-                          "cve": ", ".join(item.get("cveIds", [])) or "N/A",
-                          "description": item.get("releaseNumber", "Windows Update"),
-                          "severity": item.get("severity", "N/A"),
-                          "releaseDate": dt.strftime("%Y-%m-%d"),
-                          "source": "SUG"
-                      })
-                  log(f"SUG: {len(all_entries)} items collected")
-              else:
-                  log(f"SUG API error {r.status_code}")
-          except Exception as e:
-              log(f"⚠️ SUG fetch failed: {e}")
+          def jitter_sleep(base=10):
+              delay = base + random.randint(5, 20)
+              log(f"Sleeping {delay}s to avoid throttling...")
+              time.sleep(delay)
+
+          # --- SUG API (JSON + RSS fallback) ---
+          def fetch_sug_json():
+              url = "https://api.msrc.microsoft.com/sug/v2.0/updates?$select=title,cveIds,releaseDate,lastModifiedDate,severity,releaseNumber&$orderby=lastModifiedDate desc&$top=200"
+              headers = {"User-Agent": "Mozilla/5.0 (compatible; MSRCFetcher/1.0)"}
+              for attempt in range(5):
+                  try:
+                      r = requests.get(url, headers=headers, timeout=30)
+                      if r.status_code == 200:
+                          return r.json().get("value", [])
+                      elif r.status_code in [999, 429, 503]:
+                          log(f"SUG throttled (HTTP {r.status_code}), retry {attempt+1}/5")
+                          jitter_sleep(15)
+                      else:
+                          log(f"SUG API returned HTTP {r.status_code}")
+                          return []
+                  except Exception as e:
+                      log(f"⚠️ Error fetching SUG: {e}")
+                      jitter_sleep(10)
+              return []
+
+          def fetch_sug_rss():
+              rss_url = "https://api.msrc.microsoft.com/update-guide/rss"
+              log("Falling back to RSS feed...")
+              feed = feedparser.parse(rss_url)
+              items = []
+              for e in feed.entries:
+                  pub = datetime(*e.published_parsed[:6], tzinfo=timezone.utc)
+                  if pub < SINCE: continue
+                  items.append({
+                      "title": e.title,
+                      "cve": e.get("id", "N/A"),
+                      "description": e.get("summary", "(no description)"),
+                      "severity": "N/A",
+                      "releaseDate": pub.strftime("%Y-%m-%d"),
+                      "source": "SUG RSS"
+                  })
+              log(f"RSS: {len(items)} updates parsed.")
+              return items
+
+          log("Fetching SUG data...")
+          sug_data = fetch_sug_json()
+          if not sug_data:
+              sug_data = fetch_sug_rss()
+
+          for item in sug_data:
+              rd = item.get("releaseDate")
+              if not rd: continue
+              try:
+                  dt = isoparse(rd)
+              except Exception:
+                  continue
+              if dt < SINCE: continue
+              all_entries.append({
+                  "title": item.get("title", "(no title)"),
+                  "cve": ", ".join(item.get("cveIds", [])) if isinstance(item.get("cveIds"), list) else str(item.get("cveIds") or "N/A"),
+                  "description": item.get("releaseNumber", "Windows Update"),
+                  "severity": item.get("severity", "N/A"),
+                  "releaseDate": dt.strftime("%Y-%m-%d"),
+                  "source": "SUG"
+              })
+
+          log(f"SUG total collected: {len(all_entries)}")
 
           # --- CVRF API ---
           def fetch_cvrf(month):
               url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{month}"
+              headers = {"Accept": "application/xml", "User-Agent": "Mozilla/5.0"}
               try:
-                  r = requests.get(url, headers={"Accept": "application/xml"}, timeout=30)
+                  r = requests.get(url, headers=headers, timeout=30)
                   if r.status_code == 404: return None
                   r.raise_for_status()
                   return xmltodict.parse(r.text)
@@ -111,13 +151,13 @@ jobs:
               return results
 
           for m in [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]:
+              log(f"Fetching CVRF for {m}...")
               data = fetch_cvrf(m)
               parsed = parse_cvrf(data)
               if parsed:
-                  log(f"CVRF: {len(parsed)} from {m}")
+                  log(f"CVRF: {len(parsed)} entries from {m}")
                   all_entries.extend(parsed)
 
-          # --- Write Output ---
           all_entries = sorted(all_entries, key=lambda x: x["releaseDate"], reverse=True)
           with open("data.json", "w", encoding="utf-8") as f:
               json.dump(all_entries, f, indent=2, ensure_ascii=False)
@@ -127,5 +167,5 @@ jobs:
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "update data.json (CVRF+SUG)"
+          commit_message: "update data.json (SUG+CVRF with retry)"
           file_pattern: data.json
