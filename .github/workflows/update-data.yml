@@ -2,17 +2,16 @@ name: Build MSRC updates JSON (daily)
 
 on:
   schedule:
-    - cron: "9 9 * * *"        # daily @ 09:09 UTC
+    - cron: "9 9 * * *"  # Daily at 09:09 UTC
   workflow_dispatch:
     inputs:
       days_back:
         description: "Number of days back to collect"
         required: false
-        default: "7"           # change to 30 when you want a bigger window
+        default: "7"
 
-concurrency:
-  group: msrc-json-build
-  cancel-in-progress: false
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -31,352 +30,91 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests httpx html5lib lxml xmltodict python-dateutil pytz
+          pip install requests httpx xmltodict python-dateutil pytz
 
-      - name: Build data.json (SUG first; CVRF fallback; robust parsing)
-        id: build
+      - name: Build data.json (SUG first; CVRF fallback)
         env:
           MSRC_API_KEY: ${{ secrets.MSRC_API_KEY }}
           DAYS_BACK_INPUT: ${{ github.event.inputs.days_back }}
         run: |
-          import os, sys, json, time, random, re, math, unicodedata
+          python - <<'PY'
+          import os, json, time, random, unicodedata
           from datetime import datetime, timedelta, timezone
-          from dateutil import tz
           from dateutil.parser import isoparse
           import requests, httpx, xmltodict
-          from html import unescape
 
-          # ----------------------
-          # Config & helpers
-          # ----------------------
           NOW = datetime.now(timezone.utc)
           days_back = int(os.getenv("DAYS_BACK_INPUT") or "7")
           SINCE = NOW - timedelta(days=days_back)
 
-          def log(msg):
-            print(msg, flush=True)
-
-          def sleep_jitter(base, factor=1.0):
-            t = base * factor + random.uniform(0, base*0.25)
-            time.sleep(t)
+          def log(msg): print(msg, flush=True)
 
           def clean_bytes(b: bytes) -> str:
-            # drop BOMs / NULs / control chars / crashy bytes
-            b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
-            s = b.decode("utf-8", "ignore")
-            s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
-            s = s.strip()
-            # if a server sent HTML, try to cut to first tag cleanly
-            lt = s.find("<")
-            if lt > 0:
-              s = s[lt:]
-            return s
+              b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
+              s = b.decode("utf-8", "ignore")
+              s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
+              return s.strip()
 
           def save_json(path, data):
-            with open(path, "w", encoding="utf-8") as f:
-              json.dump(data, f, indent=2, ensure_ascii=False)
-
-          def load_json(path):
-            try:
-              with open(path, "r", encoding="utf-8") as f:
-                return json.load(f)
-            except Exception:
-              return None
-
-          # -----------------------------------
-          # 1) Try SUG v2 (OData-like) endpoint
-          # -----------------------------------
-          # Keep the payload tiny and sorted by last modified for our window.
-          base_sug = "https://api.msrc.microsoft.com/sug/v2.0/updates"
-          params = {
-            # select only what we truly need; add/remove fields as you like
-            "$select": "title,cveIds,releaseDate,lastModifiedDate,productNames,remediationKbNumbers",
-            "$orderby": "lastModifiedDate desc",
-            "$top": "500"
-          }
+              with open(path, "w", encoding="utf-8") as f:
+                  json.dump(data, f, indent=2, ensure_ascii=False)
 
           HEADERS = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "en-US,en;q=0.8",
-            "Origin": "https://msrc.microsoft.com",
-            "Referer": "https://msrc.microsoft.com/update-guide",
-            "Connection": "keep-alive",
+              "Accept": "application/json",
+              "User-Agent": "Mozilla/5.0",
           }
           if os.getenv("MSRC_API_KEY"):
-            HEADERS["api-key"] = os.getenv("MSRC_API_KEY")
+              HEADERS["api-key"] = os.getenv("MSRC_API_KEY")
 
-          def fetch_sug_window():
-            max_attempts = 6
-            backoffs = [10, 20, 40, 60, 90, 120]
-            collected = []
-            try:
-              with httpx.Client(timeout=30.0, headers=HEADERS, http2=True) as client:
-                # We keep it simple: fetch one page with a reasonable top.
-                for attempt in range(1, max_attempts+1):
+          def fetch_sug():
+              url = "https://api.msrc.microsoft.com/sug/v2.0/updates?$top=100"
+              for i in range(6):
                   try:
-                    r = client.get(base_sug, params=params)
-                    # 999 = MSRC throttle "temp error". Treat as retryable.
-                    if r.status_code in (429, 503, 520, 521, 522, 523, 524, 525, 529, 999):
-                      log(f"⚠️  MSRC throttle/temp error (HTTP {r.status_code}); retrying in {backoffs[attempt-1]}s... ({attempt}/{max_attempts})")
-                      sleep_jitter(backoffs[attempt-1])
-                      continue
-                    r.raise_for_status()
-                    try:
-                      data = r.json()
-                    except Exception:
-                      # Non-JSON (e.g. HTML) is a throttle wall; retry
-                      log("⚠️  Non-JSON or empty response from SUG; retrying.")
-                      if attempt < max_attempts:
-                        sleep_jitter(backoffs[attempt-1])
-                        continue
-                      else:
-                        return []
-
-                    items = data.get("value") or data.get("Value") or data.get("items") or []
-                    # normalize/guard
-                    for it in items:
-                      # parse dates, then window-filter
-                      d = it.get("releaseDate") or it.get("ReleaseDate")
-                      if not d:
-                        continue
-                      try:
-                        dt = isoparse(d)
-                        if dt.tzinfo is None:
-                          dt = dt.replace(tzinfo=timezone.utc)
-                      except Exception:
-                        continue
-                      if dt < SINCE or dt > NOW:
-                        continue
-                      # produce a standard record
-                      rec = {
-                        "title": it.get("title"),
-                        "cveIds": it.get("cveIds") or [],
-                        "releaseDate": dt.isoformat(),
-                        "lastModifiedDate": (it.get("lastModifiedDate") or ""),
-                        "productNames": it.get("productNames") or [],
-                        "kb": it.get("remediationKbNumbers") or [],
-                        "source": "SUGv2"
-                      }
-                      collected.append(rec)
-                    break
-                  except httpx.HTTPError as e:
-                    if attempt < max_attempts:
-                      log(f"⚠️  HTTP error: {e}; retrying in {backoffs[attempt-1]}s... ({attempt}/{max_attempts})")
-                      sleep_jitter(backoffs[attempt-1])
-                      continue
-                    else:
-                      log(f"❌ SUG fetch failed after retries: {e}")
-                      return []
-            except Exception as e:
-              log(f"❌ SUG client error: {e}")
+                      r = requests.get(url, headers=HEADERS, timeout=25)
+                      if r.status_code in (429, 503, 999):
+                          log(f"⚠️  Throttled (HTTP {r.status_code}); retrying in {10*(i+1)}s")
+                          time.sleep(10*(i+1))
+                          continue
+                      r.raise_for_status()
+                      return r.json().get("value", [])
+                  except Exception as e:
+                      log(f"⚠️  Error: {e}")
+                      time.sleep(10*(i+1))
               return []
-            return collected
 
-          # -------------------------------------------------
-          # 2) Fallback to CVRF monthly XML (two months span)
-          # -------------------------------------------------
-          # For a date window of N days, current month + previous month
-          # are sufficient, then we filter strictly to [SINCE, NOW].
-          MONTHS = []
-          cur = NOW
-          prev = (NOW.replace(day=1) - timedelta(days=1))
-          for dt in (cur, prev):
-            MONTHS.append(f"{dt.year}-{dt.strftime('%b')}")  # e.g., 2025-Nov
-
-          def fetch_cvrf_month(y_mon: str):
-            url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{y_mon}"
-            hdrs = HEADERS.copy()
-            hdrs["Accept"] = "application/xml, text/xml;q=0.9, */*;q=0.8"
-            attempts = 5
-            backoffs = [10, 20, 40, 60, 90]
-            try:
-              s = requests.Session()
-              s.headers.update(hdrs)
-              for i in range(attempts):
-                r = s.get(url, timeout=30)
-                if r.status_code in (429, 503, 520, 521, 522, 523, 524, 525, 529, 999):
-                  log(f"⚠️  CVRF throttle/temp error (HTTP {r.status_code}); retrying in {backoffs[i]}s... ({i+1}/{attempts}) [{y_mon}]")
-                  sleep_jitter(backoffs[i])
-                  continue
-                if r.status_code == 404:
-                  # Month might not exist yet (e.g. new month early days)
+          def fetch_cvrf(month):
+              url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{month}"
+              try:
+                  r = requests.get(url, headers={"Accept": "application/xml"}, timeout=30)
+                  if r.status_code == 404:
+                      return None
+                  r.raise_for_status()
+                  return xmltodict.parse(clean_bytes(r.content))
+              except Exception as e:
+                  log(f"⚠️  CVRF fetch error {month}: {e}")
                   return None
-                r.raise_for_status()
-                # parse XML safely
-                text = clean_bytes(r.content)
-                try:
-                  data = xmltodict.parse(text, process_namespaces=False)
-                  return data
-                except Exception as e:
-                  # If response is HTML or broken, retry a couple times
-                  log(f"⚠️  CVRF parse error; retrying: {e}")
-                  if i < attempts - 1:
-                    sleep_jitter(backoffs[i])
-                    continue
-                  return None
-            except Exception as e:
-              log(f"❌ CVRF month fetch error for {y_mon}: {e}")
-              return None
 
-          def extract_from_cvrf(doc):
-            # CVRF v1.1/1.2 format; normalize. We only take records in our date window.
-            results = []
-            if not doc:
-              return results
-            root = doc.get("cvrfdoc") or doc.get("cvrf:cvrfdoc") or doc
-            if not root:
-              return results
+          items = fetch_sug()
+          if not items:
+              months = [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]
+              for m in months:
+                  doc = fetch_cvrf(m)
+                  if doc:
+                      items.append({"title": f"CVRF {m}", "source": "fallback"})
 
-            # CVRF Identification can contain ID + notes; vulnerabilities under "Vulnerability"
-            vulns = None
-            # try common paths
-            for k in ("Vulnerability", "vulnerability", "cvrf:Vulnerability"):
-              vulns = root.get(k)
-              if vulns:
-                break
-            if not vulns:
-              # sometimes nested in a dict
-              docsec = root.get("Document") or root.get("DocumentTitle") or {}
-              vulns = docsec.get("Vulnerability") if isinstance(docsec, dict) else None
-
-            if not vulns:
-              return results
-            if isinstance(vulns, dict):
-              vulns = [vulns]
-
-            for v in vulns:
-              # Release/Discovery/Revision could hold dates; we use "ReleaseDate" when available.
-              # Fallback to DocumentTracking/CurrentReleaseDate if needed.
-              rdate = None
-              cand_dates = []
-              for dk in ("ReleaseDate","releaseDate","cvrf:ReleaseDate"):
-                if v.get(dk):
-                  cand_dates.append(v.get(dk))
-              # Often the vulnerability block doesn't carry date; use the document CurrentReleaseDate
-              track = root.get("DocumentTracking") or root.get("Document") or {}
-              for dk in ("CurrentReleaseDate","InitialReleaseDate","cvrf:CurrentReleaseDate","cvrf:InitialReleaseDate"):
-                if isinstance(track, dict) and track.get(dk):
-                  cand_dates.append(track.get(dk))
-
-              # choose the most recent parseable in window
-              dt_pick = None
-              for s in cand_dates:
-                try:
-                  dtx = isoparse(s)
-                  if dtx.tzinfo is None:
-                    dtx = dtx.replace(tzinfo=timezone.utc)
-                  # we only keep if within exact window
-                  if SINCE <= dtx <= NOW:
-                    dt_pick = dtx
-                    break
-                except Exception:
-                  continue
-              if not dt_pick:
-                continue
-
-              # Extract title, CVEs, KBs if present
-              title = v.get("Title") or v.get("title") or ""
-              if isinstance(title, dict):
-                title = title.get("#text") or ""
-              if isinstance(title, list):
-                title = " | ".join([t.get("#text") if isinstance(t,dict) else str(t) for t in title])
-
-              # CVEs are usually in Notes or in Remediations
-              cves = []
-              for key in ("CVE", "cve", "cvrf:CVE"):
-                if v.get(key):
-                  if isinstance(v[key], list):
-                    cves += v[key]
-                  else:
-                    cves.append(v[key])
-              cves = list(sorted(set([str(x) for x in cves])))
-
-              kbs = []
-              rem = v.get("Remediations") or v.get("Remediation") or {}
-              if isinstance(rem, dict):
-                rems = rem.get("Remediation")
-                if rems and not isinstance(rems, list):
-                  rems = [rems]
-              elif isinstance(rem, list):
-                rems = rem
+          if not items:
+              log("⚠️  No valid entries found; preserving old data.json if exists.")
+              if os.path.exists("data.json"):
+                  log("Keeping existing data.json.")
               else:
-                rems = []
-              for r in rems:
-                kb = r.get("Description") or r.get("DescriptionText") or r.get("URL")
-                if kb:
-                  kbs.append(str(kb))
-
-              results.append({
-                "title": unescape(title).strip(),
-                "cveIds": cves,
-                "kb": kbs,
-                "releaseDate": dt_pick.isoformat(),
-                "source": "CVRFv3"
-              })
-            return results
-
-          # ----------------------
-          # Execute: SUG → CVRF
-          # ----------------------
-          all_records = []
-
-          log(f"🗓️  Window: {SINCE.date()} → {NOW.date()} (last {days_back} days)")
-          sug = fetch_sug_window()
-          if sug:
-            log(f"✅ SUG returned {len(sug)} entries in window.")
-            all_records += sug
+                  save_json("data.json", [])
           else:
-            log("⚠️  SUG returned nothing usable. Falling back to CVRF monthly docs...")
-            for ym in MONTHS:
-              doc = fetch_cvrf_month(ym)
-              recs = extract_from_cvrf(doc)
-              log(f"• {ym}: extracted {len(recs)}")
-              all_records += recs
-
-          # Filter strictly by window and de-duplicate by (title, releaseDate)
-          def within(rec):
-            try:
-              dt = isoparse(rec["releaseDate"])
-              if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
-              return SINCE <= dt <= NOW
-            except Exception:
-              return False
-
-          all_records = [r for r in all_records if within(r)]
-
-          # Dedup
-          uniq = {}
-          for r in all_records:
-            key = (r.get("title","").strip(), r.get("releaseDate",""))
-            if key not in uniq:
-              uniq[key] = r
-          final = list(uniq.values())
-
-          # Sort newest first
-          def dtkey(r):
-            try:
-              return isoparse(r["releaseDate"])
-            except Exception:
-              return NOW
-          final.sort(key=dtkey, reverse=True)
-
-          if final:
-            save_json("data.json", final)
-            log(f"✅ Wrote {len(final)} rows to data.json")
-          else:
-            # preserve existing file if present
-            if os.path.exists("data.json"):
-              old = load_json("data.json") or []
-              log("⚠️  No valid entries collected; preserving existing data.json.")
-              save_json("data.json", old)
-            else:
-              log("⚠️  No valid entries collected and no prior data.json; writing empty [].")
-              save_json("data.json", [])
+              save_json("data.json", items)
+              log(f"✅ Saved {len(items)} entries to data.json")
+          PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(data): daily MSRC data.json update"
+          commit_message: "chore: update MSRC data.json"
           file_pattern: data.json
