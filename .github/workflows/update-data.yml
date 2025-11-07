@@ -24,11 +24,9 @@ jobs:
         run: |
           set -euo pipefail
           python - <<'PY'
-          import json, re, sys, datetime, urllib.request, xml.etree.ElementTree as ET, pathlib
+          import json, re, datetime, urllib.request, xml.etree.ElementTree as ET, pathlib
 
-          # ---- Feeds ----
           MSRC_RSS = "https://api.msrc.microsoft.com/update-guide/rss"
-          # This Microsoft "Release Health" feed works and does not 400:
           WIN_HEALTH_FEED = "https://learn.microsoft.com/en-us/feed/rss?category=Windows+Release+Health"
 
           KB_RE = re.compile(r"\bKB(\d{5,8})\b", re.IGNORECASE)
@@ -62,7 +60,6 @@ jobs:
                   print(f"Failed {source}: {e}")
                   return []
 
-          # ---- Get both feeds
           msrc = parse_rss(MSRC_RSS, "MSRC RSS")
           win = parse_rss(WIN_HEALTH_FEED, "Windows Health")
 
@@ -123,3 +120,5 @@ jobs:
             git push
           else
             echo "No changes."
+          fi
+
