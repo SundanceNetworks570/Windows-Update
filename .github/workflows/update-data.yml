@@ -8,7 +8,7 @@ on:
       days_back:
         description: "Number of days back to collect"
         required: false
-        default: "7"
+        default: "30"
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repository
@@ -30,87 +30,122 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests httpx xmltodict python-dateutil pytz
+          pip install requests xmltodict python-dateutil pytz
 
-      - name: Build data.json (SUG first; CVRF fallback)
+      - name: Build data.json (real CVRF parsing)
         env:
-          MSRC_API_KEY: ${{ secrets.MSRC_API_KEY }}
           DAYS_BACK_INPUT: ${{ github.event.inputs.days_back }}
         run: |
           python - <<'PY'
-          import os, json, time, random, unicodedata
+          import os, json, requests, xmltodict
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
-          import requests, httpx, xmltodict
 
+          # --- Setup ---
+          days_back = int(os.getenv("DAYS_BACK_INPUT") or "30")
           NOW = datetime.now(timezone.utc)
-          days_back = int(os.getenv("DAYS_BACK_INPUT") or "7")
           SINCE = NOW - timedelta(days=days_back)
 
           def log(msg): print(msg, flush=True)
 
-          def clean_bytes(b: bytes) -> str:
-              b = b.replace(b"\xef\xbb\xbf", b"").replace(b"\x00", b"")
-              s = b.decode("utf-8", "ignore")
-              s = "".join(ch for ch in s if unicodedata.category(ch)[0] != "C" or ch in "\n\r\t")
-              return s.strip()
+          def clean_text(s):
+              if not s:
+                  return ""
+              if isinstance(s, dict):
+                  s = s.get("#text") or ""
+              return str(s).replace("\n", " ").replace("\r", " ").strip()
 
-          def save_json(path, data):
-              with open(path, "w", encoding="utf-8") as f:
-                  json.dump(data, f, indent=2, ensure_ascii=False)
-
-          HEADERS = {
-              "Accept": "application/json",
-              "User-Agent": "Mozilla/5.0",
-          }
-          if os.getenv("MSRC_API_KEY"):
-              HEADERS["api-key"] = os.getenv("MSRC_API_KEY")
-
-          def fetch_sug():
-              url = "https://api.msrc.microsoft.com/sug/v2.0/updates?$top=100"
-              for i in range(6):
-                  try:
-                      r = requests.get(url, headers=HEADERS, timeout=25)
-                      if r.status_code in (429, 503, 999):
-                          log(f"⚠️  Throttled (HTTP {r.status_code}); retrying in {10*(i+1)}s")
-                          time.sleep(10*(i+1))
-                          continue
-                      r.raise_for_status()
-                      return r.json().get("value", [])
-                  except Exception as e:
-                      log(f"⚠️  Error: {e}")
-                      time.sleep(10*(i+1))
-              return []
+          def get_months():
+              months = [NOW.strftime("%Y-%b")]
+              prev = (NOW.replace(day=1) - timedelta(days=1)).strftime("%Y-%b")
+              if prev not in months:
+                  months.append(prev)
+              return months
 
           def fetch_cvrf(month):
               url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{month}"
+              log(f"Fetching {url}")
               try:
                   r = requests.get(url, headers={"Accept": "application/xml"}, timeout=30)
                   if r.status_code == 404:
+                      log(f"No CVRF data for {month}")
                       return None
                   r.raise_for_status()
-                  return xmltodict.parse(clean_bytes(r.content))
+                  return xmltodict.parse(r.text)
               except Exception as e:
-                  log(f"⚠️  CVRF fetch error {month}: {e}")
+                  log(f"Error fetching {month}: {e}")
                   return None
 
-          items = fetch_sug()
-          if not items:
-              months = [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]
-              for m in months:
-                  doc = fetch_cvrf(m)
-                  if doc:
-                      items.append({"title": f"CVRF {m}", "source": "fallback"})
+          def extract_vulns(doc):
+              vulns = []
+              if not doc:
+                  return vulns
+              root = doc.get("cvrfdoc", {})
+              tracking = root.get("DocumentTracking", {})
+              cur_date = tracking.get("CurrentReleaseDate") or tracking.get("InitialReleaseDate")
 
-          if not items:
-              log("⚠️  No valid entries found; preserving old data.json if exists.")
+              if isinstance(cur_date, dict):
+                  cur_date = cur_date.get("#text")
+              try:
+                  dt = isoparse(cur_date)
+              except Exception:
+                  dt = NOW
+
+              if dt < SINCE:
+                  return []
+
+              for v in root.get("Vulnerability", []):
+                  title = clean_text(v.get("Title"))
+                  cve = v.get("CVE") or "Unknown CVE"
+                  if isinstance(cve, list):
+                      cve = ", ".join(cve)
+                  desc = ""
+                  notes = v.get("Notes", {}).get("Note") if isinstance(v.get("Notes"), dict) else []
+                  if isinstance(notes, list):
+                      for n in notes:
+                          if isinstance(n, dict) and n.get("@Type") == "Description":
+                              desc = clean_text(n.get("#text"))
+                              break
+                  elif isinstance(notes, dict):
+                      desc = clean_text(notes.get("#text"))
+
+                  vulns.append({
+                      "title": title or "(no title)",
+                      "cve": cve,
+                      "description": desc or "(no description)",
+                      "releaseDate": dt.isoformat(),
+                      "source": "CVRF"
+                  })
+              return vulns
+
+          all_items = []
+          for m in get_months():
+              data = fetch_cvrf(m)
+              vulns = extract_vulns(data)
+              log(f"Extracted {len(vulns)} vulnerabilities from {m}")
+              all_items.extend(vulns)
+
+          # Filter to last N days
+          recent = []
+          for v in all_items:
+              try:
+                  d = isoparse(v["releaseDate"])
+                  if SINCE <= d <= NOW:
+                      recent.append(v)
+              except Exception:
+                  continue
+
+          log(f"Total entries within {days_back} days: {len(recent)}")
+
+          if not recent:
               if os.path.exists("data.json"):
-                  log("Keeping existing data.json.")
+                  log("No new data — preserving existing file.")
               else:
-                  save_json("data.json", [])
-          else:
-              save_json("data.json", items)
-              log(f"✅ Saved {len(items)} entries to data.json")
+                  recent = [{"title": "No updates", "cve": "-", "description": "-", "releaseDate": NOW.isoformat(), "source": "none"}]
+
+          with open("data.json", "w", encoding="utf-8") as f:
+              json.dump(recent, f, indent=2, ensure_ascii=False)
+              log("✅ data.json written successfully.")
           PY
 
       - name: Commit if changed
