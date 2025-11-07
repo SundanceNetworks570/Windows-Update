@@ -1,15 +1,13 @@
-name: Update MSRC data JSON (daily)
+name: Enrich MSRC data.json (add KBs, Known-Issues, back-compat)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "5 9 * * *" # 09:05 UTC daily
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  enrich:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,223 +18,104 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests feedparser python-dateutil pytz
-
-      - name: Build data.json (SUG + CVRF unified, safe commit)
-        env:
-          MSRC_API_KEY: ${{ secrets.MSRC_API_KEY }}  # optional; if set, use SUG JSON
-        shell: bash
+      - name: Enrich data.json (KBs, Known Issues, CVEs + back-compat)
         run: |
           set -euo pipefail
-          python <<'PY'
-          import json, os, re, sys
-          from datetime import datetime, timedelta, timezone
-          import requests, feedparser
-          from dateutil import parser as dtp
+          if [ ! -f data.json ]; then
+            echo "data.json not found — nothing to enrich."
+            exit 0
+          fi
 
-          NOW = datetime.now(timezone.utc)
-          SINCE = NOW - timedelta(days=30)
+          python - << 'PYCODE'
+          import json, re, sys, pathlib
 
-          def log(m): print(m, flush=True)
-
-          def get(url, headers=None, params=None, timeout=40):
-              r = requests.get(url, headers=headers or {}, params=params or {}, timeout=timeout)
-              r.raise_for_status()
-              return r
-
-          # ---------------- SUG v2 JSON (needs API key) ----------------
-          def fetch_sug_json():
-              key = os.environ.get("MSRC_API_KEY", "").strip()
-              if not key:
-                  log("SUG JSON: no API key; skipping JSON endpoint.")
-                  return []
-              base = "https://api.msrc.microsoft.com/sug/v2.0/updates"
-              # NOTE: OData orderby uses a SPACE, not a colon
-              params = {"$orderby": "releaseDate desc", "$top": "500"}
-              try:
-                  r = get(base, headers={"api-key": key}, params=params)
-                  val = r.json().get("value", [])
-              except Exception as e:
-                  log(f"SUG JSON error: {e}")
-                  return []
-              out = []
-              for it in val:
-                  rd = it.get("releaseDate")
-                  try:
-                      d = dtp.parse(rd); 
-                      if d.tzinfo is None: d = d.replace(tzinfo=timezone.utc)
-                  except Exception:
-                      continue
-                  if d < SINCE:
-                      continue
-                  cves = []
-                  for f in ("cveNumber","cves","cve"):
-                      if it.get(f):
-                          v = it[f]
-                          cves = [v] if isinstance(v,str) else list(v)
-                          break
-                  out.append({
-                      "cves": cves,
-                      "title": it.get("title",""),
-                      "description": it.get("description","") or "",
-                      "link": it.get("articleUrl") or it.get("url") or "",
-                      "releaseDate": d.isoformat(),
-                      "source": "SUG JSON",
-                  })
-              log(f"SUG JSON: kept {len(out)}")
-              return out
-
-          # ---------------- SUG RSS (public) ----------------
-          CVE_RE = re.compile(r"\bCVE-\d{4}-\d{4,7}\b", re.I)
-          KB_RE  = re.compile(r"\bKB\d{6,7}\b", re.I)
-
-          def clean(s):
-              if not s: return ""
-              # very light cleanup of RSS summaries
-              return re.sub(r"<[^>]+>", "", s).strip()
-
-          def fetch_sug_rss():
-              url = "https://api.msrc.microsoft.com/update-guide/rss"
-              try:
-                  feed = feedparser.parse(url)
-              except Exception as e:
-                  log(f"SUG RSS parse error: {e}")
-                  return []
-              out = []
-              for en in feed.entries or []:
-                  try:
-                      pub = datetime(*en.published_parsed[:6], tzinfo=timezone.utc)
-                  except Exception:
-                      continue
-                  if pub < SINCE:
-                      continue
-                  title = en.get("title","")
-                  summ  = en.get("summary","")
-                  text  = f"{title}\n{summ}"
-                  cves  = sorted(set(m.upper() for m in CVE_RE.findall(text)))
-                  kbs   = sorted(set(m.upper() for m in KB_RE.findall(text)))
-
-                  # build a known-issues search link if we have a KB
-                  known_issues_url = ""
-                  if kbs:
-                      # search Release Health for this KB (most robust without per-product mapping)
-                      q = kbs[0]
-                      known_issues_url = f"https://learn.microsoft.com/search/?terms={q}%20known%20issues%20windows%20release%20health"
-
-                  out.append({
-                      "cves": cves,                       # may be []
-                      "kbs": kbs,                         # may be []
-                      "title": title or "Windows Update",
-                      "description": clean(summ) or "(no description)",
-                      "link": en.get("link",""),
-                      "releaseDate": pub.isoformat(),
-                      "source": "SUG RSS",
-                      "knownIssuesUrl": known_issues_url
-                  })
-              log(f"SUG RSS: kept {len(out)}")
-              return out
-
-          # ---------------- CVRF enrichment (public) ----------------
-          def fetch_cvrf_kb_map():
-              base_list = "https://api.msrc.microsoft.com/cvrf/v2.0/updates"
-              try:
-                  updates = get(base_list).json().get("value", [])
-              except Exception as e:
-                  log(f"CVRF list error: {e}")
-                  return {}
-              ids = []
-              for u in updates:
-                  ds = u.get("CurrentReleaseDate") or u.get("InitialReleaseDate") or ""
-                  try:
-                      d = dtp.parse(ds); 
-                      if d.tzinfo is None: d = d.replace(tzinfo=timezone.utc)
-                  except Exception:
-                      continue
-                  if d >= SINCE and u.get("ID"):
-                      ids.append(u["ID"])
-              kb_by_cve = {}
-              for uid in ids:
-                  detail = f"https://api.msrc.microsoft.com/cvrf/v2.0/cvrf/{uid}"
-                  try:
-                      dj = get(detail).json()
-                  except Exception:
-                      continue
-                  vulns = dj.get("Vulnerability", [])
-                  rems  = dj.get("Remediations", []) or dj.get("Remediation", []) or []
-                  kb_cands = set()
-                  for rem in rems:
-                      t = " ".join(str(rem.get(k,"")) for k in ("Description","URL","URLTitle"))
-                      for m in KB_RE.findall(t):
-                          kb_cands.add(m.upper())
-                  for v in vulns:
-                      cve = v.get("CVE")
-                      if not cve: 
-                          continue
-                      if kb_cands:
-                          kb_by_cve.setdefault(cve, set()).update(kb_cands)
-              # to JSONable
-              return {cve: sorted(v) for cve,v in kb_by_cve.items()}
-
-          def load_existing():
-              try:
-                  with open("data.json","r",encoding="utf-8") as f:
-                      return json.load(f)
-              except Exception:
-                  return []
-
-          def save_json(items):
-              with open("data.json","w",encoding="utf-8") as f:
-                  json.dump(items, f, ensure_ascii=False, indent=2)
-
-          # Try JSON (if key), else RSS
-          items = fetch_sug_json()
-          if not items:
-              items = fetch_sug_rss()
-
-          if not items:
-              log("No valid updates collected; preserving existing data.json")
+          p = pathlib.Path("data.json")
+          try:
+              items = json.loads(p.read_text(encoding="utf-8"))
+          except Exception as e:
+              print("Failed to read data.json:", e)
               sys.exit(0)
 
-          # CVRF enrichment adds KBs via CVE
-          kb_map = fetch_cvrf_kb_map()
-          for it in items:
-              # merge KBs from CVRF
-              kbset = set(it.get("kbs") or [])
-              for c in it.get("cves") or []:
-                  if c in kb_map:
-                      kbset.update(kb_map[c])
-              it["kbs"] = sorted(kbset)
+          KB_RE = re.compile(r"\bKB(\d{5,8})\b", re.IGNORECASE)
+          KB_URL_RE = re.compile(r"/kb/(\d{5,8})", re.IGNORECASE)
+          CVE_RE = re.compile(r"\bCVE-\d{4}-\d{4,7}\b", re.IGNORECASE)
 
-              # if we have a KB but no knownIssuesUrl yet, create one
-              if not it.get("knownIssuesUrl") and it["kbs"]:
-                  kb = it["kbs"][0]
-                  it["knownIssuesUrl"] = f"https://learn.microsoft.com/search/?terms={kb}%20known%20issues%20windows%20release%20health"
+          def uniq(seq):
+              seen = set(); out = []
+              for x in seq:
+                  if not x: continue
+                  if x not in seen:
+                      seen.add(x); out.append(x)
+              return out
 
-          def k(x):
-              try:
-                  d = dtp.parse(x.get("releaseDate",""))
-                  if d.tzinfo is None: d = d.replace(tzinfo=timezone.utc)
-                  return d
-              except Exception:
-                  return datetime(1970,1,1,tzinfo=timezone.utc)
+          changed = False
+          for it in items if isinstance(items, list) else []:
+              title = str(it.get("title",""))
+              desc  = str(it.get("description",""))
+              link  = str(it.get("link",""))
+              text  = " ".join([title, desc, link])
 
-          items.sort(key=k, reverse=True)
-          save_json(items)
-          log(f"Saved {len(items)} updates to data.json")
-          PY
+              # --- Collect CVEs (keep existing if present) ---
+              cves = []
+              if isinstance(it.get("cves"), list):
+                  cves.extend([str(x).upper() for x in it["cves"]])
+              if not cves and it.get("cve"):
+                  cves.extend([s.upper() for s in str(it["cve"]).split(",")])
+              # pull from text if missing
+              if not cves:
+                  cves.extend([m.upper() for m in CVE_RE.findall(text)])
 
-      - name: Commit and push if changed
+              # --- Collect KBs (prefer explicit list if present) ---
+              kbs = []
+              if isinstance(it.get("kbs"), list):
+                  kbs.extend([("KB"+str(x).strip().lstrip("KB")).upper() for x in it["kbs"]])
+              if it.get("kb"):
+                  parts = [s.strip() for s in str(it["kb"]).replace(";",",").split(",")]
+                  kbs.extend([("KB"+s.lstrip("KB")).upper() for s in parts if s])
+
+              # regex from text/link/title
+              kbs.extend([("KB"+m).upper() for m in KB_RE.findall(text)])
+              kbs.extend([("KB"+m).upper() for m in KB_URL_RE.findall(text)])
+
+              # de-dup
+              cves = uniq(cves)
+              kbs  = uniq(kbs)
+
+              # --- Known Issues URL ---
+              ki = it.get("knownIssuesUrl") or it.get("knownIssues") or ""
+              if not ki and kbs:
+                  kb = kbs[0]
+                  ki = f"https://learn.microsoft.com/search/?terms={kb}%20known%20issues%20windows%20release%20health"
+
+              # --- Write new canonical fields ---
+              if cves: it["cves"] = cves
+              if kbs:  it["kbs"]  = kbs
+              if ki:   it["knownIssuesUrl"] = ki
+
+              # --- Back-compat: keep old keys populated too ---
+              it["cve"] = ", ".join(cves) if cves else it.get("cve","")
+              it["kb"]  = ", ".join(kbs)  if kbs  else it.get("kb","")
+              it["knownIssues"] = ki or it.get("knownIssues","")
+
+          new = json.dumps(items, ensure_ascii=False, indent=2)
+          old = p.read_text(encoding="utf-8")
+          if new != old:
+              p.write_text(new, encoding="utf-8")
+              print("data.json enriched.")
+          else:
+              print("data.json unchanged.")
+
+          PYCODE
+
+      - name: Commit if changed
         run: |
           set -e
-          if [[ -n "$(git status --porcelain -- data.json)" ]]; then
-            git config user.name "github-actions[bot]"
+          if ! git diff --quiet -- data.json; then
+            git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data.json
-            git commit -m "chore: refresh data.json (SUG/CVRF unified)"
+            git commit -m "enrich: add KBs, Known-Issues, CVEs + back-compat fields"
             git push
           else
-            echo "No changes to data.json"
+            echo "No changes to commit."
           fi
