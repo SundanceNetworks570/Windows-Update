@@ -2,33 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Windows Updates (Last 30 Days)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--accent:#60a5fa;--pill:#1f2937;--ok:#16a34a;--btn:#1e293b;--btnText:#dbeafe;
-      --row:#0b1220;--rowAlt:#0c1424;--border:#1f2937
+      --bg:#0f172a;        /* dark slate */
+      --card:#111827;      /* slightly lighter for rows */
+      --text:#e5e7eb;      /* gray-200 */
+      --muted:#9ca3af;     /* gray-400 */
+      --accent:#60a5fa;    /* blue-400 */
+      --chip:#1f2937;      /* gray-800 */
+      --chipBorder:#374151;/* gray-700 */
+      --pill:#0ea5e9;      /* sky-500 */
+      --pillText:#032a36;
+      --tableSep:#1f2937;
+      --btn:#111827;
+      --btnBorder:#374151;
+      --btnHover:#1f2937;
+      --ok:#10b981;
     }
-    html,body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;margin:0}
-    .wrap{max-width:1100px;margin:32px auto;padding:0 16px}
-    h1{font-weight:700;margin:0 0 16px 0}
-    .toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0 18px}
-    .search{flex:1;min-width:260px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text)}
-    .select,.btn{background:var(--btn);color:var(--btnText);border:1px solid var(--border);border-radius:10px;padding:10px 12px;cursor:pointer}
-    .btn{background:#0b253f}
-    table{width:100%;border-collapse:separate;border-spacing:0}
-    thead th{position:sticky;top:0;background:var(--bg);z-index:1}
-    th,td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top}
-    tbody tr:nth-child(odd){background:var(--row)}
-    tbody tr:nth-child(even){background:var(--rowAlt)}
-    .muted{color:var(--muted)}
-    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--pill);color:#c7d2fe;font-weight:600;font-size:12px}
-    .link{color:#93c5fd;text-decoration:none}
-    .link:hover{text-decoration:underline}
-    .nowrap{white-space:nowrap}
-    .kb-list{display:flex;flex-wrap:wrap;gap:6px}
-    .kb{background:#13263d;color:#e0f2fe;border:1px solid #1d3654;padding:2px 8px;border-radius:8px;font-size:12px}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    .wrap{max-width:1200px; margin:48px auto; padding:0 20px}
+    h1{margin:0 0 16px; font-size:28px}
+    .toolbar{
+      display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin:16px 0 24px;
+    }
+    input[type="search"]{
+      flex:1; min-width:260px; background:#0b1220; color:var(--text);
+      border:1px solid var(--btnBorder); border-radius:10px; padding:12px 14px;
+      outline:none;
+    }
+    select, .btn{
+      background:var(--btn); color:var(--text);
+      border:1px solid var(--btnBorder); border-radius:10px; padding:10px 14px;
+      cursor:pointer;
+    }
+    .btn:hover{background:var(--btnHover)}
+    .table{
+      width:100%; border-collapse:separate; border-spacing:0 10px;
+    }
+    .th{
+      display:grid; grid-template-columns: 210px 1fr 160px 140px 140px 110px;
+      padding:10px 14px; font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em;
+    }
+    .row{
+      display:grid; grid-template-columns: 210px 1fr 160px 140px 140px 110px;
+      background:var(--card);
+      border:1px solid var(--tableSep);
+      border-radius:12px; padding:16px 14px; align-items:center; gap:12px;
+    }
+    .row:not(:first-child){margin-top:10px}
+    .cve a{color:var(--accent); text-decoration:none}
+    .cve a:hover{text-decoration:underline}
+    .desc{color:#d1d5db; line-height:1.35}
+    .kbs, .cves{display:flex; flex-wrap:wrap; gap:6px}
+    .chip{
+      background:var(--chip); border:1px solid var(--chipBorder); color:#e5e7eb;
+      border-radius:999px; padding:6px 10px; font-size:12px; text-decoration:none;
+    }
+    .chip:hover{border-color:#4b5563}
+    .pill{
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:98px; height:34px; padding:0 10px;
+      background:var(--pill); color:#eaf7ff; border:none; border-radius:999px;
+      font-weight:600; cursor:pointer; text-decoration:none;
+    }
+    .pill[disabled]{opacity:.35; cursor:default}
+    .src{font-size:12px; color:var(--muted)}
+    .footer{margin:28px 0 10px; color:var(--muted); font-size:12px}
+    .empty{padding:38px; text-align:center; color:var(--muted)}
+    .count{color:var(--muted); font-size:13px; margin-bottom:10px}
+    @media (max-width:980px){
+      .th, .row{
+        grid-template-columns: 190px 1fr 150px 140px 130px 100px;
+      }
+    }
+    @media (max-width:860px){
+      .th{display:none}
+      .row{grid-template-columns: 1fr}
+      .row > div{padding:6px 0}
+      .label{display:block; font-size:11px; color:var(--muted); margin-bottom:4px; text-transform:uppercase; letter-spacing:.04em}
+    }
   </style>
 </head>
 <body>
@@ -36,180 +96,248 @@
     <h1>Windows Updates (Last 30 Days)</h1>
 
     <div class="toolbar">
-      <input id="q" class="search" placeholder="Search CVE, KB, description, OS, etc…" />
-      <select id="sort" class="select">
+      <input id="q" type="search" placeholder="Search CVE, KB, description, OS, etc…" autocomplete="off">
+      <select id="sort">
         <option value="new">Sort: Newest first</option>
         <option value="old">Sort: Oldest first</option>
       </select>
-      <button id="print" class="btn">Print / PDF</button>
-      <button id="email" class="btn">Email</button>
+      <button class="btn" id="printBtn" title="Print / Save PDF">Print / PDF</button>
+      <button class="btn" id="emailBtn" title="Compose email with table link">Email</button>
     </div>
 
-    <div class="muted" id="count">0 updates</div>
+    <div id="count" class="count"></div>
 
-    <div style="overflow:auto;margin-top:8px;border:1px solid var(--border);border-radius:10px">
-      <table id="tbl">
-        <thead>
-          <tr>
-            <th style="width:160px">CVE</th>
-            <th>Description</th>
-            <th style="width:160px">KB(s)</th>
-            <th style="width:140px">Known Issues</th>
-            <th style="width:120px">Release Date</th>
-            <th style="width:90px">Source</th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
+    <div class="th">
+      <div>CVE</div>
+      <div>Description</div>
+      <div>KB(s)</div>
+      <div>Known Issues</div>
+      <div>Release Date</div>
+      <div>Source</div>
     </div>
+    <div id="rows"></div>
 
-    <p class="muted" style="margin-top:12px">
-      Source: Microsoft Security Response Center (SUG API/RSS, CVRF, Windows Release Health / Known-issues).
-    </p>
+    <div class="footer">
+      Source: Microsoft Security Response Center (MSRC RSS) and Windows Release Health (Known issues / KB discovery).
+    </div>
   </div>
 
   <script>
-    const fmtDate = s => {
-      try {
-        const d = new Date(s);
-        return d.toLocaleDateString(undefined,{month:'short', day:'2-digit', year:'numeric'});
-      } catch { return s || '—'; }
-    };
-    const uniq = arr => [...new Set(arr)].filter(Boolean);
+    // ---- Small helpers
+    const byId = id => document.getElementById(id);
+    const catalogLink = kb => `https://www.catalog.update.microsoft.com/Search.aspx?q=${encodeURIComponent(kb)}`;
+    const msrcCveLink  = cve => `https://msrc.microsoft.com/update-guide/vulnerability/${encodeURIComponent(cve)}`;
+    const isCve = s => /^CVE-\d{4}-\d{4,7}$/i.test(s || '');
+    const kbify = s => s.toUpperCase().startsWith('KB') ? s.toUpperCase() : ('KB' + s);
 
-    function normalize(items){
-      return (items||[]).map(it=>{
-        // accept both legacy and new keys
-        const cves = uniq([
-          ...(Array.isArray(it.cves) ? it.cves : []),
-          ...(it.cve ? String(it.cve).split(/[,\s]+/) : []),
-        ]);
-        const kbs = uniq([
-          ...(Array.isArray(it.kbs) ? it.kbs : []),
-          ...(it.kb ? String(it.kb).split(/[,\s]+/) : []),
-        ]);
-        let ki = it.knownIssuesUrl || it.knownIssues || '';
-        // best-effort: if we have a KB but no URL, create a Release-Health search URL
-        if (!ki && kbs.length){
-          const kb = encodeURIComponent(kbs[0]);
-          ki = `https://learn.microsoft.com/search/?terms=${kb}%20known%20issues%20windows%20release%20health`;
-        }
-        return {
-          cves, kbs,
-          title: it.title || 'Windows Update',
-          description: it.description || '(no description)',
-          link: it.link || '',
-          knownIssuesUrl: ki || '',
-          releaseDate: it.releaseDate || it.date || '',
-          source: it.source || '—',
-        };
-      });
+    // ---- Runtime state
+    let DATA = [];
+    let filtered = [];
+
+    // ---- Fetch & render
+    async function load() {
+      try {
+        const r = await fetch('data.json?' + Date.now(), {cache:'no-store'});
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        DATA = await r.json();
+      } catch (e) {
+        console.error('Failed to load data.json', e);
+        DATA = [];
+      }
+      // normalize arrays and strings we rely on
+      for (const it of DATA) {
+        it.cves = Array.isArray(it.cves) ? it.cves : (it.cve ? String(it.cve).split(/\s*,\s*/) : []);
+        it.kbs  = Array.isArray(it.kbs)  ? it.kbs  : (it.kb  ? String(it.kb ).split(/\s*,\s*/) : []);
+        it.kbs = it.kbs.map(k => kbify(String(k).replace(/^KB/i,'')));
+        // prefer knownIssuesUrl, but accept "knownIssues" for back-compat
+        it.knownIssuesUrl = it.knownIssuesUrl || it.knownIssues || '';
+      }
+      apply();
     }
 
-    function render(items){
-      const tb = document.getElementById('tbody');
-      tb.innerHTML = '';
-      const q = document.getElementById('q').value.trim().toLowerCase();
-      const sort = document.getElementById('sort').value;
+    function apply() {
+      const q = byId('q').value.trim().toLowerCase();
+      const sort = byId('sort').value;
 
-      let rows = [...items];
-
-      // Filter
-      if (q){
-        rows = rows.filter(r=>{
-          const hay = [
-            ...r.cves, ...r.kbs, r.title, r.description, r.source, r.releaseDate
-          ].join(' ').toLowerCase();
-          return hay.includes(q);
-        });
-      }
-
-      // Sort
-      rows.sort((a,b)=>{
-        const da = new Date(a.releaseDate || 0).getTime();
-        const db = new Date(b.releaseDate || 0).getTime();
-        return sort === 'new' ? db-da : da-db;
+      filtered = DATA.filter(it => {
+        if (!q) return true;
+        const hay = [
+          ...(it.cves||[]).join(' '),
+          ...(it.kbs||[]).join(' '),
+          it.title||'',
+          it.description||'',
+          it.source||'',
+          it.link||'',
+          it.releaseDate||''
+        ].join(' ').toLowerCase();
+        return hay.includes(q);
       });
 
-      // Render
-      for (const r of rows){
-        const tr = document.createElement('tr');
+      filtered.sort((a,b) => {
+        const da = Date.parse(a.releaseDate||'') || 0;
+        const db = Date.parse(b.releaseDate||'') || 0;
+        return sort === 'new' ? db - da : da - db;
+      });
+
+      render();
+    }
+
+    function render() {
+      const root = byId('rows');
+      root.innerHTML = '';
+
+      if (!filtered.length) {
+        const d = document.createElement('div');
+        d.className = 'empty';
+        d.textContent = 'No updates match your filters.';
+        root.appendChild(d);
+        byId('count').textContent = '';
+        return;
+      }
+
+      byId('count').textContent = `${filtered.length} update${filtered.length!==1?'s':''}`;
+
+      for (const it of filtered) {
+        const row = document.createElement('div');
+        row.className = 'row';
 
         // CVE column
-        const tdCve = document.createElement('td');
-        if (r.cves.length){
-          tdCve.innerHTML = r.cves.map(c=>{
-            const u = `https://msrc.microsoft.com/update-guide/vulnerability/${encodeURIComponent(c)}`;
-            return `<div><a class="link" href="${u}" target="_blank" rel="noopener">${c}</a></div>`;
-          }).join('');
+        const cveCol = document.createElement('div');
+        cveCol.className = 'cve';
+        if (Array.isArray(it.cves) && it.cves.length) {
+          const wrap = document.createElement('div');
+          wrap.className = 'cves';
+          it.cves.forEach(cve => {
+            if (!isCve(cve)) return;
+            const a = document.createElement('a');
+            a.className = 'chip';
+            a.href = msrcCveLink(cve);
+            a.target = '_blank';
+            a.rel = 'noopener';
+            a.textContent = cve.toUpperCase();
+            wrap.appendChild(a);
+          });
+          cveCol.appendChild(wrap);
         } else {
-          tdCve.innerHTML = '<span class="muted">N/A</span>';
+          cveCol.innerHTML = '<span class="muted">N/A</span>';
         }
-        tr.appendChild(tdCve);
 
         // Description
-        const tdDesc = document.createElement('td');
-        const mainLink = r.link ? `<a class="link" href="${r.link}" target="_blank" rel="noopener">${r.title}</a>` : `<span>${r.title}</span>`;
-        tdDesc.innerHTML = `<div>${mainLink}</div><div class="muted">${r.description || '(no description)'}</div>`;
-        tr.appendChild(tdDesc);
-
-        // KBs
-        const tdKb = document.createElement('td');
-        if (r.kbs.length){
-          tdKb.innerHTML = `<div class="kb-list">` + r.kbs.map(k=>`<span class="kb">${k}</span>`).join('') + `</div>`;
-        } else {
-          tdKb.innerHTML = '<span class="muted">—</span>';
+        const descCol = document.createElement('div');
+        descCol.className = 'desc';
+        const title = it.title || '';
+        const p = document.createElement('div');
+        p.innerHTML = escapeHtml(title || '(no title)');
+        if (it.link) {
+          const a = document.createElement('a');
+          a.href = it.link;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.style.display = 'inline-block';
+          a.style.color = '#93c5fd';
+          a.style.textDecoration = 'none';
+          a.textContent = '  link';
+          p.appendChild(a);
         }
-        tr.appendChild(tdKb);
+        const d2 = document.createElement('div');
+        d2.style.marginTop = '6px';
+        d2.style.fontSize = '13px';
+        d2.style.color = '#cbd5e1';
+        d2.textContent = stripHtml(it.description || '(no description)');
+        descCol.appendChild(p);
+        descCol.appendChild(d2);
 
-        // Known issues
-        const tdKi = document.createElement('td');
-        if (r.knownIssuesUrl){
-          tdKi.innerHTML = `<a class="pill link" href="${r.knownIssuesUrl}" target="_blank" rel="noopener">Known issues</a>`;
+        // KB(s)
+        const kbCol = document.createElement('div');
+        const kbWrap = document.createElement('div');
+        kbWrap.className = 'kbs';
+        if (Array.isArray(it.kbs) && it.kbs.length) {
+          it.kbs.forEach(kb => {
+            const a = document.createElement('a');
+            a.className = 'chip';
+            a.href = catalogLink(kb);
+            a.target = '_blank';
+            a.rel = 'noopener';
+            a.textContent = kb.toUpperCase();
+            kbWrap.appendChild(a);
+          });
         } else {
-          tdKi.innerHTML = '<span class="muted">—</span>';
+          const s = document.createElement('span');
+          s.style.color = '#9ca3af';
+          s.textContent = '—';
+          kbWrap.appendChild(s);
         }
-        tr.appendChild(tdKi);
+        kbCol.appendChild(kbWrap);
+
+        // Known Issues
+        const kiCol = document.createElement('div');
+        if (it.knownIssuesUrl) {
+          const a = document.createElement('a');
+          a.href = it.knownIssuesUrl;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.className = 'pill';
+          a.textContent = 'Known issues';
+          kiCol.appendChild(a);
+        } else {
+          const s = document.createElement('span');
+          s.style.color = '#9ca3af';
+          s.textContent = '—';
+          kiCol.appendChild(s);
+        }
 
         // Date
-        const tdDate = document.createElement('td');
-        tdDate.className = 'nowrap';
-        tdDate.textContent = fmtDate(r.releaseDate);
-        tr.appendChild(tdDate);
+        const dateCol = document.createElement('div');
+        dateCol.textContent = fmtDate(it.releaseDate);
 
         // Source
-        const tdSrc = document.createElement('td');
-        const src = (r.source||'').toUpperCase().includes('RSS') ? 'SUG RSS' :
-                    (r.source||'').toUpperCase().includes('JSON') ? 'SUG JSON' :
-                    (r.source||'');
-        tdSrc.innerHTML = src ? `<span class="pill">${src}</span>` : '<span class="muted">—</span>';
-        tr.appendChild(tdSrc);
+        const srcCol = document.createElement('div');
+        srcCol.className = 'src';
+        srcCol.textContent = (it.source || '').toString();
 
-        tb.appendChild(tr);
+        // When stacked (mobile), add labels
+        if (window.matchMedia('(max-width: 860px)').matches) {
+          cveCol.prepend(label('CVE'));
+          descCol.prepend(label('Description'));
+          kbCol.prepend(label('KB(s)'));
+          kiCol.prepend(label('Known Issues'));
+          dateCol.prepend(label('Release Date'));
+          srcCol.prepend(label('Source'));
+        }
+
+        row.appendChild(cveCol);
+        row.appendChild(descCol);
+        row.appendChild(kbCol);
+        row.appendChild(kiCol);
+        row.appendChild(dateCol);
+        row.appendChild(srcCol);
+
+        root.appendChild(row);
       }
-
-      document.getElementById('count').textContent = `${rows.length} update${rows.length===1?'':'s'}`;
     }
 
-    async function load(){
-      try{
-        const r = await fetch('data.json', {cache:'no-store'});
-        const items = normalize(await r.json());
-        window._DATA = items;
-        render(items);
-      }catch(e){
-        console.error(e);
-        window._DATA = [];
-        render([]);
-      }
+    // ---- Utils
+    function label(t){
+      const s=document.createElement('span'); s.className='label'; s.textContent=t; return s;
+    }
+    function escapeHtml(s){ return s.replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;' }[m])); }
+    function stripHtml(s){ const d=document.createElement('div'); d.innerHTML=s; return d.textContent||d.innerText||''; }
+    function fmtDate(s){
+      const t = Date.parse(s||'');
+      if (!t) return s||'';
+      const d = new Date(t);
+      return d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'2-digit'});
     }
 
-    document.getElementById('q').addEventListener('input', ()=>render(window._DATA||[]));
-    document.getElementById('sort').addEventListener('change', ()=>render(window._DATA||[]));
-    document.getElementById('print').addEventListener('click', ()=>window.print());
-    document.getElementById('email').addEventListener('click', ()=>{
-      const url = location.href;
-      location.href = `mailto:?subject=Windows Updates (Last 30 Days)&body=${encodeURIComponent(url)}`;
+    // ---- Events
+    byId('q').addEventListener('input', apply);
+    byId('sort').addEventListener('change', apply);
+    byId('printBtn').addEventListener('click', ()=>window.print());
+    byId('emailBtn').addEventListener('click', ()=>{
+      const link = location.href;
+      const subject = encodeURIComponent('Windows Updates (Last 30 Days)');
+      const body = encodeURIComponent(`Here is the current Windows update list:\n\n${link}\n`);
+      location.href = `mailto:?subject=${subject}&body=${body}`;
     });
 
     load();
