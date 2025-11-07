@@ -2,13 +2,8 @@ name: Build MSRC updates JSON (daily)
 
 on:
   schedule:
-    - cron: "9 9 * * *"  # Daily at 09:09 UTC
+    - cron: "15 9 * * *"  # daily at 09:15 UTC
   workflow_dispatch:
-    inputs:
-      days_back:
-        description: "Days of updates to include"
-        required: false
-        default: "30"
 
 permissions:
   contents: write
@@ -22,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -32,113 +27,105 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests xmltodict python-dateutil pytz
 
-      - name: Build data.json (MSRC CVRF real data)
-        env:
-          DAYS_BACK_INPUT: ${{ github.event.inputs.days_back }}
+      - name: Build data.json (SUG + CVRF unified)
         run: |
           python - <<'PY'
-          import os, json, requests, xmltodict
+          import json, requests, xmltodict
           from datetime import datetime, timedelta, timezone
           from dateutil.parser import isoparse
 
-          days_back = int(os.getenv("DAYS_BACK_INPUT") or "30")
           NOW = datetime.now(timezone.utc)
-          SINCE = NOW - timedelta(days=days_back)
+          SINCE = NOW - timedelta(days=30)
+          all_entries = []
 
           def log(msg): print(msg, flush=True)
 
-          def clean(s):
-              if not s:
-                  return ""
-              if isinstance(s, dict):
-                  s = s.get("#text", "")
-              return str(s).replace("\n", " ").replace("\r", " ").strip()
+          # --- SUG API ---
+          try:
+              log("Fetching SUG data...")
+              sug_url = "https://api.msrc.microsoft.com/sug/v2.0/updates?$select=title,cveIds,releaseDate,lastModifiedDate,severity,releaseNumber&$orderby=lastModifiedDate desc&$top=200"
+              r = requests.get(sug_url, timeout=30)
+              if r.status_code == 200:
+                  data = r.json().get("value", [])
+                  for item in data:
+                      rd = item.get("releaseDate")
+                      if not rd: continue
+                      try:
+                          dt = isoparse(rd)
+                      except Exception:
+                          continue
+                      if dt < SINCE: continue
+                      all_entries.append({
+                          "title": item.get("title", "(no title)"),
+                          "cve": ", ".join(item.get("cveIds", [])) or "N/A",
+                          "description": item.get("releaseNumber", "Windows Update"),
+                          "severity": item.get("severity", "N/A"),
+                          "releaseDate": dt.strftime("%Y-%m-%d"),
+                          "source": "SUG"
+                      })
+                  log(f"SUG: {len(all_entries)} items collected")
+              else:
+                  log(f"SUG API error {r.status_code}")
+          except Exception as e:
+              log(f"⚠️ SUG fetch failed: {e}")
 
+          # --- CVRF API ---
           def fetch_cvrf(month):
               url = f"https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{month}"
-              headers = {"Accept": "application/xml"}
               try:
-                  r = requests.get(url, headers=headers, timeout=30)
-                  if r.status_code == 404:
-                      return None
+                  r = requests.get(url, headers={"Accept": "application/xml"}, timeout=30)
+                  if r.status_code == 404: return None
                   r.raise_for_status()
                   return xmltodict.parse(r.text)
               except Exception as e:
-                  log(f"⚠️ Error fetching {url}: {e}")
+                  log(f"⚠️ CVRF fetch {month} failed: {e}")
                   return None
 
-          def parse_vulns(data):
-              if not data: return []
-              root = data.get("cvrfdoc", {})
-              tracking = root.get("DocumentTracking", {})
-              rel_date = tracking.get("CurrentReleaseDate") or tracking.get("InitialReleaseDate")
-              if isinstance(rel_date, dict):
-                  rel_date = rel_date.get("#text")
-              try:
-                  release_date = isoparse(rel_date)
-              except Exception:
-                  release_date = NOW
-              if release_date < SINCE:
-                  return []
-
-              vulns = []
-              v_items = root.get("Vulnerability", [])
-              if isinstance(v_items, dict):
-                  v_items = [v_items]
-
-              for v in v_items:
+          def parse_cvrf(doc):
+              if not doc: return []
+              root = doc.get("cvrfdoc", {})
+              vulns = root.get("Vulnerability", [])
+              if isinstance(vulns, dict): vulns = [vulns]
+              results = []
+              for v in vulns:
                   cve = v.get("CVE") or "Unknown CVE"
-                  title = clean(v.get("Title"))
+                  title = v.get("Title") or "(no title)"
                   desc = "(no description)"
                   if "Notes" in v:
                       notes = v["Notes"].get("Note") if isinstance(v["Notes"], dict) else []
                       if isinstance(notes, list):
-                          for note in notes:
-                              if note.get("@Type") == "Description":
-                                  desc = clean(note.get("#text"))
+                          for n in notes:
+                              if n.get("@Type") == "Description":
+                                  desc = n.get("#text", "")
                                   break
                       elif isinstance(notes, dict) and notes.get("@Type") == "Description":
-                          desc = clean(notes.get("#text"))
-
-                  severity = ""
-                  threat = v.get("Threats", {}).get("Threat")
-                  if isinstance(threat, dict):
-                      severity = clean(threat.get("#text"))
-                  elif isinstance(threat, list) and threat:
-                      severity = clean(threat[0].get("#text"))
-
-                  vulns.append({
-                      "title": title or cve,
+                          desc = notes.get("#text", "")
+                  results.append({
+                      "title": title,
                       "cve": cve,
                       "description": desc,
-                      "severity": severity or "n/a",
-                      "releaseDate": release_date.strftime("%Y-%m-%d"),
-                      "source": "MSRC CVRF"
+                      "severity": "N/A",
+                      "releaseDate": datetime.now().strftime("%Y-%m-%d"),
+                      "source": "CVRF"
                   })
-              return vulns
+              return results
 
-          months = [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]
-          all_vulns = []
-          for m in months:
-              log(f"Fetching month: {m}")
+          for m in [NOW.strftime("%Y-%b"), (NOW - timedelta(days=30)).strftime("%Y-%b")]:
               data = fetch_cvrf(m)
-              vulns = parse_vulns(data)
-              log(f"Extracted {len(vulns)} entries from {m}")
-              all_vulns.extend(vulns)
+              parsed = parse_cvrf(data)
+              if parsed:
+                  log(f"CVRF: {len(parsed)} from {m}")
+                  all_entries.extend(parsed)
 
-          if not all_vulns:
-              if os.path.exists("data.json"):
-                  log("⚠️ No data found; preserving existing file.")
-              else:
-                  all_vulns = [{"title": "No updates found", "cve": "-", "description": "-", "releaseDate": NOW.strftime("%Y-%m-%d"), "source": "none"}]
-
+          # --- Write Output ---
+          all_entries = sorted(all_entries, key=lambda x: x["releaseDate"], reverse=True)
           with open("data.json", "w", encoding="utf-8") as f:
-              json.dump(all_vulns, f, indent=2, ensure_ascii=False)
-              log(f"✅ Saved {len(all_vulns)} updates to data.json")
+              json.dump(all_entries, f, indent=2, ensure_ascii=False)
+          log(f"✅ Total entries saved: {len(all_entries)}")
           PY
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update MSRC data.json"
+          commit_message: "update data.json (CVRF+SUG)"
           file_pattern: data.json
