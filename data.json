@@ -780,21 +780,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53760 Microsoft SharePoint Elevation of Privilege Vulnerability",
-    "description": "Added an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53760",
-    "releaseDate": "Wed, 13 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53760"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53760",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2023-36038 ASP.NET Core Denial of Service Vulnerability",
     "description": "Corrected Article links in the Security Updates table. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36038",
@@ -6576,6 +6561,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-53784",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2025-13042 Inappropriate implementation in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13042",
+    "releaseDate": "Thu, 13 Nov 2025 19:38:27 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13042"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13042",
     "kb": "",
     "knownIssues": ""
   },
