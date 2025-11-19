@@ -870,6 +870,66 @@
     "knownIssues": ""
   },
   {
+    "title": "Chromium: CVE-2025-13224 Type Confusion in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13224",
+    "releaseDate": "Tue, 18 Nov 2025 16:57:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13224"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13224",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2025-13223 Type Confusion in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information. Google is aware that an exploit for CVE-2025-13223 exists in the wild.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13223",
+    "releaseDate": "Tue, 18 Nov 2025 16:57:54 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13223"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13223",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62208 Windows License Manager Information Disclosure Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62208",
+    "releaseDate": "Tue, 18 Nov 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62208"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62208",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62209 Windows License Manager Information Disclosure Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62209",
+    "releaseDate": "Tue, 18 Nov 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62209"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62209",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-54896 Microsoft Excel Remote Code Execution Vulnerability",
     "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54896",
@@ -7090,37 +7150,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-49716 Windows Netlogon Denial of Service Vulnerability",
-    "description": "Updated first FAQ to state that CVE-2020-0674 has now been issued to address this vulnerability. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49716",
-    "releaseDate": "Mon, 18 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49716",
-      "CVE-2020-0674"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49716, CVE-2020-0674",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53740 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53740",
-    "releaseDate": "Mon, 18 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53740"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53740",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2025-0033 AMD CVE-2025-0033: RMP Corruption During SNP Initialization",
     "description": "Microsoft is aware of [AMD-SB-3020 | CVE-2025-0033](http://https://www.amd.com/en/resources/product-security/bulletin/amd-sb-3020.html) disclosed by AMD on October 13, 2025.  \n\nCVE-2025-0033 is a vulnerability in AMD EPYC processors using Secure Encrypted Virtualization – Secure Nested Paging (SEV-SNP). It involves a race condition during Reverse Map Table (RMP) initialization that could allow a malicious or compromised hypervisor to modify RMP entries before they are locked, potentially impacting the integrity of SEV-SNP guest memory. This issue does not expose plaintext data or secrets and requires privileged control of the hypervisor to exploit.\n \nAcross Azure Confidential Computing products, multiple security guardrails are in place to prevent host compromise, combining isolation, integrity verification and continuous monitoring. All host operations follow audited and approved management pathways, with administrative access strictly controlled, limited and logged. Together, these protections reduce the risk of host compromise or unauthorized memory manipulation, helping ensure that confidential workloads and customer VMs maintain their confidentiality and integrity on Azure hosts.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0033",
@@ -7778,81 +7807,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-55320",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-8882 Use after free in Aura",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-8882",
-    "releaseDate": "Fri, 15 Aug 2025 07:00:46 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-8882"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-8882",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-8881 Inappropriate implementation in File Picker",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-8881",
-    "releaseDate": "Fri, 15 Aug 2025 07:00:45 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-8881"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-8881",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-8901 Out of bounds write in ANGLE",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-8901",
-    "releaseDate": "Fri, 15 Aug 2025 07:00:44 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-8901"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-8901",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-8880 Race in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-8880",
-    "releaseDate": "Fri, 15 Aug 2025 07:00:44 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-8880"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-8880",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-8879 Heap buffer overflow in libaom",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-8879",
-    "releaseDate": "Fri, 15 Aug 2025 07:00:40 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-8879"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-8879",
     "kb": "",
     "knownIssues": ""
   },
