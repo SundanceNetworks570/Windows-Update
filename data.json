@@ -660,36 +660,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-49717 Microsoft SQL Server Remote Code Execution Vulnerability",
-    "description": "Updated product information in the Software Update table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49717",
-    "releaseDate": "Wed, 20 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49717"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49717",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49718 Microsoft SQL Server Information Disclosure Vulnerability",
-    "description": "Updated product information in the Software Update table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49718",
-    "releaseDate": "Wed, 20 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49718"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49718",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2025-50154 Microsoft Windows File Explorer Spoofing Vulnerability",
     "description": "Updated one or more CVSS scores for the affected products. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50154",
@@ -6265,92 +6235,152 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-9132 Out of bounds write in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-9132",
-    "releaseDate": "Thu, 21 Aug 2025 15:59:59 Z",
+    "title": "CVE-2025-64656 Application Gateway Elevation of Privilege Vulnerability",
+    "description": "Out-of-bounds read in Application Gateway allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64656",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-9132"
+      "CVE-2025-64656"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-9132",
+    "cve": "CVE-2025-64656",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53763 Azure Databricks Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53763",
-    "releaseDate": "Thu, 21 Aug 2025 07:00:00 Z",
+    "title": "CVE-2025-64655 Dynamics OmniChannel SDK Storage Containers Elevation of Privilege Vulnerability",
+    "description": "Improper authorization in Dynamics OmniChannel SDK Storage Containers allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64655",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53763"
+      "CVE-2025-64655"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53763",
+    "cve": "CVE-2025-64655",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53795 Microsoft PC Manager Elevation of Privilege Vulnerability",
-    "description": "Improper authorization in Microsoft PC Manager allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53795",
-    "releaseDate": "Thu, 21 Aug 2025 07:00:00 Z",
+    "title": "CVE-2025-59245 Microsoft SharePoint Online Elevation of Privilege Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59245",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53795"
+      "CVE-2025-59245"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53795",
+    "cve": "CVE-2025-59245",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55230 Windows MBT Transport Driver Elevation of Privilege Vulnerability",
-    "description": "Untrusted pointer dereference in Windows MBT Transport driver allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55230",
-    "releaseDate": "Thu, 21 Aug 2025 07:00:00 Z",
+    "title": "CVE-2025-49752 Azure Bastion Elevation of Privilege Vulnerability",
+    "description": "Corrected security updates table.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49752",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55230"
+      "CVE-2025-49752"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55230",
+    "cve": "CVE-2025-49752",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55229 Windows Certificate Spoofing Vulnerability",
-    "description": "Improper verification of cryptographic signature in Windows Certificates allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55229",
-    "releaseDate": "Thu, 21 Aug 2025 07:00:00 Z",
+    "title": "CVE-2025-62207 Azure Monitor Elevation of Privilege Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62207",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55229"
+      "CVE-2025-62207"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55229",
+    "cve": "CVE-2025-62207",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55231 Windows Storage-based Management Service Remote Code Execution Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Storage allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55231",
-    "releaseDate": "Thu, 21 Aug 2025 07:00:00 Z",
+    "title": "CVE-2025-64660 GitHub Copilot and Visual Studio Code Security Feature Bypass Vulnerability",
+    "description": "Improper access control in GitHub Copilot and Visual Studio Code allows an authorized attacker to bypass a security feature over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64660",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55231"
+      "CVE-2025-64660"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55231",
+    "cve": "CVE-2025-64660",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62459 Microsoft Defender Portal Spoofing Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62459",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62459"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62459",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64657 Azure Application Gateway Elevation of Privilege Vulnerability",
+    "description": "Stack-based buffer overflow in Software for Open Networking in the Cloud (SONiC) allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64657",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64657"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64657",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49752 Azure Bastion Elevation of Privilege Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49752",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49752"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49752",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-54099 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement added. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54099",
+    "releaseDate": "Thu, 20 Nov 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-54099"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-54099",
     "kb": "",
     "knownIssues": ""
   },
