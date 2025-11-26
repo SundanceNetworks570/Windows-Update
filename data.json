@@ -795,47 +795,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55230 Windows MBT Transport Driver Elevation of Privilege Vulnerability",
-    "description": "Corrected Download and Article links in the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55230",
-    "releaseDate": "Tue, 26 Aug 2025 07:00:00 Z",
+    "title": "CVE-2025-64660 GitHub Copilot and Visual Studio Code Remote Code Execution Vulnerability",
+    "description": "The following revisions have been made: 1) In the Security Updates table, corrected the impact entries to Remote Code Execution. 2) The CVSS scores have been updated. These are informational changes only. Customers who have successfully installed the update do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64660",
+    "releaseDate": "Tue, 25 Nov 2025 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55230"
+      "CVE-2025-64660"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55230",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55229 Windows Certificate Spoofing Vulnerability",
-    "description": "Corrected Download and Article links in the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55229",
-    "releaseDate": "Tue, 26 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55229"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55229",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55231 Windows Storage-based Management Service Remote Code Execution Vulnerability",
-    "description": "Corrected Download and Article links in the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55231",
-    "releaseDate": "Tue, 26 Aug 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55231"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55231",
+    "cve": "CVE-2025-64660",
     "kb": "",
     "knownIssues": ""
   },
