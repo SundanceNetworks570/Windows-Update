@@ -7167,6 +7167,81 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-66031 node-forge ASN.1 Unbounded Recursion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66031",
+    "releaseDate": "Thu, 04 Dec 2025 14:36:01 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66031"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66031",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66030 node-forge ASN.1 OID Integer Truncation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66030",
+    "releaseDate": "Thu, 04 Dec 2025 14:35:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66030"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66030",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12816 CVE-2025-12816",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12816",
+    "releaseDate": "Thu, 04 Dec 2025 14:35:48 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12816"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12816",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12977 CVE-2025-12977",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12977",
+    "releaseDate": "Thu, 04 Dec 2025 14:35:42 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12977"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12977",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12969 CVE-2025-12969",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12969",
+    "releaseDate": "Thu, 04 Dec 2025 14:35:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12969"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12969",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-39829 trace/fgraph: Fix the warning caused by missing unregister notifier",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39829",
@@ -8173,92 +8248,182 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-9867 Inappropriate implementation in Downloads",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-9867",
-    "releaseDate": "Fri, 05 Sep 2025 07:00:17 Z",
+    "title": "CVE-2025-12970 CVE-2025-12970",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12970",
+    "releaseDate": "Fri, 05 Dec 2025 01:36:55 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-9867"
+      "CVE-2025-12970"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-9867",
+    "cve": "CVE-2025-12970",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-9866 Inappropriate implementation in Extensions",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-9866",
-    "releaseDate": "Fri, 05 Sep 2025 07:00:16 Z",
+    "title": "CVE-2025-11731 Libxslt: type confusion in exsltfuncresultcompfunction of libxslt",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11731",
+    "releaseDate": "Fri, 05 Dec 2025 01:36:30 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-9866"
+      "CVE-2025-11731"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-9866",
+    "cve": "CVE-2025-11731",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-9865 Inappropriate implementation in Toolbar",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-9865",
-    "releaseDate": "Fri, 05 Sep 2025 07:00:15 Z",
+    "title": "CVE-2025-55552 pytorch v2.8.0 was discovered to display unexpected behavior when the components torch.rot90 and torch.randn_like are used together.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55552",
+    "releaseDate": "Fri, 05 Dec 2025 01:35:57 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-9865"
+      "CVE-2025-55552"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-9865",
+    "cve": "CVE-2025-55552",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-9864 Use after free in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-9864",
-    "releaseDate": "Fri, 05 Sep 2025 07:00:12 Z",
+    "title": "CVE-2025-39833 mISDN: hfcpci: Fix warning when deleting uninitialized timer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39833",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:56 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-9864"
+      "CVE-2025-39833"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-9864",
+    "cve": "CVE-2025-39833",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53773 GitHub Copilot and Visual Studio Remote Code Execution Vulnerability",
-    "description": "Added an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53773",
-    "releaseDate": "Fri, 05 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-38709 loop: Avoid updating block size under exclusive owner",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38709",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:51 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53773"
+      "CVE-2025-38709"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53773",
+    "cve": "CVE-2025-38709",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53791 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
-    "description": "Improper access control in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53791",
-    "releaseDate": "Fri, 05 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53254 cacheinfo: Fix shared_cpu_map to handle shared caches at different levels",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53254",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:34 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53791"
+      "CVE-2023-53254"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53791",
+    "cve": "CVE-2023-53254",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53248 drm/amdgpu: install stub fence into potential unused fence pointers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53248",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53248"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53248",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53247 btrfs: set_page_extent_mapped after read_folio in btrfs_cont_expand",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53247",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53247"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53247",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53240 xsk: check IFF_UP earlier in Tx path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53240",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53240"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53240",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53221 bpf: Fix memleak due to fentry attach failure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53221",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:12 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53218 rxrpc: Make it so that a waiting process can be aborted",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53218",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:06 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53218"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53218",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-50316 orangefs: Fix kmemleak in orangefs_sysfs_init()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50316",
+    "releaseDate": "Fri, 05 Dec 2025 01:02:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-50316"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-50316",
     "kb": "",
     "knownIssues": ""
   },
