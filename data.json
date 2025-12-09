@@ -4976,1278 +4976,1037 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-48807 Windows Hyper-V Remote Code Execution Vulnerability",
-    "description": "To comprehensively address CVE-2025-48807, Microsoft has released September 2025 security updates for the following versions of Windows: Windows Server 2016 and newer, x64-based editions of Windows 10 Version 1607 and Windows 10 Version 1809, and all supported versions of Windows 10 Version 21H2 and newer and Windows 11 Version 22H2 and newer. Microsoft recommends that customers install the update to be fully protected from the vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-48807",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-48807"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-48807",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-21293 Active Directory Domain Services Elevation of Privilege Vulnerability",
-    "description": "To comprehensively address CVE-2025-21293, Microsoft has released September 2025 security update KB5065426 for Windows Server 2025, Windows Server 2025 (Server Core installation), Windows 11 Version 24H2 for x64-based Systems, and Windows 11 Version 24H2 for ARM64-based Systems. Microsoft recommends that customers install the updates to be fully protected from the vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action.\n\nFor customers running these versions of Windows and who install the HotPatch updates, Microsoft has released Hotpatch KB5065474. Customers who install the HotPatch updates should install KB5065474 to be protected from this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21293",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-21293"
-    ],
-    "kbs": [
-      "KB5065426",
-      "KB5065474"
-    ],
-    "knownIssuesUrl": "https://learn.microsoft.com/search/?terms=KB5065426%20known%20issues%20windows%20release%20health",
-    "cve": "CVE-2025-21293",
-    "kb": "KB5065426, KB5065474",
-    "knownIssues": "https://learn.microsoft.com/search/?terms=KB5065426%20known%20issues%20windows%20release%20health"
-  },
-  {
-    "title": "CVE-2025-49734 PowerShell Direct Elevation of Privilege Vulnerability",
-    "description": "Improper restriction of communication channel to intended endpoints in Windows PowerShell allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49734",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49734"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49734",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53797 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Buffer over-read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53797",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53797"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53797",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53798 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Buffer over-read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53798",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53798"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53798",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54095 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54095",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54095"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54095",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54096 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54096",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54096"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54096",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54097 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54097",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54097"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54097",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54099 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "description": "Stack-based buffer overflow in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54099",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54099"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54099",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54101 Windows SMB Client Remote Code Execution Vulnerability",
-    "description": "Use after free in Windows SMBv3 Client allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54101",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54101"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54101",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54102 Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Connected Devices Platform Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54102",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54102"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54102",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54106 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
-    "description": "Integer overflow or wraparound in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54106",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54106"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54106",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54110 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Integer overflow or wraparound in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54110",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54110"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54110",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54111 Windows UI XAML Phone DatePickerFlyout Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows UI XAML Phone DatePickerFlyout allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54111",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54111"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54111",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54894 Local Security Authority Subsystem Service Elevation of Privilege Vulnerability",
+    "title": "CVE-2025-40269 ALSA: usb-audio: Fix potential overflow of PCM transfer buffer",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54894",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40269",
+    "releaseDate": "Tue, 09 Dec 2025 01:41:25 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54894"
+      "CVE-2025-40269"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54894",
+    "cve": "CVE-2025-40269",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54895 SPNEGO Extended Negotiation (NEGOEX) Security Mechanism Elevation of Privilege Vulnerability",
-    "description": "Integer overflow or wraparound in Windows SPNEGO Extended Negotiation allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54895",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40281 sctp: prevent possible shift-out-of-bounds in sctp_transport_update_rto",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40281",
+    "releaseDate": "Tue, 09 Dec 2025 01:41:20 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54895"
+      "CVE-2025-40281"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54895",
+    "cve": "CVE-2025-40281",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54896 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54896",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40280 tipc: Fix use-after-free in tipc_mon_reinit_self().",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40280",
+    "releaseDate": "Tue, 09 Dec 2025 01:41:15 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54896"
+      "CVE-2025-40280"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54896",
+    "cve": "CVE-2025-40280",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54897 Microsoft SharePoint Remote Code Execution Vulnerability",
-    "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54897",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40277 drm/vmwgfx: Validate command header size against SVGA_CMD_MAX_DATASIZE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40277",
+    "releaseDate": "Tue, 09 Dec 2025 01:41:10 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54897"
+      "CVE-2025-40277"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54897",
+    "cve": "CVE-2025-40277",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54898 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54898",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40273 NFSD: free copynotify stateid in nfs4_free_ol_stateid()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40273",
+    "releaseDate": "Tue, 09 Dec 2025 01:41:05 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54898"
+      "CVE-2025-40273"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54898",
+    "cve": "CVE-2025-40273",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54899 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Free of memory not on the heap in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54899",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40282 Bluetooth: 6lowpan: reset link-local header on ipv6 recv path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40282",
+    "releaseDate": "Tue, 09 Dec 2025 01:41:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54899"
+      "CVE-2025-40282"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54899",
+    "cve": "CVE-2025-40282",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54902 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54902",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40279 net: sched: act_connmark: initialize struct tc_ife to fix kernel leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40279",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:56 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54902"
+      "CVE-2025-40279"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54902",
+    "cve": "CVE-2025-40279",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54903 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54903",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40283 Bluetooth: btusb: reorder cleanup in btusb_disconnect to avoid UAF",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40283",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:51 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54903"
+      "CVE-2025-40283"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54903",
+    "cve": "CVE-2025-40283",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54904 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54904",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40286 smb/server: fix possible memory leak in smb2_read()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40286",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:46 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54904"
+      "CVE-2025-40286"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54904",
+    "cve": "CVE-2025-40286",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54905 Microsoft Word Information Disclosure Vulnerability",
-    "description": "Untrusted pointer dereference in Microsoft Office Word allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54905",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40285 smb/server: fix possible refcount leak in smb2_sess_setup()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40285",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:41 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54905"
+      "CVE-2025-40285"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54905",
+    "cve": "CVE-2025-40285",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54906 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Free of memory not on the heap in Microsoft Office allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54906",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40284 Bluetooth: MGMT: cancel mesh send timer when hdev removed",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40284",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:36 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54906"
+      "CVE-2025-40284"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54906",
+    "cve": "CVE-2025-40284",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54907 Microsoft Office Visio Remote Code Execution Vulnerability",
-    "description": "Heap-based buffer overflow in Microsoft Office Visio allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54907",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40288 drm/amdgpu: Fix NULL pointer dereference in VRAM logic for APU devices",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40288",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:31 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54907"
+      "CVE-2025-40288"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54907",
+    "cve": "CVE-2025-40288",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54908 Microsoft PowerPoint Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office PowerPoint allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54908",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40275 ALSA: usb-audio: Fix NULL pointer dereference in snd_usb_mixer_controls_badd",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40275",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:26 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54908"
+      "CVE-2025-40275"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54908",
+    "cve": "CVE-2025-40275",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54913 Windows UI XAML Maps MapControlSettings Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows UI XAML Maps MapControlSettings allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54913",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40272 mm/secretmem: fix use-after-free race in fault handler",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40272",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:22 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54913"
+      "CVE-2025-40272"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54913",
+    "cve": "CVE-2025-40272",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54916 Windows NTFS Remote Code Execution Vulnerability",
-    "description": "Stack-based buffer overflow in Windows NTFS allows an authorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54916",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40268 cifs: client: fix memory leak in smb3_fs_context_parse_param",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40268",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:17 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54916"
+      "CVE-2025-40268"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54916",
+    "cve": "CVE-2025-40268",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54918 Windows NTLM Elevation of Privilege Vulnerability",
-    "description": "Improper authentication in Windows NTLM allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54918",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40278 net: sched: act_ife: initialize struct tc_ife to fix KMSAN kernel-infoleak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40278",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:12 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54918"
+      "CVE-2025-40278"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54918",
+    "cve": "CVE-2025-40278",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54919 Windows Graphics Component Remote Code Execution Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Win32K - GRFX allows an authorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54919",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40287 exfat: fix improper check of dentry.stream.valid_size",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40287",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:07 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54919"
+      "CVE-2025-40287"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54919",
+    "cve": "CVE-2025-40287",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55223 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Graphics Kernel allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55223",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-66293 LIBPNG has an out-of-bounds read in png_image_read_composite",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66293",
+    "releaseDate": "Tue, 09 Dec 2025 01:40:02 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55223"
+      "CVE-2025-66293"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55223",
+    "cve": "CVE-2025-66293",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55225 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55225",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:50 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55225"
+      "CVE-2025-65637"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55225",
+    "cve": "CVE-2025-65637",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55226 Graphics Kernel Remote Code Execution Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Graphics Kernel allows an authorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55226",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-12084 Quadratic complexity in node ID cache clearing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12084",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:42 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55226"
+      "CVE-2025-12084"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55226",
+    "cve": "CVE-2025-12084",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55228 Windows Graphics Component Remote Code Execution Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Win32K - GRFX allows an authorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55228",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:36 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55228"
+      "CVE-2025-61727"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55228",
+    "cve": "CVE-2025-61727",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55232 Microsoft High Performance Compute (HPC) Pack Remote Code Execution Vulnerability",
-    "description": "Deserialization of untrusted data in Microsoft High Performance Compute Pack (HPC) allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55232",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40263 Input: cros_ec_keyb - fix an invalid memory access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40263",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:15 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55232"
+      "CVE-2025-40263"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55232",
+    "cve": "CVE-2025-40263",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55236 Graphics Kernel Remote Code Execution Vulnerability",
-    "description": "Time-of-check time-of-use (toctou) race condition in Graphics Kernel allows an authorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55236",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40233 ocfs2: clear extent cache after moving/defragmenting extents",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40233",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:10 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55236"
+      "CVE-2025-40233"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55236",
+    "cve": "CVE-2025-40233",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55245 Xbox Gaming Services Elevation of Privilege Vulnerability",
-    "description": "Improper link resolution before file access ('link following') in Xbox allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55245",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40253 s390/ctcm: Fix double-kfree",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40253",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:05 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55245"
+      "CVE-2025-40253"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55245",
+    "cve": "CVE-2025-40253",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55243 Microsoft OfficePlus Spoofing Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Office Plus allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55243",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40243 hfs: fix KMSAN uninit-value issue in hfs_find_set_zero_bits()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40243",
+    "releaseDate": "Tue, 09 Dec 2025 01:39:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55243"
+      "CVE-2025-40243"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55243",
+    "cve": "CVE-2025-40243",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55317 Microsoft AutoUpdate (MAU) Elevation of Privilege Vulnerability",
-    "description": "Improper link resolution before file access ('link following') in Microsoft AutoUpdate (MAU) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55317",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40223 most: usb: Fix use-after-free in hdm_disconnect",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40223",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:54 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55317"
+      "CVE-2025-40223"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55317",
+    "cve": "CVE-2025-40223",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "ADV990001 Latest Servicing Stack Updates",
-    "description": "Advisory updated to announce new versions of Servicing Stack Updates are available.  Please see the FAQ for details.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/ADV990001",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40244 hfsplus: fix KMSAN uninit-value issue in __hfsplus_ext_cache_extent()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40244",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:49 Z",
     "source": "MSRC RSS",
-    "cves": [],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49692 Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Windows Virtual Machine Agent allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49692",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49692"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49692",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53796 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Buffer over-read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53796",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
-    "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53796"
+      "CVE-2025-40244"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53796",
+    "cve": "CVE-2025-40244",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53800 Windows Graphics Component Elevation of Privilege Vulnerability",
-    "description": "No cwe for this issue in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53800",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40245 nios2: ensure that memblock.current_limit is set when setting pfn limits",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40245",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:43 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53800"
+      "CVE-2025-40245"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53800",
+    "cve": "CVE-2025-40245",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53801 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Untrusted pointer dereference in Windows DWM allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53801",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40242 gfs2: Fix unlikely race in gdlm_put_lock",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40242",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:38 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53801"
+      "CVE-2025-40242"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53801",
+    "cve": "CVE-2025-40242",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53802 Windows Bluetooth Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Bluetooth Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53802",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40262 Input: imx_sc_key - fix memory corruption on unload",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40262",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:33 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53802"
+      "CVE-2025-40262"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53802",
+    "cve": "CVE-2025-40262",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53803 Windows Kernel Memory Information Disclosure Vulnerability",
-    "description": "Generation of error message containing sensitive information in Windows Kernel allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53803",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53231 erofs: Fix detection of atomic context",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53231",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:28 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53803"
+      "CVE-2023-53231"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53803",
+    "cve": "CVE-2023-53231",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53804 Windows Kernel-Mode Driver Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Kernel allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53804",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-13837 Out-of-memory when loading Plist",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13837",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:23 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53804"
+      "CVE-2025-13837"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53804",
+    "cve": "CVE-2025-13837",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53805 HTTP.sys Denial of Service Vulnerability",
-    "description": "Out-of-bounds read in Windows Internet Information Services allows an unauthorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53805",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-13836 Excessive read buffering DoS in http.client",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13836",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:18 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53805"
+      "CVE-2025-13836"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53805",
+    "cve": "CVE-2025-13836",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53806 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Buffer over-read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53806",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-34297 KissFFT Integer Overflow Heap Buffer Overflow via kiss_fft_alloc",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-34297",
+    "releaseDate": "Tue, 09 Dec 2025 01:38:14 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53806"
+      "CVE-2025-34297"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53806",
+    "cve": "CVE-2025-34297",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53807 Windows Graphics Component Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53807",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40217 pidfs: validate extensible ioctls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40217",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:58 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53807"
+      "CVE-2025-40217"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53807",
+    "cve": "CVE-2025-40217",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53808 Windows Defender Firewall Service Elevation of Privilege Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Windows Defender Firewall Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53808",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40218 mm/damon/vaddr: do not repeat pte_offset_map_lock() until success",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40218",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:53 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53808"
+      "CVE-2025-40218"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53808",
+    "cve": "CVE-2025-40218",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53809 Local Security Authority Subsystem Service (LSASS) Denial of Service Vulnerability",
-    "description": "Improper input validation in Windows Local Security Authority Subsystem Service (LSASS) allows an authorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53809",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-66476 Vim for Windows Uncontrolled Search Path Element Remote Code Execution Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66476",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:47 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53809"
+      "CVE-2025-66476"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53809",
+    "cve": "CVE-2025-66476",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53810 Windows Defender Firewall Service Elevation of Privilege Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Windows Defender Firewall Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53810",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2022-50316 orangefs: Fix kmemleak in orangefs_sysfs_init()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50316",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:40 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53810"
+      "CVE-2022-50316"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53810",
+    "cve": "CVE-2022-50316",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54091 Windows Hyper-V Elevation of Privilege Vulnerability",
-    "description": "Integer overflow or wraparound in Windows Hyper-V allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54091",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-61729 Excessive resource consumption when printing error string for host certificate validation in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61729",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:35 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54091"
+      "CVE-2025-61729"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54091",
+    "cve": "CVE-2025-61729",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54092 Windows Hyper-V Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Hyper-V allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54092",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53261 coresight: Fix memory leak in acpi_buffer->pointer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53261",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:09 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54092"
+      "CVE-2023-53261"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54092",
+    "cve": "CVE-2023-53261",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54093 Windows TCP/IP Driver Elevation of Privilege Vulnerability",
-    "description": "Time-of-check time-of-use (toctou) race condition in Windows TCP/IP allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54093",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-66221 Werkzeug safe_join() allows Windows special device names",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66221",
+    "releaseDate": "Tue, 09 Dec 2025 01:37:04 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54093"
+      "CVE-2025-66221"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54093",
+    "cve": "CVE-2025-66221",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54094 Windows Defender Firewall Service Elevation of Privilege Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Windows Defender Firewall Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54094",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-12638 Path Traversal Vulnerability in keras-team/keras via Tar Archive Extraction in keras.utils.get_file()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12638",
+    "releaseDate": "Tue, 09 Dec 2025 01:36:54 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54094"
+      "CVE-2025-12638"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54094",
+    "cve": "CVE-2025-12638",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54098 Windows Hyper-V Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Windows Hyper-V allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54098",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2022-24736 A Malformed Lua script can crash Redis",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24736",
+    "releaseDate": "Tue, 09 Dec 2025 01:36:49 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54098"
+      "CVE-2022-24736"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54098",
+    "cve": "CVE-2022-24736",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54103 Windows Management Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Management Services allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54103",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2022-24735 Lua scripts can be manipulated to overcome ACL rules in Redis",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24735",
+    "releaseDate": "Tue, 09 Dec 2025 01:36:44 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54103"
+      "CVE-2022-24735"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54103",
+    "cve": "CVE-2022-24735",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54104 Windows Defender Firewall Service Elevation of Privilege Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Windows Defender Firewall Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54104",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40324 NFSD: Fix crash in nfsd4_read_release()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40324",
+    "releaseDate": "Tue, 09 Dec 2025 01:03:29 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54104"
+      "CVE-2025-40324"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54104",
+    "cve": "CVE-2025-40324",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54105 Microsoft Brokering File System Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Microsoft Brokering File System allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54105",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40303 btrfs: ensure no dirty metadata is written back for an fs with errors",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40303",
+    "releaseDate": "Tue, 09 Dec 2025 01:03:24 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54105"
+      "CVE-2025-40303"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54105",
+    "cve": "CVE-2025-40303",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54107 MapUrlToZone Security Feature Bypass Vulnerability",
-    "description": "Improper resolution of path equivalence in Windows MapUrlToZone allows an unauthorized attacker to bypass a security feature over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54107",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40297 net: bridge: fix use-after-free due to MST port state bypass",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40297",
+    "releaseDate": "Tue, 09 Dec 2025 01:03:18 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54107"
+      "CVE-2025-40297"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54107",
+    "cve": "CVE-2025-40297",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54108 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Capability Access Management Service (camsvc) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54108",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40322 fbdev: bitblit: bound-check glyph index in bit_putcs*",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40322",
+    "releaseDate": "Tue, 09 Dec 2025 01:03:13 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54108"
+      "CVE-2025-40322"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54108",
+    "cve": "CVE-2025-40322",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54109 Windows Defender Firewall Service Elevation of Privilege Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Windows Defender Firewall Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54109",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40311 accel/habanalabs: support mapping cb with vmalloc-backed coherent memory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40311",
+    "releaseDate": "Tue, 09 Dec 2025 01:03:08 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54109"
+      "CVE-2025-40311"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54109",
+    "cve": "CVE-2025-40311",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54112 Microsoft Virtual Hard Disk Elevation of Privilege Vulnerability",
-    "description": "Use after free in Microsoft Virtual Hard Drive allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54112",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40323 fbcon: Set fb_display[i]->mode to NULL when the mode is released",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40323",
+    "releaseDate": "Tue, 09 Dec 2025 01:03:02 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54112"
+      "CVE-2025-40323"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54112",
+    "cve": "CVE-2025-40323",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54113 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
-    "description": "Heap-based buffer overflow in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54113",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40310 amd/amdkfd: resolve a race in amdgpu_amdkfd_device_fini_sw",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40310",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:57 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54113"
+      "CVE-2025-40310"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54113",
+    "cve": "CVE-2025-40310",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54114 Windows Connected Devices Platform Service (Cdpsvc) Denial of Service Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Connected Devices Platform Service allows an authorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54114",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40294 Bluetooth: MGMT: Fix OOB access in parse_adv_monitor_pattern()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40294",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:52 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54114"
+      "CVE-2025-40294"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54114",
+    "cve": "CVE-2025-40294",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54115 Windows Hyper-V Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Hyper-V allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54115",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40313 ntfs3: pretend $Extend records as regular files",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40313",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:47 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54115"
+      "CVE-2025-40313"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54115",
+    "cve": "CVE-2025-40313",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54116 Windows MultiPoint Services Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Windows MultiPoint Services allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54116",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40304 fbdev: Add bounds checking in bit_putcs to fix vmalloc-out-of-bounds",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40304",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:41 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54116"
+      "CVE-2025-40304"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54116",
+    "cve": "CVE-2025-40304",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54900 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54900",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40301 Bluetooth: hci_event: validate skb length for unknown CC opcode",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40301",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:36 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54900"
+      "CVE-2025-40301"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54900",
+    "cve": "CVE-2025-40301",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54901 Microsoft Excel Information Disclosure Vulnerability",
-    "description": "Buffer over-read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54901",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40321 wifi: brcmfmac: fix crash while sending Action Frames in standalone AP Mode",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40321",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:30 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54901"
+      "CVE-2025-40321"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54901",
+    "cve": "CVE-2025-40321",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54910 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54910",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40317 regmap: slimbus: fix bus_context pointer in regmap init calls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40317",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:25 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54910"
+      "CVE-2025-40317"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54910",
+    "cve": "CVE-2025-40317",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54911 Windows BitLocker Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows BitLocker allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54911",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40314 usb: cdns3: gadget: Use-after-free during failed initialization and exit of cdnsp gadget",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40314",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:20 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54911"
+      "CVE-2025-40314"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54911",
+    "cve": "CVE-2025-40314",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54912 Windows BitLocker Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows BitLocker allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54912",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40315 usb: gadget: f_fs: Fix epfile null pointer access after ep enable.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40315",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:15 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54912"
+      "CVE-2025-40315"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54912",
+    "cve": "CVE-2025-40315",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54915 Windows Defender Firewall Service Elevation of Privilege Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Windows Defender Firewall Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54915",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40312 jfs: Verify inode mode when loading from disk",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40312",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:09 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54915"
+      "CVE-2025-40312"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54915",
+    "cve": "CVE-2025-40312",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54917 MapUrlToZone Security Feature Bypass Vulnerability",
-    "description": "Protection mechanism failure in Windows MapUrlToZone allows an unauthorized attacker to bypass a security feature over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54917",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40319 bpf: Sync pending IRQ work before freeing ring buffer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40319",
+    "releaseDate": "Tue, 09 Dec 2025 01:02:03 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54917"
+      "CVE-2025-40319"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54917",
+    "cve": "CVE-2025-40319",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55224 Windows Hyper-V Remote Code Execution Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Win32K - GRFX allows an authorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55224",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40306 orangefs: fix xattr related buffer overflow...",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40306",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:58 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55224"
+      "CVE-2025-40306"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55224",
+    "cve": "CVE-2025-40306",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55234 Windows SMB Elevation of Privilege Vulnerability",
-    "description": "SMB Server might be susceptible to relay attacks depending on the configuration. An attacker who successfully exploited these vulnerabilities could perform relay attacks and make the users subject to elevation of privilege attacks. \n\nThe SMB Server already supports mechanisms for hardening against relay attacks: \n* SMB Server signing\n* SMB Server Extended Protection for Authentication (EPA)\n\nMicrosoft is releasing this CVE to provide customers with audit capabilities to help them to assess their environment and to identify any potential device or software incompatibility issues before deploying SMB Server hardening measures that protect against relay attacks. \n\nIf you have not already enabled SMB Server hardening measures, we advise customers to take the following actions to be protected from these relay attacks:\n\n* Assess your environment by utilizing the audit capabilities that we are exposing in the September 2025 security updates.  See [Support for Audit Events to deploy SMB Server Hardening—SMB Server Signing & SMB Server EPA](https://support.microsoft.com/help/5066913). \n* Adopt appropriate SMB Server hardening measures.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55234",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40292 virtio-net: fix received length check in big packets",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40292",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:52 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55234"
+      "CVE-2025-40292"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55234",
+    "cve": "CVE-2025-40292",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55316 Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Updated CVE title. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55316",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40293 iommufd: Don't overflow during division for dirty tracking",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40293",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:47 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55316"
+      "CVE-2025-40293"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55316",
+    "cve": "CVE-2025-40293",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53799 Windows Imaging Component Information Disclosure Vulnerability",
-    "description": "Use of uninitialized resource in Windows Imaging Component allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53799",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40305 9p/trans_fd: p9_fd_request: kick rx thread if EPOLLIN",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40305",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:42 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53799"
+      "CVE-2025-40305"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53799",
+    "cve": "CVE-2025-40305",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2024-21907 VulnCheck: CVE-2024-21907 Improper Handling of Exceptional Conditions in Newtonsoft.Json",
-    "description": "[CVE-2024-21907](https://www.cve.org/CVERecord?id=CVE-2024-21907) addresses a mishandling of exceptional conditions vulnerability in Newtonsoft.Json before version 13.0.1. Crafted data that is passed to the JsonConvert.DeserializeObject method may trigger a StackOverflow exception resulting in denial of service. Depending on the usage of the library, an unauthenticated and remote attacker may be able to cause the denial of service condition. The documented SQL Server updates incorporate updates in Newtonsoft.Json which address this vulnerability.\n\nPlease see [CVE-2024-21907](https://www.cve.org/CVERecord?id=CVE-2024-21907) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21907",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40309 Bluetooth: SCO: Fix UAF on sco_conn_free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40309",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:37 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2024-21907"
+      "CVE-2025-40309"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2024-21907",
+    "cve": "CVE-2025-40309",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-47997 Microsoft SQL Server Information Disclosure Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in SQL Server allows an authorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47997",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40308 Bluetooth: bcsp: receive data only if registered",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40308",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:31 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-47997"
+      "CVE-2025-40308"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-47997",
+    "cve": "CVE-2025-40308",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55227 Microsoft SQL Server Elevation of Privilege Vulnerability",
-    "description": "Improper neutralization of special elements used in a command ('command injection') in SQL Server allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55227",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40307 exfat: validate cluster allocation bits of the allocation bitmap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40307",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:26 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55227"
+      "CVE-2025-40307"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55227",
+    "cve": "CVE-2025-40307",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55316 Azure Arc Elevation of Privilege Vulnerability",
-    "description": "External control of file name or path in Azure Arc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55316",
-    "releaseDate": "Tue, 09 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53749 x86: fix clear_user_rep_good() exception handling annotation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53749",
+    "releaseDate": "Tue, 09 Dec 2025 01:01:20 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55316"
+      "CVE-2023-53749"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55316",
+    "cve": "CVE-2023-53749",
     "kb": "",
     "knownIssues": ""
   },
@@ -14337,17 +14096,422 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53773 GitHub Copilot and Visual Studio Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53773",
-    "releaseDate": "Mon, 08 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40289 drm/amdgpu: hide VRAM sysfs attributes on GPUs without VRAM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40289",
+    "releaseDate": "Mon, 08 Dec 2025 14:38:27 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53773"
+      "CVE-2025-40289"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53773",
+    "cve": "CVE-2025-40289",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40287 exfat: fix improper check of dentry.stream.valid_size",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40287",
+    "releaseDate": "Mon, 08 Dec 2025 14:38:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40287"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40287",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12385 Improper validation of <img> tag size in Text component parser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12385",
+    "releaseDate": "Mon, 08 Dec 2025 14:38:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12385"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12385",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66293 LIBPNG has an out-of-bounds read in png_image_read_composite",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66293",
+    "releaseDate": "Mon, 08 Dec 2025 14:38:09 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66293"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66293",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-59775 Apache HTTP Server: NTLM Leakage on Windows through UNC SSRF",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59775",
+    "releaseDate": "Mon, 08 Dec 2025 14:37:51 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-59775"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-59775",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66200 Apache HTTP Server: mod_userdir+suexec bypass via AllowOverride FileInfo",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66200",
+    "releaseDate": "Mon, 08 Dec 2025 14:37:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66200"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66200",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65082 Apache HTTP Server: CGI environment variable override",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65082",
+    "releaseDate": "Mon, 08 Dec 2025 14:37:36 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65082"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65082",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters. Due to limitations in the internal bufio.Scanner, the read fails with \"token too long\" and the writer pipe is closed, leaving Writer() unusable and causing application unavailability (DoS). This affects versions < 1.8.3, 1.9.0, and 1.9.2. The issue is fixed in 1.8.3, 1.9.1, and 1.9.3+, where the input is chunked and the writer continues to function even if an error is logged.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Mon, 08 Dec 2025 14:37:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12084 Quadratic complexity in node ID cache clearing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12084",
+    "releaseDate": "Mon, 08 Dec 2025 14:36:14 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12084"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12084",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
+    "releaseDate": "Mon, 08 Dec 2025 14:36:07 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61727"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61727",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
+    "releaseDate": "Mon, 08 Dec 2025 14:35:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61724"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61724",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
+    "releaseDate": "Mon, 08 Dec 2025 14:35:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58188"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58188",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40282 Bluetooth: 6lowpan: reset link-local header on ipv6 recv path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40282",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40282"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40282",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40279 net: sched: act_connmark: initialize struct tc_ife to fix kernel leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40279",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:46 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40279"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40279",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40283 Bluetooth: btusb: reorder cleanup in btusb_disconnect to avoid UAF",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40283",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40283"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40283",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40286 smb/server: fix possible memory leak in smb2_read()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40286",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40286"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40286",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40285 smb/server: fix possible refcount leak in smb2_sess_setup()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40285",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40285"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40285",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40284 Bluetooth: MGMT: cancel mesh send timer when hdev removed",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40284",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40284"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40284",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40288 drm/amdgpu: Fix NULL pointer dereference in VRAM logic for APU devices",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40288",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40288"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40288",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40275 ALSA: usb-audio: Fix NULL pointer dereference in snd_usb_mixer_controls_badd",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40275",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:14 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40275"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40275",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40272 mm/secretmem: fix use-after-free race in fault handler",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40272",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:08 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40272"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40272",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40268 cifs: client: fix memory leak in smb3_fs_context_parse_param",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40268",
+    "releaseDate": "Mon, 08 Dec 2025 01:05:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40268"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40268",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40278 net: sched: act_ife: initialize struct tc_ife to fix KMSAN kernel-infoleak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40278",
+    "releaseDate": "Mon, 08 Dec 2025 01:04:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40278"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40278",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40269 ALSA: usb-audio: Fix potential overflow of PCM transfer buffer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40269",
+    "releaseDate": "Mon, 08 Dec 2025 01:01:43 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40281 sctp: prevent possible shift-out-of-bounds in sctp_transport_update_rto",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40281",
+    "releaseDate": "Mon, 08 Dec 2025 01:01:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40281"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40281",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40280 tipc: Fix use-after-free in tipc_mon_reinit_self().",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40280",
+    "releaseDate": "Mon, 08 Dec 2025 01:01:31 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40280"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40280",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40277 drm/vmwgfx: Validate command header size against SVGA_CMD_MAX_DATASIZE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40277",
+    "releaseDate": "Mon, 08 Dec 2025 01:01:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40277"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40277",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40273 NFSD: free copynotify stateid in nfs4_free_ol_stateid()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40273",
+    "releaseDate": "Mon, 08 Dec 2025 01:01:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40273"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40273",
     "kb": "",
     "knownIssues": ""
   },
