@@ -7541,62 +7541,182 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-10201 Inappropriate implementation in Mojo",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10201",
-    "releaseDate": "Thu, 11 Sep 2025 18:17:25 Z",
+    "title": "CVE-2025-2486 UEFI Shell accessible in AAVMF with Secure Boot enabled on Ubuntu",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2486",
+    "releaseDate": "Thu, 11 Dec 2025 01:39:49 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-10201"
+      "CVE-2025-2486"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-10201",
+    "cve": "CVE-2025-2486",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-10200 Use after free in Serviceworker",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10200",
-    "releaseDate": "Thu, 11 Sep 2025 18:17:22 Z",
+    "title": "CVE-2025-11933 DoS Vulnerability in wolfSSL TLS 1.3 CKS Extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11933",
+    "releaseDate": "Thu, 11 Dec 2025 01:39:29 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-10200"
+      "CVE-2025-11933"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-10200",
+    "cve": "CVE-2025-11933",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-49734 PowerShell Direct Elevation of Privilege Vulnerability",
-    "description": "Revised the Security Updates table to include PowerShell 7.4 and PowerShell 7.5 because these versions of PowerShell 7 are affected by this vulnerability. See [https://github.com/PowerShell/Announcements/issues/78](https://github.com/PowerShell/Announcements/issues/78) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49734",
-    "releaseDate": "Thu, 11 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-11934 Improper Validation of Signature Algorithm Used in TLS 1.3 CertificateVerify",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11934",
+    "releaseDate": "Thu, 11 Dec 2025 01:39:21 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-49734"
+      "CVE-2025-11934"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-49734",
+    "cve": "CVE-2025-11934",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55319 Agentic AI and Visual Studio Code Remote Code Execution Vulnerability",
-    "description": "Ai command injection in Agentic AI and Visual Studio Code allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55319",
-    "releaseDate": "Thu, 11 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-46818 Redis: Authenticated users can execute LUA scripts as a different user",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-46818",
+    "releaseDate": "Thu, 11 Dec 2025 01:38:13 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55319"
+      "CVE-2025-46818"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55319",
+    "cve": "CVE-2025-46818",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40334 drm/amdgpu: validate userq buffer virtual address and size",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40334",
+    "releaseDate": "Thu, 11 Dec 2025 01:36:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40334"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40334",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40338 ASoC: Intel: avs: Do not share the name pointer between components",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40338",
+    "releaseDate": "Thu, 11 Dec 2025 01:36:32 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40338"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40338",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40336 drm/gpusvm: fix hmm_pfn_to_map_order() usage",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40336",
+    "releaseDate": "Thu, 11 Dec 2025 01:36:26 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40336"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40336",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-55753 Apache HTTP Server: mod_md (ACME), unintended retry intervals",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55753",
+    "releaseDate": "Thu, 11 Dec 2025 01:02:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-55753"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-55753",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58098 Apache HTTP Server: Server Side Includes adds query string to #exec cmd=...",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58098",
+    "releaseDate": "Thu, 11 Dec 2025 01:01:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58098"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58098",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62408 c-ares has a Use After Free vulnerability when connection is cleaned up after error",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62408",
+    "releaseDate": "Thu, 11 Dec 2025 01:01:47 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62408"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62408",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66471 urllib3 Streaming API improperly handles highly compressed data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66471",
+    "releaseDate": "Thu, 11 Dec 2025 01:01:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66471"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66471",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66418 urllib3 allows an unbounded number of links in the decompression chain",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66418",
+    "releaseDate": "Thu, 11 Dec 2025 01:01:31 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66418"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66418",
     "kb": "",
     "knownIssues": ""
   },
