@@ -7541,6 +7541,51 @@
     "knownIssues": ""
   },
   {
+    "title": "Chromium: CVE-2025-14373 Inappropriate implementation in Toolbar",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14373",
+    "releaseDate": "Thu, 11 Dec 2025 22:29:33 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14373"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14373",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2025-14372 Use after free in Password Manager",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14372",
+    "releaseDate": "Thu, 11 Dec 2025 22:29:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14372"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14372",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64669 Windows Admin Center Elevation of Privilege Vulnerability",
+    "description": "Corrected Build Number in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64669",
+    "releaseDate": "Thu, 11 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64669"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64669",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-2486 UEFI Shell accessible in AAVMF with Secure Boot enabled on Ubuntu",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2486",
@@ -16167,17 +16212,287 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55319 Agentic AI and Visual Studio Code Remote Code Execution Vulnerability",
-    "description": "Added an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55319",
-    "releaseDate": "Fri, 12 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
+    "releaseDate": "Fri, 12 Dec 2025 01:38:32 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55319"
+      "CVE-2025-61727"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55319",
+    "cve": "CVE-2025-61727",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61729 Excessive resource consumption when printing error string for host certificate validation in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61729",
+    "releaseDate": "Fri, 12 Dec 2025 01:38:08 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61729"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61729",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61725 Excessive CPU consumption in ParseAddress in net/mail",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61725",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:32 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61725"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61725",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-47912 Insufficient validation of bracketed IPv6 hostnames in net/url",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47912",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:27 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-47912"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-47912",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58188"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58188",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58185 Parsing DER payload can cause memory exhaustion in encoding/asn1",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58185",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58185"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58185",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61723 Quadratic complexity when parsing some invalid inputs in encoding/pem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61723",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:12 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61723"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61723",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58187 Quadratic complexity when checking name constraints in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58187",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:06 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58187"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58187",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
+    "releaseDate": "Fri, 12 Dec 2025 01:37:01 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61724"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61724",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58186 Lack of limit when parsing cookies can cause memory exhaustion in net/http",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58186",
+    "releaseDate": "Fri, 12 Dec 2025 01:36:57 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58186"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58186",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58183 Unbounded allocation when parsing GNU sparse map in archive/tar",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58183",
+    "releaseDate": "Fri, 12 Dec 2025 01:36:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58183"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58183",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-45284 Incorrect detection of reserved device names on Windows in path/filepath",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-45284",
+    "releaseDate": "Fri, 12 Dec 2025 01:03:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-45284"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-45284",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49180 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in x resize, rotate and reflect (randr) extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49180",
+    "releaseDate": "Fri, 12 Dec 2025 01:03:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49180"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49180",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49178 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: unprocessed client request due to bytes to ignore",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49178",
+    "releaseDate": "Fri, 12 Dec 2025 01:03:08 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49176 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in big requests extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49176",
+    "releaseDate": "Fri, 12 Dec 2025 01:03:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49176"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49176",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49177 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: data leak in xfixes extension's xfixessetclientdisconnectmode",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49177",
+    "releaseDate": "Fri, 12 Dec 2025 01:02:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49179 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in x record extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49179",
+    "releaseDate": "Fri, 12 Dec 2025 01:02:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49179"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49179",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49175 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: out-of-bounds read in x rendering extension animated cursors",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49175",
+    "releaseDate": "Fri, 12 Dec 2025 01:02:48 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49175"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49175",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39927 ceph: fix race condition validating r_parent before applying state",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39927",
+    "releaseDate": "Fri, 12 Dec 2025 01:01:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39927"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39927",
     "kb": "",
     "knownIssues": ""
   },
