@@ -13661,6 +13661,306 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
+    "releaseDate": "Sat, 13 Dec 2025 01:39:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61727"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61727",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61729 Excessive resource consumption when printing error string for host certificate validation in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61729",
+    "releaseDate": "Sat, 13 Dec 2025 01:38:50 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61729"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61729",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61664 Grub2: missing unregister call for normal_exit command may lead to use-after-free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61664",
+    "releaseDate": "Sat, 13 Dec 2025 01:38:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61664"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61664",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61661 Grub2: grub2: out-of-bounds write via malicious usb device",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61661",
+    "releaseDate": "Sat, 13 Dec 2025 01:38:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61661"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61661",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61663 Grub2: missing unregister call for normal commands may lead to use-after-free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61663",
+    "releaseDate": "Sat, 13 Dec 2025 01:38:28 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61663"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61663",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61662 Grub2: missing unregister call for gettext command may lead to use-after-free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61662",
+    "releaseDate": "Sat, 13 Dec 2025 01:38:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61662"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61662",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61725 Excessive CPU consumption in ParseAddress in net/mail",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61725",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:56 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61725"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61725",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-47912 Insufficient validation of bracketed IPv6 hostnames in net/url",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47912",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-47912"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-47912",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:47 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58188"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58188",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58185 Parsing DER payload can cause memory exhaustion in encoding/asn1",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58185",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:42 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58185"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58185",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61723 Quadratic complexity when parsing some invalid inputs in encoding/pem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61723",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61723"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61723",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58187 Quadratic complexity when checking name constraints in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58187",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:32 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58187"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58187",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:27 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61724"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61724",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58186 Lack of limit when parsing cookies can cause memory exhaustion in net/http",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58186",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58186"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58186",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58183 Unbounded allocation when parsing GNU sparse map in archive/tar",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58183",
+    "releaseDate": "Sat, 13 Dec 2025 01:37:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58183"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58183",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
+    "releaseDate": "Sat, 13 Dec 2025 01:02:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14104"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14104",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14523 Libsoup: libsoup: duplicate host header handling causes host-parsing discrepancy (first- vs last-value wins)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14523",
+    "releaseDate": "Sat, 13 Dec 2025 01:02:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14523"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14523",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14512 Glib: integer overflow in glib gio attribute escaping causes heap buffer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14512",
+    "releaseDate": "Sat, 13 Dec 2025 01:02:02 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14512"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14512",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14087 Glib: glib: buffer underflow in gvariant parser leads to heap corruption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14087",
+    "releaseDate": "Sat, 13 Dec 2025 01:01:54 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14087"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14087",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39925 can: j1939: implement NETDEV_UNREGISTER notification handler",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39925",
+    "releaseDate": "Sat, 13 Dec 2025 01:01:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-66293 LIBPNG has an out-of-bounds read in png_image_read_composite",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66293",
@@ -16208,6 +16508,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-55320",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62468 Windows Defender Firewall Service Information Disclosure Vulnerability",
+    "description": "Corrected CVSS Privileges metric to PR:L, corrected Exploitability assessment to Expoitation More Likely, and updated FAQs. These are informational changes only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62468",
+    "releaseDate": "Fri, 12 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62468"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62468",
     "kb": "",
     "knownIssues": ""
   },
