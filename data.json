@@ -8291,6 +8291,231 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-39905 net: phylink: add lock for serializing concurrent pl->phydev writes with resolver",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39905",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:45 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39901 i40e: remove read access to debugfs files",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39901",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:40 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39901"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39901",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39886 bpf: Tell memcg to use allow_spinning=false path in bpf_timer_init()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39886",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39886"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39886",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39863 wifi: brcmfmac: fix use-after-free when rescheduling brcmf_btcoex_info work",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39863",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39863"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39863",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39859 ptp: ocp: fix use-after-free bugs causing by ptp_ocp_watchdog",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39859",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39859"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39859",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39851 vxlan: Fix NPD when refreshing an FDB entry with a nexthop object",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39851",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39851"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39851",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39850 vxlan: Fix NPD in {arp,neigh}_reduce() when using nexthop objects",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39850",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39850"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39850",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-58241 Bluetooth: hci_core: Disable works on hci_unregister_dev",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-58241",
+    "releaseDate": "Sun, 14 Dec 2025 14:02:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-58241"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-58241",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53447 f2fs: don't reset unchangable mount option in f2fs_remount()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53447",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:57 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53447"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53447",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53376 scsi: mpi3mr: Use number of bits to manage bitmap sizes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53376",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53376"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53376",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53371 net/mlx5e: fix memory leak in mlx5e_fs_tt_redirect_any_create",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53371",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:46 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53371"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53371",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53370 drm/amdgpu: fix memory leak in mes self test",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53370",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53370"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53370",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-50418 wifi: ath11k: mhi: fix potential memory leak in ath11k_mhi_register()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50418",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:36 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-50418"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-50418",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-50393 drm/amdgpu: SDMA update use unlocked iterator",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50393",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-50393"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-50393",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-50390 drm/ttm: fix undefined behavior in bit shift for TTM_TT_FLAG_PRIV_POPULATED",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50390",
+    "releaseDate": "Sun, 14 Dec 2025 14:01:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-50390"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-50390",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-40192 Revert \"ipmi: fix msg stack when IPMI is disconnected\"",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40192",
