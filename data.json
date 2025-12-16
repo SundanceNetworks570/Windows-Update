@@ -1170,197 +1170,677 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54896 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54896",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-39886 bpf: Tell memcg to use allow_spinning=false path in bpf_timer_init()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39886",
+    "releaseDate": "Tue, 16 Dec 2025 01:38:23 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54896"
+      "CVE-2025-39886"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54896",
+    "cve": "CVE-2025-39886",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54898 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54898",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-39859 ptp: ocp: fix use-after-free bugs causing by ptp_ocp_watchdog",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39859",
+    "releaseDate": "Tue, 16 Dec 2025 01:38:18 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54898"
+      "CVE-2025-39859"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54898",
+    "cve": "CVE-2025-39859",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54899 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54899",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-39851 vxlan: Fix NPD when refreshing an FDB entry with a nexthop object",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39851",
+    "releaseDate": "Tue, 16 Dec 2025 01:38:13 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54899"
+      "CVE-2025-39851"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54899",
+    "cve": "CVE-2025-39851",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54902 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54902",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-39850 vxlan: Fix NPD in {arp,neigh}_reduce() when using nexthop objects",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39850",
+    "releaseDate": "Tue, 16 Dec 2025 01:38:07 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54902"
+      "CVE-2025-39850"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54902",
+    "cve": "CVE-2025-39850",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54903 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54903",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2024-58241 Bluetooth: hci_core: Disable works on hci_unregister_dev",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-58241",
+    "releaseDate": "Tue, 16 Dec 2025 01:38:02 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54903"
+      "CVE-2024-58241"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54903",
+    "cve": "CVE-2024-58241",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54904 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54904",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-40345 usb: storage: sddr55: Reject out-of-bound new_pba",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40345",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:53 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54904"
+      "CVE-2025-40345"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54904",
+    "cve": "CVE-2025-40345",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54905 Microsoft Word Information Disclosure Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54905",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53447 f2fs: don't reset unchangable mount option in f2fs_remount()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53447",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:48 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54905"
+      "CVE-2023-53447"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54905",
+    "cve": "CVE-2023-53447",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54906 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54906",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53371 net/mlx5e: fix memory leak in mlx5e_fs_tt_redirect_any_create",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53371",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:43 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54906"
+      "CVE-2023-53371"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54906",
+    "cve": "CVE-2023-53371",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-47967 Microsoft Edge (Chromium-based) for Android Spoofing Vulnerability",
-    "description": "Insufficient ui warning of dangerous operations in Microsoft Edge for Android allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47967",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2023-53370 drm/amdgpu: fix memory leak in mes self test",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53370",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:37 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-47967"
+      "CVE-2023-53370"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-47967",
+    "cve": "CVE-2023-53370",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-49728 Microsoft PC Manager Security Feature Bypass Vulnerability",
-    "description": "Cleartext storage of sensitive information in Microsoft PC Manager allows an unauthorized attacker to bypass a security feature locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49728",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-7067 HDF5 H5FScache.c H5FS__sinfo_serialize_node_cb heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7067",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:35 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-49728"
+      "CVE-2025-7067"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-49728",
+    "cve": "CVE-2025-7067",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54900 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54900",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2022-50418 wifi: ath11k: mhi: fix potential memory leak in ath11k_mhi_register()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50418",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:32 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54900"
+      "CVE-2022-50418"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54900",
+    "cve": "CVE-2022-50418",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54901 Microsoft Excel Information Disclosure Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54901",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-7068 HDF5 H5FL.c H5FL__malloc memory leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7068",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:28 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54901"
+      "CVE-2025-7068"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54901",
+    "cve": "CVE-2025-7068",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-54910 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54910",
-    "releaseDate": "Tue, 16 Sep 2025 07:00:00 Z",
+    "title": "CVE-2022-50393 drm/amdgpu: SDMA update use unlocked iterator",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50393",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:27 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-54910"
+      "CVE-2022-50393"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-54910",
+    "cve": "CVE-2022-50393",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-50390 drm/ttm: fix undefined behavior in bit shift for TTM_TT_FLAG_PRIV_POPULATED",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50390",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-50390"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-50390",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6856 HDF5 H5FL.c H5FL__reg_gc_list use after free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6856",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6856"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6856",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39925 can: j1939: implement NETDEV_UNREGISTER notification handler",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39925",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:16 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6750 HDF5 H5Omtime.c H5O__mtime_new_encode heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6750",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6750"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6750",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53387 scsi: ufs: core: Fix device management cmd timeout flow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53387",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53387"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53387",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6816 HDF5 H5Ofsinfo.c H5O__fsinfo_encode heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6816",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6816"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6816",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53367 accel/habanalabs: fix mem leak in capture user mappings",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53367",
+    "releaseDate": "Tue, 16 Dec 2025 01:37:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53367"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53367",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49180 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in x resize, rotate and reflect (randr) extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49180",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:59 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49180"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49180",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6818 HDF5 H5Ochunk.c H5O__chunk_protect heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6818",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:57 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6818"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6818",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49178 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: unprocessed client request due to bytes to ignore",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49178",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:53 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6857 HDF5 H5Gnode.c H5G__node_cmp3 stack-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6857",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:50 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6857"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6857",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53410 USB: ULPI: fix memory leak with using debugfs_lookup()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53410",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:48 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53410"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53410",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6858 HDF5 H5Centry.c H5C__flush_single_entry null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6858",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:43 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6858"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6858",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-50406 iomap: iomap: fix memory corruption when recording errors during writeback",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50406",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:42 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-50406"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-50406",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66418 urllib3 allows an unbounded number of links in the decompression chain",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66418",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66418"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66418",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6269 HDF5 H5Cimage.c H5C__reconstruct_cache_entry heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6269",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66471 urllib3 Streaming API improperly handles highly compressed data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66471",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66471"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66471",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-44905 hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5Z__filter_scaleoffset function.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-44905",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-44905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-44905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2913 HDF5 H5FL.c H5FL__blk_gc_list use after free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2913",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2913"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2913",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2926 HDF5 H5Ocache.c H5O__cache_chk_serialize null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2926",
+    "releaseDate": "Tue, 16 Dec 2025 01:36:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2926"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2926",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2923 HDF5 H5Fint.c H5F_addr_encode_len heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2923",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:56 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2923"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2923",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2925 HDF5 H5MM.c H5MM_realloc double free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2925",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2914 HDF5 H5FScache.c H5FS__sinfo_Srialize_Sct_cb heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2914",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:42 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2914"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2914",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2924 HDF5 H5HLcache.c H5HL__fl_deserialize heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2924",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2924"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2924",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2486 UEFI Shell accessible in AAVMF with Secure Boot enabled on Ubuntu",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2486",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:27 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2486"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2486",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2310 HDF5 Metadata Attribute Decoder H5MM_strndup heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2310",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:24 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2310"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2310",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-11933 DoS Vulnerability in wolfSSL TLS 1.3 CKS Extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11933",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-11933"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-11933",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2153 HDF5 h5 File H5SM.c H5SM_delete heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2153",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2153"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2153",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-11934 Improper Validation of Signature Algorithm Used in TLS 1.3 CertificateVerify",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11934",
+    "releaseDate": "Tue, 16 Dec 2025 01:35:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-11934"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-11934",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-44904 hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5VM_memcpyvv function.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-44904",
+    "releaseDate": "Tue, 16 Dec 2025 01:01:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-44904"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-44904",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37731 Elasticsearch Improper Authentication",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37731",
+    "releaseDate": "Tue, 16 Dec 2025 01:01:28 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37731"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37731",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13281 Portworx Half-Blind SSRF in kube-controller-manager",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13281",
+    "releaseDate": "Tue, 16 Dec 2025 01:01:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13281"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13281",
     "kb": "",
     "knownIssues": ""
   },
@@ -15592,6 +16072,126 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2022-50303",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39905 net: phylink: add lock for serializing concurrent pl->phydev writes with resolver",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39905",
+    "releaseDate": "Mon, 15 Dec 2025 14:36:33 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39901 i40e: remove read access to debugfs files",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39901",
+    "releaseDate": "Mon, 15 Dec 2025 14:36:28 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39901"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39901",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39863 wifi: brcmfmac: fix use-after-free when rescheduling brcmf_btcoex_info work",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39863",
+    "releaseDate": "Mon, 15 Dec 2025 14:36:24 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39863"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39863",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-39859 ptp: ocp: fix use-after-free bugs causing by ptp_ocp_watchdog",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39859",
+    "releaseDate": "Mon, 15 Dec 2025 14:36:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-39859"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-39859",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53376 scsi: mpi3mr: Use number of bits to manage bitmap sizes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53376",
+    "releaseDate": "Mon, 15 Dec 2025 14:36:14 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53376"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53376",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64435 KubeVirt VMI Denial-of-Service (DoS) Using Pod Impersonation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64435",
+    "releaseDate": "Mon, 15 Dec 2025 14:35:26 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64435"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64435",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE‑2025‑14174 Chromium: CVE-2025-14174 Out of bounds memory access in ANGLE",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information. Google is aware that an exploit for CVE-2025-14174 exists in the wild.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE%E2%80%912025%E2%80%9114174",
+    "releaseDate": "Mon, 15 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14174"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14174",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14174 Chromium: CVE-2025-14174 Out of bounds memory access in ANGLE",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information. Google is aware that an exploit for CVE-2025-14174 exists in the wild.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14174",
+    "releaseDate": "Mon, 15 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14174"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14174",
     "kb": "",
     "knownIssues": ""
   },
