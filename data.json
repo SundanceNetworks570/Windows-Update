@@ -660,6 +660,396 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-55753 Apache HTTP Server: mod_md (ACME), unintended retry intervals",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55753",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:46 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-55753"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-55753",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-58098 Apache HTTP Server: Server Side Includes adds query string to #exec cmd=...",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58098",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:40 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58098"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58098",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66471 urllib3 Streaming API improperly handles highly compressed data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66471",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:31 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66471"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66471",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66418 urllib3 allows an unbounded number of links in the decompression chain",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66418",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66418"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66418",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65082 Apache HTTP Server: CGI environment variable override",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65082",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65082"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65082",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66200 Apache HTTP Server: mod_userdir+suexec bypass via AllowOverride FileInfo",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66200",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:12 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66200"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66200",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12385 Improper validation of <img> tag size in Text component parser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12385",
+    "releaseDate": "Wed, 17 Dec 2025 14:37:05 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12385"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12385",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66293 LIBPNG has an out-of-bounds read in png_image_read_composite",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66293",
+    "releaseDate": "Wed, 17 Dec 2025 14:36:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66293"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66293",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Wed, 17 Dec 2025 14:36:48 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12969 CVE-2025-12969",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12969",
+    "releaseDate": "Wed, 17 Dec 2025 14:35:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12969"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12969",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12977 CVE-2025-12977",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12977",
+    "releaseDate": "Wed, 17 Dec 2025 14:35:28 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12977"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12977",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-31133 runc container escape via \"masked path\" abuse due to mount race conditions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-31133",
+    "releaseDate": "Wed, 17 Dec 2025 14:35:21 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-31133"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-31133",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64324 KubeVirt Vulnerable to Arbitrary Host File Read and Write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64324",
+    "releaseDate": "Wed, 17 Dec 2025 14:35:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64324"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64324",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-30099 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Added an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-30099",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-30099"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-30099",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-21367 Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+    "description": "Added an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21367",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-21367"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-21367",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-24044 Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+    "description": "Added an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24044",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-24044"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-24044",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62561 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62561",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62561"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62561",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62562 Microsoft Outlook Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62562",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62562"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62562",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62564 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62564",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62564"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62564",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62554 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62554",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62554"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62554",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62555 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62555",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62555"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62555",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62556 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62556",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62556"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62556",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62557 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62557",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62557"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62557",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62558 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62558",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62558"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62558",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62559 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62559",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62559"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62559",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62560 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62560",
+    "releaseDate": "Wed, 17 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62560"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62560",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2023-53447 f2fs: don't reset unchangable mount option in f2fs_remount()",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53447",
@@ -761,6 +1151,726 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-61662",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13912 Potential non-constant time compiled code with Clang LLVM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13912",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13912"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13912",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-67897 In Sequoia before 2.1.0, aes_key_unwrap panics if passed a ciphertext that is too short. A remote attacker can take advantage of this issue to crash an application by sending a victim an encrypted message with a crafted PKESK or SKESK packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-67897",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:50 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-67897"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-67897",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2296 Un-verified kernel bypass Secure Boot mechanism in direct boot mode",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2296",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:45 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2296"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2296",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68258 comedi: multiq3: sanitize config options in multiq3_attach()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68258",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68258"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68258",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68188 tcp: use dst_dev_rcu() in tcp_fastopen_active_disable_ofo_check()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68188",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68188"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68188",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68217 Input: pegasus-notetaker - fix potential out-of-bounds access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68217",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68217"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68217",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68281 ASoC: SDCA: bug fix while parsing mipi-sdca-control-cn-list",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68281",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:14 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68281"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68281",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68233 drm/tegra: Add call to put_pid()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68233",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:09 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68233"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68233",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68222 pinctrl: s32cc: fix uninitialized memory in s32_pinctrl_desc",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68222",
+    "releaseDate": "Wed, 17 Dec 2025 01:05:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68222"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68222",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68220 net: ethernet: ti: netcp: Standardize knav_dma_open_channel to return NULL on error",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68220",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68220"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68220",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68237 mtdchar: fix integer overflow in read/write ioctls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68237",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:53 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68237"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68237",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68209 mlx5: Fix default values in create CQ",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68209",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:47 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68209"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68209",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68254 staging: rtl8723bs: fix out-of-bounds read in OnBeacon ESR IE parsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68254",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:42 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68254"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68254",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68256 staging: rtl8723bs: fix out-of-bounds read in rtw_get_ie() parser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68256",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68256"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68256",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68206 netfilter: nft_ct: add seqadj extension for natted connections",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68206",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:31 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68206"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68206",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68257 comedi: check device's attached status in compat ioctls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68257",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:26 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68257"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68257",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68227 mptcp: Fix proto fallback detection with BPF",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68227",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:21 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68227"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68227",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68239 binfmt_misc: restore write access before closing files opened by open_exec()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68239",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:16 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68239"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68239",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68259 KVM: SVM: Don't skip unrelated instruction if INT3/INTO is replaced",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68259",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68259"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68259",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68236 scsi: ufs: ufs-qcom: Fix UFS OCP issue during UFS power down (PC=3)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68236",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:05 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68265 nvme: fix admin request_queue lifetime",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68265",
+    "releaseDate": "Wed, 17 Dec 2025 01:04:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68265"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68265",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40355 sysfs: check visibility before changing group attribute ownership",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40355",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:54 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40355"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40355",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68175 media: nxp: imx8-isi: Fix streaming cleanup on release",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68175",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68175"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68175",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68204 pmdomain: arm: scmi: Fix genpd leak on provider registration failure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68204",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68204"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68204",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68174 amd/amdkfd: enhance kfd process check in switch partition",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68174",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:38 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68174"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68174",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68214 timers: Fix NULL function pointer race in timer_shutdown_sync()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68214",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:33 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68214"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68214",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40353 arm64: mte: Do not warn if the page is already tagged in copy_highpage()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40353",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:28 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40353"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40353",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68261 ext4: add i_data_sem protection in ext4_destroy_inline_data_nolock()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68261",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68261"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68261",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68229 scsi: target: tcm_loop: Fix segfault in tcm_loop_tpg_address_show()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68229",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68229"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68229",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68219 cifs: fix memory leak in smb3_fs_context_parse_param error path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68219",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68219"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68219",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68235 nouveau/firmware: Add missing kfree() of nvkm_falcon_fw::boot",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68235",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:07 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68235"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68235",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68231 mm/mempool: fix poisoning order>0 pages with HIGHMEM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68231",
+    "releaseDate": "Wed, 17 Dec 2025 01:03:02 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68231"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68231",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68264 ext4: refresh inline data size before write operations",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68264",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:57 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68264"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68264",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68230 drm/amdgpu: fix gpu page fault after hibernation on PF passthrough",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68230",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68230"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68230",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68263 ksmbd: ipc: fix use-after-free in ipc_msg_send_request",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68263",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:47 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68263"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68263",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40354 drm/amd/display: increase max link count and fix link->enc NULL pointer access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40354",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40354"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40354",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68198 crash: fix crashkernel resource shrink",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68198",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:36 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68198"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68198",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68266 bfs: Reconstruct file type when loading from disk",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68266",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:31 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68266"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68266",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40362 ceph: fix multifs mds auth caps issue",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40362",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:26 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40362"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40362",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68201 drm/amdgpu: remove two invalid BUG_ON()s",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68201",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68201"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68201",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68196 drm/amd/display: Cache streams targeting link when performing LT automation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68196",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68196"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68196",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68203 drm/amdgpu: fix lock warning in amdgpu_userq_fence_driver_process",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68203",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68203"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68203",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68223 drm/radeon: delete radeon_fence_process in is_signaled, no deadlock",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68223",
+    "releaseDate": "Wed, 17 Dec 2025 01:02:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68223"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68223",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68255 staging: rtl8723bs: fix stack buffer overflow in OnAssocReq IE parsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68255",
+    "releaseDate": "Wed, 17 Dec 2025 01:01:59 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68255"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68255",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68211 ksm: use range-walk function to jump over holes in scan_get_next_rmap_item",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68211",
+    "releaseDate": "Wed, 17 Dec 2025 01:01:53 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68211"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68211",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68190 drm/amdgpu/atom: Check kcalloc() for WS buffer in amdgpu_atom_execute_table_locked()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68190",
+    "releaseDate": "Wed, 17 Dec 2025 01:01:48 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68190"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68190",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68193 drm/xe/guc: Add devm release action to safely tear down CT",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68193",
+    "releaseDate": "Wed, 17 Dec 2025 01:01:43 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68193"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68193",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68224 scsi: core: Fix a regression triggered by scsi_host_busy()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68224",
+    "releaseDate": "Wed, 17 Dec 2025 01:01:38 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68224"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68224",
     "kb": "",
     "knownIssues": ""
   },
@@ -8411,62 +9521,229 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59215 Windows Graphics Component Elevation of Privilege Vulnerability",
-    "description": "Use after free in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59215",
-    "releaseDate": "Thu, 18 Sep 2025 07:00:00 Z",
+    "title": "CVE-2024-28863 node-tar vulnerable to denial of service while parsing a tar file due to lack of folders count validation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-28863",
+    "releaseDate": "Thu, 18 Dec 2025 01:04:40 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59215"
+      "CVE-2024-28863"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59215",
+    "cve": "CVE-2024-28863",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55241 Azure Entra Elevation of Privilege Vulnerability",
-    "description": "The CVSS score for this vulnerability has been updated to reflect a change in the **Attack Complexity** metric from **High** to **Low**.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55241",
-    "releaseDate": "Thu, 18 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-54567 hw/pci/pcie_sriov.c in QEMU through 10.0.3 mishandles the VF Enable bit write mask, a related issue to CVE-2024-26327.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54567",
+    "releaseDate": "Thu, 18 Dec 2025 01:04:33 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55241"
+      "CVE-2025-54567",
+      "CVE-2024-26327"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55241",
+    "cve": "CVE-2025-54567, CVE-2024-26327",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59216 Windows Graphics Component Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59216",
-    "releaseDate": "Thu, 18 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-54566 hw/pci/pcie_sriov.c in QEMU through 10.0.3 has a migration state inconsistency, a related issue to CVE-2024-26327.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54566",
+    "releaseDate": "Thu, 18 Dec 2025 01:04:28 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59216"
+      "CVE-2025-54566",
+      "CVE-2024-26327"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59216",
+    "cve": "CVE-2025-54566, CVE-2024-26327",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59220 Windows Bluetooth Service Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Bluetooth Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59220",
-    "releaseDate": "Thu, 18 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-38375 virtio-net: ensure the received length does not exceed allocated size",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38375",
+    "releaseDate": "Thu, 18 Dec 2025 01:02:15 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59220"
+      "CVE-2025-38375"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59220",
+    "cve": "CVE-2025-38375",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38371 drm/v3d: Disable interrupts before resetting the GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38371",
+    "releaseDate": "Thu, 18 Dec 2025 01:02:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38371"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38371",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38363 drm/tegra: Fix a possible null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38363",
+    "releaseDate": "Thu, 18 Dec 2025 01:02:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38363"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38363",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38362 drm/amd/display: Add null pointer check for get_first_active_display()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38362",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:59 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38362"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38362",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38350 net/sched: Always pass notifications when child class becomes empty",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38350",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38350"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38350",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38335 Input: gpio-keys - fix a sleep while atomic with PREEMPT_RT",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38335",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38335"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38335",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38334 x86/sgx: Prevent attempts to reclaim poisoned pages",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38334",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38334"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38334",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38097 espintcp: remove encap socket caching to avoid reference leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38097",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:39 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38097"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38097",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38095 dma-buf: insert memory barrier before updating num_fences",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38095",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38095"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38095",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37968 iio: light: opt3001: fix deadlock due to concurrent flag access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37968",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37968"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37968",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37961 ipvs: fix uninit-value for saddr in do_output_route4",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37961",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:24 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37961"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37961",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37959 bpf: Scrub packet on bpf_redirect_peer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37959",
+    "releaseDate": "Thu, 18 Dec 2025 01:01:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37959"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37959",
     "kb": "",
     "knownIssues": ""
   },
