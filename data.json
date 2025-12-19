@@ -9521,6 +9521,156 @@
     "knownIssues": ""
   },
   {
+    "title": "Chromium: CVE-2025-14766 Use after free in WebGPU",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14766",
+    "releaseDate": "Thu, 18 Dec 2025 20:43:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14766"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14766",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2025-14765 Out of bounds read and write in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14765",
+    "releaseDate": "Thu, 18 Dec 2025 20:43:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14765"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14765",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-6531 Rejected reason: This was not a security issue in Bootstrap. Bootstrap’s JavaScript is not intended to sanitize unsafe or intentionally dangerous HTML. As such, the reported behavior fell outside the scope of Bootstrap’s security model, and the associated CVE has been rescinded.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-6531",
+    "releaseDate": "Thu, 18 Dec 2025 14:35:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-6531"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-6531",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65046 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65046",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65046"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65046",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64663 Custom Question Answering Elevation of Privilege Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64663",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64663"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64663",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65041 Microsoft Partner Center Elevation of Privilege Vulnerability",
+    "description": "Improper authorization in Microsoft Partner Center allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65041",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65041"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65041",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65037 Azure Container Apps Remote Code Execution Vulnerability",
+    "description": "Improper control of generation of code ('code injection') in Azure Container Apps allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65037",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65037"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65037",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64676 Microsoft Purview eDiscovery Remote Code Execution Vulnerability",
+    "description": "'.../...//' in Microsoft Purview allows an authorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64676",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64676"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64676",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64677 Office Out-of-Box Experience Spoofing Vulnerability",
+    "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Office Out-of-Box Experience allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64677",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64677"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64677",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64675 Azure Cosmos DB Spoofing Vulnerability",
+    "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Cosmos DB allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64675",
+    "releaseDate": "Thu, 18 Dec 2025 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64675"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64675",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2024-28863 node-tar vulnerable to denial of service while parsing a tar file due to lack of folders count validation",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-28863",
@@ -19199,62 +19349,137 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-10501 Use after free in WebRTC",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10501",
-    "releaseDate": "Fri, 19 Sep 2025 07:00:24 Z",
+    "title": "CVE-2024-6485 XSS in Bootstrap button component",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-6485",
+    "releaseDate": "Fri, 19 Dec 2025 01:36:20 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-10501"
+      "CVE-2024-6485"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-10501",
+    "cve": "CVE-2024-6485",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-10502 Heap buffer overflow in ANGLE",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10502",
-    "releaseDate": "Fri, 19 Sep 2025 07:00:24 Z",
+    "title": "CVE-2025-38131 coresight: prevent deactivate active config while enabling the config",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38131",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:55 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-10502"
+      "CVE-2025-38131"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-10502",
+    "cve": "CVE-2025-38131",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-10500 Use after free in Dawn",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10500",
-    "releaseDate": "Fri, 19 Sep 2025 07:00:23 Z",
+    "title": "CVE-2025-38126 net: stmmac: make sure that ptp_rate is not 0 before configuring timestamping",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38126",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:50 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-10500"
+      "CVE-2025-38126"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-10500",
+    "cve": "CVE-2025-38126",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-10585 Type Confusion in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information. Google is aware that an exploit for CVE-2025-10585 exists in the wild.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10585",
-    "releaseDate": "Fri, 19 Sep 2025 07:00:19 Z",
+    "title": "CVE-2025-38118 Bluetooth: MGMT: Fix UAF on mgmt_remove_adv_monitor_complete",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38118",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:45 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-10585"
+      "CVE-2025-38118"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-10585",
+    "cve": "CVE-2025-38118",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38074 vhost-scsi: protect vq->log_used with vq->mutex",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38074",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:40 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38074"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38074",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38071 x86/mm: Check return value from memblock_phys_alloc_range()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38071",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38071"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38071",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38067 rseq: Fix segfault on registration when rseq_cs is non-zero",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38067",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38067"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38067",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38063 dm: fix unconditional IO throttle caused by REQ_PREFLUSH",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38063",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38063"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38063",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37951 drm/v3d: Add job to pending list if the reset was skipped",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37951",
+    "releaseDate": "Fri, 19 Dec 2025 01:01:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37951"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37951",
     "kb": "",
     "knownIssues": ""
   },
