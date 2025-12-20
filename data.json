@@ -16468,6 +16468,621 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-14512 Glib: integer overflow in glib gio attribute escaping causes heap buffer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14512",
+    "releaseDate": "Sat, 20 Dec 2025 01:40:40 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14512"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14512",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14087 Glib: glib: buffer underflow in gvariant parser leads to heap corruption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14087",
+    "releaseDate": "Sat, 20 Dec 2025 01:40:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14087"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14087",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7068 HDF5 H5FL.c H5FL__malloc memory leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7068",
+    "releaseDate": "Sat, 20 Dec 2025 01:38:05 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7068"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7068",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7067 HDF5 H5FScache.c H5FS__sinfo_serialize_node_cb heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7067",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:56 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7067"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7067",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6857 HDF5 H5Gnode.c H5G__node_cmp3 stack-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6857",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6857"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6857",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6750 HDF5 H5Omtime.c H5O__mtime_new_encode heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6750",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6750"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6750",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6816 HDF5 H5Ofsinfo.c H5O__fsinfo_encode heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6816",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:26 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6816"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6816",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6818 HDF5 H5Ochunk.c H5O__chunk_protect heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6818",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6818"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6818",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6858 HDF5 H5Centry.c H5C__flush_single_entry null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6858",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:09 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6858"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6858",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6269 HDF5 H5Cimage.c H5C__reconstruct_cache_entry heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6269",
+    "releaseDate": "Sat, 20 Dec 2025 01:37:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-44905 hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5Z__filter_scaleoffset function.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-44905",
+    "releaseDate": "Sat, 20 Dec 2025 01:36:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-44905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-44905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2914 HDF5 H5FScache.c H5FS__sinfo_Srialize_Sct_cb heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2914",
+    "releaseDate": "Sat, 20 Dec 2025 01:36:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2914"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2914",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2924 HDF5 H5HLcache.c H5HL__fl_deserialize heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2924",
+    "releaseDate": "Sat, 20 Dec 2025 01:36:32 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2924"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2924",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2926 HDF5 H5Ocache.c H5O__cache_chk_serialize null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2926",
+    "releaseDate": "Sat, 20 Dec 2025 01:36:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2926"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2926",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2925 HDF5 H5MM.c H5MM_realloc double free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2925",
+    "releaseDate": "Sat, 20 Dec 2025 01:36:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2310 HDF5 Metadata Attribute Decoder H5MM_strndup heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2310",
+    "releaseDate": "Sat, 20 Dec 2025 01:36:06 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2310"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2310",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2153 HDF5 h5 File H5SM.c H5SM_delete heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2153",
+    "releaseDate": "Sat, 20 Dec 2025 01:35:57 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2153"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2153",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-44904 hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5VM_memcpyvv function.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-44904",
+    "releaseDate": "Sat, 20 Dec 2025 01:03:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-44904"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-44904",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38377 rose: fix dangling neighbour pointers in rose_rt_device_down()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38377",
+    "releaseDate": "Sat, 20 Dec 2025 01:03:09 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38377"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38377",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38275 phy: qcom-qmp-usb: Fix an NULL vs IS_ERR() bug",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38275",
+    "releaseDate": "Sat, 20 Dec 2025 01:03:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38275"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38275",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38263 bcache: fix NULL pointer in cache_set_flush()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38263",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:59 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38263"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38263",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38262 tty: serial: uartlite: register uart driver in init",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38262",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:54 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38262"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38262",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38259 ASoC: codecs: wcd9335: Fix missing free of regulator supplies",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38259",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38259"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38259",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38257 s390/pkey: Prevent overflow in size calculation for memdup_user()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38257",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38257"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38257",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38251 atm: clip: prevent NULL deref in clip_push()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38251",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:39 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38251"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38251",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38249 ALSA: usb-audio: Fix out-of-bounds read in snd_usb_get_audioformat_uac3()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38249",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38249"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38249",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38245 atm: Release atm_dev_mutex after removing procfs in atm_dev_deregister().",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38245",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38245"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38245",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38236 af_unix: Don't leave consecutive consumed OOB skbs.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38236",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38230 jfs: validate AG parameters in dbMount() to prevent crashes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38230",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38230"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38230",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38225 media: imx-jpeg: Cleanup after an allocation error",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38225",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38225"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38225",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38215 fbdev: Fix do_register_framebuffer to prevent null-ptr-deref in fb_videomode_to_var",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38215",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38215"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38215",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38198 fbcon: Make sure modelist not set on unregistered console",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38198",
+    "releaseDate": "Sat, 20 Dec 2025 01:02:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38198"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38198",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38191 ksmbd: fix null pointer dereference in destroy_previous_session",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38191",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:59 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38191"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38191",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38177 sch_hfsc: make hfsc_qlen_notify() idempotent",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38177",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38166 bpf: fix ktls panic with sockmap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38166",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38166"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38166",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38148 net: phy: mscc: Fix memory leak when using one step timestamping",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38148",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38148"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38148",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38062 genirq/msi: Store the IOMMU IOVA directly in msi_desc instead of iommu_cookie",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38062",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:39 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38062"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38062",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38040 serial: mctrl_gpio: split disable_ms into sync and no_sync APIs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38040",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38040"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38040",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68384 Elasticsearch Allocation of Resources Without Limits or Throttling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68384",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68384"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68384",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68390 Elasticsearch Allocation of Resources Without Limits or Throttling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68390",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68390"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68390",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68324 scsi: imm: Fix use-after-free bug caused by unfinished delayed work",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68324",
+    "releaseDate": "Sat, 20 Dec 2025 01:01:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68324"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68324",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
