@@ -2370,6 +2370,321 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-66471 urllib3 Streaming API improperly handles highly compressed data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66471",
+    "releaseDate": "Tue, 23 Dec 2025 01:38:16 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66471"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66471",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66418 urllib3 allows an unbounded number of links in the decompression chain",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66418",
+    "releaseDate": "Tue, 23 Dec 2025 01:38:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66418"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66418",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12819 Untrusted search path in auth_query connection in PgBouncer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12819",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12819"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12819",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68114 Capstone doesn't check vsnprintf return in SStream_concat, allows stack buffer underflow and overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68114",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68114"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68114",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68161 Apache Log4j Core: Missing TLS hostname verification in Socket appender",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68161",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68161"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68161",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-59529 simple protocol server ignores accepts unlimited connections and logs failures without limit",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59529",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-59529"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-59529",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64437 KubeVirt Isolation Detection Flaw Allows Arbitrary File Permission Changes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64437",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:16 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64437"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64437",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68390 Elasticsearch Allocation of Resources Without Limits or Throttling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68390",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68390"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68390",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64435 KubeVirt VMI Denial-of-Service (DoS) Using Pod Impersonation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64435",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:09 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64435"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64435",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68384 Elasticsearch Allocation of Resources Without Limits or Throttling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68384",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:09 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68384"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68384",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64433 KubeVirt Arbitrary Container File Read",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64433",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:02 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64433"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64433",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38347 f2fs: fix to do sanity check on ino and xnid",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38347",
+    "releaseDate": "Tue, 23 Dec 2025 01:37:01 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38347"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38347",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38331 net: ethernet: cortina: Use TOE/TSO on all TCP",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38331",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:56 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38331"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38331",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64432 KubeVirt Affected by an Authentication Bypass in Kubernetes Aggregation Layer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64432",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64432"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64432",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38300 crypto: sun8i-ce-cipher - fix error handling in sun8i_ce_cipher_prepare()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38300",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:50 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38300"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38300",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37938 tracing: Verify event formats that have \"%*p..\"",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37938",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:45 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37938"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37938",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37932 sch_htb: make htb_qlen_notify() idempotent",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37932",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:40 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37932"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37932",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37931 btrfs: adjust subpage bit start based on sectorsize",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37931",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:34 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37931"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37931",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66382 In libexpat through 2.7.3, a crafted file with an approximate size of 2 MiB can lead to dozens of seconds of processing time.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66382",
+    "releaseDate": "Tue, 23 Dec 2025 01:36:29 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66382"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66382",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2296 Un-verified kernel bypass Secure Boot mechanism in direct boot mode",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2296",
+    "releaseDate": "Tue, 23 Dec 2025 01:35:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2296"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2296",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "Chromium: CVE-2025-13224 Type Confusion in V8",
     "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13224",
@@ -19059,6 +19374,36 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2022-50303",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12105 Libsoup: heap use-after-free in libsoup message queue handling during http/2 read completion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12105",
+    "releaseDate": "Mon, 22 Dec 2025 14:35:26 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12105"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12105",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7424 Libxslt: type confusion in xmlnode.psvi between stylesheet and source nodes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7424",
+    "releaseDate": "Mon, 22 Dec 2025 14:35:05 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7424"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7424",
     "kb": "",
     "knownIssues": ""
   },
