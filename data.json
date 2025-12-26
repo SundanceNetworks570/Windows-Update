@@ -21569,6 +21569,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-7425 Libxslt: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7425",
+    "releaseDate": "Fri, 26 Dec 2025 01:01:24 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7425"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7425",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-59287 Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
     "description": "Security hotpatch updates are now available for supported versions of Windows Server 2022 and Windows Server 2025. Note that a reboot will be required after you install these hotpatch updates.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287",
