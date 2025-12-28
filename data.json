@@ -18193,6 +18193,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
+    "releaseDate": "Sat, 27 Dec 2025 14:36:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14104"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14104",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-13699 MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13699",
