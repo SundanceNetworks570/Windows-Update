@@ -2745,17 +2745,107 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53132 Win32k Elevation of Privilege Vulnerability",
-    "description": "Updated information to include CVSS scores. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53132",
-    "releaseDate": "Tue, 30 Sep 2025 07:00:00 Z",
+    "title": "CVE-2025-13699 MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13699",
+    "releaseDate": "Tue, 30 Dec 2025 01:37:07 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53132"
+      "CVE-2025-13699"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53132",
+    "cve": "CVE-2025-13699",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68615 Net-SNMP snmptrapd crash",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68615",
+    "releaseDate": "Tue, 30 Dec 2025 01:36:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68615"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68615",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13912 Potential non-constant time compiled code with Clang LLVM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13912",
+    "releaseDate": "Tue, 30 Dec 2025 01:36:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13912"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13912",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13281 Portworx Half-Blind SSRF in kube-controller-manager",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13281",
+    "releaseDate": "Tue, 30 Dec 2025 01:36:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13281"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13281",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Tue, 30 Dec 2025 01:36:12 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-52970 MariaDB Server 10.4 through 10.5.*, 10.6 through 10.6.*, 10.7 through 10.11.*, 11.0 through 11.0.*, and 11.1 through 11.4.* crashes in Item_direct_view_ref::derived_field_transformer_for_where.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-52970",
+    "releaseDate": "Tue, 30 Dec 2025 01:35:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-52970"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-52970",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68973 In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments of an index variable where one is intended, leading to an out-of-bounds write for crafted input. (For ExtendedLTS, 2.2.51 and later are fixed versions.)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68973",
+    "releaseDate": "Tue, 30 Dec 2025 01:01:21 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68973"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68973",
     "kb": "",
     "knownIssues": ""
   },
@@ -20649,6 +20739,66 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2022-50303",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14180 NULL Pointer Dereference in PDO quoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14180",
+    "releaseDate": "Mon, 29 Dec 2025 14:36:08 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14180"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14180",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14178 Heap buffer overflow in array_merge()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14178",
+    "releaseDate": "Mon, 29 Dec 2025 14:36:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14177 Information Leak of Memory in getimagesize",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14177",
+    "releaseDate": "Mon, 29 Dec 2025 14:35:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68972 In GnuPG through 2.4.8, if a signed message has \\f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an \"invalid armor\" message is printed during verification). This is related to use of \\f as a marker to denote truncation of a long plaintext line.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68972",
+    "releaseDate": "Mon, 29 Dec 2025 14:35:53 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68972"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68972",
     "kb": "",
     "knownIssues": ""
   },
