@@ -1,5 +1,125 @@
 [
   {
+    "title": "CVE-2025-68615 Net-SNMP snmptrapd crash",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68615",
+    "releaseDate": "Wed, 31 Dec 2025 01:37:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68615"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68615",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-12084 Quadratic complexity in node ID cache clearing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12084",
+    "releaseDate": "Wed, 31 Dec 2025 01:36:45 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-12084"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-12084",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13837 Out-of-memory when loading Plist",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13837",
+    "releaseDate": "Wed, 31 Dec 2025 01:36:37 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13837"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13837",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13836 Excessive read buffering DoS in http.client",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13836",
+    "releaseDate": "Wed, 31 Dec 2025 01:36:27 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13836"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13836",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2021-44964 Use after free in garbage collector and finalizer of lgc.c in Lua interpreter 5.4.0~5.4.3 allows attackers to perform Sandbox Escape via a crafted script file.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-44964",
+    "releaseDate": "Wed, 31 Dec 2025 01:35:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2021-44964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2021-44964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14177 Information Leak of Memory in getimagesize",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14177",
+    "releaseDate": "Wed, 31 Dec 2025 01:02:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14178 Heap buffer overflow in array_merge()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14178",
+    "releaseDate": "Wed, 31 Dec 2025 01:02:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14180 NULL Pointer Dereference in PDO quoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14180",
+    "releaseDate": "Wed, 31 Dec 2025 01:02:05 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14180"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14180",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-40071 tty: n_gsm: Don't block input queue by waiting MSC",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40071",
@@ -2741,6 +2861,51 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2022-24735",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13281 Portworx Half-Blind SSRF in kube-controller-manager",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13281",
+    "releaseDate": "Tue, 30 Dec 2025 14:36:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13281"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13281",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
+    "releaseDate": "Tue, 30 Dec 2025 14:36:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14104"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14104",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Tue, 30 Dec 2025 14:35:57 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65637",
     "kb": "",
     "knownIssues": ""
   },
