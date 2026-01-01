@@ -1,5 +1,155 @@
 [
   {
+    "title": "CVE-2025-58436 OpenPrinting CUPS slow client can halt cupsd, leading to a possible DoS attack",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58436",
+    "releaseDate": "Wed, 31 Dec 2025 14:36:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-58436"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-58436",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2915 HDF5 H5Faccum.c H5F__accum_free heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2915",
+    "releaseDate": "Wed, 31 Dec 2025 14:36:01 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2915"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2915",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2914 HDF5 H5FScache.c H5FS__sinfo_Srialize_Sct_cb heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2914",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:56 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2914"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2914",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2924 HDF5 H5HLcache.c H5HL__fl_deserialize heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2924",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:50 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2924"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2924",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2926 HDF5 H5Ocache.c H5O__cache_chk_serialize null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2926",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2926"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2926",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2925 HDF5 H5MM.c H5MM_realloc double free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2925",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:38 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2310 HDF5 Metadata Attribute Decoder H5MM_strndup heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2310",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:33 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2310"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2310",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2309 HDF5 Type Conversion Logic H5T__bit_copy heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2309",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:27 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2309"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2309",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2308 HDF5 Scale-Offset Filter H5Z__scaleoffset_decompress_one_byte heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2308",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2308"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2308",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-2153 HDF5 h5 File H5SM.c H5SM_delete heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2153",
+    "releaseDate": "Wed, 31 Dec 2025 14:35:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-2153"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-2153",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-68615 Net-SNMP snmptrapd crash",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68615",
