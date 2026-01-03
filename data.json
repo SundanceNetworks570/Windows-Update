@@ -12658,171 +12658,6 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-11219 Use after free in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11219",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:07 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11219"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11219",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11216 Inappropriate implementation in Storage",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11216",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:06 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11216"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11216",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11215 Off by one error in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11215",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:05 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11215"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11215",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11213 Inappropriate implementation in Omnibox",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11213",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:04 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11213"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11213",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11212 Inappropriate implementation in Media",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11212",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:03 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11212"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11212",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11210 Side-channel information leakage in Tab",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11210",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:01 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11210"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11210",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11209 Inappropriate implementation in Omnibox",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11209",
-    "releaseDate": "Thu, 02 Oct 2025 20:48:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11209"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11209",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11207 Side-channel information leakage in Storage",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11207",
-    "releaseDate": "Thu, 02 Oct 2025 20:47:59 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11207"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11207",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11208 Inappropriate implementation in Media",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11208",
-    "releaseDate": "Thu, 02 Oct 2025 20:47:59 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11208"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11208",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11206 Heap buffer overflow in Video",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11206",
-    "releaseDate": "Thu, 02 Oct 2025 20:47:58 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11206"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11206",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2025-11205 Heap buffer overflow in WebGPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202 5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11205",
-    "releaseDate": "Thu, 02 Oct 2025 20:47:54 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11205"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11205",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2025-68114 Capstone doesn't check vsnprintf return in SStream_concat, allows stack buffer underflow and overflow",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68114",
@@ -21058,6 +20893,532 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-68146 filelock has TOCTOU race condition that allows symlink attacks during lock file creation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68146",
+    "releaseDate": "Sat, 03 Jan 2026 01:41:03 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68146"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68146",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13912 Potential non-constant time compiled code with Clang LLVM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13912",
+    "releaseDate": "Sat, 03 Jan 2026 01:40:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13912"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13912",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
+    "releaseDate": "Sat, 03 Jan 2026 01:40:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14104"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14104",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14512 Glib: integer overflow in glib gio attribute escaping causes heap buffer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14512",
+    "releaseDate": "Sat, 03 Jan 2026 01:40:17 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14512"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14512",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14087 Glib: glib: buffer underflow in gvariant parser leads to heap corruption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14087",
+    "releaseDate": "Sat, 03 Jan 2026 01:40:11 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14087"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14087",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-65637 A denial-of-service vulnerability exists in github.com/sirupsen/logrus when using Entry.Writer() to log a single-line payload larger than 64KB without newline characters.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-65637",
+    "releaseDate": "Sat, 03 Jan 2026 01:40:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-65637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-65637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-6485 XSS in Bootstrap button component",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-6485",
+    "releaseDate": "Sat, 03 Jan 2026 01:39:48 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-6485"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-6485",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61099 FRRouting/frr from v2.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the opaque_info_detail function at ospf_opaque.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted LS Update packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61099",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:33 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61099"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61099",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61104 FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_unknown_tlv function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61104",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:28 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61104"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61104",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61100 FRRouting/frr from v2.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the ospf_opaque_lsa_dump function at ospf_opaque.c. This vulnerability allows attackers to cause a Denial of Service (DoS) under specific malformed LSA conditions.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61100",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61100"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61100",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61101 FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_link_rmt_itf_addr function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61101",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61101"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61101",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61102 FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_link_adj_sid function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61102",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61102"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61102",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61107 FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_pref_pref_sid function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted LSA Update packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61107",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:07 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61107"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61107",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61106 FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_pref_pref_sid function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61106",
+    "releaseDate": "Sat, 03 Jan 2026 01:38:02 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61106"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61106",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61103 FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_link_lan_adj_sid function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61103",
+    "releaseDate": "Sat, 03 Jan 2026 01:37:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61103"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61103",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-10911 Libxslt: use-after-free with key data stored cross-rvt",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10911",
+    "releaseDate": "Sat, 03 Jan 2026 01:37:47 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-10911"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-10911",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-9288 Missing type checks leading to hash rewind and passing on crafted data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-9288",
+    "releaseDate": "Sat, 03 Jan 2026 01:37:40 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-9288"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-9288",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2021-23445 Cross-site Scripting (XSS)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-23445",
+    "releaseDate": "Sat, 03 Jan 2026 01:37:36 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2021-23445"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2021-23445",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7424 Libxslt: type confusion in xmlnode.psvi between stylesheet and source nodes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7424",
+    "releaseDate": "Sat, 03 Jan 2026 01:37:21 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7424"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7424",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7425 Libxslt: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7425",
+    "releaseDate": "Sat, 03 Jan 2026 01:37:15 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7425"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7425",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-46327 Go Snowflake Driver has race condition when checking access to Easy Logging configuration file",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-46327",
+    "releaseDate": "Sat, 03 Jan 2026 01:36:54 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-46327"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-46327",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-32387 Helm Allows A Specially Crafted JSON Schema To Cause A Stack Overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32387",
+    "releaseDate": "Sat, 03 Jan 2026 01:36:46 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-32387"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-32387",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14180 NULL Pointer Dereference in PDO quoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14180",
+    "releaseDate": "Sat, 03 Jan 2026 01:36:31 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14180"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14180",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14178 Heap buffer overflow in array_merge()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14178",
+    "releaseDate": "Sat, 03 Jan 2026 01:36:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-14177 Information Leak of Memory in getimagesize",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14177",
+    "releaseDate": "Sat, 03 Jan 2026 01:36:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-14177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-14177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-13699 MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13699",
+    "releaseDate": "Sat, 03 Jan 2026 01:36:02 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-13699"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-13699",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-6531 Rejected reason: This was not a security issue in Bootstrap. Bootstrap’s JavaScript is not intended to sanitize unsafe or intentionally dangerous HTML. As such, the reported behavior fell outside the scope of Bootstrap’s security model, and the associated CVE has been rescinded.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-6531",
+    "releaseDate": "Sat, 03 Jan 2026 01:35:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-6531"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-6531",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-45310 runc can be confused to create empty files/directories on the host",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-45310",
+    "releaseDate": "Sat, 03 Jan 2026 01:35:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-45310"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-45310",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-68973 In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments of an index variable where one is intended, leading to an out-of-bounds write for crafted input. (For ExtendedLTS, 2.2.51 and later are fixed versions.)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68973",
+    "releaseDate": "Sat, 03 Jan 2026 01:02:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68973"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68973",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61594 URI Credential Leakage Bypass over CVE-2025-27221",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61594",
+    "releaseDate": "Sat, 03 Jan 2026 01:02:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61594",
+      "CVE-2025-27221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61594, CVE-2025-27221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-15284 arrayLimit bypass in bracket notation allows DoS via memory exhaustion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-15284",
+    "releaseDate": "Sat, 03 Jan 2026 01:02:10 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-15284"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-15284",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-69277 libsodium before ad3004e, in atypical use cases involving certain custom cryptography or untrusted data to crypto_core_ed25519_is_valid_point, mishandles checks for whether an elliptic curve point is valid because it sometimes allows points that aren't in the main cryptographic group.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-69277",
+    "releaseDate": "Sat, 03 Jan 2026 01:01:58 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-69277"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-69277",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-11964 OOBW in utf_16le_to_utf_8_truncated() in libpcap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11964",
+    "releaseDate": "Sat, 03 Jan 2026 01:01:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-11964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-11964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-11961 OOBR and OOBW in pcap_ether_aton() in libpcap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11961",
+    "releaseDate": "Sat, 03 Jan 2026 01:01:36 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-11961"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-11961",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-34468 libcoap Stack-Based Buffer Overflow in Address Resolution DoS or Potential RCE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-34468",
+    "releaseDate": "Sat, 03 Jan 2026 01:01:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-34468"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-34468",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-14180 NULL Pointer Dereference in PDO quoting",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14180",
@@ -23789,17 +24150,362 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59489 MITRE: CVE-2025-59489 Unity Gaming Engine Editor vulnerability",
-    "description": "[Unity](https://unity.com) announced a security vulnerability (CVE-2025-59489) that is affecting games or applications built with the Unity Gaming Engine Editor (version 2017.1 or later). \n\nYou may be using a Microsoft app or playing a Microsoft game that should be uninstalled until an update is available. We are working to update games and applications that are potentially affected by this Unity vulnerability.\n\nIn most cases, you can stay safe by ensuring your games and applications are up to date and Microsoft Defender is running on your device.\n\nIf you have downloaded a vulnerable game or app (see list below) on one of the following platforms, you could be at risk:\n\n* Android\n* Windows\n* Linux (Desktop)\n* Linux (embedded)\n* MacOS\n\nWe have confirmed the following are not impacted:\n\n* Xbox consoles\n* Xbox Cloud Gaming\n* iOS\n* HoloLens\n \n**Recommended Next Steps:**\n\n**For Developers**: Unity has made a fix available to developers. Organizations who believe that they have an app or game that might be impacted should reference Unity guidance and update their apps/games as soon as possible. You can learn more from Unity here.\n\n**For Players and Customers**: Microsoft security and game development teams are working to update any game or application that is potentially affected by this Unity vulnerability.\n\nIf a Microsoft-owned game or application is not listed  and you have installed all available updates, no further action is required. For customers who have automatic updates enabled, fixes will be deployed as they become available. If you have automatic updates turned off, please check to see if you have any updates available for your downloaded apps and games and install the latest update on your device.\n\nCustomers who have an impacted app or game installed (see below list) are encouraged to take these steps:\n\n* Temporarily uninstall any impacted Microsoft apps or games until an update is available.  For more guidance on how to uninstall, please see the FAQs below.\n* Use an up-to-date version of Microsoft Defender to detect and block attempts to exploit this vulnerability.  \n* Follow guidance from Unity or your platform provider.\n* Microsoft-owned games and apps affected by this vulnerability and their requisite updates are documented in the Security Updates Table.\n\n**For Microsoft Mesh Apps Users**\n\nIn response to this CVE that is affecting applications built with the Unity Gaming Engine Editor (version 2017.1 or later), Microsoft has released a required security update for the Microsoft Mesh PC applications.  We strongly encourage all users with the Microsoft Mesh apps installed on their devices to promptly update to the latest version of these apps, version 5.2513.3.0 or greater.  If you have automatic updates enabled for these apps on all devices, no further action is required.    \n\nWhile we do not expect this to affect the functionality of any previously-scheduled events in Microsoft Mesh, use of the immersive spaces in Microsoft Teams meetings, or immersive events in Microsoft Teams, users will be required to update the Mesh PC apps before joining newly scheduled events in Mesh.  We are informing you of this now so that you can mitigate any disruptions this may introduce to your events.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59489",
-    "releaseDate": "Fri, 03 Oct 2025 07:00:00 Z",
+    "title": "CVE-2025-13281 Portworx Half-Blind SSRF in kube-controller-manager",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13281",
+    "releaseDate": "Fri, 02 Jan 2026 14:40:26 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59489"
+      "CVE-2025-13281"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59489",
+    "cve": "CVE-2025-13281",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61915 OpenPrinting CUPS vulnerable to stack based out-of-bound write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61915",
+    "releaseDate": "Fri, 02 Jan 2026 14:40:04 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61915"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61915",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64437 KubeVirt Isolation Detection Flaw Allows Arbitrary File Permission Changes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64437",
+    "releaseDate": "Fri, 02 Jan 2026 14:39:46 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64437"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64437",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64436 KubeVirt Excessive Role Permissions Could Enable Unauthorized VMI Migrations Between Nodes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64436",
+    "releaseDate": "Fri, 02 Jan 2026 14:39:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64436"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64436",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64435 KubeVirt VMI Denial-of-Service (DoS) Using Pod Impersonation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64435",
+    "releaseDate": "Fri, 02 Jan 2026 14:39:36 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64435"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64435",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64434 KubeVirt Improper TLS Certificate Management Handling Allows API Identity Spoofing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64434",
+    "releaseDate": "Fri, 02 Jan 2026 14:39:30 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64434"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64434",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64433 KubeVirt Arbitrary Container File Read",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64433",
+    "releaseDate": "Fri, 02 Jan 2026 14:39:25 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64433"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64433",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-64432 KubeVirt Affected by an Authentication Bypass in Kubernetes Aggregation Layer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64432",
+    "releaseDate": "Fri, 02 Jan 2026 14:39:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64432"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64432",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7068 HDF5 H5FL.c H5FL__malloc memory leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7068",
+    "releaseDate": "Fri, 02 Jan 2026 14:38:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7068"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7068",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-7067 HDF5 H5FScache.c H5FS__sinfo_serialize_node_cb heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-7067",
+    "releaseDate": "Fri, 02 Jan 2026 14:38:18 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-7067"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-7067",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6857 HDF5 H5Gnode.c H5G__node_cmp3 stack-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6857",
+    "releaseDate": "Fri, 02 Jan 2026 14:38:12 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6857"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6857",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6750 HDF5 H5Omtime.c H5O__mtime_new_encode heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6750",
+    "releaseDate": "Fri, 02 Jan 2026 14:38:06 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6750"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6750",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6816 HDF5 H5Ofsinfo.c H5O__fsinfo_encode heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6816",
+    "releaseDate": "Fri, 02 Jan 2026 14:38:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6816"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6816",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6818 HDF5 H5Ochunk.c H5O__chunk_protect heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6818",
+    "releaseDate": "Fri, 02 Jan 2026 14:37:55 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6818"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6818",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6858 HDF5 H5Centry.c H5C__flush_single_entry null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6858",
+    "releaseDate": "Fri, 02 Jan 2026 14:37:49 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6858"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6858",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6269 HDF5 H5Cimage.c H5C__reconstruct_cache_entry heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6269",
+    "releaseDate": "Fri, 02 Jan 2026 14:37:44 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6270 HDF5 H5FSsection.c H5FS__sect_find_node heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6270",
+    "releaseDate": "Fri, 02 Jan 2026 14:37:38 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6270"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6270",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-44905 hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5Z__filter_scaleoffset function.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-44905",
+    "releaseDate": "Fri, 02 Jan 2026 14:36:41 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-44905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-44905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-56738 GNU GRUB (aka GRUB2) through 2.12 does not use a constant-time algorithm for grub_crypto_memcmp and thus allows side-channel attacks.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-56738",
+    "releaseDate": "Fri, 02 Jan 2026 14:35:52 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-56738"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-56738",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-30896 InfluxDB OSS 2.x through 2.7.11 stores the administrative operator token under the default organization which allows authorized users with read access to the authorization resource of the default organization to retrieve the operator token. InfluxDB OSS 1.x, Enterprise, Cloud, Cloud Dedicated and Clustered are not affected. NOTE: The researcher states that InfluxDB allows allAccess administrators to retrieve all raw tokens via an \"influx auth ls\" command. The supplier indicates that the organizations feature is operating as intended and that users may choose to add users to non-default organizations. A future release of InfluxDB 2.x will remove the ability to retrieve tokens from the API.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-30896",
+    "releaseDate": "Fri, 02 Jan 2026 14:35:38 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-30896"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-30896",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-3177 Bypassing mountable secrets policy imposed by the ServiceAccount admission plugin",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-3177",
+    "releaseDate": "Fri, 02 Jan 2026 14:35:05 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-3177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-3177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-59184 Storage Spaces Direct Information Disclosure Vulnerability",
+    "description": "Added acknowledgements. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59184",
+    "releaseDate": "Fri, 02 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-59184"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-59184",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-55683 Windows Kernel Information Disclosure Vulnerability",
+    "description": "Added acknowledgements. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55683",
+    "releaseDate": "Fri, 02 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-55683"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-55683",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-60710 Host Process for Windows Tasks Elevation of Privilege Vulnerability",
+    "description": "Added an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-60710",
+    "releaseDate": "Fri, 02 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-60710"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-60710",
     "kb": "",
     "knownIssues": ""
   }
