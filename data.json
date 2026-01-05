@@ -18433,6 +18433,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2000-0006 strace allows local users to read arbitrary files via memory mapped file names.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2000-0006",
+    "releaseDate": "Sun, 04 Jan 2026 14:35:13 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2000-0006"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2000-0006",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
@@ -22270,6 +22285,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-40273",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-3001 PyTorch torch.lstm_cell memory corruption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-3001",
+    "releaseDate": "Mon, 05 Jan 2026 01:38:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-3001"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-3001",
     "kb": "",
     "knownIssues": ""
   },
