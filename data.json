@@ -10331,17 +10331,32 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59489 MITRE: CVE-2025-59489 Unity Gaming Engine Editor vulnerability",
-    "description": "The following updates have been made to CVE-2025-59489: 1) In the Security Updates table, added Microsoft Mesh and Microsoft Mesh for Meta Quest as they affected by this vulnerability. 2) Further, to comprehensively address this vulnerability, Microsoft has released the 5.2514 build for these applications.\n \nMicrosoft recommends that customers install the updates to be fully protected from the vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59489",
-    "releaseDate": "Tue, 07 Oct 2025 07:00:00 Z",
+    "title": "CVE-2025-11964 OOBW in utf_16le_to_utf_8_truncated() in libpcap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11964",
+    "releaseDate": "Tue, 06 Jan 2026 01:35:42 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59489"
+      "CVE-2025-11964"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59489",
+    "cve": "CVE-2025-11964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-11961 OOBR and OOBW in pcap_ether_aton() in libpcap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11961",
+    "releaseDate": "Tue, 06 Jan 2026 01:35:35 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-11961"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-11961",
     "kb": "",
     "knownIssues": ""
   },
@@ -22285,6 +22300,37 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-40273",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-61594 URI Credential Leakage Bypass over CVE-2025-27221",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61594",
+    "releaseDate": "Mon, 05 Jan 2026 14:36:39 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-61594",
+      "CVE-2025-27221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-61594, CVE-2025-27221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-62408 c-ares has a Use After Free vulnerability when connection is cleaned up after error",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62408",
+    "releaseDate": "Mon, 05 Jan 2026 14:36:12 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-62408"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-62408",
     "kb": "",
     "knownIssues": ""
   },
