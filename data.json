@@ -5580,1142 +5580,1202 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-47989 Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Connected Machine Agent allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47989",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20962 Dynamic Root of Trust for Measurement (DRTM) Information Disclosure Vulnerability",
+    "description": "Use of uninitialized resource in Dynamic Root of Trust for Measurement (DRTM) allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20962",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-47989"
+      "CVE-2026-20962"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-47989",
+    "cve": "CVE-2026-20962",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-48004 Microsoft Brokering File System Elevation of Privilege Vulnerability",
-    "description": "Use after free in Microsoft Brokering File System allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-48004",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-21265 Secure Boot Certificate Expiration Security Feature Bypass Vulnerability",
+    "description": "Windows Secure Boot stores Microsoft certificates in the UEFI KEK and DB. These original certificates are approaching expiration, and devices containing affected certificate versions must update them to maintain Secure Boot functionality and avoid compromising security by losing security fixes related to Windows boot manager or Secure Boot.\n \nThe operating system’s certificate update protection mechanism relies on firmware components that might contain defects, which can cause certificate trust updates to fail or behave unpredictably. This leads to potential disruption of the Secure Boot trust chain and requires careful validation and deployment to restore intended security guarantees.\n\n| Certificate Authority (CA) | Location | Purpose | Expiration Date |\n| ------ | ------ | ------ | ------ |\n| Microsoft Corporation KEK CA 2011 | KEK | Signs updates to the DB and DBX | 06/24/2026 |\n| Microsoft Corporation UEFI CA 2011 | DB | Signs 3rd party boot loaders, Option ROMs, etc. | 06/27/2026 |\n| Microsoft Windows Production PCA 2011 | DB | Signs the Windows Boot Manager | 10/19/2026 |\n\nFor more information see this CVE and [Windows Secure Boot certificate expiration and CA updates](https://aka.ms/GetSecureBoot).",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21265",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-48004"
+      "CVE-2026-21265"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-48004",
+    "cve": "CVE-2026-21265",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-50174 Windows Device Association Broker Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Device Association Broker service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50174",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-0386 Windows Deployment Services Remote Code Execution Vulnerability",
+    "description": "Improper access control in Windows Deployment Services allows an unauthorized attacker to execute code over an adjacent network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-50174"
+      "CVE-2026-0386"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-50174",
+    "cve": "CVE-2026-0386",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53782 Microsoft Exchange Server Elevation of Privilege Vulnerability",
-    "description": "Incorrect implementation of authentication algorithm in Microsoft Exchange Server allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53782",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20803 Microsoft SQL Server Elevation of Privilege Vulnerability",
+    "description": "Missing authentication for critical function in SQL Server allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20803",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53782"
+      "CVE-2026-20803"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53782",
+    "cve": "CVE-2026-20803",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55247 .NET Elevation of Privilege Vulnerability",
-    "description": "Improper link resolution before file access ('link following') in .NET allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55247",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20965 Windows Admin Center Elevation of Privilege Vulnerability",
+    "description": "Improper verification of cryptographic signature in Windows Admin Center allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20965",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55247"
+      "CVE-2026-20965"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55247",
+    "cve": "CVE-2026-20965",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-24990 Windows Agere Modem Driver Elevation of Privilege Vulnerability",
-    "description": "Microsoft is aware of vulnerabilities in the third party Agere Modem driver that ships natively with supported Windows operating systems.  This is an announcement of the upcoming removal of ltmdm64.sys driver.  The driver has been removed in the October cumulative update. \n\n**Fax modem hardware dependent on this specific driver will no longer work on Windows.** \n\nMicrosoft recommends removing any existing dependencies on this hardware.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24990",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20804 Windows Hello Tampering Vulnerability",
+    "description": "Incorrect privilege assignment in Windows Hello allows an unauthorized attacker to perform tampering locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20804",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-24990"
+      "CVE-2026-20804"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-24990",
+    "cve": "CVE-2026-20804",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-24052 Windows Agere Modem Driver Elevation of Privilege Vulnerability",
-    "description": "Microsoft is aware of vulnerabilities in the third party Agere Modem driver that ships natively with supported Windows operating systems.  This is an announcement of the upcoming removal of ltmdm64.sys driver.  The driver has been removed in the October cumulative update. \n\n**Fax modem hardware dependent on this specific driver will no longer work on Windows.** \n\nMicrosoft recommends removing any existing dependencies on this hardware.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24052",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20805 Desktop Window Manager Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Desktop Windows Manager allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-24052"
+      "CVE-2026-20805"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-24052",
+    "cve": "CVE-2026-20805",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55320 Configuration Manager Elevation of Privilege Vulnerability",
-    "description": "Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Configuration Manager allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55320",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20808 Windows File Explorer Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Printer Association Object allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20808",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55320"
+      "CVE-2026-20808"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55320",
+    "cve": "CVE-2026-20808",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55325 Windows Storage Management Provider Information Disclosure Vulnerability",
-    "description": "Buffer over-read in Windows Storage Management Provider allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55325",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20809 Windows Kernel Memory Elevation of Privilege Vulnerability",
+    "description": "Time-of-check time-of-use (toctou) race condition in Windows Kernel Memory allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20809",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55325"
+      "CVE-2026-20809"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55325",
+    "cve": "CVE-2026-20809",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55333 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Incomplete comparison with missing factors in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55333",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20810 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Free of memory not on the heap in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20810",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55333"
+      "CVE-2026-20810"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55333",
+    "cve": "CVE-2026-20810",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55335 Windows NTFS Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows NTFS allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55335",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20811 Win32k Elevation of Privilege Vulnerability",
+    "description": "Access of resource using incompatible type ('type confusion') in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20811",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55335"
+      "CVE-2026-20811"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55335",
+    "cve": "CVE-2026-20811",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55336 Windows Cloud Files Mini Filter Driver Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Cloud Files Mini Filter Driver allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55336",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20812 LDAP Tampering Vulnerability",
+    "description": "Improper input validation in Windows LDAP - Lightweight Directory Access Protocol allows an authorized attacker to perform tampering over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20812",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55336"
+      "CVE-2026-20812"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55336",
+    "cve": "CVE-2026-20812",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55338 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Missing Ability to Patch ROM Code in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55338",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20814 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Graphics Kernel allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20814",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55338"
+      "CVE-2026-20814"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55338",
+    "cve": "CVE-2026-20814",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55339 Windows Network Driver Interface Specification Driver Elevation of Privilege Vulnerability",
-    "description": "Out-of-bounds read in Windows NDIS allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55339",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20815 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Capability Access Management Service (camsvc) allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20815",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55339"
+      "CVE-2026-20815"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55339",
+    "cve": "CVE-2026-20815",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55340 Windows Remote Desktop Protocol Security Feature Bypass",
-    "description": "Improper authentication in Windows Remote Desktop Protocol allows an authorized attacker to bypass a security feature locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55340",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20816 Windows Installer Elevation of Privilege Vulnerability",
+    "description": "Time-of-check time-of-use (toctou) race condition in Windows Installer allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20816",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55340"
+      "CVE-2026-20816"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55340",
+    "cve": "CVE-2026-20816",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55676 Windows USB Video Class System Driver Information Disclosure Vulnerability",
-    "description": "Generation of error message containing sensitive information in Windows USB Video Driver allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55676",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20817 Windows Error Reporting Service Elevation of Privilege Vulnerability",
+    "description": "Improper handling of insufficient permissions or privileges in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20817",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55676"
+      "CVE-2026-20817"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55676",
+    "cve": "CVE-2026-20817",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55677 Windows Device Association Broker Service Elevation of Privilege Vulnerability",
-    "description": "Untrusted pointer dereference in Windows Device Association Broker service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55677",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20818 Windows Kernel Information Disclosure Vulnerability",
+    "description": "Insertion of sensitive information into log file in Windows Kernel allows an unauthorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20818",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55677"
+      "CVE-2026-20818"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55677",
+    "cve": "CVE-2026-20818",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55681 Desktop Windows Manager Elevation of Privilege Vulnerability",
-    "description": "Out-of-bounds read in Windows DWM allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55681",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20819 Windows Virtualization-Based Security (VBS) Information Disclosure Vulnerability",
+    "description": "Untrusted pointer dereference in Windows Virtualization-Based Security (VBS) Enclave allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20819",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55681"
+      "CVE-2026-20819"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55681",
+    "cve": "CVE-2026-20819",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55685 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55685",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20820 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+    "description": "Heap-based buffer overflow in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20820",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55685"
+      "CVE-2026-20820"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55685",
+    "cve": "CVE-2026-20820",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55686 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55686",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20821 Remote Procedure Call Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows Remote Procedure Call allows an unauthorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20821",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55686"
+      "CVE-2026-20821"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55686",
+    "cve": "CVE-2026-20821",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55687 Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Resilient File System (ReFS) allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55687",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20822 Windows Graphics Component Elevation of Privilege Vulnerability",
+    "description": "Use after free in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20822",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55687"
+      "CVE-2026-20822"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55687",
+    "cve": "CVE-2026-20822",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55689 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55689",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20824 Windows Remote Assistance Security Feature Bypass Vulnerability",
+    "description": "Protection mechanism failure in Windows Remote Assistance allows an unauthorized attacker to bypass a security feature locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20824",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55689"
+      "CVE-2026-20824"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55689",
+    "cve": "CVE-2026-20824",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55700 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55700",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20825 Windows Hyper-V Information Disclosure Vulnerability",
+    "description": "Improper access control in Windows Hyper-V allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20825",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55700"
+      "CVE-2026-20825"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55700",
+    "cve": "CVE-2026-20825",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55701 Windows Authentication Elevation of Privilege Vulnerability",
-    "description": "Improper validation of specified type of input in Microsoft Windows allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55701",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20826 Tablet Windows User Interface (TWINUI) Subsystem Information Disclosure Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Tablet Windows User Interface (TWINUI) Subsystem allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20826",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55701"
+      "CVE-2026-20826"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55701",
+    "cve": "CVE-2026-20826",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58715 Windows Speech Runtime Elevation of Privilege Vulnerability",
-    "description": "Integer overflow or wraparound in Microsoft Windows Speech allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58715",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20827 Tablet Windows User Interface (TWINUI) Subsystem Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Tablet Windows User Interface (TWINUI) Subsystem allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20827",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58715"
+      "CVE-2026-20827"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58715",
+    "cve": "CVE-2026-20827",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58716 Windows Speech Runtime Elevation of Privilege Vulnerability",
-    "description": "Improper input validation in Microsoft Windows Speech allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58716",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20828 Windows rndismp6.sys Information Disclosure Vulnerability",
+    "description": "Out-of-bounds read in Windows Internet Connection Sharing (ICS) allows an unauthorized attacker to disclose information with a physical attack.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20828",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58716"
+      "CVE-2026-20828"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58716",
+    "cve": "CVE-2026-20828",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58717 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58717",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20829 TPM Trustlet Information Disclosure Vulnerability",
+    "description": "Out-of-bounds read in Windows TPM allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20829",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58717"
+      "CVE-2026-20829"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58717",
+    "cve": "CVE-2026-20829",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58719 Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Connected Devices Platform Service (Cdpsvc) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58719",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20831 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Time-of-check time-of-use (toctou) race condition in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20831",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58719"
+      "CVE-2026-20831"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58719",
+    "cve": "CVE-2026-20831",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58722 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Windows DWM allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58722",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58722"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58722",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58728 Windows Bluetooth Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Bluetooth Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58728",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58728"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58728",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58732 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58732",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58732"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58732",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58735 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58735",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58735"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58735",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59185 NTLM Hash Disclosure Spoofing Vulnerability",
-    "description": "External control of file name or path in Windows Core Shell allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59185",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59185"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59185",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59186 Windows Kernel Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Kernel allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59186",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59186"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59186",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59195 Microsoft Graphics Component Denial of Service Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Microsoft Graphics Component allows an authorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59195",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59195"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59195",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59196 Windows Simple Search and Discovery Protocol (SSDP) Service Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SSDP Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59196",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59196"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59196",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59199 Software Protection Platform (SPP) Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Software Protection Platform (SPP) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59199",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59199"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59199",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59200 Data Sharing Service Spoofing Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Data Sharing Service Client allows an unauthorized attacker to perform spoofing locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59200",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59200"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59200",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59201 Network Connection Status Indicator (NCSI) Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Network Connection Status Indicator (NCSI) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59201",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59201"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59201",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59202 Windows Remote Desktop Services Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Remote Desktop Services allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59202",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59202"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59202",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59204 Windows Management Services Information Disclosure Vulnerability",
-    "description": "Use of uninitialized resource in Windows Management Services allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59204",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59204"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59204",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59206 Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-20832 Windows Remote Procedure Call Interface Definition Language (IDL) Elevation of Privilege Vulnerability",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59206",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20832",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59206"
+      "CVE-2026-20832"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59206",
+    "cve": "CVE-2026-20832",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59207 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Untrusted pointer dereference in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59207",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20833 Windows Kerberos Information Disclosure Vulnerability",
+    "description": "Use of a broken or risky cryptographic algorithm in Windows Kerberos allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20833",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59207"
+      "CVE-2026-20833"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59207",
+    "cve": "CVE-2026-20833",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59211 Windows Push Notification Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Push Notification Core allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59211",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20834 Windows Spoofing Vulnerability",
+    "description": "Absolute path traversal in Windows Shell allows an unauthorized attacker to perform spoofing with a physical attack.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20834",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59211"
+      "CVE-2026-20834"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59211",
+    "cve": "CVE-2026-20834",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59231 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59231",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20835 Capability Access Management Service (camsvc) Information Disclosure Vulnerability",
+    "description": "Out-of-bounds read in Capability Access Management Service (camsvc) allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20835",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59231"
+      "CVE-2026-20835"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59231",
+    "cve": "CVE-2026-20835",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59233 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59233",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20836 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Graphics Kernel allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20836",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59233"
+      "CVE-2026-20836"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59233",
+    "cve": "CVE-2026-20836",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59234 Microsoft Office Remote Code Execution Vulnerability",
+    "title": "CVE-2026-20837 Windows Media Remote Code Execution Vulnerability",
+    "description": "Heap-based buffer overflow in Windows Media allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20837",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20837"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20837",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20838 Windows Kernel Information Disclosure Vulnerability",
+    "description": "Generation of error message containing sensitive information in Windows Kernel allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20838",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20838"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20838",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20839 Windows Client-Side Caching (CSC) Service Information Disclosure Vulnerability",
+    "description": "Improper access control in Windows Client-Side Caching (CSC) Service allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20839",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20839"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20839",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20840 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Heap-based buffer overflow in Windows NTFS allows an authorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20840",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20840"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20840",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20842 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows DWM allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20842",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20842"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20842",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20844 Windows Clipboard Server Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Clipboard Server allows an unauthorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20844",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20844"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20844",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-31096 MITRE: CVE-2023-31096 Windows Agere Soft Modem Driver Elevation of Privilege Vulnerability",
+    "description": "Microsoft is aware of vulnerabilities in the third party Agere Soft Modem drivers that ship natively with supported Windows operating systems. This is an announcement of the removal of agrsm64.sys and agrsm.sys drivers. The drivers have been removed in the January 2026 cumulative update.\n\n**Soft modem hardware dependent on these specific drivers will no longer work on Windows.**\n\nMicrosoft recommends removing any existing dependencies on this hardware.\n\nThis vulnerability was documented in 2023 via a [CVE-2023-31096](https://www.cve.org/CVERecord?id=CVE-2023-31096) issued by MITRE.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-31096",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-31096"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-31096",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20847 Microsoft Windows File Explorer Spoofing Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows Shell allows an authorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20847",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20847"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20847",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20851 Capability Access Management Service (camsvc) Information Disclosure Vulnerability",
+    "description": "Out-of-bounds read in Capability Access Management Service (camsvc) allows an unauthorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20851",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20851"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20851",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20852 Windows Hello Tampering Vulnerability",
+    "description": "Incorrect privilege assignment in Windows Hello allows an unauthorized attacker to perform tampering locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20852",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20852"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20852",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20856 Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
+    "description": "Improper input validation in Windows Server Update Service allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20856",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20856"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20856",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20857 Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+    "description": "Untrusted pointer dereference in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20857",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20857"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20857",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20858 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20858",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20858"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20858",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20859 Windows Kernel-Mode Driver Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Kernel-Mode Drivers allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20859",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20859"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20859",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20860 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Access of resource using incompatible type ('type confusion') in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20860",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20860"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20860",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20864 Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
+    "description": "Heap-based buffer overflow in Connected Devices Platform Service (Cdpsvc) allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20864",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20864"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20864",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20865 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20865",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20865"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20865",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20869 Windows Local Session Manager (LSM) Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Local Session Manager (LSM) allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20869",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20869"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20869",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20875 Windows Local Security Authority Subsystem Service (LSASS) Denial of Service Vulnerability",
+    "description": "Null pointer dereference in Windows Local Security Authority Subsystem Service (LSASS) allows an unauthorized attacker to deny service over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20875",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20875"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20875",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20876 Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+    "description": "Heap-based buffer overflow in Windows Virtualization-Based Security (VBS) Enclave allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20876",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20876"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20876",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20877 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20877",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20877"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20877",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20918 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20918",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20918"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20918",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20919 Windows SMB Server Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SMB Server allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20919",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20919"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20919",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20920 Win32k Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20920",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20920"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20920",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20921 Windows SMB Server Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SMB Server allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20921",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20921"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20921",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20922 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Heap-based buffer overflow in Windows NTFS allows an authorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20922",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20922"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20922",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20923 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20923",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20923"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20923",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20924 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20924",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20924"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20924",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20925 NTLM Hash Disclosure Spoofing Vulnerability",
+    "description": "External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20925",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20926 Windows SMB Server Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SMB Server allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20926",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20926"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20926",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20927 Windows SMB Server Denial of Service Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SMB Server allows an authorized attacker to deny service over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20927",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20927"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20927",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20932 Windows File Explorer Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows File Explorer allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20932",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20932"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20932",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20934 Windows SMB Server Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SMB Server allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20934",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20934"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20934",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20938 Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+    "description": "Untrusted pointer dereference in Windows Virtualization-Based Security (VBS) Enclave allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20938",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20938"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20938",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20940 Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+    "description": "Heap-based buffer overflow in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20940",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20940"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20940",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20943 Microsoft Office Click-To-Run Elevation of Privilege Vulnerability",
+    "description": "Untrusted search path in Microsoft Office allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20943",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20943"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20943",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20944 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Out-of-bounds read in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20944",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20944"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20944",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20946 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20946",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20946"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20946",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20951 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "description": "Improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20951",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20951"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20951",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20953 Microsoft Office Remote Code Execution Vulnerability",
     "description": "Use after free in Microsoft Office allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59234",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20953",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59234"
+      "CVE-2026-20953"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59234",
+    "cve": "CVE-2026-20953",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59235 Microsoft Excel Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59235",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20955 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Untrusted pointer dereference in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20955",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59235"
+      "CVE-2026-20955"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59235",
+    "cve": "CVE-2026-20955",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59236 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59236",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20956 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Untrusted pointer dereference in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20956",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59236"
+      "CVE-2026-20956"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59236",
+    "cve": "CVE-2026-20956",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59237 Microsoft SharePoint Remote Code Execution Vulnerability",
+    "title": "CVE-2026-20959 Microsoft SharePoint Server Spoofing Vulnerability",
+    "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20959",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20959"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20959",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20963 Microsoft SharePoint Remote Code Execution Vulnerability",
     "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59237",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20963",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59237"
+      "CVE-2026-20963"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59237",
+    "cve": "CVE-2026-20963",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59242 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59242",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20830 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Capability Access Management Service (camsvc) allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20830",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59242"
+      "CVE-2026-20830"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59242",
+    "cve": "CVE-2026-20830",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-49708 Microsoft Graphics Component Elevation of Privilege Vulnerability",
-    "description": "Use after free in Microsoft Graphics Component allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49708",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-21221 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Capability Access Management Service (camsvc) allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21221",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-49708"
+      "CVE-2026-21221"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-49708",
+    "cve": "CVE-2026-21221",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59243 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59243",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-21224 Azure Connected Machine Agent Elevation of Privilege Vulnerability",
+    "description": "Stack-based buffer overflow in Azure Connected Machine Agent allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21224",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59243"
+      "CVE-2026-21224"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59243",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59249 Microsoft Exchange Server Elevation of Privilege Vulnerability",
-    "description": "Weak authentication in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59249",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59249"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59249",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59250 JDBC Driver for SQL Server Spoofing Vulnerability",
-    "description": "Improper input validation in JDBC Driver for SQL Server allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59250",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59250"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59250",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59254 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59254",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59254"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59254",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59255 Windows DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59255",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59255"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59255",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54957 MITRE CVE-2025-54957: Integer overflow in Dolby Digital Plus audio decoder",
-    "description": "Deserialization of untrusted data in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54957",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54957"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54957",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59257 Windows Local Session Manager (LSM) Denial of Service Vulnerability",
-    "description": "Improper validation of specified type of input in Windows Local Session Manager (LSM) allows an authorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59257",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59257"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59257",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59258 Windows Active Directory Federation Services (ADFS) Information Disclosure Vulnerability",
-    "description": "Insertion of sensitive information into log file in Active Directory Federation Services allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59258",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59258"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59258",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59259 Windows Local Session Manager (LSM) Denial of Service Vulnerability",
-    "description": "Improper validation of specified type of input in Windows Local Session Manager (LSM) allows an authorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59259",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59259"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59259",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59277 Windows Authentication Elevation of Privilege Vulnerability",
-    "description": "Improper validation of specified type of input in Windows Authentication Methods allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59277",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59277"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59277",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59280 Windows SMB Client Tampering Vulnerability",
-    "description": "Improper authentication in Windows SMB Client allows an unauthorized attacker to perform tampering over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59280",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59280"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59280",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-47979 Microsoft Failover Cluster Information Disclosure Vulnerability",
-    "description": "Insertion of sensitive information into log file in Windows Failover Cluster allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47979",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-47979"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-47979",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-54132 GitHub CVE-2025-54132: Arbitrary Image Fetch in Mermaid Diagram Tool",
-    "description": "Cursor is a code editor built for programming with AI. In versions below 1.3, Mermaid (which is used to render diagrams) allows embedding images which then get rendered by Cursor in the chat box. An attacker can use this to exfiltrate sensitive information to a third-party attacker controlled server through an image fetch after successfully performing a prompt injection. A malicious model (or hallucination/backdoor) might also trigger this exploit at will. This issue requires prompt injection from malicious data (web, image upload, source code) to be exploited. In that case, it can send sensitive information to an attacker-controlled external server. \n\nGitHub created this CVE on their behalf. The documented Visual Studio updates incorporate updates in Mermaid which address this vulnerability. Please see [Security Update Guide Supports CVEs Assigned by Industry Partners](https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54132",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-54132"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-54132",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59281 Xbox Gaming Services Elevation of Privilege Vulnerability",
-    "description": "Improper link resolution before file access ('link following') in XBox Gaming Services allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59281",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59281"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59281",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59282 Internet Information Services (IIS) Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59282",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59282"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59282",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59284 Windows NTLM Spoofing Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows NTLM allows an unauthorized attacker to perform spoofing locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59284",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59284"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59284",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59288 Playwright Spoofing Vulnerability",
-    "description": "Improper verification of cryptographic signature in GitHub allows an unauthorized attacker to perform spoofing over an adjacent network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59288",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59288"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59288",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59290 Windows Bluetooth Service Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Bluetooth Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59290",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59290"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59290",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59291 Confidential Azure Container Instances Elevation of Privilege Vulnerability",
-    "description": "External control of file name or path in Confidential Azure Container Instances allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59291",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59291"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59291",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59292 Azure Compute Gallery Elevation of Privilege Vulnerability",
-    "description": "External control of file name or path in Confidential Azure Container Instances allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59292",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59292"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59292",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59294 Windows Taskbar Live Preview Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Taskbar Live allows an unauthorized attacker to disclose information with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59294",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59294"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59294",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59295 Windows URL Parsing Remote Code Execution Vulnerability",
-    "description": "Heap-based buffer overflow in Internet Explorer allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59295",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59295"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59295",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59494 Azure Monitor Agent Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Monitor Agent allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59494",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59494"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59494",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2016-9535 MITRE CVE-2016-9535: LibTIFF Heap Buffer Overflow Vulnerability",
-    "description": "tif_predict.h and tif_predict.c in libtiff 4.0.6 have assertions that can lead to assertion failures in debug mode, or buffer overflows in release mode, when dealing with unusual tile size like YCbCr with subsampling. Reported as MSVR 35105, aka \"Predictor heap-buffer-overflow.\"\n\nMITRE created this CVE on their behalf. The documented Windows updates incorporate updates in LibTIFF which address this vulnerability. Please see [Security Update Guide Supports CVEs Assigned by Industry Partners](https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2016-9535",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2016-9535"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2016-9535",
+    "cve": "CVE-2026-21224",
     "kb": "",
     "knownIssues": ""
   },
@@ -6723,7 +6783,7 @@
     "title": "ADV990001 Latest Servicing Stack Updates",
     "description": "Advisory updated to announce new versions of Servicing Stack Updates are available.  Please see the FAQ for details.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/ADV990001",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [],
     "kbs": [],
@@ -6733,1457 +6793,512 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59502 Remote Procedure Call Denial of Service Vulnerability",
-    "description": "Uncontrolled resource consumption in Windows Remote Procedure Call allows an unauthorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59502",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20947 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "description": "Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20947",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59502"
+      "CVE-2026-20947"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59502",
+    "cve": "CVE-2026-20947",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-48813 Virtual Secure Mode Spoofing Vulnerability",
-    "description": "Use of a key past its expiration date in Virtual Secure Mode allows an authorized attacker to perform spoofing locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-48813",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20843 Windows Routing and Remote Access Service (RRAS) Elevation of Privilege Vulnerability",
+    "description": "Improper access control in Windows Routing and Remote Access Service (RRAS) allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20843",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-48813"
+      "CVE-2026-20843"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-48813",
+    "cve": "CVE-2026-20843",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-25004 PowerShell Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Microsoft PowerShell allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-25004",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20848 Windows SMB Server Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows SMB Server allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20848",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-25004"
+      "CVE-2026-20848"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-25004",
+    "cve": "CVE-2026-20848",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53717 Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
-    "description": "Reliance on untrusted inputs in a security decision in Windows Virtualization-Based Security (VBS) Enclave allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53717",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20849 Windows Kerberos Elevation of Privilege Vulnerability",
+    "description": "Reliance on untrusted inputs in a security decision in Windows Kerberos allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20849",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53717"
+      "CVE-2026-20849"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53717",
+    "cve": "CVE-2026-20849",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-50152 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Out-of-bounds read in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50152",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20853 Windows WalletService Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows WalletService allows an unauthorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20853",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-50152"
+      "CVE-2026-20853"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-50152",
+    "cve": "CVE-2026-20853",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53150 Windows Digital Media Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Digital Media allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53150",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20854 Windows Local Security Authority Subsystem Service (LSASS) Remote Code Execution Vulnerability",
+    "description": "Use after free in Windows Local Security Authority Subsystem Service (LSASS) allows an authorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20854",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-53150"
+      "CVE-2026-20854"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-53150",
+    "cve": "CVE-2026-20854",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-50175 Windows Digital Media Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Digital Media allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50175",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-50175"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-50175",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53139 Windows Hello Security Feature Bypass Vulnerability",
-    "description": "Cleartext transmission of sensitive information in Windows Hello allows an unauthorized attacker to bypass a security feature locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53139",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53139"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53139",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53768 Xbox IStorageService Elevation of Privilege Vulnerability",
-    "description": "Use after free in Xbox allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53768",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53768"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53768",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55240 Visual Studio Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Visual Studio allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55240",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55240"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55240",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55248 .NET, .NET Framework, and Visual Studio Information Disclosure Vulnerability",
-    "description": "Inadequate encryption strength in .NET, .NET Framework, Visual Studio allows an authorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55248",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55248"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55248",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55326 Windows Connected Devices Platform Service (Cdpsvc) Remote Code Execution Vulnerability",
-    "description": "Use after free in Connected Devices Platform Service (Cdpsvc) allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55326",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55326"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55326",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55328 Windows Hyper-V Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Hyper-V allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55328",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55328"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55328",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55330 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Improper enforcement of behavioral workflow in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55330",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55330"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55330",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55331 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55331",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55331"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55331",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55332 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Improper enforcement of behavioral workflow in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55332",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55332"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55332",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55334 Windows Kernel Security Feature Bypass Vulnerability",
-    "description": "Cleartext storage of sensitive information in Windows Kernel allows an unauthorized attacker to bypass a security feature locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55334",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55334"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55334",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55337 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Improper enforcement of behavioral workflow in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55337",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55337"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55337",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55678 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows DirectX allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55678",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55678"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55678",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55679 Windows Kernel Information Disclosure Vulnerability",
-    "description": "Improper input validation in Windows Kernel allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55679",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55679"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55679",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55680 Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
-    "description": "Time-of-check time-of-use (toctou) race condition in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55680",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55680"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55680",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55682 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Improper enforcement of behavioral workflow in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55682",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55682"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55682",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55683 Windows Kernel Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Kernel allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55683",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55683"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55683",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55684 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55684",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55684"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55684",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55688 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55688",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55688"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55688",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55690 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55690",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55690"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55690",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55691 Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows PrintWorkflowUserSvc allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55691",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55691"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55691",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55692 Windows Error Reporting Service Elevation of Privilege Vulnerability",
-    "description": "Improper input validation in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55692",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55692"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55692",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55693 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Use after free in Windows Kernel allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55693",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55693"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55693",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55694 Windows Error Reporting Service Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55694",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55694"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55694",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55695 Windows WLAN AutoConfig Service Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows WLAN Auto Config Service allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55695",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55695"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55695",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55696 NtQueryInformation Token function (ntifs.h) Elevation of Privilege Vulnerability",
-    "description": "Time-of-check time-of-use (toctou) race condition in NtQueryInformation Token function (ntifs.h) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55696",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55696"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55696",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55697 Azure Local Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Azure Local allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55697",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55697"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55697",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55698 DirectX Graphics Kernel Denial of Service Vulnerability",
-    "description": "Null pointer dereference in Windows DirectX allows an authorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55698",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55698"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55698",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55699 Windows Kernel Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Kernel allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55699",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55699"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55699",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58714 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58714",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58714"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58714",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58718 Remote Desktop Client Remote Code Execution Vulnerability",
-    "description": "Use after free in Remote Desktop Client allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58718",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58718"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58718",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58720 Windows Cryptographic Services Information Disclosure Vulnerability",
-    "description": "Use of a cryptographic primitive with a risky implementation in Windows Cryptographic Services allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58720",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58720"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58720",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58724 Arc Enabled Servers - Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Connected Machine Agent allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58724",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58724"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58724",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58725 Windows COM+ Event System Service Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Windows COM allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58725",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58725"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58725",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58726 Windows SMB Server Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Windows SMB Server allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58726",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58726"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58726",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58727 Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Connected Devices Platform Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58727",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58727"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58727",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58729 Windows Local Session Manager (LSM) Denial of Service Vulnerability",
-    "description": "Improper validation of specified type of input in Windows Local Session Manager (LSM) allows an authorized attacker to deny service over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58729",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58729"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58729",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58730 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
+    "title": "CVE-2026-21219 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
     "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58730",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21219",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58730"
+      "CVE-2026-21219"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58730",
+    "cve": "CVE-2026-21219",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58731 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58731",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58731"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58731",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58733 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58733",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58733"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58733",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58734 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58734",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58734"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58734",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58736 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58736",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58736"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58736",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58737 Remote Desktop Protocol Remote Code Execution Vulnerability",
-    "description": "Use after free in Windows Remote Desktop allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58737",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58737"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58737",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58738 Inbox COM Objects (Global Memory) Remote Code Execution Vulnerability",
-    "description": "Use after free in Inbox COM Objects allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58738",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58738"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58738",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58739 Microsoft Windows File Explorer Spoofing Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows File Explorer allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58739",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58739"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58739",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59184 Storage Spaces Direct Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows High Availability Services allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59184",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59184"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59184",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59187 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Improper input validation in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59187",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59187"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59187",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59188 Microsoft Failover Cluster Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Failover Cluster allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59188",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59188"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59188",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59189 Microsoft Brokering File System Elevation of Privilege Vulnerability",
-    "description": "Use after free in Microsoft Brokering File System allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59189",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59189"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59189",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59190 Windows Search Service Denial of Service Vulnerability",
-    "description": "Improper input validation in Microsoft Windows Search Component allows an unauthorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59190",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59190"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59190",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59191 Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
-    "description": "Heap-based buffer overflow in Connected Devices Platform Service (Cdpsvc) allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59191",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59191"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59191",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59192 Storport.sys Driver Elevation of Privilege Vulnerability",
-    "description": "Buffer over-read in Storport.sys Driver allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59192",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59192"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59192",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59193 Windows Management Services Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-20861 Windows Management Services Elevation of Privilege Vulnerability",
     "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Management Services allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59193",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20861",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59193"
+      "CVE-2026-20861"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59193",
+    "cve": "CVE-2026-20861",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59194 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Use of uninitialized resource in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59194",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20862 Windows Management Services Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows Management Services allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20862",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59194"
+      "CVE-2026-20862"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59194",
+    "cve": "CVE-2026-20862",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59197 Windows ETL Channel Information Disclosure Vulnerability",
-    "description": "Insertion of sensitive information into log file in Windows ETL Channel allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59197",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20863 Win32k Elevation of Privilege Vulnerability",
+    "description": "Double free in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20863",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59197"
+      "CVE-2026-20863"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59197",
+    "cve": "CVE-2026-20863",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59198 Windows Search Service Denial of Service Vulnerability",
-    "description": "Improper input validation in Microsoft Windows Search Component allows an authorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59198",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20866 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20866",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59198"
+      "CVE-2026-20866"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59198",
+    "cve": "CVE-2026-20866",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59203 Windows State Repository API Server File Information Disclosure Vulnerability",
-    "description": "Insertion of sensitive information into log file in Windows StateRepository API allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59203",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20867 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20867",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59203"
+      "CVE-2026-20867"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59203",
+    "cve": "CVE-2026-20867",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59205 Windows Graphics Component Elevation of Privilege Vulnerability",
-    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59205",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20868 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "description": "Heap-based buffer overflow in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20868",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59205"
+      "CVE-2026-20868"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59205",
+    "cve": "CVE-2026-20868",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59208 Windows MapUrlToZone Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Windows MapUrlToZone allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59208",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20870 Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+    "description": "Use after free in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20870",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59208"
+      "CVE-2026-20870"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59208",
+    "cve": "CVE-2026-20870",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59209 Windows Push Notification Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows Push Notification Core allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59209",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20871 Desktop Windows Manager Elevation of Privilege Vulnerability",
+    "description": "Use after free in Desktop Windows Manager allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20871",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59209"
+      "CVE-2026-20871"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59209",
+    "cve": "CVE-2026-20871",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59210 Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59210",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20872 NTLM Hash Disclosure Spoofing Vulnerability",
+    "description": "External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20872",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59210"
+      "CVE-2026-20872"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59210",
+    "cve": "CVE-2026-20872",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59213 Configuration Manager Elevation of Privilege Vulnerability",
-    "description": "Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Configuration Manager allows an unauthorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59213",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20873 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20873",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59213"
+      "CVE-2026-20873"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59213",
+    "cve": "CVE-2026-20873",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59221 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59221",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20874 Windows Management Services Elevation of Privilege Vulnerability",
+    "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Management Services allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20874",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59221"
+      "CVE-2026-20874"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59221",
+    "cve": "CVE-2026-20874",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59222 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59222",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2024-55414 Windows Motorola Soft Modem Driver Elevation of Privilege Vulnerability",
+    "description": "Microsoft is aware of vulnerabilities in the third party Motorola Soft Modem drivers that ships natively with supported Windows operating systems. \n\nThis is an announcement of the upcoming removal of smserl64.sys and smserial.sys drivers. The drivers have been removed in the January cumulative update.\n\n**Soft modem hardware dependent on these specific drivers will no longer work on Windows.**\n\nMicrosoft recommends removing any existing dependencies on this hardware.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-55414",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59222"
+      "CVE-2024-55414"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59222",
+    "cve": "CVE-2024-55414",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59224 Microsoft Excel Remote Code Execution Vulnerability",
+    "title": "CVE-2026-20929 Windows HTTP.sys Elevation of Privilege Vulnerability",
+    "description": "Improper access control in Windows HTTP.sys allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20929",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20929"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20929",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20931 Windows Telephony Service Elevation of Privilege Vulnerability",
+    "description": "External control of file name or path in Windows Telephony Service allows an authorized attacker to elevate privileges over an adjacent network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20931",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20931"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20931",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20935 Windows Virtualization-Based Security (VBS) Information Disclosure Vulnerability",
+    "description": "Untrusted pointer dereference in Windows Virtualization-Based Security (VBS) Enclave allows an unauthorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20935",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20935"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20935",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20936 Windows NDIS Information Disclosure Vulnerability",
+    "description": "Out-of-bounds read in Windows NDIS allows an authorized attacker to disclose information with a physical attack.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20936",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20936"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20936",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20937 Windows File Explorer Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows File Explorer allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20937",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20937"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20937",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20939 Windows File Explorer Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows File Explorer allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20939",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20939"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20939",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20948 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Untrusted pointer dereference in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20948",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20948"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20948",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20949 Microsoft Excel Security Feature Bypass Vulnerability",
+    "description": "Improper access control in Microsoft Office Excel allows an unauthorized attacker to bypass a security feature locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20949",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20949"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20949",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20950 Microsoft Excel Remote Code Execution Vulnerability",
     "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59224",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20950",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59224"
+      "CVE-2026-20950"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59224",
+    "cve": "CVE-2026-20950",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59225 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59225",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59225"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59225",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59226 Microsoft Office Visio Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Visio allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59226",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59226"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59226",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59227 Microsoft Office Remote Code Execution Vulnerability",
+    "title": "CVE-2026-20952 Microsoft Office Remote Code Execution Vulnerability",
     "description": "Use after free in Microsoft Office allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59227",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20952",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59227"
+      "CVE-2026-20952"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59227",
+    "cve": "CVE-2026-20952",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59229 Microsoft Office Denial of Service Vulnerability",
-    "description": "Uncaught exception in Microsoft Office allows an unauthorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59229",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20957 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Integer underflow (wrap or wraparound) in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20957",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59229"
+      "CVE-2026-20957"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59229",
+    "cve": "CVE-2026-20957",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59232 Microsoft Excel Information Disclosure Vulnerability",
-    "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59232",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20958 Microsoft SharePoint Information Disclosure Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Office SharePoint allows an authorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20958",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59232"
+      "CVE-2026-20958"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59232",
+    "cve": "CVE-2026-20958",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59238 Microsoft PowerPoint Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office PowerPoint allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59238",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20941 Host Process for Windows Tasks Elevation of Privilege Vulnerability",
+    "description": "Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20941",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59238"
+      "CVE-2026-20941"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59238",
+    "cve": "CVE-2026-20941",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59241 Windows Health and Optimized Experiences Elevation of Privilege Vulnerability",
-    "description": "Improper link resolution before file access ('link following') in Windows Health and Optimized Experiences Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59241",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-21226 Azure Core shared client library for Python Remote Code Execution Vulnerability",
+    "description": "Deserialization of untrusted data in Azure Core shared client library for Python allows an authorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21226",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59241"
+      "CVE-2026-21226"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59241",
+    "cve": "CVE-2026-21226",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59244 NTLM Hash Disclosure Spoofing Vulnerability",
-    "description": "External control of file name or path in Windows Core Shell allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59244",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20823 Windows File Explorer Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows File Explorer allows an authorized attacker to disclose information locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20823",
+    "releaseDate": "Tue, 13 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59244"
+      "CVE-2026-20823"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59244",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59248 Microsoft Exchange Server Spoofing Vulnerability",
-    "description": "Improper input validation in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59248",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59248"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59248",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59230 Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Windows Remote Access Connection Manager allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59230",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59230"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59230",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59253 Windows Search Service Denial of Service Vulnerability",
-    "description": "Improper access control in Microsoft Windows Search Component allows an authorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59253",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59253"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59253",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59260 Microsoft Failover Cluster Virtual Driver Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Failover Cluster Virtual Driver allows an authorized attacker to disclose information locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59260",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59260"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59260",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59261 Windows Graphics Component Elevation of Privilege Vulnerability",
-    "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59261",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59261"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59261",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59275 Windows Authentication Elevation of Privilege Vulnerability",
-    "description": "Improper validation of specified type of input in Windows Authentication Methods allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59275",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59275"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59275",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59278 Windows Authentication Elevation of Privilege Vulnerability",
-    "description": "Improper validation of specified type of input in Windows Authentication Methods allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59278",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59278"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59278",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59285 Azure Monitor Agent Elevation of Privilege Vulnerability",
-    "description": "Deserialization of untrusted data in Azure Monitor Agent allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59285",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59285"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59285",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59287 Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-    "description": "Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59287"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59287",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59289 Windows Bluetooth Service Elevation of Privilege Vulnerability",
-    "description": "Double free in Windows Bluetooth Service allows an authorized attacker to elevate privileges locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59289",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59289"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59289",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-47827 MITRE CVE-2025-47827: Secure Boot bypass in IGEL OS before 11",
-    "description": "In IGEL OS before 11, Secure Boot can be bypassed because the igel-flash-driver module improperly verifies a cryptographic signature. Ultimately, a crafted root filesystem can be mounted from an unverified SquashFS image.\n\nMITRE created this CVE on their behalf. The documented Windows updates incorporate updates in IGEL OS which address this vulnerability. Please see [Security Update Guide Supports CVEs Assigned by Industry Partners](https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47827",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-47827"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-47827",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59497 Microsoft Defender for Linux Denial of Service Vulnerability",
-    "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Linux allows an authorized attacker to deny service locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59497",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59497"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59497",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59214 Microsoft Windows File Explorer Spoofing Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Windows File Explorer allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59214",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59214"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59214",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-55315 ASP.NET Security Feature Bypass Vulnerability",
-    "description": "Inconsistent interpretation of http requests ('http request/response smuggling') in ASP.NET Core allows an authorized attacker to bypass a security feature over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55315",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55315"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55315",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59223 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59223",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59223"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59223",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59228 Microsoft SharePoint Remote Code Execution Vulnerability",
-    "description": "Improper input validation in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59228",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59228"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59228",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2884 Cert CC: CVE-2025-2884 Out-of-Bounds read vulnerability in TCG TPM2.0 reference implementation",
-    "description": "[CVE-2025-2884](https://www.cve.org/CVERecord?id=CVE-2025-2884) is regarding a vulnerability in TCG TPM2.0 Reference implementation's CryptHmacSign helper function that is vulnerable to Out-of-Bounds read due to the lack of validation the signature scheme with the signature key's algorithm.\n \nCERT/CC created this CVE on their behalf. The documented Windows updates incorporate updates in TCG TPM2.0 Reference implementation which address this vulnerability. Please see [CVE-2025-2884](https://www.cve.org/CVERecord?id=CVE-2025-2884) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2884",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2884"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2884",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2024-30098 Windows Cryptographic Services Security Feature Bypass Vulnerability",
-    "description": "The following updates have been made to CVE-2024-30098: \n\n1. In the Security Updates table, added all supported versions Windows 11 25H2 as they are affected by the vulnerability.\n2. To enable the fix by default, Microsoft has released October 2025 security updates for all affected versions of Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, Windows Server 2022, and Windows Server 2022 23H2 Edition, Windows 10, and Windows 11.\n3. Updated the \"Are there any further actions I need to take to be protected from this vulnerability?\" FAQ to state that starting with the October 2025 security updates, the fix will be enabled by default (DisableCapiOverrideForRSA set to 1) and the KSP will be used for RSA based certificates in the Smart Card Certificate Propagation service. If you discover applications relying on the old behavior, the DisableCapiOverrideForRSA registry key can be set back to 0 to switch back to auditing mode. The DisableCapiOverrideForRSA registry key will be removed in April 2026. See the FAQ section of this CVE for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-30098",
-    "releaseDate": "Tue, 14 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2024-30098"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2024-30098",
+    "cve": "CVE-2026-20823",
     "kb": "",
     "knownIssues": ""
   },
@@ -25000,21 +24115,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-14174",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-0033 AMD CVE-2025-0033: RMP Corruption During SNP Initialization",
-    "description": "Microsoft is aware of [AMD-SB-3020 | CVE-2025-0033](http://https://www.amd.com/en/resources/product-security/bulletin/amd-sb-3020.html) disclosed by AMD on October 13, 2025.  \n\nCVE-2025-0033 is a vulnerability in AMD EPYC processors using Secure Encrypted Virtualization – Secure Nested Paging (SEV-SNP). It involves a race condition during Reverse Map Table (RMP) initialization that could allow a malicious or compromised hypervisor to modify RMP entries before they are locked, potentially impacting the integrity of SEV-SNP guest memory. This issue does not expose plaintext data or secrets and requires privileged control of the hypervisor to exploit.\n \nAcross Azure Confidential Computing products, multiple security guardrails are in place to prevent host compromise, combining isolation, integrity verification and continuous monitoring. All host operations follow audited and approved management pathways, with administrative access strictly controlled, limited and logged. Together, these protections reduce the risk of host compromise or unauthorized memory manipulation, helping ensure that confidential workloads and customer VMs maintain their confidentiality and integrity on Azure hosts.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0033",
-    "releaseDate": "Mon, 13 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-0033"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-0033",
     "kb": "",
     "knownIssues": ""
   },
