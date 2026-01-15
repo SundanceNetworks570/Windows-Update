@@ -2625,77 +2625,47 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-47989 Arc Enabled Servers - Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Affected software updated with new package information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47989",
-    "releaseDate": "Wed, 15 Oct 2025 07:00:00 Z",
+    "title": "CVE-2025-64678 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64678",
+    "releaseDate": "Wed, 14 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-47989"
+      "CVE-2025-64678"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-47989",
+    "cve": "CVE-2025-64678",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58724 Arc Enabled Servers - Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Affected software updated with new package information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58724",
-    "releaseDate": "Wed, 15 Oct 2025 07:00:00 Z",
+    "title": "CVE-2025-64679 Windows DWM Core Library Elevation of Privilege Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64679",
+    "releaseDate": "Wed, 14 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58724"
+      "CVE-2025-64679"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58724",
+    "cve": "CVE-2025-64679",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-0033 AMD CVE-2025-0033: RMP Corruption During SNP Initialization",
-    "description": "Corrected security updates table.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0033",
-    "releaseDate": "Wed, 15 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-0033"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-0033",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59227 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Updated acknowledgment.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59227",
-    "releaseDate": "Wed, 15 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59227"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59227",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59233 Microsoft Excel Remote Code Execution Vulnerability",
+    "title": "CVE-2026-20958 Microsoft SharePoint Information Disclosure Vulnerability",
     "description": "Updated acknowledgment. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59233",
-    "releaseDate": "Wed, 15 Oct 2025 07:00:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20958",
+    "releaseDate": "Wed, 14 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59233"
+      "CVE-2026-20958"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59233",
+    "cve": "CVE-2026-20958",
     "kb": "",
     "knownIssues": ""
   },
