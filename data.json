@@ -11773,216 +11773,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-53741 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53741",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53741"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53741",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53759 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53759",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53759"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53759",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53760 Microsoft SharePoint Elevation of Privilege Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53760",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53760"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53760",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53761 Microsoft PowerPoint Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53761",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53761"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53761",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-50154 Microsoft Windows File Explorer Spoofing Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50154",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-50154"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-50154",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53731 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53731",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53731"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53731",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53733 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53733",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53733"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53733",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53735 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53735",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53735"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53735",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53736 Microsoft Word Information Disclosure Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53736",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53736"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53736",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53737 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53737",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53737"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53737",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53738 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53738",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53738"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53738",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53739 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53739",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53739"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53739",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53740 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53740",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53740"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53740",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-53784 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Revised the packages to include Download Center ID for this vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53784",
-    "releaseDate": "Thu, 16 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-53784"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-53784",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "Chromium: CVE-2025-13042 Inappropriate implementation in V8",
     "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13042",
@@ -25921,32 +25711,182 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-11756 Use after free in Safe Browsing",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11756",
-    "releaseDate": "Fri, 17 Oct 2025 15:29:43 Z",
+    "title": "Chromium: CVE-2026-0908 Use after free in ANGLE",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0908",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:26 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-11756"
+      "CVE-2026-0908"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-11756",
+    "cve": "CVE-2026-0908",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55320 Configuration Manager Elevation of Privilege Vulnerability",
-    "description": "The score for this vulnerability has been updated to reflect a change in score in the** Attack Vector **metric from **Local** to **Adjacent**.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55320",
-    "releaseDate": "Fri, 17 Oct 2025 07:00:00 Z",
+    "title": "Chromium: CVE-2026-0907 Incorrect security UI in Split View",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0907",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:25 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55320"
+      "CVE-2026-0907"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55320",
+    "cve": "CVE-2026-0907",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0906 Incorrect security UI",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0906",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:24 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0906"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0906",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0905 Insufficient policy enforcement in Network",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0905",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:24 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0904 Incorrect security UI in Digital Credentials",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0904",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:23 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0904"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0904",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0903 Insufficient validation of untrusted input in Downloads",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0903",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:22 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0903"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0903",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0902 Inappropriate implementation in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0902",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:21 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0902"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0902",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0901 Inappropriate implementation in Blink",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0901",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:20 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0901"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0901",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0900 Inappropriate implementation in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0900",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:19 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0900"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0900",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-0899 Out of bounds memory access in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0899",
+    "releaseDate": "Fri, 16 Jan 2026 20:08:16 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0899"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0899",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20960 Microsoft Power Apps Remote Code Execution Vulnerability",
+    "description": "Improper authorization in Microsoft Power Apps allows an authorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20960",
+    "releaseDate": "Fri, 16 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20960"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20960",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21223 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+    "description": "Microsoft Edge Elevation Service exposes a privileged COM interface that inadequately validates the privileges of the calling process. A standard (non‑administrator) local user can invoke the IElevatorEdge interface method LaunchUpdateCmdElevatedAndWait, causing the service to execute privileged update commands as LocalSystem.\n\nThis allows a non‑administrator to enable or disable Windows Virtualization‑Based Security (VBS) by modifying protected system registry keys under HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard. Disabling VBS weakens critical platform protections such as Credential Guard, Hypervisor‑protected Code Integrity (HVCI), and the Secure Kernel, resulting in a security feature bypass.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21223",
+    "releaseDate": "Fri, 16 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21223"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21223",
     "kb": "",
     "knownIssues": ""
   },
