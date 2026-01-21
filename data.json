@@ -4290,6 +4290,111 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-20805 Desktop Window Manager Information Disclosure Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20805"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20805",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20818 Windows Kernel Information Disclosure Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20818",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20818"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20818",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20943 Microsoft Office Click-To-Run Remote Code Execution Vulnerability",
+    "description": "Updated FAQ information. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20943",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20943"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20943",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20830 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20830",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20830"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20830",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21221 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21221",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20848 Windows SMB Server Elevation of Privilege Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20848",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20848"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20848",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20943 Microsoft Office Click-To-Run Remote Code Execution Vulnerability",
+    "description": "Corrected the affected product name in the CVE title and in the FAQs. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20943",
+    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20943"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20943",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "Chromium: CVE-2025-13224 Type Confusion in V8",
     "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13224",
