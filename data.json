@@ -1260,96 +1260,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55315 ASP.NET Security Feature Bypass Vulnerability",
-    "description": "Added an FAQ to explain the disparity between the Important severity, the exploitability assessment of \"less likely to be exploited\", and the high CVSS3.1 score of 9.9 out of 10.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55315",
-    "releaseDate": "Wed, 22 Oct 2025 07:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-55315"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-55315",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40010 afs: Fix potential null pointer dereference in afs_put_server",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40010",
-    "releaseDate": "Wed, 22 Oct 2025 01:01:41 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40010"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40010",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40011 drm/gma500: Fix null dereference in hdmi teardown",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40011",
-    "releaseDate": "Wed, 22 Oct 2025 01:01:36 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40011"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40011",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40005 spi: cadence-quadspi: Implement refcount to handle unbind during busy",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40005",
-    "releaseDate": "Wed, 22 Oct 2025 01:01:31 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40005"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40005",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40016 media: uvcvideo: Mark invalid entities with id UVC_INVALID_ENTITY_ID",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40016",
-    "releaseDate": "Wed, 22 Oct 2025 01:01:25 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40016"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40016",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40013 ASoC: qcom: audioreach: fix potential null pointer dereference",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40013",
-    "releaseDate": "Wed, 22 Oct 2025 01:01:20 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40013"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40013",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2025-55753 Apache HTTP Server: mod_md (ACME), unintended retry intervals",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55753",
@@ -11261,92 +11171,137 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59295 Windows URL Parsing Remote Code Execution Vulnerability",
-    "description": "Added an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59295",
-    "releaseDate": "Thu, 23 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-21520 Copilot Studio Information Disclosure Vulnerability",
+    "description": "Exposure of Sensitive Information to an Unauthorized Actor in Copilot Studio allows a unauthenticated attacker to view sensitive information through network attack vector",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21520",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59295"
+      "CVE-2026-21520"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59295",
+    "cve": "CVE-2026-21520",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-55676 Windows USB Video Class System Driver Information Disclosure Vulnerability",
-    "description": "Updated acknowledgment. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55676",
-    "releaseDate": "Thu, 23 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-24304 Azure Resource Manager Elevation of Privilege Vulnerability",
+    "description": "Improper access control in Azure Resource Manager allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24304",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-55676"
+      "CVE-2026-24304"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-55676",
+    "cve": "CVE-2026-24304",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59500 Azure Notification Service Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Notification Service allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59500",
-    "releaseDate": "Thu, 23 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-24306 Azure Front Door Elevation of Privilege Vulnerability",
+    "description": "Improper access control in Azure Front Door (AFD) allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24306",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59500"
+      "CVE-2026-24306"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59500",
+    "cve": "CVE-2026-24306",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59273 Azure Event Grid System Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59273",
-    "releaseDate": "Thu, 23 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-21524 Azure Data Explorer Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Azure Data Explorer allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21524",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59273"
+      "CVE-2026-21524"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59273",
+    "cve": "CVE-2026-21524",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59503 Azure Compute Resource Provider Elevation of Privilege Vulnerability",
-    "description": "Server-side request forgery (ssrf) in Azure Compute Gallery allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59503",
-    "releaseDate": "Thu, 23 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-24305 Azure Entra ID Elevation of Privilege Vulnerability",
+    "description": "Azure Entra ID Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24305",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59503"
+      "CVE-2026-24305"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59503",
+    "cve": "CVE-2026-24305",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59287 Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-    "description": "To comprehensively address CVE-2025-59287, Microsoft has released an out of band security update for the following supported versions of Windows Server: Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, Windows Server 2022, Windows Server 2022, 23H2 Edition (Server Core installation), and Windows Server 2025. Note that a reboot will be required after you install the updates.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287",
-    "releaseDate": "Thu, 23 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-24307 M365 Copilot Information Disclosure Vulnerability",
+    "description": "Improper validation of specified type of input in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24307",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59287"
+      "CVE-2026-24307"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59287",
+    "cve": "CVE-2026-24307",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21227 Azure Logic Apps Elevation of Privilege Vulnerability",
+    "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21227",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21227"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21227",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21521 Word Copilot Information Disclosure Vulnerability",
+    "description": "Improper neutralization of escape, meta, or control sequences in Copilot allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21521",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21521"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21521",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21264 Microsoft Account Spoofing Vulnerability",
+    "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Account allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21264",
+    "releaseDate": "Thu, 22 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21264"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21264",
     "kb": "",
     "knownIssues": ""
   },
