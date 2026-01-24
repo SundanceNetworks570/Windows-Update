@@ -25396,167 +25396,32 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59287 Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-    "description": "Security hotpatch updates are now available for supported versions of Windows Server 2022 and Windows Server 2025. Note that a reboot will be required after you install these hotpatch updates.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287",
-    "releaseDate": "Fri, 24 Oct 2025 07:00:00 Z",
+    "title": "Chromium: CVE-2026-1220 Race in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1220",
+    "releaseDate": "Fri, 23 Jan 2026 08:00:22 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59287"
+      "CVE-2026-1220"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59287",
+    "cve": "CVE-2026-1220",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59287 Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-    "description": "Updated links to security updates.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287",
-    "releaseDate": "Fri, 24 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20805 Desktop Window Manager Information Disclosure Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805",
+    "releaseDate": "Fri, 23 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59287"
+      "CVE-2026-20805"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59287",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-62813 LZ4 through 1.10.0 allows attackers to cause a denial of service (application crash) or possibly have unspecified other impact when the application processes untrusted LZ4 frames. For example, LZ4F_createCDict_advanced in lib/lz4frame.c mishandles NULL checks.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62813",
-    "releaseDate": "Fri, 24 Oct 2025 01:02:42 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-62813"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-62813",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49635 drm/i915/selftests: fix subtraction overflow bug",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49635",
-    "releaseDate": "Fri, 24 Oct 2025 01:02:36 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49635"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49635",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49610 KVM: VMX: Prevent RSB underflow before vmenter",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49610",
-    "releaseDate": "Fri, 24 Oct 2025 01:02:30 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49610"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49610",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49562 KVM: x86: Use __try_cmpxchg_user() to update guest PTE A/D bits",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49562",
-    "releaseDate": "Fri, 24 Oct 2025 01:01:54 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49562"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49562",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49552 bpf: Fix combination of jit blinding and pointers to bpf subprogs.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49552",
-    "releaseDate": "Fri, 24 Oct 2025 01:01:49 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49552"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49552",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49543 ath11k: fix the warning of dev_wake in mhi_pm_disable_transition()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49543",
-    "releaseDate": "Fri, 24 Oct 2025 01:01:44 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49543"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49543",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49469 btrfs: fix anon_dev leak in create_subvol()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49469",
-    "releaseDate": "Fri, 24 Oct 2025 01:01:38 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49469"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49469",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-49173 spi: fsi: Implement a timeout for polling status",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-49173",
-    "releaseDate": "Fri, 24 Oct 2025 01:01:33 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-49173"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-49173",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-11411 Possible domain hijacking via promiscuous records in the authority section",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11411",
-    "releaseDate": "Fri, 24 Oct 2025 01:01:26 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11411"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11411",
+    "cve": "CVE-2026-20805",
     "kb": "",
     "knownIssues": ""
   },
