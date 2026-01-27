@@ -23789,6 +23789,51 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-21509 Microsoft Office Security Feature Bypass Vulnerability",
+    "description": "The following revisions have been made: 1) Microsoft is announcing the availability of the security updates for Microsoft Office 2016 and 2019. Customers running these versions of Office should install the update for their product to be protected from this vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action. 2) Updated FAQ and Mitigations.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509",
+    "releaseDate": "Mon, 26 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21509"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21509",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21509 Microsoft Office Security Feature Bypass Vulnerability",
+    "description": "Corrected CVSS score. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509",
+    "releaseDate": "Mon, 26 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21509"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21509",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21509 Microsoft Office Security Feature Bypass Vulnerability",
+    "description": "Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509",
+    "releaseDate": "Mon, 26 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21509"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21509",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-12105 Libsoup: heap use-after-free in libsoup message queue handling during http/2 read completion",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12105",
