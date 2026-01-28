@@ -3825,17 +3825,32 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-59503 Azure Compute Resource Provider Elevation of Privilege Vulnerability",
-    "description": "Updated one or more CVSS scores for the affected products. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59503",
-    "releaseDate": "Tue, 28 Oct 2025 07:00:00 Z",
+    "title": "CVE-2026-20805 Desktop Window Manager Information Disclosure Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805",
+    "releaseDate": "Tue, 27 Jan 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-59503"
+      "CVE-2026-20805"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-59503",
+    "cve": "CVE-2026-20805",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21509 Microsoft Office Security Feature Bypass Vulnerability",
+    "description": "Updated FAQ information. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509",
+    "releaseDate": "Tue, 27 Jan 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21509"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21509",
     "kb": "",
     "knownIssues": ""
   },
