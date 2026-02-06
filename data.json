@@ -14068,47 +14068,77 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-12727 Inappropriate implementation in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12727",
-    "releaseDate": "Thu, 06 Nov 2025 19:20:28 Z",
+    "title": "Chromium: CVE-2026-1861 Heap buffer overflow in libvpx",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1861",
+    "releaseDate": "Thu, 05 Feb 2026 19:27:27 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-12727"
+      "CVE-2026-1861"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-12727",
+    "cve": "CVE-2026-1861",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-12726 Inappropriate implementation in Views.",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12726",
-    "releaseDate": "Thu, 06 Nov 2025 19:20:27 Z",
+    "title": "CVE-2026-24302 Azure Arc Elevation of Privilege Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24302",
+    "releaseDate": "Thu, 05 Feb 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-12726"
+      "CVE-2026-24302"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-12726",
+    "cve": "CVE-2026-24302",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2025-12725 Out of bounds write in WebGPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/202[SS9.1]5) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12725",
-    "releaseDate": "Thu, 06 Nov 2025 19:20:24 Z",
+    "title": "CVE-2026-21532 Azure Function Information Disclosure Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21532",
+    "releaseDate": "Thu, 05 Feb 2026 08:00:00 Z",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-12725"
+      "CVE-2026-21532"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-12725",
+    "cve": "CVE-2026-21532",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-24300 Azure Front Door Elevation of Privilege Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24300",
+    "releaseDate": "Thu, 05 Feb 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-24300"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-24300",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0391 Microsoft Edge (Chromium-based) for Android Spoofing Vulnerability",
+    "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge for Android allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0391",
+    "releaseDate": "Thu, 05 Feb 2026 08:00:00 Z",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0391"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0391",
     "kb": "",
     "knownIssues": ""
   },
