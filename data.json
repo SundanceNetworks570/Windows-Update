@@ -24932,6 +24932,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-59213 Configuration Manager Elevation of Privilege Vulnerability",
+    "description": "Updated information to include CVSS scores. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59213",
+    "releaseDate": "Fri, 13 Feb 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-59213"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-59213",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21517 Windows App for Mac Installer Elevation of Privilege Vulnerability",
+    "description": "Download links fixed",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21517",
+    "releaseDate": "Fri, 13 Feb 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21517"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21517",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-62468 Windows Defender Firewall Service Information Disclosure Vulnerability",
     "description": "Corrected CVSS Privileges metric to PR:L, corrected Exploitability assessment to Expoitation More Likely, and updated FAQs. These are informational changes only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62468",
