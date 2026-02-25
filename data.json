@@ -285,6 +285,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-38656 wifi: iwlwifi: Fix error code in iwl_op_mode_dvm_start()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38656",
+    "releaseDate": "Wed, 25 Feb 2026 01:03:29 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38656"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38656",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-53543 vdpa: Add max vqp attr to vdpa_nl_policy for nlattr length check",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53543",
+    "releaseDate": "Wed, 25 Feb 2026 01:03:25 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-53543"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-53543",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-61915 OpenPrinting CUPS vulnerable to stack based out-of-bound write",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61915",
@@ -27323,21 +27353,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-21509",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-64660 GitHub Copilot and Visual Studio Code Remote Code Execution Vulnerability",
-    "description": "The following revisions have been made: 1) In the Security Updates table, corrected the impact entries to Remote Code Execution. 2) The CVSS scores have been updated. These are informational changes only. Customers who have successfully installed the update do not need to take any further action.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64660",
-    "releaseDate": "Tue, 25 Nov 2025 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-64660"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-64660",
     "kb": "",
     "knownIssues": ""
   },
