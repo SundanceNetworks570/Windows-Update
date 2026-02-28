@@ -44307,6 +44307,81 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-40005 spi: cadence-quadspi: Implement refcount to handle unbind during busy",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40005",
+    "releaseDate": "Sat, 28 Feb 2026 01:36:48 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40005"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40005",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38162 netfilter: nft_set_pipapo: prevent overflow in lookup table allocation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38162",
+    "releaseDate": "Sat, 28 Feb 2026 01:36:02 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38162"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38162",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40082 hfsplus: fix slab-out-of-bounds read in hfsplus_uni2asc()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40082",
+    "releaseDate": "Sat, 28 Feb 2026 01:04:41 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40082"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40082",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40040 mm/ksm: fix flag-dropping behavior in ksm_madvise",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40040",
+    "releaseDate": "Sat, 28 Feb 2026 01:01:37 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40040"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40040",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-40039 ksmbd: Fix race condition in RPC handle list access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40039",
+    "releaseDate": "Sat, 28 Feb 2026 01:01:32 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-40039"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-40039",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
@@ -52586,6 +52661,36 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-1504",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21518 GitHub Copilot and Visual Studio Code Security Feature Bypass Vulnerability",
+    "description": "Download links fixed",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21518",
+    "releaseDate": "Fri, 27 Feb 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21518"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21518",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21523 GitHub Copilot and Visual Studio Code Remote Code Execution Vulnerability",
+    "description": "Download links fixed",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21523",
+    "releaseDate": "Fri, 27 Feb 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21523"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21523",
     "kb": "",
     "knownIssues": ""
   },
