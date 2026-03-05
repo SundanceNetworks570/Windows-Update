@@ -26967,302 +26967,107 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-11494 GNU Binutils Linker elfxx-x86.c _bfd_x86_elf_late_size_sections out-of-bounds",
+    "title": "CVE-2025-58160 Tracing logging user input may result in poisoning logs with ANSI escape sequences",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11494",
-    "releaseDate": "Wed, 03 Dec 2025 01:39:19 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58160",
+    "releaseDate": "Wed, 04 Mar 2026 01:13:02 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-11494"
+      "CVE-2025-58160"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-11494",
+    "cve": "CVE-2025-58160",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-38626 f2fs: fix to trigger foreground gc during f2fs_map_blocks() in lfs mode",
+    "title": "CVE-2026-25541 Bytes is vulnerable to integer overflow in BytesMut::reserve",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38626",
-    "releaseDate": "Wed, 03 Dec 2025 01:38:53 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25541",
+    "releaseDate": "Wed, 04 Mar 2026 01:11:13 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-38626"
+      "CVE-2026-25541"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-38626",
+    "cve": "CVE-2026-25541",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-38615 fs/ntfs3: cancle set bad inode after removing name fails",
+    "title": "CVE-2026-28422 Vim has stack-buffer-overflow in build_stl_str_hl()",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38615",
-    "releaseDate": "Wed, 03 Dec 2025 01:38:48 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28422",
+    "releaseDate": "Wed, 04 Mar 2026 01:10:53 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-38615"
+      "CVE-2026-28422"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-38615",
+    "cve": "CVE-2026-28422",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-38597 drm/rockchip: vop2: fail cleanly if missing a primary plane for a video-port",
+    "title": "CVE-2026-28421 Vim has a heap-buffer-overflow and a segmentation fault",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38597",
-    "releaseDate": "Wed, 03 Dec 2025 01:38:43 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28421",
+    "releaseDate": "Wed, 04 Mar 2026 01:10:37 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-38597"
+      "CVE-2026-28421"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-38597",
+    "cve": "CVE-2026-28421",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-38659 gfs2: No more self recovery",
+    "title": "CVE-2026-28420 Vim has Heap-based Buffer Overflow and OOB Read in :terminal",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38659",
-    "releaseDate": "Wed, 03 Dec 2025 01:38:39 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28420",
+    "releaseDate": "Wed, 04 Mar 2026 01:10:21 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-38659"
+      "CVE-2026-28420"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-38659",
+    "cve": "CVE-2026-28420",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-64506 LIBPNG is vulnerable to a heap buffer over-read in `png_write_image_8bit` with grayscale+alpha or RGB/RGBA images",
+    "title": "CVE-2026-28419 Vim has Heap-based Buffer Underflow in Emacs tags parsing",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64506",
-    "releaseDate": "Wed, 03 Dec 2025 01:38:33 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28419",
+    "releaseDate": "Wed, 04 Mar 2026 01:10:07 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-64506"
+      "CVE-2026-28419"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-64506",
+    "cve": "CVE-2026-28419",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-64505 LIBPNG is vulnerable to a heap buffer overflow in `png_do_quantize` via malformed palette index",
+    "title": "CVE-2026-27965 Vitess users with backup storage access can gain unauthorized access to production deployment environments",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64505",
-    "releaseDate": "Wed, 03 Dec 2025 01:38:21 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27965",
+    "releaseDate": "Wed, 04 Mar 2026 01:04:21 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-64505"
+      "CVE-2026-27965"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-64505",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-11932 Timing Side-Channel in PSK Binder Verification",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11932",
-    "releaseDate": "Wed, 03 Dec 2025 01:37:14 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11932"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11932",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12889 TLS 1.2 Client Can Downgrade Digest Used",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12889",
-    "releaseDate": "Wed, 03 Dec 2025 01:37:06 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12889"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12889",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-11931 Integer Underflow Leads to Out-of-Bounds Access in XChaCha20-Poly1305 Decrypt",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11931",
-    "releaseDate": "Wed, 03 Dec 2025 01:36:58 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11931"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11931",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-11936 Potential DoS Vulnerability through Multiple KeyShareEntry with Same Group in TLS 1.3 ClientHello",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11936",
-    "releaseDate": "Wed, 03 Dec 2025 01:36:51 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-11936"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-11936",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12888 Constant Time Issue with Xtensa-based ESP32 and X22519",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12888",
-    "releaseDate": "Wed, 03 Dec 2025 01:36:46 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12888"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12888",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58183 Unbounded allocation when parsing GNU sparse map in archive/tar",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58183",
-    "releaseDate": "Wed, 03 Dec 2025 01:36:14 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58183"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58183",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12638 Path Traversal Vulnerability in keras-team/keras via Tar Archive Extraction in keras.utils.get_file()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12638",
-    "releaseDate": "Wed, 03 Dec 2025 01:02:14 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12638"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12638",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38643 wifi: cfg80211: Add missing lock in cfg80211_check_and_end_cac()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38643",
-    "releaseDate": "Wed, 03 Dec 2025 01:02:08 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38643"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38643",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-66221 Werkzeug safe_join() allows Windows special device names",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66221",
-    "releaseDate": "Wed, 03 Dec 2025 01:01:52 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-66221"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-66221",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61915 OpenPrinting CUPS vulnerable to stack based out-of-bound write",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61915",
-    "releaseDate": "Wed, 03 Dec 2025 01:01:36 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61915"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61915",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58436 OpenPrinting CUPS slow client can halt cupsd, leading to a possible DoS attack",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58436",
-    "releaseDate": "Wed, 03 Dec 2025 01:01:31 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58436"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58436",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-24736 A Malformed Lua script can crash Redis",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24736",
-    "releaseDate": "Wed, 03 Dec 2025 01:01:25 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-24736"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-24736",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-24735 Lua scripts can be manipulated to overcome ACL rules in Redis",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24735",
-    "releaseDate": "Wed, 03 Dec 2025 01:01:20 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-24735"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-24735",
+    "cve": "CVE-2026-27965",
     "kb": "",
     "knownIssues": ""
   },
@@ -38727,6 +38532,216 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2024-24856 NULL pointer deference in acpi_db_convert_to_package of Linux acpi module",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-24856",
+    "releaseDate": "Thu, 05 Mar 2026 01:41:50 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-24856"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-24856",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-37745 PM: hibernate: Avoid deadlock in hibernate_compressor_param_set()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37745",
+    "releaseDate": "Thu, 05 Mar 2026 01:41:34 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-37745"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-37745",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-57875 block: RCU protect disk->conv_zones_bitmap",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57875",
+    "releaseDate": "Thu, 05 Mar 2026 01:41:01 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-57875"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-57875",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0038 In multiple functions of mem_protect.c, there is a possible way to execute arbitrary code due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0038",
+    "releaseDate": "Thu, 05 Mar 2026 01:09:10 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0038"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0038",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3336 PKCS7_verify Certificate Chain Validation Bypass in AWS-LC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3336",
+    "releaseDate": "Thu, 05 Mar 2026 01:09:04 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3336"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3336",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3338 PKCS7_verify Signature Validation Bypass in AWS-LC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3338",
+    "releaseDate": "Thu, 05 Mar 2026 01:08:53 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3338"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3338",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23865 An integer overflow in the tt_var_load_item_variation_store function of the Freetype library in versions 2.13.2 and 2.13.3 may allow for an out of bounds read operation when parsing HVAR/VVAR/MVAR tables in OpenType variable fonts. This issue is fixed in version 2.14.2.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23865",
+    "releaseDate": "Thu, 05 Mar 2026 01:08:37 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23865"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23865",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23231 netfilter: nf_tables: fix use-after-free in nf_tables_addchain()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23231",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:52 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23231"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23231",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71238 scsi: qla2xxx: Fix bsg_done() causing double free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71238",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:46 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71238"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71238",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23238 romfs: check sb_set_blocksize() return value",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23238",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:40 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23238"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23238",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23237 platform/x86: classmate-laptop: Add missing NULL pointer checks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23237",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:34 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23237"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23237",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23235 f2fs: fix out-of-bounds access in sysfs attribute read/write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23235",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:29 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23235"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23235",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23234 f2fs: fix to avoid UAF in f2fs_write_end_io()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23234",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:23 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23234"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23234",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23236 fbdev: smscufx: properly copy ioctl memory to kernelspace",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23236",
+    "releaseDate": "Thu, 05 Mar 2026 01:04:17 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "Chromium: CVE-2026-1861 Heap buffer overflow in libvpx",
     "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1861",
@@ -38798,156 +38813,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-0391",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-66031 node-forge ASN.1 Unbounded Recursion",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66031",
-    "releaseDate": "Thu, 04 Dec 2025 14:36:01 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-66031"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-66031",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-66030 node-forge ASN.1 OID Integer Truncation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66030",
-    "releaseDate": "Thu, 04 Dec 2025 14:35:55 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-66030"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-66030",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12816 CVE-2025-12816",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12816",
-    "releaseDate": "Thu, 04 Dec 2025 14:35:48 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12816"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12816",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12977 CVE-2025-12977",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12977",
-    "releaseDate": "Thu, 04 Dec 2025 14:35:42 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12977"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12977",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12969 CVE-2025-12969",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12969",
-    "releaseDate": "Thu, 04 Dec 2025 14:35:35 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12969"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12969",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-39829 trace/fgraph: Fix the warning caused by missing unregister notifier",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39829",
-    "releaseDate": "Thu, 04 Dec 2025 01:01:45 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-39829"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-39829",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-39810 bnxt_en: Fix memory corruption when FW resources change during ifdown",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39810",
-    "releaseDate": "Thu, 04 Dec 2025 01:01:40 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-39810"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-39810",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2023-53292 blk-mq: fix NULL dereference on q->elevator in blk_mq_elv_switch_none",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53292",
-    "releaseDate": "Thu, 04 Dec 2025 01:01:35 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2023-53292"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2023-53292",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2023-53261 coresight: Fix memory leak in acpi_buffer->pointer",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53261",
-    "releaseDate": "Thu, 04 Dec 2025 01:01:30 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2023-53261"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2023-53261",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2022-50266 kprobes: Fix check for probe enabled in kill_kprobe()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-50266",
-    "releaseDate": "Thu, 04 Dec 2025 01:01:24 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2022-50266"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2022-50266",
     "kb": "",
     "knownIssues": ""
   },
