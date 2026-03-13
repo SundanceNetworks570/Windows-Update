@@ -35472,6 +35472,66 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-26030 GitHub: CVE-2026-26030 Microsoft Semantic Kernel InMemoryVectorStore filter functionality vulnerable",
+    "description": "Acknowledgement added. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26030",
+    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26030"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26030",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26133 M365 Copilot Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26133",
+    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26133"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26133",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20841 Windows Notepad App Remote Code Execution Vulnerability",
+    "description": "To comprehensively address CVE-2026-20841, Microsoft has released February 2026 security updates for the Windows Notepad App. Microsoft recommends that customers install the update to be fully protected from the vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20841",
+    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20841"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20841",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26133 M365 Copilot Information Disclosure Vulnerability",
+    "description": "Ai command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26133",
+    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26133"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26133",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
@@ -47715,6 +47775,96 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-3805 use after free in SMB connection reuse",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3805",
+    "releaseDate": "Fri, 13 Mar 2026 01:03:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3805"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3805",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3904",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3904",
+    "releaseDate": "Fri, 13 Mar 2026 01:03:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3904"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3904",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23868",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23868",
+    "releaseDate": "Fri, 13 Mar 2026 01:02:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23868"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23868",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3784 wrong proxy connection reuse with credentials",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3784",
+    "releaseDate": "Fri, 13 Mar 2026 01:02:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3784"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3784",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3783 token leak with redirect and netrc",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3783",
+    "releaseDate": "Fri, 13 Mar 2026 01:02:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3783"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3783",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-1965 bad reuse of HTTP Negotiate connection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1965",
+    "releaseDate": "Fri, 13 Mar 2026 01:01:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-1965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-1965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-59213 Configuration Manager Elevation of Privilege Vulnerability",
     "description": "Updated information to include CVSS scores. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59213",
@@ -47741,306 +47891,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-21517",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-62468 Windows Defender Firewall Service Information Disclosure Vulnerability",
-    "description": "Corrected CVSS Privileges metric to PR:L, corrected Exploitability assessment to Expoitation More Likely, and updated FAQs. These are informational changes only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62468",
-    "releaseDate": "Fri, 12 Dec 2025 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-62468"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-62468",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
-    "releaseDate": "Fri, 12 Dec 2025 01:38:32 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61727"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61727",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61729 Excessive resource consumption when printing error string for host certificate validation in crypto/x509",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61729",
-    "releaseDate": "Fri, 12 Dec 2025 01:38:08 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61729"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61729",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61725 Excessive CPU consumption in ParseAddress in net/mail",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61725",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:32 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61725"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61725",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-47912 Insufficient validation of bracketed IPv6 hostnames in net/url",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47912",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:27 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-47912"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-47912",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:22 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58188"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58188",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58185 Parsing DER payload can cause memory exhaustion in encoding/asn1",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58185",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:17 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58185"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58185",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61723 Quadratic complexity when parsing some invalid inputs in encoding/pem",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61723",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:12 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61723"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61723",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58187 Quadratic complexity when checking name constraints in crypto/x509",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58187",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:06 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58187"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58187",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
-    "releaseDate": "Fri, 12 Dec 2025 01:37:01 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61724"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61724",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58186 Lack of limit when parsing cookies can cause memory exhaustion in net/http",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58186",
-    "releaseDate": "Fri, 12 Dec 2025 01:36:57 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58186"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58186",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58183 Unbounded allocation when parsing GNU sparse map in archive/tar",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58183",
-    "releaseDate": "Fri, 12 Dec 2025 01:36:52 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58183"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58183",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2023-45284 Incorrect detection of reserved device names on Windows in path/filepath",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-45284",
-    "releaseDate": "Fri, 12 Dec 2025 01:03:18 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2023-45284"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2023-45284",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49180 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in x resize, rotate and reflect (randr) extension",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49180",
-    "releaseDate": "Fri, 12 Dec 2025 01:03:13 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49180"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49180",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49178 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: unprocessed client request due to bytes to ignore",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49178",
-    "releaseDate": "Fri, 12 Dec 2025 01:03:08 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49178"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49178",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49176 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in big requests extension",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49176",
-    "releaseDate": "Fri, 12 Dec 2025 01:03:03 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49176"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49176",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49177 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: data leak in xfixes extension's xfixessetclientdisconnectmode",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49177",
-    "releaseDate": "Fri, 12 Dec 2025 01:02:58 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49177"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49177",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49179 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: integer overflow in x record extension",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49179",
-    "releaseDate": "Fri, 12 Dec 2025 01:02:52 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49179"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49179",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-49175 Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: out-of-bounds read in x rendering extension animated cursors",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49175",
-    "releaseDate": "Fri, 12 Dec 2025 01:02:48 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-49175"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-49175",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-39927 ceph: fix race condition validating r_parent before applying state",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39927",
-    "releaseDate": "Fri, 12 Dec 2025 01:01:37 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-39927"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-39927",
     "kb": "",
     "knownIssues": ""
   },
