@@ -45283,302 +45283,167 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+    "title": "CVE-2026-23868",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
-    "releaseDate": "Sat, 13 Dec 2025 01:39:00 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23868",
+    "releaseDate": "Sat, 14 Mar 2026 01:37:47 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61727"
+      "CVE-2026-23868"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61727",
+    "cve": "CVE-2026-23868",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61729 Excessive resource consumption when printing error string for host certificate validation in crypto/x509",
+    "title": "CVE-2026-27137 Incorrect enforcement of email constraints in crypto/x509",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61729",
-    "releaseDate": "Sat, 13 Dec 2025 01:38:50 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27137",
+    "releaseDate": "Sat, 14 Mar 2026 01:37:36 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61729"
+      "CVE-2026-27137"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61729",
+    "cve": "CVE-2026-27137",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61664 Grub2: missing unregister call for normal_exit command may lead to use-after-free",
+    "title": "CVE-2026-27138 Panic in name constraint checking for malformed certificates in crypto/x509",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61664",
-    "releaseDate": "Sat, 13 Dec 2025 01:38:41 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27138",
+    "releaseDate": "Sat, 14 Mar 2026 01:37:26 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61664"
+      "CVE-2026-27138"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61664",
+    "cve": "CVE-2026-27138",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61661 Grub2: grub2: out-of-bounds write via malicious usb device",
+    "title": "CVE-2026-3494 MariaDB Server Audit Plugin Comment Handling Bypass",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61661",
-    "releaseDate": "Sat, 13 Dec 2025 01:38:34 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3494",
+    "releaseDate": "Sat, 14 Mar 2026 01:37:11 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61661"
+      "CVE-2026-3494"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61661",
+    "cve": "CVE-2026-3494",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61663 Grub2: missing unregister call for normal commands may lead to use-after-free",
+    "title": "CVE-2026-26018 CoreDNS Loop Detection Denial of Service Vulnerability",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61663",
-    "releaseDate": "Sat, 13 Dec 2025 01:38:28 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26018",
+    "releaseDate": "Sat, 14 Mar 2026 01:37:01 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61663"
+      "CVE-2026-26018"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61663",
+    "cve": "CVE-2026-26018",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61662 Grub2: missing unregister call for gettext command may lead to use-after-free",
+    "title": "CVE-2026-26017 CoreDNS ACL Bypass",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61662",
-    "releaseDate": "Sat, 13 Dec 2025 01:38:22 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26017",
+    "releaseDate": "Sat, 14 Mar 2026 01:36:50 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61662"
+      "CVE-2026-26017"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61662",
+    "cve": "CVE-2026-26017",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61725 Excessive CPU consumption in ParseAddress in net/mail",
+    "title": "CVE-2026-27141 Sending certain HTTP/2 frames can cause a server to panic in golang.org/x/net",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61725",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:56 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27141",
+    "releaseDate": "Sat, 14 Mar 2026 01:36:22 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61725"
+      "CVE-2026-27141"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61725",
+    "cve": "CVE-2026-27141",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-47912 Insufficient validation of bracketed IPv6 hostnames in net/url",
+    "title": "CVE-2025-58160 Tracing logging user input may result in poisoning logs with ANSI escape sequences",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47912",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:52 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58160",
+    "releaseDate": "Sat, 14 Mar 2026 01:36:06 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-47912"
+      "CVE-2025-58160"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-47912",
+    "cve": "CVE-2025-58160",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
+    "title": "CVE-2026-27171 zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:47 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27171",
+    "releaseDate": "Sat, 14 Mar 2026 01:01:27 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58188"
+      "CVE-2026-27171"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58188",
+    "cve": "CVE-2026-27171",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58185 Parsing DER payload can cause memory exhaustion in encoding/asn1",
+    "title": "CVE-2026-3381 Compress::Raw::Zlib versions through 2.219 for Perl use potentially insecure versions of zlib",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58185",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:42 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3381",
+    "releaseDate": "Sat, 14 Mar 2026 01:01:22 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58185"
+      "CVE-2026-3381"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58185",
+    "cve": "CVE-2026-3381",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61723 Quadratic complexity when parsing some invalid inputs in encoding/pem",
+    "title": "CVE-2026-31802 node-tar Symlink Path Traversal via Drive-Relative Linkpath",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61723",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:37 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31802",
+    "releaseDate": "Sat, 14 Mar 2026 01:01:17 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61723"
+      "CVE-2026-31802"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61723",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58187 Quadratic complexity when checking name constraints in crypto/x509",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58187",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:32 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58187"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58187",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:27 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61724"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61724",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58186 Lack of limit when parsing cookies can cause memory exhaustion in net/http",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58186",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:22 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58186"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58186",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-58183 Unbounded allocation when parsing GNU sparse map in archive/tar",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58183",
-    "releaseDate": "Sat, 13 Dec 2025 01:37:17 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58183"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58183",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
-    "releaseDate": "Sat, 13 Dec 2025 01:02:19 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14104"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14104",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14523 Libsoup: libsoup: duplicate host header handling causes host-parsing discrepancy (first- vs last-value wins)",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14523",
-    "releaseDate": "Sat, 13 Dec 2025 01:02:10 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14523"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14523",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14512 Glib: integer overflow in glib gio attribute escaping causes heap buffer overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14512",
-    "releaseDate": "Sat, 13 Dec 2025 01:02:02 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14512"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14512",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14087 Glib: glib: buffer underflow in gvariant parser leads to heap corruption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14087",
-    "releaseDate": "Sat, 13 Dec 2025 01:01:54 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14087"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14087",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-39925 can: j1939: implement NETDEV_UNREGISTER notification handler",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-39925",
-    "releaseDate": "Sat, 13 Dec 2025 01:01:44 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-39925"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-39925",
+    "cve": "CVE-2026-31802",
     "kb": "",
     "knownIssues": ""
   },
@@ -47771,6 +47636,546 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-21223",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3910 Inappropriate implementation in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.\n\nGoogle is aware that an exploit for CVE-2026-3910 exists in the wild.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3910",
+    "releaseDate": "Fri, 13 Mar 2026 22:11:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3910"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3910",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3942 Incorrect security UI in PictureInPicture",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3942",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3942"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3942",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3941 Insufficient policy enforcement in DevTools",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3941",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3941"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3941",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3940 Insufficient policy enforcement in DevTools",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3940",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3940"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3940",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3939 Use after free in WebView",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3939",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3939"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3939",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3938 Insufficient policy enforcement in Clipboard",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3938",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3938"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3938",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3937 Incorrect security UI in Downloads",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3937",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3937"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3937",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3936 Use after free in WebView",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3936",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3936"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3936",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3935 Incorrect security UI in WebAppInstalls",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3935",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3935"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3935",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3934 Insufficient policy enforcement in ChromeDriver",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3934",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3934"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3934",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3932 Insufficient policy enforcement in PDF",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3932",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3932"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3932",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3931 Heap buffer overflow in Skia",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3931",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3931"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3931",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3930 Unsafe navigation in Navigation",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3930",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3930"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3930",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3929 Side-channel information leakage in ResourceTiming",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3929",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3929"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3929",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3928 Insufficient policy enforcement in Extensions",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3928",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3928"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3928",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3927 Incorrect security UI in PictureInPicture",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3927",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3927"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3927",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3926 Out of bounds read in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3926",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3926"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3926",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3925 Incorrect security UI in LookalikeChecks",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3925",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3925"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3925",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3924 Use after free in WindowDialog",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3924",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3924"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3924",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3923 Use after free in WebMIDI",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3923",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3923"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3923",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3922 Use after free in MediaStream",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3922",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3922"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3922",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3921 Use after free in TextEncoding",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3921",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3921"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3921",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3920 Out of bounds memory access in WebML",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3920",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3920"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3920",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3919 Use after free in Extensions",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3919",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3919"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3919",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3918 Use after free in WebMCP",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3918",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3918"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3918",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3917 Use after free in Agents",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3917",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3917"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3917",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3916 Out of bounds read in Web Speech",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3916",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3916"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3916",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3915 Heap buffer overflow in WebML",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3915",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3915"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3915",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3914 Integer overflow in WebML",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3914",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3914"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3914",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-3913 Heap buffer overflow in WebML",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3913",
+    "releaseDate": "Fri, 13 Mar 2026 18:20:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3913"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3913",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-25172 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "description": "The hotpatch has been re‑released to ensure comprehensive coverage across all affected scenarios. Customers are advised to apply the updated release to ensure full protection.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25172",
+    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25172"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25172",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-25173 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "description": "The hotpatch has been re‑released to ensure comprehensive coverage across all affected scenarios. Customers are advised to apply the updated release to ensure full protection.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25173",
+    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25173"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25173",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26111 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "description": "The hotpatch has been re‑released to ensure comprehensive coverage across all affected scenarios. Customers are advised to apply the updated release to ensure full protection.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26111",
+    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26111"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26111",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0385 Microsoft Edge (Chromium-based) for Android Spoofing Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0385",
+    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0385"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0385",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21257 GitHub Copilot and Visual Studio Elevation of Privilege Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21257",
+    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21257"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21257",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21256 GitHub Copilot and Visual Studio Remote Code Execution Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21256",
+    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21256"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21256",
     "kb": "",
     "knownIssues": ""
   },
