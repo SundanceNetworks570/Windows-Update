@@ -32890,6 +32890,171 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-32169 Azure Cloud Shell Elevation of Privilege Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32169",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32169"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32169",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26139 Microsoft Purview Elevation of Privilege Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Purview allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26139",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26139"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26139",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26138 Microsoft Purview Elevation of Privilege Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Purview allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26138",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26138"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26138",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32191 Microsoft Bing Images Remote Code Execution Vulnerability",
+    "description": "Improper neutralization of special elements used in an os command ('os command injection') in Microsoft Bing Images allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32191",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32191"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32191",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23658 Azure DevOps: msazure Elevation of Privilege Vulnerability",
+    "description": "Insufficiently protected credentials in Azure DevOps allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23658",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23658"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23658",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26120 Microsoft Bing Tampering Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to perform tampering over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26120",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26120"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26120",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23659 Azure Data Factory Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Azure Data Factory allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23659",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23659"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23659",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-24299 M365 Copilot Information Disclosure Vulnerability",
+    "description": "Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24299",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-24299"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-24299",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26136 Microsoft Copilot Information Disclosure Vulnerability",
+    "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26136",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26136"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26136",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26137 Microsoft 365 Copilot BizChat Elevation of Privilege Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft 365 Copilot's Business Chat allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26137",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26137"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26137",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32194 Microsoft Bing Images Remote Code Execution Vulnerability",
+    "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Bing Images allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32194",
+    "releaseDate": "Thu, 19 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32194"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32194",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-3644 Incomplete control character validation in http.cookies",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3644",
@@ -44728,6 +44893,666 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-23243 RDMA/umad: Reject negative data_len in ib_umad_write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23243",
+    "releaseDate": "Fri, 20 Mar 2026 01:40:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23243"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23243",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3731 libssh SFTP Extension Name sftp.c sftp_extensions_get_data out-of-bounds",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3731",
+    "releaseDate": "Fri, 20 Mar 2026 01:38:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3731"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3731",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-8354 Qemu-kvm: usb: assertion failure in usb_ep_get()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-8354",
+    "releaseDate": "Fri, 20 Mar 2026 01:36:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-8354"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-8354",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-46456 NASM v2.16 was discovered to contain a global buffer overflow in the component dbgdbg_typevalue at /output/outdbg.c.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-46456",
+    "releaseDate": "Fri, 20 Mar 2026 01:35:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-46456"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-46456",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2006-10003 XML::Parser versions through 2.47 for Perl has an off-by-one heap buffer overflow in st_serial_stack",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2006-10003",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2006-10003"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2006-10003",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2006-10002 XML::Parser versions through 2.47 for Perl could overflow the pre-allocated buffer size cause a heap corruption (double free or corruption) and crashes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2006-10002",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2006-10002"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2006-10002",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23229 crypto: virtio - Add spinlock protection with virtqueue notification",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23229",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23229"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23229",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23228 smb: server: fix leak of active_num_conn in ksmbd_tcp_new_connection()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23228",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23228"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23228",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23227 drm/exynos: vidi: use ctx->lock to protect struct vidi_context member variables related to memory alloc/free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23227",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23227"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23227",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23222 crypto: omap - Allocate OMAP_CRYPTO_FORCE_COPY scatterlists correctly",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23222",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23222"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23222",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23221 bus: fsl-mc: fix use-after-free in driver_override_show()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23221",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23220 ksmbd: fix infinite loop caused by next_smb2_rcv_hdr_off reset in error paths",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23220",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23220"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23220",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23214 btrfs: reject new transactions if the fs is fully read-only",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23214",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23214"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23214",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23213 drm/amd/pm: Disable MMIO access during SMU Mode 1 reset",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23213",
+    "releaseDate": "Fri, 20 Mar 2026 01:04:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23213"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23213",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23212 bonding: annotate data-races around slave->last_rx",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23212",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23212"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23212",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23208 ALSA: usb-audio: Prevent excessive number of frames",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23208",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23208"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23208",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23191 ALSA: aloop: Fix racy access at PCM trigger",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23191",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23191"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23191",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23171 bonding: fix use-after-free due to enslave fail after slave array update",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23171",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23171"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23171",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23169 mptcp: fix race in mptcp_pm_nl_flush_addrs_doit()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23169",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23169"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23169",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23157 btrfs: do not strictly require dirty metadata threshold for metadata writepages",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23157",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23157"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23157",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23154 net: fix segmentation of forwarding fraglist GRO",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23154",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23154"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23154",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23126 netdevsim: fix a race issue related to the operation on bpf_bound_progs list",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23126",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23126"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23126",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23118 rxrpc: Fix data-race warning and potential load/store tearing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23118",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23118"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23118",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23113 io_uring/io-wq: check IO_WQ_BIT_EXIT inside work run loop",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23113",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23113"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23113",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23110 scsi: core: Wake up the error handler when final completions race against each other",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23110",
+    "releaseDate": "Fri, 20 Mar 2026 01:03:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23110"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23110",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71237 nilfs2: Fix potential block overflow that cause system hang",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71237",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71237"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71237",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71236 scsi: qla2xxx: Validate sp before freeing associated memory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71236",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71235 scsi: qla2xxx: Delay module unload while fabric scan in progress",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71235",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71235"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71235",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71233 PCI: endpoint: Avoid creating sub-groups asynchronously",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71233",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71233"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71233",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71232 scsi: qla2xxx: Free sp in error path to fix system crash",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71232",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71232"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71232",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71227 wifi: mac80211: don't WARN for connections on invalid channels",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71227",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71227"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71227",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71225 md: suspend array while updating raid_disks via sysfs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71225",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71225"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71225",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71221 dmaengine: mmp_pdma: Fix race condition in mmp_pdma_residue()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71221",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23207 spi: tegra210-quad: Protect curr_xfer check in IRQ handler",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23207",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23207"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23207",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-27135 nghttp2 Denial of service: Assertion failure due to the missing state validation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27135",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-27135"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-27135",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23265 f2fs: fix to do sanity check on node footer in {read,write}_end_io",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23265",
+    "releaseDate": "Fri, 20 Mar 2026 01:02:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23265"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23265",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23266 fbdev: rivafb: fix divide error in nv3_arb()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23266",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23266"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23266",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23268 apparmor: fix unprivileged local user can do privileged policy management",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23268",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23268"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23268",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23267 f2fs: fix IS_CHECKPOINTED flag inconsistency issue caused by concurrent atomic commit and checkpoint writes",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23267",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23267"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23267",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23259 io_uring/rw: free potentially allocated iovec on cache put failure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23259",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23259"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23259",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71269 btrfs: do not free data reservation in fallback from inline due to -ENOSPC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71269",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23269 apparmor: validate DFA start states are in bounds in unpack_pdb",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23269",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23253 media: dvb-core: fix wrong reinitialization of ringbuffer on reopen",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23253",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23253"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23253",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23255 net: add proper RCU protection to /proc/net/ptype",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23255",
+    "releaseDate": "Fri, 20 Mar 2026 01:01:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23255"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23255",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2024-20328 ClamAV VirusEvent File Processing Command Injection Vulnerability",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-20328",
@@ -44829,141 +45654,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-65046",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2024-6485 XSS in Bootstrap button component",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-6485",
-    "releaseDate": "Fri, 19 Dec 2025 01:36:20 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2024-6485"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2024-6485",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38131 coresight: prevent deactivate active config while enabling the config",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38131",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:55 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38131"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38131",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38126 net: stmmac: make sure that ptp_rate is not 0 before configuring timestamping",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38126",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:50 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38126"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38126",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38118 Bluetooth: MGMT: Fix UAF on mgmt_remove_adv_monitor_complete",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38118",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:45 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38118"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38118",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38074 vhost-scsi: protect vq->log_used with vq->mutex",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38074",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:40 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38074"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38074",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38071 x86/mm: Check return value from memblock_phys_alloc_range()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38071",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:35 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38071"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38071",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38067 rseq: Fix segfault on registration when rseq_cs is non-zero",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38067",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:30 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38067"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38067",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38063 dm: fix unconditional IO throttle caused by REQ_PREFLUSH",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38063",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:25 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38063"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38063",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-37951 drm/v3d: Add job to pending list if the reset was skipped",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-37951",
-    "releaseDate": "Fri, 19 Dec 2025 01:01:20 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-37951"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-37951",
     "kb": "",
     "knownIssues": ""
   },
