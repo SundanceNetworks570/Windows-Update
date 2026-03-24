@@ -43407,6 +43407,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-4438 gethostbyaddr and gethostbyaddr_r return invalid DNS hostnames",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4438",
+    "releaseDate": "Mon, 23 Mar 2026 14:39:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4438"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4438",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4437 gethostbyaddr and gethostbyaddr_r may incorrectly handle DNS response",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4437",
+    "releaseDate": "Mon, 23 Mar 2026 14:39:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4437"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4437",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-3381 Compress::Raw::Zlib versions through 2.219 for Perl use potentially insecure versions of zlib",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3381",
