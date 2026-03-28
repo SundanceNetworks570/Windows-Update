@@ -37090,6 +37090,66 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-4645 Github.com/antchfx/xpath: xpath: denial of service via crafted boolean xpath expressions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4645",
+    "releaseDate": "Sat, 28 Mar 2026 01:39:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4645"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4645",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-2369 Libsoup: libsoup: buffer overread due to integer underflow when handling zero-length resources",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2369",
+    "releaseDate": "Sat, 28 Mar 2026 01:38:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-2369"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-2369",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33413 etcd: Authorization bypasses in multiple APIs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33413",
+    "releaseDate": "Sat, 28 Mar 2026 01:01:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33413"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33413",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33343 etcd: Nested etcd transactions bypass RBAC authorization checks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33343",
+    "releaseDate": "Sat, 28 Mar 2026 01:01:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33343"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33343",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-27571 nats-server websockets are vulnerable to pre-auth memory DoS",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27571",
@@ -37851,51 +37911,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2023-54207",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14104 Util-linux: util-linux: heap buffer overread in setpwnam() when processing 256-byte usernames",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14104",
-    "releaseDate": "Sat, 27 Dec 2025 14:36:13 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14104"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14104",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-13699 MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13699",
-    "releaseDate": "Sat, 27 Dec 2025 01:36:47 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-13699"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-13699",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68156 Expr has Denial of Service via Unbounded Recursion in Builtin Functions",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68156",
-    "releaseDate": "Sat, 27 Dec 2025 01:36:36 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68156"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68156",
     "kb": "",
     "knownIssues": ""
   },
@@ -43989,6 +44004,126 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-1504",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4442 Heap buffer overflow in CSS",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4442",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4442"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4442",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4680 Use after free in FedCM",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4680",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4680"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4680",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4677 Out of bounds read in WebAudio",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4677",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4677"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4677",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4679 Integer overflow in Fonts",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4679",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4679"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4679",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4675 Heap buffer overflow in WebGL",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4675",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4675"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4675",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4674 Out of bounds read in CSS",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4674",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4674"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4674",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-4673 Heap buffer overflow in WebAudio",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4673",
+    "releaseDate": "Fri, 27 Mar 2026 18:02:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4673"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4673",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32187 Microsoft Edge (Chromium-based) Defense in Depth Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32187",
+    "releaseDate": "Fri, 27 Mar 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32187"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32187",
     "kb": "",
     "knownIssues": ""
   },
