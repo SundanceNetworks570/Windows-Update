@@ -1,275 +1,5 @@
 [
   {
-    "title": "CVE-2025-58436 OpenPrinting CUPS slow client can halt cupsd, leading to a possible DoS attack",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58436",
-    "releaseDate": "Wed, 31 Dec 2025 14:36:30 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-58436"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-58436",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2915 HDF5 H5Faccum.c H5F__accum_free heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2915",
-    "releaseDate": "Wed, 31 Dec 2025 14:36:01 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2915"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2915",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2914 HDF5 H5FScache.c H5FS__sinfo_Srialize_Sct_cb heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2914",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:56 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2914"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2914",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2924 HDF5 H5HLcache.c H5HL__fl_deserialize heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2924",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:50 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2924"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2924",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2926 HDF5 H5Ocache.c H5O__cache_chk_serialize null pointer dereference",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2926",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:44 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2926"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2926",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2925 HDF5 H5MM.c H5MM_realloc double free",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2925",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:38 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2925"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2925",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2310 HDF5 Metadata Attribute Decoder H5MM_strndup heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2310",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:33 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2310"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2310",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2309 HDF5 Type Conversion Logic H5T__bit_copy heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2309",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:27 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2309"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2309",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2308 HDF5 Scale-Offset Filter H5Z__scaleoffset_decompress_one_byte heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2308",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:22 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2308"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2308",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-2153 HDF5 h5 File H5SM.c H5SM_delete heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2153",
-    "releaseDate": "Wed, 31 Dec 2025 14:35:17 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-2153"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-2153",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68615 Net-SNMP snmptrapd crash",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68615",
-    "releaseDate": "Wed, 31 Dec 2025 01:37:13 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68615"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68615",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-12084 Quadratic complexity in node ID cache clearing",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-12084",
-    "releaseDate": "Wed, 31 Dec 2025 01:36:45 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-12084"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-12084",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-13837 Out-of-memory when loading Plist",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13837",
-    "releaseDate": "Wed, 31 Dec 2025 01:36:37 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-13837"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-13837",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-13836 Excessive read buffering DoS in http.client",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13836",
-    "releaseDate": "Wed, 31 Dec 2025 01:36:27 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-13836"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-13836",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2021-44964 Use after free in garbage collector and finalizer of lgc.c in Lua interpreter 5.4.0~5.4.3 allows attackers to perform Sandbox Escape via a crafted script file.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-44964",
-    "releaseDate": "Wed, 31 Dec 2025 01:35:10 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2021-44964"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2021-44964",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14177 Information Leak of Memory in getimagesize",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14177",
-    "releaseDate": "Wed, 31 Dec 2025 01:02:15 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14177"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14177",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14178 Heap buffer overflow in array_merge()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14178",
-    "releaseDate": "Wed, 31 Dec 2025 01:02:10 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14178"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14178",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-14180 NULL Pointer Dereference in PDO quoting",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14180",
-    "releaseDate": "Wed, 31 Dec 2025 01:02:05 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-14180"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-14180",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2026-21509 Microsoft Office Security Feature Bypass Vulnerability",
     "description": "Acknowledgement added. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509",
@@ -26228,6 +25958,456 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-27965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33937 Handlebars.js has JavaScript Injection via AST Type Confusion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33937",
+    "releaseDate": "Wed, 01 Apr 2026 01:58:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33937"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33937",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33542 Incus does not verify combined fingerprint when downloading images from simplestreams servers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33542",
+    "releaseDate": "Wed, 01 Apr 2026 01:58:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33542"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33542",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33750 brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33750",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33750"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33750",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34353",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34353",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34353"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34353",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21712",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21712",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21712"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21712",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0964 Libssh: improper sanitation of paths received from scp servers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0964",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0966 Libssh: buffer underflow in ssh_get_hexa() on invalid input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0966",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0966"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0966",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0967 Libssh: libssh: denial of service via inefficient regular expression processing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0967",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0967"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0967",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0965 Libssh: libssh: denial of service via improper configuration file handling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0965",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-67030",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-67030",
+    "releaseDate": "Wed, 01 Apr 2026 01:57:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-67030"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-67030",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4645 Github.com/antchfx/xpath: xpath: denial of service via crafted boolean xpath expressions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4645",
+    "releaseDate": "Wed, 01 Apr 2026 01:56:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4645"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4645",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4746 Heap Buffer Over-Write Vulenrabilty in timeplus-io/proton",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4746",
+    "releaseDate": "Wed, 01 Apr 2026 01:56:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4746"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4746",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-41013 xfs: don't walk off the end of a directory data block",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-41013",
+    "releaseDate": "Wed, 01 Apr 2026 01:52:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-41013"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-41013",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2024-35839 netfilter: bridge: replace physindev with physinif in nf_bridge_info",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-35839",
+    "releaseDate": "Wed, 01 Apr 2026 01:51:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2024-35839"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2024-35839",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2023-52676 bpf: Guard stack limits against 32bit overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-52676",
+    "releaseDate": "Wed, 01 Apr 2026 01:51:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2023-52676"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2023-52676",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-29111 systemd: Local unprivileged user can trigger an assert",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29111",
+    "releaseDate": "Wed, 01 Apr 2026 01:49:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-29111"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-29111",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21711",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21711",
+    "releaseDate": "Wed, 01 Apr 2026 01:20:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21711"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21711",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21713",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21713",
+    "releaseDate": "Wed, 01 Apr 2026 01:19:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21713"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21713",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21716",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21716",
+    "releaseDate": "Wed, 01 Apr 2026 01:19:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21716"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21716",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21714",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21714",
+    "releaseDate": "Wed, 01 Apr 2026 01:18:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21714"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21714",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21715",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21715",
+    "releaseDate": "Wed, 01 Apr 2026 01:18:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21715"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21715",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34043 Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34043",
+    "releaseDate": "Wed, 01 Apr 2026 01:17:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34043"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34043",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21710",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21710",
+    "releaseDate": "Wed, 01 Apr 2026 01:16:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21710"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21710",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21717",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21717",
+    "releaseDate": "Wed, 01 Apr 2026 01:16:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21717"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21717",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4176 Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerable version of Compress::Raw::Zlib",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4176",
+    "releaseDate": "Wed, 01 Apr 2026 01:15:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4176"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4176",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34714",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34714",
+    "releaseDate": "Wed, 01 Apr 2026 01:14:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34714"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34714",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66038 OpenSC: `sc_compacttlv_find_tag` can return out-of-bounds pointers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66038",
+    "releaseDate": "Wed, 01 Apr 2026 01:14:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66038"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66038",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66037 OpenSC: Out of Bounds vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66037",
+    "releaseDate": "Wed, 01 Apr 2026 01:14:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66037"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66037",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66215 OpenSC: Stack-buffer-overflow WRITE in card-oberthur",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66215",
+    "releaseDate": "Wed, 01 Apr 2026 01:13:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66215"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66215",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49010 OpenSC: Stack-buffer-overflow WRITE in GET RESPONSE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49010",
+    "releaseDate": "Wed, 01 Apr 2026 01:13:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49010"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49010",
     "kb": "",
     "knownIssues": ""
   },
