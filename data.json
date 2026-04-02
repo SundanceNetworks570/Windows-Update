@@ -26202,6 +26202,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-68822 Input: alps - fix use-after-free bugs caused by dev3_register_work",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68822",
+    "releaseDate": "Wed, 01 Apr 2026 01:49:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-68822"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-68822",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-21711",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21711",
@@ -37551,6 +37566,486 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-0391",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34043 Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34043",
+    "releaseDate": "Thu, 02 Apr 2026 01:40:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34043"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34043",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33542 Incus does not verify combined fingerprint when downloading images from simplestreams servers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33542",
+    "releaseDate": "Thu, 02 Apr 2026 01:40:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33542"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33542",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33936 python-ecdsa: Denial of Service via improper DER length validation in crafted private keys",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33936",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33936"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33936",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33750 brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33750",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33750"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33750",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0964 Libssh: improper sanitation of paths received from scp servers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0964",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0966 Libssh: buffer underflow in ssh_get_hexa() on invalid input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0966",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0966"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0966",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0967 Libssh: libssh: denial of service via inefficient regular expression processing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0967",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0967"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0967",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0965 Libssh: libssh: denial of service via improper configuration file handling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0965",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5107 FRRouting FRR EVPN Type-2 Route bgp_evpn.c process_type2_route access control",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5107",
+    "releaseDate": "Thu, 02 Apr 2026 01:39:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5107"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5107",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-29111 systemd: Local unprivileged user can trigger an assert",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29111",
+    "releaseDate": "Thu, 02 Apr 2026 01:38:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-29111"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-29111",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-2739 This affects versions of the package bn.js before 5.2.3. Calling maskn(0) on any BN instance corrupts the internal state, causing toString(), divmod(), and other methods to enter an infinite loop, hanging the process indefinitely.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2739",
+    "releaseDate": "Thu, 02 Apr 2026 01:37:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-2739"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-2739",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34714",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34714",
+    "releaseDate": "Thu, 02 Apr 2026 01:06:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34714"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34714",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33636 LIBPNG has ARM NEON Palette Expansion Out-of-Bounds Read on AArch64",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33636",
+    "releaseDate": "Thu, 02 Apr 2026 01:06:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33636"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33636",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32287 Infinite loop in github.com/antchfx/xpath",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32287",
+    "releaseDate": "Thu, 02 Apr 2026 01:06:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32287"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32287",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-29785 NATS Server panic via malicious compression on leafnode port",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29785",
+    "releaseDate": "Thu, 02 Apr 2026 01:06:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-29785"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-29785",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33216 NATS has MQTT plaintext password disclosure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33216",
+    "releaseDate": "Thu, 02 Apr 2026 01:06:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33216"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33216",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33416 LIBPNG has use-after-free via pointer aliasing in `png_set_tRNS` and `png_set_PLTE`",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33416",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33416"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33416",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-2436 Libsoup: libsoup: denial of service via use-after-free in soupserver during tls handshake",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2436",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-2436"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-2436",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4732 Out-of-bounds Read Overflow in tildearrow/furnace",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4732",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4732"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4732",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4897 Polkit: polkit: denial of service via unbounded input processing through standard input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4897",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4897"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4897",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-2100 P11-kit: p11-kit: null dereference via c_derivekey with specific null parameters",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2100",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-2100"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-2100",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66215 OpenSC: Stack-buffer-overflow WRITE in card-oberthur",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66215",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66215"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66215",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66037 OpenSC: Out of Bounds vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66037",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66037"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66037",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-66038 OpenSC: `sc_compacttlv_find_tag` can return out-of-bounds pointers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66038",
+    "releaseDate": "Thu, 02 Apr 2026 01:05:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-66038"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-66038",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-49010 OpenSC: Stack-buffer-overflow WRITE in GET RESPONSE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49010",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-49010"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-49010",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5119 Libsoup: libsoup: information disclosure via cleartext transmission of cookies during https tunnel establishment",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5119",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5119"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5119",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5121 Libarchive: libarchive: arbitrary code execution via integer overflow in iso9660 image processing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5121",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5121"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5121",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5201 Gdk-pixbuf: gdk-pixbuf: denial of service via heap-based buffer overflow when processing a specially crafted jpeg image",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5201",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5201"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5201",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33554",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33554",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33554"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33554",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4739 Integer overflow vulnerabilities in InsightSoftwareConsortium/ITK",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4739",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4739"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4739",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4176 Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerable version of Compress::Raw::Zlib",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4176",
+    "releaseDate": "Thu, 02 Apr 2026 01:04:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4176"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4176",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4046 iconv crash due to assertion failure with untrusted input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4046",
+    "releaseDate": "Thu, 02 Apr 2026 01:01:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4046"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4046",
     "kb": "",
     "knownIssues": ""
   },
