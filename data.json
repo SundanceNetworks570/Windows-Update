@@ -31465,77 +31465,332 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-68973 In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments of an index variable where one is intended, leading to an out-of-bounds write for crafted input. (For ExtendedLTS, 2.2.51 and later are fixed versions.)",
+    "title": "CVE-2026-35414",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68973",
-    "releaseDate": "Tue, 06 Jan 2026 14:36:10 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35414",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:35 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-68973"
+      "CVE-2026-35414"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-68973",
+    "cve": "CVE-2026-35414",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-68972 In GnuPG through 2.4.8, if a signed message has \\f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an \"invalid armor\" message is printed during verification). This is related to use of \\f as a marker to denote truncation of a long plaintext line.",
+    "title": "CVE-2026-27456 util-linux: TOCTOU Race Condition in util-linux mount(8) - Loop Device Setup",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68972",
-    "releaseDate": "Tue, 06 Jan 2026 14:36:03 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27456",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:30 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-68972"
+      "CVE-2026-27456"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-68972",
+    "cve": "CVE-2026-27456",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-68476 KEDA has Arbitrary File Read via Insufficient Path Validation in HashiCorp Vault Service Account Credential",
+    "title": "CVE-2026-23442 ipv6: add NULL checks for idev in SRv6 paths",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68476",
-    "releaseDate": "Tue, 06 Jan 2026 14:35:56 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23442",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:25 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-68476"
+      "CVE-2026-23442"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-68476",
+    "cve": "CVE-2026-23442",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-11964 OOBW in utf_16le_to_utf_8_truncated() in libpcap",
+    "title": "CVE-2026-23468 drm/amdgpu: Limit BO list entry count to prevent resource exhaustion",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11964",
-    "releaseDate": "Tue, 06 Jan 2026 01:35:42 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23468",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:20 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-11964"
+      "CVE-2026-23468"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-11964",
+    "cve": "CVE-2026-23468",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-11961 OOBR and OOBW in pcap_ether_aton() in libpcap",
+    "title": "CVE-2026-23444 wifi: mac80211: always free skb on ieee80211_tx_prepare_skb() failure",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11961",
-    "releaseDate": "Tue, 06 Jan 2026 01:35:35 Z",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23444",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:15 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-11961"
+      "CVE-2026-23444"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-11961",
+    "cve": "CVE-2026-23444",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23472 serial: core: fix infinite loop in handle_tx() for PORT_UNKNOWN",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23472",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23472"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23472",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23473 io_uring/poll: fix multishot recv missing EOF on wakeup race",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23473",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23473"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23473",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34990 OpenPrinting CUPS: Local print admin token disclosure using temporary printers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34990",
+    "releaseDate": "Tue, 07 Apr 2026 01:41:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34990"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34990",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-27447 OpenPrinting CUPS: Authorization bypass via case-insensitive group-member lookup",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27447",
+    "releaseDate": "Tue, 07 Apr 2026 01:40:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-27447"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-27447",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34978 OpenPrinting CUPS: Path traversal in RSS notify-recipient-uri enables file write outside CacheDir/rss (and clobbering of job.cache)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34978",
+    "releaseDate": "Tue, 07 Apr 2026 01:40:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34978"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34978",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34980 OpenPrinting CUPS: Shared PostScript queue lets anonymous Print-Job requests reach `lp` code execution over the network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34980",
+    "releaseDate": "Tue, 07 Apr 2026 01:40:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34980"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34980",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34979 OpenPrinting CUPS: Heap overflow in `get_options()`",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34979",
+    "releaseDate": "Tue, 07 Apr 2026 01:40:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34979"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34979",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34591 Poetry Has Wheel Path Traversal Which Can Lead to Arbitrary File Write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34591",
+    "releaseDate": "Tue, 07 Apr 2026 01:02:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34591"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34591",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3184 Util-linux: util-linux: access control bypass due to improper hostname canonicalization",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3184",
+    "releaseDate": "Tue, 07 Apr 2026 01:02:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3184"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3184",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35386",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35386",
+    "releaseDate": "Tue, 07 Apr 2026 01:02:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35386"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35386",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35385",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35385",
+    "releaseDate": "Tue, 07 Apr 2026 01:02:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35385"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35385",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35387",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35387",
+    "releaseDate": "Tue, 07 Apr 2026 01:02:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35387"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35387",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35388",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35388",
+    "releaseDate": "Tue, 07 Apr 2026 01:01:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35388"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35388",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34743 XZ Utils: Buffer overflow in lzma_index_append()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34743",
+    "releaseDate": "Tue, 07 Apr 2026 01:01:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34743"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34743",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31408 Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31408",
+    "releaseDate": "Tue, 07 Apr 2026 01:01:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31408"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31408",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31407 netfilter: conntrack: add missing netlink policy validations",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31407",
+    "releaseDate": "Tue, 07 Apr 2026 01:01:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31407"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31407",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31410 ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31410",
+    "releaseDate": "Tue, 07 Apr 2026 01:01:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31410"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31410",
     "kb": "",
     "knownIssues": ""
   },
@@ -45112,52 +45367,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-3909",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61594 URI Credential Leakage Bypass over CVE-2025-27221",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61594",
-    "releaseDate": "Mon, 05 Jan 2026 14:36:39 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-61594",
-      "CVE-2025-27221"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-61594, CVE-2025-27221",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-62408 c-ares has a Use After Free vulnerability when connection is cleaned up after error",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62408",
-    "releaseDate": "Mon, 05 Jan 2026 14:36:12 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-62408"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-62408",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-3001 PyTorch torch.lstm_cell memory corruption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-3001",
-    "releaseDate": "Mon, 05 Jan 2026 01:38:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-3001"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-3001",
     "kb": "",
     "knownIssues": ""
   },
