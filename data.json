@@ -34240,6 +34240,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-0385 Microsoft Edge (Chromium-based) for Android Spoofing Vulnerability",
+    "description": "(no description)",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0385",
+    "releaseDate": "Thu, 09 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0385"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0385",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26133 M365 Copilot Information Disclosure Vulnerability",
+    "description": "Updated CWE value.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26133",
+    "releaseDate": "Thu, 09 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26133"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26133",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-4897 Polkit: polkit: denial of service via unbounded input processing through standard input",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4897",
@@ -45536,17 +45566,212 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0628 Insufficient policy enforcement in WebView tag",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0628",
-    "releaseDate": "Fri, 09 Jan 2026 08:00:09 Z",
+    "title": "CVE-2026-23411 apparmor: fix race between freeing data and fs accessing it",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23411",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:58 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0628"
+      "CVE-2026-23411"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0628",
+    "cve": "CVE-2026-23411",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23410 apparmor: fix race on rawdata dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23410",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23410"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23410",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23409 apparmor: fix differential encoding verification",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23409",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23409"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23409",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23408 apparmor: Fix double free of ns_name in aa_replace_profiles()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23408",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23408"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23408",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23407 apparmor: fix missing bounds check on DEFAULT table in verify_dfa()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23407",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23407"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23407",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23406 apparmor: fix side-effect bug in match_char() macro usage",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23406",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23406"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23406",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23405 apparmor: fix: limit the number of levels of policy namespaces",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23405",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23405"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23405",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23404 apparmor: replace recursive profile removal with iterative approach",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23404",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23404"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23404",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-23403 apparmor: fix memory leak in verify_header",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23403",
+    "releaseDate": "Fri, 10 Apr 2026 01:02:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-23403"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-23403",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39881 Vim Ex command injection in Vims NetBeans integration",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39881",
+    "releaseDate": "Fri, 10 Apr 2026 01:01:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39881"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39881",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40024 Sleuth Kit tsk_recover Path Traversal",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40024",
+    "releaseDate": "Fri, 10 Apr 2026 01:01:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40024"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40024",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40025 Sleuth Kit APFS Keybag Parser Out-of-Bounds Read",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40025",
+    "releaseDate": "Fri, 10 Apr 2026 01:01:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40025"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40025",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40026 Sleuth Kit ISO9660 SUSP Extension Reference Out-of-Bounds Read",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40026",
+    "releaseDate": "Fri, 10 Apr 2026 01:01:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40026"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40026",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32241 Flannel vulnerable to cross-node remote code execution via extension backend BackendData injection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32241",
+    "releaseDate": "Fri, 10 Apr 2026 01:01:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32241"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32241",
     "kb": "",
     "knownIssues": ""
   },
