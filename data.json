@@ -36310,6 +36310,126 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-39856 osslsigncode has an Out-of-Bounds Read via Unvalidated Section Bounds in PE Page Hash Calculation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39856",
+    "releaseDate": "Sun, 12 Apr 2026 01:02:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39856"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39856",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39855 osslsigncode has an Integer Underflow in PE Page Hash Calculation Can Cause Out-of-Bounds Read",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39855",
+    "releaseDate": "Sun, 12 Apr 2026 01:02:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39855"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39855",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39853 osslsigncode has a Stack Buffer Overflow via Unbounded Digest Copy During Signature Verification",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39853",
+    "releaseDate": "Sun, 12 Apr 2026 01:02:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39853"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39853",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-28390 Possible NULL Dereference When Processing CMS KeyTransportRecipientInfo",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28390",
+    "releaseDate": "Sun, 12 Apr 2026 01:02:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-28390"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-28390",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-28389 Possible NULL Dereference When Processing CMS KeyAgreeRecipientInfo",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28389",
+    "releaseDate": "Sun, 12 Apr 2026 01:02:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-28389"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-28389",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40226",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40226",
+    "releaseDate": "Sun, 12 Apr 2026 01:01:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40226"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40226",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34757 LIBPNG has a yse-after-free in png_set_PLTE, png_set_tRNS and png_set_hIST leading to corrupted chunk data and potential heap information disclosure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34757",
+    "releaseDate": "Sun, 12 Apr 2026 01:01:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34757"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34757",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35206 Helm Chart extraction output directory collapse via `Chart.yaml` name dot-segment",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35206",
+    "releaseDate": "Sun, 12 Apr 2026 01:01:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35206"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35206",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-28364 In OCaml before 4.14.3 and 5.x before 5.4.1, a buffer over-read in Marshal deserialization (runtime/intern.c) enables remote code execution through a multi-phase attack chain. The vulnerability stems from missing bounds validation in the readblock() function, which performs unbounded memcpy() operations using attacker-controlled lengths from crafted Marshal data.",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28364",
