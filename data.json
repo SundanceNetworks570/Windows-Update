@@ -36520,6 +36520,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-64669 Windows Admin Center Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement added. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64669",
+    "releaseDate": "Thu, 16 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-64669"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-64669",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32223 Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement added. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32223",
+    "releaseDate": "Thu, 16 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32223"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32223",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-26030 GitHub: CVE-2026-26030 Microsoft Semantic Kernel InMemoryVectorStore filter functionality vulnerable",
     "description": "Acknowledgement added. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26030",
@@ -47891,182 +47921,197 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0908 Use after free in ANGLE",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0908",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:26 Z",
+    "title": "CVE-2026-35201 Discount has an Out-of-bounds Read in rdiscount",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35201",
+    "releaseDate": "Fri, 17 Apr 2026 01:40:21 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0908"
+      "CVE-2026-35201"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0908",
+    "cve": "CVE-2026-35201",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0907 Incorrect security UI in Split View",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0907",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:25 Z",
+    "title": "CVE-2026-2673 OpenSSL TLS 1.3 server may choose unexpected key agreement group",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2673",
+    "releaseDate": "Fri, 17 Apr 2026 01:02:38 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0907"
+      "CVE-2026-2673"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0907",
+    "cve": "CVE-2026-2673",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0906 Incorrect security UI",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0906",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:24 Z",
+    "title": "CVE-2026-40179 Prometheus: Stored XSS via metric names and label values in web UI tooltips and metrics explorer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40179",
+    "releaseDate": "Fri, 17 Apr 2026 01:02:33 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0906"
+      "CVE-2026-40179"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0906",
+    "cve": "CVE-2026-40179",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0905 Insufficient policy enforcement in Network",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0905",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:24 Z",
+    "title": "CVE-2025-14821 Libssh: libssh: insecure default configuration leads to local man-in-the-middle attacks on windows",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14821",
+    "releaseDate": "Fri, 17 Apr 2026 01:02:27 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0905"
+      "CVE-2025-14821"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0905",
+    "cve": "CVE-2025-14821",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0904 Incorrect security UI in Digital Credentials",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0904",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:23 Z",
+    "title": "CVE-2026-39956 jq: Missing runtime type checks for _strindices lead to crash and limited memory disclosure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39956",
+    "releaseDate": "Fri, 17 Apr 2026 01:02:19 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0904"
+      "CVE-2026-39956"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0904",
+    "cve": "CVE-2026-39956",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0903 Insufficient validation of untrusted input in Downloads",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0903",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:22 Z",
+    "title": "CVE-2026-35199 SymCrypt SymCryptXmssSign function - Heap overflow via 64->32-bit leaf-count truncation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35199",
+    "releaseDate": "Fri, 17 Apr 2026 01:02:11 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0903"
+      "CVE-2026-35199"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0903",
+    "cve": "CVE-2026-35199",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0902 Inappropriate implementation in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0902",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:21 Z",
+    "title": "CVE-2026-41035",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41035",
+    "releaseDate": "Fri, 17 Apr 2026 01:02:04 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0902"
+      "CVE-2026-41035"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0902",
+    "cve": "CVE-2026-41035",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0901 Inappropriate implementation in Blink",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0901",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:20 Z",
+    "title": "CVE-2026-35469 SpdyStream: DOS on CRI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35469",
+    "releaseDate": "Fri, 17 Apr 2026 01:01:59 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0901"
+      "CVE-2026-35469"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0901",
+    "cve": "CVE-2026-35469",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0900 Inappropriate implementation in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0900",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:19 Z",
+    "title": "CVE-2026-40164 jq: Algorithmic complexity DoS via hardcoded MurmurHash3 seed",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40164",
+    "releaseDate": "Fri, 17 Apr 2026 01:01:51 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0900"
+      "CVE-2026-40164"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0900",
+    "cve": "CVE-2026-40164",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-0899 Out of bounds memory access in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0899",
-    "releaseDate": "Fri, 16 Jan 2026 20:08:16 Z",
+    "title": "CVE-2026-39979 jq: Out-of-Bounds Read in jv_parse_sized() Error Formatting for Non-NUL-Terminated Counted Buffers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39979",
+    "releaseDate": "Fri, 17 Apr 2026 01:01:42 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0899"
+      "CVE-2026-39979"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0899",
+    "cve": "CVE-2026-39979",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-20960 Microsoft Power Apps Remote Code Execution Vulnerability",
-    "description": "Improper authorization in Microsoft Power Apps allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20960",
-    "releaseDate": "Fri, 16 Jan 2026 08:00:00 Z",
+    "title": "CVE-2026-33948 jq: Embedded-NUL Truncation in CLI JSON Input Path Causes Prefix-Only Validation of Malformed Input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33948",
+    "releaseDate": "Fri, 17 Apr 2026 01:01:34 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-20960"
+      "CVE-2026-33948"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-20960",
+    "cve": "CVE-2026-33948",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-21223 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
-    "description": "Microsoft Edge Elevation Service exposes a privileged COM interface that inadequately validates the privileges of the calling process. A standard (non‑administrator) local user can invoke the IElevatorEdge interface method LaunchUpdateCmdElevatedAndWait, causing the service to execute privileged update commands as LocalSystem.\n\nThis allows a non‑administrator to enable or disable Windows Virtualization‑Based Security (VBS) by modifying protected system registry keys under HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard. Disabling VBS weakens critical platform protections such as Credential Guard, Hypervisor‑protected Code Integrity (HVCI), and the Secure Kernel, resulting in a security feature bypass.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21223",
-    "releaseDate": "Fri, 16 Jan 2026 08:00:00 Z",
+    "title": "CVE-2026-33947 jq: Unbounded Recursion in jv_setpath(), jv_getpath() and delpaths_sorted()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33947",
+    "releaseDate": "Fri, 17 Apr 2026 01:01:26 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-21223"
+      "CVE-2026-33947"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-21223",
+    "cve": "CVE-2026-33947",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32316 jq: Integer overflow in jvp_string_append() allows Heap-based Buffer Overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32316",
+    "releaseDate": "Fri, 17 Apr 2026 01:01:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32316"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32316",
     "kb": "",
     "knownIssues": ""
   },
