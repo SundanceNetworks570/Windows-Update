@@ -38920,6 +38920,82 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-4786 Incomplete mitigation of CVE-2026-4519, %action expansion for command injection to webbrowser.open()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4786",
+    "releaseDate": "Sun, 19 Apr 2026 01:01:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4786",
+      "CVE-2026-4519"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4786, CVE-2026-4519",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6100 Use-after-free in lzma.LZMADecompressor, bz2.BZ2Decompressor, and gzip.GzipFile after re-use under memory pressure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6100",
+    "releaseDate": "Sun, 19 Apr 2026 01:01:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6100"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6100",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5160",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5160",
+    "releaseDate": "Sun, 19 Apr 2026 01:01:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5160"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5160",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33056 tar-rs: unpack_in can chmod arbitrary directories by following symlinks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33056",
+    "releaseDate": "Sun, 19 Apr 2026 01:01:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33056"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33056",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33055 tar-rs incorrectly ignores PAX size headers if header size is nonzero",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33055",
+    "releaseDate": "Sun, 19 Apr 2026 01:01:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33055"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33055",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-39856 osslsigncode has an Out-of-Bounds Read via Unvalidated Section Bounds in PE Page Hash Calculation",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39856",
