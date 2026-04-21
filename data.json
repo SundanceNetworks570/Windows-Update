@@ -27657,107 +27657,32 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-20805 Desktop Window Manager Information Disclosure Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "title": "CVE-2026-32288 Unbounded allocation for old GNU sparse in archive/tar",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32288",
+    "releaseDate": "Tue, 21 Apr 2026 01:40:30 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-20805"
+      "CVE-2026-32288"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-20805",
+    "cve": "CVE-2026-32288",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-20818 Windows Kernel Information Disclosure Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20818",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
+    "title": "CVE-2026-41254",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41254",
+    "releaseDate": "Tue, 21 Apr 2026 01:01:24 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-20818"
+      "CVE-2026-41254"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-20818",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20943 Microsoft Office Click-To-Run Remote Code Execution Vulnerability",
-    "description": "Updated FAQ information. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20943",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20943"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20943",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20830 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20830",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20830"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20830",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-21221 Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21221",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-21221"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-21221",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20848 Windows SMB Server Elevation of Privilege Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20848",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20848"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20848",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20943 Microsoft Office Click-To-Run Remote Code Execution Vulnerability",
-    "description": "Corrected the affected product name in the CVE title and in the FAQs. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20943",
-    "releaseDate": "Tue, 20 Jan 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20943"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20943",
+    "cve": "CVE-2026-41254",
     "kb": "",
     "knownIssues": ""
   },
@@ -46013,6 +45938,51 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-4440",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21523 GitHub Copilot and Visual Studio Code Remote Code Execution Vulnerability",
+    "description": "Added acknowledgements. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21523",
+    "releaseDate": "Mon, 20 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21523"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21523",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32077 Windows UPnP Device Host Elevation of Privilege Vulnerability",
+    "description": "Added Security Only packages to Windows Server 2012 security updates. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32077",
+    "releaseDate": "Mon, 20 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32077"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32077",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26149 Microsoft Power Apps Spoofing Vulnerability",
+    "description": "(no description)",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26149",
+    "releaseDate": "Mon, 20 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26149"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26149",
     "kb": "",
     "knownIssues": ""
   },
