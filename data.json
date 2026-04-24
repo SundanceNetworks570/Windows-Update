@@ -35906,6 +35906,126 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-32210 Microsoft Dynamics 365 (online) Spoofing Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Dynamics 365 (Online) allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32210",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32210"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32210",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33102 Microsoft 365 Copilot Elevation of Privilege Vulnerability",
+    "description": "Url redirection to untrusted site ('open redirect') in M365 Copilot allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33102",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33102"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33102",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33819 Microsoft Bing Remote Code Execution Vulnerability",
+    "description": "Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33819",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33819"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33819",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26150 Microsoft Purview eDiscovery Elevation of Privilege Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Purview allows an unauthorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26150",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26150"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26150",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-24303 Microsoft Partner Center Elevation of Privilege Vulnerability",
+    "description": "Improper access control in Microsoft Partner Center allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24303",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-24303"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-24303",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35431 Microsoft Entra ID Entitlement Management Spoofing Vulnerability",
+    "description": "Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35431",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35431"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35431",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32172 Microsoft Power Apps Remote Code Execution Vulnerability",
+    "description": "Uncontrolled search path element in Microsoft Power Apps allows an unauthorized attacker to execute code over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32172",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32172"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32172",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21515 Azure IoT Central Elevation of Privilege Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Azure IOT Central allows an authorized attacker to elevate privileges over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21515",
+    "releaseDate": "Thu, 23 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21515"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21515",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-5160",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5160",
@@ -48748,32 +48868,662 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-1220 Race in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1220",
-    "releaseDate": "Fri, 23 Jan 2026 08:00:22 Z",
+    "title": "CVE-2026-5958 Race Condition in GNU Sed",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5958",
+    "releaseDate": "Fri, 24 Apr 2026 01:41:30 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-1220"
+      "CVE-2026-5958"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-1220",
+    "cve": "CVE-2026-5958",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-20805 Desktop Window Manager Information Disclosure Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805",
-    "releaseDate": "Fri, 23 Jan 2026 08:00:00 Z",
+    "title": "CVE-2026-5187 Heap Out-of-Bounds Write in DecodeObjectId() in wolfSSL",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5187",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:57 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-20805"
+      "CVE-2026-5187"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-20805",
+    "cve": "CVE-2026-5187",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31521 module: Fix kernel panic when a symbol st_shndx is out of bounds",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31521",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31521"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31521",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31493 RDMA/efa: Fix use of completion ctx after free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31493",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31493"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31493",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31473 media: mc, v4l2: serialize REINIT and REQBUFS with req_queue_mutex",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31473",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31473"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31473",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31450 ext4: publish jinode after initialization",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31450",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31450"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31450",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31494 net: macb: use the current queue number for stats",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31494",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31494"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31494",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31525 bpf: Fix undefined behavior in interpreter sdiv/smod for INT_MIN",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31525",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31525"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31525",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31453 xfs: avoid dereferencing log items after push callbacks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31453",
+    "releaseDate": "Fri, 24 Apr 2026 01:39:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31453"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31453",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31480 tracing: Fix potential deadlock in cpu hotplug with osnoise",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31480",
+    "releaseDate": "Fri, 24 Apr 2026 01:38:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31480"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31480",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31528 perf: Make sure to use pmu_ctx->pmu for groups",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31528",
+    "releaseDate": "Fri, 24 Apr 2026 01:38:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31528"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31528",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31530 cxl/port: Fix use after free of parent_port in cxl_detach_ep()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31530",
+    "releaseDate": "Fri, 24 Apr 2026 01:38:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31530"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31530",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31478 ksmbd: replace hardcoded hdr2_len with offsetof() in smb2_calc_max_out_buf_len()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31478",
+    "releaseDate": "Fri, 24 Apr 2026 01:38:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31478"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31478",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31500 Bluetooth: btintel: serialize btintel_hw_error() with hci_req_sync_lock",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31500",
+    "releaseDate": "Fri, 24 Apr 2026 01:38:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31500"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31500",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31507 net/smc: fix double-free of smc_spd_priv when tee() duplicates splice pipe buffer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31507",
+    "releaseDate": "Fri, 24 Apr 2026 01:38:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31507"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31507",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31448 ext4: avoid infinite loops caused by residual data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31448",
+    "releaseDate": "Fri, 24 Apr 2026 01:37:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31448"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31448",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31483 s390/syscalls: Add spectre boundary for syscall dispatch table",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31483",
+    "releaseDate": "Fri, 24 Apr 2026 01:37:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31483"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31483",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41988",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41988",
+    "releaseDate": "Fri, 24 Apr 2026 01:05:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41988"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41988",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41989",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41989",
+    "releaseDate": "Fri, 24 Apr 2026 01:05:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41989"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41989",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31531 ipv4: nexthop: allocate skb dynamically in rtm_get_nexthop()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31531",
+    "releaseDate": "Fri, 24 Apr 2026 01:05:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31531"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31531",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31532 can: raw: fix ro->uniq use-after-free in raw_rcv()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31532",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31532"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31532",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40706",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40706",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40706"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40706",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35240",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35240",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35240"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35240",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35239",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35239",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35239"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35239",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35238",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35238",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35238"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35238",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35237",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35237",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35237"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35237",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35236",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35236",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34308",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34308",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34308"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34308",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34304",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34304",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34304"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34304",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34303",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34303",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34303"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34303",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34293",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34293",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34293"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34293",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34278",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34278",
+    "releaseDate": "Fri, 24 Apr 2026 01:04:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34278"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34278",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34276",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34276",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34276"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34276",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34271",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34271",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34271"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34271",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34270",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34270",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34270"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34270",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34267",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34267",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34267"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34267",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22017",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22017",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22017"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22017",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22015",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22015",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22015"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22015",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22009",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22009",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22009"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22009",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22005",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22005",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22005"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22005",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22004",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22004",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22004"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22004",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22002",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22002",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22002"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22002",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-22001",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22001",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-22001"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-22001",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21998",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21998",
+    "releaseDate": "Fri, 24 Apr 2026 01:03:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21998"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21998",
     "kb": "",
     "knownIssues": ""
   },
