@@ -49933,6 +49933,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-26149 Microsoft Power Apps Desktop Client Spoofing Vulnerability",
+    "description": "(no description)",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26149",
+    "releaseDate": "Mon, 27 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26149"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26149",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32202 Windows Shell Spoofing Vulnerability",
+    "description": "Corrected the Exploitability Index, Exploited flag and CVSS vector which was incorrect at the time of publication on 4/14/2026. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32202",
+    "releaseDate": "Mon, 27 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32202"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32202",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2018-0734 Timing attack against DSA",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2018-0734",
