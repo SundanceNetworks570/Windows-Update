@@ -36341,6 +36341,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-33825 Microsoft Defender Elevation of Privilege Vulnerability",
+    "description": "Added FAQ information. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33825",
+    "releaseDate": "Thu, 30 Apr 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33825"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33825",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-24051 OpenTelemetry-Go Affected by Arbitrary Code Execution via PATH Hijacking",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24051",
+    "releaseDate": "Thu, 30 Apr 2026 01:55:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-24051"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-24051",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-6019 BaseCookie.js_output() does not neutralize embedded characters",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6019",
@@ -36446,6 +36476,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2019-1543 ChaCha20-Poly1305 with long nonces",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-1543",
+    "releaseDate": "Thu, 30 Apr 2026 01:54:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2019-1543"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2019-1543",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-5295 Stack Buffer Overflow in wolfSSL PKCS7 wc_PKCS7_DecryptOri() via Oversized OID",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5295",
@@ -36502,6 +36547,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-5507",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2019-1551 rsaz_512_sqr overflow bug on x86_64",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-1551",
+    "releaseDate": "Thu, 30 Apr 2026 01:53:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2019-1551"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2019-1551",
     "kb": "",
     "knownIssues": ""
   },
@@ -36697,6 +36757,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2018-0734",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-15504 lief-project LIEF ELF Binary Parser.tcc parse_binary null pointer dereference",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-15504",
+    "releaseDate": "Thu, 30 Apr 2026 01:52:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-15504"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-15504",
     "kb": "",
     "knownIssues": ""
   },
@@ -37106,6 +37181,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2025-21870 ASoC: SOF: ipc4-topology: Harden loops for looking up ALH copiers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21870",
+    "releaseDate": "Thu, 30 Apr 2026 01:48:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-21870"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-21870",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-41676 rust-openssl: Deriver::derive and PkeyCtxRef::derive can overflow short buffers on OpenSSL 1.1.1",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41676",
@@ -37256,6 +37346,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2022-2068 The c_rehash script allows command injection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-2068",
+    "releaseDate": "Thu, 30 Apr 2026 01:47:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-2068"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-2068",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-31530 cxl/port: Fix use after free of parent_port in cxl_detach_ep()",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31530",
@@ -37372,6 +37477,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-33916",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-21892 RDMA/mlx5: Fix the recovery flow of the UMR QP",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21892",
+    "releaseDate": "Thu, 30 Apr 2026 01:45:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-21892"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-21892",
     "kb": "",
     "knownIssues": ""
   },
@@ -37976,6 +38096,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-21620 TFTP Path Traversal",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21620",
+    "releaseDate": "Thu, 30 Apr 2026 01:39:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21620"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21620",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-5460 Heap Use-After-Free in PQC Hybrid KeyShare Error Cleanup in wolfSSL TLS 1.3",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5460",
@@ -38122,6 +38257,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-31509",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-25541 Bytes is vulnerable to integer overflow in BytesMut::reserve",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25541",
+    "releaseDate": "Thu, 30 Apr 2026 01:12:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25541"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25541",
     "kb": "",
     "knownIssues": ""
   },
@@ -54883,21 +55033,6 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-1504 Inappropriate implementation in Background Fetch API",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2024 ) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1504",
-    "releaseDate": "Fri, 30 Jan 2026 03:20:43 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-1504"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-1504",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "Chromium: CVE-2026-4442 Heap buffer overflow in CSS",
     "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4442",
@@ -60189,6 +60324,996 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-34073",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3184 Util-linux: util-linux: access control bypass due to improper hostname canonicalization",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3184",
+    "releaseDate": "Fri, 01 May 2026 01:39:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3184"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3184",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-27456 util-linux: TOCTOU Race Condition in util-linux mount(8) - Loop Device Setup",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27456",
+    "releaseDate": "Fri, 01 May 2026 01:39:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-27456"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-27456",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31478 ksmbd: replace hardcoded hdr2_len with offsetof() in smb2_calc_max_out_buf_len()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31478",
+    "releaseDate": "Fri, 01 May 2026 01:39:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31478"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31478",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0964 Libssh: improper sanitation of paths received from scp servers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0964",
+    "releaseDate": "Fri, 01 May 2026 01:39:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0966 Libssh: buffer underflow in ssh_get_hexa() on invalid input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0966",
+    "releaseDate": "Fri, 01 May 2026 01:39:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0966"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0966",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0967 Libssh: libssh: denial of service via inefficient regular expression processing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0967",
+    "releaseDate": "Fri, 01 May 2026 01:38:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0967"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0967",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-0965 Libssh: libssh: denial of service via improper configuration file handling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0965",
+    "releaseDate": "Fri, 01 May 2026 01:38:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-0965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-0965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-25645 Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25645",
+    "releaseDate": "Fri, 01 May 2026 01:38:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25645"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25645",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3731 libssh SFTP Extension Name sftp.c sftp_extensions_get_data out-of-bounds",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3731",
+    "releaseDate": "Fri, 01 May 2026 01:38:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3731"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3731",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3087 shutil.unpack_archive() doesn't check for Windows absolute paths in ZIPs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3087",
+    "releaseDate": "Fri, 01 May 2026 01:04:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3087"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3087",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6357 pip self-update functionality can import newly installed modules after wheel installation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6357",
+    "releaseDate": "Fri, 01 May 2026 01:04:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6357"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6357",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41605 Apache Thrift: Swift Compact Protocol integer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41605",
+    "releaseDate": "Fri, 01 May 2026 01:04:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41605"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41605",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41607 Apache Thrift: C++ JSON OOB read",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41607",
+    "releaseDate": "Fri, 01 May 2026 01:04:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41607"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41607",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-48431 Apache Thrift: Specially crafted input can crash a c_glib Thrift server with invalid pointer error.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-48431",
+    "releaseDate": "Fri, 01 May 2026 01:04:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-48431"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-48431",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41636 Apache Thrift: Node.js skip() recursion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41636",
+    "releaseDate": "Fri, 01 May 2026 01:04:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41636"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41636",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41604 Apache Thrift: Swift Range crash in skip()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41604",
+    "releaseDate": "Fri, 01 May 2026 01:04:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41604"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41604",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41606 Apache Thrift: c_glib dispatch stack overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41606",
+    "releaseDate": "Fri, 01 May 2026 01:03:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41606"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41606",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40356",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40356",
+    "releaseDate": "Fri, 01 May 2026 01:03:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40356"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40356",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40355",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40355",
+    "releaseDate": "Fri, 01 May 2026 01:03:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40355"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40355",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41526",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41526",
+    "releaseDate": "Fri, 01 May 2026 01:03:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41526"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41526",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41602 Apache Thrift: Go TFramedTransport uint32 overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41602",
+    "releaseDate": "Fri, 01 May 2026 01:03:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41602"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41602",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41080",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41080",
+    "releaseDate": "Fri, 01 May 2026 01:03:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41080"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41080",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31692 rtnetlink: add missing netlink_ns_capable() check for peer netns",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31692",
+    "releaseDate": "Fri, 01 May 2026 01:02:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31692"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31692",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31612 ksmbd: validate EaNameLength in smb2_get_ea()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31612",
+    "releaseDate": "Fri, 01 May 2026 01:02:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31612"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31612",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31611 ksmbd: require 3 sub-authorities before reading sub_auth[2]",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31611",
+    "releaseDate": "Fri, 01 May 2026 01:02:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31611"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31611",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31610 ksmbd: fix mechToken leak when SPNEGO decode fails after token alloc",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31610",
+    "releaseDate": "Fri, 01 May 2026 01:02:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31610"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31610",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31609 smb: client: avoid double-free in smbd_free_send_io() after smbd_send_batch_flush()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31609",
+    "releaseDate": "Fri, 01 May 2026 01:02:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31609"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31609",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31608 smb: server: avoid double-free in smb_direct_free_sendmsg after smb_direct_flush_send_list()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31608",
+    "releaseDate": "Fri, 01 May 2026 01:02:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31608"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31608",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31606 usb: gadget: f_hid: don't call cdev_init while cdev in use",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31606",
+    "releaseDate": "Fri, 01 May 2026 01:02:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31606"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31606",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31605 fbdev: udlfb: avoid divide-by-zero on FBIOPUT_VSCREENINFO",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31605",
+    "releaseDate": "Fri, 01 May 2026 01:02:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31605"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31605",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31603 staging: sm750fb: fix division by zero in ps_to_hz()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31603",
+    "releaseDate": "Fri, 01 May 2026 01:02:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31603"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31603",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31602 ALSA: ctxfi: Limit PTP to a single page",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31602",
+    "releaseDate": "Fri, 01 May 2026 01:02:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31602"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31602",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31599 media: vidtv: fix NULL pointer dereference in vidtv_channel_pmt_match_sections",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31599",
+    "releaseDate": "Fri, 01 May 2026 01:01:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31599"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31599",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31598 ocfs2: fix possible deadlock between unlink and dio_end_io_write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31598",
+    "releaseDate": "Fri, 01 May 2026 01:01:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31598"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31598",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31597 ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31597",
+    "releaseDate": "Fri, 01 May 2026 01:01:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31597"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31597",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31596 ocfs2: handle invalid dinode in ocfs2_group_extend",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31596",
+    "releaseDate": "Fri, 01 May 2026 01:01:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31596"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31596",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31532 can: raw: fix ro->uniq use-after-free in raw_rcv()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31532",
+    "releaseDate": "Fri, 01 May 2026 01:01:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31532"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31532",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31533 net/tls: fix use-after-free in -EBUSY error path of tls_do_encryption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31533",
+    "releaseDate": "Fri, 01 May 2026 01:01:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31533"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31533",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6238 Buffer overread in ns_printrrf with corrupted RDATA field",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6238",
+    "releaseDate": "Fri, 01 May 2026 01:01:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6238"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6238",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7355 Use after free in Media",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7355",
+    "releaseDate": "Fri, 01 May 2026 00:16:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7355"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7355",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7340 Integer overflow in ANGLE",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7340",
+    "releaseDate": "Fri, 01 May 2026 00:16:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7340"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7340",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7339 Heap buffer overflow in WebRTC",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7339",
+    "releaseDate": "Fri, 01 May 2026 00:16:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7339"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7339",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7341 Use after free in WebRTC",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7341",
+    "releaseDate": "Fri, 01 May 2026 00:16:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7341"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7341",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7338 Use after free in Cast",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7338",
+    "releaseDate": "Fri, 01 May 2026 00:16:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7338"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7338",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7345 Insufficient validation of untrusted input in Feedback",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7345",
+    "releaseDate": "Fri, 01 May 2026 00:16:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7345"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7345",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7346 Inappropriate implementation in Tint",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7346",
+    "releaseDate": "Fri, 01 May 2026 00:16:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7346"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7346",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7347 Use after free in Chromoting",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7347",
+    "releaseDate": "Fri, 01 May 2026 00:16:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7347"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7347",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7337 Type Confusion in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7337",
+    "releaseDate": "Fri, 01 May 2026 00:16:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7337"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7337",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7336 Use after free in WebRTC",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7336",
+    "releaseDate": "Fri, 01 May 2026 00:16:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7336"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7336",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7335 Use after free in media",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7335",
+    "releaseDate": "Fri, 01 May 2026 00:16:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7335"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7335",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7348 Use after free in Codecs",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7348",
+    "releaseDate": "Fri, 01 May 2026 00:16:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7348"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7348",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7349 Use after free in Cast",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7349",
+    "releaseDate": "Fri, 01 May 2026 00:16:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7349"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7349",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7350 Use after free in WebMIDI",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7350",
+    "releaseDate": "Fri, 01 May 2026 00:16:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7350"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7350",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7351 Race in MHTML",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7351",
+    "releaseDate": "Fri, 01 May 2026 00:16:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7351"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7351",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7353 Heap buffer overflow in Skia",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7353",
+    "releaseDate": "Fri, 01 May 2026 00:15:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7353"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7353",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7354 Out of bounds read and write in Angle",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7354",
+    "releaseDate": "Fri, 01 May 2026 00:15:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7354"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7354",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7356 Use after free in Navigation",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7356",
+    "releaseDate": "Fri, 01 May 2026 00:15:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7356"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7356",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7357 Use after free in GPU",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7357",
+    "releaseDate": "Fri, 01 May 2026 00:15:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7357"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7357",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7334 Use after free in Views",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7334",
+    "releaseDate": "Fri, 01 May 2026 00:15:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7334"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7334",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7358 Use after free in Animation",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7358",
+    "releaseDate": "Fri, 01 May 2026 00:15:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7358"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7358",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7359 Use after free in ANGLE",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7359",
+    "releaseDate": "Fri, 01 May 2026 00:15:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7359"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7359",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7360 Insufficient validation of untrusted input in Compositing",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7360",
+    "releaseDate": "Fri, 01 May 2026 00:15:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7360"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7360",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7333 Use after free in GPU",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7333",
+    "releaseDate": "Fri, 01 May 2026 00:15:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7333"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7333",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7343 Use after free in Views",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7343",
+    "releaseDate": "Fri, 01 May 2026 00:15:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7343"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7343",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7344 Use after free in Accessibility",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7344",
+    "releaseDate": "Fri, 01 May 2026 00:15:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7344"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7344",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-7363 Use after free in Canvas",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7363",
+    "releaseDate": "Fri, 01 May 2026 00:15:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7363"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7363",
     "kb": "",
     "knownIssues": ""
   }
