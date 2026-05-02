@@ -54538,6 +54538,96 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-31608 smb: server: avoid double-free in smb_direct_free_sendmsg after smb_direct_flush_send_list()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31608",
+    "releaseDate": "Sat, 02 May 2026 01:42:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31608"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31608",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31598 ocfs2: fix possible deadlock between unlink and dio_end_io_write",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31598",
+    "releaseDate": "Sat, 02 May 2026 01:41:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31598"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31598",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-31602 ALSA: ctxfi: Limit PTP to a single page",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31602",
+    "releaseDate": "Sat, 02 May 2026 01:41:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-31602"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-31602",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41080",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41080",
+    "releaseDate": "Sat, 02 May 2026 01:38:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41080"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41080",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-28532 FRRouting < 10.5.3 Integer Overflow in OSPF TLV Parser Functions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28532",
+    "releaseDate": "Sat, 02 May 2026 01:01:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-28532"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-28532",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4948 Firewalld: firewalld: local unprivileged user can modify firewall state due to d-bus setter mis-authorization",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4948",
+    "releaseDate": "Sat, 02 May 2026 01:01:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4948"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4948",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-26149 Microsoft Power Apps Desktop Client Spoofing Vulnerability",
     "description": "(no description)",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26149",
