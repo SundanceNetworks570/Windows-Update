@@ -28543,6 +28543,126 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-7598 libssh2 userauth.c userauth_password integer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7598",
+    "releaseDate": "Wed, 06 May 2026 01:42:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7598"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7598",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34003 Xorg: xwayland: x.org x server: information exposure and denial of service via out-of-bounds memory access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34003",
+    "releaseDate": "Wed, 06 May 2026 01:42:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34003"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34003",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33999 Xorg: xwayland: x.org x server: denial of service via integer underflow in xkb compatibility map handling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33999",
+    "releaseDate": "Wed, 06 May 2026 01:42:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33999"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33999",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34001 Xorg: xwayland: x.org x server: use-after-free vulnerability leads to server crash and potential memory corruption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34001",
+    "releaseDate": "Wed, 06 May 2026 01:42:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34001"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34001",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41066 lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41066",
+    "releaseDate": "Wed, 06 May 2026 01:41:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41066"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41066",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41205 Mako: Path traversal via double-slash URI prefix in TemplateLookup",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41205",
+    "releaseDate": "Wed, 06 May 2026 01:41:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41205"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41205",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43037 ip6_tunnel: clear skb2->cb[] in ip4ip6_err()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43037",
+    "releaseDate": "Wed, 06 May 2026 01:01:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43037"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43037",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43964",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43964",
+    "releaseDate": "Wed, 06 May 2026 01:01:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2025-58160 Tracing logging user input may result in poisoning logs with ANSI escape sequences",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58160",
