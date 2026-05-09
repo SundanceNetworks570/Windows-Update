@@ -58289,6 +58289,51 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-3832 Gnutls: gnutls: security bypass allows acceptance of revoked server certificates via crafted ocsp response",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3832",
+    "releaseDate": "Sat, 09 May 2026 01:39:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3832"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3832",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4948 Firewalld: firewalld: local unprivileged user can modify firewall state due to d-bus setter mis-authorization",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4948",
+    "releaseDate": "Sat, 09 May 2026 01:39:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4948"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4948",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41526",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41526",
+    "releaseDate": "Sat, 09 May 2026 01:38:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41526"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41526",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-22701 filelock Time-of-Check-Time-of-Use (TOCTOU) Symlink Vulnerability in SoftFileLock",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22701",
