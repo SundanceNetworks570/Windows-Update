@@ -51298,6 +51298,291 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-41889 pgx: SQL Injection via placeholder confusion with dollar quoted string literals",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41889",
+    "releaseDate": "Sun, 10 May 2026 01:03:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41889"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41889",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33079 Mistune ReDoS in LINK_TITLE_RE allows denial of service with crafted Markdown titles",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33079",
+    "releaseDate": "Sun, 10 May 2026 01:03:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33079"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33079",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42501 Malicious module proxy can bypass checksum database in cmd/go",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42501",
+    "releaseDate": "Sun, 10 May 2026 01:03:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42501"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42501",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42499 Quadratic string concatenation in consumePhrase in net/mail",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42499",
+    "releaseDate": "Sun, 10 May 2026 01:03:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42499"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42499",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39836 Panic in Dial and LookupPort when handling NUL byte on Windows in net",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39836",
+    "releaseDate": "Sun, 10 May 2026 01:03:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39836"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39836",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39826 Escaper bypass leads to XSS in html/template",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39826",
+    "releaseDate": "Sun, 10 May 2026 01:02:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39826"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39826",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39825 ReverseProxy forwards queries with more than urlmaxqueryparams parameters in net/http/httputil",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39825",
+    "releaseDate": "Sun, 10 May 2026 01:02:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39825"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39825",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39823 Bypass of meta content URL escaping causes XSS in html/template",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39823",
+    "releaseDate": "Sun, 10 May 2026 01:02:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39823"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39823",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39820 Quadratic string concatentation in consumeComment in net/mail",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39820",
+    "releaseDate": "Sun, 10 May 2026 01:02:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39820"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39820",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39819 Invoking \"go bug\" follows symlinks in predictable temporary filenames in cmd/go",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39819",
+    "releaseDate": "Sun, 10 May 2026 01:02:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39819"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39819",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39817 Invoking \"go tool pack\" does not sanitize output paths in cmd/go",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39817",
+    "releaseDate": "Sun, 10 May 2026 01:02:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39817"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39817",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33814 Infinite loop in HTTP/2 transport when given bad SETTINGS_MAX_FRAME_SIZE in net/http/internal/http2 in golang.org/x/net",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33814",
+    "releaseDate": "Sun, 10 May 2026 01:02:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33814"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33814",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33811 Crash when handling long CNAME response in net",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33811",
+    "releaseDate": "Sun, 10 May 2026 01:01:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33811"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33811",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44656 Vim: OS Command Injection via 'path' completion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44656",
+    "releaseDate": "Sun, 10 May 2026 01:01:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44656"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44656",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45130 Vim: Heap Buffer Overflow in spell file loading",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45130",
+    "releaseDate": "Sun, 10 May 2026 01:01:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45130"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45130",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6666 PgBouncer crash in kill_pool_logins_server_error",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6666",
+    "releaseDate": "Sun, 10 May 2026 01:01:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6666"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6666",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6667 PgBouncer missing authorization check in KILL_CLIENT admin command",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6667",
+    "releaseDate": "Sun, 10 May 2026 01:01:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6667"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6667",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6665 PgBouncer buffer overflow in SCRAM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6665",
+    "releaseDate": "Sun, 10 May 2026 01:01:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6665"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6665",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6664 PgBouncer integer overflow in PgBouncer network packet parsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6664",
+    "releaseDate": "Sun, 10 May 2026 01:01:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6664"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6664",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-28364 In OCaml before 4.14.3 and 5.x before 5.4.1, a buffer over-read in Marshal deserialization (runtime/intern.c) enables remote code execution through a multi-phase attack chain. The vulnerability stems from missing bounds validation in the readblock() function, which performs unbounded memcpy() operations using attacker-controlled lengths from crafted Marshal data.",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28364",
