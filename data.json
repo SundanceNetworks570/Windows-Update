@@ -27943,6 +27943,51 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-42833 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
+    "description": "Updated the fixed version number. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42833",
+    "releaseDate": "Wed, 13 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42833"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42833",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42898 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42898",
+    "releaseDate": "Wed, 13 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42898"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42898",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42898 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
+    "description": "Updated the fixed version number. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42898",
+    "releaseDate": "Wed, 13 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42898"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42898",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-44656 Vim: OS Command Injection via 'path' completion",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44656",
@@ -44559,6 +44604,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-25541 Bytes is vulnerable to integer overflow in BytesMut::reserve",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25541",
+    "releaseDate": "Thu, 14 May 2026 01:42:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25541"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25541",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-26030 GitHub: CVE-2026-26030 Microsoft Semantic Kernel InMemoryVectorStore filter functionality vulnerable",
     "description": "Acknowledgement added. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26030",
@@ -44825,36 +44885,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-25679",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20841 Windows Notepad App Remote Code Execution Vulnerability",
-    "description": "Added an FAQ and updated the CVSS score. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20841",
-    "releaseDate": "Thu, 12 Feb 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20841"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20841",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20841 Windows Notepad App Remote Code Execution Vulnerability",
-    "description": "Added FAQ information. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20841",
-    "releaseDate": "Thu, 12 Feb 2026 08:00:00 Z",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20841"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20841",
     "kb": "",
     "knownIssues": ""
   },
