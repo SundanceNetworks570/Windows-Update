@@ -44604,6 +44604,66 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-32177 .NET Elevation of Privilege Vulnerability",
+    "description": "New .NET Framework Packages have been added",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32177",
+    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-35433 .NET Elevation of Privilege Vulnerability",
+    "description": "New .NET Framework Packages have been added",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35433",
+    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-35433"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-35433",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41615 Microsoft Authenticator Information Disclosure Vulnerability",
+    "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Authenticator allows an unauthorized attacker to disclose information over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41615",
+    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41615"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41615",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42897 Microsoft Exchange Server Spoofing Vulnerability",
+    "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897",
+    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42897"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42897",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-25541 Bytes is vulnerable to integer overflow in BytesMut::reserve",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25541",
@@ -69177,6 +69237,261 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-33814 Infinite loop in HTTP/2 transport when given bad SETTINGS_MAX_FRAME_SIZE in net/http/internal/http2 in golang.org/x/net",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33814",
+    "releaseDate": "Fri, 15 May 2026 01:42:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33814"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33814",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-29181 OpenTelemetry-Go multi-value `baggage` header extraction causes excessive allocations (remote dos amplification)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29181",
+    "releaseDate": "Fri, 15 May 2026 01:38:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-29181"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-29181",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43968 CR Injection in SSE Encoder Enables Event Splitting via cow_sse:event/1",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43968",
+    "releaseDate": "Fri, 15 May 2026 01:02:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43968"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43968",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-7790 Unbounded chunk-size hex digits in cowlib cause quadratic CPU and memory DoS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7790",
+    "releaseDate": "Fri, 15 May 2026 01:02:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7790"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7790",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43969 Cookie Request Header Injection via Unvalidated Encoder in cow_cookie:cookie/1",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43969",
+    "releaseDate": "Fri, 15 May 2026 01:02:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43969"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43969",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-7210 The expat and elementtree parsers use insufficient entropy for XML hash-flooding protection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7210",
+    "releaseDate": "Fri, 15 May 2026 01:02:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7210"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7210",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34956 Openvswitch: open vswitch: denial of service via malformed ftp epasv command",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34956",
+    "releaseDate": "Fri, 15 May 2026 01:02:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34956"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34956",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42011 Gnutls: gnutls: security bypass due to incorrect name constraint handling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42011",
+    "releaseDate": "Fri, 15 May 2026 01:02:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42011"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42011",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42010 Gnutls: gnutls: authentication bypass via nul character in username",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42010",
+    "releaseDate": "Fri, 15 May 2026 01:02:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42010"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42010",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4890 CVE-2026-4890",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4890",
+    "releaseDate": "Fri, 15 May 2026 01:02:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4890"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4890",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4892 CVE-2026-4892",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4892",
+    "releaseDate": "Fri, 15 May 2026 01:01:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4892"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4892",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5172 CVE-2026-5172",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5172",
+    "releaseDate": "Fri, 15 May 2026 01:01:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5172"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5172",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-2291 CVE-2026-2291",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2291",
+    "releaseDate": "Fri, 15 May 2026 01:01:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-2291"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-2291",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4893 CVE-2026-4893",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4893",
+    "releaseDate": "Fri, 15 May 2026 01:01:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4893"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4893",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4891 CVE-2026-4891",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4891",
+    "releaseDate": "Fri, 15 May 2026 01:01:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4891"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4891",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8295 Integer overflow in simdjson",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8295",
+    "releaseDate": "Fri, 15 May 2026 01:01:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8295"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8295",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42304 Twisted: Denial of Service (DoS) in twisted.names via Crafted DNS Compression Pointer Chains",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42304",
+    "releaseDate": "Fri, 15 May 2026 01:01:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42304"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42304",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "Chromium: CVE-2026-3910 Inappropriate implementation in V8",
     "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2021) for more information.\n\nGoogle is aware that an exploit for CVE-2026-3910 exists in the wild.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3910",
@@ -69803,36 +70118,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-1965",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-59213 Configuration Manager Elevation of Privilege Vulnerability",
-    "description": "Updated information to include CVSS scores. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59213",
-    "releaseDate": "Fri, 13 Feb 2026 08:00:00 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-59213"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-59213",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-21517 Windows App for Mac Installer Elevation of Privilege Vulnerability",
-    "description": "Download links fixed",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21517",
-    "releaseDate": "Fri, 13 Feb 2026 08:00:00 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-21517"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-21517",
     "kb": "",
     "knownIssues": ""
   },
