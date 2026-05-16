@@ -59517,6 +59517,291 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-43490 ksmbd: validate inherited ACE SID length",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43490",
+    "releaseDate": "Sat, 16 May 2026 01:05:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43490"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43490",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46333 ptrace: slightly saner 'get_dumpable()' logic",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46333",
+    "releaseDate": "Sat, 16 May 2026 01:05:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46333"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46333",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44662 rust-openssl: Heap buffer overflow when encrypting with AES key-wrap-with-padding",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44662",
+    "releaseDate": "Sat, 16 May 2026 01:05:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44662"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44662",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44431 urllib3: Sensitive headers forwarded across origins in proxied low-level redirects",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44431",
+    "releaseDate": "Sat, 16 May 2026 01:05:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44431"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44431",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42946 NGINX ngx_http_scgi_module and ngx_http_uwsgi_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42946",
+    "releaseDate": "Sat, 16 May 2026 01:05:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42946"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42946",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42945 NGINX ngx_http_rewrite_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42945",
+    "releaseDate": "Sat, 16 May 2026 01:05:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42945"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42945",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42934 NGINX ngx_http_charset_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42934",
+    "releaseDate": "Sat, 16 May 2026 01:04:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42934"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42934",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40701 NGINX ngx_http_ssl_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40701",
+    "releaseDate": "Sat, 16 May 2026 01:04:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40701"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40701",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40460 NGINX ngx_quic_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40460",
+    "releaseDate": "Sat, 16 May 2026 01:04:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40460"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40460",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6479 PostgreSQL SSL/GSS init causes denial of service, via uncontrolled recursion",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6479",
+    "releaseDate": "Sat, 16 May 2026 01:04:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6479"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6479",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6477 PostgreSQL libpq lo_* functions let server superuser overwrite client stack memory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6477",
+    "releaseDate": "Sat, 16 May 2026 01:04:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6477"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6477",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6637 PostgreSQL refint allows stack buffer overflow and SQL injection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6637",
+    "releaseDate": "Sat, 16 May 2026 01:04:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6472 PostgreSQL CREATE TYPE does not check multirange schema CREATE privilege",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6472",
+    "releaseDate": "Sat, 16 May 2026 01:04:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6472"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6472",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6474 PostgreSQL timeofday() can disclose portions of server memory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6474",
+    "releaseDate": "Sat, 16 May 2026 01:04:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6474"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6474",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6475 PostgreSQL pg_basebackup and pg_rewind can overwrite unrelated files of origin superuser choice",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6475",
+    "releaseDate": "Sat, 16 May 2026 01:04:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6475"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6475",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6638 PostgreSQL REFRESH PUBLICATION allows SQL injection via table name",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6638",
+    "releaseDate": "Sat, 16 May 2026 01:04:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6638"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6638",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6473 PostgreSQL server undersizes allocations, via integer wraparound",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6473",
+    "releaseDate": "Sat, 16 May 2026 01:04:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6473"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6473",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6478 PostgreSQL discloses MD5-hashed passwords via covert timing channel",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6478",
+    "releaseDate": "Sat, 16 May 2026 01:03:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6478"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6478",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44673 libyang: lyb_read_string() integer overflow → heap buffer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44673",
+    "releaseDate": "Sat, 16 May 2026 01:03:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44673"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44673",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-23868",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23868",
@@ -69233,6 +69518,66 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-32316",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40379 Azure Entra ID Spoofing Vulnerability",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40379",
+    "releaseDate": "Fri, 15 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40379"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40379",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32161 Windows Native WiFi Miniport Driver Remote Code Execution Vulnerability",
+    "description": "Updated Hotpatch links.  This is in informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32161",
+    "releaseDate": "Fri, 15 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32161"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32161",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32170 Windows Rich Text Edit Elevation of Privilege Vulnerability",
+    "description": "Updated Hotpatch links.  This is in informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32170",
+    "releaseDate": "Fri, 15 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32170"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32170",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-21530 Windows Rich Text Edit Elevation of Privilege Vulnerability",
+    "description": "Updated Hotpatch links.  This is in informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21530",
+    "releaseDate": "Fri, 15 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-21530"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-21530",
     "kb": "",
     "knownIssues": ""
   },
