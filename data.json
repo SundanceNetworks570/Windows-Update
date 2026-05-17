@@ -52751,6 +52751,81 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-8328 FTP PASV SSRF, ftpcp() does not use actual peer address, trusts server-supplied PASV host address",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8328",
+    "releaseDate": "Sun, 17 May 2026 01:01:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8328"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8328",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8368 LWP::UserAgent versions before 6.83 for Perl leak Authorization and Proxy-Authorization headers on cross-origin redirects",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8368",
+    "releaseDate": "Sun, 17 May 2026 01:01:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8368"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8368",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-7210 The expat and elementtree parsers use insufficient entropy for XML hash-flooding protection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7210",
+    "releaseDate": "Sun, 17 May 2026 01:01:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7210"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7210",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44283 etcd: Read access via PrevKv in etcd transactions may bypass RBAC authorization checks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44283",
+    "releaseDate": "Sun, 17 May 2026 01:01:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44283"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44283",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46483 Vim: Command injection in tar#Vimuntar via missing shellescape {special} flag",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46483",
+    "releaseDate": "Sun, 17 May 2026 01:01:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46483"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46483",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-39856 osslsigncode has an Out-of-Bounds Read via Unvalidated Section Bounds in PE Page Hash Calculation",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39856",
