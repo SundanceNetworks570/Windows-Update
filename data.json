@@ -30464,6 +30464,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-41054 Missing exit out of permission check in haveged could lead to root exploit",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41054",
+    "releaseDate": "Sun, 24 May 2026 01:42:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41054"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41054",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-4786 Incomplete mitigation of CVE-2026-4519, %action expansion for command injection to webbrowser.open()",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4786",
