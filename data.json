@@ -34650,6 +34650,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-43029 mptcp: fix soft lockup in mptcp_recvmsg()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43029",
+    "releaseDate": "Mon, 25 May 2026 01:01:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43029"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43029",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43414 scsi: qla2xxx: Completely fix fcport double free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43414",
+    "releaseDate": "Mon, 25 May 2026 01:01:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43414"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43414",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-4438 gethostbyaddr and gethostbyaddr_r return invalid DNS hostnames",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4438",
