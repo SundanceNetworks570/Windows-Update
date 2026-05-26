@@ -6541,6 +6541,126 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-1502 HTTP client proxy tunnel headers not validated for CR/LF",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1502",
+    "releaseDate": "Tue, 26 May 2026 01:41:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-1502"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-1502",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-1176 GNU Binutils ld elflink.c _bfd_elf_gc_mark_rsec heap-based overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-1176",
+    "releaseDate": "Tue, 26 May 2026 01:39:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-1176"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-1176",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-1178 GNU Binutils ld libbfd.c bfd_putl64 memory corruption",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-1178",
+    "releaseDate": "Tue, 26 May 2026 01:39:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-1178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-1178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-3198 GNU Binutils objdump bucomm.c display_info memory leak",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-3198",
+    "releaseDate": "Tue, 26 May 2026 01:38:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-3198"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-3198",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44283 etcd: Read access via PrevKv in etcd transactions may bypass RBAC authorization checks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44283",
+    "releaseDate": "Tue, 26 May 2026 01:38:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44283"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44283",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43968 CR Injection in SSE Encoder Enables Event Splitting via cow_sse:event/1",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43968",
+    "releaseDate": "Tue, 26 May 2026 01:38:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43968"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43968",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-7790 Unbounded chunk-size hex digits in cowlib cause quadratic CPU and memory DoS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7790",
+    "releaseDate": "Tue, 26 May 2026 01:38:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7790"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7790",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-33814 Infinite loop in HTTP/2 transport when given bad SETTINGS_MAX_FRAME_SIZE in net/http/internal/http2 in golang.org/x/net",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33814",
+    "releaseDate": "Tue, 26 May 2026 01:38:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-33814"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-33814",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-23669 RPC Runtime Library Remote Code Execution Vulnerability",
     "description": "Corrected CVE title. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23669",
