@@ -1950,6 +1950,591 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-40225 In udev in systemd before 260, local root execution can occur via malicious hardware devices and unsanitized kernel output.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40225",
+    "releaseDate": "Wed, 27 May 2026 01:42:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40225"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40225",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40226 In nspawn in systemd 233 through 259 before 260, an escape-to-host action can occur via a crafted optional config file.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40226",
+    "releaseDate": "Wed, 27 May 2026 01:40:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40226"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40226",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8711 NGINX JavaScript vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8711",
+    "releaseDate": "Wed, 27 May 2026 01:40:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8711"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8711",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4890 CVE-2026-4890",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4890",
+    "releaseDate": "Wed, 27 May 2026 01:40:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4890"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4890",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5172 CVE-2026-5172",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5172",
+    "releaseDate": "Wed, 27 May 2026 01:40:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5172"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5172",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-2291 CVE-2026-2291",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2291",
+    "releaseDate": "Wed, 27 May 2026 01:40:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-2291"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-2291",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4893 CVE-2026-4893",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4893",
+    "releaseDate": "Wed, 27 May 2026 01:39:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4893"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4893",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-4891 CVE-2026-4891",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4891",
+    "releaseDate": "Wed, 27 May 2026 01:39:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-4891"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-4891",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5222 Cargo can be coerced to share credentials between registries",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5222",
+    "releaseDate": "Wed, 27 May 2026 01:18:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5222"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5222",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5223 Crates in third party registries can override the cached source of other crates",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5223",
+    "releaseDate": "Wed, 27 May 2026 01:18:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5223"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5223",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8466 Unbounded buffer accumulation in multipart header parsing causes denial of service in cowboy",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8466",
+    "releaseDate": "Wed, 27 May 2026 01:18:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8466"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8466",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6402 webpack-dev-server vulnerable to cross-origin source code exposure on non-HTTPS origins",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6402",
+    "releaseDate": "Wed, 27 May 2026 01:18:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6402"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6402",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-9256 NGINX ngx_http_rewrite_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9256",
+    "releaseDate": "Wed, 27 May 2026 01:18:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-9256"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-9256",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-9149 Libsolv: heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9149",
+    "releaseDate": "Wed, 27 May 2026 01:18:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-9149"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-9149",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-9150 Libsolv: stack-based buffer overflow in libsolv's debian metadata parser when handling sha384/sha512 checksums",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9150",
+    "releaseDate": "Wed, 27 May 2026 01:18:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-9150"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-9150",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42508 Invoking  auth bypass via unenforced @revoked status in golang.org/x/crypto/ssh/knownhosts",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42508",
+    "releaseDate": "Wed, 27 May 2026 01:18:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42508"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42508",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39833 Invoking  key constraints not enforced in golang.org/x/crypto/ssh/agent",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39833",
+    "releaseDate": "Wed, 27 May 2026 01:17:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39833"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39833",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46595 Invoking  VerifiedPublicKeyCallback permissions skip enforcement in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46595",
+    "releaseDate": "Wed, 27 May 2026 01:17:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46595"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46595",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46598 Invoking  pathological inputs can lead to client panic in golang.org/x/crypto/ssh/agent",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46598",
+    "releaseDate": "Wed, 27 May 2026 01:17:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46598"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46598",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39832 Invoking  agent constraints dropped when forwarding keys in golang.org/x/crypto/ssh/agent",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39832",
+    "releaseDate": "Wed, 27 May 2026 01:16:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39832"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39832",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39828 Invoking  bypass of certificate restrictions in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39828",
+    "releaseDate": "Wed, 27 May 2026 01:16:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39828"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39828",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39834 Invoking  infinite loop on large channel writes in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39834",
+    "releaseDate": "Wed, 27 May 2026 01:15:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39834"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39834",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39835 Invoking  server panic during CheckHostKey/Authenticate in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39835",
+    "releaseDate": "Wed, 27 May 2026 01:15:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39835"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39835",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39827 Invoking  memory leak when rejecting channels can lead to DoS in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39827",
+    "releaseDate": "Wed, 27 May 2026 01:14:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39827"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39827",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39831 Invoking  bypass of FIDO/U2F security keys physical interaction in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39831",
+    "releaseDate": "Wed, 27 May 2026 01:14:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39831"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39831",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46597 Invoking  byte arithmetic causes underflow and panic in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46597",
+    "releaseDate": "Wed, 27 May 2026 01:13:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46597"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46597",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39830 Invoking  client can cause server deadlock on unexpected responses in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39830",
+    "releaseDate": "Wed, 27 May 2026 01:12:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39830"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39830",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39829 Invoking  pathological RSA/DSA parameters may cause DoS in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39829",
+    "releaseDate": "Wed, 27 May 2026 01:12:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39829"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39829",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-25681 Invoking  incorrect handling of character references in DOCTYPE nodes in golang.org/x/net/html",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25681",
+    "releaseDate": "Wed, 27 May 2026 01:11:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25681"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25681",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-27136 Invoking  duplicate attributes can cause XSS in golang.org/x/net/html",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27136",
+    "releaseDate": "Wed, 27 May 2026 01:10:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-27136"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-27136",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42502 Invoking  incorrect handling of HTML elements in foreign content in golang.org/x/net/html",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42502",
+    "releaseDate": "Wed, 27 May 2026 01:09:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42502"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42502",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39824 Invoking  integer overflow in NewNTUnicodeString in golang.org/x/sys/windows",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39824",
+    "releaseDate": "Wed, 27 May 2026 01:08:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39824"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39824",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-25680 Invoking denial of service when parsing arbitrary HTML in golang.org/x/net/html",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25680",
+    "releaseDate": "Wed, 27 May 2026 01:06:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-25680"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-25680",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42506 Invoking  incorrect handling of namespaced elements in foreign content in golang.org/x/net/html",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42506",
+    "releaseDate": "Wed, 27 May 2026 01:05:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42506"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42506",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39821 Invoking failure to reject ASCII-only Punycode-encoded labels in golang.org/x/net/idna",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39821",
+    "releaseDate": "Wed, 27 May 2026 01:03:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39821"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39821",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8376 Perl versions through 5.43.10 have a heap buffer overflow when compiling regular expressions with a repeated fixed string on 32-bit builds",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8376",
+    "releaseDate": "Wed, 27 May 2026 01:01:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8376"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8376",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41401 libyang - Heap Use-After-Free Write in XML Metadata Parsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41401",
+    "releaseDate": "Wed, 27 May 2026 01:01:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41401"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41401",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46300 net: skbuff: preserve shared-frag marker during coalescing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46300",
+    "releaseDate": "Wed, 27 May 2026 01:01:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46300"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46300",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43503 net: skbuff: propagate shared-frag marker through frag-transfer helpers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43503",
+    "releaseDate": "Wed, 27 May 2026 01:01:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43503"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43503",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-2443 Libsoup: out-of-bounds read in libsoup handle_partial_get() leading to heap information disclosure",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2443",
@@ -2441,126 +3026,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-4437",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-26960 node-tar has Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in Extraction",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26960",
-    "releaseDate": "Wed, 25 Feb 2026 01:38:11 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26960"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26960",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68973 In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments of an index variable where one is intended, leading to an out-of-bounds write for crafted input. (For ExtendedLTS, 2.2.51 and later are fixed versions.)",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68973",
-    "releaseDate": "Wed, 25 Feb 2026 01:36:51 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68973"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68973",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-2739 This affects versions of the package bn.js before 5.2.3. Calling maskn(0) on any BN instance corrupts the internal state, causing toString(), divmod(), and other methods to enter an infinite loop, hanging the process indefinitely.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-2739",
-    "releaseDate": "Wed, 25 Feb 2026 01:03:52 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-2739"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-2739",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-21620 TFTP Path Traversal",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21620",
-    "releaseDate": "Wed, 25 Feb 2026 01:03:47 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-21620"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-21620",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-27211 Cloud Hypervisor: Host File Exfiltration via QCOW Backing File Abuse",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27211",
-    "releaseDate": "Wed, 25 Feb 2026 01:03:39 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-27211"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-27211",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38656 wifi: iwlwifi: Fix error code in iwl_op_mode_dvm_start()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38656",
-    "releaseDate": "Wed, 25 Feb 2026 01:03:29 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38656"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38656",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2023-53543 vdpa: Add max vqp attr to vdpa_nl_policy for nlattr length check",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-53543",
-    "releaseDate": "Wed, 25 Feb 2026 01:03:25 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2023-53543"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2023-53543",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-27199 Werkzeug safe_join() allows Windows special device names",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27199",
-    "releaseDate": "Wed, 25 Feb 2026 01:03:19 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-27199"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-27199",
     "kb": "",
     "knownIssues": ""
   },
@@ -6537,6 +7002,81 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-40372",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45495 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "description": "CWE added. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45495",
+    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45495"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45495",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45498 Microsoft Defender Denial of Service Vulnerability",
+    "description": "CWE added. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45498",
+    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45498"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45498",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41091 Microsoft Defender Elevation of Privilege Vulnerability",
+    "description": "In the Security Updates table, added links to the Release Notes. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41091",
+    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41091"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41091",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45584 Microsoft Defender Remote Code Execution Vulnerability",
+    "description": "In the Security Updates table, added links to the Release Notes. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45584",
+    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45584"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45584",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45659 Microsoft SharePoint Remote Code Execution Vulnerability",
+    "description": "Information published. This CVE was addressed by updates that were released in May 2026, but the CVE was inadvertently omitted from the May 2026 Security Updates. This is an informational change only. Customers who have already installed the May 2026 updates do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45659",
+    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45659"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45659",
     "kb": "",
     "knownIssues": ""
   },
