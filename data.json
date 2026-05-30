@@ -34200,6 +34200,1176 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-46138 Bluetooth: hci_event: Fix OOB read and infinite loop in hci_le_create_big_complete_evt",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46138",
+    "releaseDate": "Sat, 30 May 2026 01:46:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46138"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46138",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46150 fanotify: fix false positive on permission events",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46150",
+    "releaseDate": "Sat, 30 May 2026 01:46:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46150"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46150",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46241 spi: mpc52xx: fix use-after-free on registration failure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46241",
+    "releaseDate": "Sat, 30 May 2026 01:46:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46241"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46241",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46156 LoongArch: Fix potential ADE in loongson_gpu_fixup_dma_hang()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46156",
+    "releaseDate": "Sat, 30 May 2026 01:45:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46156"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46156",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46112 RDMA/hns: Fix unlocked call to hns_roce_qp_remove()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46112",
+    "releaseDate": "Sat, 30 May 2026 01:45:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46112"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46112",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46114 RDMA/rxe: Reject non-8-byte ATOMIC_WRITE payloads",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46114",
+    "releaseDate": "Sat, 30 May 2026 01:45:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46114"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46114",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46125 wifi: mac80211: remove station if connection prep fails",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46125",
+    "releaseDate": "Sat, 30 May 2026 01:45:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46125"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46125",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46204 drm/amdgpu/vcn4: Prevent OOB reads when parsing IB",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46204",
+    "releaseDate": "Sat, 30 May 2026 01:45:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46204"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46204",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46152 wifi: mac80211: drop stray 'static' from fast-RX rx_result",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46152",
+    "releaseDate": "Sat, 30 May 2026 01:45:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46152"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46152",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46133 RDMA/rxe: Reject unknown opcodes before ICRC processing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46133",
+    "releaseDate": "Sat, 30 May 2026 01:45:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46133"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46133",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46108 ipmi:si: Return state to normal if message allocation fails",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46108",
+    "releaseDate": "Sat, 30 May 2026 01:45:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46108"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46108",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46123 Bluetooth: virtio_bt: clamp rx length before skb_put",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46123",
+    "releaseDate": "Sat, 30 May 2026 01:45:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46123"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46123",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46230 drm/amdgpu/vcn3: Prevent OOB reads when parsing dec msg",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46230",
+    "releaseDate": "Sat, 30 May 2026 01:45:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46230"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46230",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46170 mptcp: pm: ADD_ADDR rtx: free sk if last",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46170",
+    "releaseDate": "Sat, 30 May 2026 01:45:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46170"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46170",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46129 btrfs: fix double free in create_space_info() error path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46129",
+    "releaseDate": "Sat, 30 May 2026 01:45:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46129"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46129",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46157 ALSA: pcm: oss: Fix data race at accessing runtime.oss.trigger",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46157",
+    "releaseDate": "Sat, 30 May 2026 01:44:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46157"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46157",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46177 ipmi: Add limits to event and receive message requests",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46177",
+    "releaseDate": "Sat, 30 May 2026 01:44:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46196 tracepoint: balance regfunc() on func_add() failure in tracepoint_add_func()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46196",
+    "releaseDate": "Sat, 30 May 2026 01:44:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46196"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46196",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46235 media: saa7164: add ioremap return checks and cleanups",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46235",
+    "releaseDate": "Sat, 30 May 2026 01:44:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46235"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46235",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46236 media: rc: xbox_remote: heed DMA restrictions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46236",
+    "releaseDate": "Sat, 30 May 2026 01:44:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46116 xfrm: defensively unhash xfrm_state lists in __xfrm_state_delete",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46116",
+    "releaseDate": "Sat, 30 May 2026 01:44:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46116"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46116",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46179 ASoC: SOF: Don't allow pointer operations on unconfigured streams",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46179",
+    "releaseDate": "Sat, 30 May 2026 01:44:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46179"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46179",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46149 scsi: target: configfs: Bound snprintf() return in tg_pt_gp_members_show()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46149",
+    "releaseDate": "Sat, 30 May 2026 01:44:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46149"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46149",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46107 dm-thin: fix metadata refcount underflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46107",
+    "releaseDate": "Sat, 30 May 2026 01:44:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46107"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46107",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46234 vsock: fix buffer size clamping order",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46234",
+    "releaseDate": "Sat, 30 May 2026 01:44:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46234"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46234",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46220 drm/amdgpu/sdma4: replace BUG_ON with WARN_ON in fence emission",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46220",
+    "releaseDate": "Sat, 30 May 2026 01:44:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46220"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46220",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46232 HID: playstation: Clamp num_touch_reports",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46232",
+    "releaseDate": "Sat, 30 May 2026 01:43:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46232"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46232",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46212 batman-adv: bla: prevent use-after-free when deleting claims",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46212",
+    "releaseDate": "Sat, 30 May 2026 01:43:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46212"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46212",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46161 md/raid10: fix divide-by-zero in setup_geo() with zero far_copies",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46161",
+    "releaseDate": "Sat, 30 May 2026 01:43:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46161"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46161",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46185 smb/client: fix out-of-bounds read in symlink_data()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46185",
+    "releaseDate": "Sat, 30 May 2026 01:43:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46185"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46185",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46191 fbcon: Avoid OOB font access if console rotation fails",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46191",
+    "releaseDate": "Sat, 30 May 2026 01:43:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46191"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46191",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46180 wifi: brcmfmac: Fix potential use-after-free issue when stopping watchdog task",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46180",
+    "releaseDate": "Sat, 30 May 2026 01:43:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46180"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46180",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46160 btrfs: fix missing last_unlink_trans update when removing a directory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46160",
+    "releaseDate": "Sat, 30 May 2026 01:43:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46160"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46160",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46173 exit: prevent preemption of oopsing TASK_DEAD task",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46173",
+    "releaseDate": "Sat, 30 May 2026 01:43:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46173"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46173",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46128 ipmi: Check event message buffer response for bad data",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46128",
+    "releaseDate": "Sat, 30 May 2026 01:43:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46128"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46128",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46229 drm/amdkfd: Clear VRAM on allocation to prevent stale data exposure",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46229",
+    "releaseDate": "Sat, 30 May 2026 01:43:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46229"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46229",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46109 usb: ulpi: fix memory leak on ulpi_register() error paths",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46109",
+    "releaseDate": "Sat, 30 May 2026 01:43:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46109"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46109",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46194 f2fs: fix node_cnt race between extent node destroy and writeback",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46194",
+    "releaseDate": "Sat, 30 May 2026 01:43:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46194"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46194",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46195 smb: client: validate dacloffset before building DACL pointers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46195",
+    "releaseDate": "Sat, 30 May 2026 01:42:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46195"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46195",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46131 KVM: x86: check for nEPT/nNPT in slow flush hypercalls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46131",
+    "releaseDate": "Sat, 30 May 2026 01:42:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46131"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46131",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46111 Bluetooth: hci_conn: fix potential UAF in create_big_sync",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46111",
+    "releaseDate": "Sat, 30 May 2026 01:42:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46111"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46111",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46163 wifi: b43legacy: enforce bounds check on firmware key index in RX path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46163",
+    "releaseDate": "Sat, 30 May 2026 01:42:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46163"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46163",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46198 batman-adv: fix integer overflow on buff_pos",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46198",
+    "releaseDate": "Sat, 30 May 2026 01:42:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46198"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46198",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46168 mptcp: fix scheduling with atomic in timestamp sockopt",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46168",
+    "releaseDate": "Sat, 30 May 2026 01:42:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46168"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46168",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46148 spi: microchip-core-qspi: control built-in cs manually",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46148",
+    "releaseDate": "Sat, 30 May 2026 01:42:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46148"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46148",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46172 ipv6: xfrm6: release dst on error in xfrm6_rcv_encap()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46172",
+    "releaseDate": "Sat, 30 May 2026 01:42:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46172"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46172",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46186 Bluetooth: virtio_bt: validate rx pkt_type header length",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46186",
+    "releaseDate": "Sat, 30 May 2026 01:42:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46186"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46186",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46209 drm/gem: Fix inconsistent plane dimension calculation in drm_gem_fb_init_with_funcs()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46209",
+    "releaseDate": "Sat, 30 May 2026 01:42:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46209"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46209",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46137 mptcp: pm: ADD_ADDR rtx: fix potential data-race",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46137",
+    "releaseDate": "Sat, 30 May 2026 01:42:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46137"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46137",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46200 spi: mpc52xx: fix controller deregistration",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46200",
+    "releaseDate": "Sat, 30 May 2026 01:42:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46200"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46200",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46214 vsock/virtio: fix accept queue count leak on transport mismatch",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46214",
+    "releaseDate": "Sat, 30 May 2026 01:41:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46214"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46214",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46231 batman-adv: bla: put backbone reference on failed claim hash insert",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46231",
+    "releaseDate": "Sat, 30 May 2026 01:41:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46231"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46231",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46219 spi: mpc52xx: fix use-after-free on unbind",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46219",
+    "releaseDate": "Sat, 30 May 2026 01:41:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46219"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46219",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46178 RDMA/mlx4: Fix resource leak on error in mlx4_ib_create_srq()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46178",
+    "releaseDate": "Sat, 30 May 2026 01:41:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46181 RDMA/mlx4: Fix mis-use of RCU in mlx4_srq_event()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46181",
+    "releaseDate": "Sat, 30 May 2026 01:41:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46181"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46181",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46174 x86/CPU/AMD: Prevent improper isolation of shared resources in Zen2's op cache",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46174",
+    "releaseDate": "Sat, 30 May 2026 01:41:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46174"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46174",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46193 xfrm: ah: account for ESN high bits in async callbacks",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46193",
+    "releaseDate": "Sat, 30 May 2026 01:41:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46193"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46193",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46184 sound: ua101: fix division by zero at probe",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46184",
+    "releaseDate": "Sat, 30 May 2026 01:41:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46184"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46184",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46106 eventfs: Hold eventfs_mutex and SRCU when remount walks events",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46106",
+    "releaseDate": "Sat, 30 May 2026 01:41:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46106"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46106",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46121 mm/damon/sysfs-schemes: protect memcg_path kfree() with damon_sysfs_lock",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46121",
+    "releaseDate": "Sat, 30 May 2026 01:41:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46121"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46121",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46124 isofs: validate block number from NFS file handle in isofs_export_iget",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46124",
+    "releaseDate": "Sat, 30 May 2026 01:41:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46124"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46124",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46142 net: libwx: fix VF illegal register access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46142",
+    "releaseDate": "Sat, 30 May 2026 01:41:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46142"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46142",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46151 usb: usblp: fix heap leak in IEEE 1284 device ID via short response",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46151",
+    "releaseDate": "Sat, 30 May 2026 01:40:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46151"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46151",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46199 drm/amdgpu/vcn4: Prevent OOB reads when parsing dec msg",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46199",
+    "releaseDate": "Sat, 30 May 2026 01:40:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46199"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46199",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46130 dm-verity-fec: fix reading parity bytes split across blocks (take 3)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46130",
+    "releaseDate": "Sat, 30 May 2026 01:40:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46130"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46130",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46169 hfsplus: fix uninit-value by validating catalog record size",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46169",
+    "releaseDate": "Sat, 30 May 2026 01:40:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46169"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46169",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46206 batman-adv: reject new tp_meter sessions during teardown",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46206",
+    "releaseDate": "Sat, 30 May 2026 01:40:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46206"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46206",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46144 RDMA/mana: Fix error unwind in mana_ib_create_qp_rss()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46144",
+    "releaseDate": "Sat, 30 May 2026 01:40:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46144"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46144",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46135 nvmet-tcp: fix race between ICReq handling and queue teardown",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46135",
+    "releaseDate": "Sat, 30 May 2026 01:40:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46135"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46135",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46119 libceph: Fix slab-out-of-bounds access in auth message processing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46119",
+    "releaseDate": "Sat, 30 May 2026 01:40:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46119"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46119",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46113 KVM: x86: Fix shadow paging use-after-free due to unexpected GFN",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46113",
+    "releaseDate": "Sat, 30 May 2026 01:40:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46113"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46113",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46189 RDMA/vmw_pvrdma: Fix double free on pvrdma_alloc_ucontext() error path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46189",
+    "releaseDate": "Sat, 30 May 2026 01:40:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46189"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46189",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46167 usb: usblp: fix uninitialized heap leak via LPGETSTATUS ioctl",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46167",
+    "releaseDate": "Sat, 30 May 2026 01:40:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46167"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46167",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46147 KVM: arm64: Fix pin leak and publication ordering in __pkvm_init_vcpu()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46147",
+    "releaseDate": "Sat, 30 May 2026 01:40:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46147"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46147",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46187 wifi: rsi: fix kthread lifetime race between self-exit and external-stop",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46187",
+    "releaseDate": "Sat, 30 May 2026 01:39:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46187"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46187",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46153 8021q: delete cleared egress QoS mappings",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46153",
+    "releaseDate": "Sat, 30 May 2026 01:39:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46153"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46153",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46227 sctp: revalidate list cursor after sctp_sendmsg_to_asoc() in SCTP_SENDALL",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46227",
+    "releaseDate": "Sat, 30 May 2026 01:39:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46227"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46227",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41184 ServiceAccount token disclosure via install-cni container logs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41184",
+    "releaseDate": "Sat, 30 May 2026 01:01:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41184"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41184",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-4645 Github.com/antchfx/xpath: xpath: denial of service via crafted boolean xpath expressions",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4645",
@@ -34256,771 +35426,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-33343",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-27571 nats-server websockets are vulnerable to pre-auth memory DoS",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27571",
-    "releaseDate": "Sat, 28 Feb 2026 01:39:54 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-27571"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-27571",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-69873 ajv (Another JSON Schema Validator) before 8.18.0 is vulnerable to Regular Expression Denial of Service (ReDoS) when the $data option is enabled. The pattern keyword accepts runtime data via JSON Pointer syntax ($data reference), which is passed directly to the JavaScript RegExp() constructor without validation. An attacker can inject a malicious regex pattern (e.g., \"^(a|a)*$\") combined with crafted input to cause catastrophic backtracking. A 31-character payload causes approximately 44 seconds of CPU blocking, with each additional character doubling execution time. This enables complete denial of service with a single HTTP request against any API using ajv with $data: true for dynamic schema validation.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-69873",
-    "releaseDate": "Sat, 28 Feb 2026 01:39:45 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-69873"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-69873",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71232 scsi: qla2xxx: Free sp in error path to fix system crash",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71232",
-    "releaseDate": "Sat, 28 Feb 2026 01:39:04 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71232"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71232",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71237 nilfs2: Fix potential block overflow that cause system hang",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71237",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:58 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71237"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71237",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23220 ksmbd: fix infinite loop caused by next_smb2_rcv_hdr_off reset in error paths",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23220",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:52 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23220"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23220",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71229 wifi: rtw88: Fix alignment fault in rtw_core_enable_beacon()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71229",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:47 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71229"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71229",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71235 scsi: qla2xxx: Delay module unload while fabric scan in progress",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71235",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:41 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71235"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71235",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23228 smb: server: fix leak of active_num_conn in ksmbd_tcp_new_connection()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23228",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:35 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23228"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23228",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23222 crypto: omap - Allocate OMAP_CRYPTO_FORCE_COPY scatterlists correctly",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23222",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:29 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23222"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23222",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23212 bonding: annotate data-races around slave->last_rx",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23212",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:24 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23212"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23212",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23216 scsi: target: iscsi: Fix use-after-free in iscsit_dec_conn_usage_count()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23216",
-    "releaseDate": "Sat, 28 Feb 2026 01:38:18 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23216"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23216",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68358 btrfs: fix racy bitfield write in btrfs_clear_space_info_full()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68358",
-    "releaseDate": "Sat, 28 Feb 2026 01:37:37 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68358"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68358",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68725 bpf: Do not let BPF test infra emit invalid GSO types to stack",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68725",
-    "releaseDate": "Sat, 28 Feb 2026 01:37:31 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68725"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68725",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68223 drm/radeon: delete radeon_fence_process in is_signaled, no deadlock",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68223",
-    "releaseDate": "Sat, 28 Feb 2026 01:37:24 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68223"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68223",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40164 usbnet: Fix using smp_processor_id() in preemptible code warnings",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40164",
-    "releaseDate": "Sat, 28 Feb 2026 01:37:07 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40164"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40164",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40005 spi: cadence-quadspi: Implement refcount to handle unbind during busy",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40005",
-    "releaseDate": "Sat, 28 Feb 2026 01:36:48 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40005"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40005",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-38162 netfilter: nft_set_pipapo: prevent overflow in lookup table allocation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38162",
-    "releaseDate": "Sat, 28 Feb 2026 01:36:02 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-38162"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-38162",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-28364 In OCaml before 4.14.3 and 5.x before 5.4.1, a buffer over-read in Marshal deserialization (runtime/intern.c) enables remote code execution through a multi-phase attack chain. The vulnerability stems from missing bounds validation in the readblock() function, which performs unbounded memcpy() operations using attacker-controlled lengths from crafted Marshal data.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28364",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:48 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-28364"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-28364",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40082 hfsplus: fix slab-out-of-bounds read in hfsplus_uni2asc()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40082",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:41 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40082"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40082",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22999 net/sched: sch_qfq: do not free existing class in qfq_change_class()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22999",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:35 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22999"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22999",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22998 nvme-tcp: fix NULL pointer dereferences in nvmet_tcp_build_pdu_iovec",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22998",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:30 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22998"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22998",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22997 net: can: j1939: j1939_xtp_rx_rts_session_active(): deactivate session upon receiving the second rts",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22997",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:22 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22997"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22997",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22996 net/mlx5e: Don't store mlx5e_priv in mlx5e_dev devlink priv",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22996",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:17 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22996"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22996",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22992 libceph: return the handler error from mon_handle_auth_done()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22992",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:11 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22992"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22992",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22991 libceph: make free_choose_arg_map() resilient to partial allocation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22991",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:06 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22991"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22991",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22990 libceph: replace overzealous BUG_ON in osdmap_apply_incremental()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22990",
-    "releaseDate": "Sat, 28 Feb 2026 01:04:00 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22990"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22990",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22984 libceph: prevent potential out-of-bounds reads in handle_auth_done()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22984",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:55 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22984"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22984",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22982 net: mscc: ocelot: Fix crash when adding interface under a lag",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22982",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:50 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22982"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22982",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22980 nfsd: provide locking for v4_end_grace",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22980",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:44 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22980"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22980",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22979 net: fix memory leak in skb_segment_list for GRO packets",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22979",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:39 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22979"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22979",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22978 wifi: avoid kernel-infoleak from struct iw_point",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22978",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:33 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22978"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22978",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22977 net: sock: fix hardened usercopy panic in sock_recv_errqueue",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22977",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:28 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22977"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22977",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22976 net/sched: sch_qfq: Fix NULL deref when deactivating inactive aggregate in qfq_reset",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22976",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:22 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22976"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22976",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71163 dmaengine: idxd: fix device leaks on compat bind and unbind",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71163",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:17 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71163"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71163",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71162 dmaengine: tegra-adma: Fix use-after-free",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71162",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:11 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71162"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71162",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71161 dm-verity: disable recursive forward error correction",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71161",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:06 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71161"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71161",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71160 netfilter: nf_tables: avoid chain re-validation if possible",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71160",
-    "releaseDate": "Sat, 28 Feb 2026 01:03:01 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71160"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71160",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71154 net: usb: rtl8150: fix memory leak on usb_submit_urb() failure",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71154",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:55 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71154"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71154",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71152 net: dsa: properly keep track of conduit reference",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71152",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:50 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71152"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71152",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71150 ksmbd: Fix refcount leak when invalid session is found on session lookup",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71150",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:44 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71150"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71150",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71147 KEYS: trusted: Fix a memory leak in tpm2_load_cmd",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71147",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:39 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71147"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71147",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71089 iommu: disable SVA when CONFIG_X86 is set",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71089",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:33 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71089"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71089",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68817 ksmbd: fix use-after-free in ksmbd_tree_connect_put under concurrency",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68817",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:28 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68817"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68817",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68365 fs/ntfs3: Initialize allocated memory before use",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68365",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:18 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68365"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68365",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68340 team: Move team device type change at the end of team_port_add",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68340",
-    "releaseDate": "Sat, 28 Feb 2026 01:02:07 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68340"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68340",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68211 ksm: use range-walk function to jump over holes in scan_get_next_rmap_item",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68211",
-    "releaseDate": "Sat, 28 Feb 2026 01:01:57 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68211"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68211",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40251 devlink: rate: Unset parent pointer in devl_rate_nodes_destroy",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40251",
-    "releaseDate": "Sat, 28 Feb 2026 01:01:52 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40251"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40251",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40149 tls: Use __sk_dst_get() and dst_dev_rcu() in get_netdev_for_sock().",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40149",
-    "releaseDate": "Sat, 28 Feb 2026 01:01:42 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40149"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40149",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40040 mm/ksm: fix flag-dropping behavior in ksm_madvise",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40040",
-    "releaseDate": "Sat, 28 Feb 2026 01:01:37 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40040"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40040",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-40039 ksmbd: Fix race condition in RPC handle list access",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40039",
-    "releaseDate": "Sat, 28 Feb 2026 01:01:32 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-40039"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-40039",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2023-54207 HID: uclogic: Correct devm device reference for hidinput input_dev name",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-54207",
-    "releaseDate": "Sat, 28 Feb 2026 01:01:22 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2023-54207"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2023-54207",
     "kb": "",
     "knownIssues": ""
   },
@@ -43031,6 +43436,66 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-42257",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26168 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26168",
+    "releaseDate": "Fri, 29 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26168"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26168",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-24293 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24293",
+    "releaseDate": "Fri, 29 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-24293"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-24293",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-41088 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41088",
+    "releaseDate": "Fri, 29 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-41088"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-41088",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42898 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42898",
+    "releaseDate": "Fri, 29 May 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42898"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42898",
     "kb": "",
     "knownIssues": ""
   },
