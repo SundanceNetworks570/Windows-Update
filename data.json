@@ -44010,6 +44010,51 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-39829 Invoking  pathological RSA/DSA parameters may cause DoS in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39829",
+    "releaseDate": "Mon, 01 Jun 2026 01:42:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39829"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39829",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39821 Invoking failure to reject ASCII-only Punycode-encoded labels in golang.org/x/net/idna",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39821",
+    "releaseDate": "Mon, 01 Jun 2026 01:42:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39821"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39821",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39835 Invoking  server panic during CheckHostKey/Authenticate in golang.org/x/crypto/ssh",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39835",
+    "releaseDate": "Mon, 01 Jun 2026 01:41:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39835"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39835",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-26168 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26168",
