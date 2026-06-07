@@ -37156,17 +37156,197 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-28364 In OCaml before 4.14.3 and 5.x before 5.4.1, a buffer over-read in Marshal deserialization (runtime/intern.c) enables remote code execution through a multi-phase attack chain. The vulnerability stems from missing bounds validation in the readblock() function, which performs unbounded memcpy() operations using attacker-controlled lengths from crafted Marshal data.",
+    "title": "CVE-2026-7774 tarfile.data_filter path traversal bypass allows writing outside the extraction directory",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28364",
-    "releaseDate": "Sun, 08 Mar 2026 01:01:32 -0800",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7774",
+    "releaseDate": "Sun, 07 Jun 2026 01:03:17 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-28364"
+      "CVE-2026-7774"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-28364",
+    "cve": "CVE-2026-7774",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-3276 Potential DoS via quadratic complexity in unicodedata.normalize()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3276",
+    "releaseDate": "Sun, 07 Jun 2026 01:03:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-3276"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-3276",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8643 pip can extract console_scripts and gui_scripts outside installation directory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8643",
+    "releaseDate": "Sun, 07 Jun 2026 01:03:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8643"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8643",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-8829 HTML::Entities versions before 3.84 for Perl read freed heap memory in _decode_entities",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8829",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-8829"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-8829",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43958 Rrdtool: rrdtool: stack buffer overflow allows local code execution or denial of service",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43958",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43958"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43958",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5419 Guntls: gnutls: information disclosure via timing side-channel in pkcs#7 padding removal",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5419",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5419"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5419",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-27145 Inefficient candidate hostname parsing in crypto/x509",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27145",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-27145"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-27145",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42507 Arbitrary inputs are included in errors without any escaping in net/textproto",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42507",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42507"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42507",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42504 Quadratic complexity in WordDecoder.DecodeHeader in mime",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42504",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42504"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42504",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-37460 Missing input validation in the rfapiRibBi2Ri() function (rfapi_rib.c) of FRRouting (FRR) stable/10.0 to stable/10.6 allows attackers to cause a Denial of Service (DoS) via supplying a crafted BGP UPDATE message.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-37460",
+    "releaseDate": "Sun, 07 Jun 2026 01:02:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-37460"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-37460",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-10722 cilium ebpf LoadCollectionSpec/LoadCollectionSpecFromReader btf.go loadRawSpec integer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-10722",
+    "releaseDate": "Sun, 07 Jun 2026 01:01:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-10722"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-10722",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50219 libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_GetBuffer, XML_Parse, XML_ParseBuffer, XML_ParserFree, or XML_ParserReset from within handlers in cases of a policy violation. Thus, a use-after-free can occur,",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50219",
+    "releaseDate": "Sun, 07 Jun 2026 01:01:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50219"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50219",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-11332 Ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11332",
+    "releaseDate": "Sun, 07 Jun 2026 01:01:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-11332"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-11332",
     "kb": "",
     "knownIssues": ""
   },
@@ -40887,36 +41067,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-41526",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-22701 filelock Time-of-Check-Time-of-Use (TOCTOU) Symlink Vulnerability in SoftFileLock",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-22701",
-    "releaseDate": "Sat, 07 Mar 2026 01:01:21 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-22701"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-22701",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68146 filelock has TOCTOU race condition that allows symlink attacks during lock file creation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68146",
-    "releaseDate": "Sat, 07 Mar 2026 01:01:15 -0800",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68146"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68146",
     "kb": "",
     "knownIssues": ""
   },
