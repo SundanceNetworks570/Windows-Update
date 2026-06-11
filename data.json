@@ -5116,6 +5116,126 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-47294 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47294",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-47294"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-47294",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42903 Windows Kerberos Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42903",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42903"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42903",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-48569 Visual Studio Code Security Feature Bypass Vulnerability",
+    "description": "Updated the Security Updates Build Number",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48569",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-48569"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-48569",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40376 Visual Studio Code Elevation of Privilege Vulnerability",
+    "description": "Updated the Security Updates Build Number",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40376",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40376"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40376",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45482 Microsoft Visual Studio Code CoPilot Chat Security Feature Bypass Vulnerability",
+    "description": "Updated the Security Updates Build Number and Title as the Chat extention is now merged into Visual Studio Code",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45482",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45482"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45482",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40371 Microsoft Dynamics 365 (on-premises) Elevation of Privilege Vulnerability",
+    "description": "The release notes link has been updated to point to the latest available version. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40371",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40371"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40371",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-47298 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47298",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-47298"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-47298",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20846 GDI+ Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20846",
+    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20846"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20846",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-49975 Apache HTTP Server: mod_http2 denial of service",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49975",
@@ -31603,272 +31723,512 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-26030 GitHub: CVE-2026-26030 Microsoft Semantic Kernel InMemoryVectorStore filter functionality vulnerable",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26030",
-    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26030"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26030",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-26133 M365 Copilot Information Disclosure Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26133",
-    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26133"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26133",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-20841 Windows Notepad App Remote Code Execution Vulnerability",
-    "description": "To comprehensively address CVE-2026-20841, Microsoft has released February 2026 security updates for the Windows Notepad App. Microsoft recommends that customers install the update to be fully protected from the vulnerability.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20841",
-    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-20841"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-20841",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-26133 M365 Copilot Information Disclosure Vulnerability",
-    "description": "Ai command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26133",
-    "releaseDate": "Thu, 12 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26133"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26133",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+    "title": "CVE-2026-8829 HTML::Entities versions before 3.84 for Perl read freed heap memory in _decode_entities",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
-    "releaseDate": "Thu, 12 Mar 2026 01:37:04 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8829",
+    "releaseDate": "Thu, 11 Jun 2026 01:44:37 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61727"
+      "CVE-2026-8829"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61727",
+    "cve": "CVE-2026-8829",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61729 Excessive resource consumption when printing error string for host certificate validation in crypto/x509",
+    "title": "CVE-2026-5419 Guntls: gnutls: information disclosure via timing side-channel in pkcs#7 padding removal",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61729",
-    "releaseDate": "Thu, 12 Mar 2026 01:36:56 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5419",
+    "releaseDate": "Thu, 11 Jun 2026 01:44:30 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61729"
+      "CVE-2026-5419"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61729",
+    "cve": "CVE-2026-5419",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61725 Excessive CPU consumption in ParseAddress in net/mail",
+    "title": "CVE-2026-11332 Ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61725",
-    "releaseDate": "Thu, 12 Mar 2026 01:36:48 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11332",
+    "releaseDate": "Thu, 11 Jun 2026 01:44:24 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61725"
+      "CVE-2026-11332"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61725",
+    "cve": "CVE-2026-11332",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
+    "title": "CVE-2026-42012 Gnutls: gnutls: certificate validation bypass due to improper handling of uri and srv sans",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
-    "releaseDate": "Thu, 12 Mar 2026 01:36:43 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42012",
+    "releaseDate": "Thu, 11 Jun 2026 01:43:57 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-61724"
+      "CVE-2026-42012"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-61724",
+    "cve": "CVE-2026-42012",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58186 Lack of limit when parsing cookies can cause memory exhaustion in net/http",
+    "title": "CVE-2026-5260 Gnutls: gnutls: information disclosure via heap overread in rsa key exchange",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58186",
-    "releaseDate": "Thu, 12 Mar 2026 01:36:37 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5260",
+    "releaseDate": "Thu, 11 Jun 2026 01:43:51 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58186"
+      "CVE-2026-5260"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58186",
+    "cve": "CVE-2026-5260",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58183 Unbounded allocation when parsing GNU sparse map in archive/tar",
+    "title": "CVE-2026-42015 Gnutls: gnutls: memory corruption due to off-by-one error in pkcs#12 bag handling",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58183",
-    "releaseDate": "Thu, 12 Mar 2026 01:36:32 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42015",
+    "releaseDate": "Thu, 11 Jun 2026 01:43:44 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58183"
+      "CVE-2026-42015"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58183",
+    "cve": "CVE-2026-42015",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
+    "title": "CVE-2026-42013 Gnutls: gnutls: certificate validation bypass due to oversized subject alternative name",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
-    "releaseDate": "Thu, 12 Mar 2026 01:36:27 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42013",
+    "releaseDate": "Thu, 11 Jun 2026 01:43:37 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-58188"
+      "CVE-2026-42013"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-58188",
+    "cve": "CVE-2026-42013",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3784 wrong proxy connection reuse with credentials",
+    "title": "CVE-2026-39833 Invoking  key constraints not enforced in golang.org/x/crypto/ssh/agent",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3784",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:58 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39833",
+    "releaseDate": "Thu, 11 Jun 2026 01:42:10 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3784"
+      "CVE-2026-39833"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3784",
+    "cve": "CVE-2026-39833",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-1965 bad reuse of HTTP Negotiate connection",
+    "title": "CVE-2026-50263 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free information disclosure in createsaverwindow()",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1965",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:53 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50263",
+    "releaseDate": "Thu, 11 Jun 2026 01:40:37 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-1965"
+      "CVE-2026-50263"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-1965",
+    "cve": "CVE-2026-50263",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3783 token leak with redirect and netrc",
+    "title": "CVE-2026-50258 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: stack buffer overflow in xkb key types due to unchecked shift levels",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3783",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:48 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50258",
+    "releaseDate": "Thu, 11 Jun 2026 01:40:30 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3783"
+      "CVE-2026-50258"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3783",
+    "cve": "CVE-2026-50258",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23240 tls: Fix race condition in tls_sw_cancel_work_tx()",
+    "title": "CVE-2026-50257 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free in misyncdestroyfence()",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23240",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:42 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50257",
+    "releaseDate": "Thu, 11 Jun 2026 01:40:22 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23240"
+      "CVE-2026-50257"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23240",
+    "cve": "CVE-2026-50257",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23239 espintcp: Fix race condition in espintcp_close()",
+    "title": "CVE-2026-50259 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: stack buffer overflow in xkb setmap request via mapwidths indexing",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23239",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:37 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50259",
+    "releaseDate": "Thu, 11 Jun 2026 01:40:15 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23239"
+      "CVE-2026-50259"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23239",
+    "cve": "CVE-2026-50259",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23868",
+    "title": "CVE-2026-50260 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free in freecounter()",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23868",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:31 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50260",
+    "releaseDate": "Thu, 11 Jun 2026 01:40:08 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23868"
+      "CVE-2026-50260"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23868",
+    "cve": "CVE-2026-50260",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-25679 Incorrect parsing of IPv6 host literals in net/url",
+    "title": "CVE-2026-50262 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: out-of-bounds read/write in glx changedrawableattributes",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25679",
-    "releaseDate": "Thu, 12 Mar 2026 01:01:26 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50262",
+    "releaseDate": "Thu, 11 Jun 2026 01:40:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-25679"
+      "CVE-2026-50262"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-25679",
+    "cve": "CVE-2026-50262",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50256 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libxfont2 name length mismatch",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50256",
+    "releaseDate": "Thu, 11 Jun 2026 01:39:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50256"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50256",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50261 Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free in syncchangecounter()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50261",
+    "releaseDate": "Thu, 11 Jun 2026 01:39:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50261"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50261",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-10879 DBI versions before 1.648 for Perl have a heap overflow when preparsing SQL statements with more than 9 binders",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-10879",
+    "releaseDate": "Thu, 11 Jun 2026 01:39:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-10879"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-10879",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43958 Rrdtool: rrdtool: stack buffer overflow allows local code execution or denial of service",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43958",
+    "releaseDate": "Thu, 11 Jun 2026 01:39:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43958"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43958",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34355 Apache HTTP Server: mod_proxy_html buffer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34355",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34355"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34355",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44185 Apache HTTP Server: Stack Buffer Over-Read in mod_ssl OCSP `send_request`",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44185",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44185"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44185",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-34356 Apache HTTP Server: ProxyPassReverseCookieMap buffer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34356",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-34356"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-34356",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44186 Apache HTTP Server: Loop in `proxy_ftp_handler` in mod_proxy_ftp",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44186",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44186"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44186",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42535 Apache HTTP Server: mod_dav_fs protected directory access",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42535",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42535"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42535",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44631 Apache HTTP Server: Heap Underflow in `ap_regname` via Signed Char Overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44631",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44631"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44631",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-29167 Apache HTTP Server: mod_ldap per-dir use-after-free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29167",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-29167"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-29167",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-43951 Apache HTTP Server: OOB Read in `merge_response_headers` can cause crash",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43951",
+    "releaseDate": "Thu, 11 Jun 2026 01:02:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-43951"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-43951",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42536 Apache HTTP Server: mod_xml2enc heap overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42536",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42536"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42536",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-29170 Apache HTTP Server: mod_proxy_ftp XSS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29170",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-29170"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-29170",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44119 Apache HTTP Server: escalation of privilege through expressions in .htaccess in multiple modules",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44119",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44119"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44119",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-48913 Apache HTTP Server: mod_http2 memory corruption when file handles exhausted",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48913",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-48913"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-48913",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-10846 Insufficient verification that responses belong to a query",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-10846",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-10846"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-10846",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-11822 SQLite before 3.53.2 Memory Corruption in FTS5 Extension",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11822",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-11822"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-11822",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-11824 SQLite before 3.53.2 Heap Buffer Overflow via FTS5 fts5ChunkIterate",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11824",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-11824"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-11824",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-46433 lldpd: Heap OOB Read in VLAN Decapsulation memmove",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46433",
+    "releaseDate": "Thu, 11 Jun 2026 01:01:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46433"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46433",
     "kb": "",
     "knownIssues": ""
   },
