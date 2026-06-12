@@ -60165,182 +60165,47 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-25172 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
-    "description": "The hotpatch has been re‑released to ensure comprehensive coverage across all affected scenarios. Customers are advised to apply the updated release to ensure full protection.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25172",
-    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-25172"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-25172",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-25173 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
-    "description": "The hotpatch has been re‑released to ensure comprehensive coverage across all affected scenarios. Customers are advised to apply the updated release to ensure full protection.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25173",
-    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-25173"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-25173",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-26111 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
-    "description": "The hotpatch has been re‑released to ensure comprehensive coverage across all affected scenarios. Customers are advised to apply the updated release to ensure full protection.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26111",
-    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26111"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26111",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-0385 Microsoft Edge (Chromium-based) for Android Spoofing Vulnerability",
+    "title": "CVE-2026-49975 Apache HTTP Server: mod_http2 denial of service",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0385",
-    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49975",
+    "releaseDate": "Fri, 12 Jun 2026 01:01:35 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-0385"
+      "CVE-2026-49975"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-0385",
+    "cve": "CVE-2026-49975",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-21257 GitHub Copilot and Visual Studio Elevation of Privilege Vulnerability",
-    "description": "Changes made to the security updates links and information.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21257",
-    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-21257"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-21257",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-21256 GitHub Copilot and Visual Studio Remote Code Execution Vulnerability",
-    "description": "Changes made to the security updates links and information.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21256",
-    "releaseDate": "Fri, 13 Mar 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-21256"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-21256",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-3805 use after free in SMB connection reuse",
+    "title": "CVE-2026-46683 Snappy: SSRF and local file read via the xsl-style-sheet option",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3805",
-    "releaseDate": "Fri, 13 Mar 2026 01:03:13 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46683",
+    "releaseDate": "Fri, 12 Jun 2026 01:01:28 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3805"
+      "CVE-2026-46683"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3805",
+    "cve": "CVE-2026-46683",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3904",
+    "title": "CVE-2026-46643 Snappy: Binary path is never shell-escaped due to an inverted is_executable check",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3904",
-    "releaseDate": "Fri, 13 Mar 2026 01:03:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46643",
+    "releaseDate": "Fri, 12 Jun 2026 01:01:22 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3904"
+      "CVE-2026-46643"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3904",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23868",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23868",
-    "releaseDate": "Fri, 13 Mar 2026 01:02:54 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23868"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23868",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-3784 wrong proxy connection reuse with credentials",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3784",
-    "releaseDate": "Fri, 13 Mar 2026 01:02:44 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-3784"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-3784",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-3783 token leak with redirect and netrc",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3783",
-    "releaseDate": "Fri, 13 Mar 2026 01:02:16 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-3783"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-3783",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-1965 bad reuse of HTTP Negotiate connection",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1965",
-    "releaseDate": "Fri, 13 Mar 2026 01:01:47 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-1965"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-1965",
+    "cve": "CVE-2026-46643",
     "kb": "",
     "knownIssues": ""
   },
