@@ -46005,6 +46005,141 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-46433 lldpd: Heap OOB Read in VLAN Decapsulation memmove",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46433",
+    "releaseDate": "Mon, 15 Jun 2026 01:42:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-46433"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-46433",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-49762 Unbounded integer parsing in the Version module enables CPU and memory exhaustion denial of service",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49762",
+    "releaseDate": "Mon, 15 Jun 2026 01:42:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-49762"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-49762",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-7774 tarfile.data_filter path traversal bypass allows writing outside the extraction directory",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7774",
+    "releaseDate": "Mon, 15 Jun 2026 01:41:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-7774"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-7774",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6253 proxy credentials leak over redirect-to proxy",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6253",
+    "releaseDate": "Mon, 15 Jun 2026 01:40:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6253"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6253",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-5545 wrong reuse of HTTP Negotiate connection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5545",
+    "releaseDate": "Mon, 15 Jun 2026 01:40:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-5545"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-5545",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-6429 netrc credential leak with reused proxy connection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6429",
+    "releaseDate": "Mon, 15 Jun 2026 01:40:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-6429"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-6429",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-11526 GD versions before 2.86 for Perl allow OS command injection and file overwrite via a 2-arg open() of filename arguments in _make_filehandle",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11526",
+    "releaseDate": "Mon, 15 Jun 2026 01:02:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-11526"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-11526",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445",
+    "releaseDate": "Mon, 15 Jun 2026 01:02:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45445"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45445",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42768 Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42768",
+    "releaseDate": "Mon, 15 Jun 2026 01:01:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42768"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42768",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-20841 Windows Notepad App Remote Code Execution Vulnerability",
     "description": "Added FAQ information. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20841",
