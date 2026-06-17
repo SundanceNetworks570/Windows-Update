@@ -11103,6 +11103,66 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-40371 Microsoft Dynamics 365 (on-premises) Elevation of Privilege Vulnerability",
+    "description": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Updates Table.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40371",
+    "releaseDate": "Tue, 16 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40371"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40371",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45602 Windows Dynamic Host Configuration Protocol (DHCP) Tampering Vulnerability",
+    "description": "Updated CWE value.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45602",
+    "releaseDate": "Tue, 16 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45602"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45602",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50656 Microsoft Defender Elevation of Privilege Vulnerability",
+    "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as \"RoguePlanet \". We are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update is available.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50656",
+    "releaseDate": "Tue, 16 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50656"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50656",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42915 Microsoft Windows VMSwitch Denial of Service Vulnerability",
+    "description": "Corrected the CVE description and title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42915",
+    "releaseDate": "Tue, 16 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42915"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42915",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-34182 CMS AuthEnvelopedData Processing May Accept Forged Messages",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34182",
