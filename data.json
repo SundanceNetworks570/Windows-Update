@@ -43530,257 +43530,197 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-27135 nghttp2 Denial of service: Assertion failure due to the missing state validation",
+    "title": "CVE-2026-44967 opentelemetry-cpp: OTLP HTTP exporters read unbounded HTTP response",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27135",
-    "releaseDate": "Sat, 21 Mar 2026 01:37:11 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44967",
+    "releaseDate": "Sat, 20 Jun 2026 01:43:49 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-27135"
+      "CVE-2026-44967"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-27135",
+    "cve": "CVE-2026-44967",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-27459 pyOpenSSL DTLS cookie callback buffer overflow",
+    "title": "CVE-2026-46331 net/sched: fix pedit partial COW leading to page cache corruption",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27459",
-    "releaseDate": "Sat, 21 Mar 2026 01:37:02 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46331",
+    "releaseDate": "Sat, 20 Jun 2026 01:43:41 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-27459"
+      "CVE-2026-46331"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-27459",
+    "cve": "CVE-2026-46331",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-27448 pyOpenSSL allows TLS connection bypass via unhandled callback exception in set_tlsext_servername_callback",
+    "title": "CVE-2026-34180 Heap Buffer Over-read in ASN.1 Content Parsing",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27448",
-    "releaseDate": "Sat, 21 Mar 2026 01:36:53 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34180",
+    "releaseDate": "Sat, 20 Jun 2026 01:43:31 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-27448"
+      "CVE-2026-34180"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-27448",
+    "cve": "CVE-2026-34180",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-32775",
+    "title": "CVE-2026-7383 Possible Heap Buffer Overflow in ASN.1 Multibyte String Conversion",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32775",
-    "releaseDate": "Sat, 21 Mar 2026 01:36:45 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7383",
+    "releaseDate": "Sat, 20 Jun 2026 01:43:24 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-32775"
+      "CVE-2026-7383"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-32775",
+    "cve": "CVE-2026-7383",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3479 pkgutil.get_data() does not enforce documented restrictions",
+    "title": "CVE-2026-42767 NULL Pointer Dereference in CRMF EncryptedValue Decryption",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3479",
-    "releaseDate": "Sat, 21 Mar 2026 01:03:01 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42767",
+    "releaseDate": "Sat, 20 Jun 2026 01:43:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3479"
+      "CVE-2026-42767"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3479",
+    "cve": "CVE-2026-42767",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-30922 pyasn1 Vulnerable to Denial of Service via Unbounded Recursion",
+    "title": "CVE-2026-42766 Possible NULL Dereference in Password-Based CMS Decryption",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-30922",
-    "releaseDate": "Sat, 21 Mar 2026 01:02:51 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42766",
+    "releaseDate": "Sat, 20 Jun 2026 01:42:43 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-30922"
+      "CVE-2026-42766"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-30922",
+    "cve": "CVE-2026-42766",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3633 Libsoup: libsoup: header and http request injection via crlf injection",
+    "title": "CVE-2026-45446 Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3633",
-    "releaseDate": "Sat, 21 Mar 2026 01:02:43 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45446",
+    "releaseDate": "Sat, 20 Jun 2026 01:42:18 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3633"
+      "CVE-2026-45446"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3633",
+    "cve": "CVE-2026-45446",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3632 Libsoup: libsoup: http smuggling and server-side request forgery via malformed hostnames",
+    "title": "CVE-2026-9076 Out-of-Bounds Read in CMS Password-Based Decryption",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3632",
-    "releaseDate": "Sat, 21 Mar 2026 01:02:34 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9076",
+    "releaseDate": "Sat, 20 Jun 2026 01:42:01 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3632"
+      "CVE-2026-9076"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3632",
+    "cve": "CVE-2026-9076",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-3634 Libsoup: libsoup: http header injection and response splitting via crlf injection in content-type header",
+    "title": "CVE-2026-42768 Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3634",
-    "releaseDate": "Sat, 21 Mar 2026 01:02:26 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42768",
+    "releaseDate": "Sat, 20 Jun 2026 01:41:45 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-3634"
+      "CVE-2026-42768"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-3634",
+    "cve": "CVE-2026-42768",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-32766 astral-tokio-tar insufficiently validates PAX extensions during extraction",
+    "title": "CVE-2026-34183 Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32766",
-    "releaseDate": "Sat, 21 Mar 2026 01:02:18 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34183",
+    "releaseDate": "Sat, 20 Jun 2026 01:41:20 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-32766"
+      "CVE-2026-34183"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-32766",
+    "cve": "CVE-2026-34183",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23276 net: add xmit recursion limit to tunnel xmit functions",
+    "title": "CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23276",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:49 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445",
+    "releaseDate": "Sat, 20 Jun 2026 01:40:55 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23276"
+      "CVE-2026-45445"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23276",
+    "cve": "CVE-2026-45445",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23271 perf: Fix __perf_event_overflow() vs perf_remove_from_context() race",
+    "title": "CVE-2025-5791 Users: `root` appended to group listings",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23271",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:44 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-5791",
+    "releaseDate": "Sat, 20 Jun 2026 01:40:10 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23271"
+      "CVE-2025-5791"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23271",
+    "cve": "CVE-2025-5791",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23272 netfilter: nf_tables: unconditionally bump set->nelems before insertion",
+    "title": "CVE-2025-4574 Crossbeam-channel: crossbeam-channel vulnerable to double free on drop",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23272",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:38 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-4574",
+    "releaseDate": "Sat, 20 Jun 2026 01:39:58 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23272"
+      "CVE-2025-4574"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23272",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23278 netfilter: nf_tables: always walk all pending catchall elements",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23278",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:33 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23278"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23278",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23277 net/sched: teql: fix NULL pointer dereference in iptunnel_xmit on TEQL slave xmit",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23277",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:27 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23277"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23277",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23274 netfilter: xt_IDLETIMER: reject rev0 reuse of ALARM timer labels",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23274",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:22 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23274"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23274",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23204 net/sched: cls_u32: use skb_header_pointer_careful()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23204",
-    "releaseDate": "Sat, 21 Mar 2026 01:01:16 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23204"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23204",
+    "cve": "CVE-2025-4574",
     "kb": "",
     "knownIssues": ""
   },
@@ -59645,6 +59585,1341 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-43464",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12466 Heap buffer overflow in WebRTC",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12466",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12466"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12466",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12461 Out of bounds read in WebRTC",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12461",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12461"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12461",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12449 Use after free in Chromoting",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12449",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12449"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12449",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12444 Out of bounds read in Chromoting",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12444",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12444"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12444",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12437 Use after free in WebShare",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12437",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12437"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12437",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12468 Inappropriate implementation in Updater",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12468",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12468"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12468",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12454 Race in Safe Browsing",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12454",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12454"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12454",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12467 Use after free in Extensions",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12467",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12467"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12467",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12465 Insufficient validation of untrusted input in Metrics",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12465",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12465"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12465",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12464 Use after free in Browser",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12464",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12464"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12464",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12463 Inappropriate implementation in Views",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12463",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12463"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12463",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12462 Use after free in Media",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12462",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12462"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12462",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12460 Insufficient policy enforcement in File System Access",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12460",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12460"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12460",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12459 Inappropriate implementation in Serial",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12459",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12459"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12459",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12458 Incorrect security UI in Passwords",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12458",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12458"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12458",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12457 Insufficient data validation in Extensions",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12457",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12457"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12457",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12456 Insufficient validation of untrusted input in Extensions",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12456",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12456"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12456",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12455 Use after free in Tab Strip",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12455",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12455"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12455",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12453 Insufficient validation of untrusted input in Input",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12453",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12453"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12453",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12452 Use after free in Downloads",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12452",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12452"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12452",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12451 Use after free in DigitalCredentials",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12451",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12451"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12451",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12447 Heap buffer overflow in WebRTC",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12447",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12447"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12447",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12446 Insufficient data validation in Passwords",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12446",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12446"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12446",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12445 Use after free in Extensions",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12445",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12445"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12445",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12443 Use after free in Web Authentication",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12443",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12443"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12443",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12441 Use after free in File Input",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12441",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12441"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12441",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12440 Use after free in DigitalCredentials",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12440",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12440"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12440",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-12439 Use after free in Digital Credentials",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12439",
+    "releaseDate": "Fri, 19 Jun 2026 13:52:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12439"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12439",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45469 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45469",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45469"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45469",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45475 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45475",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45475"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45475",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45472 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45472",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45472"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45472",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45471 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45471",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45471"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45471",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45474 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45474",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45474"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45474",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45486 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45486",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45486"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45486",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45485 Microsoft Office Information Disclosure Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45485",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45485"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45485",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44817 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44817",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44817"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44817",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44818 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44818",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44818"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44818",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44819 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44819",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44819"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44819",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44820 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44820",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44820"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44820",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44821 Microsoft Office Information Disclosure Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44821",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44821"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44821",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44823 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44823",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44823"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44823",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44824 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44824",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44824"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44824",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45456 Microsoft Outlook and Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45456",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45456"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45456",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45458 Microsoft Outlook and Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45458",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45458"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45458",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45460 Microsoft Office Information Disclosure Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45460",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45460"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45460",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45461 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45461",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45461"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45461",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45466 Microsoft Word Information Disclosure Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45466",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45466"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45466",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45643 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45643",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45643"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45643",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45645 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45645",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45645"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45645",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45649 Office for Android Spoofing Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Word, PowerPoint, Excel for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45649",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45649"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45649",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44822 Microsoft Excel Information Disclosure Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44822",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44822"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44822",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45455 Microsoft Excel Information Disclosure Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45455",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45455"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45455",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45457 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45457",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45457"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45457",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45459 Microsoft Excel Security Feature Bypass Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=831049) for more information and download links.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45459",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45459"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45459",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45463 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Office for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45463",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45463"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45463",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12439 Use after free in Digital Credentials",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12439",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12439"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12439",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12440 Use after free in DigitalCredentials",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12440",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12440"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12440",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12445 Use after free in Extensions",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12445",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12445"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12445",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12446 Insufficient data validation in Passwords",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12446",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12446"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12446",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12451 Use after free in DigitalCredentials",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12451",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12451"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12451",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12441 Use after free in File Input",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12441",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12441"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12441",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12447 Heap buffer overflow in WebRTC",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12447",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12447"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12447",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12443 Use after free in Web Authentication",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12443",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12443"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12443",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12452 Use after free in Downloads",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12452",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12452"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12452",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12453 Insufficient validation of untrusted input in Input",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12453",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12453"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12453",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12455 Use after free in Tab Strip",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12455",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12455"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12455",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12456 Insufficient validation of untrusted input in Extensions",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12456",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12456"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12456",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12458 Incorrect security UI in Passwords",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12458",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12458"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12458",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12457 Insufficient data validation in Extensions",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12457",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12457"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12457",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12459 Inappropriate implementation in Serial",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12459",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12459"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12459",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12460 Insufficient policy enforcement in File System Access",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12460",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12460"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12460",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12462 Use after free in Media",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12462",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12462"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12462",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12464 Use after free in Browser",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12464",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12464"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12464",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12463 Inappropriate implementation in Views",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12463",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12463"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12463",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12465 Insufficient validation of untrusted input in Metrics",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12465",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12465"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12465",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12454 Race in Safe Browsing",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12454",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12454"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12454",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12467 Use after free in Extensions",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12467",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12467"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12467",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12468 Inappropriate implementation in Updater",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12468",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12468"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12468",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12449 Use after free in Chromoting",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12449",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12449"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12449",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12444 Out of bounds read in Chromoting",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12444",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12444"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12444",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12437 Use after free in WebShare",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12437",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12437"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12437",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12461 Out of bounds read in WebRTC",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12461",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12461"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12461",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-12466 Heap buffer overflow in WebRTC",
+    "description": "Corrected CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12466",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-12466"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-12466",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-42903 Windows Kerberos Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42903",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-42903"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-42903",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44803 Windows Graphics Component Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Word, PowerPoint, Excel for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44803",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44803"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44803",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44812 Windows Graphics Component Remote Code Execution Vulnerability",
+    "description": "Microsoft is announcing the availability of the security updates for Microsoft Word, PowerPoint, Excel for Android. Customers running affected Microsoft Office for Android software should install the update for their product to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44812",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44812"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44812",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-24289 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement added. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24289",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-24289"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-24289",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32177 .NET Elevation of Privilege Vulnerability",
+    "description": "Removed incorrectly added rows from the Security Updates table.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32177",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-6965 Integer Truncation on SQLite",
+    "description": "Added Visual Studio software to the Security Updates table.  Customers that are running supported version of Visual Studio are encouraged to update to the indicated version to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-6965",
+    "releaseDate": "Fri, 19 Jun 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-6965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-6965",
     "kb": "",
     "knownIssues": ""
   },
