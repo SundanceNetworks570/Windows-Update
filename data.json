@@ -8297,572 +8297,92 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23229 crypto: virtio - Add spinlock protection with virtqueue notification",
+    "title": "CVE-2026-11979 Stack-Based Buffer Overflow in libxml2",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23229",
-    "releaseDate": "Tue, 31 Mar 2026 01:40:25 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11979",
+    "releaseDate": "Tue, 30 Jun 2026 01:02:15 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23229"
+      "CVE-2026-11979"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23229",
+    "cve": "CVE-2026-11979",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23228 smb: server: fix leak of active_num_conn in ksmbd_tcp_new_connection()",
+    "title": "CVE-2026-53325 agp/amd64: Fix broken error propagation in agp_amd64_probe()",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23228",
-    "releaseDate": "Tue, 31 Mar 2026 01:40:18 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53325",
+    "releaseDate": "Tue, 30 Jun 2026 01:02:09 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23228"
+      "CVE-2026-53325"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23228",
+    "cve": "CVE-2026-53325",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23222 crypto: omap - Allocate OMAP_CRYPTO_FORCE_COPY scatterlists correctly",
+    "title": "CVE-2026-41992 Global Buffer Overflow in GNU gzip",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23222",
-    "releaseDate": "Tue, 31 Mar 2026 01:40:12 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41992",
+    "releaseDate": "Tue, 30 Jun 2026 01:02:02 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23222"
+      "CVE-2026-41992"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23222",
+    "cve": "CVE-2026-41992",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23169 mptcp: fix race in mptcp_pm_nl_flush_addrs_doit()",
+    "title": "CVE-2026-41991 Predictable Temporary File in GNU gzip",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23169",
-    "releaseDate": "Tue, 31 Mar 2026 01:40:05 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41991",
+    "releaseDate": "Tue, 30 Jun 2026 01:01:56 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23169"
+      "CVE-2026-41991"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23169",
+    "cve": "CVE-2026-41991",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-71237 nilfs2: Fix potential block overflow that cause system hang",
+    "title": "CVE-2026-54371 attr < 2.6.0 Symlink Traversal Privilege Escalation via getfattr/setfattr",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71237",
-    "releaseDate": "Tue, 31 Mar 2026 01:39:58 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54371",
+    "releaseDate": "Tue, 30 Jun 2026 01:01:49 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-71237"
+      "CVE-2026-54371"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-71237",
+    "cve": "CVE-2026-54371",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-71236 scsi: qla2xxx: Validate sp before freeing associated memory",
+    "title": "CVE-2026-54369 acl < 2.4.0 Symlink Traversal Privilege Escalation via libacl Functions",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71236",
-    "releaseDate": "Tue, 31 Mar 2026 01:39:52 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54369",
+    "releaseDate": "Tue, 30 Jun 2026 01:01:43 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-71236"
+      "CVE-2026-54369"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-71236",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71235 scsi: qla2xxx: Delay module unload while fabric scan in progress",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71235",
-    "releaseDate": "Tue, 31 Mar 2026 01:39:45 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71235"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71235",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71232 scsi: qla2xxx: Free sp in error path to fix system crash",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71232",
-    "releaseDate": "Tue, 31 Mar 2026 01:39:38 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71232"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71232",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-67030",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-67030",
-    "releaseDate": "Tue, 31 Mar 2026 01:39:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-67030"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-67030",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33636 LIBPNG has ARM NEON Palette Expansion Out-of-Bounds Read on AArch64",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33636",
-    "releaseDate": "Tue, 31 Mar 2026 01:39:01 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33636"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33636",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33416 LIBPNG has use-after-free via pointer aliasing in `png_set_tRNS` and `png_set_PLTE`",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33416",
-    "releaseDate": "Tue, 31 Mar 2026 01:38:54 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33416"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33416",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23238 romfs: check sb_set_blocksize() return value",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23238",
-    "releaseDate": "Tue, 31 Mar 2026 01:38:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23238"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23238",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-25645 Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25645",
-    "releaseDate": "Tue, 31 Mar 2026 01:38:46 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-25645"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-25645",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23237 platform/x86: classmate-laptop: Add missing NULL pointer checks",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23237",
-    "releaseDate": "Tue, 31 Mar 2026 01:38:44 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23237"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23237",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71238 scsi: qla2xxx: Fix bsg_done() causing double free",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71238",
-    "releaseDate": "Tue, 31 Mar 2026 01:38:12 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71238"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71238",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23236 fbdev: smscufx: properly copy ioctl memory to kernelspace",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23236",
-    "releaseDate": "Tue, 31 Mar 2026 01:38:02 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23236"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23236",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68358 btrfs: fix racy bitfield write in btrfs_clear_space_info_full()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68358",
-    "releaseDate": "Tue, 31 Mar 2026 01:37:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68358"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68358",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71233 PCI: endpoint: Avoid creating sub-groups asynchronously",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71233",
-    "releaseDate": "Tue, 31 Mar 2026 01:37:39 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71233"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71233",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23221 bus: fsl-mc: fix use-after-free in driver_override_show()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23221",
-    "releaseDate": "Tue, 31 Mar 2026 01:37:29 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23221"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23221",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33940 Handlebars.js has JavaScript Injection via AST Type Confusion when passing an object as dynamic partial",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33940",
-    "releaseDate": "Tue, 31 Mar 2026 01:03:30 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33940"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33940",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33937 Handlebars.js has JavaScript Injection via AST Type Confusion",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33937",
-    "releaseDate": "Tue, 31 Mar 2026 01:03:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33937"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33937",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33939 Handlebars.js has Denial of Service via Malformed Decorator Syntax in Template Compilation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33939",
-    "releaseDate": "Tue, 31 Mar 2026 01:03:19 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33939"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33939",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33916 Handlebars.js has Prototype Pollution Leading to XSS through Partial Template Injection",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33916",
-    "releaseDate": "Tue, 31 Mar 2026 01:03:13 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33916"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33916",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33941 Handlebars.js has JavaScript Injection in CLI Precompiler via Unescaped Names and Options",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33941",
-    "releaseDate": "Tue, 31 Mar 2026 01:03:08 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33941"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33941",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33938 Handlebars.js has JavaScript Injection via AST Type Confusion by tampering @partial-block",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33938",
-    "releaseDate": "Tue, 31 Mar 2026 01:03:02 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33938"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33938",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33542 Incus does not verify combined fingerprint when downloading images from simplestreams servers",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33542",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33542"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33542",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33936 python-ecdsa: Denial of Service via improper DER length validation in crafted private keys",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33936",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:48 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33936"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33936",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33891 Forge has Denial of Service via Infinite Loop in BigInteger.modInverse() with Zero Input",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33891",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:44 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33891"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33891",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33896 Forge has a basicConstraints bypass in its certificate chain verification (RFC 5280 violation)",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33896",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:36 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33896"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33896",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33895 Forge has signature forgery in Ed25519 due to missing S > L check",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33895",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:28 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33895"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33895",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33750 brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33750",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:19 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33750"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33750",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-34353",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34353",
-    "releaseDate": "Tue, 31 Mar 2026 01:02:05 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-34353"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-34353",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-21712",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21712",
-    "releaseDate": "Tue, 31 Mar 2026 01:01:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-21712"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-21712",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-0964 Libssh: improper sanitation of paths received from scp servers",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0964",
-    "releaseDate": "Tue, 31 Mar 2026 01:01:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-0964"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-0964",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-0966 Libssh: buffer underflow in ssh_get_hexa() on invalid input",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0966",
-    "releaseDate": "Tue, 31 Mar 2026 01:01:44 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-0966"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-0966",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-0967 Libssh: libssh: denial of service via inefficient regular expression processing",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0967",
-    "releaseDate": "Tue, 31 Mar 2026 01:01:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-0967"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-0967",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-0965 Libssh: libssh: denial of service via improper configuration file handling",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0965",
-    "releaseDate": "Tue, 31 Mar 2026 01:01:22 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-0965"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-0965",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2026-4676 Use after free in Dawn",
-    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4676",
-    "releaseDate": "Tue, 31 Mar 2026 00:35:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-4676"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-4676",
+    "cve": "CVE-2026-54369",
     "kb": "",
     "knownIssues": ""
   },
