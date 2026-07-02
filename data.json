@@ -7832,6 +7832,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-32208 Microsoft Entra ID Spoofing Vulnerability",
+    "description": "Corrected the CVE description and title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32208",
+    "releaseDate": "Wed, 01 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32208"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32208",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-41992 Global Buffer Overflow in GNU gzip",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41992",
