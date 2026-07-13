@@ -46220,6 +46220,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-45489 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "description": "CWE added. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45489",
+    "releaseDate": "Sun, 12 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45489"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45489",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-59874 node-tar: Negative tar entry size causes infinite loop in archive replace",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59874",
@@ -54535,6 +54550,51 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-42768",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-38096 wifi: iwlwifi: don't warn when if there is a FW error",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38096",
+    "releaseDate": "Mon, 13 Jul 2026 01:46:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-38096"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-38096",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2025-71072 shmem: fix recovery on rename failures",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71072",
+    "releaseDate": "Mon, 13 Jul 2026 01:44:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2025-71072"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2025-71072",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2022-4543 A flaw named \"EntryBleed\" was found in the Linux Kernel Page Table Isolation (KPTI). This issue could allow a local attacker to leak KASLR base via prefetch side-channels based on TLB timing for Intel systems.",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-4543",
+    "releaseDate": "Mon, 13 Jul 2026 01:38:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2022-4543"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2022-4543",
     "kb": "",
     "knownIssues": ""
   },
