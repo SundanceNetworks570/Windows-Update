@@ -2851,6 +2851,81 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-58644 Microsoft SharePoint Remote Code Execution Vulnerability",
+    "description": "Corrected the Exploitability Index, Exploited flag and CVSS vector which was incorrect at the time of publication on 7/14/2026. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58644",
+    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-58644"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-58644",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50341 Windows NTFS Information Disclosure Vulnerability",
+    "description": "Updated acknowledgment. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50341",
+    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50341"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50341",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50375 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
+    "description": "Updated acknowledgment. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50375",
+    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50375"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50375",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-56182 Windows NTFS Elevation of Privilege Vulnerability",
+    "description": "Updated acknowledgment. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56182",
+    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-56182"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-56182",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+    "description": "Updated acknowledgment. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
+    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-58253 NATS Server: Route API Auth Bypass",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58253",
@@ -34049,32 +34124,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-64669 Windows Admin Center Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64669",
-    "releaseDate": "Thu, 16 Apr 2026 07:00:00 -0700",
+    "title": "CVE-2026-59831 GitHub CLI `gh codespace jupyter` could allow remote code execution when connecting to a malicious Codespace",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59831",
+    "releaseDate": "Thu, 16 Jul 2026 01:39:07 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-64669"
+      "CVE-2026-59831"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-64669",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-32223 Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32223",
-    "releaseDate": "Thu, 16 Apr 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-32223"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-32223",
+    "cve": "CVE-2026-59831",
     "kb": "",
     "knownIssues": ""
   },
