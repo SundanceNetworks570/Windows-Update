@@ -54170,6 +54170,66 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-50012 Squid: Memory corruption in cache_digest reply handling",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50012",
+    "releaseDate": "Sat, 18 Jul 2026 01:01:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50012"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50012",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-47729 Squid: Memory disclosure in FTP gateway",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47729",
+    "releaseDate": "Sat, 18 Jul 2026 01:01:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-47729"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-47729",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62299 CoreDNS: rewrite-plugin EDNS0 response-revert nil-pointer panic (remote DoS) when a downstream plugin returns a response with no OPT record",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62299",
+    "releaseDate": "Sat, 18 Jul 2026 01:01:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62299"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62299",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62309 CoreDNS: proxyproto plugin panics on PPv2 datagram with non-UDP transport — single 28-byte packet remote DoS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62309",
+    "releaseDate": "Sat, 18 Jul 2026 01:01:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62309"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62309",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-43490 ksmbd: validate inherited ACE SID length",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43490",
@@ -72745,6 +72805,126 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-44967",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15905 Use after free in Aura",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15905",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15904 Use after free in Ozone",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15904",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15904"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15904",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15903 Out of bounds read and write in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15903",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15903"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15903",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15902 Use after free in Cast",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15902",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:40 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15902"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15902",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15901 Use after free in Network",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15901",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15901"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15901",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15900 Use after free in GPU",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15900",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15900"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15900",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-15899 Use after free in CameraCapture",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15899",
+    "releaseDate": "Fri, 17 Jul 2026 17:42:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15899"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15899",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-56159 DHCP Server Service Remote Code Execution Vulnerability",
+    "description": "Added acknowledgements. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56159",
+    "releaseDate": "Fri, 17 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-56159"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-56159",
     "kb": "",
     "knownIssues": ""
   },
