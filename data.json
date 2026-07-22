@@ -2550,138 +2550,362 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-26171 .NET Denial of Service Vulnerability",
-    "description": "The CVE was updated to include Powershell 7.6 and 7.5",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26171",
-    "releaseDate": "Wed, 22 Apr 2026 07:00:00 -0700",
+    "title": "CVE-2026-56434 NGINX ngx_http_ssi_module vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56434",
+    "releaseDate": "Wed, 22 Jul 2026 01:41:55 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-26171"
+      "CVE-2026-56434"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-26171",
+    "cve": "CVE-2026-56434",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-14821 Libssh: libssh: insecure default configuration leads to local man-in-the-middle attacks on windows",
+    "title": "CVE-2026-42533 NGINX Map directive and Regex matching vulnerability",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14821",
-    "releaseDate": "Wed, 22 Apr 2026 01:46:10 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42533",
+    "releaseDate": "Wed, 22 Jul 2026 01:41:48 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-14821"
+      "CVE-2026-42533"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-14821",
+    "cve": "CVE-2026-42533",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-4786 Incomplete mitigation of CVE-2026-4519, %action expansion for command injection to webbrowser.open()",
+    "title": "CVE-2026-59886 pyasn1: Uncontrolled resource consumption when converting decoded REAL values",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4786",
-    "releaseDate": "Wed, 22 Apr 2026 01:37:33 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59886",
+    "releaseDate": "Wed, 22 Jul 2026 01:41:29 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-4786",
-      "CVE-2026-4519"
+      "CVE-2026-59886"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-4786, CVE-2026-4519",
+    "cve": "CVE-2026-59886",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-5958 Race Condition in GNU Sed",
+    "title": "CVE-2026-59884 pyasn1 BER/CER/DER decoder denial of service via unbounded long-form tag IDs",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5958",
-    "releaseDate": "Wed, 22 Apr 2026 01:01:51 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59884",
+    "releaseDate": "Wed, 22 Jul 2026 01:41:21 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-5958"
+      "CVE-2026-59884"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-5958",
+    "cve": "CVE-2026-59884",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-31429 net: skb: fix cross-cache free of KFENCE-allocated skb head",
+    "title": "CVE-2026-59885 pyasn1: Quadratic complexity in OBJECT IDENTIFIER and RELATIVE-OID processing allows denial of service",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31429",
-    "releaseDate": "Wed, 22 Apr 2026 01:01:41 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59885",
+    "releaseDate": "Wed, 22 Jul 2026 01:41:14 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-31429"
+      "CVE-2026-59885"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-31429",
+    "cve": "CVE-2026-59885",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-31430 X.509: Fix out-of-bounds access when parsing extensions",
+    "title": "CVE-2026-57215 RabbitMQ: Direct-reply-to binding persistence can lead to unauthorized reply-channel injection and persistent phantom",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31430",
-    "releaseDate": "Wed, 22 Apr 2026 01:01:36 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57215",
+    "releaseDate": "Wed, 22 Jul 2026 01:41:04 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-31430"
+      "CVE-2026-57215"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-31430",
+    "cve": "CVE-2026-57215",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-5450 scanf %mc off-by-one heap buffer overflow",
+    "title": "CVE-2026-57211 RabbitMQ: UNC SSRF affecting the management UI on Windows",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5450",
-    "releaseDate": "Wed, 22 Apr 2026 01:01:30 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57211",
+    "releaseDate": "Wed, 22 Jul 2026 01:40:56 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-5450"
+      "CVE-2026-57211"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-5450",
+    "cve": "CVE-2026-57211",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-5358 Static buffer overflow in deprecated nis_local_principal",
+    "title": "CVE-2026-57216 RabbitMQ: AMQP 1.0, AMQP 0-9-1, Stream Protocol loopback enforcement can lead to remote guest sessions due to listener-address loopback checks",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5358",
-    "releaseDate": "Wed, 22 Apr 2026 01:01:24 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57216",
+    "releaseDate": "Wed, 22 Jul 2026 01:40:25 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-5358"
+      "CVE-2026-57216"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-5358",
+    "cve": "CVE-2026-57216",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-5928 Static buffer overflow in deprecated nis_local_principal",
+    "title": "CVE-2026-57213 RabbitMQ: Stored XSS federation management plugin via unsanitized consumer_tag rendering",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5928",
-    "releaseDate": "Wed, 22 Apr 2026 01:01:18 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57213",
+    "releaseDate": "Wed, 22 Jul 2026 01:40:10 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-5928"
+      "CVE-2026-57213"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-5928",
+    "cve": "CVE-2026-57213",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57217 RabbitMQ: Topic authorization can lead to cross-tenant routing-key bypass",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57217",
+    "releaseDate": "Wed, 22 Jul 2026 01:40:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57217"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57217",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57220 RabbitMQ: Stream listener does not enforce configured frame-size limit during authentication, permitting unauth'd mem-exhaust DoS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57220",
+    "releaseDate": "Wed, 22 Jul 2026 01:39:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57220"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57220",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57219 RabbitMQ: Unauthenticated disclosure of OAuth client credentials via an HTTP API endpoint with certain less common OAuth 2 configurations",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57219",
+    "releaseDate": "Wed, 22 Jul 2026 01:39:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57219"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57219",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-15028 Libarchive: heap overflow oob read while parsing a tar archive contains a pax extended header",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15028",
+    "releaseDate": "Wed, 22 Jul 2026 01:39:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-15028"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-15028",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-39879 SQL injection in syslog-ng SQL destionation driver",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39879",
+    "releaseDate": "Wed, 22 Jul 2026 01:02:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-39879"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-39879",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64191 i2c: stub: Reject I2C block transfers with invalid length",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64191",
+    "releaseDate": "Wed, 22 Jul 2026 01:02:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64191"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64191",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64188 net: qualcomm: rmnet: fix endpoint use-after-free in rmnet_dellink()",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64188",
+    "releaseDate": "Wed, 22 Jul 2026 01:02:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64188"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64188",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64189 netfilter: ipset: fix race between dump and ip_set_list resize",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64189",
+    "releaseDate": "Wed, 22 Jul 2026 01:02:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64189"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64189",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64206 Bluetooth: L2CAP: cancel pending_rx_work before taking conn->lock",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64206",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64206"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64206",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64190 net: team: fix NULL pointer dereference in team_xmit during mode change",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64190",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64190"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64190",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64205 i2c: i801: fix hardware state machine corruption in error path",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64205",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64205"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64205",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64192 bpf: Reject BPF_MAP_TYPE_INODE_STORAGE creation if BPF LSM is uninitialized",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64192",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64192"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64192",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64187 xfs: fail recovery on a committed log item with no regions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64187",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64187"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64187",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26199 Buffer underflow in `H5Iget_name `/`H5G_get_name` if size is zero",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26199",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26199"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26199",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-26197 Array full size, element count, and element size are not checked to make sure they match in H5Odtype.c",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26197",
+    "releaseDate": "Wed, 22 Jul 2026 01:01:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-26197"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-26197",
     "kb": "",
     "knownIssues": ""
   },
@@ -8129,6 +8353,36 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-33840",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-58640 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58640",
+    "releaseDate": "Tue, 21 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-58640"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-58640",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50462 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50462",
+    "releaseDate": "Tue, 21 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50462"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50462",
     "kb": "",
     "knownIssues": ""
   },
