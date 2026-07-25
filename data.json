@@ -53437,317 +53437,62 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-13763 Libopensc: opensc: multiple uses of uninitialized variable",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13763",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:58 -0700",
+    "title": "Chromium: CVE-2026-16807 Out of bounds write in Codecs",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16807",
+    "releaseDate": "Sat, 25 Jul 2026 00:29:54 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-13763"
+      "CVE-2026-16807"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-13763",
+    "cve": "CVE-2026-16807",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41205 Mako: Path traversal via double-slash URI prefix in TemplateLookup",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41205",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:53 -0700",
+    "title": "Chromium: CVE-2026-16806 Use after free in WebMCP",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16806",
+    "releaseDate": "Sat, 25 Jul 2026 00:29:52 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41205"
+      "CVE-2026-16806"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41205",
+    "cve": "CVE-2026-16806",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41989",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41989",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:46 -0700",
+    "title": "Chromium: CVE-2026-16805 Use after free in Blink",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16805",
+    "releaseDate": "Sat, 25 Jul 2026 00:29:51 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41989"
+      "CVE-2026-16805"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41989",
+    "cve": "CVE-2026-16805",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-23447 net: usb: cdc_ncm: add ndpoffset to NDP32 nframes bounds check",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23447",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:41 -0700",
+    "title": "Chromium: CVE-2026-16804 Use after free in Input",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16804",
+    "releaseDate": "Sat, 25 Jul 2026 00:29:49 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-23447"
+      "CVE-2026-16804"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-23447",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23446 net: usb: aqc111: Do not perform PM inside suspend callback",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23446",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23446"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23446",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23444 wifi: mac80211: always free skb on ieee80211_tx_prepare_skb() failure",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23444",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:29 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23444"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23444",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23442 ipv6: add NULL checks for idev in SRv6 paths",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23442",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23442"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23442",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23439 udp_tunnel: fix NULL deref caused by udp_sock_create6 when CONFIG_IPV6=n",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23439",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:20 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23439"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23439",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23438 net: mvpp2: guard flow control update with global_tx_fc in buffer switching",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23438",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23438"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23438",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23434 mtd: rawnand: serialize lock/unlock against other NAND operations",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23434",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:09 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23434"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23434",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23428 ksmbd: fix use-after-free of share_conf in compound request",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23428",
-    "releaseDate": "Sat, 25 Apr 2026 01:05:04 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23428"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23428",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23340 net: sched: avoid qdisc_reset_all_tx_gt() vs dequeue race for lockless qdiscs",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23340",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23340"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23340",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23339 nfc: nci: free skb on nci_transceive early error paths",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23339",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23339"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23339",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23336 wifi: cfg80211: cancel rfkill_block work in wiphy_unregister()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23336",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:47 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23336"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23336",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23335 RDMA/irdma: Fix kernel stack leak in irdma_create_user_ah()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23335",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:42 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23335"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23335",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23330 nfc: nci: complete pending data exchange on device close",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23330",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:37 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23330"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23330",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23324 can: usb: etas_es58x: correctly anchor the urb in the read bulk callback",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23324",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:32 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23324"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23324",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23318 ALSA: usb-audio: Use correct version for UAC3 header validation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23318",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:26 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23318"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23318",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-23315 wifi: mt76: Fix possible oob access in mt76_connac2_mac_write_txwi_80211()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23315",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:21 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-23315"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-23315",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-5450 scanf %mc off-by-one heap buffer overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5450",
-    "releaseDate": "Sat, 25 Apr 2026 01:04:16 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-5450"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-5450",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-41080",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41080",
-    "releaseDate": "Sat, 25 Apr 2026 01:01:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-41080"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-41080",
+    "cve": "CVE-2026-16804",
     "kb": "",
     "knownIssues": ""
   },
@@ -69297,6 +69042,36 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2025-68296",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62835 Azure Portal Information Disclosure Vulnerability",
+    "description": "Corrected the CVE description and title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62835",
+    "releaseDate": "Fri, 24 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62835"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62835",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-48561 Microsoft Edge Copilot Remote Code Execution Vulnerability",
+    "description": "Corrected the CVE description and title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48561",
+    "releaseDate": "Fri, 24 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-48561"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-48561",
     "kb": "",
     "knownIssues": ""
   },
