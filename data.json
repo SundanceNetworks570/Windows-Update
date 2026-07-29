@@ -8132,62 +8132,107 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-6920 Out of bounds read in GPU",
+    "title": "Chromium: CVE-2026-13037 Use after free in WebView",
     "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6920",
-    "releaseDate": "Tue, 28 Apr 2026 07:00:42 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13037",
+    "releaseDate": "Tue, 28 Jul 2026 15:03:49 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-6920"
+      "CVE-2026-13037"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-6920",
+    "cve": "CVE-2026-13037",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-33103 Microsoft Dynamics 365 (On-Premises) Information Disclosure Vulnerability",
-    "description": "Added acknowledgements. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33103",
-    "releaseDate": "Tue, 28 Apr 2026 07:00:00 -0700",
+    "title": "Chromium: CVE-2026-13032 Use after free in WebGL",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13032",
+    "releaseDate": "Tue, 28 Jul 2026 15:03:48 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-33103"
+      "CVE-2026-13032"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-33103",
+    "cve": "CVE-2026-13032",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-6919 Use after free in DevTools",
-    "description": "Added a second Security Only package to Edge security update. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6919",
-    "releaseDate": "Tue, 28 Apr 2026 07:00:00 -0700",
+    "title": "Chromium: CVE-2026-13030 Uninitialized Use in GPU",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13030",
+    "releaseDate": "Tue, 28 Jul 2026 15:03:47 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-6919"
+      "CVE-2026-13030"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-6919",
+    "cve": "CVE-2026-13030",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-40372 ASP.NET Core Elevation of Privilege Vulnerability",
-    "description": "This CVE has been updated to include the Visual Studios 2026 18.5 as an Affected Software",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40372",
-    "releaseDate": "Tue, 28 Apr 2026 07:00:00 -0700",
+    "title": "Chromium: CVE-2026-13028 Use after free in WebGL",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13028",
+    "releaseDate": "Tue, 28 Jul 2026 15:03:44 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-40372"
+      "CVE-2026-13028"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-40372",
+    "cve": "CVE-2026-13028",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50422 Windows NTFS Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50422",
+    "releaseDate": "Tue, 28 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50422"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50422",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-47301 Configuration Manager Elevation of Privilege Vulnerability",
+    "description": "Corrected Build Number in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47301",
+    "releaseDate": "Tue, 28 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-47301"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-47301",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-59117 Windows Terminal Remote Code Execution Vulnerability",
+    "description": "Change the name of the affected software from **Microsoft Power Apps** to **Microsoft Power Apps Desktop Client**. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59117",
+    "releaseDate": "Tue, 28 Jul 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-59117"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-59117",
     "kb": "",
     "knownIssues": ""
   },
