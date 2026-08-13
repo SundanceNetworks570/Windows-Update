@@ -1680,587 +1680,197 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42833 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
-    "description": "Updated the fixed version number. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42833",
-    "releaseDate": "Wed, 13 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-62696 Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62696",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42833"
+      "CVE-2026-62696"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42833",
+    "cve": "CVE-2026-62696",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42898 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42898",
-    "releaseDate": "Wed, 13 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-62747 Windows Device Association Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62747",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42898"
+      "CVE-2026-62747"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42898",
+    "cve": "CVE-2026-62747",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42898 Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
-    "description": "Updated the fixed version number. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42898",
-    "releaseDate": "Wed, 13 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42898"
+      "CVE-2026-62913"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42898",
+    "cve": "CVE-2026-62913",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-44656 Vim: OS Command Injection via 'path' completion",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44656",
-    "releaseDate": "Wed, 13 May 2026 01:43:11 -0700",
+    "title": "CVE-2026-68815 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68815",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-44656"
+      "CVE-2026-68815"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-44656",
+    "cve": "CVE-2026-68815",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45130 Vim: Heap Buffer Overflow in spell file loading",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45130",
-    "releaseDate": "Wed, 13 May 2026 01:43:04 -0700",
+    "title": "CVE-2026-70348 Windows Management Services Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70348",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45130"
+      "CVE-2026-70348"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45130",
+    "cve": "CVE-2026-70348",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-6666 PgBouncer crash in kill_pool_logins_server_error",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6666",
-    "releaseDate": "Wed, 13 May 2026 01:42:57 -0700",
+    "title": "CVE-2026-42976 Remote Access Management service/API (RPC server) Elevation of Privilege Vulnerability",
+    "description": "Updated product information in the Software Update table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42976",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-6666"
+      "CVE-2026-42976"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-6666",
+    "cve": "CVE-2026-42976",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-6667 PgBouncer missing authorization check in KILL_CLIENT admin command",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6667",
-    "releaseDate": "Wed, 13 May 2026 01:42:50 -0700",
+    "title": "CVE-2026-50687 Windows Win32k Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50687",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-6667"
+      "CVE-2026-50687"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-6667",
+    "cve": "CVE-2026-50687",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-6665 PgBouncer buffer overflow in SCRAM",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6665",
-    "releaseDate": "Wed, 13 May 2026 01:42:44 -0700",
+    "title": "CVE-2026-58538 Windows Bluetooth Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58538",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-6665"
+      "CVE-2026-58538"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-6665",
+    "cve": "CVE-2026-58538",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-6664 PgBouncer integer overflow in PgBouncer network packet parsing",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6664",
-    "releaseDate": "Wed, 13 May 2026 01:42:37 -0700",
+    "title": "CVE-2026-50655 Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50655",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-6664"
+      "CVE-2026-50655"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-6664",
+    "cve": "CVE-2026-50655",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-35469 SpdyStream: DOS on CRI",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35469",
-    "releaseDate": "Wed, 13 May 2026 01:40:49 -0700",
+    "title": "CVE-2026-58643 Windows Admin Center Spoofing Vulnerability",
+    "description": "Corrected Build Number in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58643",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-35469"
+      "CVE-2026-58643"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-35469",
+    "cve": "CVE-2026-58643",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41636 Apache Thrift: Node.js skip() recursion",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41636",
-    "releaseDate": "Wed, 13 May 2026 01:40:27 -0700",
+    "title": "CVE-2026-50476 Windows Network Connections Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50476",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41636"
+      "CVE-2026-50476"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41636",
+    "cve": "CVE-2026-50476",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41605 Apache Thrift: Swift Compact Protocol integer overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41605",
-    "releaseDate": "Wed, 13 May 2026 01:40:21 -0700",
+    "title": "CVE-2022-41127 Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central (On Premises) Remote Code Execution Vulnerability",
+    "description": "Updated the build numbers.  This is an informational update only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-41127",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41605"
+      "CVE-2022-41127"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41605",
+    "cve": "CVE-2022-41127",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41603 Apache Thrift: Java TSSLTransportFactory hostname verification",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41603",
-    "releaseDate": "Wed, 13 May 2026 01:40:12 -0700",
+    "title": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
+    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41603"
+      "CVE-2026-45637"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41603",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-41602 Apache Thrift: Go TFramedTransport uint32 overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41602",
-    "releaseDate": "Wed, 13 May 2026 01:40:05 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-41602"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-41602",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-48431 Apache Thrift: Specially crafted input can crash a c_glib Thrift server with invalid pointer error.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-48431",
-    "releaseDate": "Wed, 13 May 2026 01:39:49 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-48431"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-48431",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42151 Prometheus Azure AD remote write OAuth client secret exposed via config API",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42151",
-    "releaseDate": "Wed, 13 May 2026 01:06:02 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42151"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42151",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42154 Prometheus: remote read endpoint allows denial of service via crafted snappy payload",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42154",
-    "releaseDate": "Wed, 13 May 2026 01:05:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42154"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42154",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-6210 Type confusion and heap-buffer-overflow in Qt SVG marker handling causing application crash",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6210",
-    "releaseDate": "Wed, 13 May 2026 01:05:53 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-6210"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-6210",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39817 Invoking \"go tool pack\" does not sanitize output paths in cmd/go",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39817",
-    "releaseDate": "Wed, 13 May 2026 01:05:46 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39817"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39817",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33811 Crash when handling long CNAME response in net",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33811",
-    "releaseDate": "Wed, 13 May 2026 01:05:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33811"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33811",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-8177 XML::LibXML versions through 2.0210 for Perl read out-of-bounds heap memory when parsing XML node names containing truncated UTF-8 byte sequences",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8177",
-    "releaseDate": "Wed, 13 May 2026 01:05:27 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-8177"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-8177",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42501 Malicious module proxy can bypass checksum database in cmd/go",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42501",
-    "releaseDate": "Wed, 13 May 2026 01:05:20 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42501"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42501",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39819 Invoking \"go bug\" follows symlinks in predictable temporary filenames in cmd/go",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39819",
-    "releaseDate": "Wed, 13 May 2026 01:05:10 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39819"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39819",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39823 Bypass of meta content URL escaping causes XSS in html/template",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39823",
-    "releaseDate": "Wed, 13 May 2026 01:04:59 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39823"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39823",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39820 Quadratic string concatentation in consumeComment in net/mail",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39820",
-    "releaseDate": "Wed, 13 May 2026 01:04:49 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39820"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39820",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39826 Escaper bypass leads to XSS in html/template",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39826",
-    "releaseDate": "Wed, 13 May 2026 01:04:38 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39826"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39826",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39825 ReverseProxy forwards queries with more than urlmaxqueryparams parameters in net/http/httputil",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39825",
-    "releaseDate": "Wed, 13 May 2026 01:04:28 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39825"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39825",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42499 Quadratic string concatenation in consumePhrase in net/mail",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42499",
-    "releaseDate": "Wed, 13 May 2026 01:04:17 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42499"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42499",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39836 Panic in Dial and LookupPort when handling NUL byte on Windows in net",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39836",
-    "releaseDate": "Wed, 13 May 2026 01:04:07 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39836"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39836",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45186",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45186",
-    "releaseDate": "Wed, 13 May 2026 01:03:56 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45186"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45186",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-33814 Infinite loop in HTTP/2 transport when given bad SETTINGS_MAX_FRAME_SIZE in net/http/internal/http2 in golang.org/x/net",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33814",
-    "releaseDate": "Wed, 13 May 2026 01:03:48 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-33814"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-33814",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-43249 9p/xen: protect xen_9pfs_front_free against concurrent calls",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43249",
-    "releaseDate": "Wed, 13 May 2026 01:01:58 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-43249"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-43249",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-31767 drm/i915/dsi: Don't do DSC horizontal timing adjustments in command mode",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31767",
-    "releaseDate": "Wed, 13 May 2026 01:01:53 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-31767"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-31767",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-41256 jq: Embedded NUL truncates top-level jq programs loaded with -f",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41256",
-    "releaseDate": "Wed, 13 May 2026 01:01:47 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-41256"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-41256",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-40612 jq: Stack overflow via unbounded recursion in jv_contains",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40612",
-    "releaseDate": "Wed, 13 May 2026 01:01:42 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-40612"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-40612",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-43895 jq: Embedded NUL in jq import paths causes local redaction-policy bypass and preserves sensitive fields in published artifacts",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43895",
-    "releaseDate": "Wed, 13 May 2026 01:01:36 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-43895"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-43895",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-43896 jq: Stack Overflow in Recursive Object Merge",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43896",
-    "releaseDate": "Wed, 13 May 2026 01:01:31 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-43896"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-43896",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-43894 jq: Wild stack write via signed-integer overflow in decNumber D2U() macro",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43894",
-    "releaseDate": "Wed, 13 May 2026 01:01:25 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-43894"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-43894",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-41257 jq: Signed-int overflow in `stack_reallocate` (jq VM stack)",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41257",
-    "releaseDate": "Wed, 13 May 2026 01:01:20 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-41257"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-41257",
+    "cve": "CVE-2026-45637",
     "kb": "",
     "knownIssues": ""
   },
