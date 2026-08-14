@@ -39004,77 +39004,422 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-32177 .NET Elevation of Privilege Vulnerability",
-    "description": "New .NET Framework Packages have been added",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32177",
-    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-49162 Microsoft Brokering File System Elevation of Privilege Vulnerability",
+    "description": "Added acknowledgements. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49162",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-32177"
+      "CVE-2026-49162"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-32177",
+    "cve": "CVE-2026-49162",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-35433 .NET Elevation of Privilege Vulnerability",
-    "description": "New .NET Framework Packages have been added",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35433",
-    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-49798 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49798",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-35433"
+      "CVE-2026-49798"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-35433",
+    "cve": "CVE-2026-49798",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41615 Microsoft Authenticator Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Authenticator allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41615",
-    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-50342 Windows MIDI Service Module Elevation of Privileges Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50342",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41615"
+      "CVE-2026-50342"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41615",
+    "cve": "CVE-2026-50342",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42897 Microsoft Exchange Server Spoofing Vulnerability",
-    "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897",
-    "releaseDate": "Thu, 14 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-50298 Windows Spaceport.sys Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50298",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42897"
+      "CVE-2026-50298"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42897",
+    "cve": "CVE-2026-50298",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-25541 Bytes is vulnerable to integer overflow in BytesMut::reserve",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25541",
-    "releaseDate": "Thu, 14 May 2026 01:42:37 -0700",
+    "title": "CVE-2026-50309 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50309",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-25541"
+      "CVE-2026-50309"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-25541",
+    "cve": "CVE-2026-50309",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50387 Windows GDI Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50387",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50387"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50387",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50383 Windows Print Spooler Information Disclosure Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50383",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50383"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50383",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50461 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50461",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50461"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50461",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45592 Windows Internet (wininet.dll) Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45592",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45592"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45592",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45593 Windows SDK Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45593",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45593"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45593",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45597 Windows UI Automation Manager (uiamanager.dll) Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45597",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45597"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45597",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45638 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45638",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45638"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45638",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-45637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-45637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-44814 Windows DWM Core Library Information Disclosure  Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44814",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-44814"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-44814",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-61346 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61346",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-61346"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-61346",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62695 Windows Storage Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62695",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62695"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62695",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61359",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-61359"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-61359",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-66804 Microsoft Windows Cross Device Service Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66804",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-66804"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-66804",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+    "description": "Added acknowledgements. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62913"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62913",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62688 Windows MIDI Service Module Elevation of Privileges Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62688",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62688"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62688",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62897 .NET Framework Remote Code Execution Vulnerability",
+    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62897",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62897"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62897",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62902 .NET Information Disclosure Vulnerability",
+    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62902",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62902"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62902",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70354 .NET Core Remote Code Execution Vulnerability",
+    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70354",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70354"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70354",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62871 .NET Elevation of Privilege Vulnerability",
+    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62871",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62871"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62871",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62886 .NET Elevation of Privilege Vulnerability",
+    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62886"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62886",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62898 Microsoft QUIC Information Disclosure Vulnerability",
+    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62898",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62898"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62898",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-64906 Microsoft Access Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64906",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-64906"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-64906",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-65796 Windows iSCSI Target Service Remote Code Execution Vulnerability",
+    "description": "Updated the CVE title, changed the security impact from Denial of Service to Remote Code Execution, changed the severity from Important to Critical, updated the CVSS score from 5.9 to 8.1, and corrected the severity and impact entries in the Security Updates table. These are informational changes only. Customers who have successfully installed the update do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65796",
+    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-65796"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-65796",
     "kb": "",
     "knownIssues": ""
   },
