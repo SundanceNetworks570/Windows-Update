@@ -58601,77 +58601,152 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-32185 Microsoft Teams Spoofing Vulnerability",
-    "description": "The security update for Microsoft Teams for Android is not immediately available. Customers running affected Microsoft Teams for would need to install the update to be protected from this vulnerability, once the update becomes available.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32185",
-    "releaseDate": "Mon, 18 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-32185"
+      "CVE-2026-40400"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-32185",
+    "cve": "CVE-2026-40400",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42897 Microsoft Exchange Server Spoofing Vulnerability",
-    "description": "Updated FAQ information. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897",
-    "releaseDate": "Mon, 18 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-56188 Windows Server Network driver Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56188",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42897"
+      "CVE-2026-56188"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42897",
+    "cve": "CVE-2026-56188",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42822 Azure Local Disconnected Operations (ALDO) Elevation of Privilege Vulnerability",
-    "description": "Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42822",
-    "releaseDate": "Mon, 18 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-62722 Microsoft Brokering File System Elevation of Privilege Vulnerability",
+    "description": "Corrected the CVE description and title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62722",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42822"
+      "CVE-2026-62722"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42822",
+    "cve": "CVE-2026-62722",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-32177 .NET Elevation of Privilege Vulnerability",
-    "description": "Update the Security Updates table to remove incorrectly added software",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32177",
-    "releaseDate": "Mon, 18 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-66807 Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66807",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-32177"
+      "CVE-2026-66807"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-32177",
+    "cve": "CVE-2026-66807",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-43308 btrfs: don't BUG() on unexpected delayed ref type in run_one_delayed_ref()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43308",
-    "releaseDate": "Mon, 18 May 2026 01:39:12 -0700",
+    "title": "CVE-2026-63519 Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63519",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-43308"
+      "CVE-2026-63519"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-43308",
+    "cve": "CVE-2026-63519",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-63513 Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63513",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-63513"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-63513",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70337"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70337",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-58612 PowerShell Information Disclosure Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58612",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-58612"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-58612",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62886 .NET Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62886"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62886",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-63518 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63518",
+    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-63518"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-63518",
     "kb": "",
     "knownIssues": ""
   },
