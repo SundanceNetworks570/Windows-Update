@@ -5897,197 +5897,197 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45495 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "description": "CWE added. Informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45495",
-    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-62747 Windows Device Association Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62747",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45495"
+      "CVE-2026-62747"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45495",
+    "cve": "CVE-2026-62747",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45498 Microsoft Defender Denial of Service Vulnerability",
-    "description": "CWE added. Informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45498",
-    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-61939 Winlogon Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61939",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45498"
+      "CVE-2026-61939"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45498",
+    "cve": "CVE-2026-61939",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41091 Microsoft Defender Elevation of Privilege Vulnerability",
-    "description": "In the Security Updates table, added links to the Release Notes. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41091",
-    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-62728 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62728",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41091"
+      "CVE-2026-62728"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41091",
+    "cve": "CVE-2026-62728",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45584 Microsoft Defender Remote Code Execution Vulnerability",
-    "description": "In the Security Updates table, added links to the Release Notes. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45584",
-    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45584"
+      "CVE-2026-70337"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45584",
+    "cve": "CVE-2026-70337",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45659 Microsoft SharePoint Remote Code Execution Vulnerability",
-    "description": "Information published. This CVE was addressed by updates that were released in May 2026, but the CVE was inadvertently omitted from the May 2026 Security Updates. This is an informational change only. Customers who have already installed the May 2026 updates do not need to take any further action.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45659",
-    "releaseDate": "Tue, 26 May 2026 07:00:00 -0700",
+    "title": "CVE-2026-59127 Windows Installer Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59127",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45659"
+      "CVE-2026-59127"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45659",
+    "cve": "CVE-2026-59127",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-1502 HTTP client proxy tunnel headers not validated for CR/LF",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-1502",
-    "releaseDate": "Tue, 26 May 2026 01:41:55 -0700",
+    "title": "CVE-2026-59130 AMD Zen Information Disclosure Vulnerability",
+    "description": "Updated CWE value.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59130",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-1502"
+      "CVE-2026-59130"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-1502",
+    "cve": "CVE-2026-59130",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-1176 GNU Binutils ld elflink.c _bfd_elf_gc_mark_rsec heap-based overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-1176",
-    "releaseDate": "Tue, 26 May 2026 01:39:11 -0700",
+    "title": "CVE-2026-59131 AMD Zen Information Disclosure Vulnerability",
+    "description": "Updated CWE value.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59131",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-1176"
+      "CVE-2026-59131"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-1176",
+    "cve": "CVE-2026-59131",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-1178 GNU Binutils ld libbfd.c bfd_putl64 memory corruption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-1178",
-    "releaseDate": "Tue, 26 May 2026 01:39:03 -0700",
+    "title": "CVE-2026-24301 Microsoft Copilot Information Disclosure Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24301",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-1178"
+      "CVE-2026-24301"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-1178",
+    "cve": "CVE-2026-24301",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-3198 GNU Binutils objdump bucomm.c display_info memory leak",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-3198",
-    "releaseDate": "Tue, 26 May 2026 01:38:55 -0700",
+    "title": "CVE-2026-45639 Windows Remote Desktop Protocol (RDP) Information Disclosure Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45639",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-3198"
+      "CVE-2026-45639"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-3198",
+    "cve": "CVE-2026-45639",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-44283 etcd: Read access via PrevKv in etcd transactions may bypass RBAC authorization checks",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44283",
-    "releaseDate": "Tue, 26 May 2026 01:38:43 -0700",
+    "title": "CVE-2026-55137 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55137",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-44283"
+      "CVE-2026-55137"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-44283",
+    "cve": "CVE-2026-55137",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-43968 CR Injection in SSE Encoder Enables Event Splitting via cow_sse:event/1",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43968",
-    "releaseDate": "Tue, 26 May 2026 01:38:33 -0700",
+    "title": "CVE-2026-50448 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50448",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-43968"
+      "CVE-2026-50448"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-43968",
+    "cve": "CVE-2026-50448",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-7790 Unbounded chunk-size hex digits in cowlib cause quadratic CPU and memory DoS",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7790",
-    "releaseDate": "Tue, 26 May 2026 01:38:25 -0700",
+    "title": "CVE-2026-49183 Windows Clipboard Server Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49183",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-7790"
+      "CVE-2026-49183"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-7790",
+    "cve": "CVE-2026-49183",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-33814 Infinite loop in HTTP/2 transport when given bad SETTINGS_MAX_FRAME_SIZE in net/http/internal/http2 in golang.org/x/net",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33814",
-    "releaseDate": "Tue, 26 May 2026 01:38:14 -0700",
+    "title": "CVE-2026-50333 Windows Spaceport.sys Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50333",
+    "releaseDate": "Tue, 25 Aug 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-33814"
+      "CVE-2026-50333"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-33814",
+    "cve": "CVE-2026-50333",
     "kb": "",
     "knownIssues": ""
   },
