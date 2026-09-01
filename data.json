@@ -50950,81 +50950,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-49177 Windows TCP/IP Information Disclosure Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49177",
-    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-49177"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-49177",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55134 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55134",
-    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55134"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55134",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50448 Windows NTFS Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50448",
-    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50448"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50448",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50344 Windows OLE Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50344",
-    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50344"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50344",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50462 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50462",
-    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50462"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50462",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2026-64899 Microsoft Office Information Disclosure Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64899",
@@ -51096,6 +51021,96 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-62889",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-59134 Remote Desktop Client Remote Code Execution Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59134",
+    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-59134"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-59134",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-49177 Windows TCP/IP Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49177",
+    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-49177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-49177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-55134 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55134",
+    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-55134"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-55134",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50448 Windows NTFS Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50448",
+    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50448"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50448",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50344 Windows OLE Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50344",
+    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50344"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50344",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50462 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50462",
+    "releaseDate": "Mon, 31 Aug 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50462"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50462",
     "kb": "",
     "knownIssues": ""
   },
