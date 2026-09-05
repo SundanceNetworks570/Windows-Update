@@ -59433,137 +59433,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-33841 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33841",
-    "releaseDate": "Fri, 05 Jun 2026 07:00:00 -0700",
+    "title": "CVE-2026-50376 Windows Remote Desktop Client Information Disclosure Vulnerability",
+    "description": "Acknowledgment updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50376",
+    "releaseDate": "Fri, 04 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-33841"
+      "CVE-2026-50376"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-33841",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-32177 .NET Elevation of Privilege Vulnerability",
-    "description": "This CVE was updated to fix the download link for .NET Framework 3.8 & 4.81 for Windows 2025",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32177",
-    "releaseDate": "Fri, 05 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-32177"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-32177",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-35433 .NET Elevation of Privilege Vulnerability",
-    "description": "This CVE was updated to fix the download link for .NET Framework 3.8 & 4.81 for Windows 2025",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35433",
-    "releaseDate": "Fri, 05 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-35433"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-35433",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-25680 Invoking denial of service when parsing arbitrary HTML in golang.org/x/net/html",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25680",
-    "releaseDate": "Fri, 05 Jun 2026 01:41:37 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-25680"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-25680",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46598 Invoking  pathological inputs can lead to client panic in golang.org/x/crypto/ssh/agent",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46598",
-    "releaseDate": "Fri, 05 Jun 2026 01:41:29 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46598"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46598",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42502 Invoking  incorrect handling of HTML elements in foreign content in golang.org/x/net/html",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42502",
-    "releaseDate": "Fri, 05 Jun 2026 01:41:22 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42502"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42502",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39827 Invoking  memory leak when rejecting channels can lead to DoS in golang.org/x/crypto/ssh",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39827",
-    "releaseDate": "Fri, 05 Jun 2026 01:41:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39827"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39827",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39835 Invoking  server panic during CheckHostKey/Authenticate in golang.org/x/crypto/ssh",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39835",
-    "releaseDate": "Fri, 05 Jun 2026 01:41:08 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39835"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39835",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-25681 Invoking  incorrect handling of character references in DOCTYPE nodes in golang.org/x/net/html",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25681",
-    "releaseDate": "Fri, 05 Jun 2026 01:41:01 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-25681"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-25681",
+    "cve": "CVE-2026-50376",
     "kb": "",
     "knownIssues": ""
   },
