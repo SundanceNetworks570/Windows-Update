@@ -1440,617 +1440,137 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-47294 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "title": "Chromium: CVE-2026-85046 Type confusion in V8",
+    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.\n\nGoogle is aware that an exploit for CVE-2026-85046 exists in the wild.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85046",
+    "releaseDate": "Wed, 09 Sep 2026 15:09:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-85046"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-85046",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69777 Windows DHCP Client Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47294",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69777",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-47294"
+      "CVE-2026-69777"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-47294",
+    "cve": "CVE-2026-69777",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42903 Windows Kerberos Denial of Service Vulnerability",
+    "title": "CVE-2026-69508 Windows MIDI Service Module Elevation of Privileges Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42903",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69508",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42903"
+      "CVE-2026-69508"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42903",
+    "cve": "CVE-2026-69508",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-48569 Visual Studio Code Security Feature Bypass Vulnerability",
-    "description": "Updated the Security Updates Build Number",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48569",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-48569"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-48569",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-40376 Visual Studio Code Elevation of Privilege Vulnerability",
-    "description": "Updated the Security Updates Build Number",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40376",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-40376"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-40376",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45482 Microsoft Visual Studio Code CoPilot Chat Security Feature Bypass Vulnerability",
-    "description": "Updated the Security Updates Build Number and Title as the Chat extention is now merged into Visual Studio Code",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45482",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45482"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45482",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-40371 Microsoft Dynamics 365 (on-premises) Elevation of Privilege Vulnerability",
-    "description": "The release notes link has been updated to point to the latest available version. Informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40371",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-40371"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-40371",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-47298 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "title": "CVE-2026-68877 Windows Storage Spaces Controller Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47298",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68877",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-47298"
+      "CVE-2026-68877"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-47298",
+    "cve": "CVE-2026-68877",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-20846 GDI+ Denial of Service Vulnerability",
+    "title": "CVE-2026-69334 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20846",
-    "releaseDate": "Wed, 10 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69334",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-20846"
+      "CVE-2026-69334"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-20846",
+    "cve": "CVE-2026-69334",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-49975 Apache HTTP Server: mod_http2 denial of service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49975",
-    "releaseDate": "Wed, 10 Jun 2026 01:42:51 -0700",
+    "title": "CVE-2026-69492 Windows Partition Management Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69492",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-49975"
+      "CVE-2026-69492"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-49975",
+    "cve": "CVE-2026-69492",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42502 Invoking  incorrect handling of HTML elements in foreign content in golang.org/x/net/html",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42502",
-    "releaseDate": "Wed, 10 Jun 2026 01:41:47 -0700",
+    "title": "CVE-2026-73024 Windows Services for NFS ONCRPC XDR Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73024",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42502"
+      "CVE-2026-73024"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42502",
+    "cve": "CVE-2026-73024",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-46330 Revert \"net/smc: Introduce TCP ULP support\"",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46330",
-    "releaseDate": "Wed, 10 Jun 2026 01:06:26 -0700",
+    "title": "CVE-2026-45499 Azure OpenAI Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45499",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-46330"
+      "CVE-2026-45499"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-46330",
+    "cve": "CVE-2026-45499",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-46325 RDMA/rxe: Fix iova-to-va conversion for MR page sizes != PAGE_SIZE",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46325",
-    "releaseDate": "Wed, 10 Jun 2026 01:06:20 -0700",
+    "title": "CVE-2026-62693 Windows MIDI Service Module Elevation of Privileges Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62693",
+    "releaseDate": "Wed, 09 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-46325"
+      "CVE-2026-62693"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-46325",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46320 tap: free page on error paths in tap_get_user_xdp()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46320",
-    "releaseDate": "Wed, 10 Jun 2026 01:06:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46320"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46320",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46324 netfilter: nf_tables: use list_del_rcu for netlink hooks",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46324",
-    "releaseDate": "Wed, 10 Jun 2026 01:06:09 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46324"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46324",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46323 net: gro: don't merge zcopy skbs",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46323",
-    "releaseDate": "Wed, 10 Jun 2026 01:06:04 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46323"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46323",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46319 net/sched: act_ct: Only release RCU read lock after ct_ft",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46319",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:58 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46319"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46319",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46322 tun: free page on build_skb failure in tun_xdp_one()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46322",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:53 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46322"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46322",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46321 tun: free page on short-frame rejection in tun_xdp_one()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46321",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:47 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46321"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46321",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-49762 Unbounded integer parsing in the Version module enables CPU and memory exhaustion denial of service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49762",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:42 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-49762"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-49762",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-43059 Bluetooth: MGMT: Fix list corruption and UAF in command complete handlers",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43059",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-43059"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-43059",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46303 isofs: validate Rock Ridge CE continuation extent against volume size",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46303",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46303"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46303",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46299 hfsplus: fix held lock freed on hfsplus_fill_super()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46299",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:18 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46299"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46299",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46304 nvmet: avoid recursive nvmet-wq flush in nvmet_ctrl_free",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46304",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:13 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46304"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46304",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46287 net: txgbe: fix RTNL assertion warning when remove module",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46287",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:08 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46287"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46287",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46306 flow_dissector: do not dissect PPPoE PFC frames",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46306",
-    "releaseDate": "Wed, 10 Jun 2026 01:05:02 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46306"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46306",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46296 spi: s3c64xx: fix NULL-deref on driver unbind",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46296",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46296"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46296",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46293 clk: microchip: mpfs-ccc: fix out of bounds access during output registration",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46293",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:51 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46293"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46293",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-71315 drm/vkms: Convert to DRM's vblank timer",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71315",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:46 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-71315"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-71315",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46314 drm/v3d: Reject empty multisync extension to prevent infinite loop",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46314",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:40 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46314"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46314",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46302 selinux: allow multiple opens of /sys/fs/selinux/policy",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46302",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46302"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46302",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46291 crypto: caam - guard HMAC key hex dumps in hash_digest_key",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46291",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:30 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46291"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46291",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46301 spi: topcliff-pch: fix use-after-free on unbind",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46301",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46301"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46301",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46312 media: videobuf2: Set vma_flags in vb2_dma_sg_mmap",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46312",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:19 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46312"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46312",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46282 iio: frequency: admv1013: fix NULL pointer dereference on str",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46282",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:13 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46282"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46282",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46274 io-wq: check that the predecessor is hashed in io_wq_remove_pending()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46274",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:08 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46274"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46274",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46280 lib: test_hmm: evict device pages on file close to avoid use-after-free",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46280",
-    "releaseDate": "Wed, 10 Jun 2026 01:04:02 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46280"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46280",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46285 mtd: docg3: fix use-after-free in docg3_release()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46285",
-    "releaseDate": "Wed, 10 Jun 2026 01:03:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46285"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46285",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46275 Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46275",
-    "releaseDate": "Wed, 10 Jun 2026 01:03:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46275"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46275",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46292 pmdomain: core: Fix detach procedure for virtual devices in genpd",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46292",
-    "releaseDate": "Wed, 10 Jun 2026 01:03:46 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46292"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46292",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46307 wifi: ath5k: do not access array OOB",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46307",
-    "releaseDate": "Wed, 10 Jun 2026 01:03:41 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46307"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46307",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46289 lib/scatterlist: fix length calculations in extract_kvec_to_sg",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46289",
-    "releaseDate": "Wed, 10 Jun 2026 01:03:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46289"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46289",
+    "cve": "CVE-2026-62693",
     "kb": "",
     "knownIssues": ""
   },
