@@ -4231,6 +4231,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-80097 Microsoft Authenticator Elevation of Privilege Vulnerability",
+    "description": "Corrected fix build number. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80097",
+    "releaseDate": "Tue, 15 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-80097"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-80097",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-81355 Virtual Hard Disk (VHD) Miniport Driver Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81355",
@@ -4242,6 +4257,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-81355",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69486 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "description": "<p>Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69486",
+    "releaseDate": "Tue, 15 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69486"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69486",
     "kb": "",
     "knownIssues": ""
   },
@@ -4336,6 +4366,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-69559 Microsoft Teams for Android Information Disclosure Vulnerability",
+    "description": "Corrected fix build number. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69559",
+    "releaseDate": "Tue, 15 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69559"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69559",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-65812 Microsoft Teams for Android Information Disclosure Vulnerability",
+    "description": "Corrected fix build number. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65812",
+    "releaseDate": "Tue, 15 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-65812"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-65812",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-73006 DirectWrite Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73006",
@@ -4362,6 +4422,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-81963",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-85893 Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
+    "description": "<p>Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85893",
+    "releaseDate": "Tue, 15 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-85893"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-85893",
     "kb": "",
     "knownIssues": ""
   },
@@ -4482,6 +4557,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-68812",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-63508 Microsoft Planetary Computer Pro Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63508",
+    "releaseDate": "Tue, 15 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-63508"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-63508",
     "kb": "",
     "knownIssues": ""
   },
