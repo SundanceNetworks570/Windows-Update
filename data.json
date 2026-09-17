@@ -705,62 +705,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-35433 .NET Elevation of Privilege Vulnerability",
-    "description": "This CVE was updated to remove Windows 11 (21H1 and 22H2) as impacted",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35433",
-    "releaseDate": "Wed, 17 Jun 2026 07:00:00 -0700",
+    "title": "CVE-2026-85880 Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability",
+    "description": "CVSS vector modified to correct the temporal Exploit Code Maturity setting.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85880",
+    "releaseDate": "Wed, 16 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-35433"
+      "CVE-2026-85880"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-35433",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-47636 Microsoft SharePoint Server Spoofing Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47636",
-    "releaseDate": "Wed, 17 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-47636"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-47636",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45475 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45475",
-    "releaseDate": "Wed, 17 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45475"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45475",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42828 Windows Projected File System Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42828",
-    "releaseDate": "Wed, 17 Jun 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42828"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42828",
+    "cve": "CVE-2026-85880",
     "kb": "",
     "knownIssues": ""
   },
