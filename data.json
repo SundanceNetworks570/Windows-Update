@@ -54965,201 +54965,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-44967 opentelemetry-cpp: OTLP HTTP exporters read unbounded HTTP response",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44967",
-    "releaseDate": "Sat, 20 Jun 2026 01:43:49 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44967"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44967",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46331 net/sched: fix pedit partial COW leading to page cache corruption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46331",
-    "releaseDate": "Sat, 20 Jun 2026 01:43:41 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46331"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46331",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-34180 Heap Buffer Over-read in ASN.1 Content Parsing",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34180",
-    "releaseDate": "Sat, 20 Jun 2026 01:43:31 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-34180"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-34180",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-7383 Possible Heap Buffer Overflow in ASN.1 Multibyte String Conversion",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7383",
-    "releaseDate": "Sat, 20 Jun 2026 01:43:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-7383"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-7383",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42767 NULL Pointer Dereference in CRMF EncryptedValue Decryption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42767",
-    "releaseDate": "Sat, 20 Jun 2026 01:43:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42767"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42767",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42766 Possible NULL Dereference in Password-Based CMS Decryption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42766",
-    "releaseDate": "Sat, 20 Jun 2026 01:42:43 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42766"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42766",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45446 Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45446",
-    "releaseDate": "Sat, 20 Jun 2026 01:42:18 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45446"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45446",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-9076 Out-of-Bounds Read in CMS Password-Based Decryption",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9076",
-    "releaseDate": "Sat, 20 Jun 2026 01:42:01 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-9076"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-9076",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42768 Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42768",
-    "releaseDate": "Sat, 20 Jun 2026 01:41:45 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42768"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42768",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-34183 Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34183",
-    "releaseDate": "Sat, 20 Jun 2026 01:41:20 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-34183"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-34183",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445",
-    "releaseDate": "Sat, 20 Jun 2026 01:40:55 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45445"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45445",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-5791 Users: `root` appended to group listings",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-5791",
-    "releaseDate": "Sat, 20 Jun 2026 01:40:10 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-5791"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-5791",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-4574 Crossbeam-channel: crossbeam-channel vulnerable to double free on drop",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-4574",
-    "releaseDate": "Sat, 20 Jun 2026 01:39:58 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-4574"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-4574",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2026-50012 Squid: Memory corruption in cache_digest reply handling",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50012",
@@ -58504,6 +58309,216 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-47292",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-68825 Windows Bind Filter Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68825",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-68825"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-68825",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78517 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78517",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78517"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78517",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-77901 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77901",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-77901"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-77901",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78524"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78524",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78526 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78526",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78526"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78526",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-83498 Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83498",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-83498"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-83498",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-63516 Microsoft SharePoint Server Spoofing Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63516",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-63516"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-63516",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62871 .NET Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62871",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62871"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62871",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-63532 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63532",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-63532"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-63532",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-68798 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68798",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-68798"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-68798",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-68804 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-68804"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-68804",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40400"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40400",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-55039 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55039",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-55039"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-55039",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-55123 Microsoft PowerPoint Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55123",
+    "releaseDate": "Mon, 21 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-55123"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-55123",
     "kb": "",
     "knownIssues": ""
   },
