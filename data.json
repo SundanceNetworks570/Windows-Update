@@ -30,17 +30,107 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-46285 mtd: docg3: fix use-after-free in docg3_release()",
+    "title": "Chromium CVE-2026-87564: Type confusion in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46285",
-    "releaseDate": "Wed, 24 Jun 2026 02:43:33 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87564",
+    "releaseDate": "Wed, 23 Sep 2026 02:54:18 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-46285"
+      "CVE-2026-87564"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-46285",
+    "cve": "CVE-2026-87564",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87587: Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87587",
+    "releaseDate": "Wed, 23 Sep 2026 02:53:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87587"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87587",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87612: Type confusion in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87612",
+    "releaseDate": "Wed, 23 Sep 2026 01:43:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87612"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87612",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87489: Memory corruption in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87489",
+    "releaseDate": "Wed, 23 Sep 2026 01:43:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87489"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87489",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87536: Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87536",
+    "releaseDate": "Wed, 23 Sep 2026 01:42:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87536"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87536",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87625: Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87625",
+    "releaseDate": "Wed, 23 Sep 2026 01:42:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87625"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87625",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87601: Race condition in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87601",
+    "releaseDate": "Wed, 23 Sep 2026 01:42:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87601"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87601",
     "kb": "",
     "knownIssues": ""
   },
@@ -2986,47 +3076,122 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42915 Microsoft Windows VMSwitch Denial of Service Vulnerability",
+    "title": "CVE-2026-57099 ASP.NET Core Denial of Service Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42915",
-    "releaseDate": "Tue, 23 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57099",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42915"
+      "CVE-2026-57099"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42915",
+    "cve": "CVE-2026-57099",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45504 Microsoft Exchange Server Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement added. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45504",
-    "releaseDate": "Tue, 23 Jun 2026 07:00:00 -0700",
+    "title": "CVE-2026-77886 Windows DHCP Server Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77886",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45504"
+      "CVE-2026-77886"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45504",
+    "cve": "CVE-2026-77886",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-33840 Win32k Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-68824 Connected User Experiences and Telemetry Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840",
-    "releaseDate": "Tue, 23 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68824",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-33840"
+      "CVE-2026-68824"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-33840",
+    "cve": "CVE-2026-68824",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69498 Windows Win32k Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69498",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69498"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69498",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69572 Windows SMB Client Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69572",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69572"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69572",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69620 Windows DHCP Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69620",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69620"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69620",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-55134 Microsoft Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55134",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-55134"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-55134",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57091 Windows File History Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57091",
+    "releaseDate": "Tue, 22 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57091"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57091",
     "kb": "",
     "knownIssues": ""
   },
