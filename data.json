@@ -40662,6 +40662,201 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-69681 Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulernability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69681",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69681"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69681",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69732 Windows Link Layer Topology Discovery Protocol Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69732",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69732"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69732",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-71337 Windows Storage Management Provider Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71337",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-71337"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-71337",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69282 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69282",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69282"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69282",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-81357 Visual Studio Code Security Feature Bypass Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81357",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-81357"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-81357",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-68894 Windows Error Reporting Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68894",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-68894"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-68894",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69637 Windows DHCP Server Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69637",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69637"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69637",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69803 Windows DHCP Server Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69803",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69803"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69803",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69409 Microsoft Office SharePoint Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69409",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69409"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69409",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69590 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69590",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69590"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69590",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-80073 Microsoft Office Outlook Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80073",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-80073"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-80073",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-81951 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81951",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-81951"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-81951",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-59113 Visual Studio Code Remote Code Execution Vulnerability",
+    "description": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59113",
+    "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-59113"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-59113",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-65675 CoPilot Chat Security Feature Bypass Vulnerability",
     "description": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Security Updates table. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65675",
@@ -40692,17 +40887,47 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-59113 Visual Studio Code Remote Code Execution Vulnerability",
-    "description": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59113",
+    "title": "CVE-2026-68804 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804",
     "releaseDate": "Thu, 24 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-59113"
+      "CVE-2026-68804"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-59113",
+    "cve": "CVE-2026-68804",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87564: Type confusion in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87564",
+    "releaseDate": "Thu, 24 Sep 2026 01:44:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87564"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87564",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-87587: Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87587",
+    "releaseDate": "Thu, 24 Sep 2026 01:43:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87587"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87587",
     "kb": "",
     "knownIssues": ""
   },
@@ -68573,122 +68798,107 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-4367 Libxpm: libxpm: denial of service via out-of-bounds read in xpm file parsing",
+    "title": "Chromium: CVE-2025-2135 Type Confusion in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4367",
-    "releaseDate": "Fri, 26 Jun 2026 01:41:41 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2135",
+    "releaseDate": "Fri, 25 Sep 2026 02:35:30 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-4367"
+      "CVE-2025-2135"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-4367",
+    "cve": "CVE-2025-2135",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-46320 tap: free page on error paths in tap_get_user_xdp()",
+    "title": "Chromium: CVE-2026-4450 Out of bounds write in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46320",
-    "releaseDate": "Fri, 26 Jun 2026 01:41:26 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4450",
+    "releaseDate": "Fri, 25 Sep 2026 02:21:44 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-46320"
+      "CVE-2026-4450"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-46320",
+    "cve": "CVE-2026-4450",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-46322 tun: free page on build_skb failure in tun_xdp_one()",
+    "title": "Chromium CVE-2026-87612: Type confusion in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46322",
-    "releaseDate": "Fri, 26 Jun 2026 01:41:18 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87612",
+    "releaseDate": "Fri, 25 Sep 2026 01:45:31 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-46322"
+      "CVE-2026-87612"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-46322",
+    "cve": "CVE-2026-87612",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-46321 tun: free page on short-frame rejection in tun_xdp_one()",
+    "title": "Chromium CVE-2026-87489: Memory corruption in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46321",
-    "releaseDate": "Fri, 26 Jun 2026 01:41:11 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87489",
+    "releaseDate": "Fri, 25 Sep 2026 01:45:03 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-46321"
+      "CVE-2026-87489"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-46321",
+    "cve": "CVE-2026-87489",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45930 net: mctp: ensure our nlmsg responses are initialised",
+    "title": "Chromium CVE-2026-87536: Use after free in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45930",
-    "releaseDate": "Fri, 26 Jun 2026 01:40:44 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87536",
+    "releaseDate": "Fri, 25 Sep 2026 01:44:45 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45930"
+      "CVE-2026-87536"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45930",
+    "cve": "CVE-2026-87536",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45850 ipvs: skip ipv6 extension headers for csum checks",
+    "title": "Chromium CVE-2026-87625: Use after free in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45850",
-    "releaseDate": "Fri, 26 Jun 2026 01:40:31 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87625",
+    "releaseDate": "Fri, 25 Sep 2026 01:44:32 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45850"
+      "CVE-2026-87625"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45850",
+    "cve": "CVE-2026-87625",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-68736 landlock: Fix handling of disconnected directories",
+    "title": "Chromium CVE-2026-87601: Race condition in V8",
     "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68736",
-    "releaseDate": "Fri, 26 Jun 2026 01:39:56 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87601",
+    "releaseDate": "Fri, 25 Sep 2026 01:44:22 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-68736"
+      "CVE-2026-87601"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-68736",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2025-68296 drm, fbcon, vga_switcheroo: Avoid race condition in fbcon setup",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68296",
-    "releaseDate": "Fri, 26 Jun 2026 01:39:42 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2025-68296"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2025-68296",
+    "cve": "CVE-2026-87601",
     "kb": "",
     "knownIssues": ""
   },
