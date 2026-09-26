@@ -68798,6 +68798,1791 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-69522 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "description": "Security Updates table updated provide links to the KB articles and download center updates. Microsoft recommends installing the updates.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69522",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69522"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69522",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78510 Microsoft Outlook and Word Remote Code Execution Vulnerability",
+    "description": "Updated CVE title and CVSS Score. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78510",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78510"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78510",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-85921 Windows Secure Kernel Mode Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85921",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-85921"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-85921",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95274: Improper output encoding in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95274",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95274"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95274",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95275: Incorrect reference resolution in MediaStream",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95275",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95275"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95275",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95276: Improper input validation in Themes",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95276",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95276"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95276",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95277: Use after free in Views",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95277",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95277"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95277",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95278: Missing authorization in WakeLock",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95278",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95278"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95278",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95279: UI misrepresentation in Omnibox",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95279",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95279"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95279",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95280: Race condition in V8",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95280",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95280"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95280",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95281: Buffer overflow in ANGLE",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95281",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95281"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95281",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95282: Use after free in Platform",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95282",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95282"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95282",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95283: Buffer overflow in Tint",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95283",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95283"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95283",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95284: Buffer overflow in ANGLE",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95284",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95284"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95284",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95285: Missing authorization in WebView",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95285",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95285"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95285",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95286: Type confusion in Bindings",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95286",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95286"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95286",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95287: Missing authorization in Navigation",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95287",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95287"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95287",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95288: UI misrepresentation in Mobile",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95288",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95288"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95288",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95289: Incorrect authorization in Scroll",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95289",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95289"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95289",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95290: Missing authorization in NFC",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95290",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95290"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95290",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95291: UI misrepresentation in SecurityIndicators",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95291",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95291"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95291",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95292: Incorrect authorization in Safebrowsing",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95292",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95292"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95292",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95293: Uninitialized resource in GPU",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95293",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95293"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95293",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95294: UI misrepresentation in Browser",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95294",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95294"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95294",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95295: Information leak in Mobile",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95295",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95295"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95295",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95296: Missing authorization in Core",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95296",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95296"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95296",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95297: Missing authorization in Contextual Tasks",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95297",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95297"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95297",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95298: Use after free in Browser",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95298",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95298"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95298",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95374: Incorrect authorization in Network",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95374",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95374"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95374",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95375: Incorrect authorization in BrowserTag",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95375",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95375"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95375",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95376: Externally controlled reference in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95376",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95376"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95376",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95380: Type confusion in V8",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95380",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95380"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95380",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95381: Improper input validation in Printing",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95381",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95381"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95381",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95382: Improper input validation in Auth",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95382",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95382"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95382",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95384: Race condition in Transactions Platform",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95384",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95384"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95384",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95385: Inappropriate implementation in PlatformIntegration",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95385",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95385"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95385",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69439 .NET and Visual Studio Elevation of Privilege Vulnerability",
+    "description": "Security Updates table updated provide links to the KB articles and download center updates. Microsoft recommends installing the updates.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69439",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69439"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69439",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69304 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Security Updates table updated provide links to the KB articles and download center updates. Microsoft recommends installing the updates.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69304",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69304"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69304",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-71328 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "description": "Security Updates table updated provide links to the KB articles and download center updates. Microsoft recommends installing the updates.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71328",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-71328"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-71328",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69806 .NET Elevation of Privilege Vulnerability",
+    "description": "Security Updates table updated provide links to the KB articles and download center updates. Microsoft recommends installing the updates.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69806",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69806"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69806",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95299: Use after free in GPU",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95299",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95299"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95299",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95300: Missing authorization in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95300",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95300"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95300",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95301: Missing authorization in Extensions",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95301",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95301"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95301",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95302: Incorrect authorization in WebAPKs",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95302",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95302"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95302",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95303: Incomplete cleanup in SmartCard",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95303",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95303"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95303",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95304: Out of bounds write in V8",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95304",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95304"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95304",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95305: UI misrepresentation in Chromoting",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95305",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95305"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95305",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95306: Type confusion in V8",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95306",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95306"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95306",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95307: UI misrepresentation in ExtensionsMenu",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95307",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95307"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95307",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95308: Integer overflow in Metrics",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95308",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95308"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95308",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95309: UI misrepresentation in Mobile",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95309",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95309"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95309",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95310: Use after free in AdFilter",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95310",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95310"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95310",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95311: Free of non-heap memory in Fonts",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95311",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95311"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95311",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95312: Information leak in Passwords",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95312",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95312"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95312",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95313: Use after free in Fullscreen",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95313",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95313"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95313",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95314: Incorrect authorization in HID",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95314",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95314"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95314",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95315: Use after free in Aura",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95315",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95315"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95315",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95316: Unchecked return value in Performance",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95316",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95316"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95316",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95317: Incorrect authorization in MediaCapture",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95317",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95317"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95317",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95318: Buffer overflow in Video",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95318",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95318"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95318",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95319: Use after free in Printing",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95319",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95319"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95319",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95320: Missing authorization in Navigation",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95320",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95320"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95320",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95321: UI misrepresentation in Payments",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95321",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95321"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95321",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95322: Out of bounds write in GPU",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95322",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95322"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95322",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95323: UI misrepresentation in Chromium",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95323",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95323"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95323",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95324: Uninitialized resource in GPU",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95324",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95324"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95324",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95325: Use after free in ANGLE",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95325",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95325"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95325",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95326: Incomplete cleanup in Bluetooth",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95326",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95326"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95326",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95327: Information leak in Networking",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95327",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95327"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95327",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95328: Confused deputy in Mobile",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95328",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95328"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95328",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95329: Out of bounds write in WebGL",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95329",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95329"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95329",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95330: Improper state validation in Downloads",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95330",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95330"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95330",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95331: Out of bounds write in ANGLE",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95331",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95331"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95331",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95332: Use of uninitialized variable in Tint",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95332",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95332"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95332",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95333: Use after free in Metrics",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95333",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95333"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95333",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95334: Incorrect reference resolution in WebProtect",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95334",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95334"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95334",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95335: Use after free in HID",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95335",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95335"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95335",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95336: Information leak in Transactions Platform",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95336",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95336"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95336",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95337: UI misrepresentation in Messages",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95337",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95337"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95337",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95338: Use after free in PDFium",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95338",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95338"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95338",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95339: Use after free in ServiceWorker",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95339",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95339"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95339",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95340: Incorrect authorization in PictureInPicture",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95340",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95340"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95340",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95341: Improper input validation in Desktop",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95341",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95341"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95341",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95342: Missing authorization in V8",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95342",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95342"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95342",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95343: Use after free in WebAudio",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95343",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95343"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95343",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95344: Race condition in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95344",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95344"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95344",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95345: Use after free in Actor",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95345",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95345"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95345",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95346: UI misrepresentation in Chromoting",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95346",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95346"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95346",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95347: Use after free in Updater",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95347",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95347"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95347",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95348: Use after free in Bluetooth",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95348",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95348"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95348",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95349: Buffer overflow in WebGL",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95349",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95349"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95349",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95350: Buffer overflow in ANGLE",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95350",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95350"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95350",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95351: Use after free in Views",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95351",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95351"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95351",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95352: Incorrect authorization in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95352",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95352"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95352",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95353: Use after free in Bindings",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95353",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95353"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95353",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95354: Use after free in Verifier",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95354",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95354"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95354",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95355: Incorrect authorization in Navigation",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95355",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95355"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95355",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95356: Use after free in WindowDialog",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95356",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95356"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95356",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95357: Out of bounds write in GPU",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95357",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95357"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95357",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95358: Incorrect authorization in Mobile",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95358",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95358"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95358",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95359: Uninitialized resource in GPU",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95359",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95359"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95359",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95360: Race condition in Editing",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95360",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95360"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95360",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95361: Confused deputy in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95361",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95361"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95361",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95362: Cross-site request forgery in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95362",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95362"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95362",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95363: UI misrepresentation in FileSystem",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95363",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95363"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95363",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95364: Improper input validation in Passwords",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95364",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95364"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95364",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95365: Type confusion in IndexedDB",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95365",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95365"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95365",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95366: Use of released resource in Core",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95366",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95366"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95366",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95367: Information leak in DataTransfer",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95367",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95367"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95367",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95368: Incorrect authorization in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95368",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95368"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95368",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95369: Inappropriate implementation in XML",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95369",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95369"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95369",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95370: Inappropriate implementation in NFC",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95370",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95370"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95370",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95371: Missing authorization in Views",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95371",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95371"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95371",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95372: Use after free in Chromecast",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95372",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95372"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95372",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-95373: Use after free in DevTools",
+    "description": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95373",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-95373"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-95373",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-100208 Microsoft Office Outlook Remote Code Execution Vulnerability",
+    "description": "Information published. This CVE was addressed by updates that were released in August 2026, but the CVE was inadvertently omitted from the August 2026 Security Updates. This is an informational change only. Customers who have already installed the August 2026 updates do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100208",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-100208"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-100208",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-65660 Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "description": "As of 9/25/2026, Microsoft had reliable evidence of observed attacks against exploitation of this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65660",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-65660"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-65660",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-100206 Microsoft Office Information Disclosure Vulnerability",
+    "description": "Information published. This CVE was addressed by updates that were released in July 2026, but the CVE was inadvertently omitted from the July 2026 Security Updates. This is an informational change only. Customers who have already installed the July 2026 updates do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100206",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-100206"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-100206",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-32157 Remote Desktop Client Remote Code Execution Vulnerability",
+    "description": "Updated product information in the Software Update table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32157",
+    "releaseDate": "Fri, 25 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-32157"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-32157",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "Chromium: CVE-2025-2135 Type Confusion in V8",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2135",
