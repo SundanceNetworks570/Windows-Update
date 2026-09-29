@@ -2686,107 +2686,227 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42910 Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-62694 Windows Installer Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42910",
-    "releaseDate": "Tue, 30 Jun 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62694",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42910"
+      "CVE-2026-62694"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42910",
+    "cve": "CVE-2026-62694",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-11979 Stack-Based Buffer Overflow in libxml2",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11979",
-    "releaseDate": "Tue, 30 Jun 2026 01:02:15 -0700",
+    "title": "CVE-2026-69307 Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69307",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-11979"
+      "CVE-2026-69307"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-11979",
+    "cve": "CVE-2026-69307",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-53325 agp/amd64: Fix broken error propagation in agp_amd64_probe()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53325",
-    "releaseDate": "Tue, 30 Jun 2026 01:02:09 -0700",
+    "title": "CVE-2026-56172 Windows VHD miniport driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56172",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-53325"
+      "CVE-2026-56172"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-53325",
+    "cve": "CVE-2026-56172",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41992 Global Buffer Overflow in GNU gzip",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41992",
-    "releaseDate": "Tue, 30 Jun 2026 01:02:02 -0700",
+    "title": "CVE-2026-68880 Windows Win32k Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68880",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41992"
+      "CVE-2026-68880"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41992",
+    "cve": "CVE-2026-68880",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-41991 Predictable Temporary File in GNU gzip",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41991",
-    "releaseDate": "Tue, 30 Jun 2026 01:01:56 -0700",
+    "title": "CVE-2026-61930 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61930",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-41991"
+      "CVE-2026-61930"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-41991",
+    "cve": "CVE-2026-61930",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-54371 attr < 2.6.0 Symlink Traversal Privilege Escalation via getfattr/setfattr",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54371",
-    "releaseDate": "Tue, 30 Jun 2026 01:01:49 -0700",
+    "title": "CVE-2026-62688 Windows MIDI Service Module Elevation of Privileges Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62688",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-54371"
+      "CVE-2026-62688"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-54371",
+    "cve": "CVE-2026-62688",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-54369 acl < 2.4.0 Symlink Traversal Privilege Escalation via libacl Functions",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54369",
-    "releaseDate": "Tue, 30 Jun 2026 01:01:43 -0700",
+    "title": "CVE-2026-62755 Windows DHCP Client Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62755",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-54369"
+      "CVE-2026-62755"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-54369",
+    "cve": "CVE-2026-62755",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50332 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50332",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50332"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50332",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50400 Windows App Package Installer Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50400",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50400"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50400",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50357 Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50357",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50357"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50357",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50375 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50375",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50375"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50375",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-50414 Windows Media Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50414",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-50414"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-50414",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57095 Win32k Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57095",
+    "releaseDate": "Tue, 29 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57095"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57095",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-91728: Integer overflow",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-91728",
+    "releaseDate": "Tue, 29 Sep 2026 01:46:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-91728"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-91728",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium CVE-2026-91745: Use after free",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-91745",
+    "releaseDate": "Tue, 29 Sep 2026 01:46:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-91745"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-91745",
     "kb": "",
     "knownIssues": ""
   },
