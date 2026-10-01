@@ -1,5 +1,20 @@
 [
   {
+    "title": "CVE-2026-69451 Windows Management Instrumentation Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69451",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69451"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69451",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-69504 Windows NTFS Information Disclosure Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69504",
@@ -15,6 +30,21 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-69605 Microsoft Install Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69605",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69605"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69605",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-69712 Windows Key Distribution Center Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69712",
@@ -26,6 +56,36 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-69712",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70562 Windows Audio Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70562",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70562"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70562",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70125 Microsoft Office Outlook Remote Code Execution Vulnerability",
+    "description": "CWE added. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70125"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70125",
     "kb": "",
     "knownIssues": ""
   },
@@ -75,17 +135,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-70125 Microsoft Office Outlook Remote Code Execution Vulnerability",
-    "description": "CWE added. Informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
+    "title": "CVE-2026-62699 Windows Universal Disk Format File System Driver (UDFS) Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62699",
     "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-70125"
+      "CVE-2026-62699"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-70125",
+    "cve": "CVE-2026-62699",
     "kb": "",
     "knownIssues": ""
   },
@@ -105,6 +165,36 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-62758 Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62758",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62758"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62758",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62784 Microsoft Local Security Authority Server (lsasrv) Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62784",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62784"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62784",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-65787 Desktop Window Manager Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65787",
@@ -116,6 +206,21 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-65787",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-66804 Microsoft Windows Cross Device Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66804",
+    "releaseDate": "Wed, 30 Sep 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-66804"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-66804",
     "kb": "",
     "knownIssues": ""
   },
