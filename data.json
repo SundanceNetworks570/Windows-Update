@@ -39761,242 +39761,197 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45638 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-69582 Windows Volume Manager Extension Driver Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45638",
-    "releaseDate": "Tue, 07 Jul 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69582",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45638"
+      "CVE-2026-69582"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45638",
+    "cve": "CVE-2026-69582",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-9080 UAF after pause in socket callback",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9080",
-    "releaseDate": "Tue, 07 Jul 2026 01:43:20 -0700",
+    "title": "CVE-2026-71343 Windows Remote Access Connection Manager Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71343",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-9080"
+      "CVE-2026-71343"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-9080",
+    "cve": "CVE-2026-71343",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-8926 password leak with netrc and user in URL",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8926",
-    "releaseDate": "Tue, 07 Jul 2026 01:43:09 -0700",
+    "title": "CVE-2026-78501 Microsoft 365 Copilot Business Chat Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78501",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-8926"
+      "CVE-2026-78501"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-8926",
+    "cve": "CVE-2026-78501",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-10536 HTTP/2 stream-dependency tree UAF",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-10536",
-    "releaseDate": "Tue, 07 Jul 2026 01:42:55 -0700",
+    "title": "CVE-2026-69265 Windows NTFS Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69265",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-10536"
+      "CVE-2026-69265"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-10536",
+    "cve": "CVE-2026-69265",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-8286 wrong STARTTLS connection reuse",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8286",
-    "releaseDate": "Tue, 07 Jul 2026 01:42:34 -0700",
+    "title": "CVE-2026-68894 Windows Error Reporting Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68894",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-8286"
+      "CVE-2026-68894"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-8286",
+    "cve": "CVE-2026-68894",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-8458 wrong reuse for different services",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8458",
-    "releaseDate": "Tue, 07 Jul 2026 01:42:14 -0700",
+    "title": "CVE-2026-69844 Windows Win32k Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69844",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-8458"
+      "CVE-2026-69844"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-8458",
+    "cve": "CVE-2026-69844",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-8924 trailing dot domain super cookie",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8924",
-    "releaseDate": "Tue, 07 Jul 2026 01:41:55 -0700",
+    "title": "CVE-2026-72999 Windows USB Hub Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72999",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-8924"
+      "CVE-2026-72999"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-8924",
+    "cve": "CVE-2026-72999",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-8932 incomplete mTLS config matching in conn reuse",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8932",
-    "releaseDate": "Tue, 07 Jul 2026 01:41:30 -0700",
+    "title": "CVE-2026-73009 Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73009",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-8932"
+      "CVE-2026-73009"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-8932",
+    "cve": "CVE-2026-73009",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-9545 exposing HTTP/3 early data",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9545",
-    "releaseDate": "Tue, 07 Jul 2026 01:41:09 -0700",
+    "title": "CVE-2026-61927 Windows Bind Filter Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61927",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-9545"
+      "CVE-2026-61927"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-9545",
+    "cve": "CVE-2026-61927",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-39827 Invoking  memory leak when rejecting channels can lead to DoS in golang.org/x/crypto/ssh",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39827",
-    "releaseDate": "Tue, 07 Jul 2026 01:40:36 -0700",
+    "title": "CVE-2026-61936 Windows Defender Firewall Service Security Feature Bypass Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61936",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-39827"
+      "CVE-2026-61936"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-39827",
+    "cve": "CVE-2026-61936",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-25681 Invoking  incorrect handling of character references in DOCTYPE nodes in golang.org/x/net/html",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25681",
-    "releaseDate": "Tue, 07 Jul 2026 01:40:29 -0700",
+    "title": "CVE-2026-62698 Microsoft Digest Authentication Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62698",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-25681"
+      "CVE-2026-62698"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-25681",
+    "cve": "CVE-2026-62698",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-14647 onnx onnxruntime old.cc convPoolShapeInference_opset19 out-of-bounds",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14647",
-    "releaseDate": "Tue, 07 Jul 2026 01:01:44 -0700",
+    "title": "CVE-2026-50387 Windows GDI Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50387",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-14647"
+      "CVE-2026-50387"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-14647",
+    "cve": "CVE-2026-50387",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-12480 Arbitrary HDF5 File Read via Virtual Dataset Bypass in keras-team/keras",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12480",
-    "releaseDate": "Tue, 07 Jul 2026 01:01:38 -0700",
+    "title": "CVE-2026-54128 Windows DHCP Client Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54128",
+    "releaseDate": "Tue, 06 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-12480"
+      "CVE-2026-54128"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-12480",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-54891 Plaintext APPLICATION_DATA injected during TLS handshake delivered to client application post-handshake in ssl",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54891",
-    "releaseDate": "Tue, 07 Jul 2026 01:01:28 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-54891"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-54891",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-54886 SSH SFTP server denial of service via extended channel data infinite loop",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54886",
-    "releaseDate": "Tue, 07 Jul 2026 01:01:22 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-54886"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-54886",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55952 TLS 1.3 server denial of service via malformed ClientHello pre-shared key extension",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55952",
-    "releaseDate": "Tue, 07 Jul 2026 01:01:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55952"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55952",
+    "cve": "CVE-2026-54128",
     "kb": "",
     "knownIssues": ""
   },
