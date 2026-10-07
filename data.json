@@ -1890,47 +1890,33 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42980 NT OS Kernel Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42980",
-    "releaseDate": "Wed, 08 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-69436 Windows State Repository Service Elevation of Privilege Vulnerability",
+    "description": "Updated CVE title. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69436",
+    "releaseDate": "Wed, 07 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42980"
+      "CVE-2026-69436"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42980",
+    "cve": "CVE-2026-69436",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50656 Microsoft Defender Elevation of Privilege Vulnerability",
-    "description": "Microsoft has released an update to the Microsoft Malware Protection Engine that addresses the vulnerability identified by CVE-2026-50656.  Please see the FAQ for more information on how to check if the new version has been installed.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50656",
-    "releaseDate": "Wed, 08 Jul 2026 07:00:00 -0700",
+    "title": "Chromium: CVE-2025-0611 Object corruption in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0612",
+    "releaseDate": "Wed, 07 Oct 2026 01:48:07 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50656"
+      "CVE-2025-0611",
+      "CVE-2025-0612"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50656",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-58525 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
-    "description": "Improper access control in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58525",
-    "releaseDate": "Wed, 08 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-58525"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-58525",
+    "cve": "CVE-2025-0611, CVE-2025-0612",
     "kb": "",
     "knownIssues": ""
   },
