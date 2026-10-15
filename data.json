@@ -1080,482 +1080,332 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58644 Microsoft SharePoint Remote Code Execution Vulnerability",
-    "description": "Corrected the Exploitability Index, Exploited flag and CVSS vector which was incorrect at the time of publication on 7/14/2026. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58644",
-    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-69366 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69366",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58644"
+      "CVE-2026-69366"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58644",
+    "cve": "CVE-2026-69366",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50341 Windows NTFS Information Disclosure Vulnerability",
-    "description": "Updated acknowledgment. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50341",
-    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-69676 Windows Kerberos Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69676",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50341"
+      "CVE-2026-69676"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50341",
+    "cve": "CVE-2026-69676",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50375 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
-    "description": "Updated acknowledgment. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50375",
-    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-70584 Windows Core Messaging Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70584",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50375"
+      "CVE-2026-70584"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50375",
+    "cve": "CVE-2026-70584",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56182 Windows NTFS Elevation of Privilege Vulnerability",
-    "description": "Updated acknowledgment. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56182",
-    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-68825 Windows Bind Filter Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68825",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56182"
+      "CVE-2026-68825"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56182",
+    "cve": "CVE-2026-68825",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Updated acknowledgment. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
-    "releaseDate": "Wed, 15 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-77499 Windows DHCP Server Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77499",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45637"
+      "CVE-2026-77499"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45637",
+    "cve": "CVE-2026-77499",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58253 NATS Server: Route API Auth Bypass",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58253",
-    "releaseDate": "Wed, 15 Jul 2026 01:41:30 -0700",
+    "title": "CVE-2026-72937 Windows Storage Port Driver Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72937",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58253"
+      "CVE-2026-72937"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58253",
+    "cve": "CVE-2026-72937",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58209 NATS Server: MQTT retained and QoS replay bypass subscribe deny filters",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58209",
-    "releaseDate": "Wed, 15 Jul 2026 01:41:23 -0700",
+    "title": "CVE-2026-62697 Windows Push Notifications Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62697",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58209"
+      "CVE-2026-62697"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58209",
+    "cve": "CVE-2026-62697",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58252 NATS Server: Subscribe Authz Bypass via Wildcard-Overlap",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58252",
-    "releaseDate": "Wed, 15 Jul 2026 01:41:15 -0700",
+    "title": "CVE-2026-69351 Windows Universal Plug and Play (UPnP) Device Host Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69351",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58252"
+      "CVE-2026-69351"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58252",
+    "cve": "CVE-2026-69351",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58250 NATS Server: Pre-auth server crash via double INFO in leafnode handshake",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58250",
-    "releaseDate": "Wed, 15 Jul 2026 01:41:08 -0700",
+    "title": "CVE-2026-69620 Windows DHCP Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69620",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58250"
+      "CVE-2026-69620"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58250",
+    "cve": "CVE-2026-69620",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58208 NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58208",
-    "releaseDate": "Wed, 15 Jul 2026 01:41:00 -0700",
+    "title": "CVE-2026-69334 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69334",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58208"
+      "CVE-2026-69334"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58208",
+    "cve": "CVE-2026-69334",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58251 NATS Server: Queue Subscribe Authz Bypass",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58251",
-    "releaseDate": "Wed, 15 Jul 2026 01:40:53 -0700",
+    "title": "CVE-2026-81352 Web Media Extensions Remote Code Execution Vulnerability",
+    "description": "Updated product information in the Software Update table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81352",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58251"
+      "CVE-2026-81352"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58251",
+    "cve": "CVE-2026-81352",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58207 NATS Server: Remote crash via integer overflow in Connz pagination",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58207",
-    "releaseDate": "Wed, 15 Jul 2026 01:40:45 -0700",
+    "title": "CVE-2026-32176 SQL Server Elevation of Privilege Vulnerability",
+    "description": "Added SQL software to the Security Updates table.  Customers that are running supported version of SQL are encouraged to update to the indicated version to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32176",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58207"
+      "CVE-2026-32176"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58207",
+    "cve": "CVE-2026-32176",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56288 NULL Pointer Dereference in GNU patch",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56288",
-    "releaseDate": "Wed, 15 Jul 2026 01:40:21 -0700",
+    "title": "CVE-2026-105723 Windows Distributed File System (DFS) Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105723",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56288"
+      "CVE-2026-105723"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56288",
+    "cve": "CVE-2026-105723",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56289 Loop with Unreachable Exit Condition in GNU patch",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56289",
-    "releaseDate": "Wed, 15 Jul 2026 01:40:12 -0700",
+    "title": "CVE-2026-70095 Windows iSCSI Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70095",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56289"
+      "CVE-2026-70095"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56289",
+    "cve": "CVE-2026-70095",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-43966 HTTP Response Splitting via Non-VCHAR Bytes in cow_http_struct_hd:escape_string/2",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43966",
-    "releaseDate": "Wed, 15 Jul 2026 01:39:37 -0700",
+    "title": "CVE-2026-70245 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70245",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-43966"
+      "CVE-2026-70245"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-43966",
+    "cve": "CVE-2026-70245",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-44839 RabbitMQ: Unsanitized vhost names allow for XSS in management UI",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44839",
-    "releaseDate": "Wed, 15 Jul 2026 01:39:24 -0700",
+    "title": "CVE-2026-84019 Windows Advanced Rasterization Platform Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84019",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-44839"
+      "CVE-2026-84019"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-44839",
+    "cve": "CVE-2026-84019",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2025-44904 hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5VM_memcpyvv function.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-44904",
-    "releaseDate": "Wed, 15 Jul 2026 01:39:09 -0700",
+    "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85868",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2025-44904"
+      "CVE-2026-85868"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2025-44904",
+    "cve": "CVE-2026-85868",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-15308 Incremental HTMLParser feed() allows CPU-exhaustion DoS via repeated unterminated markup declarations",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15308",
-    "releaseDate": "Wed, 15 Jul 2026 01:03:21 -0700",
+    "title": "CVE-2026-85870 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85870",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-15308"
+      "CVE-2026-85870"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-15308",
+    "cve": "CVE-2026-85870",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-57215 RabbitMQ: Direct-reply-to binding persistence can lead to unauthorized reply-channel injection and persistent phantom",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57215",
-    "releaseDate": "Wed, 15 Jul 2026 01:03:16 -0700",
+    "title": "CVE-2026-102188 Windows Storage Port Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102188",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-57215"
+      "CVE-2026-102188"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-57215",
+    "cve": "CVE-2026-102188",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-57211 RabbitMQ: UNC SSRF affecting the management UI on Windows",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57211",
-    "releaseDate": "Wed, 15 Jul 2026 01:03:10 -0700",
+    "title": "CVE-2026-83943 Azure API Center Information Disclosure Vulnerability",
+    "description": "CWE added. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83943",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-57211"
+      "CVE-2026-83943"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-57211",
+    "cve": "CVE-2026-83943",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-57216 RabbitMQ: AMQP 1.0, AMQP 0-9-1, Stream Protocol loopback enforcement can lead to remote guest sessions due to listener-address loopback checks",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57216",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:45 -0700",
+    "title": "CVE-2026-62688 Windows MIDI Service Module Elevation of Privileges Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62688",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-57216"
+      "CVE-2026-62688"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-57216",
+    "cve": "CVE-2026-62688",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-57213 RabbitMQ: Stored XSS federation management plugin via unsanitized consumer_tag rendering",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57213",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:32 -0700",
+    "title": "CVE-2026-62755 Windows DHCP Client Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62755",
+    "releaseDate": "Wed, 14 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-57213"
+      "CVE-2026-62755"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-57213",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-57217 RabbitMQ: Topic authorization can lead to cross-tenant routing-key bypass",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57217",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:26 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-57217"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-57217",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-57220 RabbitMQ: Stream listener does not enforce configured frame-size limit during authentication, permitting unauth'd mem-exhaust DoS",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57220",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:20 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-57220"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-57220",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-57219 RabbitMQ: Unauthenticated disclosure of OAuth client credentials via an HTTP API endpoint with certain less common OAuth 2 configurations",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57219",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:14 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-57219"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-57219",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-59831 GitHub CLI `gh codespace jupyter` could allow remote code execution when connecting to a malicious Codespace",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59831",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:07 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-59831"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-59831",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-15028 Libarchive: heap overflow oob read while parsing a tar archive contains a pax extended header",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15028",
-    "releaseDate": "Wed, 15 Jul 2026 01:02:01 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-15028"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-15028",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-59875 node-tar: Uncaught Exception DoS via NUL byte in PAX path/linkpath records",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59875",
-    "releaseDate": "Wed, 15 Jul 2026 01:01:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-59875"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-59875",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42505 Invoking Encrypted Client Hello privacy leak in crypto/tls",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42505",
-    "releaseDate": "Wed, 15 Jul 2026 01:01:45 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42505"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42505",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-39822 Root escape via symlink plus trailing slash in os",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39822",
-    "releaseDate": "Wed, 15 Jul 2026 01:01:36 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-39822"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-39822",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-13221 Perl versions through 5.43.9 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13221",
-    "releaseDate": "Wed, 15 Jul 2026 01:01:27 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-13221"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-13221",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-57432 Perl versions through 5.43.10 have an integer overflow in S_measure_struct leading to an out-of-bounds heap read in pack and unpack",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57432",
-    "releaseDate": "Wed, 15 Jul 2026 01:01:20 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-57432"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-57432",
+    "cve": "CVE-2026-62755",
     "kb": "",
     "knownIssues": ""
   },
