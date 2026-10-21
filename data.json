@@ -2611,36 +2611,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
-    "releaseDate": "Tue, 20 Oct 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-70337"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-70337",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
-    "releaseDate": "Tue, 20 Oct 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62913"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62913",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "CVE-2026-96913 Windows Kernel Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913",
@@ -2697,6 +2667,51 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-83782",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+    "description": "Updated CVE to relect that this vulnerability is in the Windows Subsystem for Linux product.  Microsoft recommends that customer using this product should install the latest version to be protected.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+    "releaseDate": "Tue, 20 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-102204"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-102204",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+    "releaseDate": "Tue, 20 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70337"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70337",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+    "releaseDate": "Tue, 20 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62913"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62913",
     "kb": "",
     "knownIssues": ""
   },
