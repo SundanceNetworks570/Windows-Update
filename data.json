@@ -51580,891 +51580,122 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56167 Azure AI Search Elevation of Privilege Vulnerability",
-    "description": "Server-side request forgery (ssrf) in Azure AI Search allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56167",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+    "description": "<p>Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56167"
+      "CVE-2026-105014"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56167",
+    "cve": "CVE-2026-105014",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56163 Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability",
-    "description": "Missing authentication for critical function in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56163",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+    "description": "<p>Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56163"
+      "CVE-2026-108456"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56163",
+    "cve": "CVE-2026-108456",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56165 Microsoft Account Remote Code Execution Vulnerability",
-    "description": "Heap-based buffer overflow in Microsoft Account allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56165",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+    "description": "<p>Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56165"
+      "CVE-2026-97785"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56165",
+    "cve": "CVE-2026-97785",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-54120 Microsoft Surface Remote Code Execution Vulnerability",
-    "description": "Improper input validation in Microsoft Surface allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54120",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+    "description": "<p>Stack-based buffer overflow in Microsoft Exchange Online allows an authorized attacker to execute code over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-54120"
+      "CVE-2026-96185"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-54120",
+    "cve": "CVE-2026-96185",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56160 Azure Red Hat OpenShift (ARO) Elevation of Privilege Vulnerability",
-    "description": "Improper authorization in Azure Red Hat OpenShift (ARO) allows an authorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56160",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+    "description": "<p>Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56160"
+      "CVE-2026-83938"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56160",
+    "cve": "CVE-2026-83938",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-35425 Azure API Management (APIM) Remote Code Execution Vulnerability",
-    "description": "Improper access control in Azure API Management (APIM) allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35425",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+    "description": "<p>Improper link resolution before file access ('link following') in VM Inspector for Azure Virtual Machines allows an unauthorized attacker to elevate privileges over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-35425"
+      "CVE-2026-110063"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-35425",
+    "cve": "CVE-2026-110063",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-49159 Microsoft Graph Information Disclosure Vulnerability",
-    "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Graph allows an authorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49159",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+    "description": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-49159"
+      "CVE-2026-96251"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-49159",
+    "cve": "CVE-2026-96251",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50517 Microsoft M365 Copilot Remote Code Execution Vulnerability",
-    "description": "Deserialization of untrusted data in M365 Copilot allows an authorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50517",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+    "description": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+    "releaseDate": "Thu, 22 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50517"
+      "CVE-2026-96303"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50517",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-56191 Microsoft Exchange Online Tampering Vulnerability",
-    "description": "Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56191",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-56191"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-56191",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-57106 Data Quality Elevation of Privilege Vulnerability",
-    "description": "Server-side request forgery (ssrf) in Data Quality allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57106",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-57106"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-57106",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62825 Azure Key Vault Elevation of Privilege Vulnerability",
-    "description": "Improper authentication in Azure Key Vault allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62825",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62825"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62825",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-58630 Azure App Service on Azure Stack Hub Elevation of Privilege Vulnerability",
-    "description": "Improper access control in Azure App Service allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58630",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-58630"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-58630",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-58275 Azure DNS Elevation of Privilege Vulnerability",
-    "description": "Missing authorization in Azure DNS allows an unauthorized attacker to elevate privileges over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58275",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-58275"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-58275",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62835 Online Services Information Disclosure Vulnerability",
-    "description": "Improper authorization in Online Services allows an unauthorized attacker to disclose information over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62835",
-    "releaseDate": "Thu, 23 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62835"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62835",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-54171 Excon: redact additional sensitive/risky headers when following redirects",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54171",
-    "releaseDate": "Thu, 23 Jul 2026 01:44:10 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-54171"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-54171",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44508 Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-43618. Reason: This candidate is a duplicate of CVE-2026-43618. Notes: All CVE users should reference CVE-2026-43618 instead of this candidate.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44508",
-    "releaseDate": "Thu, 23 Jul 2026 01:06:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44508",
-      "CVE-2026-43618"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44508, CVE-2026-43618",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44510 Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-43620. Reason: This candidate is a duplicate of CVE-2026-43620. Notes: All CVE users should reference CVE-2026-43620 instead of this candidate.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44510",
-    "releaseDate": "Thu, 23 Jul 2026 01:06:29 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44510",
-      "CVE-2026-43620"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44510, CVE-2026-43620",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44509 Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-43619. Reason: This candidate is a duplicate of CVE-2026-43619. Notes: All CVE users should reference CVE-2026-43619 instead of this candidate.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44509",
-    "releaseDate": "Thu, 23 Jul 2026 01:06:22 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44509",
-      "CVE-2026-43619"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44509, CVE-2026-43619",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-16277 Rpcbind: rpcbind: stack buffer overflow in rpcinfo rpcbaddrlist()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16277",
-    "releaseDate": "Thu, 23 Jul 2026 01:06:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-16277"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-16277",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-12080 Qemu-kvm: qemu-guest-agent: local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12080",
-    "releaseDate": "Thu, 23 Jul 2026 01:06:06 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-12080"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-12080",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-15788 WCOW cache mount source selector resolves NTFS junctions outside of cache root",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15788",
-    "releaseDate": "Thu, 23 Jul 2026 01:06:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-15788"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-15788",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-26081 HAProxy Community Edition 3.0 through 3.3 before 3.3.3 lacks a length check for the NEW_TOKEN format. HAProxy Enterprise and ALOHA are also affected.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26081",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:54 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26081"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26081",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-26080 HAProxy Community Edition 3.2.x through 3.3.x before 3.3.3 can enter a loop or crash because varint is mishandled. HAProxy Enterprise and ALOHA are also affected.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26080",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:48 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-26080"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-26080",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-15588 Gdbusserver: glib2: gdbusserver pre-authentication dos via unbounded sasl line buffering",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15588",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:41 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-15588"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-15588",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-63308 Helm Files.Lines Denial of Service via Empty Chart Files",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63308",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-63308"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-63308",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50243 'response-ip'/'rpz' can rewrite BOGUS answers instead of returning SERVFAIL",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50243",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:28 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50243"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50243",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-41637 Degradation of resolution service from improperly accounted client-terminated DNS-over-QUIC queries",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41637",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:22 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-41637"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-41637",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50252 Possible cache poisoning attack by mapping source port population per thread",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50252",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:16 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50252"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50252",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50251 Attacker supplied '0.0.0.0'/'::' glue triggers defensive full-cache flush",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50251",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:09 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50251"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50251",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55991 Remote DNS-over-QUIC (DoQ) flow-control assertion failure in libngtcp2",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55991",
-    "releaseDate": "Thu, 23 Jul 2026 01:05:03 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55991"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55991",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55990 Packet of death for a DNSCrypt misconfigured Unbound",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55990",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:57 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55990"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55990",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50046 Possible heap use-after-free in an error path when a DoT forwarded query is jostled out",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50046",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:51 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50046"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50046",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-14586 Assertion in libngtcp2 when under pressure in high concurrency DNS-over-QUIC environments",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14586",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:45 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-14586"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-14586",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-42955 Extra fix for CVE-2026-40622 to also clamp the TTL of A/AAAA records disallowing a one-time 'ghost domain' delegation renewal via glue records",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42955",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:39 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-42955",
-      "CVE-2026-40622"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-42955, CVE-2026-40622",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-46582 A wildcard replay, as another piece of data, triggers poisoning in the serve expired reply path",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46582",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:32 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-46582"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-46582",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-54478 DNS Cookie bypass when combined with proxy-protocol use",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54478",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:26 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-54478"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-54478",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-56444 Degradation of resolution service when 'discard-timeout' and 'serve-expired-client-timeout' are combined in unusual configuration",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56444",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:19 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-56444"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-56444",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-32665 Remote DNS-over-QUIC denial of service due to `quic-size` budget bypass",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32665",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:13 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-32665"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-32665",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-40691 Packet of death for DNSCrypt over TCP",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40691",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:07 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-40691"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-40691",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55717 'serve-expired-client-timeout' and 'response-ip' CNAME redirect could lead to a crash",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55717",
-    "releaseDate": "Thu, 23 Jul 2026 01:04:01 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55717"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55717",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44621 Libunbound applications configured with 'unwanted-reply-threshold' could eventually be abruptly terminated",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44621",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:55 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44621"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44621",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-56416 Possible heap buffer overflow when validator canonicalizes RDATA that contains domain name",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56416",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:48 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-56416"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-56416",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-52863 Memory corruption could lead to crash and denial of service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52863",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:42 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-52863"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-52863",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55708 Privacy/configuration issue when adding local data in views through 'unbound-control'",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55708",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:36 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55708"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55708",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44690 Cross-zone wildcard cache poisoning via RRSIG.labels manipulation",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44690",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:30 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44690"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44690",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50248 BOGUS configured primary hostname accepted for XFR in auth/rpz zones",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50248",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50248"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50248",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50045 'max-global-quota' reset by DNSSEC validation restarts",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50045",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:17 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50045"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50045",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44687 Off-by-one error in 'harden-below-nxdomain' logic can shadow a stub/forward zone by a legitimate parent's NXDOMAIN",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44687",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:11 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44687"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44687",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55973 'dns-error-reporting: yes' leads to stack buffer overflow",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55973",
-    "releaseDate": "Thu, 23 Jul 2026 01:03:05 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55973"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55973",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-53910 Heap-based Buffer Overflow in GNU diffutils",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53910",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:58 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-53910"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-53910",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62994 CoreDNS `k8s_external` headless AXFR can emit an empty transfer batch that panics the `transfer` plugin",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62994",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:50 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62994"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62994",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-63136 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63136",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:44 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-63136"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-63136",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-63263 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63263",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:38 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-63263"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-63263",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-63140 Reachable Assertion in Elasticsearch Leading to Denial of Service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63140",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:31 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-63140"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-63140",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-56145 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56145",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:25 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-56145"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-56145",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-38752 A stack overflow in the evaluate() function (editors/awk.c) of BusyBox commit 371fe9 allows attackers to cause a Denial of Service (DoS) via supplying a crafted AWK script.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-38752",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:18 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-38752"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-38752",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-38753 A use-after-free in the awk_sub() function (editors/awk.c) of Busybox v1.38.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted AWK script.",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-38753",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:11 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-38753"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-38753",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50012 Squid: Memory corruption in cache_digest reply handling",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50012",
-    "releaseDate": "Thu, 23 Jul 2026 01:02:03 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50012"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50012",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-47729 Squid: Memory disclosure in FTP gateway",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47729",
-    "releaseDate": "Thu, 23 Jul 2026 01:01:56 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-47729"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-47729",
+    "cve": "CVE-2026-96303",
     "kb": "",
     "knownIssues": ""
   },
