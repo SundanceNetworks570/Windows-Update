@@ -69253,77 +69253,32 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62835 Azure Portal Information Disclosure Vulnerability",
-    "description": "Corrected the CVE description and title. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62835",
-    "releaseDate": "Fri, 24 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-83862 Windows Network Load Balancing Remote Code Execution Vulnerability",
+    "description": "Corrected the CVSS Attack Vector metric from Network (AV:N) to Adjacent (AV:A) to reflect the requirement for Layer 2 network adjacency. The CVSS base score has decreased from 9.8 to 8.8. This is an informational change only. Customers who have successfully installed the update do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "releaseDate": "Fri, 23 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62835"
+      "CVE-2026-83862"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62835",
+    "cve": "CVE-2026-83862",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-48561 Microsoft Edge Copilot Remote Code Execution Vulnerability",
-    "description": "Corrected the CVE description and title. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48561",
-    "releaseDate": "Fri, 24 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-102208 Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+    "description": "Acknowledgement Updated",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
+    "releaseDate": "Fri, 23 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-48561"
+      "CVE-2026-102208"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-48561",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-64600 xfs: resample the data fork mapping after cycling ILOCK",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64600",
-    "releaseDate": "Fri, 24 Jul 2026 01:02:36 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-64600"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-64600",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-59677 Process Kill Attack Vector in killall() in seunshare",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59677",
-    "releaseDate": "Fri, 24 Jul 2026 01:02:30 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-59677"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-59677",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-59676 Local File Deletion Attack Vector in rm_rf() in seunshare",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59676",
-    "releaseDate": "Fri, 24 Jul 2026 01:02:21 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-59676"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-59676",
+    "cve": "CVE-2026-102208",
     "kb": "",
     "knownIssues": ""
   },
