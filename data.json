@@ -58528,137 +58528,122 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50333 Windows Spaceport.sys Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50333",
-    "releaseDate": "Mon, 27 Jul 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50333"
+      "CVE-2026-70338"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50333",
+    "cve": "CVE-2026-70338",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50697 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50697",
-    "releaseDate": "Mon, 27 Jul 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83519",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50697"
+      "CVE-2026-83519"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50697",
+    "cve": "CVE-2026-83519",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50343 Microsoft Install Service Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-70054 Windows NetBIOS Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50343",
-    "releaseDate": "Mon, 27 Jul 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70054",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50343"
+      "CVE-2026-70054"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50343",
+    "cve": "CVE-2026-70054",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56159 DHCP Server Service Remote Code Execution Vulnerability",
+    "title": "CVE-2026-69923 Windows AI Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56159",
-    "releaseDate": "Mon, 27 Jul 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69923",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56159"
+      "CVE-2026-69923"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56159",
+    "cve": "CVE-2026-69923",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-16461 Rpcbind: rpcbind: stack buffer overflow in rpcinfo rpcbdump() short-mode version-list formatting",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16461",
-    "releaseDate": "Mon, 27 Jul 2026 01:44:11 -0700",
+    "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96311",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-16461"
+      "CVE-2026-96311"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-16461",
+    "cve": "CVE-2026-96311",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-8450 HTTP::Daemon versions before 6.17 for Perl allow OS command injection via send_file()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8450",
-    "releaseDate": "Mon, 27 Jul 2026 01:44:00 -0700",
+    "title": "CVE-2026-69926 Desktop Window Manager Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69926",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-8450"
+      "CVE-2026-69926"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-8450",
+    "cve": "CVE-2026-69926",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-16277 Rpcbind: rpcbind: stack buffer overflow in rpcinfo rpcbaddrlist()",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16277",
-    "releaseDate": "Mon, 27 Jul 2026 01:43:51 -0700",
+    "title": "CVE-2026-105728 Dynamics Business Central Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105728",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-16277"
+      "CVE-2026-105728"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-16277",
+    "cve": "CVE-2026-105728",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-64530 net/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64530",
-    "releaseDate": "Mon, 27 Jul 2026 01:04:27 -0700",
+    "title": "CVE-2026-96234 .NET Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96234",
+    "releaseDate": "Mon, 26 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-64530"
+      "CVE-2026-96234"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-64530",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2024-14040 net: nexthop: Increase weight to u16",
-    "description": "Information published.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-14040",
-    "releaseDate": "Mon, 27 Jul 2026 01:04:21 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2024-14040"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2024-14040",
+    "cve": "CVE-2026-96234",
     "kb": "",
     "knownIssues": ""
   },
