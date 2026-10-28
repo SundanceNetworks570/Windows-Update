@@ -1831,107 +1831,152 @@
     "knownIssues": ""
   },
   {
-    "title": "Chromium: CVE-2026-13037 Use after free in WebView",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13037",
-    "releaseDate": "Tue, 28 Jul 2026 15:03:49 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-13037"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-13037",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2026-13032 Use after free in WebGL",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13032",
-    "releaseDate": "Tue, 28 Jul 2026 15:03:48 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-13032"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-13032",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2026-13030 Uninitialized Use in GPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13030",
-    "releaseDate": "Tue, 28 Jul 2026 15:03:47 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-13030"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-13030",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "Chromium: CVE-2026-13028 Use after free in WebGL",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13028",
-    "releaseDate": "Tue, 28 Jul 2026 15:03:44 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-13028"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-13028",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50422 Windows NTFS Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-70277 Windows Fast FAT File System Driver Information Disclosure Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50422",
-    "releaseDate": "Tue, 28 Jul 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70277",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50422"
+      "CVE-2026-70277"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50422",
+    "cve": "CVE-2026-70277",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-47301 Configuration Manager Elevation of Privilege Vulnerability",
-    "description": "Corrected Build Number in the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47301",
-    "releaseDate": "Tue, 28 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-70161 .NET Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70161",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-47301"
+      "CVE-2026-70161"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-47301",
+    "cve": "CVE-2026-70161",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-59117 Windows Terminal Remote Code Execution Vulnerability",
-    "description": "Change the name of the affected software from **Microsoft Power Apps** to **Microsoft Power Apps Desktop Client**. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59117",
-    "releaseDate": "Tue, 28 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-59117"
+      "CVE-2026-70007"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-59117",
+    "cve": "CVE-2026-70007",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-96225 .NET Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-96225"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-96225",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-20942 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "description": "<p>Improper restriction of rendered ui layers or frames in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20942",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-20942"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-20942",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-88078 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88078",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-88078"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-88078",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-96196 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+    "description": "<p>Incomplete list of disallowed inputs in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96196",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-96196"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-96196",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62765 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "description": "<p>Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62765",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62765"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62765",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69473 Windows Kernel Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69473",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69473"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69473",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69284 Windows DCOM Server Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69284",
+    "releaseDate": "Tue, 27 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69284"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69284",
     "kb": "",
     "knownIssues": ""
   },
