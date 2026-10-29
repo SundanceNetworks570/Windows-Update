@@ -255,6 +255,4491 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-19175 Use after free in Payments",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19175",
+    "releaseDate": "Wed, 28 Oct 2026 17:06:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-19175"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-19175",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62740 Windows Imaging Component Information Disclosure Vulnerability",
+    "description": "Added supported editions of Microsoft Office to the Security Updates table because they are affected by this vulnerability. Microsoft recommends that customers running any of these editions of Office install the latest security updates to be fully protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
+    "releaseDate": "Wed, 28 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62740"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62740",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-62877 Windows Win32k Elevation of Privilege Vulnerability",
+    "description": "Added supported editions of Microsoft Office to the Security Updates table because they are affected by this vulnerability. Microsoft recommends that customers running any of these editions of Office install the latest security updates to be fully protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62877",
+    "releaseDate": "Wed, 28 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-62877"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-62877",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57083 Windows Media Photo Codec Information Disclosure Vulnerability",
+    "description": "Added supported editions of Microsoft Office to the Security Updates table because they are affected by this vulnerability. Microsoft recommends that customers running any of these editions of Office install the latest security updates to be fully protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57083",
+    "releaseDate": "Wed, 28 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57083"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57083",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-57084 Windows File Explorer Information Disclosure Vulnerability",
+    "description": "Added supported editions of Microsoft Office to the Security Updates table because they are affected by this vulnerability. Microsoft recommends that customers running any of these editions of Office install the latest security updates to be fully protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57084",
+    "releaseDate": "Wed, 28 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-57084"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-57084",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79293 Information leak in Animation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79293",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79293"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79293",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79292 Integer overflow in Chromecast",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79292",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79292"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79292",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79291 Information leak in CSS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79291",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79291"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79291",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79290 Use after free in Aura",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79290",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79290"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79290",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79289 Improper control of a resource through its lifetime in Workers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79289",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79289"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79289",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79287 Observable discrepancy in Forms",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79287",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79287"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79287",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79285 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79285",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79285"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79285",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79284 UI misrepresentation in Core",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79284",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79284"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79284",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79283 UI misrepresentation in Geometry",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79283",
+    "releaseDate": "Wed, 28 Oct 2026 01:54:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79283"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79283",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79276 Improper privilege management in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79276",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79276"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79276",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79275 Use after free in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79275",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79275"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79275",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79274 Information leak in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79274",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79274"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79274",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79272 Improper input validation in FindInPage",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79272",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79272"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79272",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79271 Information leak in DOM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79271",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79271"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79271",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79179 Incorrect authorization in DOM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79179",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79179"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79179",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79270 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79270",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:34 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79270"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79270",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79178 Incorrect authorization in Web Authentication (Passkeys & Security Keys)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79178",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79178"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79178",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79269 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79269",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79269"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79269",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79177 Incorrect authorization in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79177",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79177"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79177",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79267 Race condition in Workers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79267",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79267"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79267",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79176 UI misrepresentation in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79176",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79176"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79176",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79266 Use after free in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79266",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79266"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79266",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79175 Type confusion in Accessibility",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79175",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79175"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79175",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79265 Incomplete cleanup in GetUserMedia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79265",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79265"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79265",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79174 Incorrect authorization in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79174",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79174"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79174",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79264 Incorrect reference resolution in Preload",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79264",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79264"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79264",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79173 UI misrepresentation in WebAppInstalls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79173",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79173"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79173",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79263 Race condition in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79263",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79263"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79263",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79155 Race condition in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79155",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79155"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79155",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79262 Incorrect authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79262",
+    "releaseDate": "Wed, 28 Oct 2026 01:53:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79262"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79262",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79154 Missing authorization in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79154",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79154"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79154",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79261 Incorrect authorization in Controls",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79261",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79261"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79261",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79151 Improper input validation in Safebrowsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79151",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79151"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79151",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79260 Improper input validation in Cookies",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79260",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79260"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79260",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79150 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79150",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79150"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79150",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79259 Improper input validation in Safebrowsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79259",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79259"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79259",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79149 Use after free in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79149",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79149"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79149",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79258 Incorrect authorization in WebXR",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79258",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79258"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79258",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79148 Off-by-one error in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79148",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79148"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79148",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79147 Information leak in Skia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79147",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79147"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79147",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79257 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79257",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79257"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79257",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79144 Information leak in Skia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79144",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79144"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79144",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79255 Improper input validation in WebRTC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79255",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79255"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79255",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79143 Incorrect authorization in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79143",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79143"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79143",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79253 Improper input validation in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79253",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79253"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79253",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79142 Buffer overflow in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79142",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79142"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79142",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79252 Information leak in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79252",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79252"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79252",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79141 Incorrect authorization in Browser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79141",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79141"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79141",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79251 Improper input validation in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79251",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79251"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79251",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79140 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79140",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79140"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79140",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79250 UI misrepresentation in Navigation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79250",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79250"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79250",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79139 Improper input validation in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79139",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79139"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79139",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79249 Code injection in Bisection",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79249",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79249"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79249",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79138 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79138",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79138"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79138",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79248 Incorrect authorization in Input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79248",
+    "releaseDate": "Wed, 28 Oct 2026 01:52:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79248"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79248",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79137 Incorrect authorization in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79137",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79137"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79137",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79247 Use after free in Chromoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79247",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79247"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79247",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79136 Incorrect authorization in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79136",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79136"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79136",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79246 Information leak in DataTransfer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79246",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79246"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79246",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79134 Incorrect authorization in GetUserMedia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79134",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79134"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79134",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79245 Use after free in UI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79245",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79245"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79245",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79133 Incorrect authorization in Forms",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79133",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79133"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79133",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79244 Use after free in Animation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79244",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79244"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79244",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79131 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79131",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79131"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79131",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79243 Improper input validation in ReadingList",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79243",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79243"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79243",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79030 Observable discrepancy in Autofill",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79030",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79030"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79030",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79130 Buffer overflow in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79130",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79130"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79130",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79028 Observable discrepancy in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79028",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79028"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79028",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79242 Observable discrepancy in HTML",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79242",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79242"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79242",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79128 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79128",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79128"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79128",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79027 Use after free in WebRTC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79027",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79027"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79027",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79240 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79240",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79240"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79240",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79127 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79127",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79127"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79127",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79026 Use after free in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79026",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79026"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79026",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79239 Out of bounds read in Tint",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79239",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79239"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79239",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79126 Incorrect provision of specified functionality in Proxy",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79126",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79126"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79126",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79025 Improper input validation in Workers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79025",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79025"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79025",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79238 Incorrect authorization in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79238",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79238"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79238",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79237 Incorrect authorization in Navigation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79237",
+    "releaseDate": "Wed, 28 Oct 2026 01:51:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79237"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79237",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79236 Type confusion in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79236",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79236"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79236",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79024 Information leak in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79024",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79024"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79024",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79125 Information leak in XR",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79125",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79125"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79125",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79235 Use after free in WebGL",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79235",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79235"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79235",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79023 Incorrect authorization in Editing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79023",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79023"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79023",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79124 Information leak in Intents",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79124",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:26 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79124"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79124",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79234 Injection in CSS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79234",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79234"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79234",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79022 UI misrepresentation in Transactions Platform",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79022",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79022"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79022",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79123 Improper input validation in NTP Footer",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79123",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:21 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79123"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79123",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79232 Use after free in Aura",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79232",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79232"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79232",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79021 Missing authorization in InterestGroups",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79021",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79021"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79021",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79122 Information leak in SignIn",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79122",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79122"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79122",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79231 Buffer overflow in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79231",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79231"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79231",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79020 Out of bounds read in Skia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79020",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79020"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79020",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79121 Improper input validation in Chromecast",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79121",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79121"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79121",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79230 Improper input validation in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79230",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79230"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79230",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79019 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79019",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79019"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79019",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79120 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79120",
+    "releaseDate": "Wed, 28 Oct 2026 01:50:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79120"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79120",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79229 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79229",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79229"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79229",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79018 Information leak in FoldableAPIs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79018",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79018"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79018",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79119 Use after free in PDF",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79119",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:54 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79119"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79119",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79228 Incorrect authorization in SiteIsolation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79228",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79228"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79228",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79017 Race condition in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79017",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79017"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79017",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79118 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79118",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79118"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79118",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79227 Type confusion in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79227",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79227"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79227",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79016 Observable discrepancy in SVG",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79016",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79016"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79016",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79116 Missing authorization in Viz",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79116",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79116"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79116",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79226 Improper privilege management in Regional Capabilities",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79226",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79226"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79226",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79015 Improper input validation in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79015",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79015"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79015",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79112 Out of bounds read in Skia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79112",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79112"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79112",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79225 Incorrect authorization in Browser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79225",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79225"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79225",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79014 Race condition in Autofill",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79014",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79014"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79014",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79111 Improper input validation in Dawn",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79111",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79111"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79111",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79224 Use after free in Chromecast",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79224",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79224"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79224",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79013 Improper input validation in Sync",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79013",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79013"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79013",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79110 Missing authorization in Preload",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79110",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79110"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79110",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79223 Integer overflow in Chromium",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79223",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79223"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79223",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79012 Use after free in Safebrowsing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79012",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79012"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79012",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79109 Improper input validation in Printing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79109",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79109"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79109",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79221 Uninitialized resource in Dawn",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79221",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79221"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79221",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79011 UI misrepresentation in Browser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79011",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79011"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79011",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79108 UI misrepresentation in Web Authentication (Passkeys & Security Keys)",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79108",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79108"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79108",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79220 Information leak in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79220",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79220"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79220",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79010 Operation on a resource after expiration or release in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79010",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79010"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79010",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79107 Incorrect authorization in TabGroups",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79107",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79107"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79107",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79219 Use after free in Bluetooth",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79219",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79219"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79219",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79009 UI misrepresentation in UI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79009",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79009"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79009",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79106 Improper input validation in Input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79106",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79106"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79106",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79218 Incorrect authorization in Sandbox",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79218",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79218"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79218",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79007 Uninitialized resource in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79007",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79007"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79007",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79104 Missing authorization in Sensor",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79104",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79104"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79104",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79006 Protection mechanism failure in HttpsUpgrades",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79006",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79006"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79006",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79216 Buffer overflow in Blink",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79216",
+    "releaseDate": "Wed, 28 Oct 2026 01:49:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79216"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79216",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79005 Incorrect authorization in StorageAccessAPI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79005",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79005"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79005",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79103 Incorrect reference resolution in Speech",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79103",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79103"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79103",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79215 Integer overflow in WebGL",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79215",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79215"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79215",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79004 Out of bounds read in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79004",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79004"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79004",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79214 Improper input validation in Preload",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79214",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79214"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79214",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79099 Missing authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79099",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79099"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79099",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79003 Incorrect authorization in Device",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79003",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79003"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79003",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79098 UI misrepresentation in PermissionElement",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79098",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79098"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79098",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79212 Missing authorization in Passwords",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79212",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79212"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79212",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79002 Incorrect authorization in SiteIsolation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79002",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79002"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79002",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79097 Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79097",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:39 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79097"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79097",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79211 Incorrect authorization in USB",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79211",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79211"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79211",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79001 Information leak in Bluetooth",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79001",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79001"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79001",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79094 Race condition in Workers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79094",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79094"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79094",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79209 Type confusion in Animation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79209",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79209"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79209",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79000 Improper input validation in DeviceBoundSessionCredentials",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79000",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79000"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79000",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79093 Incorrect authorization in Paint",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79093",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79093"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79093",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79208 Missing authorization in HTTP2",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79208",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79208"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79208",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78999 Improper privilege management in Navigation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78999",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78999"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78999",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79091 Use after free in Bluetooth",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79091",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79091"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79091",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79206 Out of bounds read in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79206",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79206"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79206",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78991 Race condition in WebProtect",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78991",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78991"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78991",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79090 Improper privilege management in Actor",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79090",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79090"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79090",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79205 Incorrect authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79205",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79205"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79205",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78990 Use after free in Compositing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78990",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:14 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78990"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78990",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79089 Race condition in Transactions Platform",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79089",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79089"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79089",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79204 UI misrepresentation in Input",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79204",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:09 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79204"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79204",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78989 Out of bounds read in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78989",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78989"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78989",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79088 Incorrect authorization in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79088",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:06 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79088"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79088",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79203 Improper input validation in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79203",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79203"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79203",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78987 Information leak in Canvas",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78987",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78987"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78987",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79087 Injection in Chrome Tabs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79087",
+    "releaseDate": "Wed, 28 Oct 2026 01:48:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79087"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79087",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79202 Use after free in Chromecast",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79202",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:59 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79202"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79202",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78986 Uninitialized resource in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78986",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78986"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78986",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79085 Missing authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79085",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79085"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79085",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78985 Incorrect reference resolution in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78985",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78985"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78985",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79084 Inadequate encryption strength in Notifications",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79084",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79084"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79084",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79201 Improper access control in Workers",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79201",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:52 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79201"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79201",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78984 Uninitialized resource in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78984",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78984"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78984",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79083 Improper enforcement of behavioral workflow in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79083",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79083"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79083",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79200 Use after free in Aura",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79200",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79200"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79200",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78983 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78983",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78983"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78983",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79082 Incorrect authorization in Transactions Platform",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79082",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79082"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79082",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78980 Improper input validation in ReaderMode",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78980",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78980"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78980",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79199 Incorrect authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79199",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79199"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79199",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79078 Use after free in FedCM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79078",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79078"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79078",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78979 Race condition in Core",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78979",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78979"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78979",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79077 Incorrect authorization in WebProtect",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79077",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79077"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79077",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79198 Use after free in Platform",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79198",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79198"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79198",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78978 Out of bounds read in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78978",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78978"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78978",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79076 Improper input validation in Sync",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79076",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:25 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79076"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79076",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78977 Uninitialized resource in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78977",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78977"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78977",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79197 Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79197",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79197"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79197",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79075 Information leak in Geolocation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79075",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79075"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79075",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78976 Improper input validation in StorageAccessAPI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78976",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78976"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78976",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79196 Race condition in Editing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79196",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:16 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79196"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79196",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79074 Information leak in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79074",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79074"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79074",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78975 Incorrect authorization in DOM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78975",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:11 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78975"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78975",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79195 Use after free in Script",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79195",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79195"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79195",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79073 Improper state validation in Parser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79073",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79073"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79073",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78974 UI misrepresentation in Linux Toolkit Theming",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78974",
+    "releaseDate": "Wed, 28 Oct 2026 01:47:04 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78974"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78974",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79194 Use after free in Chromoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79194",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79194"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79194",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79072 Improper state validation in Performance",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79072",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79072"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79072",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78969 Uninitialized resource in Video",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78969",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78969"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78969",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79071 Race condition in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79071",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79071"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79071",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79193 Information leak in Canvas",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79193",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79193"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79193",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78968 Missing authorization in Core",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78968",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78968"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78968",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79070 Incorrect reference resolution in Cache",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79070",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79070"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79070",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79192 Improper input validation in Variations",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79192",
+    "releaseDate": "Wed, 28 Oct 2026 01:46:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79192"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79192",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78967 Missing authorization in BFCache",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78967",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78967"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78967",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79069 Memory corruption in Tint",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79069",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:57 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79069"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79069",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79191 Incorrect authorization in SiteIsolation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79191",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79191"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79191",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78966 Externally controlled reference in QUIC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78966",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78966"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78966",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79068 Improper resource exposure in StreamsAPI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79068",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79068"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79068",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79190 Incorrect authorization in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79190",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79190"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79190",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78965 Uninitialized resource in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78965",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79067 Missing authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79067",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79067"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79067",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79189 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79189",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:45 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79189"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79189",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78964 Use after free in Sync",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78964",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78964"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78964",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79066 Improper input validation in Navigation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79066",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79066"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79066",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79188 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79188",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79188"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79188",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78963 Improper input validation in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78963",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78963"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78963",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79065 Improper input validation in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79065",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79065"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79065",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78962 Uninitialized resource in WebXR",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78962",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78962"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78962",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79187 Use after free in WebRTC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79187",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79187"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79187",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79064 Use after free in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79064",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79064"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79064",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78961 Incorrect authorization in Core",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78961",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78961"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78961",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79186 Incorrect authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79186",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79186"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79186",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79060 Incorrect authorization in StorageAccessAPI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79060",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79060"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79060",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78960 Information leak in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78960",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78960"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78960",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79185 Information leak in DOM",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79185",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79185"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79185",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79059 Information leak in BFCache",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79059",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79059"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79059",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78959 Improper handling of case sensitivity in FileSystem",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78959",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78959"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78959",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79184 Missing authorization in Preload",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79184",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:17 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79184"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79184",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78958 Uninitialized resource in Skia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78958",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78958"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78958",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79058 Missing authorization in Passwords",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79058",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79058"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79058",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79183 Use after free in Accessibility",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79183",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79183"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79183",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78956 Type confusion in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78956",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78956"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78956",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79056 Use after free in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79056",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79056"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79056",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79182 Improper input validation in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79182",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79182"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79182",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78955 Observable discrepancy in PerformanceAPIs",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78955",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78955"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78955",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79055 Information leak in Sharing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79055",
+    "releaseDate": "Wed, 28 Oct 2026 01:45:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79055"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79055",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78954 Incorrect authorization in Extensions",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78954",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78954"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78954",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79181 Observable discrepancy in Glic",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79181",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79181"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79181",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79054 Use after free in Chromecast",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79054",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:55 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79054"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79054",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78953 Missing authorization in SiteIsolation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78953",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:50 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78953"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78953",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79053 Missing authorization in Lighthouse",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79053",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79053"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79053",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78952 Out of bounds write in Crashpad",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78952",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78952"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78952",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79052 Use after free in Aura",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79052",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:42 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79052"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79052",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78951 Use after free in ServiceWorker",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78951",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78951"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78951",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78950 Integer overflow in WebRTC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78950",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78950"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78950",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79051 Incorrect authorization in Loader",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79051",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:36 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79051"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79051",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78948 Buffer overflow in WebGL",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78948",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:31 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78948"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78948",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79050 Incorrect authorization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79050",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:30 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79050"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79050",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78947 Incomplete cleanup in Chromium",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78947",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:27 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78947"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78947",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79049 Incorrect reference resolution in Passwords",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79049",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79049"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79049",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78946 Incorrect authorization in Select",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78946",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:22 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78946"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78946",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79048 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79048",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:20 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79048"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79048",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78945 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78945",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78945"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78945",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78944 Use after free in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78944",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78944"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78944",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79047 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79047",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:13 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79047"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79047",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78943 Improper input validation in Editing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78943",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78943"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78943",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79045 Type confusion in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79045",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:07 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79045"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79045",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78942 Incorrect reference resolution in Loader",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78942",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78942"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78942",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79043 Out of bounds write in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79043",
+    "releaseDate": "Wed, 28 Oct 2026 01:44:02 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79043"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79043",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78941 Information leak in Core",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78941",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78941"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78941",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79042 Missing authorization in Payments",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79042",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79042"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79042",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78940 Improper initialization in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78940",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78940"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78940",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79041 Missing authorization in Browser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79041",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79041"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79041",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78939 Use after free in Chromecast",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78939",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:49 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78939"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78939",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79040 Uninitialized resource in GPU",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79040",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:47 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79040"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79040",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78938 Type confusion in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78938",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:44 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78938"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78938",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79038 Incorrect authorization in WebProtect",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79038",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79038"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79038",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78934 Race condition in ReadAloud",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78934",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:38 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78934"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78934",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79034 Information leak in CORS",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79034",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:35 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79034"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79034",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78915 Race condition in Enterprise",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78915",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:33 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78915"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78915",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78914 Uninitialized resource in Skia",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78914",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:29 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78914"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78914",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79033 Insufficient control flow management in DevTools",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79033",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79033"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79033",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78913 Use after free in Chromoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78913",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78913"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78913",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79032 Improper input validation in Network",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79032",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:24 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79032"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79032",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78912 UI misrepresentation in Browser",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78912",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:19 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78912"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78912",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-79031 Improper resource exposure in Preload",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79031",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-79031"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-79031",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78911 Incorrect authorization in USB",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78911",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:15 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78911"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78911",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78910 Buffer overflow in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78910",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:10 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78910"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78910",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78909 Use after free in Views",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78909",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:05 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78909"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78909",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78908 Information leak in Canvas",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78908",
+    "releaseDate": "Wed, 28 Oct 2026 01:43:01 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78908"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78908",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78907 Incorrect authorization in WebProtect",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78907",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:56 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78907"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78907",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78906 Race condition in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78906",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:51 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78906"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78906",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78905 Type confusion in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78905",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:46 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78905"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78905",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78904 Type confusion in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78904",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:41 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78904"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78904",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78903 Incomplete cleanup in SiteIsolation",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78903",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:37 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78903"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78903",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78901 Race condition in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78901",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:32 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78901"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78901",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78900 Improper input validation in Media",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78900",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:28 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78900"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78900",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78899 Use after free in V8",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78899",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:23 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78899"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78899",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78898 Incorrect authorization in Downloads",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78898",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:18 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78898"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78898",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78897 Missing authorization in BrowserTag",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78897",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:12 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78897"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78897",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78896 Information leak in StorageAccessAPI",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78896",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:08 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78896"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78896",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78895 Information leak in Paint",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78895",
+    "releaseDate": "Wed, 28 Oct 2026 01:42:03 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78895"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78895",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78894 Race condition in Payments",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78894",
+    "releaseDate": "Wed, 28 Oct 2026 01:41:58 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78894"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78894",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78893 Information leak in QUIC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78893",
+    "releaseDate": "Wed, 28 Oct 2026 01:41:53 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78893"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78893",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78892 Incorrect authorization in Chromoting",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892",
+    "releaseDate": "Wed, 28 Oct 2026 01:41:48 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78892"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78892",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "Chromium: CVE-2026-78891 Buffer overflow in WebRTC",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891",
+    "releaseDate": "Wed, 28 Oct 2026 01:41:43 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78891"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78891",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-62890 Windows GDI+ Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62890",
@@ -51130,92 +55615,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-54128 Windows DHCP Client Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54128",
-    "releaseDate": "Thu, 30 Jul 2026 07:00:00 -0700",
+    "title": "CVE-2026-88078 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "description": "CWE added. Informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88078",
+    "releaseDate": "Thu, 29 Oct 2026 07:00:00 -0700",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-54128"
+      "CVE-2026-88078"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-54128",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55129 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55129",
-    "releaseDate": "Thu, 30 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55129"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55129",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-56197 Windows Admin Center (WAC) Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56197",
-    "releaseDate": "Thu, 30 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-56197"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-56197",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-66803 Azure Cosmos DB Remote Code Execution Vulnerability",
-    "description": "Improper access control in Azure Cosmos DB allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66803",
-    "releaseDate": "Thu, 30 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-66803"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-66803",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-24304 Azure Resource Manager Elevation of Privilege Vulnerability",
-    "description": "Informational Change. CVE ID stays the same.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24304",
-    "releaseDate": "Thu, 30 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-24304"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-24304",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-24304 Azure Cosmos DB Remote Code Execution Vulnerability",
-    "description": "Improper access control in Azure Cosmos DB allows an unauthorized attacker to execute code over a network.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24304",
-    "releaseDate": "Thu, 30 Jul 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-24304"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-24304",
+    "cve": "CVE-2026-88078",
     "kb": "",
     "knownIssues": ""
   },
