@@ -67213,6 +67213,51 @@
     "knownIssues": ""
   },
   {
+    "title": "CVE-2026-70125 Microsoft Office Outlook Remote Code Execution Vulnerability",
+    "description": "Updated one or more CVSS scores for the affected products. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
+    "releaseDate": "Fri, 30 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70125"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70125",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118147 Visual Studio Spoofing Vulnerability",
+    "description": "<p>Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.</p>",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
+    "releaseDate": "Fri, 30 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118147"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118147",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69446 Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
+    "description": "Corrected CVE by adding the assigning CNA. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446",
+    "releaseDate": "Fri, 30 Oct 2026 07:00:00 -0700",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69446"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69446",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
     "title": "CVE-2026-70331 Microsoft Edge for iOS Spoofing Vulnerability",
     "description": "<p>Improper neutralization of input used for llm prompting in Microsoft Edge for iOS allows an unauthorized attacker to perform spoofing over a network.</p>",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70331",
