@@ -5535,197 +5535,437 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62696 Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62696",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62696"
+      "CVE-2026-105544"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62696",
+    "cve": "CVE-2026-105544",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62747 Windows Device Association Service Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62747",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-109475 .NET Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62747"
+      "CVE-2026-109475"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62747",
+    "cve": "CVE-2026-109475",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62913"
+      "CVE-2026-109476"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62913",
+    "cve": "CVE-2026-109476",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-68815 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68815",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-109478 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-68815"
+      "CVE-2026-109478"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-68815",
+    "cve": "CVE-2026-109478",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-70348 Windows Management Services Denial of Service Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70348",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-70348"
+      "CVE-2026-109481"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-70348",
+    "cve": "CVE-2026-109481",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-42976 Remote Access Management service/API (RPC server) Elevation of Privilege Vulnerability",
-    "description": "Updated product information in the Software Update table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42976",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114146 ASP.NET Core Elevation of Privilege Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-42976"
+      "CVE-2026-114146"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-42976",
+    "cve": "CVE-2026-114146",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50687 Windows Win32k Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50687",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114147 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114147",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50687"
+      "CVE-2026-114147"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50687",
+    "cve": "CVE-2026-114147",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58538 Windows Bluetooth Service Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58538",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114149 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58538"
+      "CVE-2026-114149"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58538",
+    "cve": "CVE-2026-114149",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50655 Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50655",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114150 ASP.NET Core Information Disclosure Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114150",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50655"
+      "CVE-2026-114150"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50655",
+    "cve": "CVE-2026-114150",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-58643 Windows Admin Center Spoofing Vulnerability",
-    "description": "Corrected Build Number in the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58643",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114151 Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-58643"
+      "CVE-2026-114151"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-58643",
+    "cve": "CVE-2026-114151",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50476 Windows Network Connections Service Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50476",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114152 Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50476"
+      "CVE-2026-114152"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50476",
+    "cve": "CVE-2026-114152",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2022-41127 Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central (On Premises) Remote Code Execution Vulnerability",
-    "description": "Updated the build numbers.  This is an informational update only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-41127",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114154 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114154",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2022-41127"
+      "CVE-2026-114154"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2022-41127",
+    "cve": "CVE-2026-114154",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
-    "releaseDate": "Wed, 12 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-114155 .NET Elevation of Privilege Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114155",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-45637"
+      "CVE-2026-114155"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-45637",
+    "cve": "CVE-2026-114155",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-114156 ASP.NET Core Security Feature Bypass Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-114156"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-114156",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-114157 ASP.NET Core Security Feature Bypass Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114157",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-114157"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-114157",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-114158 Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-114158"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-114158",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-114159 Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-114159"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-114159",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-120006 Aspire Elevation of Privilege Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120006",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-120006"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-120006",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118745 Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118745"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118745",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118746 .NET Security Feature Bypass Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118746",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118746"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118746",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118747 .NET Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118747",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118747"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118747",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118748 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118748",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118748"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118748",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118749 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118749",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118749"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118749",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118750 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118750",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118750"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118750",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120792",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-120792"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-120792",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-120778 Aspire Elevation of Privilege Vulnerability",
+    "description": "Updated the products listed in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120778",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-120778"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-120778",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-120796 .NET Denial of Service Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120796",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-120796"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-120796",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118740 Aspire Security Feature Bypass Vulnerability",
+    "description": "Corrected Download links in the Security Updates table. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118740",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118740"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118740",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-118741 ASP.NET Core Elevation of Privilege Vulnerability",
+    "description": "Changes made to the security updates links and information.  This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118741",
+    "releaseDate": "Wed, 11 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-118741"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-118741",
     "kb": "",
     "knownIssues": ""
   },
@@ -29078,576 +29318,6 @@
     "kbs": [],
     "knownIssuesUrl": "",
     "cve": "CVE-2026-97781",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19177 Insufficient validation of untrusted input in UI",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19177",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:35 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19177"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19177",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19176 Use after free in Skia",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19176",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:33 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19176"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19176",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19175 Use after free in Payments",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19175",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:30 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19175"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19175",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19174 Integer overflow in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19174",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:27 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19174"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19174",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19173 Out of bounds write in Skia",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19173",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:24 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19173"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19173",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19172 Use after free in Views",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19172",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:21 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19172"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19172",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19171 Use after free in Media",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19171",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:18 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19171"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19171",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19170 Use after free in WebGL",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19170",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:15 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19170"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19170",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19169 Insufficient validation of untrusted input in Contextual Tasks",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19169",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:12 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19169"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19169",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19168 Inappropriate implementation in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19168",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:09 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19168"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19168",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19167 Integer overflow in GPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19167",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:05 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19167"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19167",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19166 Use after free in Web Authentication",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19166",
-    "releaseDate": "Tue, 11 Aug 2026 17:03:02 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19166"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19166",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19165 Use after free in Extensions",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19165",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:59 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19165"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19165",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19164 Insufficient validation of untrusted input in Codecs",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19164",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:56 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19164"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19164",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19163 Use after free in Media",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19163",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:53 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19163"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19163",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19162 Out of bounds write in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19162",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:50 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19162"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19162",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19161 Uninitialized Use in Skia",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19161",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:47 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19161"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19161",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19160 Uninitialized Use in Skia",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19160",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:45 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19160"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19160",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19159 Use after free in Views",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19159",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:41 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19159"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19159",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19158 Use after free in Views",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19158",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:39 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19158"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19158",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19157 Out of bounds write in ANGLE",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19157",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:36 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19157"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19157",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19156 Heap buffer overflow in Base",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19156",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:32 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19156"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19156",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19155 Use after free in Payments",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19155",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:29 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19155"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19155",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19153 Insufficient validation of untrusted input in Workers",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19153",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:26 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19153"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19153",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19152 Inappropriate implementation in Navigation",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19152",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:23 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19152"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19152",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19151 Use after free in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19151",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:19 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19151"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19151",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19150 Inappropriate implementation in V8",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19150",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:16 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19150"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19150",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19149 Use after free in Aura",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19149",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:14 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19149"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19149",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19148 Out of bounds write in GPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19148",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:11 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19148"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19148",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19147 Use after free in Aura",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19147",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:07 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19147"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19147",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19146 Uninitialized Use in GPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19146",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:04 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19146"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19146",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19145 Use after free in Translate",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19145",
-    "releaseDate": "Tue, 11 Aug 2026 17:02:01 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19145"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19145",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19144 Use after free in HTML",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19144",
-    "releaseDate": "Tue, 11 Aug 2026 17:01:58 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19144"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19144",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19142 Use after free in Views",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19142",
-    "releaseDate": "Tue, 11 Aug 2026 17:01:55 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19142"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19142",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19140 Use after free in GPU",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19140",
-    "releaseDate": "Tue, 11 Aug 2026 17:01:52 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19140"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19140",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19139 Race in CredentialProvider",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19139",
-    "releaseDate": "Tue, 11 Aug 2026 17:01:49 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19139"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19139",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19138 Heap buffer overflow in CrashReporting",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19138",
-    "releaseDate": "Tue, 11 Aug 2026 17:01:46 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19138"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19138",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-19137 Use after free in WebGL",
-    "description": "This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19137",
-    "releaseDate": "Tue, 11 Aug 2026 17:01:41 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-19137"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-19137",
     "kb": "",
     "knownIssues": ""
   },
@@ -68138,422 +67808,17 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-49162 Microsoft Brokering File System Elevation of Privilege Vulnerability",
-    "description": "Added acknowledgements. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49162",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+    "description": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install the applicable updates to be protected from this vulnerability.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+    "releaseDate": "Thu, 12 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-49162"
+      "CVE-2026-111497"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-49162",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-49798 Windows Kernel Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49798",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-49798"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-49798",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50342 Windows MIDI Service Module Elevation of Privileges Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50342",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50342"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50342",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50298 Windows Spaceport.sys Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50298",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50298"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50298",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50309 Windows NTFS Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50309",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50309"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50309",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50387 Windows GDI Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50387",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50387"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50387",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50383 Windows Print Spooler Information Disclosure Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50383",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50383"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50383",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50461 Windows NTFS Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50461",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50461"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50461",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45592 Windows Internet (wininet.dll) Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45592",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45592"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45592",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45593 Windows SDK Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45593",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45593"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45593",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45597 Windows UI Automation Manager (uiamanager.dll) Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45597",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45597"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45597",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45638 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45638",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45638"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45638",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-45637"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-45637",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-44814 Windows DWM Core Library Information Disclosure  Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44814",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-44814"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-44814",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-61346 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61346",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-61346"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-61346",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62695 Windows Storage Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62695",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62695"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62695",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61359",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-61359"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-61359",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-66804 Microsoft Windows Cross Device Service Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66804",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-66804"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-66804",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
-    "description": "Added acknowledgements. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62913"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62913",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62688 Windows MIDI Service Module Elevation of Privileges Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62688",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62688"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62688",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62897 .NET Framework Remote Code Execution Vulnerability",
-    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62897",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62897"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62897",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62902 .NET Information Disclosure Vulnerability",
-    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62902",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62902"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62902",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-70354 .NET Core Remote Code Execution Vulnerability",
-    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70354",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-70354"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-70354",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62871 .NET Elevation of Privilege Vulnerability",
-    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62871",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62871"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62871",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62886 .NET Elevation of Privilege Vulnerability",
-    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62886"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62886",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62898 Microsoft QUIC Information Disclosure Vulnerability",
-    "description": "Removed Linux and macOS products from the Affected Software table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62898",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62898"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62898",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-64906 Microsoft Access Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64906",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-64906"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-64906",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-65796 Windows iSCSI Target Service Remote Code Execution Vulnerability",
-    "description": "Updated the CVE title, changed the security impact from Denial of Service to Remote Code Execution, changed the severity from Important to Critical, updated the CVSS score from 5.9 to 8.1, and corrected the severity and impact entries in the Security Updates table. These are informational changes only. Customers who have successfully installed the update do not need to take any further action.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65796",
-    "releaseDate": "Thu, 13 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-65796"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-65796",
+    "cve": "CVE-2026-111497",
     "kb": "",
     "knownIssues": ""
   },
