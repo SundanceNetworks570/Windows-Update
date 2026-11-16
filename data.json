@@ -68153,81 +68153,6 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-65768 Microsoft Teams Remote Code Execution Vulnerability",
-    "description": "Corrected build number for the security update.  This in an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65768",
-    "releaseDate": "Sun, 16 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-65768"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-65768",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-65769 Microsoft Teams iOS Information Disclosure Vulnerability",
-    "description": "Corrected build number for the security update.  This in an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65769",
-    "releaseDate": "Sun, 16 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-65769"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-65769",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-57104 Azure Storage Explorer Elevation of Privilege Vulnerability",
-    "description": "Corrected build number for the security update.  This in an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57104",
-    "releaseDate": "Sun, 16 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-57104"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-57104",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-65767 Microsoft Teams for Android Spoofing Vulnerability",
-    "description": "Corrected build number for the security update.  This in an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65767",
-    "releaseDate": "Sun, 16 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-65767"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-65767",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-59124 Microsoft High Performance Computing (HPC) Pack Remote Code Execution Vulnerability",
-    "description": "Corrected the listed software in the Security Updates table.  Microsoft recommends installing the security update as soon as possible.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59124",
-    "releaseDate": "Sun, 16 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-59124"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-59124",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
     "title": "Chromium: CVE-2025-2137 Out of bounds read in V8",
     "description": "Information published.",
     "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2137",
@@ -69668,152 +69593,47 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-40400"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-40400",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-56188 Windows Server Network driver Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56188",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-56188"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-56188",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62722 Microsoft Brokering File System Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-105544 .NET VSTest Elevation of Privilege Vulnerability",
     "description": "Corrected the CVE description and title. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62722",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
+    "releaseDate": "Mon, 16 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62722"
+      "CVE-2026-105544"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62722",
+    "cve": "CVE-2026-105544",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-66807 Microsoft Office Graphics Component Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66807",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+    "description": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. This is an informational change only. Customers who have already installed the November 2026 updates do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223",
+    "releaseDate": "Mon, 16 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-66807"
+      "CVE-2026-124223"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-66807",
+    "cve": "CVE-2026-124223",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-63519 Microsoft Office Graphics Component Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63519",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-124222 Microsoft Office SharePoint Elevation of Privilege Vulnerability",
+    "description": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. This is an informational change only. Customers who have already installed the November 2026 updates do not need to take any further action.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222",
+    "releaseDate": "Mon, 16 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-63519"
+      "CVE-2026-124222"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-63519",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-63513 Microsoft Office Graphics Component Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63513",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-63513"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-63513",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-70337"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-70337",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-58612 PowerShell Information Disclosure Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58612",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-58612"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-58612",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62886 .NET Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62886"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62886",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-63518 Microsoft Office Word Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63518",
-    "releaseDate": "Mon, 17 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-63518"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-63518",
+    "cve": "CVE-2026-124222",
     "kb": "",
     "knownIssues": ""
   },
