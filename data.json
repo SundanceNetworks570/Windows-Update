@@ -7486,107 +7486,137 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-24301 Microsoft Copilot Information Disclosure Vulnerability",
-    "description": "<p>Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to disclose information over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24301",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-121680 Windows NTLM Spoofing Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-24301"
+      "CVE-2026-121680"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-24301",
+    "cve": "CVE-2026-121680",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-65791 Windows iSCSI Target Service Remote Code Execution Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65791",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-65791"
+      "CVE-2026-119961"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-65791",
+    "cve": "CVE-2026-119961",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-66804 Microsoft Windows Cross Device Service Elevation of Privilege Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66804",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-66804"
+      "CVE-2026-119914"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-66804",
+    "cve": "CVE-2026-119914",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-108440 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-70338"
+      "CVE-2026-108440"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-70338",
+    "cve": "CVE-2026-108440",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-47632 Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "description": "Corrected the affected product from **Azure Monitor Agent Metrics Extension** to **Azure Connected Machine Agent** and updated the Security Updates table. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47632",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-47632"
+      "CVE-2026-96251"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-47632",
+    "cve": "CVE-2026-96251",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50419 Windows Kernel Information Disclosure Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50419",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-88208 Microsoft Office SharePoint Spoofing Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-50419"
+      "CVE-2026-88208"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-50419",
+    "cve": "CVE-2026-88208",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-56642 Microsoft Fabric Data Warehouse Remote Code Execution Vulnerability",
-    "description": "Updated the Security Updates table by removing an affected software entry. No user action is required. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56642",
-    "releaseDate": "Tue, 18 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-70278 Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-56642"
+      "CVE-2026-70278"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-56642",
+    "cve": "CVE-2026-70278",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78524"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78524",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+    "releaseDate": "Tue, 17 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-40400"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-40400",
     "kb": "",
     "knownIssues": ""
   },
