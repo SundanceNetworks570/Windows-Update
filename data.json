@@ -63068,542 +63068,872 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62834 Azure Data Factory Elevation of Privilege Vulnerability",
-    "description": "<p>Improper verification of cryptographic signature in Azure Data Factory allows an unauthorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62834",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62834"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62834",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-65801 Microsoft Exchange Online Elevation of Privilege Vulnerability",
-    "description": "<p>Server-side request forgery (ssrf) in Microsoft Exchange Online allows an unauthorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65801",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-65801"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-65801",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-68789 Azure SQL Database Elevation of Privilege Vulnerability",
-    "description": "<p>Improper neutralization of special elements used in an sql command ('sql injection') in Azure SQL Database allows an authorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68789",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-68789"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-68789",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-69519 Azure Stack HCI Information Disclosure Vulnerability",
-    "description": "<p>Observable response discrepancy in Azure Stack HCI allows an unauthorized attacker to disclose information over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69519",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-69519"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-69519",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-69851 Microsoft Entra ID Elevation of Privilege Vulnerability",
-    "description": "<p>Server-side request forgery (ssrf) in Azure Active Directory allows an authorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69851",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-69851"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-69851",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-69836 Microsoft Entra ID Remote Code Execution Vulnerability",
-    "description": "<p>Deserialization of untrusted data in Microsoft Entra ID allows an unauthorized attacker to execute code over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69836",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-69836"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-69836",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62703 Windows DWM Core Library Information Disclosure Vulnerability",
+    "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62703",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62703"
+      "CVE-2026-105584"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62703",
+    "cve": "CVE-2026-105584",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62747 Windows Device Association Service Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62747",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62747"
+      "CVE-2026-95874"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62747",
+    "cve": "CVE-2026-95874",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62754 Windows Kerberos Elevation of Privilege Vulnerability",
-    "description": "Updated links to security updates.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62754",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-62754"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-62754",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-62755 Windows DHCP Client Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62755",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62755"
+      "CVE-2026-95989"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62755",
+    "cve": "CVE-2026-95989",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-65786 Desktop Window Manager Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65786",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-65786"
+      "CVE-2026-96082"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-65786",
+    "cve": "CVE-2026-96082",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-55015 Microsoft Remote Help Denial of Service Vulnerability",
-    "description": "<p>Uncontrolled search path element in Windows Remote Help allows an authorized attacker to deny service locally.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55015",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55015"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55015",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55013 Windows Remote Help Defense Spoofing Vulnerability",
-    "description": "<p>Uncontrolled search path element in Windows Remote Help Defense allows an authorized attacker to perform spoofing locally.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55013",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55013"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55013",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-61363 Remote Desktop Client Remote Code Execution Vulnerability",
+    "title": "CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61363",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-61363"
+      "CVE-2026-113817"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-61363",
+    "cve": "CVE-2026-113817",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-62728 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-121669 PowerShell Information Disclosure Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62728",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-62728"
+      "CVE-2026-121669"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-62728",
+    "cve": "CVE-2026-121669",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-66802 Windows Device Health Attestation (DHA) Remote Code Execution Vulnerability",
-    "description": "Corrected the Executive Summary to clarify that the vulnerability affects Windows Device Health Attestation (DHA), not Microsoft Azure Attestation. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66802",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-118302 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-66802"
+      "CVE-2026-118302"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-66802",
+    "cve": "CVE-2026-118302",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-71331 Windows Device Health Attestation (DHA) Remote Code Execution Vulnerability",
-    "description": "Updated links to security updates.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71331",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-69370 Visual Studio Code Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-71331"
+      "CVE-2026-69370"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-71331",
+    "cve": "CVE-2026-69370",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-70105 Microsoft Word Information Disclosure Vulnerability",
-    "description": "Information published. This CVE was addressed by updates that were released in August 2026, but the CVE was inadvertently omitted from the August 2026 Security Updates. This is an informational change only. Customers who have already installed the August 2026 updates do not need to take any further action.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70105",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-69918 Windows Core Messaging Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-70105"
+      "CVE-2026-69918"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-70105",
+    "cve": "CVE-2026-69918",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-65770 Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
-    "description": "<p>Improper neutralization of argument delimiters in a command ('argument injection') in Azure Managed Instance for Apache Cassandra allows an unauthorized attacker to execute code over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65770",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-70223 Windows Console Driver Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-65770"
+      "CVE-2026-70223"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-65770",
+    "cve": "CVE-2026-70223",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-63509 Microsoft Fabric Elevation of Privilege Vulnerability",
-    "description": "<p>Relative path traversal in Microsoft Fabric allows an authorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63509",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-83722 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-63509"
+      "CVE-2026-83722"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-63509",
+    "cve": "CVE-2026-83722",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-65816 Azure Arc Elevation of Privilege Vulnerability",
-    "description": "<p>Use of incorrectly-resolved name or reference in Azure Arc allows an unauthorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65816",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-83753 Windows Camera Frame Server Monitor Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-65816"
+      "CVE-2026-83753"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-65816",
+    "cve": "CVE-2026-83753",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-66309 Azure SQL Database Elevation of Privilege Vulnerability",
-    "description": "<p>Improper access control in Azure SQL Database allows an authorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66309",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-83760 Microsoft Bluetooth Driver Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-66309"
+      "CVE-2026-83760"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-66309",
+    "cve": "CVE-2026-83760",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-66800 Azure Data Factory Information Disclosure Vulnerability",
-    "description": "<p>Server-side request forgery (ssrf) in Azure Data Factory allows an unauthorized attacker to disclose information over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66800",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-84015 Remote Access Point-to-Point Protocol (PPP) EAP-TLS Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-66800"
+      "CVE-2026-84015"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-66800",
+    "cve": "CVE-2026-84015",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-68782 Azure SQL Database Elevation of Privilege Vulnerability",
-    "description": "<p>Improper neutralization of special elements used in an sql command ('sql injection') in Azure SQL Database allows an authorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68782",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-84016 Windows EAPHost Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-68782"
+      "CVE-2026-84016"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-68782",
+    "cve": "CVE-2026-84016",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69419 Azure Data Manager for Energy Remote Code Execution Vulnerability",
-    "description": "<p>Integer overflow or wraparound in Azure Data Manager for Energy allows an authorized attacker to execute code over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69419",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-84020 Windows Routing and Remote Access Service (RRAS) Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69419"
+      "CVE-2026-84020"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69419",
+    "cve": "CVE-2026-84020",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69502 Azure SQL Database Elevation of Privilege Vulnerability",
-    "description": "<p>Server-side request forgery (ssrf) in Azure SQL Database allows an unauthorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69502",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-85794 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69502"
+      "CVE-2026-85794"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69502",
+    "cve": "CVE-2026-85794",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69400 Azure Logic Apps Elevation of Privilege Vulnerability",
-    "description": "<p>Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69400",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-85846 Web Account Manager Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69400"
+      "CVE-2026-85846"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69400",
+    "cve": "CVE-2026-85846",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69555 Azure Arc Elevation of Privilege Vulnerability",
-    "description": "<p>Incorrect authorization in Azure Arc allows an unauthorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69555",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-70174 .NET Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69555"
+      "CVE-2026-70174"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69555",
+    "cve": "CVE-2026-70174",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69558 Microsoft Partner Center Information Disclosure Vulnerability",
-    "description": "<p>Authorization bypass through user-controlled key in Microsoft Partner Center allows an unauthorized attacker to disclose information over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69558",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69558"
+      "CVE-2026-70197"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69558",
+    "cve": "CVE-2026-70197",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69543 Azure Virtual Machines Elevation of Privilege Vulnerability",
-    "description": "<p>Server-side request forgery (ssrf) in Azure Virtual Machines allows an authorized attacker to elevate privileges over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69543",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-88151 Microsoft Office Excel Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69543"
+      "CVE-2026-88151"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69543",
+    "cve": "CVE-2026-88151",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-69855 Microsoft Copilot in Azure Information Disclosure Vulnerability",
-    "description": "<p>Server-side request forgery (ssrf) in Microsoft Copilot in Azure allows an authorized attacker to disclose information over a network.</p>",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69855",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-97749 Microsoft Office Outlook Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-69855"
+      "CVE-2026-97749"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-69855",
+    "cve": "CVE-2026-97749",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-33824 Windows Internet Key Exchange (IKE) Service Extensions Remote Code Execution Vulnerability",
-    "description": "Added clarifying information to the mitigation. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33824",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-97761 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-33824"
+      "CVE-2026-97761"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-33824",
+    "cve": "CVE-2026-97761",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-54118 Microsoft SQL Server Remote Code Execution Vulnerability",
-    "description": "The CVSS vector string was update to reflect that an attacker does not require any privileges to successfully exploit this vulnerability (PR:N).  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54118",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-97780 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-54118"
+      "CVE-2026-97780"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-54118",
+    "cve": "CVE-2026-97780",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-54117 Microsoft SQL Server Remote Code Execution Vulnerability",
-    "description": "The CVSS vector string was update to reflect that an attacker does not require any privileges to successfully exploit this vulnerability (PR:N).  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54117",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-97767 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97767",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-54117"
+      "CVE-2026-97767"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-54117",
+    "cve": "CVE-2026-97767",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-71331 Windows Device Health Attestation (DHA) Remote Code Execution Vulnerability",
-    "description": "Updated links to security updates.  This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71331",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-85910 Windows StateRepository API Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-71331"
+      "CVE-2026-85910"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-71331",
+    "cve": "CVE-2026-85910",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-71331 Windows Device Health Attestation (DHA) Remote Code Execution Vulnerability",
-    "description": "Corrected the Executive Summary to clarify that the vulnerability affects Windows Device Health Attestation (DHA), not Microsoft Azure Attestation. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71331",
-    "releaseDate": "Thu, 20 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-87698 Windows Remote Access Service Infrastructure Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-71331"
+      "CVE-2026-87698"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-71331",
+    "cve": "CVE-2026-87698",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-88130 Role: DNS Server Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88130",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-88130"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-88130",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-88207 Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88207",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-88207"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-88207",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70007"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70007",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70035 .NET Framework Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70035"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70035",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97756 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97756",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97756"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97756",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97773 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97773",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97773"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97773",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97743 Microsoft Office Excel Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97743",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97743"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97743",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97777 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97777",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97777"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97777",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97741 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97741",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97741"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97741",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97763 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97763",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97763"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97763",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97772 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97772",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97772"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97772",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97768 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97768",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97768"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97768",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-97745 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97745",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-97745"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-97745",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-100211 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100211",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-100211"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-100211",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-100209 Microsoft Office Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100209",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-100209"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-100209",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-111497",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-55007 Microsoft Exchange Server Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55007",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-55007"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-55007",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69544 Windows SMB Client Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69544",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69544"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69544",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78505 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78505",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78505"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78505",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69360 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69360",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69360"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69360",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-58649 .NET Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-58649"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-58649",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-72973 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72973",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-72973"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-72973",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-77911 Microsoft Office Word Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77911",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-77911"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-77911",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78455 Xbox Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78455",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78455"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78455",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78521 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78521",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78521"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78521",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78524"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78524",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-78526 Microsoft Office Word Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78526",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-78526"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-78526",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-81957 Microsoft Excel Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81957",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-81957"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-81957",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-69381 Windows Storage Port Driver Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69381",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-69381"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-69381",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-63516 Microsoft SharePoint Server Spoofing Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63516",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-63516"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-63516",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-55121 Microsoft Office Information Disclosure Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55121",
+    "releaseDate": "Thu, 19 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-55121"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-55121",
     "kb": "",
     "knownIssues": ""
   },
@@ -79238,167 +79568,33 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-68801 Microsoft Excel Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68801",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
+    "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+    "releaseDate": "Fri, 20 Nov 2026 01:06:50 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-68801"
+      "CVE-2024-7533",
+      "CVE-2024-7532"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-68801",
+    "cve": "CVE-2024-7533, CVE-2024-7532",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-64903 Microsoft Office Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64903",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
+    "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+    "description": "Information published.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+    "releaseDate": "Fri, 20 Nov 2026 01:05:37 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-64903"
+      "CVE-2023-1531"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-64903",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-64899 Microsoft Office Information Disclosure Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64899",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-64899"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-64899",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-70335 GitHub Copilot and Visual Studio Code Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70335",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-70335"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-70335",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-69836 Microsoft Entra ID Remote Code Execution Vulnerability",
-    "description": "Corrected **Exploited** to **No**. This vulnerability was not exploited in the wild. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69836",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-69836"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-69836",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-54981 Visual Studio Code Python Extension Security Feature Bypass Vulnerability",
-    "description": "Affected software updated with new package information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54981",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-54981"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-54981",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-58547 Windows Universal Plug and Play (UPnP) Device Host Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58547",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-58547"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-58547",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-49183 Windows Clipboard Server Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49183",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-49183"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-49183",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-55134 Microsoft Word Remote Code Execution Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55134",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-55134"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-55134",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-50466 Microsoft Brokering File System Elevation of Privilege Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50466",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50466"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50466",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-32202 Windows Shell Spoofing Vulnerability",
-    "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32202",
-    "releaseDate": "Fri, 21 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-32202"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-32202",
+    "cve": "CVE-2023-1531",
     "kb": "",
     "knownIssues": ""
   },
