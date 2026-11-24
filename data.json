@@ -69458,47 +69458,152 @@
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-50661 Windows BitLocker Security Feature Bypass Vulnerability",
-    "description": "Acknowledgement Updated",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50661",
-    "releaseDate": "Mon, 24 Aug 2026 07:00:00 -0700",
-    "source": "MSRC RSS",
-    "cves": [
-      "CVE-2026-50661"
-    ],
-    "kbs": [],
-    "knownIssuesUrl": "",
-    "cve": "CVE-2026-50661",
-    "kb": "",
-    "knownIssues": ""
-  },
-  {
-    "title": "CVE-2026-65787 Desktop Window Manager Elevation of Privilege Vulnerability",
+    "title": "CVE-2026-69291 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
     "description": "Updated an acknowledgement. This is an informational change only.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65787",
-    "releaseDate": "Mon, 24 Aug 2026 07:00:00 -0700",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-65787"
+      "CVE-2026-69291"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-65787",
+    "cve": "CVE-2026-69291",
     "kb": "",
     "knownIssues": ""
   },
   {
-    "title": "CVE-2026-47292 Visual Studio Code MSSQL Extension Remote Code Execution Vulnerability",
-    "description": "Affected software updated with new package information.",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47292",
-    "releaseDate": "Mon, 24 Aug 2026 07:00:00 -0700",
+    "title": "CVE-2026-78462 Visual Studio Code Security Feature Bypass Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
     "source": "MSRC RSS",
     "cves": [
-      "CVE-2026-47292"
+      "CVE-2026-78462"
     ],
     "kbs": [],
     "knownIssuesUrl": "",
-    "cve": "CVE-2026-47292",
+    "cve": "CVE-2026-78462",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-72965 Windows WebClient Service Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-72965"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-72965",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-87697 .NET Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-87697"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-87697",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70175 ASP.NET Core Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70175"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70175",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-70197"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-70197",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-96225 .NET Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-96225"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-96225",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-96233 ASP.NET Core Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-96233"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-96233",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-109481"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-109481",
+    "kb": "",
+    "knownIssues": ""
+  },
+  {
+    "title": "CVE-2026-119848 Windows Message Queuing Denial of Service Vulnerability",
+    "description": "Updated an acknowledgement. This is an informational change only.",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848",
+    "releaseDate": "Mon, 23 Nov 2026 08:00:00 -0800",
+    "source": "MSRC RSS",
+    "cves": [
+      "CVE-2026-119848"
+    ],
+    "kbs": [],
+    "knownIssuesUrl": "",
+    "cve": "CVE-2026-119848",
     "kb": "",
     "knownIssues": ""
   },
